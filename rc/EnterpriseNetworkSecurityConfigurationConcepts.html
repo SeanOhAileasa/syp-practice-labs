@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="EnterpriseNetworkSecurityConfigurationConcepts_files/print-styles.css" rel="stylesheet">
+    <script src="EnterpriseNetworkSecurityConfigurationConcepts_files/jquery.min.js"></script>
+    <script src="EnterpriseNetworkSecurityConfigurationConcepts_files/jspdf.js"></script>
+    <script src="EnterpriseNetworkSecurityConfigurationConcepts_files/from_html.js"></script>
+    <script src="EnterpriseNetworkSecurityConfigurationConcepts_files/addimage.js"></script>
+    <script src="EnterpriseNetworkSecurityConfigurationConcepts_files/filesaver.js"></script>
+    <script src="EnterpriseNetworkSecurityConfigurationConcepts_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="i1QJC0jGbqSXa6cnJ0kY2fbiLKSGUbLAQ1K+TjDecpxPmIJBvLt+zVM6U9+Uf41pn0m8/XxThS+r4onAl0CoKaYSWbNSDGUZFlbUbZE0hmE=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Enterprise Network Security Configuration Concepts</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Importance of Security Concepts in an Enterprise Environment</li><li>Exercise 2 - Set up a Honeypot with Pentbox</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m5-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Configuration Management</div>
+
+<div>Data Sovereignty</div>
+
+<div>Data Protection</div>
+
+<div>Hardware Security Module (HSM)</div>
+
+<div>Geographical Considerations</div>
+
+<div>Cloud Access Security Broker (CASB)</div>
+
+<div>Response and Recovery Controls</div>
+
+<div>Secure Sockets Layer (SSL)</div>
+
+<div>Transport Layer Security (TLS) Inspection</div>
+
+<div>Hashing</div>
+
+<div>API Considerations</div>
+
+<div>Site Resiliency</div>
+
+<div>Deception</div>
+
+<div>Disruption</div>
+
+<div>Honeypot</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m5-18">Welcome to the <b>Enterprise Network Security Configuration Concepts </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m5-22">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m5-23">
+
+<li id="cn-m5-23">Exercise 1 - Importance of Security Concepts in an Enterprise Environment</li>
+
+<li id="cn-m5-24">Exercise 2 - Set up a Honeypot with Pentbox</li>
+
+</ul>
+
+<p id="cn-m5-25">After completing this module, you should be able to:</p>
+
+<ul id="cn-m5-26">
+
+<li id="cn-m5-26">Download and Install Pentbox</li>
+
+<li id="cn-m5-27">Modify Proxy Server Extensions</li>
+
+<li id="cn-m5-28">Test Honeypot Functionality</li>
+
+</ul>
+
+<p id="cn-m5-29">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m5-30">
+
+<li id="cn-m5-30">Configuration Management</li>
+
+<li id="cn-m5-31">Data Sovereignty</li>
+
+<li id="cn-m5-32">Data Protection</li>
+
+<li id="cn-m5-33">Hardware Security Module (HSM)</li>
+
+<li id="cn-m5-34">Geographical Considerations</li>
+
+<li id="cn-m5-35">Cloud Access Security Broker (CASB)</li>
+
+<li id="cn-m5-36">Response and Recovery Controls</li>
+
+<li id="cn-m5-37">Secure Sockets Layer (SSL)/Transport Layer Security (TLS) Inspection</li>
+
+<li id="cn-m5-38">Hashing</li>
+
+<li id="cn-m5-39">API Considerations</li>
+
+<li id="cn-m5-40">Site Resiliency</li>
+
+<li id="cn-m5-41">Deception and Disruption</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m5-43">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m5-44">
+
+<li id="cn-m5-44">Configuration Management</li>
+
+<li id="cn-m5-45">Data Sovereignity</li>
+
+<li id="cn-m5-46">Data Protection</li>
+
+<li id="cn-m5-47">Hardware Security Module (HSM)</li>
+
+<li id="cn-m5-48">Geographical Considerations</li>
+
+<li id="cn-m5-49">Cloud Access Security Broker (CASB)</li>
+
+<li id="cn-m5-50">Response and Recovery Controls</li>
+
+<li id="cn-m5-51">Secure Sockets Layer (SSL)/Transport Layer Security (TLS) Inspection</li>
+
+<li id="cn-m5-52">Hashing</li>
+
+<li id="cn-m5-53">API Considerations</li>
+
+<li id="cn-m5-54">Site Resiliency</li>
+
+<li id="cn-m5-55">Deception and Disruption</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m5-56"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m5-58">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m5-62">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m5-63">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-65"><b>Lab Topology</b></h2>
+
+<p id="cn-m5-66">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m5-67"><img class="cn-img" id="cn-image-m5-c-0" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m5-68">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m5-69">
+
+<li id="cn-m5-69"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m5-70"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m5-71"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m5-72"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m5-73">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="ImportanceofSecurityConceptsinanEnterpriseEnvironment">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-74"><b>Exercise 1 - Importance of Security Concepts in an Enterprise Environment</b></h2>
+
+<p id="cn-m5-75">Enterprise networks are usually large and complex. More
+ devices that you add on to them, more complexity is added. With the 
+enterprise network, it is critical to ensure highest levels of security.
+ You need to have security controls that are updated on regular basis to
+ ensure optimal security.</p>
+
+<p id="cn-m5-76">There are different methods that can add security on to
+ a network environment. For example, having a redundant site also 
+ensures that the redundant site is available even if the primary site 
+goes down. This is also part of the security, which is included in the 
+CIA triad. With the redundant site you ensure availability, which is a 
+critical aspect of security.</p>
+
+<p id="cn-m5-77">In this exercise, you will learn about various important security concepts in an enterprise environment.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m5-79">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m5-80">
+
+<li id="cn-m5-80">Configuration Management</li>
+
+<li id="cn-m5-81">Data Sovereignty</li>
+
+<li id="cn-m5-82">Data Protection</li>
+
+<li id="cn-m5-83">Hardware Security Module (HSM)</li>
+
+<li id="cn-m5-84">Geographical Considerations</li>
+
+<li id="cn-m5-85">Cloud Access Security Broker (CASB)</li>
+
+<li id="cn-m5-86">Response and Recovery Controls</li>
+
+<li id="cn-m5-87">Secure Sockets Layer (SSL)/Transport Layer Security (TLS) Inspection</li>
+
+<li id="cn-m5-88">Hashing</li>
+
+<li id="cn-m5-89">API Considerations</li>
+
+<li id="cn-m5-90">Site Resiliency</li>
+
+<li id="cn-m5-91">Deception and Disruption</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m5-93">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m5-94"><img class="cn-img" id="cn-image-m5-c-1" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m5-96"><b>Configuration Management</b></h3>
+
+<p id="cn-m5-97">Most organizations define a specific configuration for 
+the endpoints and servers. Keeping the configuration in the desired 
+state is known as configuration management. The organization, with the 
+configuration management process, can monitor and manage their systems 
+in a better way. For example, you roll out Windows operating system on 
+all endpoints with only Office 365. It is easy for you to track. This is
+ the configuration management process.</p>
+
+<p id="cn-m5-98">A user may need to install another application. As part
+ of the configuration management process, you need to approve this 
+change and document it. The change is now documented and can be tracked.
+ You can perform configuration management in a manual way or use a 
+third-party application to track the changes that are made to the system
+ configuration or if any unauthorized application is installed.</p>
+
+<p id="cn-m5-99">In the configuration management process, each endpoint,
+ server, or device is known as configuration items, which are tracked 
+using Configuration Management Database (CMDB).</p>
+
+<p id="cn-m5-100">Several other components play a key role in configuration management. Some of the key components are described below.</p>
+
+<h4 id="cn-m5-101"><b><i>Network Diagrams</i></b></h4>
+
+<p id="cn-m5-102">A network topology diagram is a visual depiction of a 
+network architecture. It uses different symbols and connections, which 
+are represented by lines. A network diagram can help a user understand 
+the layout of the network.</p>
+
+<p id="cn-m5-103">The network topology diagram should detail out how the network is designed. It should mention the following (at minimum):</p>
+
+<ul id="cn-m5-104">
+
+<li id="cn-m5-104">Devices that are present on the network</li>
+
+<li id="cn-m5-105">Connectivity between these devices</li>
+
+<li id="cn-m5-106">IP addresses and names of these devices</li>
+
+</ul>
+
+<p id="cn-m5-107">Assume a situation in which you have joined an 
+organization as Network Administrator. You have been asked to 
+troubleshoot a network problem. Without the help of a network diagram, 
+it would take you a while to understand the network architecture. 
+However, if the network diagram is available, you can visualize the 
+problem quickly.</p>
+
+<p id="cn-m5-108">It is also important to note that network diagrams are
+ not static. As new devices are added or removed from the network, you 
+should update the corresponding  diagram. Even if an IP address of a 
+server has changed, you should update it on the diagram.</p>
+
+<h4 id="cn-m5-109"><b><i>Baseline Configuration</i></b></h4>
+
+<p id="cn-m5-110">A baseline configuration is based on the configuration
+ parameters that have been set in an operating system. These parameters 
+define what is installed in the operating system. A baseline 
+configuration, once approved and rolled out, serves as a base on which 
+changes can be implemented.</p>
+
+<p id="cn-m5-111">Before a baseline configuration is rolled out, it is 
+defined with clear parameters and then tested. For example, an 
+organization may have a separate baseline for desktops, another one for 
+laptops, and a third one for the servers. When the baseline 
+configuration is created, it is tested for stability and security. Once 
+approved, the baseline configuration is rolled out on the systems and 
+servers.</p>
+
+<p id="cn-m5-112">An administrator monitors systems and servers against 
+the defined baseline. If a user installs a third-party application 
+without the approval from the administrator, it is known as baseline 
+configuration deviation.</p>
+
+<h4 id="cn-m5-113"><b><i>Standard Naming Conventions</i></b></h4>
+
+<p id="cn-m5-114">An organization can follow a specific naming convention for users, groups, endpoints, servers, and network devices. For example:</p>
+
+<ul id="cn-m5-115">
+
+<li id="cn-m5-115"><b>Users</b>: It can be combination of first name and
+ first letter of surname. For example, Josh Fairbanks account can be 
+joshf@practicelabs.com<b>. </b>Alternatively, you can also have 
+josh.fairbanks@practicelabs.com. Some organizations may follow another 
+convention, which is the first letter of the first name and then the 
+surname, jfairbanks@practice-labs.com<b>.</b></li>
+
+<li id="cn-m5-116"><b>Groups</b>: Just like the usernames, there is no fixed convention. An organization may simply name the groups as <b>plabmarketing </b>or <b>plabsales</b>.</li>
+
+<li id="cn-m5-117"><b>Servers</b>: Servers are critical and need to be 
+clearly distinguished between the testing, development, and production 
+servers. For example, a testing webserver may be named as <b>plab-test-web</b>. In the similar manner, a production webserver can be named as <b>plab-prod-web</b>.</li>
+
+<li id="cn-m5-118"><b>Endpoints</b>: The endpoints may be named after 
+their groups, departments, or can even follow a specific series that is 
+defined for tracking assets. For example, <b>plab-mkt-josh </b>or <b>plab-ep-001</b>.</li>
+
+<li id="cn-m5-119"><b>Network Devices</b>: They can also be named using a specific convention, such as <b>plab-prod-wap1</b>.</li>
+
+</ul>
+
+<p id="cn-m5-120">There is no specific rule about which naming 
+convention an organization must follow. It depends on how you want to 
+track user and group accounts or any other devices on the network. 
+However, it is critical that one convention is used throughout for all 
+users. Similarly, one convention for groups. Another convention can be 
+used for servers, endpoints, and network devices.</p>
+
+<h4 id="cn-m5-121"><b><i>Internet Protocol (IP) Schema</i></b></h4>
+
+<p id="cn-m5-122">Network configuration management is a subset of the 
+configuration management process. In network configuration management, 
+you have to keep track of network devices, their configurations, and IP 
+schema that is being used. It is essential for an organization to use a 
+specific IP schema and manage it through the DHCP server.</p>
+
+<p id="cn-m5-123">It is good practice to define different IP addresses 
+for servers and network devices. These are assigned static IP addresses.
+ Endpoints are also assigned IP addresses from pools configured on the 
+DHCP server.</p>
+
+<p id="cn-m5-124">When dealing with a large network with thousands of 
+endpoints, servers, and network devices, it is critical for the 
+administrator to plan the entire IP schema carefully to avoid:</p>
+
+<ul id="cn-m5-125">
+
+<li id="cn-m5-125">Wastage of IP addresses</li>
+
+<li id="cn-m5-126">Duplicate subnets</li>
+
+<li id="cn-m5-127">Duplicate IP addresses</li>
+
+</ul>
+
+<h3 id="cn-m5-128"><b>Data Sovereignty</b></h3>
+
+<p id="cn-m5-129">Each country has their data sovereignty laws, and data
+ sovereignty refers to maintaining the data privacy. The country’s laws 
+specify where the information is being stored and how it is shared and 
+handled. For an organization to work in a global environment, multiple 
+offices in different countries, data sovereignty must be considered.</p>
+
+<p id="cn-m5-130">Let’s consider an example of a virtual machine in the 
+cloud environment. When moving a virtual machine from one geographic 
+location to another geographic location in a different country, you may 
+face the data sovereignty issues. Each country has their data privacy 
+laws. The data residing inside the virtual machine must comply with the 
+laws of the country where you are moving the virtual machine.</p>
+
+<h3 id="cn-m5-131"><b>Data Protection</b></h3>
+
+<p id="cn-m5-132">Data security is critical to protecting data. When you
+ refer to the data security, you are essentially referring to 
+confidentiality, integrity, and availability (CIA) of the data.</p>
+
+<ul id="cn-m5-133">
+
+<li id="cn-m5-133"><b>Confidentiality </b>- Protecting the data from falling into the wrong hands and providing access only on the need to know basis.</li>
+
+<li id="cn-m5-134"><b>Integrity </b>- Maintaining the accuracy and consistency of the data. It is about protecting the data from any kind of tampering.</li>
+
+<li id="cn-m5-135"><b>Availability </b>- Making the data available as 
+and when required. It is about ensuring that the data is available as 
+and when authorized personnel need to access it.</li>
+
+</ul>
+
+<p id="cn-m5-136">There are different methods that can be used to 
+protect the CIA of data within the organization. For example, you can 
+implement encryption to protect the confidentiality of the data. 
+Similarly, a method like replication or fault tolerance can provide 
+availability.</p>
+
+<p id="cn-m5-137">Let’s look at some of the methods for data protection.</p>
+
+<h4 id="cn-m5-138"><b><i>Data Loss Prevention (DLP)</i></b></h4>
+
+<p id="cn-m5-139">Data Loss Prevention (DLP) is a set of rules that are 
+defined to protect confidential and sensitive information. DLP, as an 
+application, contains several rules that help you define the type of 
+data that the users can share. For example, within an organization, when
+ DLP is implemented, it can scan the outbound Emails and track if any 
+kind of sensitive or confidential information is being shared.</p>
+
+<p id="cn-m5-140">You can have a rule defined that prevents sharing of 
+financial reports or sharing of credit card numbers in an Email or its 
+attachments. Without DLP, it is not possible to track such Emails with 
+confidential information. However, with DLP implementation in place, as 
+the administrator, you can define what type of information can the users
+ share.</p>
+
+<p id="cn-m5-141">When you share information with the users within an 
+organization, you can set permissions, such as forward or print. For 
+example, you send a confidential management decision to your colleague. 
+You, however, do not want the colleague to forward or print this Email. 
+Such restrictions can be defined in the form of permissions.</p>
+
+<p id="cn-m5-142">The key intent of DLP is to tackle insider threats and
+ also to meet the regulation-driven privacy requirements. DLP has three 
+key use cases:</p>
+
+<ul id="cn-m5-143">
+
+<li id="cn-m5-143"><b>Protect the personal information </b>- DLP is a 
+good tool if your organization deals with Personally Identifiable 
+Information (PII), Protected Health Information (PHI), or credit card 
+information. These types of information are critical and are considered 
+highly sensitive. With the help of DLP, this information can be 
+protected.</li>
+
+<li id="cn-m5-144"><b>Protect the Intellectual Property (IP) </b>- DLP 
+can help an organization protect its IP information. For example, if an 
+organization is into developing a unique product, it becomes critical 
+for the organization to protect the product-related information. DLP can
+ help in implementing protection.</li>
+
+<li id="cn-m5-145"><b>Bring Data Visibility </b>- DLP can help you track
+ the information that is being used by the users. For example, you can 
+track who is using which information and who is sharing or attempting to
+ share information.</li>
+
+</ul>
+
+<h4 id="cn-m5-146"><b><i>Masking</i></b></h4>
+
+<p id="cn-m5-147">Data masking hides data by concealing letters and 
+numbers with different characters. After data is concealed, it is masked
+ behind the letters and numbers. When an authorized user accesses the 
+concealed data, he or she is allowed to access it.</p>
+
+<h4 id="cn-m5-148"><b><i>Encryption</i></b></h4>
+
+<p id="cn-m5-149">In most cases, individuals or organizations store data
+ in cleartext format. In such a scenario, if a hacker gets hands on the 
+data, it is vulnerable. The hacker can delete, modify, or simply steal 
+the data. Data encryption software enhances data security by applying an
+ algorithm and converts normal data into encrypted data, which can only 
+be read by an authorized individual. If the data is stolen, depending on
+ the algorithm used, the encrypted data may just be useless to the 
+hacker. To an unauthorized person, the cipher data will be unreadable.</p>
+
+<p id="cn-m5-150">Data can be encrypted in storage and in transit.</p>
+
+<h4 id="cn-m5-151"><b><i>At rest / In transit / motion / In processing</i></b></h4>
+
+<p id="cn-m5-152">Data can be in different stages. There are three key stages of any data that you create or maintain. These stages are:</p>
+
+<ul id="cn-m5-153">
+
+<li id="cn-m5-153"><b>Data at rest</b>: This type of data is inactive 
+and is either in storage or archive. It could be data stored on a hard 
+drive, archived or backed up in tapes. For example, a folder with 
+several files that have been backed up in a tape drive.</li>
+
+<li id="cn-m5-154"><b>Data in transit/motion</b>: This is the data that 
+is travelling over a network from one device to another device, which 
+can either be an endpoint, a server, or even a network device. For 
+example, if you are sending a file from your system to another system.</li>
+
+<li id="cn-m5-155"><b>Data in use</b>: This type of data is being changed constantly. When you are working on a file on your system, the file is the data in use.</li>
+
+</ul>
+
+<p id="cn-m5-156">To protect data at any stage, you need to ensure that it is encrypted.</p>
+
+<h4 id="cn-m5-157"><b><i>Tokenization</i></b></h4>
+
+<p id="cn-m5-158">Tokenization is a method of replacing an actual string
+ of data with unique identification symbols or numbers. This way if 
+anyone gets hold of the string of text, they cannot decipher it. 
+Tokenization can be used to protect sensitive information, such as:</p>
+
+<ul id="cn-m5-159">
+
+<li id="cn-m5-159">Bank transactions</li>
+
+<li id="cn-m5-160">Medical records</li>
+
+<li id="cn-m5-161">Criminal records</li>
+
+<li id="cn-m5-162">Vehicle driver information</li>
+
+<li id="cn-m5-163">Loan applications</li>
+
+<li id="cn-m5-164">Stock trading</li>
+
+</ul>
+
+<h4 id="cn-m5-165"><b><i>Rights Management</i></b></h4>
+
+<p id="cn-m5-166">DRM or Digital Rights Management is mainly used with 
+music, e-books, and DVDs. With the use of DRM, the media is protected 
+from cracking, reproducing, or tampering. It is up to the creator of the
+ media to use DRM. Any violation of DRM can result a lawsuit under the 
+Digital Millennium Copyright Act (DMCA).</p>
+
+<h3 id="cn-m5-167"><b>Hardware Security Module (HSM)</b></h3>
+
+<p id="cn-m5-168">Most servers themselves need to perform encryption and
+ decryption. However, when a server does this, a certain amount of 
+resources are consumed. A Hardware Security Module (HSM) is a piece of 
+hardware that is designed to perform cryptographic functions. When you 
+connect an HSM to a server, rather than consuming the server resources, 
+HSM is used for encryption and decryption. Other than encryption and 
+decryption, HSM and can also be used for secure key generation and its 
+management.</p>
+
+<p id="cn-m5-169">Some of the key uses of HSM are:</p>
+
+<ul id="cn-m5-170">
+
+<li id="cn-m5-170">Encryption and decryption for Public Key Infrastructure (PKI)</li>
+
+<li id="cn-m5-171">ATMs</li>
+
+<li id="cn-m5-172">Banking applications</li>
+
+</ul>
+
+<h3 id="cn-m5-173"><b>Geographical Considerations</b></h3>
+
+<p id="cn-m5-174">Whenever you are establishing a datacenter for your 
+organization, you need to consider the geographical locations carefully.
+ For example, you would want to ensure that a datacenter is not set 
+where hurricanes or floods are common. You have to consider several 
+points before putting up a datacenter. Some of the key points are:</p>
+
+<ul id="cn-m5-175">
+
+<li id="cn-m5-175">Power availability</li>
+
+<li id="cn-m5-176">Internet service provider’s presence</li>
+
+<li id="cn-m5-177">Type of connectivity available</li>
+
+<li id="cn-m5-178">Fiber backbone availability</li>
+
+<li id="cn-m5-179">Locations of the customers</li>
+
+</ul>
+
+<p id="cn-m5-180">You would not put up a datacenter in a location where 
+power is a scarcity. It can cost thousands of dollars per month to run 
+your organization on power backup systems. Another example is that if 
+you are close to the customer, it gives them good throughput and 
+connectivity. Closure you are to the customers, less latency issues 
+there will be.</p>
+
+<h3 id="cn-m5-181"><b>Cloud Access Security Broker (CASB)</b></h3>
+
+<p id="cn-m5-182">In the simplest terms, a CASB is a mediator between 
+the cloud consumer and the cloud service provider. The key role of a 
+CASB is to bridge the security gaps from the cloud consumer to the cloud
+ service provider, who may be running Software as a Service (SaaS), 
+Platform as a Service (PaaS), or Infrastructure as a Service (IaaS). A 
+CASB can also extend the organizational security policies into the cloud
+ environment and enforce them on cloud components and services as they 
+are accessed. Users may be using various types of devices, such as 
+laptops or mobile. The same set of security policies, which are applied 
+in the on-premises infrastructure, can be extended to a cloud 
+infrastructure.</p>
+
+<p id="cn-m5-183">It is a known fact that organizations are quite 
+apprehensive about putting their data in the cloud. However, with CASB 
+implementation, there are enough security controls and methods that can 
+be applied to protect data. With a CASB, you can use a security control,
+ such as a Web Application Firewall (WAF) or secure web gateways. Other 
+security offerings that a CASB may offer:</p>
+
+<ul id="cn-m5-184">
+
+<li id="cn-m5-184">Malware prevention</li>
+
+<li id="cn-m5-185">Cloud governance</li>
+
+<li id="cn-m5-186">Risk assessment</li>
+
+<li id="cn-m5-187">Data Loss Prevention (DLP)</li>
+
+<li id="cn-m5-188">User and Entity Behavior Analytics (UBEA)</li>
+
+<li id="cn-m5-189">Threat prevention</li>
+
+<li id="cn-m5-190">Single sign-on</li>
+
+<li id="cn-m5-191">Data Encryption</li>
+
+<li id="cn-m5-192">Identity and Access Management (IAM)</li>
+
+</ul>
+
+<h3 id="cn-m5-193"><b>Response and Recovery Controls</b></h3>
+
+<p id="cn-m5-194">There are several types of controls that can be used 
+for security purposes. Security controls can be used to detect and 
+prevent attacks. They can also be used to respond to a certain incident.</p>
+
+<p id="cn-m5-195">When an incident such as an attack or breach occurs, 
+response and recovery controls are used. There are several tasks that 
+are included in the response and recovery controls. Some of the key 
+tasks are:</p>
+
+<ul id="cn-m5-196">
+
+<li id="cn-m5-196">Creating an incident response plan</li>
+
+<li id="cn-m5-197">Informing the required authorities when an incident occurs</li>
+
+<li id="cn-m5-198">Perform the root cause analysis</li>
+
+<li id="cn-m5-199">Implement new security controls or update the existing controls to prevent similar attacks</li>
+
+</ul>
+
+<h3 id="cn-m5-200"><b>Secure Sockets Layer (SSL)/Transport Layer Security (TLS) inspection</b></h3>
+
+<p id="cn-m5-201">A site that is secured with SSL or TLS, it displays a 
+padlock in front of the URL in the Web browser’s address bar. For 
+example, consider the following exhibit:</p>
+
+<p id="cn-m5-202"></p><figure><img class="cn-img" id="cn-image-m5-c-2" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-2.jpg" alt="Figure 1.1 Screenshot of Microsoft website: Showing the padlock on the www.microsoft.com website."><figcaption>Figure 1.1 Screenshot of Microsoft website: Showing the padlock on the www.microsoft.com website.</figcaption></figure><p></p>
+
+<p id="cn-m5-204">The SSL/TLS intends to ensure that there is a secure 
+and encrypted connection with the webserver. However, the concept of 
+SSL/TLS can work against the user. Consider an example in which a user 
+clicks on a phishing link to a protected website with the SSL/TLS 
+certificate. Since the information is encrypted, none of the security 
+controls can inspect traffic to determine whether it is legitimate or 
+illegitimate.</p>
+
+<p id="cn-m5-205">SSL/TLS inspection intends to verify the webpage 
+content for malicious content. After a user clicks on the phishing link 
+to an SSL/TLS-based website, SSL inspection first connects with the 
+webserver and verifies the contents of the webpage by decrypting it 
+first. After it ensures that there is no malicious content, it allows 
+the creation of the SSL/TLS connection to the webserver. The intent is 
+to safeguard the sensitive information that is sent to the webserver.</p>
+
+<h3 id="cn-m5-206"><b>Hashing</b></h3>
+
+<p id="cn-m5-207">Humans have fingerprints that cannot be altered or 
+changed. If you tamper with fingerprints, it does not match the original
+ one and cannot be considered a match with the original. Hashes are the 
+same, and are equatable to fingerprints for files. When you generate a 
+hash for a file and change file contents, the hash is no longer valid. 
+If you generate a hash, you get a different hash. Hashing is not a 
+reversible process, and once a hash is generated, it cannot be reversed.</p>
+
+<h3 id="cn-m5-208"><b>API Considerations</b></h3>
+
+<p id="cn-m5-209">Application Programming Interface (API) allows two 
+applications to connect or access an application's premium features, 
+which otherwise would be locked. There can be an issue with an insecure 
+application programming interface (API), which could lead to data 
+compromise when applications connect to the Internet and communicate 
+with other applications. With the API, the applications exchange data 
+with each other. To ensure data safety, you must ensure some of the key 
+guidelines when using APIs:</p>
+
+<ul id="cn-m5-210">
+
+<li id="cn-m5-210">Ensure that there is strong encryption applied</li>
+
+<li id="cn-m5-211">Ensure that there are proper authentication and authorization</li>
+
+<li id="cn-m5-212">Always use password hash</li>
+
+<li id="cn-m5-213">Ensure that HTTPS is used instead of HTTP</li>
+
+<li id="cn-m5-214">Ensure that timestamps are added to the requests being made via API</li>
+
+<li id="cn-m5-215">Ensure there is input validation on the data being added via API</li>
+
+<li id="cn-m5-216">Ensure that the principle of least privilege is adopted</li>
+
+</ul>
+
+<h3 id="cn-m5-217"><b>Site Resiliency</b></h3>
+
+<p id="cn-m5-218">Consider a network that does not have redundancy. 
+Malware attacks the network and brings it down. In such a scenario, it 
+would take a few days to get the network up and running. A single 
+network site does not have resiliency. To build site resiliency, you can
+ use different sites that help you keep your organization going without 
+significant downtime.</p>
+
+<p id="cn-m5-219">There are primarily three different types of sites 
+that can be used for resiliency. The first one is a hot site, which is a
+ replica of the original site. When a disaster strikes on an 
+organization's main or original site, it can always fall back on the hot
+ site, which has the complete infrastructure and data replicated.</p>
+
+<p id="cn-m5-220">It is possible to make the hot site operational in a 
+matter of a few hours. An organization has to put in much money to set 
+up the hot site to replace the original site.</p>
+
+<p id="cn-m5-221">The second type of site is a warm site. It is a 
+partial replica of the original site. An organization may take a few 
+days to get the site up and running. Unlike the hot site, the warm site 
+does not have complete data replicated and does not have a complete 
+infrastructure.</p>
+
+<p id="cn-m5-222">The third type of site is a cold site with the bare 
+minimum infrastructure, and it takes a longer time to make this site 
+operational. The organization may have to bring in servers and endpoints
+ and make necessary arrangements for Internet connectivity. This type of
+ site takes the longest time to be operational.</p>
+
+<h3 id="cn-m5-223"><b>Deception and Disruption</b></h3>
+
+<p id="cn-m5-224">To safeguard a network, you may have to create a 
+diversion for the attacker. The attacker is lured away from the actual 
+network to one or more systems set as open systems in the diversion. 
+This method is called deception. You want to deceive the attacker from 
+getting into the organization’s network.</p>
+
+<p id="cn-m5-225">An attacker gets into a network because he or she 
+wants to cause some disruption, either bringing down the network, taking
+ control of servers or simply stealing data.</p>
+
+<p id="cn-m5-226">To save a network from a disruption, you can use several methods, out of which using a honeypot is one such method.</p>
+
+<h4 id="cn-m5-227"><b><i>Honeypots, Honeyfiles, Honeynets</i></b></h4>
+
+<p id="cn-m5-228">Without getting to know what an attacker does, it is 
+difficult to understand their methodologies. Honeypots are installed to 
+understand the attacker’s methodologies. Along with this, a honeypot is a
+ server that has several data files, which are known as <b>honeyfiles</b>.
+ These files are real looking files with some data in them, but the data
+ does not hold any value. These files are meant to attract an attacker.</p>
+
+<p id="cn-m5-229">Honeypots look like real servers. An attacker cannot 
+tell the difference, whether it is a honeypot or a real server. The idea
+ is to create deception to make the attacker believe that it is a real 
+server.</p>
+
+<p id="cn-m5-230">Honeypots and honeynets attempt to divert attackers 
+from live networks. They allow security personnel to observe current 
+methodologies used in attacks and gather intelligence on these attacks.</p>
+
+<p id="cn-m5-231">In most cases, an organization installs one honeypot 
+server. However, it is also possible to put more than one honeypot 
+together and form a honeynet network. A honeynet mimics a real network 
+and contains several honeypots. A honeynet's purpose is the same as the 
+honeypot - save the real network and understand an attacker’s 
+methodologies.</p>
+
+<h4 id="cn-m5-232"><b><i>Fake Telemetry</i></b></h4>
+
+<p id="cn-m5-233">You would often deploy deception controls, such as a 
+honeypot or honeynet, on your network. Fake telemetry, which is also 
+known as deception telemetry, is the act of collecting information from 
+deception controls. Consider a scenario that you receive an alert from 
+the honeypot that is deployed on the network. After you receive the 
+alert, you know that someone is already inside the honeypot or is 
+attempting a connection. Based on the information received, you have to 
+decide on the next steps that need to be performed.</p>
+
+<p id="cn-m5-234">For example, an attacker may have already started to 
+explore data within the honeypot. You have to decide whether you want to
+ mitigate or simply monitor the attacker. The fake telemetry data can 
+help you with such decisions by putting in automated security controls, 
+which may divert an attacker from a real system to a decoy or honeypot. 
+You can even block IP addresses from where an attack originated in the 
+firewall.</p>
+
+<h4 id="cn-m5-235"><b><i>DNS Sinkhole</i></b></h4>
+
+<p id="cn-m5-236">A DNS sinkhole is also known as a blackhole DNS. It is
+ used to prevent access to the malicious URL or any URL that the network
+ administrator does not want you to access. Consider a scenario in which
+ you receive a phishing Email and accidentally click on the malicious 
+URL or link in it. You would take to a malicious website in the normal 
+scenario, and perhaps malware gets downloaded to your system.</p>
+
+<p id="cn-m5-237">DNS sinkhole protects such a malicious link or URL. 
+The network administrator can create a record in the DNS server and map 
+the malicious URL to a fake IP address, which can even display a custom 
+webpage showing the access to the URL is denied.</p>
+
+<p id="cn-m5-238">In an enterprise scenario, the firewall and the proxy 
+server are supposed to be the first defense line and protect from 
+malicious and unwanted URLs. However, if they fail to do the job, the 
+DNS sinkhole can be the second defense line.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="SetupaHoneypotwithPentbox">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-241"><b>Exercise 2 - Set up a Honeypot with Pentbox</b></h2>
+
+<p id="cn-m5-242">A honey pot is a decoy or a trap created by 
+organizations to attract hackers into a computer system. One of the main
+ objectives of using a honeypot is to monitor the hacker exploit the 
+system's vulnerabilities, then subsequently learn the weaknesses of the 
+system and apply the necessary security measures to strengthen it from 
+future attacks. Another objective is to study the hacker’s methodology. 
+The final objective is to divert the hacker’s attention from the main 
+network to the decoy system.</p>
+
+<p id="cn-m5-243">In this exercise, you will learn how to use a program 
+called Pentbox to create a basic honeypot system and test it using a 
+standard web browser to detect an intrusion.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m5-245">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m5-246">
+
+<li id="cn-m5-246">Download and Install Pentbox</li>
+
+<li id="cn-m5-247">Modify Proxy Server Exceptions</li>
+
+<li id="cn-m5-248">Test Honeypot Functionality</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m5-250">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m5-251">
+
+<li id="cn-m5-251"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m5-252"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m5-253"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m5-254"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<p id="cn-m5-255"><img class="cn-img" id="cn-image-m5-c-3" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-3.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m5-256"><b>Task 1 - Download and Install Pentbox</b></h3>
+
+<p id="cn-m5-257">Pentbox is an application that can be configured as a 
+honeypot. Penetration testers mainly use it as it has various tools 
+available. Pentbox is written in Ruby language and installed on various 
+operating systems, such as Windows, MacOS, and Linux. The only 
+pre-requisite for its installation is that it requires the Ruby package.
+ In this task, you will download and install a program called Pentbox 
+then set up a basic honeypot on the Kali Linux device.</p>
+
+<h4 id="cn-m5-258"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m5-259">Ensure that all the required devices are powered on. Connect to <b>PLABKALI</b>. In the <b>Enter your username </b>text box, type the following:</p>
+
+<pre id="cn-m5-260"><code>root
+
+</code></pre>
+
+<p id="cn-m5-261">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m5-263">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m5-264"></p><figure><img class="cn-img" id="cn-image-m5-c-4" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-4.jpg" alt="Figure 2.1 Screenshot of PLABKALI: Logging on to the Kali Linux."><figcaption>Figure 2.1 Screenshot of PLABKALI: Logging on to the Kali Linux.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-267"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m5-268">After a successful login, the desktop is displayed.</p>
+
+<p id="cn-m5-269"></p><figure><img class="cn-img" id="cn-image-m5-c-5" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-5.jpg" alt="Figure 2.2 Screenshot of PLABKALI: Displaying the desktop after the successful login."><figcaption>Figure 2.2 Screenshot of PLABKALI: Displaying the desktop after the successful login.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-271"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m5-272">In the menu bar, click <b>Terminal Emulator</b>.</p>
+
+<p id="cn-m5-273"></p><figure><img class="cn-img" id="cn-image-m5-c-6" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-6.jpg" alt="Figure 2.3 Screenshot of PLABKALI: Clicking the Terminal Emulator icon in the menu bar."><figcaption>Figure 2.3 Screenshot of PLABKALI: Clicking the Terminal Emulator icon in the menu bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-276"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m5-277">The terminal window is displayed. Type the following command:</p>
+
+<pre id="cn-m5-278"><code>wget http://downloads.sourceforge.net/project/pentbox18realised/pentbox-1.8.tar.gz
+
+</code></pre>
+
+<p id="cn-m5-279">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-280"></p><figure><img class="cn-img" id="cn-image-m5-c-7" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-7.jpg" alt="Figure 2.4 Screenshot of PLABKALI: The terminal window displays the command to download the Pentbox app typed-in."><figcaption>Figure 2.4 Screenshot of PLABKALI: The terminal window displays the command to download the Pentbox app typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-283"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m5-284">A confirmation will be displayed to indicate a successful download of Pentbox.</p>
+
+<p id="cn-m5-285"></p><figure><img class="cn-img" id="cn-image-m5-c-8" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-8.jpg" alt="Figure 2.5 Screenshot of PLABKALI: Output displaying the successful installation of Pentbox."><figcaption>Figure 2.5 Screenshot of PLABKALI: Output displaying the successful installation of Pentbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-287"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m5-288">On the next prompt, to uncompress the Pentbox files, type the following command:</p>
+
+<pre id="cn-m5-289"><code>tar -zxvf pentbox-1.8.tar.gz
+
+</code></pre>
+
+<p id="cn-m5-290">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-291"></p><figure><img class="cn-img" id="cn-image-m5-c-9" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-9.jpg" alt="Figure 2.6 Screenshot of PLABKALI: Typing the command to uncompress the Pentbox files."><figcaption>Figure 2.6 Screenshot of PLABKALI: Typing the command to uncompress the Pentbox files.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-293"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m5-294">The Pentbox files will be extracted in its folder.</p>
+
+<p id="cn-m5-295"></p><figure><img class="cn-img" id="cn-image-m5-c-10" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-10.jpg" alt="Figure 2.7 Screenshot of PLABKALI: Output displaying the uncompressed Pentbox files."><figcaption>Figure 2.7 Screenshot of PLABKALI: Output displaying the uncompressed Pentbox files.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-297"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m5-298">On the next prompt, type the following to change to the <b>Pentbox </b>folder:</p>
+
+<pre id="cn-m5-299"><code>cd pentbox-1.8/
+
+</code></pre>
+
+<p id="cn-m5-300">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-301"></p><figure><img class="cn-img" id="cn-image-m5-c-11" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-11.jpg" alt="Figure 2.8 Screenshot of PLABKALI: Typing the command to change the folder to Pentbox."><figcaption>Figure 2.8 Screenshot of PLABKALI: Typing the command to change the folder to Pentbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-303"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m5-304">On the next prompt, to run Pentbox, type the following:</p>
+
+<pre id="cn-m5-305"><code>./pentbox.rb
+
+</code></pre>
+
+<p id="cn-m5-306">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-307"></p><figure><img class="cn-img" id="cn-image-m5-c-12" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-12.jpg" alt="Figure 2.9 Screenshot of PLABKALI: Typing the command to access the required file in the Pentbox directory typed-in."><figcaption>Figure 2.9 Screenshot of PLABKALI: Typing the command to access the required file in the Pentbox directory typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-310"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m5-311">From the <b>Pentbox </b>menu, type:</p>
+
+<pre id="cn-m5-312"><code>2
+
+</code></pre>
+
+<p id="cn-m5-313">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-314"></p><figure><img class="cn-img" id="cn-image-m5-c-13" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-13.jpg" alt="Figure 2.10 Screenshot of PLABKALI: Terminal window is displayed listing the Pentbox menu and showing the required menu option typed-in."><figcaption>Figure
+ 2.10 Screenshot of PLABKALI: Terminal window is displayed listing the 
+Pentbox menu and showing the required menu option typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-317"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m5-318">On the next menu screen, type:</p>
+
+<pre id="cn-m5-319"><code>3
+
+</code></pre>
+
+<p id="cn-m5-320">Press <b>Enter</b>. </p><figure><img class="cn-img" id="cn-image-m5-c-14" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-14.jpg" alt="Figure 2.11 Screenshot of PLABKALI: The terminal window is displayed listing the Pentbox network tools menu and showing the required menu option typed-in."><figcaption>Figure
+ 2.11 Screenshot of PLABKALI: The terminal window is displayed listing 
+the Pentbox network tools menu and showing the required menu option 
+typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-322"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m5-323">On the run Pentbox screen, type:</p>
+
+<pre id="cn-m5-324"><code>1
+
+</code></pre>
+
+<p id="cn-m5-325">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-326"></p><figure><img class="cn-img" id="cn-image-m5-c-15" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-15.jpg" alt="Figure 2.12 Screenshot of PLABKALI: The terminal window is displayed listing the conditions to run the Pentbox app and showing the required menu option typed-in."><figcaption>Figure
+ 2.12 Screenshot of PLABKALI: The terminal window is displayed listing 
+the conditions to run the Pentbox app and showing the required menu 
+option typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-328"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m5-329">You will get a notification that the <b>HONEYPOT ACTIVATED ON PORT 80</b>.&nbsp;&nbsp;</p>
+
+<p id="cn-m5-330">Keep the terminal window running the Pentbox tool open.</p>
+
+<p id="cn-m5-331"></p><figure><img class="cn-img" id="cn-image-m5-c-16" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-16.jpg" alt="Figure 2.13 Screenshot of PLABKALI: The terminal window displays the auto-configuration of root privileges to run the Pentbox app."><figcaption>Figure
+ 2.13 Screenshot of PLABKALI: The terminal window displays the 
+auto-configuration of root privileges to run the Pentbox app.</figcaption></figure><p></p>
+
+<h3 id="cn-m5-333"><b>Task 2 - Modify Proxy Server Exceptions</b></h3>
+
+<p id="cn-m5-334">All devices in the Practice-Labs platform connect to a
+ proxy server. You need to add a proxy exception rule to ensure a 
+successful connection to a device found in the lab network. Without this
+ exception, you cannot connect and browse a web server in the local 
+environment.</p>
+
+<p id="cn-m5-335">In this task, you need to modify proxy server exceptions.</p>
+
+<h4 id="cn-m5-336"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m5-337">On <b>PLABKALI</b>, minimize the terminal window.</p>
+
+<p id="cn-m5-338"></p><figure><img class="cn-img" id="cn-image-m5-c-17" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-17.jpg" alt="Figure 2.14 Screenshot of PLABKALI: The terminal window displays the minimize icon at the top-right corner."><figcaption>Figure 2.14 Screenshot of PLABKALI: The terminal window displays the minimize icon at the top-right corner.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-340"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m5-341">Connect to <b>PLABWIN10</b>. In the <b>Type here to search </b>text box, type the following:</p>
+
+<pre id="cn-m5-342"><code>Internet Explorer
+
+</code></pre>
+
+<p id="cn-m5-343">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-344"></p><figure><img class="cn-img" id="cn-image-m5-c-18" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-18.jpg" alt="Figure 2.15 Screenshot of PLABWIN10: Selecting the Internet Explorer from the search results in PLABWIN10."><figcaption>Figure 2.15 Screenshot of PLABWIN10: Selecting the Internet Explorer from the search results in PLABWIN10.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-346"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m5-347">The <b>Internet Explorer </b>window is displayed. At the far-right corner of the toolbar, click the <b>cogwheel </b>icon and select <b>Internet Options</b>.</p>
+
+<p id="cn-m5-348"></p><figure><img class="cn-img" id="cn-image-m5-c-19" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-19.jpg" alt="Figure 2.16 Screenshot of PLABWIN10: Settings (cogwheel icon) &amp;gt; Internet options menu-options are displayed on the web browser window."><figcaption>Figure
+ 2.16 Screenshot of PLABWIN10: Settings (cogwheel icon) &gt; Internet 
+options menu-options are displayed on the web browser window.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-350"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m5-351">On the <b>Internet Options </b>dialog box, click the <b>Connections </b>tab.</p>
+
+<p id="cn-m5-352"></p><figure><img class="cn-img" id="cn-image-m5-c-20" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-20.jpg" alt="Figure 2.17 Screenshot of PLABWIN10: Showing the Connections tab highlighted in the Internet Options dialog box."><figcaption>Figure 2.17 Screenshot of PLABWIN10: Showing the Connections tab highlighted in the Internet Options dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-355"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m5-356">Under the <b>Connections </b>tab, next to <b>Local Area Network (LAN) settings</b>, click <b>LAN settings</b>.</p>
+
+<p id="cn-m5-357"></p><figure><img class="cn-img" id="cn-image-m5-c-21" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-21.jpg" alt="Figure 2.18 Screenshot of PLABWIN10: Connections tab on the Internet Options dialog box is displayed showing the LAN settings button selected."><figcaption>Figure
+ 2.18 Screenshot of PLABWIN10: Connections tab on the Internet Options 
+dialog box is displayed showing the LAN settings button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-361"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m5-362">On the <b>Local Area Network (LAN) Settings</b>, ensure that the <b>Bypass proxy server for local address </b>checkbox is selected.</p>
+
+<p id="cn-m5-363">Click <b>Advanced</b>.</p>
+
+<p id="cn-m5-364"></p><figure><img class="cn-img" id="cn-image-m5-c-22" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-22.jpg" alt="Figure 2.19 Screenshot of PLABWIN10: Local Area Network (LAN) Settings dialog box displays the required settings performed and the Advanced button selected."><figcaption>Figure
+ 2.19 Screenshot of PLABWIN10: Local Area Network (LAN) Settings dialog 
+box displays the required settings performed and the Advanced button 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-368"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m5-369">On the <b>Proxy Settings </b>dialog box, click on the provided text box and type:</p>
+
+<pre id="cn-m5-370"><code>;192.*
+
+</code></pre>
+
+<p id="cn-m5-372">Click <b>OK</b>.</p>
+
+<p id="cn-m5-373">Similarly, click <b>OK </b>on the <b>Local Area Network (LAN) Settings </b>and <b>Internet Options </b>dialog boxes.</p>
+
+<p id="cn-m5-374"></p><figure><img class="cn-img" id="cn-image-m5-c-23" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-23.jpg" alt="Figure 2.20 Screenshot of PLABWIN10: Proxy Settings dialog box is displayed showing the required settings performed and the OK button selected."><figcaption>Figure
+ 2.20 Screenshot of PLABWIN10: Proxy Settings dialog box is displayed 
+showing the required settings performed and the OK button selected.</figcaption></figure><p></p>
+
+<h3 id="cn-m5-378"><b>Task 3 - Test Honeypot Functionality</b></h3>
+
+<p id="cn-m5-379">After setting up the honeypot and creating the proxy 
+exceptions, you need to test the honeypot functionality. In a real-world
+ scenario, no one should be connecting to a honeypot. If someone is 
+connecting, it means that the person does not have honest intentions.</p>
+
+<p id="cn-m5-380">In this task, you will test the functionality of the Pentbox honeypot.</p>
+
+<h4 id="cn-m5-381"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m5-382">On <b>PLABWIN10</b>, the <b>Internet Explorer </b>window is open.</p>
+
+<p id="cn-m5-383">Click on the address bar and type:</p>
+
+<pre id="cn-m5-384"><code>192.168.0.4
+
+</code></pre>
+
+<p id="cn-m5-385">Press <b>Enter</b>.</p>
+
+<p id="cn-m5-386"></p><figure><img class="cn-img" id="cn-image-m5-c-24" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-24.jpg" alt="Figure 2.21 Screenshot of PLABWIN10: Entering the web server&amp;#39;s IP address in the address bar of Internet Explorer."><figcaption>Figure 2.21 Screenshot of PLABWIN10: Entering the web server's IP address in the address bar of Internet Explorer.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-389"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m5-390">An “<b>Access denied</b>” message appears on the web page.</p>
+
+<p id="cn-m5-391"></p><figure><img class="cn-img" id="cn-image-m5-c-25" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-25.jpg" alt="Figure 2.22 Screenshot of PLABWIN10: Access denied message is displayed when access is attempted for a restricted IP address."><figcaption>Figure 2.22 Screenshot of PLABWIN10: Access denied message is displayed when access is attempted for a restricted IP address.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-395"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m5-396">Connect to <b>PLABKALI </b>and restore the terminal window.</p>
+
+<p id="cn-m5-397">The terminal window displays <b>INTRUSION ATTEMPT DETECTED from 192.168.0.3:49870. </b></p>
+
+<p id="cn-m5-398"><b>Please note </b>that the port numbers may very.</p>
+
+<p id="cn-m5-399">Using the Pentbox application, you have learned how honeypot systems work.</p>
+
+<p id="cn-m5-400">The administrator of the system where the honeypot is 
+deployed can take the appropriate measures to strengthen a computer 
+system's defences.</p>
+
+<p id="cn-m5-401"></p><figure><img class="cn-img" id="cn-image-m5-c-26" src="EnterpriseNetworkSecurityConfigurationConcepts_files/image-m5-c-26.jpg" alt="Figure 2.23 Screenshot of PLABKALI: Terminal window is displayed listing details of the attempted intrusion."><figcaption>Figure 2.23 Screenshot of PLABKALI: Terminal window is displayed listing details of the attempted intrusion.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m5-406">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-407"><b>Review</b></h2>
+
+<p id="cn-m5-408">Well done, you have completed the <b>Enterprise Network Security Configuration Concepts </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">a57857f1-e15a-480a-ae1b-fb15db179c94</span>
+
+<span class="atom-code hidden">d8cd58dd-e672-4e00-8f6e-1f4c213ae2f1</span>
+
+<span class="atom-code hidden">7419a31a-6553-4c79-86e4-03bf7ea67539</span>
+
+<span class="atom-code hidden">2c3691d3-4ecd-4631-bdf2-cd4d655b777d</span>
+
+<span class="atom-code hidden">78fe2d09-8f04-474f-8d94-560df45f175e</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m5-418">You completed the following exercises:</p>
+
+<ul id="cn-m5-419">
+
+<li id="cn-m5-419">Exercise 1 - Importance of Security Concepts in an Enterprise Environment</li>
+
+<li id="cn-m5-420">Exercise 2 - Set up a Honeypot with Pentbox</li>
+
+</ul>
+
+<p id="cn-m5-421">You should now be able to:</p>
+
+<ul id="cn-m5-422">
+
+<li id="cn-m5-422">Download and Install Pentbox</li>
+
+<li id="cn-m5-423">Modify Proxy Server Extensions</li>
+
+<li id="cn-m5-424">Test Honeypot Functionality</li>
+
+</ul>
+
+<p id="cn-m5-425">You should now have further knowledge of:</p>
+
+<ul id="cn-m5-426">
+
+<li id="cn-m5-426">Configuration Management</li>
+
+<li id="cn-m5-427">Data Sovereignty</li>
+
+<li id="cn-m5-428">Data Protection</li>
+
+<li id="cn-m5-429">Hardware Security Module (HSM)</li>
+
+<li id="cn-m5-430">Geographical Considerations</li>
+
+<li id="cn-m5-431">Cloud Access Security Broker (CASB)</li>
+
+<li id="cn-m5-432">Response and Recovery Controls</li>
+
+<li id="cn-m5-433">Secure Sockets Layer (SSL)/Transport Layer Security (TLS) Inspection</li>
+
+<li id="cn-m5-434">Hashing</li>
+
+<li id="cn-m5-435">API Considerations</li>
+
+<li id="cn-m5-436">Site Resiliency</li>
+
+<li id="cn-m5-437">Deception and Disruption</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m5-441">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

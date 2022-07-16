@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="AuthenticationandAuthorizationSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="AuthenticationandAuthorizationSolutions_files/jquery.min.js"></script>
+    <script src="AuthenticationandAuthorizationSolutions_files/jspdf.js"></script>
+    <script src="AuthenticationandAuthorizationSolutions_files/from_html.js"></script>
+    <script src="AuthenticationandAuthorizationSolutions_files/addimage.js"></script>
+    <script src="AuthenticationandAuthorizationSolutions_files/filesaver.js"></script>
+    <script src="AuthenticationandAuthorizationSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="pppVIHsi4inLN4Hbq6kdPg4eAta9mhydHB1a5Dugc72co/WAVTa+r4wtDfWkVNkvyb0p3jICZ5iYvp/zo4A7Zg5974z9zgzQ+LdEadBwuac=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Authentication and Authorization Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Authentication Management</li><li>Exercise 2 - Authentication </li><li>Exercise 3 - Access Control Schemes</li><li>Exercise 4 - Manage File Permissions and Ownership on a Linux System</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m12-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Password keys</div>
+
+<div>Password vaults</div>
+
+<div>Trusted Platform Module (TPM)</div>
+
+<div>Hardware Security Module (HSM)</div>
+
+<div>Knowledge-based Authentication</div>
+
+<div>Extensible Authentication Protocol (EAP)</div>
+
+<div>Challenge Handshake Authentication Protocol (CHAP)</div>
+
+<div>Password Authentication Protocol (PAP)</div>
+
+<div>802.1X</div>
+
+<div>RADIUS</div>
+
+<div>Single Sign-on (SSO)</div>
+
+<div>Security Assertions Markup Language (SAML)</div>
+
+<div>Terminal Access Controller Access Control System Plus (TACACS+)</div>
+
+<div>OAuth</div>
+
+<div>OpenID</div>
+
+<div>Kerberos</div>
+
+<div>Attribute-based access control (ABAC)</div>
+
+<div>Role-based Access Control (RBAC)</div>
+
+<div>Rule-based Access Control (RBAC)</div>
+
+<div>Mandatory Access Control (MAC)</div>
+
+<div>Discretionary access control (DAC)</div>
+
+<div>Conditional access</div>
+
+<div>Privilege Access Management (PAM)</div>
+
+<div>Filesystem permissions</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m12-27">Welcome to the <b>Authentication &amp; Authorization Solutions </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-31">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m12-32">
+
+<li id="cn-m12-32">Exercise 1 - Authentication Management</li>
+
+<li id="cn-m12-33">Exercise 2 - Authentication</li>
+
+<li id="cn-m12-34">Exercise 3 - Access Control Schemes</li>
+
+<li id="cn-m12-35">Exercise 4 - Manage File Permissions and Ownership on a Linux System</li>
+
+</ul>
+
+<p id="cn-m12-36">After completing this module, you should be able to:</p>
+
+<ul id="cn-m12-37">
+
+<li id="cn-m12-37">Use a Password Vault</li>
+
+<li id="cn-m12-38">Verify the TPM Chip</li>
+
+<li id="cn-m12-39">Manage Access Permissions</li>
+
+<li id="cn-m12-40">Change Permissions With Numbers</li>
+
+<li id="cn-m12-41">Use Commands to Check Permissions (chmod, chown, chgrp)</li>
+
+<li id="cn-m12-42">Set Access Modes</li>
+
+<li id="cn-m12-43">Work with Immutable files</li>
+
+</ul>
+
+<p id="cn-m12-44">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m12-45">
+
+<li id="cn-m12-45">Password Keys</li>
+
+<li id="cn-m12-46">Hardware Security Module (HSM)</li>
+
+<li id="cn-m12-47">Trusted Platform Module (TPM)</li>
+
+<li id="cn-m12-48">TPM vs. HSM</li>
+
+<li id="cn-m12-49">Knowledge-based Authentication (KBA)</li>
+
+<li id="cn-m12-50">Extensible Authentication Protocol (EAP)</li>
+
+<li id="cn-m12-51">Challenge Handshake Authentication Protocol (CHAP)</li>
+
+<li id="cn-m12-52">Password Authentication Protocol (PAP)</li>
+
+<li id="cn-m12-53">802.1X</li>
+
+<li id="cn-m12-54">Remote Authentication Dial-In User Service (RADIUS)</li>
+
+<li id="cn-m12-55">Single Sign-On (SSO)</li>
+
+<li id="cn-m12-56">Security Assertions Markup Language (SAML)</li>
+
+<li id="cn-m12-57">Terminal Access Controller Access Control System Plus (TACACS+)</li>
+
+<li id="cn-m12-58">OAuth</li>
+
+<li id="cn-m12-59">OpenID</li>
+
+<li id="cn-m12-60">Kerberos</li>
+
+<li id="cn-m12-61">Attribute-based Access Control (ABAC)</li>
+
+<li id="cn-m12-62">Role-based Access Control (RBAC)</li>
+
+<li id="cn-m12-63">Rule-based Access Control (RBAC)</li>
+
+<li id="cn-m12-64">Mandatory Access Control (MAC)</li>
+
+<li id="cn-m12-65">Discretionary Access Control (DAC)</li>
+
+<li id="cn-m12-66">Conditional Access</li>
+
+<li id="cn-m12-67">Privilege Access Management (PAM)</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m12-69">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m12-70">3.8 Given a scenario, implement authentication and authorization solutions.</p>
+
+<ul id="cn-m12-71">
+
+<li id="cn-m12-71">Authentication Management</li>
+
+<li id="cn-m12-72">Authentication</li>
+
+<li id="cn-m12-73">Access Control Schemes</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m12-74"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m12-76">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m12-80">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m12-81">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-83"><b>Lab Topology</b></h2>
+
+<p id="cn-m12-84">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m12-85"><img class="cn-img" id="cn-image-m12-c-0" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m12-86">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m12-87">
+
+<li id="cn-m12-87"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m12-88"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m12-89"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m12-90"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m12-91">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="AuthenticationManagement">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-92"><b>Exercise 1 - Authentication Management</b></h2>
+
+<p id="cn-m12-93">Before a user is granted access to the local network's
+ resources or on a web application on the Internet, it is necessary to 
+authenticate the user. Authentication can be performed using a simple 
+username and password, or it could also be combined with other 
+authentication methods, such as a smart card or security key. The 
+authentication method is left to the organization that is running the 
+web application and, therefore, the organization needs to use the 
+appropriate authentication methods.</p>
+
+<p id="cn-m12-94">In this exercise, you will learn about authentication management.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-96">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m12-97">
+
+<li id="cn-m12-97">Use a Password Vault</li>
+
+<li id="cn-m12-98">Verify the TPM Chip</li>
+
+</ul>
+
+<p id="cn-m12-99">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m12-100">
+
+<li id="cn-m12-100">Password Keys</li>
+
+<li id="cn-m12-101">Hardware Security Module (HSM)</li>
+
+<li id="cn-m12-102">Trusted Platform Module (TPM)</li>
+
+<li id="cn-m12-103">TPM vs. HSM</li>
+
+<li id="cn-m12-104">Knowledge-based Authentication (KBA)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m12-106">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m12-107">
+
+<li id="cn-m12-107"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m12-108"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m12-109"><img class="cn-img" id="cn-image-m12-c-1" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m12-110"><b>Password Keys</b></h3>
+
+<p id="cn-m12-111">A user is typically authenticated in most scenarios 
+using their login credentials, which consists of a username and 
+password. As long as you are on a network, this is considered to be 
+secure. However, simply using usernames and passwords are no longer 
+considered secure when you are on the Internet. Another authentication 
+factor should be looped in, which means that you need to have another 
+security method and a username and password. This is two-factor 
+authentication, which, sometimes, is also known as multi-factor 
+authentication.</p>
+
+<p id="cn-m12-112">Another method, which is considered highly secure, is
+ using password keys, also known as security keys. These keys are 
+designed to secure login credentials. When you attempt to log on to a 
+website, such as gmail.com, you are prompted to insert the password or 
+the security key into a USB-A or USB-C slot. Most of these keys also 
+work with various mobile devices, such as Android, using Bluetooth and 
+Lighting for iPhone.</p>
+
+<p id="cn-m12-113">Some of the key examples are:</p>
+
+<ul id="cn-m12-114">
+
+<li id="cn-m12-114">Yubikey 5 NFC</li>
+
+<li id="cn-m12-115">OnlyKey</li>
+
+</ul>
+
+<h3 id="cn-m12-116"><b>Task 1 - Use a Password Vault</b></h3>
+
+<p id="cn-m12-117">Password vaults are tools or utilities that can store
+ various types of passwords. A user can have several credentials for web
+ applications, network services, and logins. A password vault can store 
+these credential details. Dashlane is a well-known password manager / 
+vault. It allows you to store your passwords and use them with a single 
+click on web applications and websites. There are browser extensions 
+that help you fulfill your login information on various websites to save
+ the user credentials.</p>
+
+<p id="cn-m12-118">In this task, you will install and learn to use the Dashlane web add-in as a password vault.</p>
+
+<h4 id="cn-m12-119"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-120">Ensure that the required devices are powered on.</p>
+
+<p id="cn-m12-121">Connect to <b>PLABWIN10 </b>and open <b>Microsoft Edge </b>from the <b>Taskbar</b>.</p>
+
+<p id="cn-m12-122"></p><figure><img class="cn-img" id="cn-image-m12-c-2" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-2.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Displaying opening Microsoft Edge from the Taskbar."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Displaying opening Microsoft Edge from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-124"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-125">In <b>Microsoft Edge, </b>browse to the following URL:</p>
+
+<pre id="cn-m12-126"><code>https://www.dashlane.com
+
+</code></pre>
+
+<p id="cn-m12-127"></p><figure><img class="cn-img" id="cn-image-m12-c-3" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-3.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: Displaying browsing to the specified website."><figcaption>Figure 1.2 Screenshot of PLABWIN10: Displaying browsing to the specified website.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-129"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-130">On the <b>Dashlane </b>website, select <b>For Individuals</b>.</p>
+
+<p id="cn-m12-131"></p><figure><img class="cn-img" id="cn-image-m12-c-4" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-4.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Displaying selecting For individuals on the Dashlane website."><figcaption>Figure 1.3 Screenshot of PLABWIN10: Displaying selecting For individuals on the Dashlane website.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-133"><b><i>Note: </i></b><i>This is a live website and may change without notice. </i></span>
+
+<h4 id="cn-m12-134"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-135">On the <b>Microsoft Edge Add-ons </b>page, click the <b>Get </b>button.</p>
+
+<p id="cn-m12-136"></p><figure><img class="cn-img" id="cn-image-m12-c-5" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-5.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Displaying selecting Get in Microsoft Edge Add-ons page."><figcaption>Figure 1.4 Screenshot of PLABWIN10: Displaying selecting Get in Microsoft Edge Add-ons page.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-138"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-139">Click <b>Add extension </b>on the <b>Add “Dashlane - Password Manager” to Microsoft Edge? </b>pop-up window.</p>
+
+<p id="cn-m12-140"></p><figure><img class="cn-img" id="cn-image-m12-c-6" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-6.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: Displaying selecting Add extension on the Add “Dashlane - Password Manager” to Microsoft Edge? pop-up window."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: Displaying selecting Add extension on the 
+Add “Dashlane - Password Manager” to Microsoft Edge? pop-up window.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-142"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-143">On the <b>Dashlane </b>web page, enter your personal email address for the <b>Email </b>field.</p>
+
+<p id="cn-m12-144"></p><figure><img class="cn-img" id="cn-image-m12-c-7" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-7.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: Displaying entering the required email in the Dashlane webpage."><figcaption>Figure 1.6 Screenshot of PLABWIN10: Displaying entering the required email in the Dashlane webpage.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-146"><b><i>Note: </i></b><i>In this 
+task, it will require that a personal email address needs to be entered.
+ For the purpose of the task, a new personal email address can be 
+created at www.outlook.com.</i></span>
+
+<h4 id="cn-m12-147"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m12-148">On the <b>Create a strong and memorable Master Password </b>page, enter the following:</p>
+
+<pre id="cn-m12-149"><code><b>PASSWORD</b>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cn-password">Pr</span><span class="cn-password">@</span><span class="cn-password">cticeL</span><span class="cn-password">@</span><span class="cn-password">bs77</span>
+
+<b>RE-ENTER YOUR MASTER PASSWORD</b>: &nbsp;&nbsp;<span class="cn-password">Pr</span><span class="cn-password">@</span><span class="cn-password">cticeL</span><span class="cn-password">@</span><span class="cn-password">bs77</span>
+
+</code></pre>
+
+<p id="cn-m12-151">Enable the <b>I agree to Dashlane’s Terms of Service and Privacy Policy </b>checkbox and click <b>Create My Account</b>.</p>
+
+<p id="cn-m12-152"></p><figure><img class="cn-img" id="cn-image-m12-c-8" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-8.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Displaying entering the required password and clicking Create my Account."><figcaption>Figure 1.7 Screenshot of PLABWIN10: Displaying entering the required password and clicking Create my Account.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-154"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m12-155">On the <b>Welcome! Let’s get you going </b>page click <b>OK, got it.</b></p>
+
+<p id="cn-m12-156">Select <b>Add your first password as you browse</b>.</p>
+
+<p id="cn-m12-157"></p><figure><img class="cn-img" id="cn-image-m12-c-9" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-9.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: Displaying selecting Add your first password as you browse in the Microsoft Edge browser."><figcaption>Figure 1.8 Screenshot of PLABWIN10: Displaying selecting Add your first password as you browse in the Microsoft Edge browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-159"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m12-160">On the <b>Pick a website you use - then we’ll help you save it </b>select <b>Microsoft</b>.</p>
+
+<p id="cn-m12-161"></p><figure><img class="cn-img" id="cn-image-m12-c-10" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-10.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: Displaying selecting Microsoft on the Pick a website you use - then we’ll help you save it page in the web browser."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: Displaying selecting Microsoft on the Pick
+ a website you use - then we’ll help you save it page in the web 
+browser.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-163"><b><i>Note: </i></b><i>If a 
+different personal email address was used to create the Dashlane log-in,
+ please use the correct provider to continue with the steps.</i></span>
+
+<h4 id="cn-m12-164"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m12-165">On the <b>Got it. Here’s the plan: </b>page, select <b>Open selected </b>website.</p>
+
+<p id="cn-m12-166"></p><figure><img class="cn-img" id="cn-image-m12-c-11" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-11.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: Displaying selecting Open selected website in the Got it Here’s the plan page."><figcaption>Figure 1.10 Screenshot of PLABWIN10: Displaying selecting Open selected website in the Got it Here’s the plan page.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-168"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m12-169">The page redirects to <b>https:://outlook.live.com</b>.</p>
+
+<p id="cn-m12-170">Click <b>Sign-in</b>.</p>
+
+<p id="cn-m12-171"></p><figure><img class="cn-img" id="cn-image-m12-c-12" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-12.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: Displaying clicking Sign in on the Outlook webpage."><figcaption>Figure 1.11 Screenshot of PLABWIN10: Displaying clicking Sign in on the Outlook webpage.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-173"><b><i>Note: </i></b><i>If a different email provider were used, the screenshot would differ, but the steps will be the same.</i></span>
+
+<h4 id="cn-m12-174"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m12-175">On the <b>Sign-in </b>page, enter the credentials for the outlook.com account that was created or your personal email address and click <b>Next</b>.</p>
+
+<p id="cn-m12-176"></p><figure><img class="cn-img" id="cn-image-m12-c-13" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-13.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: Displaying clicking next on the Sign in page."><figcaption>Figure 1.12 Screenshot of PLABWIN10: Displaying clicking next on the Sign in page.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-178"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m12-179">On the <b>Enter password </b>page, enter the password for the e-mail account and click <b>Sign in</b>.</p>
+
+<p id="cn-m12-180"></p><figure><img class="cn-img" id="cn-image-m12-c-14" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-14.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: Displaying entering the password for the e-mail account and clicking Sign in."><figcaption>Figure 1.13 Screenshot of PLABWIN10: Displaying entering the password for the e-mail account and clicking Sign in.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-182"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m12-183">Click <b>Save </b>on the <b>Save this account in Dashlane? </b>pop-up window.</p>
+
+<p id="cn-m12-184"></p><figure><img class="cn-img" id="cn-image-m12-c-15" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-15.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: Displaying clicking Save on the Save this account in Dashlane pop-up window."><figcaption>Figure 1.14 Screenshot of PLABWIN10: Displaying clicking Save on the Save this account in Dashlane pop-up window.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-186"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m12-187">Click <b>See it in Dashlane </b>on the pop-out window.</p>
+
+<p id="cn-m12-188"></p><figure><img class="cn-img" id="cn-image-m12-c-16" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-16.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: Displaying clicking See it in Dashlane on the pop-up window."><figcaption>Figure 1.15 Screenshot of PLABWIN10: Displaying clicking See it in Dashlane on the pop-up window.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-190"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m12-191">On the <b>Dashlane </b>webpage, click <b>Next </b>on the pop-out window.</p>
+
+<p id="cn-m12-192"></p><figure><img class="cn-img" id="cn-image-m12-c-17" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-17.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: Displaying clicking Next on the pop-out window."><figcaption>Figure 1.16 Screenshot of PLABWIN10: Displaying clicking Next on the pop-out window.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-194"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m12-195">On the <b>Dashlane </b>webpage, click the recently added account.</p>
+
+<p id="cn-m12-196"></p><figure><img class="cn-img" id="cn-image-m12-c-18" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-18.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: Displaying selecting the newly added account on the Dashlane web page."><figcaption>Figure 1.17 Screenshot of PLABWIN10: Displaying selecting the newly added account on the Dashlane web page.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-198"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m12-199">Click <b>Close </b>in the fly-out window.</p>
+
+<p id="cn-m12-200"></p><figure><img class="cn-img" id="cn-image-m12-c-19" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-19.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: Displaying closing the Dashlane fly-out window."><figcaption>Figure 1.18 Screenshot of PLABWIN10: Displaying closing the Dashlane fly-out window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-202"><b><i>Note: </i></b><i>The 
+password for the specific email provider is displayed. A recommendation 
+for the password is given. The Dashlane web extension will safely store 
+the password, thus protecting the account. Different providers' 
+credentials can be stored in this matter to protect the integrity of the
+ account.</i></span>
+
+<h3 id="cn-m12-206"><b>Hardware Security Module (HSM)</b></h3>
+
+<p id="cn-m12-207">A&nbsp;hardware security module&nbsp;(HSM) is a 
+security device that is used for safeguarding and managing digital keys,
+ which are used for strong authentication. HSM can be in the form of a 
+plug-in card or an external device.</p>
+
+<p id="cn-m12-208">The following are the functions of a HSM:</p>
+
+<ul id="cn-m12-209">
+
+<li id="cn-m12-209">Performing encryption and decryption</li>
+
+<li id="cn-m12-210">Manage secure key generation</li>
+
+<li id="cn-m12-211">Perform secure key storage</li>
+
+<li id="cn-m12-212">Manage Transparent Data Encryption (TDE) keys for databases</li>
+
+</ul>
+
+<p id="cn-m12-213">The following cryptographic algorithms are supported with microSD HSM:</p>
+
+<ul id="cn-m12-214">
+
+<li id="cn-m12-214">AES</li>
+
+<li id="cn-m12-215">RSA</li>
+
+<li id="cn-m12-216">SHA-1</li>
+
+<li id="cn-m12-217">Triple DES</li>
+
+<li id="cn-m12-218">Diffie-Hellman Key Exchange</li>
+
+</ul>
+
+<p id="cn-m12-219">Other than these cryptographic algorithms, SHA-256 is also supported by HSM.</p>
+
+<p id="cn-m12-220">Let’s take the example of a webserver that you have. 
+The server is configured to run a website with a certificate. You notice
+ that after the certificate configuration, the server has slowed down. 
+You want the web server to give good performance while using the 
+certificate, and at the same time, you also want to protect its private 
+key.</p>
+
+<p id="cn-m12-221">HSM can meet both the requirements mentioned in the 
+scenario. HSM increases the performance of the Web server by offloading 
+the cryptographic functions. Moreover, HSM stores the private key. There
+ are different varieties available, such as USB and PCIe cards.</p>
+
+<h4 id="cn-m12-222"><b><i>HSM Functions</i></b></h4>
+
+<p id="cn-m12-223">HSM can perform various functions, such as:</p>
+
+<ul id="cn-m12-224">
+
+<li id="cn-m12-224">encryption keys management</li>
+
+<li id="cn-m12-225">key exchange</li>
+
+<li id="cn-m12-226">encryption and decryption</li>
+
+<li id="cn-m12-227">cryptographic functions offloading from servers</li>
+
+</ul>
+
+<p id="cn-m12-228">HSM can be embedded in different types of hardware. Some of the key examples are:</p>
+
+<ul id="cn-m12-229">
+
+<li id="cn-m12-229">FIPS 140-3 compliant rack-mount chassis</li>
+
+<li id="cn-m12-230">PCI-E cards</li>
+
+<li id="cn-m12-231">USB drives</li>
+
+<li id="cn-m12-232">MicroSD cards</li>
+
+</ul>
+
+<h4 id="cn-m12-233"><b><i>Types of HSM</i></b></h4>
+
+<p id="cn-m12-234">There are typically three types of HSM:</p>
+
+<ul id="cn-m12-235">
+
+<li id="cn-m12-235"><b>Hardware</b>: are available in the form of a device, such as PCI-E cards or MicroSD cards</li>
+
+<li id="cn-m12-236"><b>Virtual</b>: is known as the virtual key manager,
+ which can be downloaded from a software vendor’s Website. They can be 
+FIPS 140-2 compliant but not validated as there is no physical hardware 
+involved.</li>
+
+<li id="cn-m12-237"><b>Hosted</b>: are available in the cloud 
+environment. They perform the same functions to generate and protect 
+keys. It provides the same level of security in the cloud environment as
+ a hardware HSM in the local environment.</li>
+
+</ul>
+
+<h3 id="cn-m12-238"><b>Trusted Platform Module (TPM)</b></h3>
+
+<p id="cn-m12-239">Motherboards of the modern systems include a chip 
+that is known as a Trusted Platform Module (TPM), which provides a 
+hardware root of trust for secure computing. When a system has TPM, you 
+can configure it by accessing BIOS within the system. A TPM can perform 
+various functions, such as:</p>
+
+<ul id="cn-m12-240">
+
+<li id="cn-m12-240">Storage of encryption keys</li>
+
+<li id="cn-m12-241">Management of encryption keys</li>
+
+<li id="cn-m12-242">Perform encryption and decryption process</li>
+
+<li id="cn-m12-243">Storage of certificates</li>
+
+<li id="cn-m12-244">Storage of passwords</li>
+
+</ul>
+
+<p id="cn-m12-245">You can configure TPM to perform full disk encryption
+ (FDE). However, for TPM to perform FDE, you need to enable TPM, after 
+which it becomes the root of trust. Once it becomes the root of trust, 
+the hard drive is locked with the encryption keys, which means that it 
+cannot be simply taken out and plugged into another system for data 
+retrieval. When you enable TPM in a system, it performs a complete 
+system check and verifies the systems’ integrity. Further, it ensures 
+the integrity of the entire boot process within a system.</p>
+
+<p id="cn-m12-246">The concept of the root of trust is formed by the use
+ of TPM, which ensures that the hardware cannot be either tampered with 
+or replicated. For example, someone cannot just replicate a particular 
+motherboard to break the encryption applied through TPM.</p>
+
+<p id="cn-m12-247">It is important to note that TPM must be configured 
+without which it is of no use. You must configure and lock TPM to ensure
+ that its configuration, including the access policies, cannot be 
+altered. With the locking method, the configured security profiles 
+cannot be changed, leading to a high security level for the system.</p>
+
+<p id="cn-m12-248"></p><figure><img class="cn-img" id="cn-image-m12-c-20" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-20.jpg" alt="Figure 1.27 Diagram showing the Chain of Trust. It shows a Hardware Security Device &amp;gt; SecureBoot Code &amp;gt; Integrity Check (Public Keys) &amp;gt; Validating System Images (Kern3l and Libraries &amp;gt; Authorizing Applications."><figcaption>Figure
+ 1.27 Diagram showing the Chain of Trust. It shows a Hardware Security 
+Device &gt; SecureBoot Code &gt; Integrity Check (Public Keys) &gt; 
+Validating System Images (Kern3l and Libraries &gt; Authorizing 
+Applications.</figcaption></figure><p></p>
+
+<p id="cn-m12-250">Using the TPM, SecureBoot ensures only the trusted 
+operating system bootloaders can load in the system. For Secureboot to 
+work, you need to have two components in the system:</p>
+
+<ul id="cn-m12-251">
+
+<li id="cn-m12-251">UEFI firmware</li>
+
+<li id="cn-m12-252">TPM</li>
+
+</ul>
+
+<h4 id="cn-m12-253"><b><i>Functioning of TPM</i></b></h4>
+
+<p id="cn-m12-254">A TPM works in two different ways:</p>
+
+<ul id="cn-m12-255">
+
+<li id="cn-m12-255"><b>Pre-boot</b>: Secures the boot process to ensure its integrity by scanning the BIOS for any unauthorized changes</li>
+
+<li id="cn-m12-256"><b>Post-boot</b>: Can be configured as the root of trust for authentication and enable encryption for data protection</li>
+
+</ul>
+
+<p id="cn-m12-257">TPM becomes handy when you are looking for 
+unbreakable security. This is because TPM is a hardware-based security 
+solution that cannot be altered or tampered with. In a comparison of 
+software-level security, TPM can provide protection from hackers and any
+ kind of malicious software, such as malware.</p>
+
+<h4 id="cn-m12-258"><b><i>Typical Use Cases of TPM</i></b></h4>
+
+<p id="cn-m12-259">Even though several tools can be used with TPM, 
+BitLocker is a good example in the Windows scenario. If you are using 
+the latest Windows version, such as Windows 10, you would have used 
+BitLocker to encrypt the hard drive. BitLocker can work with TPM as 
+well, and half of the encryption key of BitLocker is stored in TPM, and 
+the other half is stored on the hard drive. When you boot the system, 
+TPM runs a series of tests to ensure secure boot up. However, if you 
+move the hard drive to another system with the BitLocker enabled, then 
+the hard drive is locked. For the system to boot properly, it needs to 
+access both parts of the hard drive.</p>
+
+<h3 id="cn-m12-260"><b>Task 2 - Verify the TPM Chip</b></h3>
+
+<p id="cn-m12-261">Microsoft provides a method to check if your system has a TPM chip on the motherboard. You need to simply run the <b>tpm.msc </b>tool
+ on the Windows system, which could be running Windows 7, 8, 8.1 or 10. 
+If there is a TPM chip, then the console window states that it is ready 
+for use.</p>
+
+<p id="cn-m12-262"></p><figure><img class="cn-img" id="cn-image-m12-c-21" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-21.jpg" alt="Figure 1.28 Screenshot of the TPM Management window dashboard."><figcaption>Figure 1.28 Screenshot of the TPM Management window dashboard.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-264"><b><i>Note: </i></b><i>Since you 
+are using a virtual machine, you will not see this message. The lab 
+intends to show you the steps. You can verify this on your systems.</i></span>
+
+<p id="cn-m12-265">There can be a possibility that your system has the 
+TPM chip, but it is disabled in BIOS. In that case, the TPM chip will 
+not appear in Windows. To enable the TPM chip, you need to get into the 
+BIOS, for which the process may differ from system to system. Once you 
+get into the BIOS (or UEFI), you can enable the TPM chip.</p>
+
+<p id="cn-m12-266">To verify the TPM Chip on a Windows 10 system, perform the following steps:</p>
+
+<h4 id="cn-m12-267"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-268">Ensure that the required devices are powered on. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m12-269">In the <b>Type here to search </b>text box, enter the following</p>
+
+<pre id="cn-m12-270"><code>tpm.msc
+
+</code></pre>
+
+<p id="cn-m12-271">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-272"></p><figure><img class="cn-img" id="cn-image-m12-c-22" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-22.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: Searching for tpm.msc and then selecting it from the search results."><figcaption>Figure 1.29 Screenshot of PLABWIN10: Searching for tpm.msc and then selecting it from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-275"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-276">When you run the <b>tpm.msc </b>tool, you get the <b>Trusted Platform Module </b>console. Notice that this virtual machine does not have TPM.</p>
+
+<p id="cn-m12-277"></p><figure><img class="cn-img" id="cn-image-m12-c-23" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-23.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: Showing the unavailability of the TPM in the Trusted Platform Module console."><figcaption>Figure 1.30 Screenshot of PLABWIN10: Showing the unavailability of the TPM in the Trusted Platform Module console.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m12-281">Close the <b>Trusted Platform Module </b>console.</p>
+
+<h3 id="cn-m12-283"><b>TPM vs. HSM</b></h3>
+
+<p id="cn-m12-284">There can be confusion about the functioning of TPM 
+and HSM. However, both of them have quite a few differences. Here are 
+some of the key differences:</p>
+
+<ul id="cn-m12-285">
+
+<li id="cn-m12-285"><b>Hardware: </b>A TPM chip is embedded on a motherboard in most cases. HSM, on the other hand, is typically removable or are external devices.</li>
+
+<li id="cn-m12-286"><b>Uses: </b>A TPM is used for full disk encryption,
+ such as used with BitLocker for full disk encryption. On the other 
+hand, HSM is mainly used for mission-critical servers, which could be 
+SSL accelerators or certificate authorities.</li>
+
+<li id="cn-m12-287"><b>Authentication: </b>A TPM is used for platform authentication. On the other hand, HSM is mainly used for authentication of authorized applications.</li>
+
+<li id="cn-m12-288"><b>Encryption Keys: </b>A TPM stores the RSA key 
+within its chip. It can also generate other keys. On the other hand, HSM
+ also stores the RSA keys, but to be used in asymmetric encryption. 
+Similar to a TPM, it can generate encryption keys.</li>
+
+</ul>
+
+<h3 id="cn-m12-289"><b>Knowledge-based Authentication (KBA)</b></h3>
+
+<p id="cn-m12-290">You must have come across a situation where you had 
+to reset the password, but you were prompted to answer a secret question
+ on a website. At the time of registration, such websites ask you to 
+select one or two questions and provide answers. The intent is to use 
+the answers for recovery of the password in case you forget it. Other 
+than just the recovery of passwords, some websites may also use KBA at 
+the login time. This is part of the multi-factor authentication.</p>
+
+<p id="cn-m12-291">KBA can be of two types. The first type is static, in
+ which the questions and answers are asked at the time of registration 
+and stored by the website. These questions are static, and the user has 
+to choose from the given list of questions at the time of registration 
+and provide answers.</p>
+
+<p id="cn-m12-292">The next type is dynamic. These questions are 
+dynamically generated based on the user profile and the user’s public 
+information. It is assumed that the user would know the answers to these
+ questions. The questions are not pre-determined in this case.</p>
+< <a href="https://github.com/SeanOhAileasa" id="Authentication">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-294"><b>Exercise 2 - Authentication </b></h2>
+
+<p id="cn-m12-295">To authenticate a user, an authentication protocol is
+ used. Each authentication protocol has a specific set of 
+characteristics and capabilities. It is quite possible that an 
+authentication protocol has several vulnerabilities, such as sending 
+user credentials in cleartext, or it is still known to be the strongest 
+protocol, which has not been tampered with as of now.</p>
+
+<p id="cn-m12-296">Protocols will differ depending on the type of 
+network you are using. When you are using a wireless network, you can 
+utilize a specific set of authentication protocols. Some protocols, such
+ as 802.1x, can be utilized both on the LAN and Wireless network.</p>
+
+<p id="cn-m12-297">In this exercise, you will learn about various authentication protocols.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-299">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m12-300">
+
+<li id="cn-m12-300">EAP</li>
+
+<li id="cn-m12-301">Challenge Handshake Authentication Protocol (CHAP)</li>
+
+<li id="cn-m12-302">Password Authentication Protocol (PAP)</li>
+
+<li id="cn-m12-303">802.1X</li>
+
+<li id="cn-m12-304">RADIUS</li>
+
+<li id="cn-m12-305">Single sign-on (SSO)</li>
+
+<li id="cn-m12-306">Security Assertions Markup Language (SAML)</li>
+
+<li id="cn-m12-307">Terminal Access Controller Access Control System Plus (TACACS+)</li>
+
+<li id="cn-m12-308">OAuth</li>
+
+<li id="cn-m12-309">OpenID</li>
+
+<li id="cn-m12-310">Kerberos</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m12-312">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m12-313"><img class="cn-img" id="cn-image-m12-c-24" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-24.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m12-315"><b>Extensible Authentication Protocol (EAP)</b></h3>
+
+<p id="cn-m12-316">Extensible Authentication Protocol (EAP) is an 
+authentication protocol that is used with wireless networks. The WPA and
+ WPA2 standards have adopted EAP with a myriad of EAP types as official 
+authentication mechanisms.  One of these is the EAP Transport Layer 
+Security (EAP-TLS) can also use the Transport Layer Security (TLS) 
+protocol.</p>
+
+<p id="cn-m12-317">EAP-TLS uses PKI and is known to be the most secure wireless protocol.</p>
+
+<h3 id="cn-m12-318"><b>Challenge Handshake Authentication Protocol (CHAP)</b></h3>
+
+<p id="cn-m12-319">CHAP is an authentication protocol. It performs a 
+3-way handshake when verifying a peer or client on the network. The CHAP
+ server sends a challenge to the client, which then encrypts the 
+challenge with the password and sends it to the server. It was mainly 
+used to prevent replay attacks.</p>
+
+<p id="cn-m12-320">The CHAP server sends a challenge to the client, 
+which then encrypts the challenge with the password and sends it to the 
+server. MSCHAP is used only with Microsoft devices and is considered 
+more secure than CHAP. MSCHAP v2 provides stronger encryption than 
+MSCHAP. CHAP does not send the credentials.</p>
+
+<h3 id="cn-m12-321"><b>Password Authentication Protocol (PAP)</b></h3>
+
+<p id="cn-m12-322">The Password Authentication Protocol (PAP), as the 
+name suggests, is a password-based authentication protocol. It is mainly
+ used by the Point-to-Point (PPP) links to authenticate users. It is 
+important to note that PAP sends passwords in cleartext. Due to this 
+reason, it is prone to a sniffer attack.</p>
+
+<p id="cn-m12-323">Even though almost all operating systems support PAP,
+ it is used as the last resort if the remote server to which link needs 
+to be established does not support any other protocols, such as CHAP and
+ EAP.</p>
+
+<h3 id="cn-m12-324"><b>802.1X</b></h3>
+
+<p id="cn-m12-325">802.1X is a port-based authentication method. It 
+requires devices to be authenticated before they can connect to the LAN.
+ It is used to authenticate devices that need to connect to a network, a
+ wireless network or even Ethernet.</p>
+
+<p id="cn-m12-326">In 802.1X authentication, there are three candidates or parties that are involved. These are mainly:</p>
+
+<ul id="cn-m12-327">
+
+<li id="cn-m12-327"><b>Client</b>: is the device that needs to access 
+the network and its resources. The client is responsible for sharing the
+ credentials based on which the authentication takes place.</li>
+
+<li id="cn-m12-328"><b>Authenticator</b>: is the entity that creates the
+ connection between the client and the authentication server. This can 
+be a switch in case of a network or a Wireless Access Point (WAP) in a 
+wireless network. Only after the authentication server approves the 
+request and authorizes the client will it only allow the client to 
+access the requested resources. It does not verify the client's 
+credentials. Rather it only acts as a postman to forward the credentials
+ to the authentication server.</li>
+
+<li id="cn-m12-329"><b>Authentication Server</b>: is the entity that is 
+responsible for authenticating the request. Once the request is 
+received, it tells the authenticator whether the access is either 
+allowed or denied.</li>
+
+</ul>
+
+<p id="cn-m12-330"><b>Remote Authentication Dial-In User Service (RADIUS) </b></p>
+
+<p id="cn-m12-331">Remote Authentication Dial-In User Service (RADIUS) 
+is a networking protocol that provides centralized Authentication, 
+Authorization, and Accounting (AAA). It can perform AAA for users that 
+connect to a network to use various services. Network access servers, 
+the gateways that control access to a network, usually contain a RADIUS 
+client component that communicates with the RADIUS server. Users must be
+ securely and centrally authenticated before they can access network 
+resources. RADIUS is primarily used for secure network access.</p>
+
+<p id="cn-m12-332">For example, you manage a network that consists of 
+servers and hardware from different vendors. You have been asked to 
+integrate centralized authentication, authorization, and accounting 
+(AAA). Users must be securely and centrally authenticated before they 
+can access network resources. The solution to this requirement is to 
+implement a RADIUS server.</p>
+
+<h3 id="cn-m12-333"><b>Single Sign-On (SSO)</b></h3>
+
+<p id="cn-m12-334">Single sign-on (SSO) is a method that allows a user 
+to log on to a network once, authenticate themselves and then use 
+various network services and applications without having to login again.
+ The user is authenticated with a directory service, such as Active 
+Directory, which is also integrated with the various applications and 
+services on the network. Therefore, being authenticated once, the user 
+need not log on separately to these services and applications.</p>
+
+<p id="cn-m12-335">When SSO is implemented, the users will not need a 
+different set of credentials to log on to different applications or web 
+applications, and a single user account from a centralized directory can
+ be used. This is more secure than storing a different account on the 
+collaboration tool itself.</p>
+
+<h3 id="cn-m12-336"><b>Security Assertions Markup Language (SAML)</b></h3>
+
+<p id="cn-m12-337">Service Provisioning Markup Language (SPML) can 
+provision user accounts in multiple applications at the same time. It 
+can also deprovision the user accounts from all applications 
+simultaneously. None of the options have the ability to both provision 
+and deprovision user accounts.</p>
+
+<p id="cn-m12-338">SAML&nbsp;provides single sign-on&nbsp;capabilities 
+for web applications that a user may try to access. Rather than using a 
+different set of user credentials with different  applications, a user 
+can be authenticated using only one set of credentials using SAML. In 
+this process, there are three key entities involved:</p>
+
+<ul id="cn-m12-339">
+
+<li id="cn-m12-339"><b>User</b>: requires to access the web application that is owned by the service provider</li>
+
+<li id="cn-m12-340"><b>Identity Provider</b>: provides the authentication services to the service provider for the user</li>
+
+<li id="cn-m12-341"><b>Service Provider</b>: connects with the identity 
+provider to authenticate the user if already not authenticated. The 
+identity provider sends a response, known as SAMLResponse, to the 
+service provider, after which the user is authenticated.</li>
+
+</ul>
+
+<p id="cn-m12-342">When using SAML, the service provider is responsible 
+for making an access control decision. The principal initiates a 
+request, also known as an actor, to the service provider, which obtains 
+the authentication information from the identity provider. When the 
+authentication information is correct for the user, the service provider
+ makes an access control decision.</p>
+
+<h3 id="cn-m12-343"><b>Terminal Access Controller Access Control System Plus (TACACS+)</b></h3>
+
+<p id="cn-m12-344">Terminal Access Controller Access-Control System 
+(TACACS) refers to a family of related protocols handling remote 
+authentication and related services for networked access control through
+ a centralized server. TACACS Plus (TACACS+) is a protocol developed by 
+Cisco and released as an open standard.</p>
+
+<p id="cn-m12-345">TACACS+ is the only protocol that performs the following tasks:</p>
+
+<ul id="cn-m12-346">
+
+<li id="cn-m12-346">who can log in to manage each device</li>
+
+<li id="cn-m12-347">what operations they can run</li>
+
+<li id="cn-m12-348">log all actions taken on these devices</li>
+
+<li id="cn-m12-349">encrypt the whole packet, including username, password, and attributes</li>
+
+</ul>
+
+<h3 id="cn-m12-350"><b>OAuth</b></h3>
+
+<p id="cn-m12-351">OAuth is a protocol for authorizing applications to 
+access user information without exposing sensitive information, such as a
+ password. To implement OAuth2.0 in an application securely, you should 
+use the following methods:</p>
+
+<ul id="cn-m12-352">
+
+<li id="cn-m12-352">Use short-lived tokens and always refresh them</li>
+
+<li id="cn-m12-353">Store the hashed value client secrets in the database - avoid saving client secrets as plain text</li>
+
+<li id="cn-m12-354">Always make use of the SSL</li>
+
+<li id="cn-m12-355">Always verify the SSL certificate - to avoid a man-in-the-middle attack</li>
+
+<li id="cn-m12-356">Configure a lifetime for the access tokens - 30 to 60 seconds for access tokens; 5-10 minutes for refresh tokens</li>
+
+</ul>
+
+<h3 id="cn-m12-357"><b>OpenID</b></h3>
+
+<p id="cn-m12-358">OpenID uses an OpenID service provider to 
+authenticate a user. The website where the user is attempting to log on 
+does not play a role in authentication. OpenID uses an OpenID provider 
+to connect to multiple websites without having to register with them.</p>
+
+<ul id="cn-m12-359">
+
+<li id="cn-m12-359">Each user must be authenticated but not by a central authority.</li>
+
+<li id="cn-m12-360">Users must have unique user accounts.</li>
+
+<li id="cn-m12-361">The user credentials must not be stored locally or on the directory server.</li>
+
+<li id="cn-m12-362">The application must never get to know the user password.</li>
+
+</ul>
+
+<h3 id="cn-m12-363"><b>Kerberos </b></h3>
+
+<p id="cn-m12-364">Kerberos is an authentication protocol that works 
+based on tickets. When Kerberos is implemented, two communicating nodes 
+need to authenticate each other by proving their identities. It was 
+originally aimed at a client-server model, and it provides mutual 
+authentication.</p>
+
+<p id="cn-m12-365">The Kerberos authentication process is as follows:</p>
+
+<ol id="cn-m12-366">
+
+<li id="cn-m12-366">Request for a ticket-granting ticket (TGT)</li>
+
+<li id="cn-m12-367">TGT returned by authentication service</li>
+
+<li id="cn-m12-368">Request for application ticket (authenticated with TGT)</li>
+
+<li id="cn-m12-369">Application ticket returned by ticket-granting service</li>
+
+<li id="cn-m12-370">Request for service (authenticated with application ticket)</li>
+
+</ol>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="AccessControlSchemes">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-374"><b>Exercise 3 - Access Control Schemes</b></h2>
+
+<p id="cn-m12-375">Different organizations, depending on the work they 
+do, use different access control methods. Some assign access to 
+resources based on your designation. Some assign access to the resources
+ based on certain attributes, such as location or department. Other 
+organizations may simply choose to work with rules. If there is traffic 
+that meets the required rules, it can go through and access the 
+resources.</p>
+
+<p id="cn-m12-376">Even though various methods, a specific method cannot
+ be said to fit in all given situations. For example, if you refer to a 
+military or federal department, they are bound to provide access to 
+resources based on your designation. The rest of the resources are 
+denied access.</p>
+
+<p id="cn-m12-377">In this exercise, you will learn about various access control methods.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-379">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m12-380">
+
+<li id="cn-m12-380">Attribute-based Access Control (ABAC)</li>
+
+<li id="cn-m12-381">Role-based Access Control (RBAC)</li>
+
+<li id="cn-m12-382">Rule-based Access Control (RBAC)</li>
+
+<li id="cn-m12-383">Mandatory Access Control (MAC)</li>
+
+<li id="cn-m12-384">Discretionary Access Control (DAC)</li>
+
+<li id="cn-m12-385">Conditional Access</li>
+
+<li id="cn-m12-386">Privilege Access Management (PAM)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m12-388">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m12-389"><img class="cn-img" id="cn-image-m12-c-25" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-25.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m12-391"><b>Attribute-based Access Control (ABAC)</b></h3>
+
+<p id="cn-m12-392">Attribute-based access control works on the 
+attributes instead of users or groups. In this access control model, 
+attributes are considered. For example, cities and departments would be 
+two attributes of users. If both the attributes match, the user is 
+granted access to the object or denied access.</p>
+
+<p id="cn-m12-393">There can be other attributes that can be used for 
+authentication. For example, a user’s citizenship, time, or location. 
+ABAC uses policies to authenticate users. Therefore, there are no static
+ permissions that are used to allow or deny permissions to users.</p>
+
+<h3 id="cn-m12-394"><b>Role-based Access Control</b></h3>
+
+<p id="cn-m12-395">Role-based access control, also known as 
+non-discretionary access control, works by assigning permissions based 
+on the user’s position in a hierarchy. In this kind of access control, a
+ user, when required to access an object, is put into a role or group, 
+and then the group is assigned the access to the object. Anyone who is 
+not part of the group is denied access to the object.</p>
+
+<h3 id="cn-m12-396"><b>Rule-based Access Control (RBAC)</b></h3>
+
+<p id="cn-m12-397">Rule-based access control, also known as RBAC, uses 
+rules to allow or deny access to a resource. Access permissions are 
+stored in the access control lists (ACLs). Rule-based access controls 
+work on defined criteria, which are essentially rules. If traffic meets 
+defined criteria, it is either allowed or denied depending on how the 
+rule is defined. A router is an example that uses rule-based access 
+control.</p>
+
+<h3 id="cn-m12-398"><b>Mandatory Access Control (MAC)</b></h3>
+
+<p id="cn-m12-399">Mandatory access control (MAC) is the strictest in 
+controlling access to an object. It classifies resources and users, and 
+permissions are assigned based on these classifications. Mandatory 
+access control allows the administrator or group of authorized 
+individuals to control access to resources.</p>
+
+<p id="cn-m12-400">For example, if your organization is contracted by 
+the government to work on a secret project. You have been asked to 
+classify data as public, confidential, secret, top-secret, and 
+unclassified and allow users access based on the classification. In this
+ scenario, you need to implement mandatory access controls (MAC). This 
+type of access control is implemented based on a need to know. The 
+subject is given access to something if there is a need to know.</p>
+
+<h3 id="cn-m12-401"><b>Discretionary Access Control (DAC)</b></h3>
+
+<p id="cn-m12-402">Discretionary access control (DAC) allows users to 
+control permissions of their resources. For example, a user can assign 
+Read permissions on the folder(s) they own. In Discretionary Access 
+Control, a user is allowed to transfer the ownership of files to another
+ user. Moreover, it assigns file access based on user identification and
+ group membership.</p>
+
+<h3 id="cn-m12-403"><b>Conditional Access</b></h3>
+
+<p id="cn-m12-404">Conditional access is granted based on defined 
+policies in a domain environment. For example, if you are using Active 
+Directory, the system must be part of the domain to apply the defined 
+policies and grant access to the device based on certain policies and 
+conditions. In the context of mobile devices, they must be enrolled in 
+an application like Intune, which verifies the state of the mobile 
+device. For example, the policies in Intune check if the mobile device 
+has been rooted.</p>
+
+<p id="cn-m12-405">If devices meet the conditions defined in the 
+policies, they are granted access to the required resources. If not, the
+ device first needs to meet the compliance before another request for 
+the resources can be made.</p>
+
+<h3 id="cn-m12-406"><b>Privilege Access Management (PAM)</b></h3>
+
+<p id="cn-m12-407">In many organizations, users have more than required 
+access. For example, for day to day routine IT operations, a user does 
+not need administrative access to a system. However, many times, this is
+ overlooked by the administrator. Privilege Access Management (PAM) 
+enforces the correct level of privileges to users. It defines the 
+minimum level of privileges to users, applications, devices and even 
+processes. The level of privileges is directly tied to the level of work
+ that needs to be performed. The intent is to enforce the least 
+privilege to ensure that the network's attack surface is reduced to a 
+minimal level.</p>
+
+<p id="cn-m12-408">Not only with the excess privileges, but PAM also helps you tackle the following problems:</p>
+
+<ul id="cn-m12-409">
+
+<li id="cn-m12-409">There may be orphaned privileged accounts, which 
+could have been created for a specific reason or for users who have left
+ the organization. These accounts are no longer in use. PAM helps you 
+track such accounts.</li>
+
+<li id="cn-m12-410">In several cases, administrators create accounts 
+with the default set of privileges, which may be excess and, in some 
+cases, least privileges that do not allow a user to perform day to day 
+functions. PAM can account for such privileges.</li>
+
+<li id="cn-m12-411">PAM can also help you track shared accounts and passwords, which defeat the purpose of accountability and compliance.</li>
+
+<li id="cn-m12-412">Hard-coded credentials are a problem that is 
+everywhere and almost in all organizations. PAM helps you detect such 
+hard-coded credentials.</li>
+
+<li id="cn-m12-413">PAM reduces the attack surface by limiting the privileges for the users, devices, processes, and systems.</li>
+
+<li id="cn-m12-414">Malware, in most cases, elevate the privileges to 
+gain a foothold in the network. However, with the PAM implementation, 
+the principle of least privileges is enforced, which reduces the chances
+ of malware getting elevated privileges.</li>
+
+</ul>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="ManageFilePermissionsandOwnershiponaLinuxSystem">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-417"><b>Exercise 4 - Manage File Permissions and Ownership on a Linux System</b></h2>
+
+<p id="cn-m12-418">File permissions allow only authorized users to 
+access certain files and folders. If a user creates a file, the user 
+becomes the file owner on the given filesystem. After creating the file,
+ the user can grant access to the other users or choose to continue 
+using the file all by themselves.</p>
+
+<p id="cn-m12-419">In Linux, file permissions are of three types:</p>
+
+<ul id="cn-m12-420">
+
+<li id="cn-m12-420">Read</li>
+
+<li id="cn-m12-421">Write</li>
+
+<li id="cn-m12-422">Execute</li>
+
+</ul>
+
+<p id="cn-m12-423">The owner of the file or folder retains all three permissions by default. This task demonstrates the example of DAC.</p>
+
+<p id="cn-m12-424">In this exercise, you will understand how to manage file permissions and ownership.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-426">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m12-427">
+
+<li id="cn-m12-427">Manage Access Permissions</li>
+
+<li id="cn-m12-428">Change Permissions With Numbers</li>
+
+<li id="cn-m12-429">Use Commands to Check Permissions (chmod, chown, chgrp)</li>
+
+<li id="cn-m12-430">Set Access Modes</li>
+
+<li id="cn-m12-431">Work with Immutable files</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m12-433">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m12-434">
+
+<li id="cn-m12-434"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<p id="cn-m12-435"><img class="cn-img" id="cn-image-m12-c-26" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-26.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m12-436"><b>Task 1 - Manage Access Permissions </b></h3>
+
+<p id="cn-m12-437">You can use file permissions to enable users to 
+access a file or a directory for selective operations. For example, some
+ users might have read rights only while other users might have write 
+permissions. Normally, the file owner has full rights - read, write, and
+ execute - on a file. In this task, you will learn to access and change 
+the access permissions on regular and special files and directories.</p>
+
+<p id="cn-m12-438">In this task, you will manage access permissions.</p>
+
+<h4 id="cn-m12-439"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m12-440">Ensure that all the required devices are powered on. Connect to <b>PLABKALI</b>. In the <b>Enter your username </b>text box, type the following:</p>
+
+<pre id="cn-m12-441"><code>root
+
+</code></pre>
+
+<p id="cn-m12-442">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m12-444">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m12-445"></p><figure><img class="cn-img" id="cn-image-m12-c-27" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-27.jpg" alt="Figure 4.1 Screenshot of PLABKALI: Logging on to the Kali Linux."><figcaption>Figure 4.1 Screenshot of PLABKALI: Logging on to the Kali Linux.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-448"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-449">After a successful login, the desktop is displayed.</p>
+
+<p id="cn-m12-450"></p><figure><img class="cn-img" id="cn-image-m12-c-28" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-28.jpg" alt="Figure 4.2 Screenshot of PLABKALI: Displaying the desktop after a successful login."><figcaption>Figure 4.2 Screenshot of PLABKALI: Displaying the desktop after a successful login.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-453"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-454">In the upper left corner, click the <b>Terminal Emulator </b>icon.</p>
+
+<p id="cn-m12-455"></p><figure><img class="cn-img" id="cn-image-m12-c-29" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-29.jpg" alt="Figure 4.3 Screenshot of PLABKALI: Clicking the Terminal Emulator icon in the upper left corner."><figcaption>Figure 4.3 Screenshot of PLABKALI: Clicking the Terminal Emulator icon in the upper left corner.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-457"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-458">To list the directories with the permissions, type the following command:</p>
+
+<pre id="cn-m12-459"><code>ls -l
+
+</code></pre>
+
+<p id="cn-m12-460">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m12-461"><b><i>Note</i></b><i>: The leftmost column lists the permissions on the directories listed, denoted with </i><b><i>d </i></b><i>as the first character. There are three types of groups: </i><b><i>d </i></b><i>for directories, </i><b><i>l </i></b><i>for Symbolic link, and regular file.</i><br><i>Permissions can be read=r, write=w and execute=x.</i></span>
+
+<p id="cn-m12-462"></p><figure><img class="cn-img" id="cn-image-m12-c-30" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-30.jpg" alt="Figure 4.4 Screenshot of PLABKALI: Listing the directories with their permissions."><figcaption>Figure 4.4 Screenshot of PLABKALI: Listing the directories with their permissions.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-465"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-466">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-467"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-468">You will now create a new text file, <b>plab.txt</b>. Type the following command:</p>
+
+<pre id="cn-m12-469"><code>touch plab.txt
+
+</code></pre>
+
+<p id="cn-m12-470">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-471"></p><figure><img class="cn-img" id="cn-image-m12-c-31" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-31.jpg" alt="Figure 4.5 Screenshot of PLABKALI: Creating a new text file."><figcaption>Figure 4.5 Screenshot of PLABKALI: Creating a new text file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-478"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-479">Again, to list the directories and files with the permissions, type the following command:</p>
+
+<pre id="cn-m12-480"><code>ls -l
+
+</code></pre>
+
+<p id="cn-m12-481">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-482">Note that as the owner of this file user, you have read and write permissions on this file but not the execute permissions.</p>
+
+<p id="cn-m12-483"></p><figure><img class="cn-img" id="cn-image-m12-c-32" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-32.jpg" alt="Figure 4.6 Screenshot of PLABKALI: Verifying the permissions of plab.txt."><figcaption>Figure 4.6 Screenshot of PLABKALI: Verifying the permissions of plab.txt.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-488"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m12-489">You can also add the execute bit to the file. Type the following command:</p>
+
+<pre id="cn-m12-490"><code>chmod u+x plab.txt
+
+</code></pre>
+
+<p id="cn-m12-491">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-492"></p><figure><img class="cn-img" id="cn-image-m12-c-33" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-33.jpg" alt="Figure 4.7 Screenshot of PLABKALI: Adding the execute bit to the plab.txt file."><figcaption>Figure 4.7 Screenshot of PLABKALI: Adding the execute bit to the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-497"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m12-498">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-499"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-500">You can also view the permissions for a specific file, which in this case, is <b>plab.txt</b>. To do this, type the following command:</p>
+
+<pre id="cn-m12-501"><code>ls -l plab.txt
+
+</code></pre>
+
+<p id="cn-m12-502">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-503">Notice that the execute bit is now added to the file.</p>
+
+<p id="cn-m12-504"></p><figure><img class="cn-img" id="cn-image-m12-c-34" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-34.jpg" alt="Figure 4.8 Screenshot of PLABKALI: Listing the permissions of the plab.txt file."><figcaption>Figure 4.8 Screenshot of PLABKALI: Listing the permissions of the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-510"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m12-511">On the <b>plab.txt </b>file, you will now add the <b>write </b>and <b>execute </b>permissions for <b>Other</b>. Type the following command:</p>
+
+<pre id="cn-m12-512"><code>chmod o+wx plab.txt
+
+</code></pre>
+
+<p id="cn-m12-513">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-514"></p><figure><img class="cn-img" id="cn-image-m12-c-35" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-35.jpg" alt="Figure 4.9 Screenshot of PLABKALI: Adding the read and write permissions for Other."><figcaption>Figure 4.9 Screenshot of PLABKALI: Adding the read and write permissions for Other.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-516"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m12-517">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-518"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-519">You can also view the permissions for <b>plab.txt</b>. To do that, type the following command:</p>
+
+<pre id="cn-m12-520"><code>ls -l plab.txt
+
+</code></pre>
+
+<p id="cn-m12-521">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-522">Notice that the write and execute bit for others is now added to the file.</p>
+
+<p id="cn-m12-523"></p><figure><img class="cn-img" id="cn-image-m12-c-36" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-36.jpg" alt="Figure 4.10 Screenshot of PLABKALI: Listing the permissions of the plab.txt file."><figcaption>Figure 4.10 Screenshot of PLABKALI: Listing the permissions of the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-525"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m12-526">You will now remove the <b>read </b>bit for the group. Type the following command:</p>
+
+<pre id="cn-m12-527"><code>chmod g-r plab.txt
+
+</code></pre>
+
+<p id="cn-m12-528">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-529"></p><figure><img class="cn-img" id="cn-image-m12-c-37" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-37.jpg" alt="Figure 4.11 Screenshot of PLABKALI: Removing the read bit for the group."><figcaption>Figure 4.11 Screenshot of PLABKALI: Removing the read bit for the group.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-531"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m12-532">Type the following command:</p>
+
+<pre id="cn-m12-533"><code>ls -l plab.txt
+
+</code></pre>
+
+<p id="cn-m12-534">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-535">Notice that the read bit for the group is now removed from the file.</p>
+
+<p id="cn-m12-536"></p><figure><img class="cn-img" id="cn-image-m12-c-38" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-38.jpg" alt="Figure 4.12 Screenshot of PLABKALI: Listing the permissions of the plab.txt file."><figcaption>Figure 4.12 Screenshot of PLABKALI: Listing the permissions of the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-540"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m12-541">You will now add the <b>read</b>, <b>write</b>, and <b>execute </b>permissions to <b>Everyone</b>. Type the following command:</p>
+
+<pre id="cn-m12-542"><code>chmod ugo+rwx plab.txt
+
+</code></pre>
+
+<p id="cn-m12-543">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-544"></p><figure><img class="cn-img" id="cn-image-m12-c-39" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-39.jpg" alt="Figure 4.13 Screenshot of PLABKALI: Adding the read, write, and execute permissions to Everyone."><figcaption>Figure 4.13 Screenshot of PLABKALI: Adding the read, write, and execute permissions to Everyone.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-547"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m12-548">Type the following command:</p>
+
+<pre id="cn-m12-549"><code>ls -l plab.txt
+
+</code></pre>
+
+<p id="cn-m12-550">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-551">Notice that the <b>read</b>, <b>write</b>, and <b>execute </b>permissions to <b>Everyone </b>is now added to the file.</p>
+
+<p id="cn-m12-552"></p><figure><img class="cn-img" id="cn-image-m12-c-40" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-40.jpg" alt="Figure 4.14 Screenshot of PLABKALI: Listing the permissions of the plab.txt file."><figcaption>Figure 4.14 Screenshot of PLABKALI: Listing the permissions of the plab.txt file.</figcaption></figure><p></p>
+
+<p id="cn-m12-554">Keep the terminal window open and proceed to the next task.</p>
+
+<h3 id="cn-m12-555"><b>Task 2 - Change Permissions With Numbers</b></h3>
+
+<p id="cn-m12-556">Using the chmod command, you can also change the permissions using numbers. Each permission has an octal value:</p>
+
+<p id="cn-m12-557"><b>Symbolic </b>/ <b>Octal</b></p>
+
+<ul id="cn-m12-558">
+
+<li id="cn-m12-558">Read / 4</li>
+
+<li id="cn-m12-559">Write / 2</li>
+
+<li id="cn-m12-560">Execute / 1</li>
+
+</ul>
+
+<p id="cn-m12-561">Standard permission for files is 666 or -rw-rw-rw-. 
+Standard permission for directories is 777 or -rwxrwxrwx. When a user 
+creates a file, the standard permission, 666, is assigned to the file. 
+This means that read, 4, and write, 2, permission is assigned to the 
+user, group, and other.</p>
+
+<p id="cn-m12-562">Notice that the number <b>666</b>, which is an addition of the octal values of read and write permission. Similarly, <b>777 </b>includes an octal <b>1 </b>added for the execute permission.</p>
+
+<p id="cn-m12-563">In this task, you will change permissions with numbers.</p>
+
+<h4 id="cn-m12-564"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-565">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-566"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-567">To create a file, type the following command:</p>
+
+<pre id="cn-m12-568"><code>touch plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-569">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-570"></p><figure><img class="cn-img" id="cn-image-m12-c-41" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-41.jpg" alt="Figure 4.15 Screenshot of PLABKALI: Creating the plab2.txt file using the touch command."><figcaption>Figure 4.15 Screenshot of PLABKALI: Creating the plab2.txt file using the touch command.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-575"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-576">To verify that the permissions have been changed, type the following command:</p>
+
+<pre id="cn-m12-577"><code>ls -l plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-578">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-579"></p><figure><img class="cn-img" id="cn-image-m12-c-42" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-42.jpg" alt="Figure 4.16 Screenshot of PLABKALI: Verifying the permissions on the plab2.txt file."><figcaption>Figure 4.16 Screenshot of PLABKALI: Verifying the permissions on the plab2.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-583"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-584">To add the owner’s <b>execute </b>bit, type the following command:</p>
+
+<pre id="cn-m12-585"><code>chmod 744 plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-586">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-587"></p><figure><img class="cn-img" id="cn-image-m12-c-43" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-43.jpg" alt="Figure 4.17 Screenshot of PLABKALI: Adding the owner’s execute bit to the file."><figcaption>Figure 4.17 Screenshot of PLABKALI: Adding the owner’s execute bit to the file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-590"><b><i>Step 4&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-591">To add the <b>write </b>&amp; <b>execute </b>bit for <b>Other</b>, type the following command:</p>
+
+<pre id="cn-m12-592"><code>chmod 647 plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-593">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-594"></p><figure><img class="cn-img" id="cn-image-m12-c-44" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-44.jpg" alt="Figure 4.18 Screenshot of PLABKALI: Adding the write &amp;amp; execute bit for Other."><figcaption>Figure 4.18 Screenshot of PLABKALI: Adding the write &amp; execute bit for Other.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-597"><b><i>Step 5&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-598">To verify that the permissions have been changed, type the following command:</p>
+
+<pre id="cn-m12-599"><code>ls -l plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-600">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-601"></p><figure><img class="cn-img" id="cn-image-m12-c-45" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-45.jpg" alt="Figure 4.19 Screenshot of PLABKALI: Verifying the changed permissions."><figcaption>Figure 4.19 Screenshot of PLABKALI: Verifying the changed permissions.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-605"><b><i>Step 6&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-606">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-607"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-608">To remove group bit, type the following command:</p>
+
+<pre id="cn-m12-609"><code>chmod 607 plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-610">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-611"></p><figure><img class="cn-img" id="cn-image-m12-c-46" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-46.jpg" alt="Figure 4.20 Screenshot of PLABKALI: Removing the group bit."><figcaption>Figure 4.20 Screenshot of PLABKALI: Removing the group bit.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-614"><b><i>Step 7&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-615">To verify that the permissions have been changed, type the following command:</p>
+
+<pre id="cn-m12-616"><code>ls -l plab2.txt
+
+</code></pre>
+
+<p id="cn-m12-617">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-618"></p><figure><img class="cn-img" id="cn-image-m12-c-47" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-47.jpg" alt="Figure 4.21 Screenshot of PLABKALI: Verifying the changed permissions."><figcaption>Figure 4.21 Screenshot of PLABKALI: Verifying the changed permissions.</figcaption></figure><p></p>
+
+<p id="cn-m12-620">Keep the terminal window open and proceed to the next task.</p>
+
+<h3 id="cn-m12-621"><b>Task 3 - Use Commands to Check Permissions (chmod, chown, chgrp)</b></h3>
+
+<p id="cn-m12-622">Various commands can be used for managing file 
+permissions and ownership. The chmod command is used for managing file 
+permissions. The chown command is used for changing ownership. The chgrp
+ command is used for changing groups. To use commands to check 
+permissions, perform the following steps:</p>
+
+<h4 id="cn-m12-623"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-624">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-625"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-626">To create <b>plab3.txt</b>, type the following command:</p>
+
+<pre id="cn-m12-627"><code>touch plab3.txt
+
+</code></pre>
+
+<p id="cn-m12-628">Press <b>Enter</b>. The <b>plab3.txt </b>file is now created.</p>
+
+<p id="cn-m12-629"></p><figure><img class="cn-img" id="cn-image-m12-c-48" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-48.jpg" alt="Figure 4.22 Screenshot of PLABKALI: Creating a new file with the touch command."><figcaption>Figure 4.22 Screenshot of PLABKALI: Creating a new file with the touch command.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-631"><b><i>Step 2</i></b></h4>
+
+<span class="cn-quote" id="cn-m12-632"><b><i>Note: </i></b><i>The chmod 
+command has been covered in detail in the previous exercises. Therefore,
+ this task will focus on the chown and chgrp commands.</i></span>
+
+<p id="cn-m12-633">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-634"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-635">Let’s first create a user. Type the following command:</p>
+
+<pre id="cn-m12-636"><code>useradd matt
+
+</code></pre>
+
+<p id="cn-m12-637">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m12-638"><b><i>Note: </i></b><i>Even though the user matt is in the locked state, you can still assign the ownership.</i></span>
+
+<p id="cn-m12-639"></p><figure><img class="cn-img" id="cn-image-m12-c-49" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-49.jpg" alt="Figure 4.23 Screenshot of PLABKALI: Creating a user account."><figcaption>Figure 4.23 Screenshot of PLABKALI: Creating a user account.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-642"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-643">To change the ownership of the <b>plab3.txt </b>file, type the following command:</p>
+
+<pre id="cn-m12-644"><code>chown matt plab3.txt
+
+</code></pre>
+
+<p id="cn-m12-645">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-646"></p><figure><img class="cn-img" id="cn-image-m12-c-50" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-50.jpg" alt="Figure 4.24 Screenshot of PLABKALI: Changing the ownership of the plab3.txt file"><figcaption>Figure 4.24 Screenshot of PLABKALI: Changing the ownership of the plab3.txt file</figcaption></figure><p></p>
+
+<h4 id="cn-m12-649"><b><i>Step 4&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-650">To verify that the ownership has has changed, type the following command:</p>
+
+<pre id="cn-m12-651"><code>ls -l plab3.txt
+
+</code></pre>
+
+<p id="cn-m12-652">Press <b>Enter</b>. Notice that matt is the owner of the file.</p>
+
+<p id="cn-m12-653"></p><figure><img class="cn-img" id="cn-image-m12-c-51" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-51.jpg" alt="Figure 4.25 Screenshot of PLABKALI: Verifying the changed permissions."><figcaption>Figure 4.25 Screenshot of PLABKALI: Verifying the changed permissions.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-660"><b><i>Step 5&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-661">To change the group to <b>matt</b>, type the following command:</p>
+
+<pre id="cn-m12-662"><code>chgrp matt plab3.txt
+
+</code></pre>
+
+<p id="cn-m12-663">Press <b>Enter</b>. Notice that matt is also the group assigned to the file.</p>
+
+<p id="cn-m12-664"></p><figure><img class="cn-img" id="cn-image-m12-c-52" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-52.jpg" alt="Figure 4.26 Screenshot of PLABKALI: Changing the group to matt."><figcaption>Figure 4.26 Screenshot of PLABKALI: Changing the group to matt.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-667"><b><i>Step 6&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-668">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-669"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-670">You can also change the group using the chown 
+command. However, the syntax is slightly different than chgrp. To change
+ the group to the <b>root</b>, type the following command:</p>
+
+<pre id="cn-m12-671"><code>chown :root plab3.txt
+
+</code></pre>
+
+<p id="cn-m12-672">Press <b>Enter</b>. Notice that the administrator group is assigned to the file.</p>
+
+<p id="cn-m12-673"></p><figure><img class="cn-img" id="cn-image-m12-c-53" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-53.jpg" alt="Figure 4.27 Screenshot of PLABKALI: Changing the group to the administrator."><figcaption>Figure 4.27 Screenshot of PLABKALI: Changing the group to the administrator.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-676"><b><i>Step 7&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m12-677">To verify that the group has changed, type the following command:</p>
+
+<pre id="cn-m12-678"><code>ls -l plab3.txt
+
+</code></pre>
+
+<p id="cn-m12-679">Press <b>Enter</b>. Notice that <b>matt </b>is the owner of the file, but the group is the <b>root</b>.</p>
+
+<p id="cn-m12-680"></p><figure><img class="cn-img" id="cn-image-m12-c-54" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-54.jpg" alt="Figure 4.28 Screenshot of PLABKALI: Verifying the changed permissions."><figcaption>Figure 4.28 Screenshot of PLABKALI: Verifying the changed permissions.</figcaption></figure><p></p>
+
+<p id="cn-m12-682">Keep the terminal window open and proceed to the next task.</p>
+
+<h3 id="cn-m12-683"><b>Task 4 - Set Access Modes</b></h3>
+
+<p id="cn-m12-684">Permissions in Linux have two special access modes:</p>
+
+<ul id="cn-m12-685">
+
+<li id="cn-m12-685">suid (set user id)</li>
+
+<li id="cn-m12-686">sgid (set group id)</li>
+
+</ul>
+
+<p id="cn-m12-687">When enable suid access modes set on an application, 
+then, it runs under the user mode of the owner rather than the user who 
+started it. Similarly, with the sgid access modes set, the program will 
+run as if the initiating user belonged to the file’s group rather than 
+to his group. Either or both access modes may be set. In this task, you 
+will set access modes.</p>
+
+<h4 id="cn-m12-688"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-689">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-690"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-691">To list the <b>suid </b>access mode on <b>/usr/bin/passwd</b>, type the following command:</p>
+
+<pre id="cn-m12-692"><code>ls -l /usr/bin/passwd
+
+</code></pre>
+
+<p id="cn-m12-693">Press <b>Enter</b>. Notice that the user permissions do not contain the <b>execute </b>(<b>x</b>) permission. Rather, there is an <b>s</b>, which indicates that the <b>suid </b>and <b>executable </b>bits are defined for this executable. When a user needs to run <b>passwd</b>, it executes as if the <b>root </b>user had executed it.</p>
+
+<p id="cn-m12-694"></p><figure><img class="cn-img" id="cn-image-m12-c-55" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-55.jpg" alt="Figure 4.29 Screenshot of PLABKALI: Listing the suid mode on the /usr/bin/passwd file."><figcaption>Figure 4.29 Screenshot of PLABKALI: Listing the suid mode on the /usr/bin/passwd file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-697"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-698">You can set the <b>suid </b>and <b>sgid </b>bits. This is done by adding the <b>s</b>.</p>
+
+<span class="cn-quote" id="cn-m12-699"><b><i>Note: </i></b><i>suid has the value 4, and sgid has the value 2.</i></span>
+
+<p id="cn-m12-700">Any directory that has sgid mode enabled, all files and subdirectories will inherit the group ID of the directory.&nbsp;</p>
+
+<p id="cn-m12-701">Let’s first create a directory. Type the following command:</p>
+
+<pre id="cn-m12-702"><code>mkdir plab
+
+</code></pre>
+
+<p id="cn-m12-703">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-704"></p><figure><img class="cn-img" id="cn-image-m12-c-56" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-56.jpg" alt="Figure 4.30 Screenshot of PLABKALI: Creating a new directory."><figcaption>Figure 4.30 Screenshot of PLABKALI: Creating a new directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-707"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-708">To assign <b>sgid</b>, type the following command:</p>
+
+<pre id="cn-m12-709"><code>chmod g+ws plab
+
+</code></pre>
+
+<p id="cn-m12-710">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-711"></p><figure><img class="cn-img" id="cn-image-m12-c-57" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-57.jpg" alt="Figure 4.31 Screenshot of PLABKALI: Assigning the sgid on the newly-created directory."><figcaption>Figure 4.31 Screenshot of PLABKALI: Assigning the sgid on the newly-created directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-714"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-715">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-716"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-717">To view the assigned <b>sgid</b>, type the following command:</p>
+
+<pre id="cn-m12-718"><code>ls -ld plab
+
+</code></pre>
+
+<p id="cn-m12-719">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-720"></p><figure><img class="cn-img" id="cn-image-m12-c-58" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-58.jpg" alt="Figure 4.32 Screenshot of PLABKALI: Viewing the assigned sgid on the directory."><figcaption>Figure 4.32 Screenshot of PLABKALI: Viewing the assigned sgid on the directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-723"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-724">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-725"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-726">To create a file, type the following command:</p>
+
+<pre id="cn-m12-727"><code>touch plab/test.txt
+
+</code></pre>
+
+<p id="cn-m12-728">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-729"></p><figure><img class="cn-img" id="cn-image-m12-c-59" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-59.jpg" alt="Figure 4.33 Screenshot of PLABKALI: Creating a file in the plab directory."><figcaption>Figure 4.33 Screenshot of PLABKALI: Creating a file in the plab directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-732"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-733">To verify the file was created and view its permissions, type the following command:</p>
+
+<pre id="cn-m12-734"><code>ls -l plab/test.txt
+
+</code></pre>
+
+<p id="cn-m12-735">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-736"></p><figure><img class="cn-img" id="cn-image-m12-c-60" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-60.jpg" alt="Figure 4.34 Screenshot of PLABKALI: Verifying the permissions of the newly created file."><figcaption>Figure 4.34 Screenshot of PLABKALI: Verifying the permissions of the newly created file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-738"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m12-739">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-740"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-741">To remove the write permissions for the group, type the following command:</p>
+
+<pre id="cn-m12-742"><code>chmod g-w plab/test.txt
+
+</code></pre>
+
+<p id="cn-m12-743">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-744"></p><figure><img class="cn-img" id="cn-image-m12-c-61" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-61.jpg" alt="Figure 4.35 Screenshot of PLABKALI: Removing the permission for the group."><figcaption>Figure 4.35 Screenshot of PLABKALI: Removing the permission for the group.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-747"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m12-748">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-749"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-750">To assign a sticky bit, type the following command:</p>
+
+<pre id="cn-m12-751"><code>chmod +t plab
+
+</code></pre>
+
+<p id="cn-m12-752">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-753"></p><figure><img class="cn-img" id="cn-image-m12-c-62" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-62.jpg" alt="Figure 4.36 Screenshot of PLABKALI: Assigning the sticky bit on the directory."><figcaption>Figure 4.36 Screenshot of PLABKALI: Assigning the sticky bit on the directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-756"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m12-757">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-758"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-759">Symbolic and octal values represent each of the access modes:</p>
+
+<p id="cn-m12-760"><b>Access mode </b>/ <b>Symbolic </b>/ <b>Octal</b></p>
+
+<ul id="cn-m12-761">
+
+<li id="cn-m12-761">suid / s with u / 4000</li>
+
+<li id="cn-m12-762">sgid / s with g / 2000</li>
+
+<li id="cn-m12-763">sticky / t /1000</li>
+
+</ul>
+
+<p id="cn-m12-764">To print the symbolic and octal values, type the following command:</p>
+
+<pre id="cn-m12-765"><code>find . -name plab -printf “%M %m %f\n”
+
+</code></pre>
+
+<p id="cn-m12-766">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-767"></p><figure><img class="cn-img" id="cn-image-m12-c-63" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-63.jpg" alt="Figure 4.37 Screenshot of PLABKALI: Viewing the symbolic and octal values of the directory."><figcaption>Figure 4.37 Screenshot of PLABKALI: Viewing the symbolic and octal values of the directory.</figcaption></figure><p></p>
+
+<p id="cn-m12-769">Keep the terminal window open and proceed to the next task.</p>
+
+<h3 id="cn-m12-770"><b>Task 5 - Work with Immutable files</b></h3>
+
+<p id="cn-m12-771">Even though access modes and permissions provide 
+great control over files and directories, they cannot prevent the 
+accidental deletion of files by the root user. You can set the immutable
+ attribute on files and directories. When this attribute is set, even 
+the root user cannot delete these files and folders.</p>
+
+<p id="cn-m12-772">To set the immutable attribute, perform the following steps:</p>
+
+<h4 id="cn-m12-773"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-774">Ensure the terminal window on <b>PLABKALI </b>is open.</p>
+
+<p id="cn-m12-775">You need to set the immutable attribute on the <b>plab.txt </b>file. Type the following command:</p>
+
+<pre id="cn-m12-776"><code>chattr +i plab.txt
+
+</code></pre>
+
+<p id="cn-m12-777">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-778"></p><figure><img class="cn-img" id="cn-image-m12-c-64" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-64.jpg" alt="Figure 4.38 Screenshot of PLABKALI: Setting the immutable attribute on the plab.txt file."><figcaption>Figure 4.38 Screenshot of PLABKALI: Setting the immutable attribute on the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-781"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-782">You need to verify now if the immutable attribute is set on the <b>plab.txt </b>file. Type the following command:</p>
+
+<pre id="cn-m12-783"><code>lsattr plab.txt
+
+</code></pre>
+
+<p id="cn-m12-784">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-785"></p><figure><img class="cn-img" id="cn-image-m12-c-65" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-65.jpg" alt="Figure 4.39 Screenshot of PLABKALI: Verifying the immutable attribute on the plab.txt file."><figcaption>Figure 4.39 Screenshot of PLABKALI: Verifying the immutable attribute on the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-788"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-789">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-790"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-791">You will now attempt to delete the <b>plab.txt </b>file. Type the following command:</p>
+
+<pre id="cn-m12-792"><code>rm -f plab.txt
+
+</code></pre>
+
+<p id="cn-m12-793">Press <b>Enter</b>. Notice that this operation is not permitted even for the root user.</p>
+
+<p id="cn-m12-794"></p><figure><img class="cn-img" id="cn-image-m12-c-66" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-66.jpg" alt="Figure 4.40 Screenshot of PLABKALI: Attempting to delete the plab.txt file."><figcaption>Figure 4.40 Screenshot of PLABKALI: Attempting to delete the plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-797"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-798">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m12-799"><code>clear
+
+</code></pre>
+
+<p id="cn-m12-800">You need to remove the immutable attribute now. Type the following command:</p>
+
+<pre id="cn-m12-801"><code>chattr -i plab.txt
+
+</code></pre>
+
+<p id="cn-m12-802">Press <b>Enter</b>.</p>
+
+<p id="cn-m12-803"></p><figure><img class="cn-img" id="cn-image-m12-c-67" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-67.jpg" alt="Figure 4.41 Screenshot of PLABKALI: Removing the immutable attribute."><figcaption>Figure 4.41 Screenshot of PLABKALI: Removing the immutable attribute.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-806"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-807">Verify if the immutable attribute is removed. Type the following command:</p>
+
+<pre id="cn-m12-808"><code>lsattr plab.txt
+
+</code></pre>
+
+<p id="cn-m12-809">Press <b>Enter</b>. Notice that attribute is no longer present.</p>
+
+<p id="cn-m12-810"></p><figure><img class="cn-img" id="cn-image-m12-c-68" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-68.jpg" alt="Figure 4.42 Screenshot of PLABKALI: Verifying the removal of the immutable attribute."><figcaption>Figure 4.42 Screenshot of PLABKALI: Verifying the removal of the immutable attribute.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-813"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-814">Attempt to remove the <b>plab.txt </b>file. Type the following command:</p>
+
+<pre id="cn-m12-815"><code>rm -f plab.txt
+
+</code></pre>
+
+<p id="cn-m12-816">Press <b>Enter</b>. Notice that the file is deleted, and no error is displayed.</p>
+
+<p id="cn-m12-817"></p><figure><img class="cn-img" id="cn-image-m12-c-69" src="AuthenticationandAuthorizationSolutions_files/image-m12-c-69.jpg" alt="Figure 4.43 Screenshot of PLABKALI: Attempting to remove the file."><figcaption>Figure 4.43 Screenshot of PLABKALI: Attempting to remove the file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m12-822">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-823"><b>Review</b></h2>
+
+<p id="cn-m12-824">Well done, you have completed the <b>Authentication &amp; Authorization Solutions </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">a417e10f-5c15-46e0-b4c9-f3ac02f77251</span>
+
+<span class="atom-code hidden">216c9db6-2755-4e1b-826c-258e874aa5ea</span>
+
+<span class="atom-code hidden">fc0fc925-b7bc-4153-8296-c3990c40d619</span>
+
+<span class="atom-code hidden">445fac46-186d-4aa7-b106-99e04642487b</span>
+
+<span class="atom-code hidden">29aedb03-3ae5-4309-8eec-1116014a299c</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m12-834">You completed the following exercises:</p>
+
+<ul id="cn-m12-835">
+
+<li id="cn-m12-835">Exercise 1 - Authentication Management</li>
+
+<li id="cn-m12-836">Exercise 2 - Authentication</li>
+
+<li id="cn-m12-837">Exercise 3 - Access Control Schemes</li>
+
+<li id="cn-m12-838">Exercise 4 - Manage File Permissions and Ownership on a Linux System</li>
+
+</ul>
+
+<p id="cn-m12-839">You should now be able to:</p>
+
+<ul id="cn-m12-840">
+
+<li id="cn-m12-840">Use a Password Vault</li>
+
+<li id="cn-m12-841">Verify the TPM Chip</li>
+
+<li id="cn-m12-842">Manage Access Permissions</li>
+
+<li id="cn-m12-843">Change Permissions With Numbers</li>
+
+<li id="cn-m12-844">Use Commands to Check Permissions (chmod, chown, chgrp)</li>
+
+<li id="cn-m12-845">Set Access Modes</li>
+
+<li id="cn-m12-846">Work with Immutable files</li>
+
+</ul>
+
+<p id="cn-m12-847">You should now have further knowledge of:</p>
+
+<ul id="cn-m12-848">
+
+<li id="cn-m12-848">Password Keys</li>
+
+<li id="cn-m12-849">Hardware Security Module (HSM)</li>
+
+<li id="cn-m12-850">Trusted Platform Module (TPM)</li>
+
+<li id="cn-m12-851">TPM vs. HSM</li>
+
+<li id="cn-m12-852">Knowledge-based Authentication (KBA)</li>
+
+<li id="cn-m12-853">Extensible Authentication Protocol (EAP)</li>
+
+<li id="cn-m12-854">Challenge Handshake Authentication Protocol (CHAP)</li>
+
+<li id="cn-m12-855">Password Authentication Protocol (PAP)</li>
+
+<li id="cn-m12-856">802.1X</li>
+
+<li id="cn-m12-857">Remote Authentication Dial-In User Service (RADIUS)</li>
+
+<li id="cn-m12-858">Single Sign-On (SSO)</li>
+
+<li id="cn-m12-859">Security Assertions Markup Language (SAML)</li>
+
+<li id="cn-m12-860">Terminal Access Controller Access Control System Plus (TACACS+)</li>
+
+<li id="cn-m12-861">OAuth</li>
+
+<li id="cn-m12-862">OpenID</li>
+
+<li id="cn-m12-863">Kerberos</li>
+
+<li id="cn-m12-864">Attribute-based Access Control (ABAC)</li>
+
+<li id="cn-m12-865">Role-based Access Control (RBAC)</li>
+
+<li id="cn-m12-866">Rule-based Access Control (RBAC)</li>
+
+<li id="cn-m12-867">Mandatory Access Control (MAC)</li>
+
+<li id="cn-m12-868">Discretionary Access Control (DAC)</li>
+
+<li id="cn-m12-869">Conditional Access</li>
+
+<li id="cn-m12-870">Privilege Access Management (PAM)</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m12-874">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

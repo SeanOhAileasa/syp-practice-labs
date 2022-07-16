@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ImplementingSecureNetworkSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="ImplementingSecureNetworkSolutions_files/jquery.min.js"></script>
+    <script src="ImplementingSecureNetworkSolutions_files/jspdf.js"></script>
+    <script src="ImplementingSecureNetworkSolutions_files/from_html.js"></script>
+    <script src="ImplementingSecureNetworkSolutions_files/addimage.js"></script>
+    <script src="ImplementingSecureNetworkSolutions_files/filesaver.js"></script>
+    <script src="ImplementingSecureNetworkSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="T4Y2FnnqZt+UKmThbmeIDhQhHNtPrEOBk0H49Gu0Uy8IsvmcPve6sU9mbL0qm1bCDFO6Ud4DPAdhaKawdNy0jz523b3BYNnN78p8F9WBr2o=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Implementing Secure Network Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Load Balancing</li><li>Exercise 2 - Network Segmentation</li><li>Exercise 3 - Virtual Private Network (VPN)</li><li>Exercise 4 - Port Security</li><li>Exercise 5 - Network Appliances and Services</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m4-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Load Balancer</div>
+
+<div>Virtual IP</div>
+
+<div>Persistence</div>
+
+<div>Virtual Local Area Network (VLAN)</div>
+
+<div>Intranet</div>
+
+<div>Extranet</div>
+
+<div>Demilitarized Zone (DMZ)</div>
+
+<div>East-West Traffic</div>
+
+<div>Zero Trust</div>
+
+<div>Split tunnel</div>
+
+<div>Full tunnel</div>
+
+<div>Remote access VPN</div>
+
+<div>Site-to-site VPN</div>
+
+<div>IPSec</div>
+
+<div>SSL/TLS</div>
+
+<div>Layer 2 Tunneling Protocol (L2TP)</div>
+
+<div>Broadcast storm prevention</div>
+
+<div>Bridge Protocol Data Unit (BPDU) guard</div>
+
+<div>Loop prevention</div>
+
+<div>Dynamic Host Configuration Protocol (DHCP) snooping</div>
+
+<div>Jump Servers</div>
+
+<div>Proxy Servers</div>
+
+<div>Network-based intrusion detection system (NIDS)</div>
+
+<div>Network-based intrusion prevention system (NIPS)</div>
+
+<div>Hardware Security Module (HSM)</div>
+
+<div>Firewalls</div>
+
+<div>Route security&nbsp;&nbsp;</div>
+
+<div>Quality of Service (QoS)</div>
+
+<div>IPv6</div>
+
+<div>Port Spanning</div>
+
+<div>Port Mirroring&nbsp;&nbsp;</div>
+
+<div>Port Taps</div>
+
+<div>File integrity monitors</div>
+
+<div>Access Control Lists (ACLs)</div>
+
+<div>DNS</div>
+
+<div>Network access control (NAC)</div>
+
+<div>Out-of-band management</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m4-40">Welcome to the <b>Implementing Secure Network Solutions </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-44">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m4-45">
+
+<li id="cn-m4-45">Exercise 1 - Load Balancing</li>
+
+<li id="cn-m4-46">Exercise 2 - Network Segmentation</li>
+
+<li id="cn-m4-47">Exercise 3 - Virtual Private Network (VPN)</li>
+
+<li id="cn-m4-48">Exercise 4 - Port Security</li>
+
+<li id="cn-m4-49">Exercise 5 - Network Appliances and Services</li>
+
+</ul>
+
+<p id="cn-m4-50">After completing this module, you should be able to:</p>
+
+<ul id="cn-m4-51">
+
+<li id="cn-m4-51">Perform Media Access Control (MAC) Filtering</li>
+
+<li id="cn-m4-52">Implement Access Control Lists (ACLs)</li>
+
+</ul>
+
+<p id="cn-m4-53">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m4-54">
+
+<li id="cn-m4-54">Active/Active and Active/Passive</li>
+
+<li id="cn-m4-55">Scheduling</li>
+
+<li id="cn-m4-56">Virtual IP and Persistence</li>
+
+<li id="cn-m4-57">Virtual Local Area Network (VLAN)</li>
+
+<li id="cn-m4-58">Intranet and Extranet</li>
+
+<li id="cn-m4-59">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m4-60">East-West Traffic</li>
+
+<li id="cn-m4-61">Zero Trust</li>
+
+<li id="cn-m4-62">Always On</li>
+
+<li id="cn-m4-63">Split Tunnel vs. Full Tunnel</li>
+
+<li id="cn-m4-64">Remote Access vs. Site-to-site</li>
+
+<li id="cn-m4-65">IPSec</li>
+
+<li id="cn-m4-66">Secure Sockets Layer (SSL)/Transport Layer Security (TLS)</li>
+
+<li id="cn-m4-67">HTML5</li>
+
+<li id="cn-m4-68">Layer 2 Tunneling Protocol (L2TP)</li>
+
+<li id="cn-m4-69">Broadcast Storm Prevention / Loop Prevention</li>
+
+<li id="cn-m4-70">Bridge Protocol Data Unit (BPDU) Guard</li>
+
+<li id="cn-m4-71">Dynamic Host Configuration Protocol (DHCP) Snooping</li>
+
+<li id="cn-m4-72">Jump Servers and Proxy Servers</li>
+
+<li id="cn-m4-73">Network-based Intrusion Detection System (NIDS)/Network-Based Intrusion Prevention System (NIPS)</li>
+
+<li id="cn-m4-74">Hardware Security Module (HSM)</li>
+
+<li id="cn-m4-75">Firewalls</li>
+
+<li id="cn-m4-76">Route Security&nbsp;&nbsp;</li>
+
+<li id="cn-m4-77">Quality of Service (QoS)</li>
+
+<li id="cn-m4-78">Implications of IPv6</li>
+
+<li id="cn-m4-79">Port Spanning/Port Mirroring&nbsp;&nbsp;</li>
+
+<li id="cn-m4-80">Monitoring Services&nbsp;&nbsp;</li>
+
+<li id="cn-m4-81">File Integrity Monitors</li>
+
+<li id="cn-m4-82">DNS</li>
+
+<li id="cn-m4-83">Network Access Control (NAC)</li>
+
+<li id="cn-m4-84">Out-of-band Management</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m4-86">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m4-87">3.3 Given a scenario, implement secure network designs.</p>
+
+<ul id="cn-m4-88">
+
+<li id="cn-m4-88">Load Balancing</li>
+
+<li id="cn-m4-89">Network Segmentation</li>
+
+<li id="cn-m4-90">Virtual Private Network (VPN)</li>
+
+<li id="cn-m4-91">DNS</li>
+
+<li id="cn-m4-92">Network Access Control (NAC)</li>
+
+<li id="cn-m4-93">Out-of-band Management</li>
+
+<li id="cn-m4-94">Port Security</li>
+
+<li id="cn-m4-95">Network Appliances</li>
+
+<li id="cn-m4-96">Access Control List (ACL)</li>
+
+<li id="cn-m4-97">Route Security</li>
+
+<li id="cn-m4-98">Quality of Service (QoS)</li>
+
+<li id="cn-m4-99">Implications of IPv6</li>
+
+<li id="cn-m4-100">Port Spanning/Port Mirroring</li>
+
+<li id="cn-m4-101">Monitoring Services</li>
+
+<li id="cn-m4-102">File Integrity Monitors</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m4-103"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m4-105">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m4-109">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m4-110">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-112"><b>Lab Topology</b></h2>
+
+<p id="cn-m4-113">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m4-114"><img class="cn-img" id="cn-image-m4-c-0" src="ImplementingSecureNetworkSolutions_files/image-m4-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m4-115">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m4-116">
+
+<li id="cn-m4-116"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m4-117"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m4-118"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m4-119"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m4-121">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="LoadBalancing">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-122"><b>Exercise 1 - Load Balancing</b></h2>
+
+<p id="cn-m4-123">Consider a scenario in which you are attempting to 
+access a Web application on your internal network. The response time is 
+slow. Based on your request, when the administrator investigates this 
+issue, he finds that the server does not have optimal resources. For the
+ administrator, it is not possible to add more resources to the server.</p>
+
+<p id="cn-m4-124">There are two options: either you migrate the 
+application to another server or add an additional server to share the 
+workload. The latter solution is recommended. You can configure load 
+balancing between both the servers so that when a request comes in, the 
+load balancer decides which server the request can be sent to.</p>
+
+<p id="cn-m4-125">When a load balancer is used, the users no longer 
+directly connect with the servers. They connect with the load balancer 
+between the users and the servers. When requests are received, it sends 
+the request to the appropriate server based on the load being shared 
+between the servers. With the load balancer, no server gets overwhelmed 
+with requests. There is an equal distribution of requests between the 
+server by the load balancer.</p>
+
+<p id="cn-m4-126">Load balancers can either be hardware or 
+software-based. Hardware-based load balancers are dedicated devices that
+ serve only the purpose of load balancing between servers. 
+Software-based load balancers are applications that run on an operating 
+system.</p>
+
+<p id="cn-m4-127">In this exercise, you will learn about load balancing and load balancers.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-129">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m4-130">
+
+<li id="cn-m4-130">Active/Active</li>
+
+<li id="cn-m4-131">Active/Passive</li>
+
+<li id="cn-m4-132">Scheduling</li>
+
+<li id="cn-m4-133">Virtual IP</li>
+
+<li id="cn-m4-134">Persistence</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-136">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m4-137"><img class="cn-img" id="cn-image-m4-c-1" src="ImplementingSecureNetworkSolutions_files/image-m4-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m4-139"><b>Active/Active</b></h3>
+
+<p id="cn-m4-140">A load balancer can be configured in different ways. 
+In the Active/Active configuration, there are two or more load balancers
+ that work together. All the load balancers are configured to serve the 
+requests that are received. When a user sends a request to a Webserver 
+with an active/active load balancer in front, one of the load balancers 
+receives the request from the Webserver and responds to the user. If the
+ user re-visits the same Webpage, the load balancer, which served the 
+previous request, does not go back to the Webserver but retrieves the 
+same Webpage from the cache. Using this method, there is less impact on 
+network bandwidth.</p>
+
+<p id="cn-m4-141">However, if the same load balancer handling the 
+requests goes down, the user’s request for the same Webpage is no longer
+ available, and the user may receive an error. The load balancer may go 
+down due to a hardware or software failure. For example, if there is a 
+service failure, the load balancer may not be able to handle requests 
+for the Web server. In this case, the users are likely to get errors 
+rather than responses to their requests.</p>
+
+<h3 id="cn-m4-142"><b>Active/Passive </b></h3>
+
+<p id="cn-m4-143">In an Active/Passive configuration, one load balancer 
+handles all the requests, and the second one is the standby node. The 
+primary load balancer handles the requests and distributes them to the 
+servers running in the backend. The entire load is handled on the load 
+balancer. The passive load balancer is in monitoring mode. It monitors 
+the primary load balancer. If there is an issue with the primary load 
+balancer’s performance or a failure, then the passive load balancer 
+immediately takes over without any downtime.</p>
+
+<p id="cn-m4-144">One of the key advantages of the Active/Passive load 
+balancer configuration is that there is no downtime as the passive load 
+balancer continuously monitors the Active load balancer.</p>
+
+<h3 id="cn-m4-145"><b>Scheduling </b></h3>
+
+<p id="cn-m4-146">Load balancers use different types of scheduling methods, which are:</p>
+
+<ul id="cn-m4-147">
+
+<li id="cn-m4-147"><b>Affinity</b>: This method distributes the load to 
+servers depending on their capacity to handle requests. This process of 
+distributing the load is known as affinity scheduling, which can also be
+ based on the number of connections a load balancer has. For example, 
+the load balancer with a minimum number of connections may get the next 
+request.</li>
+
+<li id="cn-m4-148"><b>Round-robin</b>: With a round-robin, the requests 
+are cyclically distributed to the servers. For example, let’s assume 
+that there are three Web servers configured with the load balancer. When
+ the first request comes, the load balancer sends it to the first 
+server. Then, the second request is sent to the second server. In the 
+same manner, the third request is sent to the third server. When the 
+fourth request is received, it will be sent to the first server.</li>
+
+</ul>
+
+<h3 id="cn-m4-149"><b>Virtual IP </b></h3>
+
+<p id="cn-m4-150">When the servers are configured with a load balancer, 
+you do not need to connect to it individually. There would be one 
+virtual IP assigned to the load balancer and one name, and the users can
+ use either one. The virtual IP is the IP address assigned to the load 
+balancer configuration that the users will connect to. It is like a 
+normal IP address except that it is assigned to the load balancer 
+configuration, unlike being assigned to a physical network adapter. For 
+example, you have two Web servers that are connected to the load 
+balancer. The following IP addresses are assigned:</p>
+
+<p id="cn-m4-151">Web server 1: 192.168.0.5</p>
+
+<p id="cn-m4-152">Web server 2: 192.168.0.6</p>
+
+<p id="cn-m4-153">The virtual IP that is assigned to the load balancer 
+configuration can be 192.168.0.100. The users no longer connect to 
+192.168.0.5 or 192.168.0.6. They connect to the virtual IP, which is 
+192.168.0.100. The load balancer can then automatically route the 
+requests to the appropriate Web server.</p>
+
+<p id="cn-m4-154">The load balancer then directs the requests to the appropriate available server.</p>
+
+<h3 id="cn-m4-155"><b>Persistence </b></h3>
+
+<p id="cn-m4-156">A load balancer can also provide session persistence. 
+When a client sends a request, the load balancer can assign an attribute
+ to the user, which could be a cookie or track the user’s IP address. 
+The load balancer creates a session stickiness or session persistence 
+between the user and the server. During the entire session, the load 
+balancer then starts sending the user requests to one specific server 
+rather than distributing it to different servers.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="NetworkSegmentation">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-159"><b>Exercise 2 - Network Segmentation</b></h2>
+
+<p id="cn-m4-160">Networks tend to grow large and become difficult to 
+manage. There are several reasons that the network should be broken into
+ pieces known as segments. Once the network is broken into segments, not
+ only will it increase the manageability, but will also increase the 
+performance by reducing broadcast traffic of the smaller network 
+sections</p>
+
+<p id="cn-m4-161">In this exercise, you will learn about various terminologies related to network segmentation.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-163">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m4-164">
+
+<li id="cn-m4-164">Virtual Local Area Network (VLAN)</li>
+
+<li id="cn-m4-165">Intranet</li>
+
+<li id="cn-m4-166">Extranet</li>
+
+<li id="cn-m4-167">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m4-168">East-West Traffic</li>
+
+<li id="cn-m4-169">Zero Trust</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-171">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m4-172"><img class="cn-img" id="cn-image-m4-c-2" src="ImplementingSecureNetworkSolutions_files/image-m4-c-2.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m4-174"><b>Virtual Local Area Network (VLAN)</b></h3>
+
+<p id="cn-m4-175">Virtual LANs can divide a network into multiple 
+broadcast domains without the use of routers. When you divide a larger 
+network into smaller sections or broadcast domains, it increases the 
+manageability. It is also possible to apply restrictions on these 
+smaller sections. For example, you can block the traffic from one VLAN 
+to another. If the network is compromised, the attack can be isolated 
+using these segments</p>
+
+<p id="cn-m4-176">Another great advantage of VLAN is that you can reduce
+ direct communication between the systems. When the systems are placed 
+in different VLANs, communication is needed between these devices, the 
+traffic has to pass through the gateway of the VLAN, which ensures that 
+the network traffic is inspected.</p>
+
+<h3 id="cn-m4-177"><b>Intranet</b></h3>
+
+<p id="cn-m4-178">The Intranet is the internal network of an 
+organization. Intranet is available only to the employees of an 
+organization in most cases. However, some organizations may allow 
+visiting vendors and contractors to connect to their Intranet. The key 
+purpose of the Intranet is to share resources, such as files and 
+folders. You can also have an internal Web application that serves a 
+specific business goal.</p>
+
+<p id="cn-m4-179">For example, you may have an internally developed 
+Enterprise Resource Planning (ERP) application where the employees mark 
+their attendance, create and manage projects, and also have their 
+profile, which is then linked to the HR database.</p>
+
+<h3 id="cn-m4-180"><b>Extranet </b></h3>
+
+<p id="cn-m4-181">In this network topology, an organization makes 
+resources available through the internet, such as a web server, without 
+giving access to the organization's internal network. The other 
+organization can be a vendor or partner to the organization. It could 
+also be a client which would need access to specific resources, for 
+example, placing orders through a purchasing application</p>
+
+<h3 id="cn-m4-182"><b>Demilitarized Zone (DMZ) </b></h3>
+
+<p id="cn-m4-183">A network typically has endpoints, servers, and 
+network devices. The servers are mostly Internet-facing and provide 
+access to external users, such as clients and vendors. When you need to 
+secure the endpoints, if any server gets compromised, you need to 
+segregate the endpoints and the servers.</p>
+
+<p id="cn-m4-184">A DMZ is a logically separated network from the 
+internal network. It contains servers that need to be accessible 
+externally through the internet. For example, Web or messaging servers 
+that need to be externally accessible. The other servers of the network 
+can be placed on the internal network and do not need to be accessible 
+externally; for example, a database server</p>
+
+<p id="cn-m4-185">The DMZ network is Internet-facing, but network 
+communication between the internal and the DMZ needs to be encrypted. 
+The network traffic flowing between the DMZ and the internal network is 
+controlled with firewalls between both networks.</p>
+
+<p id="cn-m4-186">For example, you have a Web application that has a 
+database as a backend. You want to ensure that the database should be 
+secured even if someone compromises the Webserver. In such a scenario, 
+the database server should remain on the internal network so that if the
+ Web server, which is in the DMZ network, is compromised, the database 
+server is still secure.</p>
+
+<h3 id="cn-m4-187"><b>East-West Traffic </b></h3>
+
+<p id="cn-m4-188">Datacenters contain several different types of devices
+ that need to communicate with each other, for example, physical and 
+virtual servers, containers, and micro-services architecture. The 
+communication and the traffic flowing from one container to another or 
+from one virtual machine to another is known as East-West traffic.</p>
+
+<p id="cn-m4-189">Data centers are equipped with several security 
+appliances and applications to protect the perimeter network. For 
+example, the data centers may consist of firewalls and next-generation 
+firewalls that can be used to protect the network perimeter from attacks
+ like, Denial of Service (DoS) or Distributed Denial of Service attacks 
+(DDoS). The internet-facing applications can be protected with a Web 
+Application Firewall (WAF). However, all this traffic is vertically 
+flowing traffic and is considered to be North-South traffic.</p>
+
+<p id="cn-m4-190">However, with the use of containers, micro-services, 
+and virtual machines, there is a continuous increase in East-West 
+traffic, which is prone to insider attacks. It could be an intentional 
+insider attack, or it could simply be unintentional. For example, a user
+ connects his laptop, which is malware-infected, to the local network. 
+The malware will likely propagate itself to the internal network and, 
+therefore, infect the systems. There need to be security controls that 
+not only protect the internal systems’ traffic but also monitor it. You 
+can have antimalware and Data Loss Prevention (DLP) or even an Intrusion
+ Prevention System (IPS) in place to monitor the systems and East-West 
+traffic.</p>
+
+<p id="cn-m4-191"></p><figure><img class="cn-img" id="cn-image-m4-c-3" src="ImplementingSecureNetworkSolutions_files/image-m4-c-3.jpg" alt="Figure 2.1 Screenshot of East-West Traffic: Showing the example of East-West traffic in two different datacenters."><figcaption>Figure 2.1 Screenshot of East-West Traffic: Showing the example of East-West traffic in two different datacenters.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-193"><b>Zero Trust </b></h3>
+
+<p id="cn-m4-194">The Zero trust concept in networking is based on the 
+methodology that all requests received from any device on the network, 
+regardless if it is internally or externally located, must always be 
+authenticated and authorized. A no trust policy and always authorize and
+ authenticate needs to be implemented to ensure the security of devices 
+and data. A further security implementation will be the segmentation of 
+the network, ensuring the prevention of lateral movement.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="VirtualPrivateNetworkVPN">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-197"><b>Exercise 3 - Virtual Private Network (VPN)</b></h2>
+
+<p id="cn-m4-198">A VPN allows a user to connect to a specific network, 
+such as your organization’s network, using an unsecured external network
+ on the internet. A VPN server allows roaming users to connect to the 
+organization’s internal network. When a user uses an unsecured network 
+to connect to the organization’s network, an encrypted channel is 
+created, securing the data during transmission.</p>
+
+<p id="cn-m4-199">In this exercise, you will learn about VPN and the different types.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-201">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m4-202">
+
+<li id="cn-m4-202">Always On</li>
+
+<li id="cn-m4-203">Split Tunnel vs. Full Tunnel</li>
+
+<li id="cn-m4-204">Remote Access vs. Site-to-site</li>
+
+<li id="cn-m4-205">IPSec</li>
+
+<li id="cn-m4-206">Secure Sockets Layer (SSL)/Transport Layer Security (TLS)</li>
+
+<li id="cn-m4-207">HTML5</li>
+
+<li id="cn-m4-208">Layer 2 Tunneling Protocol (L2TP)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-210">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m4-211"><img class="cn-img" id="cn-image-m4-c-4" src="ImplementingSecureNetworkSolutions_files/image-m4-c-4.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m4-212"><b>Always On</b></h3>
+
+<p id="cn-m4-213">A VPN allows the user to always stay connected instead
+ of connecting and disconnecting from it. Once the user connects to the 
+VPN, it is connected persistently. The connection is established 
+automatically as the user connects the system to the Internet. For 
+example, Windows 10 has an Always On VPN, which connects the user to a 
+VPN server without user intervention. The only time user intervention is
+ required is when multi-factor authentication is enabled for VPN access.</p>
+
+<p id="cn-m4-214"></p><figure><img class="cn-img" id="cn-image-m4-c-5" src="ImplementingSecureNetworkSolutions_files/image-m4-c-5.jpg" alt="Figure 3.1 Screenshot of Windows 10: Showing the Always On VPN in Windows 10."><figcaption>Figure 3.1 Screenshot of Windows 10: Showing the Always On VPN in Windows 10.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-216"><b>Split Tunnel vs. Full Tunnel </b></h3>
+
+<p id="cn-m4-217">With a full tunnel VPN connection, all the network 
+traffic is routed through the enterprise network, for example, if a user
+ is connected to the full tunnel VPN and visits a specific website, the 
+enterprise network handles the internet traffic. This type of VPN 
+connection is more secure but is more resource-intensive.</p>
+
+<p id="cn-m4-218">In a Split tunnel VPN connection, the external network
+ traffic is not routed through the enterprise network but is handled 
+externally, which removes the load of network traffic from the 
+enterprise network.</p>
+
+<h3 id="cn-m4-219"><b>Remote Access vs. Site-to-site </b></h3>
+
+<p id="cn-m4-220">A remote-access VPN connection ensures that users 
+working remotely can access internal network resources when connected to
+ the VPN.</p>
+
+<p id="cn-m4-221">A site-to-site VPN connection is created when a 
+company has different branches, and these branches need to access 
+resources from each other. Two VPN gateways need to be created at each 
+branch to ensure connectivity.</p>
+
+<h3 id="cn-m4-222"><b>IPSec</b></h3>
+
+<p id="cn-m4-223">IPSec is a set of protocols that are used to create 
+encrypted connections between networking devices. The data that is sent 
+across the external network is encrypted and secure if malicious threat 
+actors intercept it.</p>
+
+<h3 id="cn-m4-224"><b>Secure Sockets Layer (SSL)/Transport Layer Security (TLS)</b></h3>
+
+<p id="cn-m4-225">SSL is a protocol that is now replaced by the TLS 
+protocol. SSL was mainly used to secure the information between two 
+endpoints. For example, SSL was primarily used between a Webserver and a
+ client that was trying to access a Webpage. TLS is an upgraded version 
+of SSL and provides improved security. When a website is configured with
+ an SSL/TLS certificate, the Hypertext Transfer Protocol Secure (HTTPS) 
+is used to encrypt the network traffic from the website.</p>
+
+<p id="cn-m4-226"></p><figure><img class="cn-img" id="cn-image-m4-c-6" src="ImplementingSecureNetworkSolutions_files/image-m4-c-6.jpg" alt="Figure 3.2 Screenshot of SSL/TLS certificate: Showing the SSL/TLS certificate on www.google.com."><figcaption>Figure 3.2 Screenshot of SSL/TLS certificate: Showing the SSL/TLS certificate on www.google.com.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-228"><b>HTML5</b></h3>
+
+<p id="cn-m4-229">A VPN connection can be of two types. The first one is
+ that you use a client application that is installed on your system. The
+ second type is the clientless connection, which is done through HTML 5 
+VPN portal. You need to access the HTML 5 VPN portal address through a 
+web browser and authenticate using a username and password.</p>
+
+<p id="cn-m4-230">After you log on to the HTML 5 VPN portal, you can access the internal network resources.</p>
+
+<h3 id="cn-m4-231"><b>Layer 2 Tunneling Protocol (L2TP)</b></h3>
+
+<p id="cn-m4-232">The L2TP protocol is a tunneling protocol that is used
+ to create a VPN connection. It is normally used in conjunction with 
+IPSec to secure the encrypt the network traffic.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="PortSecurity">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-236"><b>Exercise 4 - Port Security</b></h2>
+
+<p id="cn-m4-237">Switches have ports that are used for connecting the 
+systems and network devices. It is essential to protect the ports from 
+being exploited. Most Layer 2 switches and higher versions have port 
+security features.</p>
+
+<p id="cn-m4-238">In this exercise, you will learn about port security methods.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-240">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m4-241">
+
+<li id="cn-m4-241">Broadcast Storm Prevention / Loop Prevention</li>
+
+<li id="cn-m4-242">Bridge Protocol Data Unit (BPDU) Guard</li>
+
+<li id="cn-m4-243">Dynamic Host Configuration Protocol (DHCP) Snooping</li>
+
+</ul>
+
+<p id="cn-m4-244">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m4-245">
+
+<li id="cn-m4-245">Perform Media Access Control (MAC) Filtering</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-247">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m4-248">
+
+<li id="cn-m4-248"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m4-249"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m4-250"><img class="cn-img" id="cn-image-m4-c-7" src="ImplementingSecureNetworkSolutions_files/image-m4-c-7.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m4-251"><b>Broadcast Storm Prevention / Loop Prevention</b></h3>
+
+<p id="cn-m4-252">Loop prevention is a method to prevent a broadcast 
+storm on the network. A broadcast storm occurs when a switch sends 
+packets to another switch, which in turn sends the packets to a third 
+switch looking for the target system. The third system floods the 
+packets back to the first and second switches, which again floods them 
+back to each other. This causes a broadcast storm, which eventually 
+floods the network with unnecessary traffic. To prevent a broadcast 
+storm, the loop prevention method needs to be implemented.</p>
+
+<p id="cn-m4-253">The loop prevention method uses the spanning-tree 
+algorithm (STA). A switch can have multiple routes to send or receive 
+communication to a host on the network. STA is used to determine the 
+best route for the network traffic. The quickest route is used for 
+communication. However, if the primary route is not available, other 
+routes can be utilized for sending communication to the target host.</p>
+
+<h3 id="cn-m4-254"><b>Bridge Protocol Data Unit (BPDU) Guard</b></h3>
+
+<p id="cn-m4-255">A bridge protocol data unit (BPDU) is a data message 
+that is utilized by the switches on the network. A BPDU message contains
+ various information, which includes information such as ports, their 
+priorities, and addresses. The use of the BPDU message is to detect 
+loops in the network.</p>
+
+<p id="cn-m4-256">The BPDU messages are used to configure and manage the
+ Spanning Tree Protocol (STP) topology. Enabling the BDPU Guard feature 
+ensures that the device will not receive BDPU messages from its 
+connected devices, thus protecting the STP configuration.</p>
+
+<h3 id="cn-m4-257"><b>Dynamic Host Configuration Protocol (DHCP) Snooping</b></h3>
+
+<p id="cn-m4-258">The DHCP Snooping feature is available in several 
+switches. The core intent of enabling the DHCP Snooping feature is to 
+prevent rogue DHCP servers from being implemented on the network. When 
+you configure the DHCP Snooping feature, the switch creates and 
+maintains a DHCP Snooping table, which tracks untrusted messages on the 
+network. The table also maintains the IP addresses that are leased from 
+the DHCP servers and assigned to the various ports on the switch. The 
+switch also tracks the untrusted ports, and if there are messages 
+received on the untrusted ports, then the messages are dropped based on 
+the source MAC addresses if it does not match the entries in the table.</p>
+
+<p id="cn-m4-259"></p><figure><img class="cn-img" id="cn-image-m4-c-8" src="ImplementingSecureNetworkSolutions_files/image-m4-c-8.jpg" alt="Figure 4.1 Screenshot of DHCP Snooping Feature: Showing the DHCP Snooping Feature on a software managing switch."><figcaption>Figure 4.1 Screenshot of DHCP Snooping Feature: Showing the DHCP Snooping Feature on a software managing switch.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-262"><b>Task 1 - Media Access Control (MAC) Filtering </b></h3>
+
+<p id="cn-m4-263">Each network device has a MAC address, a globally unique hardware number embedded within the device.</p>
+
+<p id="cn-m4-264">Configuring MAC address filtering is a method to ensure only legitimate devices can connect to the wireless network.</p>
+
+<p id="cn-m4-265">To perform MAC address filtering, perform the following steps:</p>
+
+<h4 id="cn-m4-266"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-267">Ensure that all the required devices are powered on. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m4-268">Click the <b>Microsoft Edge </b>icon on the Windows taskbar.</p>
+
+<p id="cn-m4-269"></p><figure><img class="cn-img" id="cn-image-m4-c-9" src="ImplementingSecureNetworkSolutions_files/image-m4-c-9.jpg" alt="Figure 4.2 Screenshot of PLABWIN10: Clicking the Microsoft Edge icon in the Windows taskbar."><figcaption>Figure 4.2 Screenshot of PLABWIN10: Clicking the Microsoft Edge icon in the Windows taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-271"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-272">The <b>Intranet </b>page is displayed. Type the following URL in the address bar:</p>
+
+<pre id="cn-m4-273"><code>http://ui.linksys.com/WRT320N/1.0.00/index.htm
+
+</code></pre>
+
+<p id="cn-m4-274">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-275"></p><figure><img class="cn-img" id="cn-image-m4-c-10" src="ImplementingSecureNetworkSolutions_files/image-m4-c-10.jpg" alt="Figure 4.3 Screenshot of PLABWIN10: Typing the URL in the Microsoft Edge address bar."><figcaption>Figure 4.3 Screenshot of PLABWIN10: Typing the URL in the Microsoft Edge address bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-277"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-278">The <b>Linksys </b>Webpage is displayed. Click the <b>Wireless </b>tab.</p>
+
+<p id="cn-m4-279"></p><figure><img class="cn-img" id="cn-image-m4-c-11" src="ImplementingSecureNetworkSolutions_files/image-m4-c-11.jpg" alt="Figure 4.4 Screenshot of PLABWIN10: Clicking the Wireless tab."><figcaption>Figure 4.4 Screenshot of PLABWIN10: Clicking the Wireless tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-281"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-282">Click the <b>Wireless MAC Filter </b>tab.</p>
+
+<p id="cn-m4-283"></p><figure><img class="cn-img" id="cn-image-m4-c-12" src="ImplementingSecureNetworkSolutions_files/image-m4-c-12.jpg" alt="Figure 4.5 Screenshot of PLABWIN10: Clicking the Wireless MAC Filter tab."><figcaption>Figure 4.5 Screenshot of PLABWIN10: Clicking the Wireless MAC Filter tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-285"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-286">The <b>Windows MAC Filter </b>tab is displayed. Click <b>Enabled </b>and then ensure <b>Prevent PCs listed below from accessing the wireless network </b>is selected.</p>
+
+<p id="cn-m4-287"></p><figure><img class="cn-img" id="cn-image-m4-c-13" src="ImplementingSecureNetworkSolutions_files/image-m4-c-13.jpg" alt="Figure 4.6 Screenshot of PLABWIN10: Clicking Enabled and then ensuring Prevent PCs listed below from accessing the wireless network is selected."><figcaption>Figure
+ 4.6 Screenshot of PLABWIN10: Clicking Enabled and then ensuring Prevent
+ PCs listed below from accessing the wireless network is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-289"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-290">Either you can add the MAC addresses manually or use the Wireless Client List and add a client.</p>
+
+<p id="cn-m4-291">Click <b>Wireless Client </b>List.</p>
+
+<p id="cn-m4-292"></p><figure><img class="cn-img" id="cn-image-m4-c-14" src="ImplementingSecureNetworkSolutions_files/image-m4-c-14.jpg" alt="Figure 4.7 Screenshot of PLABWIN10: Clicking Wireless Client List."><figcaption>Figure 4.7 Screenshot of PLABWIN10: Clicking Wireless Client List.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-294"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-295">The <b>Wireless Client List </b>window is displayed. Select the only listed client and then select <b>Save to MAC Address Filter List</b>. Click <b>Add</b>.</p>
+
+<p id="cn-m4-296"></p><figure><img class="cn-img" id="cn-image-m4-c-15" src="ImplementingSecureNetworkSolutions_files/image-m4-c-15.jpg" alt="Figure 4.8 Screenshot of PLABWIN10: Select the only listed client and then select Save to MAC Address Filter List. Clicking Add."><figcaption>Figure 4.8 Screenshot of PLABWIN10: Select the only listed client and then select Save to MAC Address Filter List. Clicking Add.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-298"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-299">Click <b>Close</b>.</p>
+
+<p id="cn-m4-300"></p><figure><img class="cn-img" id="cn-image-m4-c-16" src="ImplementingSecureNetworkSolutions_files/image-m4-c-16.jpg" alt="Figure 4.9 Screenshot of PLABWIN10: Clicking Close."><figcaption>Figure 4.9 Screenshot of PLABWIN10: Clicking Close.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-302"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-303">Click <b>Save Settings</b>.</p>
+
+<span class="cn-quote" id="cn-m4-304"><b><i>Note: </i></b><i>Since this 
+is a dummy application running, the MAC address does not get added to 
+the list. However, in the real application, it does get added. The 
+intent is to show you how to add a MAC address to the list for MAC 
+filtering. You will likely get a page saying ‘Not Found’ after clicking 
+save.</i></span>
+
+<p id="cn-m4-305"></p><figure><img class="cn-img" id="cn-image-m4-c-17" src="ImplementingSecureNetworkSolutions_files/image-m4-c-17.jpg" alt="Figure 4.10 Screenshot of PLABWIN10: Clicking Save Settings."><figcaption>Figure 4.10 Screenshot of PLABWIN10: Clicking Save Settings.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m4-309">Close <b>Microsoft Edge</b>.</p>
+
+<span class="cn-alert" id="cn-m4-310">Leave all devices in their current state and proceed to the next exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="NetworkAppliancesandServices">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-314"><b>Exercise 5 - Network Appliances and Services</b></h2>
+
+<p id="cn-m4-315">A network can have a variety of services, servers, and
+ network devices. To ensure the optimum security of a network, each of 
+them needs to be secured. For example, having a firewall does not 
+automatically ensure that your network is safe. You need to configure 
+the firewall with proper rules. Similarly, you may have several services
+ running on the network. You need to ensure that each service has a fair
+ amount of resources to be visible to the end-users.</p>
+
+<p id="cn-m4-316">In this exercise, you will learn about various network appliances and methods to secure them.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m4-318">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m4-319">
+
+<li id="cn-m4-319">Jump Servers</li>
+
+<li id="cn-m4-320">Proxy Servers</li>
+
+<li id="cn-m4-321">Network-based Intrusion Detection System (NIDS)/Network-Based Intrusion Prevention System (NIPS)</li>
+
+<li id="cn-m4-322">Hardware Security Module (HSM)</li>
+
+<li id="cn-m4-323">Firewalls</li>
+
+<li id="cn-m4-324">Route Security&nbsp;&nbsp;</li>
+
+<li id="cn-m4-325">Quality of Service (QoS)</li>
+
+<li id="cn-m4-326">Implications of IPv6</li>
+
+<li id="cn-m4-327">Port Spanning/Port Mirroring&nbsp;&nbsp;</li>
+
+<li id="cn-m4-328">Monitoring Services&nbsp;&nbsp;</li>
+
+<li id="cn-m4-329">File Integrity Monitors</li>
+
+<li id="cn-m4-330">DNS</li>
+
+<li id="cn-m4-331">Network Access Control (NAC)</li>
+
+<li id="cn-m4-332">Out-of-band Management</li>
+
+</ul>
+
+<p id="cn-m4-333">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m4-334">
+
+<li id="cn-m4-334">Implement Access Control Lists (ACLs)</li>
+
+</ul>
+
+<ol id="cn-m4-335">
+
+</ol>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m4-337">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m4-338">
+
+<li id="cn-m4-338"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m4-340"><img class="cn-img" id="cn-image-m4-c-18" src="ImplementingSecureNetworkSolutions_files/image-m4-c-18.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m4-341"><b>Jump Servers &nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-342">A jump server or a jump host is a hardened and secure 
+system or device that connects two dissimilar security zones. It can 
+connect your internal network with a highly secure network. To be able 
+to connect to the secure network, you need to navigate through the jump 
+server. For example, a jump box is configured between the DMZ and the 
+office network. It is the only entry point to the DMZ.</p>
+
+<p id="cn-m4-343"></p><figure><img class="cn-img" id="cn-image-m4-c-19" src="ImplementingSecureNetworkSolutions_files/image-m4-c-19.jpg" alt="Figure 5.1 Screenshot of a Network: Showing the placement of a jump server."><figcaption>Figure 5.1 Screenshot of a Network: Showing the placement of a jump server.</figcaption></figure><p></p>
+
+<h3 id="cn-m4-346"><b>Proxy Servers&nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-347">A proxy server is a device or application that acts as
+ an agent on a user’s request, specifically on the Internet. When a user
+ attempts to access a Website, a proxy server would simply go and fetch 
+the URL and return it to the user. In this way, the user does not have 
+to be directly connected to the Internet.</p>
+
+<p id="cn-m4-348">There are different roles a proxy server can play. Some of the key roles are:</p>
+
+<p id="cn-m4-349"><b>Application proxy</b>: An application proxy is also
+ known as an application-layer firewall. It inspects the packet 
+components, such as the header and data portion of the packet.</p>
+
+<p id="cn-m4-350"><b>Transparent proxy</b>: A transparent proxy does not
+ require any additional software to be installed at the client end.  You
+ need to configure the default gateway IP address to point to the proxy 
+server.</p>
+
+<p id="cn-m4-351"><b>Circuit-level proxy</b>: A Circuit-level proxy 
+operates at Layer 5, which is the session layer of the OSI model. SOCKS 
+firewall is a type of Circuit-level proxy.</p>
+
+<p id="cn-m4-352"><b>Forward proxy</b>: With the forward proxy, all 
+requests to the Internet are sent through a proxy server. A user first 
+needs to connect to the proxy server, which first checks its cache for 
+the same web pages that the user is trying to access. If the web pages 
+are of the latest version, they are returned to the user. However, if 
+the web pages are either outdated or not in the cache, the proxy server 
+fetches the user's web pages.</p>
+
+<p id="cn-m4-353"><b>Reverse proxy</b>: A reverse proxy works in just 
+the opposite manner of forwarding proxy. It receives a request from the 
+internet or any external network and forwards it to the relevant 
+internal server or system. To the external world, the proxy is the 
+visible server but not the internal system.</p>
+
+<h3 id="cn-m4-354"><b>Network-based Intrusion Detection System (NIDS)/Network-Based Intrusion Prevention System (NIPS)&nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-355">NIDS is designed to monitor network traffic. It is 
+important to know that NIDS is not capable of preventing an attack. It 
+can only detect the attack. On the other hand, NIPS can monitor, detect,
+ and protect a network against suspicious and malicious traffic. NIPS is
+ usually situated between the network and the edge firewall.</p>
+
+<p id="cn-m4-356">There are different types of NIDS/NIPS:</p>
+
+<h4 id="cn-m4-357"><b><i>Signature-based</i></b></h4>
+
+<p id="cn-m4-358">Signature-based IDS or IPS strictly work with the 
+signatures, which must be updated regularly. Each signature has a 
+specific pattern, which identifies a particular threat. If any pattern 
+is found in the signatures, then it is considered to be a threat. IDS or
+ IPS works similarly to an antivirus, which is also dependent on 
+malicious software signatures. If these signatures are not regularly 
+updated, new malicious threats might not be detected while monitoring 
+the network traffic with IDS and IPS utilities.</p>
+
+<h4 id="cn-m4-359"><b><i>Behavior-based</i></b></h4>
+
+<p id="cn-m4-360">Behavior-based IDS or IPS continue to monitor the 
+behavior of the processes and programs. If there is a change in the 
+behavior of any process or program, an alert is generated.</p>
+
+<h4 id="cn-m4-361"><b><i>Heuristic-based</i></b></h4>
+
+<p id="cn-m4-362">Heuristic-based IDS or IPS uses an algorithm to scan 
+applications, network traffic, and programs. Based on the algorithm, it 
+can determine whether something, such as traffic, is malicious or not. 
+It actively monitors the programs and network traffic to determine if it
+ is malicious or not.</p>
+
+<h4 id="cn-m4-363"><b><i>Anomaly-based</i></b></h4>
+
+<p id="cn-m4-364">Anomaly-based IDS can detect any traffic that is new 
+or unusual. It can also help in detecting any potential network hardware
+ exploits. Once installed, it needs to gather network traffic 
+information to create a baseline of the traffic. Once the baseline is 
+developed, any deviation from it will raise an alarm. It is important to
+ note that network traffic patterns may vary from time to time. For 
+example, the addition of a new web application server. If baselines are 
+not updated after any new additions, a high number of false positives 
+may be generated.</p>
+
+<h4 id="cn-m4-365"><b><i>Inline vs. passive</i></b></h4>
+
+<p id="cn-m4-366">An IDS can be of two types: inline or passive. The 
+inline IDS is connected to the network and monitors the traffic in 
+real-time. As the data flows on the network, the inline IDS monitors the
+ data. A passive IDS works oppositely to an inline IDS. It is connected 
+to a switch responsible for providing a copy of the traffic to the 
+passive IDS.</p>
+
+<h3 id="cn-m4-367"><b>Hardware Security Module (HSM)</b></h3>
+
+<p id="cn-m4-368">A&nbsp;hardware security module&nbsp;(HSM) is a 
+security device used for safeguarding and managing digital keys, which 
+are used for strong authentication. HSM can be in the form of a plug-in 
+card or an external device.</p>
+
+<p id="cn-m4-369">The following are the functions of an HSM:</p>
+
+<ul id="cn-m4-370">
+
+<li id="cn-m4-370">Performing encryption and decryption</li>
+
+<li id="cn-m4-371">Manage secure key generation</li>
+
+<li id="cn-m4-372">Perform secure key storage</li>
+
+<li id="cn-m4-373">Manage Transparent Data Encryption (TDE) keys for databases</li>
+
+</ul>
+
+<p id="cn-m4-374">The following cryptographic algorithms are supported with HSM:</p>
+
+<ul id="cn-m4-375">
+
+<li id="cn-m4-375">AES</li>
+
+<li id="cn-m4-376">RSA</li>
+
+<li id="cn-m4-377">SHA-1</li>
+
+<li id="cn-m4-378">Triple DES</li>
+
+<li id="cn-m4-379">Diffie-Hellman Key Exchange</li>
+
+</ul>
+
+<p id="cn-m4-380">Other than these cryptographic algorithms, SHA-256 is also supported by HSM.</p>
+
+<p id="cn-m4-381">Let’s take the example of a Web server that you have. 
+The Web server is configured to run a website with a certificate. You 
+notice that after the certificate configuration, the webserver has 
+slowed down. You want the webserver to give good performance while using
+ the certificate, and at the same time, you also want to protect its 
+private key.</p>
+
+<p id="cn-m4-382">HSM can meet both the requirements mentioned in the 
+scenario. HSM increases the performance of the Web server by offloading 
+the cryptographic functions. Moreover, HSM stores the private key. There
+ are different varieties of HSM available, such as USB and PCIe cards.</p>
+
+<h4 id="cn-m4-383"><b><i>HSM Functions</i></b></h4>
+
+<p id="cn-m4-384">HSM can perform various functions, such as:</p>
+
+<ul id="cn-m4-385">
+
+<li id="cn-m4-385">encryption keys management</li>
+
+<li id="cn-m4-386">key exchange</li>
+
+<li id="cn-m4-387">encryption and decryption</li>
+
+<li id="cn-m4-388">cryptographic functions offloading from servers</li>
+
+</ul>
+
+<p id="cn-m4-389">HSM can be embedded in different types of hardware. Some of the key examples are:</p>
+
+<ul id="cn-m4-390">
+
+<li id="cn-m4-390">FIPS 140-3 compliant rack-mount chassis</li>
+
+<li id="cn-m4-391">PCI-E cards</li>
+
+<li id="cn-m4-392">USB drives</li>
+
+<li id="cn-m4-393">MicroSD cards</li>
+
+</ul>
+
+<h4 id="cn-m4-394"><b><i>Types of HSM</i></b></h4>
+
+<p id="cn-m4-395">There are typically three types of HSM:</p>
+
+<ul id="cn-m4-396">
+
+<li id="cn-m4-396"><b>Hardware</b>: are available in the form of a device, such as PCI-E cards or MicroSD cards</li>
+
+<li id="cn-m4-397"><b>Virtual</b>: the virtual key manager, which can be
+ downloaded from a software vendor’s Website. They can be FIPS 140-2 
+compliant but not validated as there is no physical hardware involved.</li>
+
+<li id="cn-m4-398"><b>Hosted</b>: are available in the cloud 
+environment. They perform the same functions to generate and protect 
+keys. It provides the same level of security in the cloud environment as
+ a hardware HSM in the local environment.</li>
+
+</ul>
+
+<h4 id="cn-m4-399"><b><i>Sensors</i></b></h4>
+
+<p id="cn-m4-400">There are a variety of tasks that can be performed 
+with the network traffic. Various components help you achieve these 
+tasks. For example, a sensor helps you monitor the traffic. However, its
+ location for placement is critical for monitoring the traffic. For 
+example, a sensor can be placed in a manner that would be able to 
+monitor only one system’s traffic. Sensors are typically used with the 
+NIDS and NIPS.</p>
+
+<h4 id="cn-m4-401"><b><i>Collectors</i></b></h4>
+
+<p id="cn-m4-402">Collectors are responsible for collecting data from 
+the sensors. The collectors would typically be used with the Security 
+information and event management (SIEM) systems. The collectors are 
+responsible for collecting and bringing in the information to a SIEM.</p>
+
+<h4 id="cn-m4-403"><b><i>Aggregators</i></b></h4>
+
+<p id="cn-m4-404">Aggregators are responsible for putting the data into a
+ common repository. They are typically used with SIEM, where the 
+information from various network devices and servers is collated. They 
+aggregate the events to find the correlation between them.</p>
+
+<h3 id="cn-m4-405"><b>Firewalls&nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-406">In the simplest term, a firewall, either 
+software-based or hardware-based, is responsible for monitoring and 
+controlling the ingress and egress traffic from a network. In most 
+cases, the firewalls are installed on the edge of a network and also 
+configured as a gateway for the ingress and egress traffic.</p>
+
+<p id="cn-m4-407">There are several different types of firewalls. Some of the key ones are:</p>
+
+<h4 id="cn-m4-408"><b><i>Web Application Firewall (WAF)</i></b></h4>
+
+<p id="cn-m4-409">Several organizations protect Web applications with a 
+Web Application Firewall (WAF). Hardening is a process of reducing the 
+attack surface for the attackers on a system or application. In the 
+application hardening, you can perform various activities like patching 
+the application, removing unused features, and closing unnecessary 
+ports. You can also deploy certain security controls, such as Web 
+Application Firewall (WAF) or Transport Layer Security (TLS) if you use a
+ web application. WAF is designed to prevent an application from 
+Cross-site Scripting (XSS) and SQL injection attacks. WAF works at OSI 
+Layer 7, protecting HTTP and HTTPS traffic.</p>
+
+<p id="cn-m4-410">It can perform the following tasks:</p>
+
+<ul id="cn-m4-411">
+
+<li id="cn-m4-411">Works with HTTP and HTTPS</li>
+
+<li id="cn-m4-412">Blocks attacks and perform deep packet inspection</li>
+
+<li id="cn-m4-413">Provides security at Layer 7 of the OSI model</li>
+
+<li id="cn-m4-414">Protects the application against the XSS, SQL Injection, and various application attacks</li>
+
+</ul>
+
+<h4 id="cn-m4-415"><b><i>Next-Generation Firewall (NGFW)</i></b></h4>
+
+<p id="cn-m4-416">NGFW is an advanced version of a traditional firewall,
+ mainly designed to perform port and protocol inspection. NGFW has more 
+capabilities, such as:</p>
+
+<ul id="cn-m4-417">
+
+<li id="cn-m4-417">Deep packet inspection</li>
+
+<li id="cn-m4-418">SSL/SSH inspection</li>
+
+<li id="cn-m4-419">Geolocation</li>
+
+<li id="cn-m4-420">Sandboxing</li>
+
+<li id="cn-m4-421">Web Application Firewall (WAF)</li>
+
+</ul>
+
+<p id="cn-m4-422">There are several products out in the market that have
+ most of these features. Some NGFW may also have a reverse proxy, URL 
+filtering, and IDS/IPS built-in. An example of NGFW is Untangle.</p>
+
+<h4 id="cn-m4-423"><b><i>Stateful</i></b></h4>
+
+<p id="cn-m4-424">A stateful firewall has the capability of inspecting 
+the packets, whether they are fragmented or not. It can also block 
+unauthorized traffic from entering the network. It also allows access 
+only to specific ports with the respective protocols. A stateful 
+firewall uses the active sessions to perform packet inspection.</p>
+
+<h4 id="cn-m4-425"><b><i>Stateless</i></b></h4>
+
+<p id="cn-m4-426">Stateless firewalls are ACL-based, which watch for the
+ network to act on the source or destination addresses. They make packet
+ filtering decisions based on the packet headers. A stateless firewall 
+cannot inspect the traffic patterns.</p>
+
+<h4 id="cn-m4-427"><b><i>Unified Threat Management (UTM)</i></b></h4>
+
+<p id="cn-m4-428">UTM or Unified Threat Management, also known as Next-Generation Firewall (NGFW), can perform the functions of:</p>
+
+<ul id="cn-m4-429">
+
+<li id="cn-m4-429">Firewall</li>
+
+<li id="cn-m4-430">Anti-spam</li>
+
+<li id="cn-m4-431">Content filtering</li>
+
+<li id="cn-m4-432">Data Loss Prevention (DLP)</li>
+
+<li id="cn-m4-433">Malware scanner</li>
+
+</ul>
+
+<h4 id="cn-m4-434"><b><i>Network Address Translation (NAT) Gateway</i></b></h4>
+
+<p id="cn-m4-435">When you need to connect a private network to a public
+ network, you can use the NAT gateway, which uses a single IP address. 
+The private network behind the NAT Gateway is not exposed to the 
+Internet. The servers and systems on the private network can still 
+access the Internet, but they are not exposed. Only the IP address of 
+the NAT Gateway is exposed to the Internet. It is one way you can 
+safeguard your private network. The servers or other network devices on 
+the Internet cannot directly connect to the private network.</p>
+
+<h4 id="cn-m4-436"><b><i>Content/URL Filter</i></b></h4>
+
+<p id="cn-m4-437">A content filter is used to prevent user access to 
+certain applications, such as executables. In addition to firewalls and 
+antivirus, content filtering devices, IPS, and sandboxing are examples 
+of active security appliances.</p>
+
+<p id="cn-m4-438">URL filters will restrict access to certain sites when
+ using a proxy server. URL filtering allows or denies access to specific
+ Website URLs that are contained within a defined list. Using a URL 
+filter can block sites based on the type of content.</p>
+
+<h4 id="cn-m4-439"><b><i>Open-source vs. Proprietary</i></b></h4>
+
+<p id="cn-m4-440">A firewall can either be open-source or proprietary. 
+When you refer to a proprietary firewall, it is a software or a hardware
+ firewall that a vendor sells. There is a price tag attached to the 
+firewall. When you refer to a software firewall, the vendor may offer a 
+free version with limited features and a full version with all the 
+features. For example, in most free version firewalls, you may not get 
+updates or real-time monitoring. Such features are bundled with the full
+ version.</p>
+
+<p id="cn-m4-441">Some of the key proprietary firewalls are:</p>
+
+<ul id="cn-m4-442">
+
+<li id="cn-m4-442">Cisco ASA</li>
+
+<li id="cn-m4-443">WatchGuard</li>
+
+<li id="cn-m4-444">Fortinet FortiGate</li>
+
+<li id="cn-m4-445">SonicWall TZ</li>
+
+</ul>
+
+<p id="cn-m4-446">Open-source firewalls do not have a price tag. 
+However, this does not mean that open-source firewalls lack features. 
+Most of the open-source firewalls are full of features that you get in 
+commercial firewalls. Some of the key open-source firewalls are:</p>
+
+<ul id="cn-m4-447">
+
+<li id="cn-m4-447">PFSense</li>
+
+<li id="cn-m4-448">ClearOSFirewall</li>
+
+<li id="cn-m4-449">Endian Firewall Community (EFC)</li>
+
+<li id="cn-m4-450">IPFire</li>
+
+<li id="cn-m4-451">NetDeep Secure</li>
+
+<li id="cn-m4-452">Untangle</li>
+
+<li id="cn-m4-453">Glasswire</li>
+
+</ul>
+
+<h4 id="cn-m4-454"><b><i>Hardware vs. Software</i></b></h4>
+
+<p id="cn-m4-455">A firewall can either be hardware or software-based. A
+ hardware firewall is a hardware device that acts as a firewall. It is 
+equipped with all firewall features. Compared to a software firewall, a 
+hardware firewall is expansive and may require specific expertise to 
+configure it.</p>
+
+<p id="cn-m4-456"></p><figure><img class="cn-img" id="cn-image-m4-c-20" src="ImplementingSecureNetworkSolutions_files/image-m4-c-20.jpg" alt="Figure 5.2 Image of a Paloalto PA-220 firewall: Showing an example of a hardware firewall appliance."><figcaption>Figure 5.2 Image of a Paloalto PA-220 firewall: Showing an example of a hardware firewall appliance.</figcaption></figure><p></p>
+
+<p id="cn-m4-458">A software firewall is either an independent application or built-in to the operating system. For example, <b>Windows Defender Firewall </b>is part of the Windows operating system. It is a full-fledged firewall in itself.</p>
+
+<p id="cn-m4-459"></p><figure><img class="cn-img" id="cn-image-m4-c-21" src="ImplementingSecureNetworkSolutions_files/image-m4-c-21.jpg" alt="Figure 5.3 Screenshot of Software Firewall: Showing the Windows Firewall in Windows 10."><figcaption>Figure 5.3 Screenshot of Software Firewall: Showing the Windows Firewall in Windows 10.</figcaption></figure><p></p>
+
+<p id="cn-m4-461">An example of an independent software firewall is <b>GlassWire</b>. It not only monitors the system, but also detects unwanted changes in the system.</p>
+
+<p id="cn-m4-462"></p><figure><img class="cn-img" id="cn-image-m4-c-22" src="ImplementingSecureNetworkSolutions_files/image-m4-c-22.jpg" alt="Figure 5.4 Screenshot of Software Firewall: Showing the interface of the GlassWire software firewall."><figcaption>Figure 5.4 Screenshot of Software Firewall: Showing the interface of the GlassWire software firewall.</figcaption></figure><p></p>
+
+<p id="cn-m4-464">When compared to a hardware firewall, the software 
+firewall is dependent on the underlying operating system. Therefore, it 
+does consume system resources, which can impact the operating system's 
+performance. The hardware firewall, on the other hand, is an independent
+ device. Even if there is a system that is compromised, the hardware 
+firewall is not impacted.</p>
+
+<h4 id="cn-m4-465"><b><i>Appliance vs. Host-based vs. Virtual</i></b></h4>
+
+<p id="cn-m4-466">A host-based firewall is dedicated to a particular 
+host. For example, Windows Defender Firewall is a host-based firewall, 
+which can protect the operating system on which it is running. If you 
+are looking to protect only a single system, a host-based firewall is 
+the solution. An attacker can circumvent host-based firewalls if the 
+system is compromised. The attacker can simply switch off the host-based
+ firewall.</p>
+
+<p id="cn-m4-467">An appliance-based firewall is a hardware device that 
+is placed in the network to monitor and manage incoming and outgoing 
+traffic. Even if systems on the network are compromised, it is still not
+ easy for the attacker to circumvent the appliance-based firewall. Most 
+appliance-based firewalls come with several other features, such as IPS,
+ VPN, and gateway.</p>
+
+<p id="cn-m4-468">Like software or hardware firewalls, a virtual 
+firewall is also meant to monitor and filter traffic. However, it is 
+mainly designed to work with a virtual environment that consists of 
+virtual machines. There are one or more policies that are defined to 
+filter the traffic. The firewall monitors any traffic that is moving 
+from one virtual machine to another. If the traffic meets a given 
+condition, it is allowed, or else it is dropped.</p>
+
+<h3 id="cn-m4-469"><b>Route Security</b></h3>
+
+<p id="cn-m4-470">When information travels over a network or through the
+ Internet, there is a set of routes that are used. Routes determine how 
+the information can reach its target.</p>
+
+<p id="cn-m4-471">On a network, a router is responsible for learning and
+ sending the packets on a specific route. Even though there may be 
+several routes available, the router tends to choose the most 
+appropriate path. If the router itself is compromised, the attacker can 
+feed false routes to send the information on a different path 
+altogether.</p>
+
+<p id="cn-m4-472">For a router to send information, it needs peers. It 
+develops peering relationships or neighboring adjacency to send the 
+information. There can be a possibility that the attacker may break the 
+neighboring adjacency, which can be done by multiple methods, such as 
+exhausting the router resources or by forming saturated queues.</p>
+
+<p id="cn-m4-473">To ensure route security, several methods can be used. Some of the key methods are:</p>
+
+<ul id="cn-m4-474">
+
+<li id="cn-m4-474">Perform neighbor authentication, which is a feature 
+available in most routing protocols. When neighbor authentication is 
+enabled, the router receives information only from trusted neighbors. 
+Any type of route information from an untrusted neighbor is then 
+ignored.</li>
+
+<li id="cn-m4-475">Disable dynamic peer discovery, which allows the 
+router to discover new neighbors. It is always better to manually 
+configure the trusted neighbors. This will prevent any bogus neighbor 
+from sharing updates with the router.</li>
+
+<li id="cn-m4-476">Set the interfaces as passive using a 
+passive-interface command on the interfaces on which you do not want the
+ router adjacencies. This will prevent any automatic router adjacencies 
+on these interfaces.</li>
+
+<li id="cn-m4-477">Use Infrastructure Protection Access Control Lists 
+(ACLs) to permit only legitimate traffic from authorized devices on the 
+network.</li>
+
+<li id="cn-m4-478">Configure route filtering on the routers to ensure 
+only the required networks receive the routing information. The networks
+ that are not supposed to receive the traffic will not have the routing 
+information broadcast.</li>
+
+</ul>
+
+<p id="cn-m4-479">These are only some of the methods that can be used. 
+Other methods, such as Peer Prefix Filtering, Prefix List, Distribute 
+List, and Maximum Prefix Filtering methods, can also be used.</p>
+
+<h3 id="cn-m4-480"><b>Quality of Service (QoS)&nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-481">Quality of Service or QoS is a set of priorities that 
+are defined for network traffic. A specific type of traffic, such as 
+video traffic, can be prioritized over other types. QoS becomes 
+important for traffic that uses User Datagram Protocol (UDP). Video and 
+voice traffic are examples of traffic that use the UDP protocol.</p>
+
+<p id="cn-m4-482">Consider an example of a voice call over the network. 
+If there is no QoS, then the voice traffic is not given any priority. 
+Due to this, the voice quality, due to network congestion, may become 
+unclear. The user on the receiving end may not be able to hear or 
+understand what is being said. QoS is to be used with UDP-based traffic 
+because the UDP protocol cannot retransmit the lost packets. If there is
+ network congestion, the packets may get dropped or lost during the 
+communication.</p>
+
+<p id="cn-m4-483">When QoS is in place, voice and video traffic are 
+given high priority over data traffic, which uses the TCP protocol. 
+Unlike UDP, the TCP protocol can retransmit the lost packets and 
+assemble the packets in the correct order to reassemble the data files. 
+Therefore, QoS is an essential need for UDP-based traffic.</p>
+
+<h3 id="cn-m4-484"><b>Implications of IPv6</b></h3>
+
+<p id="cn-m4-485">It is a known fact that the IPv4 addresses are running
+ out. Hence, a new upgraded version known as IPv6 was released. IPv6 has
+ a much larger addressing space, which offers trillions of IP addresses.
+ Despite several other benefits, there are some implications of IPv6. 
+Some of the key implications are:</p>
+
+<ul id="cn-m4-486">
+
+<li id="cn-m4-486">Networks need to be upgraded or redesigned. If the 
+existing network architectures were designed according to the IPv4 
+schema, they may or may not support IPv6.</li>
+
+<li id="cn-m4-487">Devices and operating systems need to be upgraded. An
+ organization may be using an older version of an operating system or an
+ older network device. If they do not support IPv6, then they need to 
+either be replaced or upgraded.</li>
+
+<li id="cn-m4-488">The overall network architecture is complex. Devices and applications may require a new architecture to accommodate IPv6.</li>
+
+<li id="cn-m4-489">IPv6 addresses are long and difficult to remember. 
+You could memorize an IPv4 address and add them to any application or 
+system. However, it is difficult to remember an IPv6 address because of 
+its length and combination of letters and numbers.</li>
+
+<li id="cn-m4-490">The adoption of IPv6 is still missing with many 
+organizations. If you completely moved your organization to IPv6, you 
+have to have dual-stack hosts to send the IPv6 packets to IPv4 hosts. If
+ dual-stack hosts are not there, then IPv6 cannot communicate with IPv4.</li>
+
+<li id="cn-m4-491">There are security concerns when using relay routers 
+to convert IPv6 to IPv4 to communicate with the systems that still work 
+with IPv4. The relay routers cannot determine the IPv4 address as it is 
+encapsulated with the IPv6 address.</li>
+
+</ul>
+
+<h3 id="cn-m4-492"><b>Port Spanning/Port Mirroring&nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-493">Port mirroring is also known as Switch Port Analyzer 
+(SPAN). A switch has a dedicated port used to mirror the traffic from 
+one port and then send the mirrored copy of the traffic to another port.
+ The mirrored copy of the traffic is used for monitoring. There can be 
+various reasons due to which you need to monitor the network traffic. 
+Some of the key reasons are:</p>
+
+<ul id="cn-m4-494">
+
+<li id="cn-m4-494">Analyzing the traffic patterns over the network</li>
+
+<li id="cn-m4-495">Detecting intrusions on the network</li>
+
+<li id="cn-m4-496">Adhering to compliance</li>
+
+<li id="cn-m4-497">Co-relating events</li>
+
+</ul>
+
+<p id="cn-m4-498">Port mirroring can be configured on the Layer 2 and Layer 3 switches.</p>
+
+<h4 id="cn-m4-499"><b><i>Port Taps</i></b></h4>
+
+<p id="cn-m4-500">Alternate to port mirroring, you can also use a 
+special device for mirroring data. It is a passive device that is placed
+ on the network to capture the data from a specific port. Port taps are 
+easy to install, and once installed, you do not need to do anything. It 
+mirrors the received and sent traffic in real-time.</p>
+
+<h3 id="cn-m4-501"><b>Monitoring Services</b></h3>
+
+<p id="cn-m4-502">Network devices need to be monitored continuously. 
+Along with the devices, you also need to keep an eye on the network 
+traffic. There are various tools available that you can use to monitor 
+the network and its devices. Some of the key tools are:</p>
+
+<ul id="cn-m4-503">
+
+<li id="cn-m4-503">WhatsUp Gold 2017</li>
+
+<li id="cn-m4-504">Nagios XI</li>
+
+<li id="cn-m4-505">Zabbix</li>
+
+<li id="cn-m4-506">Incinga</li>
+
+</ul>
+
+<h3 id="cn-m4-507"><b>File Integrity Monitors&nbsp;&nbsp;</b></h3>
+
+<p id="cn-m4-508">Each operating system has several types of files. It 
+can have DLL, executable, logs, text, and other system files that are 
+required for the operating system to function. Similar to the operating 
+system, various applications also have such files that the applications 
+use. All these files are considered configuration files, which must 
+remain intact for the operating system and applications to run.</p>
+
+<p id="cn-m4-510">After an attacker compromised a system, they may alter
+ some of the configuration files. Such alteration is difficult to detect
+ if you do not have file integrity monitoring enabled. When you install a
+ file integrity monitoring tool on your system, an agent keeps track of 
+the configuration files that are available on the system. It first 
+calculates the hashes or checksum of each of the files and stores them 
+in the database. If there is an unauthorized change in any of the 
+monitored files, then the hash changes, which the agent then tracks.</p>
+
+<p id="cn-m4-511">The agent works in real-time and tracks all these 
+files. As a change in any of the monitored files is detected, it 
+triggers an alarm. The agent monitors the files for modification, 
+deletion, permission changes, or files being copied.</p>
+
+<h3 id="cn-m4-512"><b>Task 1 - Implement Access Control Lists (ACLs)</b></h3>
+
+<p id="cn-m4-513">ACLs can be configured in four different ways, which are as follows:</p>
+
+<ul id="cn-m4-514">
+
+<li id="cn-m4-514">Per-user basis</li>
+
+<li id="cn-m4-515">Per group basis</li>
+
+<li id="cn-m4-516">Using an effective right mask</li>
+
+<li id="cn-m4-517">For users other than the ones in the group for a file</li>
+
+</ul>
+
+<p id="cn-m4-518">In this task, you will learn to implement the access control list. To do this, perform the following steps:</p>
+
+<h4 id="cn-m4-519"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m4-520">Connect to <b>PLABKALI</b>. In the Enter your username text box, type the following:</p>
+
+<pre id="cn-m4-521"><code>root
+
+</code></pre>
+
+<p id="cn-m4-522">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m4-524">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m4-525"></p><figure><img class="cn-img" id="cn-image-m4-c-23" src="ImplementingSecureNetworkSolutions_files/image-m4-c-23.jpg" alt="Figure 5.5 Screenshot of PLABKALI: Entering the user credentials and then pressing Enter."><figcaption>Figure 5.5 Screenshot of PLABKALI: Entering the user credentials and then pressing Enter.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-527"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m4-528">The terminal window will be open.</p>
+
+<span class="cn-quote" id="cn-m4-529"><b><i>Note: </i></b><i>If the terminal window is not open, right-click on the desktop and select </i><b><i>Open Terminal Here</i></b><i>.</i></span>
+
+<p id="cn-m4-530">You first need to check if the kernel supports ACL. Type the following command:</p>
+
+<pre id="cn-m4-531"><code>cat /boot/config-5.3.0-kali2-amd64 | grep _ACL
+
+</code></pre>
+
+<p id="cn-m4-532">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-533"></p><figure><img class="cn-img" id="cn-image-m4-c-24" src="ImplementingSecureNetworkSolutions_files/image-m4-c-24.jpg" alt="Figure 5.6 Screenshot of PLABKALI: Checking if the kernel supports ACL."><figcaption>Figure 5.6 Screenshot of PLABKALI: Checking if the kernel supports ACL.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-535"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m4-536">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-537"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-538">You will apply the ACL to a partition. Let’s first check the partition that has been mounted. Type the following command:</p>
+
+<pre id="cn-m4-539"><code>df -h
+
+</code></pre>
+
+<p id="cn-m4-540">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-541">Notice that <b>/dev/sda2 </b>is mounted on /. You will create files in this directory and then assign ACL.</p>
+
+<p id="cn-m4-542"></p><figure><img class="cn-img" id="cn-image-m4-c-25" src="ImplementingSecureNetworkSolutions_files/image-m4-c-25.jpg" alt="Figure 5.7 Screenshot of PLABKALI: Applying the ACL on a partition."><figcaption>Figure 5.7 Screenshot of PLABKALI: Applying the ACL on a partition.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-544"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m4-545">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-546"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-547">Create a file in the current directory. Type the following command:</p>
+
+<pre id="cn-m4-548"><code>touch /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-549">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-550"></p><figure><img class="cn-img" id="cn-image-m4-c-26" src="ImplementingSecureNetworkSolutions_files/image-m4-c-26.jpg" alt="Figure 5.8 Screenshot of PLABKALI: Creating a file in the /data directory."><figcaption>Figure 5.8 Screenshot of PLABKALI: Creating a file in the /data directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-552"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m4-553">You need to verify the permissions on the <b>/plab.txt </b>file. Type the following command:</p>
+
+<pre id="cn-m4-554"><code>ls -l /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-555">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-556">The permissions for <b>/plab.txt </b>are now displayed. Notice that other users will be able to read the file.</p>
+
+<p id="cn-m4-557"></p><figure><img class="cn-img" id="cn-image-m4-c-27" src="ImplementingSecureNetworkSolutions_files/image-m4-c-27.jpg" alt="Figure 5.9 Screenshot of PLABKALI: Verifying the permissions on the /data/plab.txt file."><figcaption>Figure 5.9 Screenshot of PLABKALI: Verifying the permissions on the /data/plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-559"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m4-560">You need to ensure that no one has read, write, and 
+execute permissions for the /plab.txt file other than the root user. 
+Type the following command:</p>
+
+<pre id="cn-m4-561"><code>chmod 700 /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-562">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-563">The permissions for <b>/plab.txt </b>are now changed.</p>
+
+<p id="cn-m4-564"></p><figure><img class="cn-img" id="cn-image-m4-c-28" src="ImplementingSecureNetworkSolutions_files/image-m4-c-28.jpg" alt="Figure 5.10 Screenshot of PLABKALI: Assigning read, write, and execute permissions only to the root user."><figcaption>Figure 5.10 Screenshot of PLABKALI: Assigning read, write, and execute permissions only to the root user.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-566"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m4-567">You need to verify the permissions for this file again. Type the following command:</p>
+
+<pre id="cn-m4-568"><code>ls -l /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-569">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-570">The permissions for <b>/plab.txt </b>are now displayed. Notice that other users do not have permissions for this file.</p>
+
+<p id="cn-m4-571"></p><figure><img class="cn-img" id="cn-image-m4-c-29" src="ImplementingSecureNetworkSolutions_files/image-m4-c-29.jpg" alt="Figure 5.11 Screenshot of PLABKALI: Verifying the permissions on the /data/plab.txt file."><figcaption>Figure 5.11 Screenshot of PLABKALI: Verifying the permissions on the /data/plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-573"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m4-574">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-575"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-576">You can verify the permissions on this file using the <b>getfacl </b>command. Type the following command:</p>
+
+<pre id="cn-m4-577"><code>getfacl /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-578">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-579">Notice that only the <b>root </b>user has <b>read, write, </b>and <b>execute </b>permissions. No other group or user has read, write, permissions.</p>
+
+<p id="cn-m4-580"></p><figure><img class="cn-img" id="cn-image-m4-c-30" src="ImplementingSecureNetworkSolutions_files/image-m4-c-30.jpg" alt="Figure 5.12 Screenshot of PLABKALI: Verifying the permissions on this file using the getfacl command."><figcaption>Figure 5.12 Screenshot of PLABKALI: Verifying the permissions on this file using the getfacl command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-582"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m4-583">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-584"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-585">You can use ACL to assign permission to the <b>king-phisher </b>account. Type the following command:</p>
+
+<pre id="cn-m4-586"><code>setfacl -m user:king-phisher:rwx /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-587">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-588"></p><figure><img class="cn-img" id="cn-image-m4-c-31" src="ImplementingSecureNetworkSolutions_files/image-m4-c-31.jpg" alt="Figure 5.13 Screenshot of PLABKALI: Assigning permissions to the king-phisher account."><figcaption>Figure 5.13 Screenshot of PLABKALI: Assigning permissions to the king-phisher account.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-590"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m4-591">You can now verify the permissions on the <b>/plab.txt </b>file. Type the following command:</p>
+
+<pre id="cn-m4-592"><code>getfacl /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-593">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-594">Notice that the <b>king-phisher </b>account now has <b>read</b>, <b>write</b>, and <b>execute </b>permissions.</p>
+
+<p id="cn-m4-595"></p><figure><img class="cn-img" id="cn-image-m4-c-32" src="ImplementingSecureNetworkSolutions_files/image-m4-c-32.jpg" alt="Figure 5.14 Screenshot of PLABKALI: Verifying the permissions on the /plab.txt file."><figcaption>Figure 5.14 Screenshot of PLABKALI: Verifying the permissions on the /plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-597"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m4-598">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-599"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-600">You can also verify the permissions with the <b>ls </b>command. Type the following command:</p>
+
+<pre id="cn-m4-601"><code>ls -l /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-602">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-603">Notice that the permissions are also assigned to the king-phisher user.</p>
+
+<p id="cn-m4-604"></p><figure><img class="cn-img" id="cn-image-m4-c-33" src="ImplementingSecureNetworkSolutions_files/image-m4-c-33.jpg" alt="Figure 5.15 Screenshot of PLABKALI: Verifying the permissions on the /plab.txt file with the ls command."><figcaption>Figure 5.15 Screenshot of PLABKALI: Verifying the permissions on the /plab.txt file with the ls command.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-606"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m4-607">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m4-608"><code>clear
+
+</code></pre>
+
+<p id="cn-m4-609">After assigning ACLs, you can remove ACLs if required. The <b>setfacl </b>command with the <b>-b </b>parameter removes all applied ACLs from a specific file or directory. Type the following command:</p>
+
+<pre id="cn-m4-610"><code>setfacl -b /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-611">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-612">Notice that no response is returned.</p>
+
+<p id="cn-m4-613"></p><figure><img class="cn-img" id="cn-image-m4-c-34" src="ImplementingSecureNetworkSolutions_files/image-m4-c-34.jpg" alt="Figure 5.16 Screenshot of PLABKALI: Removing the ACL on the /plab.txt file."><figcaption>Figure 5.16 Screenshot of PLABKALI: Removing the ACL on the /plab.txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m4-615"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m4-616">To verify the permissions on the <b>/plab.txt </b>file, type the following command:</p>
+
+<pre id="cn-m4-617"><code>getfacl /plab.txt
+
+</code></pre>
+
+<p id="cn-m4-618">Press <b>Enter</b>.</p>
+
+<p id="cn-m4-619">Notice that no ACL is assigned. The file has the permissions that you had earlier defined for the root user.</p>
+
+<p id="cn-m4-620"></p><figure><img class="cn-img" id="cn-image-m4-c-35" src="ImplementingSecureNetworkSolutions_files/image-m4-c-35.jpg" alt="Figure 5.17 Screenshot of PLABKALI: Verifying the permissions on the /plab.txt file."><figcaption>Figure 5.17 Screenshot of PLABKALI: Verifying the permissions on the /plab.txt file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<p id="cn-m4-624">Close the <b>Terminal </b>window.</p>
+
+<h3 id="cn-m4-625"><b>DNS</b></h3>
+
+<p id="cn-m4-626">You can secure the DNS server by adding a set of 
+extensions, known as DNSSec, ensuring that the DNS information is not 
+altered during transmission.</p>
+
+<span class="cn-quote" id="cn-m4-627"><b><i>Note: </i></b><i>DNSSec is covered in detail in another module.</i></span>
+
+<h3 id="cn-m4-628"><b>Network Access Control (NAC)</b></h3>
+
+<p id="cn-m4-629">Consider that you manage a large enterprise network. 
+Almost 50 percent of the users are mobile, either on the client site or 
+working from home. Recently, one user connected to the network and 
+infected the system. You want to be able to prevent this from 
+reoccurring. You also want to ensure that the host health check is 
+performed for the latest antivirus and security patches. The system 
+should be updated if they have missing updates and should be allowed 
+access to the network only if they are found to be updated. To implement
+ these requirements, you need to use NAC, which can evaluate each remote
+ device when they attempt to connect to the network. It can perform a 
+host health check, and if any deviation is found, it will prevent the 
+host from connecting to the network.</p>
+
+<p id="cn-m4-630">NAC can be deployed in different forms. It can be an 
+agent-based NAC. You need to configure the NAC agent on the user’s 
+system. Based on the NAC policies, if the system is compliant, then the 
+system should be allowed access to the network.</p>
+
+<p id="cn-m4-631">In a Windows environment, you can also use an 
+agentless NAC. To be able to do this, you need to use Windows Group 
+Policies. When a system connects to the domain, Group Policies can 
+ensure the devices are checked for compliancy.</p>
+
+<p id="cn-m4-632">You can also use a dissolvable agent that runs once on
+ the system and then, based on the NAC policies, allows or denies access
+ to the user system. After that, the agent is removed from the system.</p>
+
+<p id="cn-m4-633">Rule-based NAC allows users to connect based on pre-defined conditions.</p>
+
+<h3 id="cn-m4-634"><b>Out-of-band Management</b></h3>
+
+<p id="cn-m4-635">Out-of-band management is a method that allows you to 
+manage network devices without compromising security. You establish a 
+separate connection from the normal network on which all of the 
+organization’s communication occurs. It is a completely different 
+connection that helps you to connect to a network device. For example, 
+if you have an edge router, it is not best practice to manage the 
+network on a default interface. You should rather manage the router 
+using a custom configured interface.</p>
+
+<p id="cn-m4-636">Out-of-band management is extensively used for 
+emergency access. For example, if the network connectivity is not 
+present or the network has gone down, you can use the management 
+interface to connect and perform maintenance.</p>
+
+<p id="cn-m4-637">One of the good features of out-of-band management is 
+that you can manage the device even if it is powered off. You can 
+perform various other tasks, such as upgrading the firmware, 
+reinstalling the operating system, or even rebooting or power on the 
+network device.</p>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m4-640">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m4-641"><b>Review</b></h2>
+
+<p id="cn-m4-642">Well done, you have completed the <b>Implementing Secure Network Solutions </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">67960274-c631-4354-980e-3fe5c36e4eca</span>
+
+<span class="atom-code hidden">8d250844-1040-4c71-a912-c0670f1cba1e</span>
+
+<span class="atom-code hidden">a021bc70-44cc-4a99-a805-66fa692f6fa2</span>
+
+<span class="atom-code hidden">dc2ded0a-67c7-4747-9189-53be0ad7ffc0</span>
+
+<span class="atom-code hidden">45b98cfa-870d-46bc-b568-cbc56b57b666</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m4-652">You completed the following exercises:</p>
+
+<ul id="cn-m4-653">
+
+<li id="cn-m4-653">Exercise 1 - Load Balancing</li>
+
+<li id="cn-m4-654">Exercise 2 - Network Segmentation</li>
+
+<li id="cn-m4-655">Exercise 3 - Virtual Private Network (VPN)</li>
+
+<li id="cn-m4-656">Exercise 4 - Port Security</li>
+
+<li id="cn-m4-657">Exercise 5 - Network Appliances and Services</li>
+
+</ul>
+
+<p id="cn-m4-658">You should now be able to:</p>
+
+<ul id="cn-m4-659">
+
+<li id="cn-m4-659">Perform Media Access Control (MAC) Filtering</li>
+
+<li id="cn-m4-660">Implement Access Control Lists (ACLs)</li>
+
+</ul>
+
+<p id="cn-m4-661">You should now have further knowledge of:</p>
+
+<ul id="cn-m4-662">
+
+<li id="cn-m4-662">Active/Active</li>
+
+<li id="cn-m4-663">Active/Passive</li>
+
+<li id="cn-m4-664">Scheduling</li>
+
+<li id="cn-m4-665">Virtual IP</li>
+
+<li id="cn-m4-666">Persistence</li>
+
+<li id="cn-m4-667">Virtual Local Area Network (VLAN)</li>
+
+<li id="cn-m4-668">Intranet</li>
+
+<li id="cn-m4-669">Extranet</li>
+
+<li id="cn-m4-670">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m4-671">East-West Traffic</li>
+
+<li id="cn-m4-672">Zero Trust</li>
+
+<li id="cn-m4-673">Always On</li>
+
+<li id="cn-m4-674">Split Tunnel vs. Full Tunnel</li>
+
+<li id="cn-m4-675">Remote Access vs. Site-to-site</li>
+
+<li id="cn-m4-676">IPSec</li>
+
+<li id="cn-m4-677">Secure Sockets Layer (SSL)/Transport Layer Security (TLS)</li>
+
+<li id="cn-m4-678">HTML5</li>
+
+<li id="cn-m4-679">Layer 2 Tunneling Protocol (L2TP)</li>
+
+<li id="cn-m4-680">Broadcast Storm Prevention / Loop Prevention</li>
+
+<li id="cn-m4-681">Bridge Protocol Data Unit (BPDU) Guard</li>
+
+<li id="cn-m4-682">Dynamic Host Configuration Protocol (DHCP) Snooping</li>
+
+<li id="cn-m4-683">Jump Servers</li>
+
+<li id="cn-m4-684">Proxy Servers</li>
+
+<li id="cn-m4-685">Network-based Intrusion Detection System (NIDS)/Network-Based Intrusion Prevention System (NIPS)</li>
+
+<li id="cn-m4-686">Hardware Security Module (HSM)</li>
+
+<li id="cn-m4-687">Firewalls</li>
+
+<li id="cn-m4-688">Route Security&nbsp;&nbsp;</li>
+
+<li id="cn-m4-689">Quality of Service (QoS)</li>
+
+<li id="cn-m4-690">Implications of IPv6</li>
+
+<li id="cn-m4-691">Port Spanning/Port Mirroring&nbsp;&nbsp;</li>
+
+<li id="cn-m4-692">Monitoring Services&nbsp;&nbsp;</li>
+
+<li id="cn-m4-693">File Integrity Monitors</li>
+
+<li id="cn-m4-694">DNS</li>
+
+<li id="cn-m4-695">Network Access Control (NAC)</li>
+
+<li id="cn-m4-696">Out-of-band Management</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m4-700">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

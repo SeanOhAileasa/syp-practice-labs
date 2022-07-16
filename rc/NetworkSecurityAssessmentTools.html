@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="NetworkSecurityAssessmentTools_files/print-styles.css" rel="stylesheet">
+    <script src="NetworkSecurityAssessmentTools_files/jquery.min.js"></script>
+    <script src="NetworkSecurityAssessmentTools_files/jspdf.js"></script>
+    <script src="NetworkSecurityAssessmentTools_files/from_html.js"></script>
+    <script src="NetworkSecurityAssessmentTools_files/addimage.js"></script>
+    <script src="NetworkSecurityAssessmentTools_files/filesaver.js"></script>
+    <script src="NetworkSecurityAssessmentTools_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="QAw4wH1v7HcHIGwv1HtkV4ZeW9YPifa+B4NJDVXay1khunzOYhSBBNoroJk7ppXlYNIBKo7rxnYKS1c40M2Dj7eONuzW6/DTU/IF2aj8ZIc=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Network Security Assessment Tools</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Network Reconnaissance and Discovery</li><li>Exercise 2 - Information Gathering</li><li>Exercise 3 - File Manipulation</li><li>Exercise 4 - Shell and Script Environments</li><li>Exercise 5 - Packet Capture and Replay</li><li>Exercise 6 - Forensics </li><li>Exercise 7 - Exploitation Frameworks, Password Crackers and Data Sanitization</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m3-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Packet Capture</div>
+
+<div>Replay</div>
+
+<div>Reconnaissance</div>
+
+<div>Exploitation</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m3-7">Welcome to the <b>Network Security Assessment Tools </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-11">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m3-12">
+
+<li id="cn-m3-12">Exercise 1 - Network Reconnaissance and Discovery</li>
+
+<li id="cn-m3-13">Exercise 2 - Information Gathering</li>
+
+<li id="cn-m3-14">Exercise 3 - File Manipulation</li>
+
+<li id="cn-m3-15">Exercise 4 - Shell and Script Environments</li>
+
+<li id="cn-m3-16">Exercise 5 - Packet Capture and Replay</li>
+
+<li id="cn-m3-17">Exercise 6 - Forensics</li>
+
+<li id="cn-m3-18">Exercise 7 - Exploitation Frameworks, Password Crackers and Data Sanitization</li>
+
+</ul>
+
+<ol id="cn-m3-19">
+
+</ol>
+
+<p id="cn-m3-20">After completing this module, you should be able to:</p>
+
+<ul id="cn-m3-21">
+
+<li id="cn-m3-21">Learn Network Discovery and Reconnaissance Techniques using Tools like nmap, traceroute etc.&nbsp;</li>
+
+<li id="cn-m3-22">Identify File Manipulation Attacks and Learn Shell Scripts</li>
+
+<li id="cn-m3-23">Explain the Different Forensic Tools</li>
+
+<li id="cn-m3-24">Explain Packet Capture and Replay</li>
+
+<li id="cn-m3-25">Explain Frameworks used for Exploiting Vulnerabilities and Learn Data Sanitization</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m3-27">The following exam objectives are covered in this module:</p>
+
+<p id="cn-m3-28">4.1 Given a scenario, use the appropriate tool to assess organizational security.</p>
+
+<ul id="cn-m3-29">
+
+<li id="cn-m3-29">Network Reconnaissance and Discovery</li>
+
+<li id="cn-m3-30">File Manipulation</li>
+
+<li id="cn-m3-31">Shell and Script Environments</li>
+
+<li id="cn-m3-32">Packet Capture and Replay</li>
+
+<li id="cn-m3-33">Forensics</li>
+
+<li id="cn-m3-34">Exploitation Frameworks</li>
+
+<li id="cn-m3-35">Password Crackers</li>
+
+<li id="cn-m3-36">Data Sanitization</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m3-37"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m3-39">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m3-43">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m3-44">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-47"><b>Lab Topology</b></h2>
+
+<p id="cn-m3-48">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m3-49"><img class="cn-img" id="cn-image-m3-c-0" src="NetworkSecurityAssessmentTools_files/image-m3-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m3-50">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m3-51">
+
+<li id="cn-m3-51"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m3-52"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m3-53"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m3-54"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m3-56">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="NetworkReconnaissanceandDiscovery">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-58"><b>Exercise 1 - Network Reconnaissance and Discovery</b></h2>
+
+<p id="cn-m3-59">In this exercise, we will learn in detail about network
+ reconnaissance and discovery using network security assessment tools. 
+Network reconnaissance helps gather information about the target system 
+or infrastructure and attempt specific attacks on the network.</p>
+
+<p id="cn-m3-60">The following is a list of the most commonly used tools for network host discovery and reconnaissance.</p>
+
+<h4 id="cn-m3-61"><b><i>Tracert/traceroute</i></b></h4>
+
+<p id="cn-m3-62">The traceroute command is used on Windows systems, and 
+it is used to show how a host connects to a remote host or system on the
+ network. It also displays the path and time the communication takes to 
+reach the remote host. Similarly, on Linux systems, the tracert command 
+can be used for the same purpose.</p>
+
+<h4 id="cn-m3-63"><b><i>nslookup/dig</i></b></h4>
+
+<p id="cn-m3-64">The nslookup command is used to query DNS records using
+ a Windows device. The Dig command is the Linux equivalent for nslookup.
+ It is used to query individual DNS records or all DNS records in a 
+domain and can be used to gather more information about the domain, such
+ as the IP address of the DNS server.</p>
+
+<h4 id="cn-m3-65"><b><i>ipconfig/ifconfig</i></b></h4>
+
+<p id="cn-m3-66">The ipconfig command is used to obtain information 
+about a host. The command shows the IP address, subnet mask, gateway and
+ DNS server information on the network configuration. The Linux 
+equivalent for ipconfig is ifconfig.</p>
+
+<h4 id="cn-m3-67"><b><i>nmap</i></b></h4>
+
+<p id="cn-m3-68">Nmap is an open source scanner used to scan hosts for 
+vulnerabilities and open ports. It can also be used to fingerprint 
+remote hosts to determine the operating systems they run, which may 
+reveal vulnerabilities that can be exploited.</p>
+
+<h4 id="cn-m3-69"><b><i>Ping/pathping</i></b></h4>
+
+<p id="cn-m3-70">Ping command can be used across platforms and uses ICMP
+ (Internet Control Message Protocol) to communicate with hosts. It is 
+used to check if remote hosts are reachable on the network. The pathping
+ command can be used on Windows devices to determine more in detail 
+information on the network statics, for example, the delay it takes to 
+communicate to specific routers on the network.</p>
+
+<h4 id="cn-m3-71"><b><i>Hping </i></b></h4>
+
+<p id="cn-m3-72">Hping is similar to ping but uses TCP/IP packets to 
+check connectivity using Linux devices. It is commonly used for testing 
+networks, firewalls and security auditing.</p>
+
+<h4 id="cn-m3-73"><b><i>Netstat</i></b></h4>
+
+<p id="cn-m3-74">Netstat command is used to look at the current 
+communication on a host. It also helps in identifying open ports and 
+established connections. It is most often used for troubleshooting to 
+determine if a host is listening on specific ports.</p>
+
+<h4 id="cn-m3-75"><b><i>Netcat</i></b></h4>
+
+<p id="cn-m3-76">Netcat is a network troubleshooting tool used to 
+identify networks and scan for open ports. It works on UDP or TCP and 
+can be used to initiate a connection to ports.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-78">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-79">
+
+<li id="cn-m3-79">Explain Reconnaissance</li>
+
+<li id="cn-m3-80">List Network Reconnaissance and Discovery Tools</li>
+
+<li id="cn-m3-81">Gather Information Using Tools</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m3-83">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m3-84">
+
+<li id="cn-m3-84"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m3-85"><img class="cn-img" id="cn-image-m3-c-1" src="NetworkSecurityAssessmentTools_files/image-m3-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m3-86"><b>Task 1 - Host Discovery using Linux commands</b></h3>
+
+<p id="cn-m3-87">Host Discovery is an information gathering technique 
+and is carried out at the beginning of network reconnaissance. Host 
+discovery is carried out using different network assessment tools like 
+nmap, netstat, traceroute etc.</p>
+
+<p id="cn-m3-88">In this task, Network Reconnaissance tools will be used to gather more information about hosts on the network.</p>
+
+<h4 id="cn-m3-89"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m3-90">Connect to the <b>PLABKALI </b>device.</p>
+
+<p id="cn-m3-91"></p><figure><img class="cn-img" id="cn-image-m3-c-2" src="NetworkSecurityAssessmentTools_files/image-m3-c-2.jpg" alt="Figure 1.1 Screenshot of PLABKALI: Displaying connecting to the Kali device"><figcaption>Figure 1.1 Screenshot of PLABKALI: Displaying connecting to the Kali device</figcaption></figure><p></p>
+
+<h4 id="cn-m3-93"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-94">Log in to the device using the following credentials:</p>
+
+<pre id="cn-m3-95"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-97"></p><figure><img class="cn-img" id="cn-image-m3-c-3" src="NetworkSecurityAssessmentTools_files/image-m3-c-3.jpg" alt="Figure 1.2 Screenshot of PLABKALI: Displaying logging into the Kali device."><figcaption>Figure 1.2 Screenshot of PLABKALI: Displaying logging into the Kali device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-99"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-100">Right-click on the Desktop and select <b>Open Terminal Here</b>.</p>
+
+<p id="cn-m3-101"></p><figure><img class="cn-img" id="cn-image-m3-c-4" src="NetworkSecurityAssessmentTools_files/image-m3-c-4.jpg" alt="Figure 1.3 Screenshot of PLABKALI: Displaying opening a terminal window."><figcaption>Figure 1.3 Screenshot of PLABKALI: Displaying opening a terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-103"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-104">In the terminal command, type the following and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-105"><code>ifconfig
+
+</code></pre>
+
+<p id="cn-m3-106"></p><figure><img class="cn-img" id="cn-image-m3-c-5" src="NetworkSecurityAssessmentTools_files/image-m3-c-5.jpg" alt="Figure 1.4 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 1.4 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-108"><b><i>Note: </i></b><i>The IP 
+address, subnet mask and additional network information can be seen from
+ the output. This gathered information can be used to gather more 
+information about the network.</i></span>
+
+<h4 id="cn-m3-109"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-110">In the <b>Terminal </b>window, type the following command and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-111"><code>nmap -sS 192.168.0.0/24
+
+</code></pre>
+
+<p id="cn-m3-112"></p><figure><img class="cn-img" id="cn-image-m3-c-6" src="NetworkSecurityAssessmentTools_files/image-m3-c-6.jpg" alt="Figure 1.5 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 1.5 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-114"><b><i>Note: </i></b><i>After 
+gathering network information, the nmap tool can be used to scan the 
+network for hosts. As can be seen, after the command has been executed, 
+the different hosts with their IP addresses and Operating systems are 
+displayed. Additional information can also be gathered, for example, the
+ open ports on the discovered hosts. Clear the terminal window, typing 
+clear and pressing </i><b><i>Enter</i></b><i>.</i></span>
+
+<h4 id="cn-m3-115"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-116">In the <b>Terminal </b>window, type the following command and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-117"><code>dig practicelabs.com
+
+</code></pre>
+
+<p id="cn-m3-118"></p><figure><img class="cn-img" id="cn-image-m3-c-7" src="NetworkSecurityAssessmentTools_files/image-m3-c-7.jpg" alt="Figure 1.6 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 1.6 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="cn-quote" id="cn-m3-123"><b><i>Note: </i></b><i>By using 
+the dig command, more information about the specific domain is gathered.
+ Notice that the IP address for practicelabs.com is displayed.</i></span>
+< <a href="https://github.com/SeanOhAileasa" id="InformationGathering">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-124"><b>Exercise 2 - Information Gathering</b></h2>
+
+<p id="cn-m3-125">Gathering information on different components of the 
+network is essential to ensure the security of it. Different types of 
+information gathering tools are available for Cyber Security 
+professionals, gathering crucial information about the network.</p>
+
+<p id="cn-m3-126">The following is a list of common tools used by Cyber Security Professionals:</p>
+
+<h4 id="cn-m3-127"><b><i>IP scanners</i></b></h4>
+
+<p id="cn-m3-128">IP scanners are tools that scan for IP addresses and 
+other information of the devices on the network. Several different IP 
+scanner applications are available that can be used to detect 
+information of devices that are connected to the network.</p>
+
+<h4 id="cn-m3-129"><b><i>Arp</i></b></h4>
+
+<p id="cn-m3-130">Arp command is used to display the Address Resolution 
+table on a host. The Address Resolution table is used by a host to store
+ information of other hosts on the network. This information can be used
+ to determine if there any unauthorized hosts connected to the network.</p>
+
+<h4 id="cn-m3-131"><b><i>Curl</i></b></h4>
+
+<p id="cn-m3-132">The curl command is used for transferring data over 
+networks using specific protocols, for example, HTTP, HTTPS or FTP. This
+ command can be used without user intervention and is ideal when used in
+ shell scripting. It is specifically used on Linux devices.</p>
+
+<h4 id="cn-m3-133"><b><i>The Harvester</i></b></h4>
+
+<p id="cn-m3-134">Penetration testers use this tool for footprinting of 
+the network infrastructure. It can gather information on emails, 
+subdomains, hosts, employee names and open ports.</p>
+
+<h4 id="cn-m3-135"><b><i>sn1per</i></b></h4>
+
+<p id="cn-m3-136">sn1per is an automated scanner used during a 
+penetration test to enumerate and scan for network vulnerabilities. You 
+can automate the process of collecting data for exploration using 
+sn1per.</p>
+
+<h4 id="cn-m3-137"><b><i>Scanless</i></b></h4>
+
+<p id="cn-m3-138">Scanless is an automated port scan scrapper. It is a 
+command line utility for vulnerability exploitation that also performs 
+an open port scan.</p>
+
+<h4 id="cn-m3-139"><b><i>dnsenum </i></b></h4>
+
+<p id="cn-m3-140">This tool is used for DNS enumeration to discover IP 
+blocks. DNS Enumeration is the process of collecting DNS information of a
+ specific company, which can then be used to evaluate the company's 
+security posture.</p>
+
+<h4 id="cn-m3-141"><b><i>Cuckoo</i></b></h4>
+
+<p id="cn-m3-142">Cuckoo is a malware analysis tool. It provides the following details as the result of the analysis:</p>
+
+<ul id="cn-m3-143">
+
+<li id="cn-m3-143">Native functions and Windows API calls stack</li>
+
+<li id="cn-m3-144">Copies of created files and removed from the file system</li>
+
+<li id="cn-m3-145">Memory dump of processes</li>
+
+<li id="cn-m3-146">Full memory dump of the target machine</li>
+
+<li id="cn-m3-147">Screenshots of the desktop during the overall execution of the malware analysis</li>
+
+<li id="cn-m3-148">Network dump created by the machine used for the analysis.</li>
+
+</ul>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-150">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-151">
+
+<li id="cn-m3-151">List information gathering tools</li>
+
+<li id="cn-m3-152">Gather Information Using Tools</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m3-154">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m3-155">
+
+<li id="cn-m3-155"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m3-156"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m3-157"><img class="cn-img" id="cn-image-m3-c-8" src="NetworkSecurityAssessmentTools_files/image-m3-c-8.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m3-158"><b>Task 1 - Information Gathering Tools</b></h3>
+
+<p id="cn-m3-159">In this task, different information gathering tools 
+will be used to better understand how to gather information about 
+devices on the network.</p>
+
+<h4 id="cn-m3-160"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m3-161">Connect to <b>PLABWIN10</b></p>
+
+<p id="cn-m3-162"></p><figure><img class="cn-img" id="cn-image-m3-c-9" src="NetworkSecurityAssessmentTools_files/image-m3-c-9.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Displaying the desktop of the device."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Displaying the desktop of the device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-164"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-165">Right-click on <b>Start </b>and select <b>Run</b></p>
+
+<p id="cn-m3-166"></p><figure><img class="cn-img" id="cn-image-m3-c-10" src="NetworkSecurityAssessmentTools_files/image-m3-c-10.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: Displaying opening run menu."><figcaption>Figure 2.2 Screenshot of PLABWIN10: Displaying opening run menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-168"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-169">In the <b>Run </b>window, type <b>cmd </b>and click <b>OK</b>.</p>
+
+<p id="cn-m3-170"></p><figure><img class="cn-img" id="cn-image-m3-c-11" src="NetworkSecurityAssessmentTools_files/image-m3-c-11.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: Displaying opening the command prompt window."><figcaption>Figure 2.3 Screenshot of PLABWIN10: Displaying opening the command prompt window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-172"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-173">In the <b>Command Prompt </b>window, type the following and press <b>Enter:</b></p>
+
+<pre id="cn-m3-174"><code>arp -a
+
+</code></pre>
+
+<p id="cn-m3-175"></p><figure><img class="cn-img" id="cn-image-m3-c-12" src="NetworkSecurityAssessmentTools_files/image-m3-c-12.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: Displaying executing the command in Command prompt."><figcaption>Figure 2.4 Screenshot of PLABWIN10: Displaying executing the command in Command prompt.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-177"><b><i>Note: </i></b><i>The arp -a 
+command displays the Address Resolution Protocol table of the device. 
+From the command's output, the IP and MAC addresses of the devices that 
+this device has been communicating can be seen.</i></span>
+
+<h4 id="cn-m3-178"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-179">Connect to <b>PLABKALI</b></p>
+
+<p id="cn-m3-180"></p><figure><img class="cn-img" id="cn-image-m3-c-13" src="NetworkSecurityAssessmentTools_files/image-m3-c-13.jpg" alt="Figure 2.5 Screenshot of PLABKALI: Displaying the login screen of the Kali device."><figcaption>Figure 2.5 Screenshot of PLABKALI: Displaying the login screen of the Kali device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-182"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-183">Sign in to the device using the following credentials:</p>
+
+<pre id="cn-m3-184"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-186"></p><figure><img class="cn-img" id="cn-image-m3-c-14" src="NetworkSecurityAssessmentTools_files/image-m3-c-14.jpg" alt="Figure 2.6 Screenshot of PLABKALI: Displaying signing into the Kali device."><figcaption>Figure 2.6 Screenshot of PLABKALI: Displaying signing into the Kali device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-188"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-189">Right-click on the Desktop and select <b>Open Terminal Here</b></p>
+
+<p id="cn-m3-190"></p><figure><img class="cn-img" id="cn-image-m3-c-15" src="NetworkSecurityAssessmentTools_files/image-m3-c-15.jpg" alt="Figure 2.7 Screenshot of PLABKALI: Displaying opening the terminal window."><figcaption>Figure 2.7 Screenshot of PLABKALI: Displaying opening the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-192"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-193">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-194"><code>dnsenum -enum practicelabs.com
+
+</code></pre>
+
+<p id="cn-m3-195"></p><figure><img class="cn-img" id="cn-image-m3-c-16" src="NetworkSecurityAssessmentTools_files/image-m3-c-16.jpg" alt="Figure 2.8 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 2.8 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-197"><b><i>Note: </i></b><i>The </i><b>dnsenum </b><i>command
+ is used to gather more information about an organization’s DNS. After 
+executing the command, the DNS server for the practicelabs.com domain 
+can be seen as plabdc01 with the associated IP address. In the terminal 
+window, type clear and press </i><b><i>Enter </i></b><i>to clear the terminal window.</i></span>
+
+<h4 id="cn-m3-198"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m3-199">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-200"><code>arping -c4 192.168.0.1
+
+</code></pre>
+
+<p id="cn-m3-201"></p><figure><img class="cn-img" id="cn-image-m3-c-17" src="NetworkSecurityAssessmentTools_files/image-m3-c-17.jpg" alt="Figure 2.9 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 2.9 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="cn-quote" id="cn-m3-206"><b><i>Note: </i></b><i>The arping 
+command is used to resolve a MAC address from an IP address. The MAC 
+address of the DNS server for the practicelabs.com domain is displayed 
+here. Close the terminal window.</i></span>
+< <a href="https://github.com/SeanOhAileasa" id="FileManipulation">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-207"><b>Exercise 3 - File Manipulation</b></h2>
+
+<p id="cn-m3-208">Linux operating systems provides several commands and 
+programs for file operations and manipulation. To ensure the integrity 
+of files, a Cyber Security professional will need to view and change 
+files.</p>
+
+<p id="cn-m3-209">The following is a list of the most commonly used Linux commands for file manipulation:</p>
+
+<h4 id="cn-m3-210"><b><i>head</i></b></h4>
+
+<p id="cn-m3-211">The head command will display the first ten lines of a
+ file if no additional parameters are specified. To display a specific 
+number of lines in a file, the <b>-n </b>parameter can be used to display the specified number of lines from the beginning of the file.</p>
+
+<h4 id="cn-m3-212"><b><i>tail</i></b></h4>
+
+<p id="cn-m3-213">The tail command lets you display the last ten lines of any file. Similar to the head command, the tail command also allows the <b>‘n’ </b>option to display the specified number of lines.</p>
+
+<h4 id="cn-m3-214"><b><i>cat</i></b></h4>
+
+<p id="cn-m3-215">The ‘<b>cat</b>‘ command has various uses ranging from displaying the content of a file to adding lines to a file.</p>
+
+<h4 id="cn-m3-216"><b><i>grep</i></b></h4>
+
+<p id="cn-m3-217">Grep is a Linux command line tool used to search for a string of characters in a specified file.</p>
+
+<h4 id="cn-m3-218"><b><i>chmod</i></b></h4>
+
+<p id="cn-m3-219">chmod is the command used on Linux operating systems to change permissions of files.</p>
+
+<h4 id="cn-m3-220"><b><i>logger</i></b></h4>
+
+<p id="cn-m3-221">The&nbsp;logger command&nbsp;allows adding messages to the /var/log/syslog file from the&nbsp;command&nbsp;line or other files.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-223">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-224">
+
+<li id="cn-m3-224">Explore File Manipulation and Commands Used for File Operations</li>
+
+</ul>
+
+<h2 class="cn-devices"><b> Your Devices</b></h2>
+
+<p id="cn-m3-226">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m3-227">
+
+<li id="cn-m3-227"><b>PLABKALI </b>- Kali Linux 2019.4</li>
+
+</ul>
+
+<p id="cn-m3-228"><img class="cn-img" id="cn-image-m3-c-18" src="NetworkSecurityAssessmentTools_files/image-m3-c-18.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m3-229"><b>Task 1 - File Operations and Manipulation</b></h3>
+
+<p id="cn-m3-230">In a file manipulation attack, the attacker modifies 
+the contents or other attributes like extensions and file names to cause
+ incorrect processing. This leads to unstable states and unauthorized 
+exposure of sensitive otherwise protected information. In extreme cases,
+ file manipulations can also lead to remote code execution and a 
+complete system takeover.</p>
+
+<h4 id="cn-m3-231"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m3-232">Connect to <b>PLABKALI </b>and sign in with the following credentials:</p>
+
+<pre id="cn-m3-233"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-235"></p><figure><img class="cn-img" id="cn-image-m3-c-19" src="NetworkSecurityAssessmentTools_files/image-m3-c-19.jpg" alt="Figure 3.1 Screenshot of PLABKALI: Displaying logging into the device."><figcaption>Figure 3.1 Screenshot of PLABKALI: Displaying logging into the device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-237"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-238">Right-click on the Desktop and select <b>Open Terminal Here</b>.</p>
+
+<p id="cn-m3-239"></p><figure><img class="cn-img" id="cn-image-m3-c-20" src="NetworkSecurityAssessmentTools_files/image-m3-c-20.jpg" alt="Figure 3.2 Screenshot of PLABKALI: Displaying opening a terminal window."><figcaption>Figure 3.2 Screenshot of PLABKALI: Displaying opening a terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-241"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-242">In the terminal window, type the following command and press <b>Enter:</b></p>
+
+<pre id="cn-m3-243"><code>ls -l ~/Documents
+
+</code></pre>
+
+<p id="cn-m3-244"></p><figure><img class="cn-img" id="cn-image-m3-c-21" src="NetworkSecurityAssessmentTools_files/image-m3-c-21.jpg" alt="Figure 3.3 Screenshot of PLABKALI: Displaying the terminal window with the executed command."><figcaption>Figure 3.3 Screenshot of PLABKALI: Displaying the terminal window with the executed command.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-246"><i>The ls -l command lists the contents of the Documents folder. From the results, a file called test.txt can be seen.</i></span>
+
+<h4 id="cn-m3-247"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-248">In the terminal window, type the following and press <b>Enter:</b></p>
+
+<pre id="cn-m3-249"><code>cat ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-250"></p><figure><img class="cn-img" id="cn-image-m3-c-22" src="NetworkSecurityAssessmentTools_files/image-m3-c-22.jpg" alt="Figure 3.4 Screenshot of PLABKALI: Displaying executing the cat command displaying the content of the file."><figcaption>Figure 3.4 Screenshot of PLABKALI: Displaying executing the cat command displaying the content of the file.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-252"><b><i>Note: </i></b><i>The content of the test.txt file is displayed using the cat command. Note there are several lines in the file.</i></span>
+
+<h4 id="cn-m3-253"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-254">In the terminal window, enter the following command and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-255"><code>head -n5 ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-256"></p><figure><img class="cn-img" id="cn-image-m3-c-23" src="NetworkSecurityAssessmentTools_files/image-m3-c-23.jpg" alt="Figure 3.5 Screenshot of PLABKALI: Displaying executing the head command"><figcaption>Figure 3.5 Screenshot of PLABKALI: Displaying executing the head command</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-258"><b><i>Note: </i></b><i>By 
+executing the head command with the -n5 parameter, the file's first five
+ lines are displayed. Type clear in the terminal window and press </i><b><i>Enter </i></b><i>for a clear view of the terminal window.</i></span>
+
+<h4 id="cn-m3-259"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-260">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-261"><code>tail -n4 ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-262"></p><figure><img class="cn-img" id="cn-image-m3-c-24" src="NetworkSecurityAssessmentTools_files/image-m3-c-24.jpg" alt="Figure 3.6 Screenshot of PLABKALI: Displaying executing the tail command in the terminal window."><figcaption>Figure 3.6 Screenshot of PLABKALI: Displaying executing the tail command in the terminal window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-264"><b><i>Note: </i></b><i>The last four lines of the test.txt file is displayed using the specified command.</i></span>
+
+<h4 id="cn-m3-265"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-266">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-267"><code>grep -w Practice ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-268"></p><figure><img class="cn-img" id="cn-image-m3-c-25" src="NetworkSecurityAssessmentTools_files/image-m3-c-25.jpg" alt="Figure 3.7 Screenshot of PLABKALI: Displaying executing the grep command in the terminal window."><figcaption>Figure 3.7 Screenshot of PLABKALI: Displaying executing the grep command in the terminal window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-270"><b><i>Note: </i></b><i>By executing the grep command with -w parameter lines, the test.txt document containing the word Practice is displayed.</i></span>
+
+<h4 id="cn-m3-271"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-272">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-273"><code>ls -l ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-274"></p><figure><img class="cn-img" id="cn-image-m3-c-26" src="NetworkSecurityAssessmentTools_files/image-m3-c-26.jpg" alt="Figure 3.8 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 3.8 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-276"><b><i>Note: </i></b><i>Executing the ls -l command on the test.txt file displays the specified file's file permissions.</i></span>
+
+<h4 id="cn-m3-277"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m3-278">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-279"><code>chmod +x ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-280"></p><figure><img class="cn-img" id="cn-image-m3-c-27" src="NetworkSecurityAssessmentTools_files/image-m3-c-27.jpg" alt="Figure 3.9 Screenshot of PLABKALI: Displaying executing the command in the terminal window."><figcaption>Figure 3.9 Screenshot of PLABKALI: Displaying executing the command in the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-282"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m3-283">In the terminal window, type the following and press <b>Enter:</b></p>
+
+<pre id="cn-m3-284"><code>ls -l ~/Documents/test.txt
+
+</code></pre>
+
+<p id="cn-m3-285"></p><figure><img class="cn-img" id="cn-image-m3-c-28" src="NetworkSecurityAssessmentTools_files/image-m3-c-28.jpg" alt="Figure 3.10 Screenshot of PLABKALI: Displaying the file permissions of the test.txt file."><figcaption>Figure 3.10 Screenshot of PLABKALI: Displaying the file permissions of the test.txt file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="cn-quote" id="cn-m3-289"><b><i>Note</i></b><i>: The chmod 
+command changes a file’s file permission. By executing the command with 
+the +x parameter, it changed the file to an executable file.</i></span>
+< <a href="https://github.com/SeanOhAileasa" id="ShellandScriptEnvironments">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-292"><b>Exercise 4 - Shell and Script Environments</b></h2>
+
+<p id="cn-m3-293">A shell in operating systems is a command interpreter.
+ Its function is to facilitate communication between commands that are 
+executed and the kernel of the operating system. These commands are 
+executed in the shell, for example, starting an application. Various 
+shells are available and are specific to the operating system. For 
+example, the bash shell is native to certain Linux operating systems, 
+and powershell is native to Windows operating systems.</p>
+
+<p id="cn-m3-295">These specific shell environments can be used to 
+create files referred to as scripts. Scripts are used to automate the 
+repeated process but can also be used for malicious intent. A Security 
+professional needs to be familiar with different shell and scripting 
+environments.</p>
+
+<h4 id="cn-m3-296"><b><i>SSH</i></b></h4>
+
+<p id="cn-m3-297">Secure Shell (SSH) is a protocol used to secure remote
+ network communications. It is widely used by server administrators to 
+maintain Linux-based servers. SSH uses public-key cryptography. By 
+default, it operates over port 22. SSH is used to sign into a secure 
+shell on a remote system.</p>
+
+<h4 id="cn-m3-298"><b><i>PowerShell</i></b></h4>
+
+<p id="cn-m3-299">PowerShell is a cross-platform task automation and 
+configuration management framework, consisting of a command-line shell 
+and scripting language. It is most commonly used on Windows operating 
+systems.</p>
+
+<h4 id="cn-m3-300"><b><i>Python</i></b></h4>
+
+<p id="cn-m3-301">The Python scripting language can be used to assess a 
+Linux system's security posture by creating an automated script. The 
+script can be set to collect system logs of the system, for example, for
+ an Apache web server, which can then be reviewed regularly by an 
+administrator to ensure there is no malicious activity.</p>
+
+<h4 id="cn-m3-302"><b><i>OpenSSL</i></b></h4>
+
+<p id="cn-m3-303">OpenSSL is a cryptographic library that provides an 
+open-source implementation of the Secure Sockets Layer (SSL) and 
+Transport Layer Security (TLS) protocols.</p>
+
+<p id="cn-m3-305">The library includes tools for generating RSA private 
+keys and Certificate Signing Requests (CSRs), checksums, managing 
+certificates and performing encryption/decryption. OpenSSL is written in
+ C, but wrappers are available for a wide variety of computer languages.</p>
+
+<p id="cn-m3-306">The&nbsp;openssl&nbsp;program is a command line tool 
+for using the different cryptography functions of 
+OpenSSL's&nbsp;crypto&nbsp;library from the Shell. It can be used for:</p>
+
+<ul id="cn-m3-307">
+
+<li id="cn-m3-307">Creation and maintenance of private keys, public keys and parameters</li>
+
+<li id="cn-m3-308">Public key cryptographic functions</li>
+
+<li id="cn-m3-309">Generate X.509 certificates, CSRs and CRLs</li>
+
+<li id="cn-m3-310">Arrive at Message Digests</li>
+
+<li id="cn-m3-311">Encryption and Decryption with Ciphers</li>
+
+<li id="cn-m3-312">SSL/TLS Client and Server Verification</li>
+
+<li id="cn-m3-313">Managing S/MIME signed or encrypted mail</li>
+
+<li id="cn-m3-314">Time Stamp requests, creation and validation</li>
+
+</ul>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-317">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-318">
+
+<li id="cn-m3-318">Explore Different Shell Scripting Environments</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m3-320">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m3-321">
+
+<li id="cn-m3-321"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m3-322"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m3-323"><img class="cn-img" id="cn-image-m3-c-29" src="NetworkSecurityAssessmentTools_files/image-m3-c-29.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m3-324"><b>Task 1 - Shell commands</b></h3>
+
+<p id="cn-m3-325">In this task, different shell scripting environments will be explored.</p>
+
+<h4 id="cn-m3-326"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m3-327">Connect to <b>PLABWIN10</b></p>
+
+<p id="cn-m3-328"></p><figure><img class="cn-img" id="cn-image-m3-c-30" src="NetworkSecurityAssessmentTools_files/image-m3-c-30.jpg" alt="Figure 4.1 Screenshot of PLABWIN10: Displaying the Desktop."><figcaption>Figure 4.1 Screenshot of PLABWIN10: Displaying the Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-330"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-331">Click <b>Start </b>and type the following:</p>
+
+<pre id="cn-m3-332"><code>PuTTY
+
+</code></pre>
+
+<p id="cn-m3-333">Press <b>Enter</b>.</p>
+
+<p id="cn-m3-334"></p><figure><img class="cn-img" id="cn-image-m3-c-31" src="NetworkSecurityAssessmentTools_files/image-m3-c-31.jpg" alt="Figure 4.2 Screenshot of PLABWIN10: Displaying opening the PuTTY application."><figcaption>Figure 4.2 Screenshot of PLABWIN10: Displaying opening the PuTTY application.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-336"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-337">In the <b>PuTTY Configuration </b>window, enter the following in the <b>Host Name (or IP address) </b>field:</p>
+
+<pre id="cn-m3-338"><code>192.168.0.4
+
+</code></pre>
+
+<p id="cn-m3-339">Click <b>Open</b></p>
+
+<p id="cn-m3-340"></p><figure><img class="cn-img" id="cn-image-m3-c-32" src="NetworkSecurityAssessmentTools_files/image-m3-c-32.jpg" alt="Figure 4.3 Screenshot of PLABWIN10: Displaying creating an SSH session to the PLABKALI device."><figcaption>Figure 4.3 Screenshot of PLABWIN10: Displaying creating an SSH session to the PLABKALI device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-342"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-343">In the <b>PuTTY Security Alert </b>pop-up window, click <b>Yes</b>.</p>
+
+<p id="cn-m3-344"></p><figure><img class="cn-img" id="cn-image-m3-c-33" src="NetworkSecurityAssessmentTools_files/image-m3-c-33.jpg" alt="Figure 4.4 Screenshot of PLABWIN10: Screenshot of creating an SSH connection to the PLABKALI device."><figcaption>Figure 4.4 Screenshot of PLABWIN10: Screenshot of creating an SSH connection to the PLABKALI device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-346"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-347">In the <b>PuTTY login screen, </b>sign  in with the following credentials:</p>
+
+<pre id="cn-m3-348"><code>Username: plabadmin
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-350"></p><figure><img class="cn-img" id="cn-image-m3-c-34" src="NetworkSecurityAssessmentTools_files/image-m3-c-34.jpg" alt="Figure 4.5 Screenshot of PLABKALI: Displaying creating an SSH session to the Kali device."><figcaption>Figure 4.5 Screenshot of PLABKALI: Displaying creating an SSH session to the Kali device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-352"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-353">In the <b>PuTTY SSH </b>session, type the following and press <b>Enter:</b></p>
+
+<pre id="cn-m3-354"><code>su -
+
+</code></pre>
+
+<p id="cn-m3-355"></p><figure><img class="cn-img" id="cn-image-m3-c-35" src="NetworkSecurityAssessmentTools_files/image-m3-c-35.jpg" alt="Figure 4.6 Screenshot of PLABWIN10: Logged into the PLABKALI device using SSH."><figcaption>Figure 4.6 Screenshot of PLABWIN10: Logged into the PLABKALI device using SSH.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-357"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-358">In the <b>Password </b>field, enter the following and press <b>Enter</b>:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m3-360"></p><figure><img class="cn-img" id="cn-image-m3-c-36" src="NetworkSecurityAssessmentTools_files/image-m3-c-36.jpg" alt="Figure 4.7 Screenshot of PLABKALI: Displaying connecting to the PLABKALI device using SSH."><figcaption>Figure 4.7 Screenshot of PLABKALI: Displaying connecting to the PLABKALI device using SSH.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-362"><b><i>Note: </i></b><i>The PuTTY 
+application is used to establish an SSH session to the PLABKALI linux 
+device. System Administrators can use this to remotely manage linux 
+devices from a Microsoft device.</i></span>
+
+<h4 id="cn-m3-363"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-364">In the <b>PuTTY SSH </b>session, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-365"><code>hostname
+
+</code></pre>
+
+<p id="cn-m3-366"></p><figure><img class="cn-img" id="cn-image-m3-c-37" src="NetworkSecurityAssessmentTools_files/image-m3-c-37.jpg" alt="Figure 4.8 Screenshot of PLABWIN10: Displaying connected to the PLABKALI device using an SSH connection."><figcaption>Figure 4.8 Screenshot of PLABWIN10: Displaying connected to the PLABKALI device using an SSH connection.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-368"><b><i>Note: </i></b><i>By 
+executing the hostname command, it displays that a successful SSH 
+connection has been made to the device. The su - command changes the 
+current user to the root user of the device. This is the same as an 
+administrator account on a Windows device.</i></span>
+
+<h3 id="cn-m3-369"><b>Task 2 - Linux Scripting techniques </b></h3>
+
+<p id="cn-m3-370">Scripts can be used to automate repetitive tasks that 
+need to be performed, for example, creating a script to automate a 
+backup in a Linux environment or creating several user accounts in a 
+Microsoft environment.</p>
+
+<p id="cn-m3-371">Malicious users can also use scripts to damage systems
+ if it is executed unintentionally by a user. A Cyber Security 
+professional needs to be able to automate a specific task by using 
+scripts.</p>
+
+<p id="cn-m3-372">In this task, different scripts will be created in a Windows and Linux environment.</p>
+
+<h4 id="cn-m3-373"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m3-374">Connect to <b>PLABKALI </b>and sign in with the following credentials:</p>
+
+<pre id="cn-m3-375"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-377"></p><figure><img class="cn-img" id="cn-image-m3-c-38" src="NetworkSecurityAssessmentTools_files/image-m3-c-38.jpg" alt="Figure 4.9 Screenshot of PLABKALI: Displaying logging in to the Kali device."><figcaption>Figure 4.9 Screenshot of PLABKALI: Displaying logging in to the Kali device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-379"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-380">Right-click on the desktop and select <b>Open Terminal here</b></p>
+
+<p id="cn-m3-381"></p><figure><img class="cn-img" id="cn-image-m3-c-39" src="NetworkSecurityAssessmentTools_files/image-m3-c-39.jpg" alt="Figure 4.10 Screenshot of PLABKALI: Displaying opening the terminal window from the Desktop."><figcaption>Figure 4.10 Screenshot of PLABKALI: Displaying opening the terminal window from the Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-383"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-384">In the terminal window, type the following and press <b>Enter:</b></p>
+
+<pre id="cn-m3-385"><code>vi ~/Documents/plab.sh
+
+</code></pre>
+
+<p id="cn-m3-386"></p><figure><img class="cn-img" id="cn-image-m3-c-40" src="NetworkSecurityAssessmentTools_files/image-m3-c-40.jpg" alt="Figure 4.11 Screenshot of PLABKALI: Displaying creating a new script using the terminal window."><figcaption>Figure 4.11 Screenshot of PLABKALI: Displaying creating a new script using the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-388"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-389">In the Vi text editor, press <b>‘i’ </b>and enter the following information:</p>
+
+<pre id="cn-m3-390"><code>#!/bin/bash
+
+echo -e “Please enter your name here:”
+
+read name
+
+echo “Have a nice day $name”
+
+</code></pre>
+
+<p id="cn-m3-394"></p><figure><img class="cn-img" id="cn-image-m3-c-41" src="NetworkSecurityAssessmentTools_files/image-m3-c-41.jpg" alt="Figure 4.12 Screenshot of PLABKALI: Displaying creating a script file on a Linux device."><figcaption>Figure 4.12 Screenshot of PLABKALI: Displaying creating a script file on a Linux device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-396"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-397">Press <b>‘ESC’ </b>followed by the following:</p>
+
+<pre id="cn-m3-398"><code>:wq
+
+</code></pre>
+
+<p id="cn-m3-399">Press <b>Enter</b>.</p>
+
+<p id="cn-m3-400"></p><figure><img class="cn-img" id="cn-image-m3-c-42" src="NetworkSecurityAssessmentTools_files/image-m3-c-42.jpg" alt="Figure 4.13 Screenshot of PLABKALI: Displaying creating a script file on a Linux device."><figcaption>Figure 4.13 Screenshot of PLABKALI: Displaying creating a script file on a Linux device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-402"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-403">In the terminal window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-404"><code>chmod +x ~/Documents/plab.sh
+
+</code></pre>
+
+<p id="cn-m3-405"></p><figure><img class="cn-img" id="cn-image-m3-c-43" src="NetworkSecurityAssessmentTools_files/image-m3-c-43.jpg" alt="Figure 4.14 Screenshot of PLABKALI: Displaying creating a script file on a Linux system."><figcaption>Figure 4.14 Screenshot of PLABKALI: Displaying creating a script file on a Linux system.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-407"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-408">In the terminal window, type the following and press <b>Enter </b>after each line<b>:</b></p>
+
+<pre id="cn-m3-409"><code>cd ~/Documents
+
+./plab.sh
+
+</code></pre>
+
+<p id="cn-m3-411"></p><figure><img class="cn-img" id="cn-image-m3-c-44" src="NetworkSecurityAssessmentTools_files/image-m3-c-44.jpg" alt="Figure 4.15 Screenshot of PLABKALI: Displaying creating a script file on a Linux device."><figcaption>Figure 4.15 Screenshot of PLABKALI: Displaying creating a script file on a Linux device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-413"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-414">In the terminal window, enter your name and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-415"><code>Louis
+
+</code></pre>
+
+<p id="cn-m3-416"></p><figure><img class="cn-img" id="cn-image-m3-c-45" src="NetworkSecurityAssessmentTools_files/image-m3-c-45.jpg" alt="Figure 4.16 Screenshot of PLABKALI: Executing the previously created script."><figcaption>Figure 4.16 Screenshot of PLABKALI: Executing the previously created script.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-418"><b><i>Note: </i></b><i>After the 
+script file has been created, it needs to be set to an executable file. 
+Any linux command can be added to a script file to automate a process.</i></span>
+
+<h3 id="cn-m3-419"><b>Task 3 - Powershell Scripting techniques</b></h3>
+
+<p id="cn-m3-420">Similar to a Linux script, Powershell on a windows device can be used to automate a process.</p>
+
+<p id="cn-m3-421">In this task, a powershell script will be created.</p>
+
+<h4 id="cn-m3-422"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m3-423">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m3-424"></p><figure><img class="cn-img" id="cn-image-m3-c-46" src="NetworkSecurityAssessmentTools_files/image-m3-c-46.jpg" alt="Figure 4.17 Screenshot of PLABWIN10: Screenshot of PLABWIN10: Displaying the desktop."><figcaption>Figure 4.17 Screenshot of PLABWIN10: Screenshot of PLABWIN10: Displaying the desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-426"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-427">Click <b>Start </b>and type the following, and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-428"><code>Notepad
+
+</code></pre>
+
+<p id="cn-m3-429"></p><figure><img class="cn-img" id="cn-image-m3-c-47" src="NetworkSecurityAssessmentTools_files/image-m3-c-47.jpg" alt="Figure 4.18 Screenshot of PLABWIN10: Displaying opening the Notepad application."><figcaption>Figure 4.18 Screenshot of PLABWIN10: Displaying opening the Notepad application.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-431"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-432">In <b>Notepad, </b>add the following lines:</p>
+
+<pre id="cn-m3-433"><code>Write-host “The computers manufacturer and memory details of the device”
+
+Get-CimInstance -ClassName Win32_ComputerSystem
+
+</code></pre>
+
+<p id="cn-m3-435"></p><figure><img class="cn-img" id="cn-image-m3-c-48" src="NetworkSecurityAssessmentTools_files/image-m3-c-48.jpg" alt="Figure 4.19 Screenshot of PLABWIN10: Displaying creating a Powershell script."><figcaption>Figure 4.19 Screenshot of PLABWIN10: Displaying creating a Powershell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-437"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-438">In <b>Notepad, </b>click <b>File </b>and select <b>Save as</b></p>
+
+<p id="cn-m3-439"></p><figure><img class="cn-img" id="cn-image-m3-c-49" src="NetworkSecurityAssessmentTools_files/image-m3-c-49.jpg" alt="Figure 4.20 Screenshot of PLABWIN10: Displaying creating a Powershell script."><figcaption>Figure 4.20 Screenshot of PLABWIN10: Displaying creating a Powershell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-441"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-442">In the <b>Save as </b>window, select <b>Documents  </b>in the left pane</p>
+
+<p id="cn-m3-443"></p><figure><img class="cn-img" id="cn-image-m3-c-50" src="NetworkSecurityAssessmentTools_files/image-m3-c-50.jpg" alt="Figure 4.21 Screenshot of PLABWIN10: Displaying saving the powershell script in the Documents folder."><figcaption>Figure 4.21 Screenshot of PLABWIN10: Displaying saving the powershell script in the Documents folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-445"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-446">In the drop-down in the <b>Save as type, </b>field select <b>All files</b>.</p>
+
+<p id="cn-m3-447"></p><figure><img class="cn-img" id="cn-image-m3-c-51" src="NetworkSecurityAssessmentTools_files/image-m3-c-51.jpg" alt="Figure 4.22 Screenshot of PLABWIN10: Displaying saving the powershell script."><figcaption>Figure 4.22 Screenshot of PLABWIN10: Displaying saving the powershell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-449"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-450">In the <b>File name </b>field, enter the following and click <b>Save</b>.</p>
+
+<pre id="cn-m3-451"><code>plab.ps1
+
+</code></pre>
+
+<p id="cn-m3-452"></p><figure><img class="cn-img" id="cn-image-m3-c-52" src="NetworkSecurityAssessmentTools_files/image-m3-c-52.jpg" alt="Figure 4.23 Screenshot of PLABWIN10: Displaying saving the Powershell script."><figcaption>Figure 4.23 Screenshot of PLABWIN10: Displaying saving the Powershell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-454"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-455">Close <b>Notepad</b>.</p>
+
+<p id="cn-m3-456"></p><figure><img class="cn-img" id="cn-image-m3-c-53" src="NetworkSecurityAssessmentTools_files/image-m3-c-53.jpg" alt="Figure 4.24 Screenshot of PLABWIN10: Displaying closing the Notepad application."><figcaption>Figure 4.24 Screenshot of PLABWIN10: Displaying closing the Notepad application.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-458"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m3-459">Right-click on <b>Start </b>and select <b>Windows Powershell (Admin</b>).</p>
+
+<p id="cn-m3-460"></p><figure><img class="cn-img" id="cn-image-m3-c-54" src="NetworkSecurityAssessmentTools_files/image-m3-c-54.jpg" alt="Figure 4.25 Screenshot of PLABWIN10: Displaying opening Windows Powershell."><figcaption>Figure 4.25 Screenshot of PLABWIN10: Displaying opening Windows Powershell.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-462"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m3-463">In the <b>User Account Control </b>pop-up window, select <b>Yes</b></p>
+
+<p id="cn-m3-464"></p><figure><img class="cn-img" id="cn-image-m3-c-55" src="NetworkSecurityAssessmentTools_files/image-m3-c-55.jpg" alt="Figure 4.26 Screenshot of PLABWIN10: Displaying opening Powershell."><figcaption>Figure 4.26 Screenshot of PLABWIN10: Displaying opening Powershell.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-466"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m3-467">In the <b>Windows Powershell </b>window, enter the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m3-468"><code>Set-ExecutionPolicy Unrestricted
+
+</code></pre>
+
+<p id="cn-m3-469"></p><figure><img class="cn-img" id="cn-image-m3-c-56" src="NetworkSecurityAssessmentTools_files/image-m3-c-56.jpg" alt="Figure 4.27 Screenshot of PLABWIN10: Displaying enabling script execution in Powershell."><figcaption>Figure 4.27 Screenshot of PLABWIN10: Displaying enabling script execution in Powershell.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-471"><b><i>Note: </i></b><i>By default,
+ as a security measure on Windows devices, the execution of scripts is 
+prevented by executing the command script execution is enabled. </i></span>
+
+<h4 id="cn-m3-472"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m3-473">In the <b>Execution Policy Change </b>prompt, press <b>‘Y’.</b></p>
+
+<p id="cn-m3-474"></p><figure><img class="cn-img" id="cn-image-m3-c-57" src="NetworkSecurityAssessmentTools_files/image-m3-c-57.jpg" alt="Figure 4.28 Screenshot of PLABWIN10: Displaying enabling scripts to run on a Windows device."><figcaption>Figure 4.28 Screenshot of PLABWIN10: Displaying enabling scripts to run on a Windows device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-476"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m3-477">In the <b>Powershell </b>window, type the following and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-478"><code>cd C:\Users\administrator\Documents
+
+</code></pre>
+
+<p id="cn-m3-479"></p><figure><img class="cn-img" id="cn-image-m3-c-58" src="NetworkSecurityAssessmentTools_files/image-m3-c-58.jpg" alt="Figure 4.29 Screenshot of PLABWIN10: Displaying executing the powershell script."><figcaption>Figure 4.29 Screenshot of PLABWIN10: Displaying executing the powershell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-481"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m3-482">In the <b>Powershell </b>window, type the following and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-483"><code>.\plab.ps1
+
+</code></pre>
+
+<p id="cn-m3-484"></p><figure><img class="cn-img" id="cn-image-m3-c-59" src="NetworkSecurityAssessmentTools_files/image-m3-c-59.jpg" alt="Figure 4.30 Screenshot of PLABWIN10: Displaying executing the previously created script."><figcaption>Figure 4.30 Screenshot of PLABWIN10: Displaying executing the previously created script.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<span class="cn-quote" id="cn-m3-489"><b><i>Note: </i></b><i>After 
+executing the script that was created, it displays information about the
+ virtual device. A script can be used to automate repetitive tasks.</i></span>
+< <a href="https://github.com/SeanOhAileasa" id="PacketCaptureandReplay">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-490"><b>Exercise 5 - Packet Capture and Replay</b></h2>
+
+<p id="cn-m3-491">A Security professional needs to assess its network 
+security posture by analyzing the traffic that traverses across the 
+network. Several packet capturing applications are available to analyze 
+network traffic.</p>
+
+<p id="cn-m3-492">Packet replay refers to capturing network traffic over
+ a specified period of time and then saving it, which can then be 
+replayed over a dedicated network interface for analysis. You can choose
+ from several packet replay applications that are available to perform 
+this function such as tcpreplay.</p>
+
+<p id="cn-m3-493">In this exercise, different packet and replay capturing applications will be discussed and their different uses.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-495">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-496">
+
+<li id="cn-m3-496">Explain Packet Capture and Replay</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m3-498">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m3-499">
+
+<li id="cn-m3-499"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m3-500"><b>PLABKALI </b>- Kali Linux 2019.4</li>
+
+</ul>
+
+<p id="cn-m3-502"><img class="cn-img" id="cn-image-m3-c-60" src="NetworkSecurityAssessmentTools_files/image-m3-c-60.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m3-503">Packet capture utility is also called a protocol 
+analyzer or a sniffer. It is a tool to capture and analyze network 
+communications.</p>
+
+<h4 id="cn-m3-504"><b><i>Tcpreplay</i></b></h4>
+
+<p id="cn-m3-505">Tcpreplay is used to modify and replay network 
+traffic, which is already captured by tools like tcpdump and Wireshark. 
+It allows interception of traffic as client or server, rewrite Layer 2, 3
+ and 4 packets, and replay the traffic back onto the network. Tcpreplay 
+allows both single and dual NIC modes for validating both sniffing and 
+in-line devices.</p>
+
+<p id="cn-m3-506">Tcpreplay is used by different firewalls, IDS, IPS, 
+NetFlow and other networking vendors, enterprises, universities, labs 
+and open source projects. Tcpreplay is intended to work with network 
+hardware and usually does not penetrate deeper than Layer 2 of the OSI 
+model.</p>
+
+<h4 id="cn-m3-507"><b><i>Tcpdump</i></b></h4>
+
+<p id="cn-m3-508">Tcpdump is a command-line packet analyzer that can capture network communication. It is a cross-platform network analysis tool.</p>
+
+<h4 id="cn-m3-509"><b><i>Wireshark</i></b></h4>
+
+<p id="cn-m3-510">Wireshark is a protocol interpreter. Wireshark has a rich functionality which includes the following:</p>
+
+<ul id="cn-m3-511">
+
+<li id="cn-m3-511">An extensive inspection of hundreds of protocols, with more being included all the time</li>
+
+<li id="cn-m3-512">Live capture and offline review</li>
+
+<li id="cn-m3-513">Standard three-pane packet browser</li>
+
+<li id="cn-m3-514">Captured network data can be interpreted via a GUI or via the TTY-mode TShark utility</li>
+
+<li id="cn-m3-515">Very powerful display filters in the industry</li>
+
+<li id="cn-m3-516">Rich VoIP analysis</li>
+
+<li id="cn-m3-517">Gathers files compressed with gzip and can be decompressed on the fly</li>
+
+<li id="cn-m3-518">Live data can be read from Ethernet, IEEE 802.11, 
+PPP/HDLC, ATM, Bluetooth, USB, Token Ring, Frame Relay, FDDI, and others
+ (depending on your platform)</li>
+
+<li id="cn-m3-519">Coloring rules can be implemented to the packet list for quick, intuitive analysis</li>
+
+<li id="cn-m3-520">Output can be sent to XML, PostScript, CSV, or plain text</li>
+
+<li id="cn-m3-521">Decryption support for various protocols, including IPsec, ISAKMP, Kerberos, SNMPv3, SSL/TLS, WEP, and WPA/WPA2</li>
+
+<li id="cn-m3-522">Read and or write many various capture file formats: 
+tcpdump (libpcap), Pcap NG, Catapult DCT2000, Cisco Secure IDS iplog, 
+Microsoft Network Monitor, Network * General Sniffer (compressed and 
+uncompressed), Sniffer Pro, and NetXray, Network Instruments Observer, 
+NetScreen snoop, Novell LANalyzer, RADCOM WAN/LAN Analyzer, 
+Shomiti/Finisar Surveyor, Tektronix K12xx, Visual Networks Visual 
+UpTime, WildPackets EtherPeek/TokenPeek/AiroPeek, and much more</li>
+
+</ul>
+
+<h3 id="cn-m3-524"><b>Task 1 - Packet Capture using Wireshark</b></h3>
+
+<p id="cn-m3-525">In this task, the Wireshark packet capturing application will be used to capture and analyze traffic generated on the network.</p>
+
+<h4 id="cn-m3-526"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m3-527">Connect to <b>PLABKALI </b>and sign in using the following credentials:</p>
+
+<pre id="cn-m3-528"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-530"></p><figure><img class="cn-img" id="cn-image-m3-c-61" src="NetworkSecurityAssessmentTools_files/image-m3-c-61.jpg" alt="Figure 5.1 Screenshot of PLABKALI: Displaying logging into the device."><figcaption>Figure 5.1 Screenshot of PLABKALI: Displaying logging into the device.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-532"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-533">Right-click on the Desktop and select <b>Open Terminal Here</b>.</p>
+
+<p id="cn-m3-534"></p><figure><img class="cn-img" id="cn-image-m3-c-62" src="NetworkSecurityAssessmentTools_files/image-m3-c-62.jpg" alt="Figure 5.2 Screenshot of PLABKALI: Displaying opening a terminal window."><figcaption>Figure 5.2 Screenshot of PLABKALI: Displaying opening a terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-536"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-537">In the terminal window, type the following and press <b>Enter</b></p>
+
+<pre id="cn-m3-538"><code>wireshark
+
+</code></pre>
+
+<p id="cn-m3-539"></p><figure><img class="cn-img" id="cn-image-m3-c-63" src="NetworkSecurityAssessmentTools_files/image-m3-c-63.jpg" alt="Figure 5.3 Screenshot of PLABKALI: Displaying opening the Wireshark application."><figcaption>Figure 5.3 Screenshot of PLABKALI: Displaying opening the Wireshark application.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-541"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-542">In the <b>Wireshark </b>application ensure <b>eth0 </b>is selected and select <b>Start capturing packets</b>.</p>
+
+<p id="cn-m3-543"></p><figure><img class="cn-img" id="cn-image-m3-c-64" src="NetworkSecurityAssessmentTools_files/image-m3-c-64.jpg" alt="Figure 5.4 Screenshot of PLABKALI: Displaying starting to capture network traffic with the Wireshark application."><figcaption>Figure 5.4 Screenshot of PLABKALI: Displaying starting to capture network traffic with the Wireshark application.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-545"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-546">Connect to <b>PLABWIN10</b></p>
+
+<p id="cn-m3-547"></p><figure><img class="cn-img" id="cn-image-m3-c-65" src="NetworkSecurityAssessmentTools_files/image-m3-c-65.jpg" alt="Figure 5.5 Screenshot of PLABWIN10: Displaying the Desktop."><figcaption>Figure 5.5 Screenshot of PLABWIN10: Displaying the Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-549"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-550">Right-click on <b>Start </b>and select <b>Windows Powershell</b>.</p>
+
+<p id="cn-m3-551"></p><figure><img class="cn-img" id="cn-image-m3-c-66" src="NetworkSecurityAssessmentTools_files/image-m3-c-66.jpg" alt="Figure 5.6 Screenshot of PLABWIN10: Displaying opening Windows Powershell."><figcaption>Figure 5.6 Screenshot of PLABWIN10: Displaying opening Windows Powershell.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-553"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-554">In the <b>Windows Powershell </b>window type the following and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-555"><code>ping 192.168.0.4
+
+</code></pre>
+
+<p id="cn-m3-556"></p><figure><img class="cn-img" id="cn-image-m3-c-67" src="NetworkSecurityAssessmentTools_files/image-m3-c-67.jpg" alt="Figure 5.7 Screenshot of PLABWIN10: Displaying creating network traffic."><figcaption>Figure 5.7 Screenshot of PLABWIN10: Displaying creating network traffic.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-558"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-559">Reconnect to <b>PLABKALI</b>.</p>
+
+<p id="cn-m3-560"></p><figure><img class="cn-img" id="cn-image-m3-c-68" src="NetworkSecurityAssessmentTools_files/image-m3-c-68.jpg" alt="Figure 5.8 Screenshot of PLABKALI: Displaying the Wireshark application capturing network."><figcaption>Figure 5.8 Screenshot of PLABKALI: Displaying the Wireshark application capturing network.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="cn-quote" id="cn-m3-564"><b><i>Note: </i></b><i>The Wireshark application captured network traffic that was generated by the PLABWIN10 device.</i></span>
+
+<h4 id="cn-m3-565"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m3-566">Close the <b>Wireshark </b>application.</p>
+
+<p id="cn-m3-567"></p><figure><img class="cn-img" id="cn-image-m3-c-69" src="NetworkSecurityAssessmentTools_files/image-m3-c-69.jpg" alt="Figure 5.9 Screenshot of PLABKALI: Displaying closing the Wireshark application."><figcaption>Figure 5.9 Screenshot of PLABKALI: Displaying closing the Wireshark application.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-569"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m3-570">In the <b>Unsaved packets… </b>pop-up window, select <b>Stop and Quit without saving</b>.</p>
+
+<p id="cn-m3-571"></p><figure><img class="cn-img" id="cn-image-m3-c-70" src="NetworkSecurityAssessmentTools_files/image-m3-c-70.jpg" alt="Figure 5.10 Screenshot of PLABKALI: Displaying closing the Wireshark application."><figcaption>Figure 5.10 Screenshot of PLABKALI: Displaying closing the Wireshark application.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m3-574">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+< <a href="https://github.com/SeanOhAileasa" id="Forensics">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-575"><b>Exercise 6 - Forensics </b></h2>
+
+<p id="cn-m3-576">Data forensics can be defined as investigating to what changes have been made to data and if it was legitimate or not.</p>
+
+<p id="cn-m3-577">Basic concepts of forensics include order of volatility, chain of custody, legal hold and data acquisition.</p>
+
+<p id="cn-m3-578">The order of volatility is the order in which an 
+organization should collect forensic evidence. Since highly volatile 
+data can be easily lost, the most volatile data should be collected 
+first and the least volatile data should be collected last.</p>
+
+<p id="cn-m3-579">In scenarios where proof might be used in civil or 
+criminal litigation, it is vital for an organization to form a chain of 
+custody, also known as a chain of evidence. This documents the location 
+of the evidence from the moment it is gathered to the moment it appears 
+in court. This can include the police who collect it, the evidence 
+technicians who process it and the lawyers who use it in court.</p>
+
+<p id="cn-m3-580">A legal hold is a method that an organization might 
+use to store all relevant information when litigation is expected. The 
+legal hold process is typically initiated by a communication from legal 
+counsel to an organization to suspend the normal disposal of records, 
+such as the recycling of tape backups or the archiving or deletion of 
+data.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-582">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-583">
+
+<li id="cn-m3-583">Explain Forensics</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m3-585">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m3-586"><img class="cn-img" id="cn-image-m3-c-71" src="NetworkSecurityAssessmentTools_files/image-m3-c-71.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m3-587"><b>Task 1 - Forensics </b></h3>
+
+<p id="cn-m3-589">Based on the type of media, there are various methods an organization can use to retrieve data for forensic analysis purposes.</p>
+
+<h4 id="cn-m3-590"><b><i>DD</i></b></h4>
+
+<p id="cn-m3-591">A DD file is the image file generated out of dd 
+commands. It is a powerful and easy command-line used to create disk 
+images, copy files, etc. of hard drives on Unix or Linux Operating 
+System.</p>
+
+<h4 id="cn-m3-592"><b><i>Memdump</i></b></h4>
+
+<p id="cn-m3-593">This program dumps system memory to the standard output stream.</p>
+
+<h4 id="cn-m3-594"><b><i>WinHex</i></b></h4>
+
+<p id="cn-m3-595">WinHex is a commercial disk editor and universal hexadecimal editor used for data recovery and digital forensics.</p>
+
+<h4 id="cn-m3-596"><b><i>FTK Imager</i></b></h4>
+
+<p id="cn-m3-597">FTK Imager is an imaging tool that lets you preview 
+data. It evaluates electronic evidence to identify if further review 
+with another forensic tool is needed.</p>
+
+<h4 id="cn-m3-598"><b><i>Autopsy</i></b></h4>
+
+<p id="cn-m3-599">Autopsy&nbsp;is a Windows-based desktop 
+digital&nbsp;forensics tool&nbsp;that is free, open-source and has all 
+of the features you would normally find in commercial 
+digital&nbsp;forensics tools.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="ExploitationFrameworksPasswordCrackersandDataSanitization">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-604"><b>Exercise 7 - Exploitation Frameworks, Password Crackers and Data Sanitization</b></h2>
+
+<p id="cn-m3-605">Exploitation frameworks are tools to facilitate 
+exploits. They enable you to choose the exploit and what happens after 
+you gain control of the device via the exploit. For example, a framework
+ might try to exploit a known buffer overflow vulnerability. These tools
+ are useful for hackers but also for internal IT security teams to test 
+their systems.</p>
+
+<p id="cn-m3-606">A password cracker tries to convert hashed passwords 
+into plain text. It can work against operating systems, directories, 
+databases or other systems that store passwords in a hashed format. 
+Password crackers are generally used in an offline model, running for a 
+long period of time against the hashes.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-608">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-609">
+
+<li id="cn-m3-609">Perform Password Cracking Using Tools</li>
+
+<li id="cn-m3-610">Explain Data Sanitization</li>
+
+</ul>
+
+<h2 class="cn-learningobjectives"><b>Your Devices</b></h2>
+
+<p id="cn-m3-612">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m3-613">
+
+<li id="cn-m3-613"><b>PLABKALI </b>- Kali Linux 2019.4</li>
+
+</ul>
+
+<p id="cn-m3-614"><img class="cn-img" id="cn-image-m3-c-72" src="NetworkSecurityAssessmentTools_files/image-m3-c-72.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m3-615">The following is a list of most commonly used password cracking applications available.</p>
+
+<h4 id="cn-m3-616"><b><i>Crunch tool</i></b></h4>
+
+<p id="cn-m3-617">This password attack tool creates a wordlist where 
+standard or customized character set can be specified for usage. It 
+creates all the possible password combinations in a very quick process. 
+It can also break up the end result by file size and support in case of 
+any challenge. It supports numbers and symbols. Crunch supports 
+uppercase and lowercase letters and also provides a status report of 
+multiple files.</p>
+
+<h4 id="cn-m3-618"><b><i>Hashcat tool</i></b></h4>
+
+<p id="cn-m3-619">The hashcat is one of the most favored and advanced 
+password recovery tools. It supports five distinct attack modes for 300 
+plus highly-optimized hashing algorithms. It can support both CPU and 
+GPU, as well as more hardware accelerators. It also helps to work on 
+distributed password cracking. It has various options to support 
+multiple parameters for password recovery.</p>
+
+<h4 id="cn-m3-620"><b><i>Medusa tool</i></b></h4>
+
+<p id="cn-m3-621">The Medusa tool is a brute-forcer login tool 
+supporting many services that allow for authentication from remote 
+systems. It supports multi thread-based parallel testing and modular 
+design that allows for brute force services.</p>
+
+<h4 id="cn-m3-622"><b><i>Ncrack tool</i></b></h4>
+
+<p id="cn-m3-623">A dynamic network authentication cracking tool that 
+helps to secure networks against password attacks. It looks for poor 
+passwords by testing their hosts and networking devices. It has numerous
+ components and works like the NMAP tool having a dynamic engine to work
+ on network feedback. It has fast and consistent auditing services for 
+multiple hosts. It is simple to use and has brute force attacks, timing 
+templates, and an interface for complete control of the network 
+processes. It supports protocols such as SSH, FTP, HTTPS, TELNET, IMAP, 
+SIP, SMB, PostgreSQL, MS-SQL, MySQL, MongoDB, and much more.</p>
+
+<h4 id="cn-m3-624"><b><i>Ophcrack tool</i></b></h4>
+
+<p id="cn-m3-625">Ophcrack is an opensource password cracking tool and 
+is based on rainbow tables. It has a graphical user interface as well as
+ a command-line interface and supports multiple platforms. It runs in 
+audit, brute force and debugging mode, loading hashes.</p>
+
+<h4 id="cn-m3-626"><b><i>Wordlists utility</i></b></h4>
+
+<p id="cn-m3-627">The wordlists is a password attack tool containing symlinks and word lists to password files in the Kali Linux distro.</p>
+
+<h4 id="cn-m3-628"><b><i>Hydra tool</i></b></h4>
+
+<p id="cn-m3-629">This password attack tool is a parallel login crack 
+with numerous attack protocols. It is very quick, reliable, and can be 
+customized for the inclusion of new modules. This tool can gather 
+unauthorized access remotely to a system. It works with Cisco AAA, Cisco
+ authorization, FTP, HTTPS GET/POST/PROXY,  MY SQL etc.</p>
+
+<h4 id="cn-m3-630"><b><i>Mimikatz tool</i></b></h4>
+
+<p id="cn-m3-631">Mimikatz is a tool developed in C language that works 
+with windows security. It mines passwords, PINs, Hash codes, and 
+Kerberos tickets from host memory and saves it in a plain text file.</p>
+
+<h4 id="cn-m3-632"><b><i>THC-pptp-bruter tool</i></b></h4>
+
+<p id="cn-m3-633">This brute forcer tool works alongside pptp VPN 
+endpoints. It uses TCP port and works as an independent package. It 
+supports MS ChapV2 authentication and is verified against numerous Cisco
+ gateways and Windows files. This brute force tool attempts 300 
+passwords in a second and exploits a vulnerability in Microsoft 
+anti-brute-force operation.</p>
+
+<h4 id="cn-m3-634"><b><i>Rsmangler tool</i></b></h4>
+
+<p id="cn-m3-635">This tool obtains a wordlist and then does various 
+operations on it, just like the John the Ripper Tool. It takes a 
+collection of words, generates all of these changes and the acronym of 
+words, and then applies them to other mangles.</p>
+
+<h4 id="cn-m3-636"><b><i>Data Sanitizing</i></b></h4>
+
+<p id="cn-m3-637">When you need to dispose of storage devices, you need a
+ way to securely erase the data first. Data sanitization tools can 
+securely erase data so that it cannot be recovered. Many of the tools 
+overwrite data in several passes, sometimes with random data. With each 
+additional overwriting pass, the erasing becomes more permanent and, 
+therefore, more secure. In addition to sanitizing data, you can sanitize
+ entire hard drives too.</p>
+
+<h3 id="cn-m3-638"><b>Task 1 - Working with John the Ripper </b></h3>
+
+<p id="cn-m3-639">The John the ripper toolkit is quick and dependable. 
+It has numerous cracking modes, and it is customizable and configurable 
+according to your requirements. It provides other DES-based tripcodes 
+but must be configured.</p>
+
+<p id="cn-m3-640">In this task, you will learn to use the John the Ripper.</p>
+
+<h4 id="cn-m3-641"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m3-642">Connect to the <b>PLABKALI </b>device and sign in with the following credentials</p>
+
+<pre id="cn-m3-643"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m3-645"><img class="cn-img" id="cn-image-m3-c-73" src="NetworkSecurityAssessmentTools_files/image-m3-c-73.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m3-646"><i>Figure 7.1 Screenshot of PLABKALI: Displaying logging into the device.</i></p>
+
+<h4 id="cn-m3-647"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-648">Right-click on the Desktop and select <b>Open Terminal here</b></p>
+
+<p id="cn-m3-649"></p><figure><img class="cn-img" id="cn-image-m3-c-74" src="NetworkSecurityAssessmentTools_files/image-m3-c-74.jpg" alt="Figure 7.2 Screenshot of PLABKALI: Displaying opening a terminal window."><figcaption>Figure 7.2 Screenshot of PLABKALI: Displaying opening a terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-651"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-652">In the terminal window, type the following and press <b>Enter</b>.</p>
+
+<pre id="cn-m3-653"><code>john /root/Documents/plabpassword
+
+</code></pre>
+
+<p id="cn-m3-654"></p><figure><img class="cn-img" id="cn-image-m3-c-75" src="NetworkSecurityAssessmentTools_files/image-m3-c-75.jpg" alt="Figure 7.3 Screenshot of PLABKALI: Displaying John the Ripper to crack a captured password file."><figcaption>Figure 7.3 Screenshot of PLABKALI: Displaying John the Ripper to crack a captured password file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<span class="cn-quote" id="cn-m3-658"><b><i>Note: </i></b><i>John the 
+Ripper, password cracking utility was used to crack a previously hash 
+file. From the results, the username and password can be seen. The 
+password is very weak and did not take long to crack.</i></span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m3-661">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-662"><b>Review</b></h2>
+
+<p id="cn-m3-663">Well done, you have completed the <b>Network Security Assessment Tools </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">997be118-10b6-4b2c-855b-36fa28bad373</span>
+
+<span class="atom-code hidden">047fd88d-7485-4a93-ab8f-da64a4114f91</span>
+
+<span class="atom-code hidden">aa683fe1-e887-4e10-a92c-8b9267bacd6a</span>
+
+<span class="atom-code hidden">0718c19e-bd4c-4694-acae-f0f865a8eef6</span>
+
+<span class="atom-code hidden">6f8579ac-4c84-42b9-8dec-647ee32170b9</span>
+
+<span class="atom-code hidden">3b188938-ea8f-473e-b2eb-dd6bb3e1e37d</span>
+
+<span class="atom-code hidden">08ce225e-c09f-4cf4-8db0-5105d5294489</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m3-676">You have completed the following exercises:</p>
+
+<ul id="cn-m3-677">
+
+<li id="cn-m3-677">Exercise 1 - Network Reconnaissance and Discovery</li>
+
+<li id="cn-m3-678">Exercise 2 - File Manipulation</li>
+
+<li id="cn-m3-679">Exercise 3 - Shell and Script Environments</li>
+
+<li id="cn-m3-680">Exercise 4 - Packet Capture and Replay</li>
+
+<li id="cn-m3-681">Exercise 5 - Forensics</li>
+
+<li id="cn-m3-682">Exercise 6 - Exploitation Frameworks, Password Crackers and Data Sanitization</li>
+
+</ul>
+
+<p id="cn-m3-683">You should now be able to:</p>
+
+<ul id="cn-m3-684">
+
+<li id="cn-m3-684">Explain Network Discovery and Reconnaissance Techniques Using Tools like nmap, traceroute etc.&nbsp;</li>
+
+<li id="cn-m3-685">Identify File Manipulation Attacks and Learn Shell Scripts</li>
+
+<li id="cn-m3-686">Explain the Different Forensic Tools</li>
+
+<li id="cn-m3-687">Explain Packet Capture and Replay</li>
+
+<li id="cn-m3-688">Explain Frameworks Used for Exploiting Vulnerabilities and Learn Data Sanitization</li>
+
+</ul>
+
+<h2 class="cn-summary"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m3-693">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

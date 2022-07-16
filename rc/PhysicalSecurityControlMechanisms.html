@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="PhysicalSecurityControlMechanisms_files/print-styles.css" rel="stylesheet">
+    <script src="PhysicalSecurityControlMechanisms_files/jquery.min.js"></script>
+    <script src="PhysicalSecurityControlMechanisms_files/jspdf.js"></script>
+    <script src="PhysicalSecurityControlMechanisms_files/from_html.js"></script>
+    <script src="PhysicalSecurityControlMechanisms_files/addimage.js"></script>
+    <script src="PhysicalSecurityControlMechanisms_files/filesaver.js"></script>
+    <script src="PhysicalSecurityControlMechanisms_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="TWlwPZeLlpUcUY3a5N/JPHpN4tzlQELJZ5rDNjimbW3dWAIAM05ciCfn9hDc904oYbM8Ae9ktu3mNLRQzISUFfwXMW6YWwyzeJl92MjIG0A=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Physical Security Control Mechanisms</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Physical Security</li><li>Exercise 2 - Data Destruction and Disposal Methods</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m6-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Bollards</div>
+
+<div>Barricades</div>
+
+<div>Mantraps</div>
+
+<div>Badges</div>
+
+<div>Alarms</div>
+
+<div>Signage</div>
+
+<div>CCTV Cameras</div>
+
+<div>Personnel</div>
+
+<div>Locks</div>
+
+<div>USB Data Blocker</div>
+
+<div>Lighting</div>
+
+<div>Fencing</div>
+
+<div>Fire Suppression</div>
+
+<div>Sensors</div>
+
+<div>Drones/UAV</div>
+
+<div>Visitor Logs</div>
+
+<div>Faraday Cages</div>
+
+<div>Air Gap</div>
+
+<div>Protected Cable Distribution</div>
+
+<div>Demilitarized Zone (DMZ)</div>
+
+<div>Secure Areas</div>
+
+<div>Low-Level Format</div>
+
+<div>High-Level Format</div>
+
+<div>Burning</div>
+
+<div>Shredding</div>
+
+<div>Pulping</div>
+
+<div>Pulverizing</div>
+
+<div>Degaussing</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m6-31">Welcome to the <b>Physical Security Control Mechanisms </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m6-35">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m6-36">
+
+<li id="cn-m6-36">Exercise 1 - Physical Security</li>
+
+<li id="cn-m6-37">Exercise 2 - Data Destruction and Disposal Methods</li>
+
+</ul>
+
+<p id="cn-m6-38">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m6-39">
+
+<li id="cn-m6-39">Bollards/Barricades</li>
+
+<li id="cn-m6-40">Mantraps</li>
+
+<li id="cn-m6-41">Badges</li>
+
+<li id="cn-m6-42">Alarms</li>
+
+<li id="cn-m6-43">Signage</li>
+
+<li id="cn-m6-44">CCTV Cameras</li>
+
+<li id="cn-m6-45">Industrial Camouflage</li>
+
+<li id="cn-m6-46">Personnel</li>
+
+<li id="cn-m6-47">Locks</li>
+
+<li id="cn-m6-48">USB Data Blocker</li>
+
+<li id="cn-m6-49">Lighting</li>
+
+<li id="cn-m6-50">Fencing</li>
+
+<li id="cn-m6-51">Fire Suppression</li>
+
+<li id="cn-m6-52">Sensors</li>
+
+<li id="cn-m6-53">Drones/UAV</li>
+
+<li id="cn-m6-54">Visitor Logs</li>
+
+<li id="cn-m6-55">Faraday Cages</li>
+
+<li id="cn-m6-56">Air Gap</li>
+
+<li id="cn-m6-57">Protected Cable Distribution</li>
+
+<li id="cn-m6-58">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m6-59">Secure Areas</li>
+
+<li id="cn-m6-60">Data Destruction Methods</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m6-62">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m6-63">2.7 Explain the importance of physical security controls.</p>
+
+<ul id="cn-m6-64">
+
+<li id="cn-m6-64">Bollards/Barricades</li>
+
+<li id="cn-m6-65">Mantraps</li>
+
+<li id="cn-m6-66">Badges</li>
+
+<li id="cn-m6-67">Alarms</li>
+
+<li id="cn-m6-68">Signage</li>
+
+<li id="cn-m6-69">Cameras</li>
+
+<li id="cn-m6-70">Closed-circuit Television (CCTV)</li>
+
+<li id="cn-m6-71">Industrial Camouflage</li>
+
+<li id="cn-m6-72">Personnel</li>
+
+<li id="cn-m6-73">Locks</li>
+
+<li id="cn-m6-74">USB Data Blocker</li>
+
+<li id="cn-m6-75">Lighting</li>
+
+<li id="cn-m6-76">Fencing</li>
+
+<li id="cn-m6-77">Fire Suppression</li>
+
+<li id="cn-m6-78">Sensors</li>
+
+<li id="cn-m6-79">Drones/UAV</li>
+
+<li id="cn-m6-80">Visitor Logs</li>
+
+<li id="cn-m6-81">Faraday Cages</li>
+
+<li id="cn-m6-82">Air Gap</li>
+
+<li id="cn-m6-83">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m6-84">Protected Cable Distribution</li>
+
+<li id="cn-m6-85">Secure Areas</li>
+
+<li id="cn-m6-86">Secure Data Destruction</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m6-87"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m6-89">It will take approximately <b>45 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">6cde82b4-969e-4ba2-9a1b-b030a82e21d0</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m6-93">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m6-94">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m6-96"><b>Lab Topology</b></h2>
+
+<p id="cn-m6-97">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m6-98"><img class="cn-img" id="cn-image-m6-c-0" src="PhysicalSecurityControlMechanisms_files/image-m6-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<span class="cn-alert" id="cn-m6-99">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="PhysicalSecurity">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m6-100"><b>Exercise 1 - Physical Security</b></h2>
+
+<p id="cn-m6-101">Physical security is as critical as logical security. 
+In logical security, you secure the systems, servers, and network 
+devices using various software and tools. However, physical security 
+uses various methods and techniques to ensure the safety of the 
+organization and its infrastructure.</p>
+
+<p id="cn-m6-102">In this exercise, you will learn about the various methods and techniques used in physical security.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m6-104">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m6-105">
+
+<li id="cn-m6-105">Bollards/Barricades</li>
+
+<li id="cn-m6-106">Mantraps</li>
+
+<li id="cn-m6-107">Badges</li>
+
+<li id="cn-m6-108">Alarms</li>
+
+<li id="cn-m6-109">Signage</li>
+
+<li id="cn-m6-110">CCTV Cameras</li>
+
+<li id="cn-m6-111">Industrial Camouflage</li>
+
+<li id="cn-m6-112">Personnel</li>
+
+<li id="cn-m6-113">Locks</li>
+
+<li id="cn-m6-114">USB Data Blocker</li>
+
+<li id="cn-m6-115">Lighting</li>
+
+<li id="cn-m6-116">Fencing</li>
+
+<li id="cn-m6-117">Fire Suppression</li>
+
+<li id="cn-m6-118">Sensors</li>
+
+<li id="cn-m6-119">Drones/UAV</li>
+
+<li id="cn-m6-120">Visitor Logs</li>
+
+<li id="cn-m6-121">Faraday Cages</li>
+
+<li id="cn-m6-122">Air Gap</li>
+
+<li id="cn-m6-123">Protected Cable Distribution</li>
+
+<li id="cn-m6-124">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m6-125">Secure Areas</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m6-127">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m6-128"><img class="cn-img" id="cn-image-m6-c-1" src="PhysicalSecurityControlMechanisms_files/image-m6-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m6-129"><b>Bollards/Barricades</b></h3>
+
+<p id="cn-m6-130">Bollards are vertical posts that create a protective 
+boundary around a building. They are usually designed to mark boundaries
+ and prevent vehicles from entering a specific area. They are usually 
+fixed into the ground. They prevent any vehicle to just pass through. 
+You can also have collapsible bollards, which can be used to add 
+stand-off distances, protect garages, and provide hostile surveillance. 
+However, they are specifically useful where there may be a need to 
+permit authorized traffic.</p>
+
+<p id="cn-m6-131">Barricades prevent people from accessing a specific 
+area. They can also be used for allowing vehicle access in a specific 
+manner. For example, military areas usually have zigzag barricades, 
+which forces the vehicles to slow down.</p>
+
+<p id="cn-m6-132">Both bollards and barricades serve as deterrent control, which is designed to deter attackers.</p>
+
+<h3 id="cn-m6-133"><b>Mantraps</b></h3>
+
+<p id="cn-m6-134">Tailgaiting and piggybacking is a big problem for 
+organizations and is considered to be one of the easiest methods to 
+enter the premises. Tailgating is a social engineering act of gaining 
+access to an electronically locked system or restricted area by 
+following a user who has legitimate access, intending to access 
+vulnerable information. When the legitimate user swipes his badge or 
+enters the passcode to enter the building, you enter through the secured
+ door before it closes by following the user.</p>
+
+<p id="cn-m6-135">To prevent piggybacking and tailgating, you can 
+implement mantrap. In a mantrap, only one person enters the mantrap, and
+ the entry door closes. After the person authenticates himself or 
+herself, the exit door opens. After the first person moves out of the 
+exit door, the second person can enter the mantrap. Mantraps are 
+installed to prevent tailgating and piggybacking.</p>
+
+<h3 id="cn-m6-137"><b>Badges</b></h3>
+
+<p id="cn-m6-138">In older times, ID badges contained the user’s 
+photograph and some personal details, which were verified by the 
+security guards. However, this scenario might also be continuing with 
+some of the organizations. It is a problem to verify hundreds of users 
+at any given time.</p>
+
+<p id="cn-m6-139">One of the easiest solutions was to then use ID 
+badges, which carries a magnetic strip within the ID cards, which could 
+either be scanned or swiped. Once the card is scanned or swiped, the 
+user is identified.</p>
+
+<p id="cn-m6-140">A more recent invention is to use ID cards that carry 
+Radio Frequency Identification (RFID), which could be detected by the 
+proximity reader. It could detect the ID card with RFID and authenticate
+ the user. The ID card carrying RFID simply transmits the number to the 
+proximity reader and based on the number, the user is identified.</p>
+
+<h3 id="cn-m6-141"><b>Alarms</b></h3>
+
+<p id="cn-m6-142">An alarm is a detective control, which is used for 
+detecting malicious activity. Alarms, also known as security alarms, are
+ nowadays used everywhere, at home, in industries, and even on military 
+premises. Organizations install alarms that can be triggered if 
+malicious activities are performed, such as breaking into the building.</p>
+
+<p id="cn-m6-143">Let’s take an example. Your organization is housed in a
+ four-story building. There is an alarm system at every door, which 
+detects if anyone forcibly tries to open the door. If the door is 
+forcibly opened, the alarm is triggered.</p>
+
+<h3 id="cn-m6-144"><b>Signage</b></h3>
+
+<p id="cn-m6-145">Signage plays a critical role in personnel safety. 
+There may be certain areas that are accident prone or can be considered 
+dangerous in a building. You would need to put appropriate signage so 
+that people know that they are not supposed to be entering a particular 
+area or room.</p>
+
+<p id="cn-m6-146">Signage can be a warning or simple information. For example, signage may warn people about the danger of fire.</p>
+
+<p id="cn-m6-147">Information signage may simply be placed outside a room, stating that it is a meeting room.</p>
+
+<h3 id="cn-m6-148"><b>CCTV Cameras</b></h3>
+
+<p id="cn-m6-149">CCTV cameras can detect unauthorized entrance, but 
+they cannot prevent it.  Usually, lock picking does not leave any 
+external damage and therefore is hard to prove that it ever took place. A
+ security camera can also work as a deterrent and provide proof in any 
+legal proceedings.</p>
+
+<p id="cn-m6-150"><b>Motion Detection </b></p>
+
+<p id="cn-m6-151">These cameras identify moving objects. They extract 
+the overall boundaries of an object, and if the object moves out of the 
+boundary, then the motion vectors are calculated. With the calculation 
+of the motion vectors, the new position of the objects in motion is 
+calculated. Good use of these cameras can be at front doors or even at 
+the entrance to a server room.</p>
+
+<p id="cn-m6-152"><b>Object Detection </b></p>
+
+<p id="cn-m6-153">Object detection is mainly used to detect specific 
+objects. For example, you can put a camera on the street to figure out 
+objects in motion. When an object is identified, a rectangle is drawn 
+around it to make it look different from the other objects.</p>
+
+<h3 id="cn-m6-155"><b>Industrial Camouflage</b></h3>
+
+<p id="cn-m6-156">To protect a company’s data and network 
+infrastructure, camouflage techniques can be used to disguise specific 
+characteristics of the company’s network infrastructure. This can be 
+achieved by creating decoy systems that are masquerading as the 
+legitimate system. For example, when an attacker attempts to breach the 
+network or has already gained unlawful access to the decoy system, their
+ behavior and objectives can be monitored. This information can then be 
+used to harden the production environment to prevent potential attacks 
+and exploits.</p>
+
+<h3 id="cn-m6-157"><b>Personnel</b></h3>
+
+<p id="cn-m6-158">There are different personnel who play a critical role
+ in physical security. Let’s have a look at each of these personnel and 
+their roles.</p>
+
+<h4 id="cn-m6-159"><b><i>Guards</i></b></h4>
+
+<p id="cn-m6-160">To protect a building or a premise, you can deploy 
+fences, bollards, and barricades. However, these are passive methods. On
+ the other hand, guards are active entities that can question the 
+individual entering the premises. Based on their decisions, they can 
+judge whether a person is malicious or genuine.</p>
+
+<p id="cn-m6-161">In most organizations, guards are deployed at the main
+ gate, as well as the entrance of the building. In some cases, guards 
+not only make an entry of the visitor in their visitor logbook but also 
+carry the responsibility of monitoring the CCTV cameras.</p>
+
+<h4 id="cn-m6-162"><b><i>Robot Sentries</i></b></h4>
+
+<p id="cn-m6-163">Robot sentries are autonomous robots who are designed 
+to patrol a specific area. They are unmanned, which means that they 
+function on their own. In some cases, such as borders, they may be 
+armed. In some countries, they are deployed to guard critical 
+infrastructure, such as a nuclear plant. Even though robot sentries are 
+autonomous, they are still remotely controlled by humans.</p>
+
+<h4 id="cn-m6-164"><b><i>Reception</i></b></h4>
+
+<p id="cn-m6-165">Almost all organizations have receptions. One of the 
+reception's key functions is to attend to visitors and ensure that the 
+visitors sit in the designated areas. Only after authorization from an 
+employee can they proceed to a specific area where the meeting needs to 
+be held.</p>
+
+<p id="cn-m6-166">Several organizations also have Webcams placed on the 
+reception to make an entry pass for the visitors. The entry pass has the
+ visitor’s photograph and also has a place for the employee signature 
+who attends the visitors.</p>
+
+<h4 id="cn-m6-167"><b><i>Two-person Integrity/Control</i></b></h4>
+
+<p id="cn-m6-168">Two-person integrity (TPI) is a type of Separation of 
+Duties (SoD). In a critical task, two people are required to complete 
+the task. For example, if there is a finance approval required, you 
+would need two levels of approvals before the payment can be made out to
+ an individual or a vendor. Another example that would fit well in this 
+context is the bank locker. You would need your key, and then another 
+key that belongs to bank personnel. Both keys are required to open the 
+locker. The bank personnel cannot simply open the locker with a single 
+key.</p>
+
+<h3 id="cn-m6-169"><b>Locks</b></h3>
+
+<p id="cn-m6-170">Locks are essential for any house or building to 
+secure them from any kind of theft. Depending on the criticality and 
+importance of the objects, you may put a specific type of lock. Let’s 
+understand the types of locks that can be used to secure a building or 
+premise.</p>
+
+<h4 id="cn-m6-171"><b><i>Physical</i></b></h4>
+
+<p id="cn-m6-172">A physical lock is either installed on the door or can
+ be an individual lock. A physical lock is opened with a key. Typically,
+ a physical lock would have three to four copies of the keys. There are 
+several varieties of physical locks. One is a residential keyed entry 
+lock. On the outside of the lock, you have a knob, and it contains a key
+ entry hole. This type of lock is mostly used in houses.</p>
+
+<p id="cn-m6-173">The other type is the deadbolt lock, which is mostly 
+used in commercial complexes. This type of lock has a solid metal bar 
+that gets inserted into the wall for secure locking. As compared to the 
+residential entry lock, the deadbolt lock provides higher security 
+because you would have to cut the metal bar to open it. Both of these 
+types of locks require a key to lock and unlock.</p>
+
+<h4 id="cn-m6-174"><b><i>Electronic</i></b></h4>
+
+<p id="cn-m6-175">Electronic locks use a key combination to open. You 
+have to press a series of numbers in a particular order to open the 
+electronic lock. An advanced version of an electronic lock is a cipher 
+lock, which has more features. You can program it to make it work for a 
+certain time. For example, you can program to make it work only from 8 
+AM to 6 PM during weekdays. The rest of the time and on weekends, the 
+cipher lock will not work.</p>
+
+<h4 id="cn-m6-176"><b><i>Biometric</i></b></h4>
+
+<p id="cn-m6-177">Biometric locks usually have a fingerprint scanner. 
+When you place the finger on the lock, it scans the fingerprint, and 
+depending upon if you are a legitimate user, it authorizes your entry by
+ unlocking the door. Some biometric locks also have a numeric keypad and
+ manual lock, which require a key for the lock.</p>
+
+<p id="cn-m6-178">More sophisticated biometric locks can also include a retina scan. However, most of them have fingerprint scan capabilities.</p>
+
+<h4 id="cn-m6-179"><b><i>Cable locks</i></b></h4>
+
+<p id="cn-m6-180">Imagine a scenario where you need to put several 
+laptops in an exhibition where visitors would like to experience your 
+product. In the previous exhibition, two laptops were stolen. Since 
+there are thousands of visitors daily, you want to ensure that the 
+laptops are protected from theft. The ideal solution would be to use 
+cable locks, which protect the laptops from any physical theft.</p>
+
+<p id="cn-m6-181">Most portable devices, such as laptops, have a 
+security slot where the cable lock is placed and locked. The lock is 
+connected to the cable, which has another end that is tied to the desk.</p>
+
+<h3 id="cn-m6-182"><b>USB Data Blocker</b></h3>
+
+<p id="cn-m6-183">A USB data blocker is a small USB device that is 
+plugged into the USB port of a charging station. It is quite difficult 
+to determine if a public charging station is prone to deliver malware or
+ steal data from your phone when you plug it in. The USB data blocker 
+prevents any kind of infection in your phone from the charging station. 
+You need to plug in the USB data blocker into the charging station and 
+then plug in your phone cable into the USB data blocker, which adds a 
+layer of protection. Your phone is still charged, but the hackers cannot
+ extract data.</p>
+
+<h3 id="cn-m6-185"><b>Lighting</b></h3>
+
+<p id="cn-m6-186">It is easy for an intruder to sneak into a building 
+when it is dark. Lighting is a deterrent control that prevents intruders
+ from breaking into a building. Consider a scenario if your building has
+ security cameras, but it is dark inside the building. The cameras won’t
+ be able to capture any clear picture. If someone breaks into the 
+building, you will never be able to find out anything from the video 
+recordings. More lighting means more security. The cameras have a clear 
+view when there are proper lightings installed.</p>
+
+<h3 id="cn-m6-187"><b>Fencing</b></h3>
+
+<p id="cn-m6-188">Fences are usually installed to guard the perimeter of
+ a building. Fences should be tall enough to prevent anyone from 
+climbing over. To make it even more difficult for the intruder, you can 
+also install razor wire on top of the fence.</p>
+
+<p id="cn-m6-189">Fences should be strong enough to be knocked down by 
+an individual. Depending on the requirement, the fencing may be 
+see-through. It could also be opaque, which prevents an individual from 
+finding out what is on the other side.</p>
+
+<h3 id="cn-m6-190"><b>Fire Suppression</b></h3>
+
+<p id="cn-m6-191">A fire within a building can break out anytime, and 
+most of the time, the reasons can only be found after you have managed 
+to put out the fire. However, by this time, you have incurred huge 
+losses as most of the equipment is damaged and left unusable. The fire 
+suppression system should be placed in the most critical place of the 
+building, which is the data center.</p>
+
+<p id="cn-m6-192">You can install a water sprinkler system in other 
+places of the building, which can simply get triggered when there is a 
+fire. However, in the server room or data center, a water sprinkler 
+system would make things worse and can cause more damage to the 
+equipment. The most suitable solution is to install a fire suppression 
+system.</p>
+
+<p id="cn-m6-193">A fire suppression system has components that detect 
+the fire through various stages, such as heat, smoke, and then fire. 
+Most fire suppression systems have a built-in alarm system, which gets 
+triggered when a fire is detected. Depending on the type of fire 
+suppression system, it can either release the fire extinguishing 
+substance automatically or manually.</p>
+
+<h3 id="cn-m6-194"><b>Sensors</b></h3>
+
+<p id="cn-m6-195">Sensors can be used for various purposes. They can be 
+used to detect motion or even in the proximity reader to detect ID cards
+ with RFID. Sensors can also be used for monitoring temperatures.</p>
+
+<p id="cn-m6-196">Let’s look at some of the key purposes where sensors play a critical role.</p>
+
+<h4 id="cn-m6-197"><b><i>Motion Detection</i></b></h4>
+
+<p id="cn-m6-198">Motion detection sensors work on their capability to 
+detect the motion of objects. For example, consider that you have a room
+ where a critical server is kept. No one is supposed to be entering the 
+room. You have motion detection sensors installed. Now, if a moving 
+object is detected, then an audible alarm can be triggered.</p>
+
+<h4 id="cn-m6-199"><b><i>Noise Detection</i></b></h4>
+
+<p id="cn-m6-200">Noise detection sensor has the capability of detecting
+ various types of noises. For example, if it detects a large thump 
+noise, it can trigger an alarm.</p>
+
+<h4 id="cn-m6-201"><b><i>Proximity Reader</i></b></h4>
+
+<p id="cn-m6-202">A proximity reader is used with ID cards or any other 
+type of card that carries RFID. When the ID card is moved close to the 
+proximity reader, its details are captured.</p>
+
+<h4 id="cn-m6-203"><b><i>Moisture Detection</i></b></h4>
+
+<p id="cn-m6-204">In data centers in an organization, detecting moisture
+ is critical. For example, water condensation can cause various 
+problems, such as corrosion, rust, and short-circuiting. On the other 
+hand, no or missing moisture can cause electrostatic discharge. 
+Therefore, in most of the server rooms, you will find that there are 
+moisture detection sensors, which reports about moisture regularly.</p>
+
+<h4 id="cn-m6-205"><b><i>Temperature</i></b></h4>
+
+<p id="cn-m6-206">There is no doubt that the server rooms or data 
+centers generate a large amount of heat. You need to have methods to 
+measure the appropriate temperature, whether hot or cold. You need to 
+ensure that the temperature is appropriate, which can be done with the 
+help of temperature sensors. Temperature sensors can be of two types - 
+contact-based and non-contact-based. Contact-based temperature sensors 
+need to be connected with the object. On the other hand, 
+non-contact-based temperature sensors can use convection and radiation 
+to monitor temperature change.</p>
+
+<h3 id="cn-m6-207"><b>Drones/UAV</b></h3>
+
+<p id="cn-m6-208">A drone is an Uncrewed Aerial Vehicle (UAV). It is a 
+small aerial vehicle that is used for various purposes, such as 
+surveillance. It can fly with a controlled flight plan and is controlled
+ through sensors and GPS.</p>
+
+<p id="cn-m6-209">A drone works with two different signals: rising and 
+downlink signals. The drone receives rising signals. The rising signals 
+can be in the form of radio command or GPS signals. However, these can 
+be replaced by the lure signals that are sent by an attacker. The lure 
+signals replace the rising signals to allow the attacker to take control
+ of the fly drone. The attacker can then change the flying path of the 
+drone.</p>
+
+<p id="cn-m6-210">The drone sends the downlink signals. The signals may 
+contain the flight information or video transmission, both of which can 
+be intercepted by the attacker. Video transmission is typically being 
+transmitted in an unsecured manner that is susceptible to interception.</p>
+
+<p id="cn-m6-211">The downlink and rising signals are not protected or 
+rather encrypted. Therefore, both the signals can be intercepted and 
+allow the attacker to modify the transmission or take control of the 
+drone.</p>
+
+<h3 id="cn-m6-212"><b>Visitor Logs</b></h3>
+
+<p id="cn-m6-213">When a visitor enters an organization’s premises, the 
+guards should make an entry in the visitor logs. Along with the entry, 
+the exit of the visitor should also be logged. Some of the key 
+information that should be captured about the visitor is as follows:</p>
+
+<ul id="cn-m6-214">
+
+<li id="cn-m6-214">Name of the visitor</li>
+
+<li id="cn-m6-215">Organization of the visitor</li>
+
+<li id="cn-m6-216">Entry date and time</li>
+
+<li id="cn-m6-217">Exit date and time</li>
+
+<li id="cn-m6-218">Mobile number</li>
+
+<li id="cn-m6-219">Name of the employee to whom the visitor needs to meet</li>
+
+</ul>
+
+<p id="cn-m6-220">Many organizations have removed the physical entry 
+method, which was to capture the details in a register. Some 
+organizations create a temporary visitor card that is valid for a fixed 
+duration and also mentions the areas that the visitor is authorized to 
+visit.</p>
+
+<p id="cn-m6-221">Some organizations create a small printed slip with 
+all the required details and require the concerned employee to sign the 
+slip before leaving the premises.</p>
+
+<p id="cn-m6-222">Whichever method that you use depends on your 
+organization. However, it is highly critical that the visitor log be 
+reviewed from time to time, perhaps daily, to ensure that all visitors 
+have left the premises. If you are complying with a security standard, 
+then the visitor logs are likely to be reviewed as part of the 
+compliance audit.</p>
+
+<h3 id="cn-m6-223"><b>Faraday Cages</b></h3>
+
+<p id="cn-m6-224">A Faraday cage is a type of enclosure that blocks any 
+type of electromagnetic interference. It is commonly used with devices, 
+such as mobile phones, when you want to prevent them from any electronic
+ interference. You can simply put the mobile device in the Faraday cage.
+ Once you put the mobile into this package, it cannot be remotely 
+accessed. In the forensics field, these packages are commonly used to 
+prevent the mobile from being accessed and to retain mobile content.</p>
+
+<h3 id="cn-m6-225"><b>Air Gap</b></h3>
+
+<p id="cn-m6-226">Air gap is the segmentation of a network without any 
+connectivity between the segments. An air gap doesn’t allow free flow of
+ information even from within an organization’s LAN. Data can move 
+low-to-high (unclassified to classified) with minimal processes, whereas
+ high-to-low requires much more stringent procedures to ensure the 
+protection of the data at a higher level of classification. An air gap 
+is not 100% immune to viruses and malware attacks. Few viruses that use 
+acoustic signaling may bridge the gap and reach a secure network.</p>
+
+<p id="cn-m6-227">Air gap networks are typically used with high security
+ networks, such as military, financial organizations, industrial 
+controls systems, and life-critical systems, such as nuclear plants.</p>
+
+<h3 id="cn-m6-228"><b>Protected Cable Distribution</b></h3>
+
+<p id="cn-m6-229">Protected cable distribution is about using a carrier 
+that encases the cables, which in most cases, are the network cables. 
+There are two reasons for using protected cable distribution. The first 
+reason is that it protects the network cables from being damaged. The 
+second reason is that it protects the network cables from any kind of 
+cable tapping, which is used to extract the signals flowing over the 
+cable.</p>
+
+<h3 id="cn-m6-230"><b>Demilitarized Zone (DMZ)</b></h3>
+
+<p id="cn-m6-231">A DMZ is a logically separated network from the 
+internal network and allows the servers to be placed where it needs to 
+be visible to the outside network. The network communication between the
+ internal and the DMZ needs to be encrypted.</p>
+
+<p id="cn-m6-232">The Web server should be placed in the DMZ for public 
+access, and the database server should be placed on the internal 
+network. The database server should remain on the internal network so 
+that if the Web server is compromised, the database server is still 
+safe.</p>
+
+<p id="cn-m6-233">The servers in the DMZ have access to the Internet, 
+but they do not have access to the internal network, which in turn can 
+access the servers in the DMZ. This type of configuration is for 
+security reasons. This ensures that even if an attacker(s) gain control 
+of a server in DMZ, they cannot access the internal network.</p>
+
+<h3 id="cn-m6-234"><b>Secure Areas</b></h3>
+
+<p id="cn-m6-235">A secure area refers to an area that has limited 
+access to users and other entities. Be it the network where the servers 
+are connected or how the server racks are stacked in the data center. It
+ could be a logical entity that stores the usernames and passwords. 
+Let’s look at some of these secure areas.</p>
+
+<h4 id="cn-m6-236"><b><i>Vault</i></b></h4>
+
+<p id="cn-m6-237">A vault is a special folder or tool that is used for 
+storing the user credentials and certificates. It can also store 
+private, and personal files that you consider are confidential. You need
+ to install a tool, such as McAfee LiveSafe, and create a vault. Once 
+you do that, you need to unlock and put your files in it. After this, 
+you need to lock the vault once again.</p>
+
+<p id="cn-m6-238">When you lock the vault, a set of vault files are 
+created on your hard drive or a USB drive. You need to ensure that you 
+safeguard the vault files because if they are lost, then you will lose 
+the data inside the vault.</p>
+
+<h4 id="cn-m6-239"><b><i>Safe</i></b></h4>
+
+<p id="cn-m6-240">You may be taking backups from the server on tapes or 
+any other media. However, to be able to safeguard the media from falling
+ into the wrong hands, you need to put them under lock and key, which 
+simply means using a safe. A safe can be manually operated, which means 
+you need to have a key. Alternatively, it could also work with a digital
+ key lock, which means you need to have the number combination to open 
+the safe.</p>
+
+<p id="cn-m6-241">Whichever type of safe you use, you have to ensure 
+that you do not let the keys or number combination fall into the wrong 
+hands. Access to the safe should be highly restricted. Anyone with 
+access to the safe must also make a log entry with the date and time and
+ the purpose of using the safe.</p>
+
+<h4 id="cn-m6-242"><b><i>Hot and Cold Aisle</i></b></h4>
+
+<p id="cn-m6-243">There are usually numerous numbers of devices in a 
+data center, ranging from routers, switches to servers. Each of these 
+generates quite a bit of heat, especially the servers stacked up in 
+server racks.</p>
+
+<p id="cn-m6-244">In a cold aisle, you need to put the fronts of the 
+racks facing each other. The fronts create the cold aisle, whereas the 
+backs create the hot aisle.  The HVAC airflow would exhaust the hot air 
+outside the data center and bring in fresh air to the cold aisle.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="DataDestructionandDisposalMethods">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m6-247"><b>Exercise 2 - Data Destruction and Disposal Methods</b></h2>
+
+<p id="cn-m6-248">When you delete data from a Windows system, it is soft
+ delete. This means that the data is actually not deleted from the hard 
+drive. This is because the files in Windows are tracked using the File 
+Allocation Table (FAT) or using the Master File Table (MFT). FAT or MFT 
+keeps track of the beginning and end of a file. When you delete a file 
+from the hard drive, the operating system, Windows, in this case, 
+deletes the pointer that is linked with the file. This pointer is 
+responsible for pointing to the file. When the pointer is deleted, the 
+space for its related file is marked available. To the user, the file is
+ now deleted as space is shown as free. However, the actual files are 
+not deleted and can be recovered by data recovery programs, such as 
+Recuva. Some of the well-known data recovery programs are:</p>
+
+<ul id="cn-m6-249">
+
+<li id="cn-m6-249">Recuva</li>
+
+<li id="cn-m6-250">Wise&nbsp;Data&nbsp;Recovery</li>
+
+<li id="cn-m6-251">Stellar&nbsp;Data&nbsp;Recovery</li>
+
+<li id="cn-m6-252">PC Inspector&nbsp;File&nbsp;Recovery</li>
+
+<li id="cn-m6-253">EaseUS&nbsp;Data&nbsp;Recovery&nbsp;Wizard&nbsp;Free</li>
+
+</ul>
+
+<p id="cn-m6-254">In this exercise, you will learn to use data destruction and disposal methods.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m6-256">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m6-257">
+
+<li id="cn-m6-257">Low-Level vs. High Level Format</li>
+
+<li id="cn-m6-258">Data Destruction Methods</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m6-260">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m6-261"><img class="cn-img" id="cn-image-m6-c-2" src="PhysicalSecurityControlMechanisms_files/image-m6-c-2.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m6-263"><b>Data Destruction Methods</b></h3>
+
+<p id="cn-m6-264">There are several data destruction and media 
+sanitization methods. Some of them will destroy the media to ensure that
+ the data cannot be recovered. Other methods will simply make the media 
+unusable so that it cannot be used for data recovery.</p>
+
+<h4 id="cn-m6-265"><b><i>Pulverizing</i></b></h4>
+
+<p id="cn-m6-266">Shredding and pulverizing data devices use the same 
+method of destruction. Physical destruction methods such as using 
+high-powered devices are used to destroy these devices to ensure the 
+data on these devices is not recoverable at all. Care must be taken 
+before these devices are destroyed, ensuring that no data will be needed
+ in the future.</p>
+
+<h4 id="cn-m6-267"><b><i>Degaussing</i></b></h4>
+
+<p id="cn-m6-268">The degaussing method uses an electromagnet to wipe 
+off the data and make the media useless. This makes the drive completely
+ inoperable and impossible to recover any data from it.</p>
+
+<h4 id="cn-m6-269"><b><i>Drilling </i></b></h4>
+
+<p id="cn-m6-270">The drilling method uses a hammer and nails to destroy
+ a hard drive. You can hammer the nails in the hard drive that creates 
+holes to prevent the drive from spinning. Using this method, you can 
+also damage the read/write head of the hard drive to ensure that no data
+ can be recovered.</p>
+
+<h4 id="cn-m6-271"><b><i>Pulping</i></b></h4>
+
+<p id="cn-m6-272">The pulping method is used to destroy sensitive data 
+on papers. It can be used with shredded or non-shredded paper. The ink 
+is separated from the paper using the flotation method, and then fiber 
+is removed. After the water dries out, the pulp is created and then 
+converted into recycled paper.</p>
+
+<h4 id="cn-m6-273"><b><i>Shredding</i></b></h4>
+
+<p id="cn-m6-274">Shredding is the process of destroying sensitive paper
+ documents using a paper shredder. Paper shredders cut the paper into 
+small sizes, which is almost impossible to put back together again. Care
+ must be taken when disposing of these shredded documents to ensure that
+ it does not fall into the wrong hands.</p>
+
+<h4 id="cn-m6-275"><b><i>Burning</i></b></h4>
+
+<p id="cn-m6-276">Another method for destroying sensitive paper 
+documents is by burning these documents, which will ensure it will be 
+totally unrecoverable. An incinerator can be used specifically for this 
+task.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m6-280">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m6-281"><b>Review</b></h2>
+
+<p id="cn-m6-282">Well done, you have completed the <b>Physical Security Control Mechanisms </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">1c2ccfdd-b5a4-41c1-95d2-693c645911d6</span>
+
+<span class="atom-code hidden">bd2ae750-d3b6-420c-b084-2db1261f92ee</span>
+
+<span class="atom-code hidden">68241ebb-7e7d-41b6-8930-20f8429cfb31</span>
+
+<span class="atom-code hidden">3b6a0d2f-dd1e-4475-9d09-2b042a63f31f</span>
+
+<span class="atom-code hidden">17d6f97e-73e3-4626-a2b7-3d0c9c0d272d</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m6-292">You completed the following exercises:</p>
+
+<ul id="cn-m6-293">
+
+<li id="cn-m6-293">Exercise 1 - Physical Security</li>
+
+<li id="cn-m6-294">Exercise 2 - Data Destruction and Disposal Methods</li>
+
+</ul>
+
+<p id="cn-m6-295">You should now have further knowledge of:</p>
+
+<ul id="cn-m6-296">
+
+<li id="cn-m6-296">Bollards/Barricades</li>
+
+<li id="cn-m6-297">Mantraps</li>
+
+<li id="cn-m6-298">Badges</li>
+
+<li id="cn-m6-299">Alarms</li>
+
+<li id="cn-m6-300">Signage</li>
+
+<li id="cn-m6-301">CCTV Cameras</li>
+
+<li id="cn-m6-302">Personnel</li>
+
+<li id="cn-m6-303">Locks</li>
+
+<li id="cn-m6-304">USB Data Blocker</li>
+
+<li id="cn-m6-305">Lighting</li>
+
+<li id="cn-m6-306">Fencing</li>
+
+<li id="cn-m6-307">Fire Suppression</li>
+
+<li id="cn-m6-308">Sensors</li>
+
+<li id="cn-m6-309">Drones/UAV</li>
+
+<li id="cn-m6-310">Visitor Logs</li>
+
+<li id="cn-m6-311">Faraday Cages</li>
+
+<li id="cn-m6-312">Air Gap</li>
+
+<li id="cn-m6-313">Protected Cable Distribution</li>
+
+<li id="cn-m6-314">Demilitarized Zone (DMZ)</li>
+
+<li id="cn-m6-315">Secure Areas</li>
+
+<li id="cn-m6-316">Low Level vs. High-Level Format</li>
+
+<li id="cn-m6-317">Data Destruction Methods</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m6-321">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="IncidentResponsePoliciesandProcedures_files/print-styles.css" rel="stylesheet">
+    <script src="IncidentResponsePoliciesandProcedures_files/jquery.min.js"></script>
+    <script src="IncidentResponsePoliciesandProcedures_files/jspdf.js"></script>
+    <script src="IncidentResponsePoliciesandProcedures_files/from_html.js"></script>
+    <script src="IncidentResponsePoliciesandProcedures_files/addimage.js"></script>
+    <script src="IncidentResponsePoliciesandProcedures_files/filesaver.js"></script>
+    <script src="IncidentResponsePoliciesandProcedures_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="HIjE16gybPlgw5etERzZr1PfUhbSHLFVE0rwlsY8YUeOXao3O5k8rI+HOwrdyd8s8DqIq0Ccc6dyls94OD8TotBIjUxW56q9TI3WiwkyBQ0=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Incident Response Policies and Procedures</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Incident Response Process, Attack Frameworks and Stakeholder Management</li><li>Exercise 2 - Disaster Recovery, Business Continuity and Continuity of Operations</li><li>Exercise 3 - Incident Response Teams and Retention Policies</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m24-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Eradication</div>
+
+<div>Recovery</div>
+
+<div>Cyber Kill Chain</div>
+
+<div>COOP</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m24-7">Welcome to the <b>Incident Response Policies and Procedures </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m24-11">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m24-12">
+
+<li id="cn-m24-12">Exercise 1 - Incident Response Process, Attack Frameworks and Stakeholder Management</li>
+
+<li id="cn-m24-13">Exercise 2 - Disaster Recovery, Business Continuity and Continuity of Operations</li>
+
+<li id="cn-m24-14">Exercise 3 - Incident Response Team and Retention Policies</li>
+
+</ul>
+
+<p id="cn-m24-15">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m24-16">
+
+<li id="cn-m24-16">Incident Response Steps</li>
+
+<li id="cn-m24-17">Incident Management Exercises</li>
+
+<li id="cn-m24-18">Attack Frameworks</li>
+
+<li id="cn-m24-19">Stakeholder Management and Communication</li>
+
+<li id="cn-m24-20">Recovery Sites</li>
+
+<li id="cn-m24-21">Backup Concepts</li>
+
+<li id="cn-m24-22">Geographic Considerations</li>
+
+<li id="cn-m24-23">Continuity of Operations Planning</li>
+
+<li id="cn-m24-24">Business Continuity Planning Types</li>
+
+<li id="cn-m24-25">Incident Response Teams</li>
+
+<li id="cn-m24-26">Data Retention</li>
+
+<li id="cn-m24-27">Record Retention</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m24-29">The following exam objectives are covered in this lab.</p>
+
+<p id="cn-m24-30">4.2 Summarize the importance of policies, processes, and procedures for incident response.</p>
+
+<ul id="cn-m24-31">
+
+<li id="cn-m24-31">Incident response plans</li>
+
+<li id="cn-m24-32">Incident response process</li>
+
+<li id="cn-m24-33">Exercises</li>
+
+<li id="cn-m24-34">Attack frameworks</li>
+
+<li id="cn-m24-35">Stakeholder Management</li>
+
+<li id="cn-m24-36">Communication Plan</li>
+
+<li id="cn-m24-37">Disaster Recovery Plan</li>
+
+<li id="cn-m24-38">Business Continuity Plan</li>
+
+<li id="cn-m24-39">Continuity of Operation Planning (COOP)</li>
+
+<li id="cn-m24-40">Incident Response Team</li>
+
+<li id="cn-m24-41">Retention Policies</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m24-42"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m24-44">It will take approximately <b>30 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">6cde82b4-969e-4ba2-9a1b-b030a82e21d0</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m24-48">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m24-49">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-52"><b>Lab Topology</b></h2>
+
+<p id="cn-m24-53">This module contains supporting materials for Security+.</p>
+
+<p id="cn-m24-54"><img class="cn-img" id="cn-image-m24-c-0" src="IncidentResponsePoliciesandProcedures_files/image-m24-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<span class="cn-alert" id="cn-m24-55">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="IncidentResponseProcessAttackFrameworksandStakeholderManagement">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-57"><b>Exercise 1 - Incident Response Process, Attack Frameworks and Stakeholder Management</b></h2>
+
+<p id="cn-m24-58">An incident is any occurrence that has a negative 
+outcome on the confidentiality, integrity, or availability of an 
+organization’s assets. Organizations commonly outline the meaning of a 
+computer security incident within their security policy or incident 
+response plans.</p>
+
+<p id="cn-m24-59">The definition is usually one or two sentences long 
+and contains examples of common incidents that the organization 
+classifies as security incidents, such as the following:</p>
+
+<ul id="cn-m24-60">
+
+<li id="cn-m24-60">Any attempted network intrusion</li>
+
+<li id="cn-m24-61">Any attempted denial-of-service attack</li>
+
+<li id="cn-m24-62">Any detection of malicious software</li>
+
+<li id="cn-m24-63">Any unauthorized access to data</li>
+
+<li id="cn-m24-64">Any violation of security policies</li>
+
+</ul>
+
+<p id="cn-m24-65">In this exercise, you will learn about incident response processes, attack frameworks and stakeholder communications.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m24-67">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m24-68">
+
+<li id="cn-m24-68">Incident Response Steps</li>
+
+<li id="cn-m24-69">Incident Management Exercises</li>
+
+<li id="cn-m24-70">Attack Frameworks</li>
+
+<li id="cn-m24-71">Stakeholder Management and Communication</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m24-73">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m24-74"><img class="cn-img" id="cn-image-m24-c-1" src="IncidentResponsePoliciesandProcedures_files/image-m24-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m24-76"><b>Incident Response Steps</b></h3>
+
+<p id="cn-m24-77">Effective incident response management is handled in 
+several steps or phases, this is referred to as the incident response 
+plan. It is important to realize that incident response is an ongoing 
+activity; once the incident is resolved, there is usually a meeting held
+ and a lesson learned report created based on the findings. The lessons 
+learned report results are used to improve detection methods or help 
+prevent a repeated incident.</p>
+
+<p id="cn-m24-78">The following are the common phases of incident response if a security event has been detected:</p>
+
+<h4 id="cn-m24-79"><b><i>Preparation</i></b></h4>
+
+<p id="cn-m24-80">After a security incident has been detected, a team 
+should be assembled to handle and assess the situation. Incident 
+handling should always relate to company security policies and awareness
+ programs. The Incident reporting process should be centralized, easy to
+ accomplish, and easy to use and understood.</p>
+
+<h4 id="cn-m24-81"><b><i>Identification</i></b></h4>
+
+<p id="cn-m24-82">After a Cyber Security incident has been detected, the
+ type of incident needs to be identified to create a plan of action on 
+how to handle the specific incident. Various types of Cybersecurity 
+incidents can occur, for example, a phishing attack.</p>
+
+<h4 id="cn-m24-83"><b><i>Containment</i></b></h4>
+
+<p id="cn-m24-84">The goal of containment is to thwart or reduce any 
+further damage from the incident. Proper remediation strategy buys time 
+for proper investigation and identification of the root cause of the 
+incident. The remediation strategy should be based on the category of 
+the attack, the assets impacted by the incident and its criticality. 
+These strategies can be proactive or reactive.</p>
+
+<h4 id="cn-m24-85"><b><i>Eradication</i></b></h4>
+
+<p id="cn-m24-86">The eradication phase of the incident response steps 
+involves the removal of the specific threat. If the threat had managed 
+to move across multiple systems, these systems need to be evaluated and 
+the threat removed.</p>
+
+<h4 id="cn-m24-87"><b><i>Recovery</i></b></h4>
+
+<p id="cn-m24-88">After the threat has been successfully removed, the 
+next step will be to recover any data and services. Depending on the 
+severity of the threat, this may include restoring data from backups or 
+other data loss prevention mechanisms that were implemented. It is 
+essential to collect any evidence of the incident before the recovery 
+process is started to ensure preventative measures can be implemented in
+ the future.</p>
+
+<h4 id="cn-m24-89"><b><i>Lessons Learned</i></b></h4>
+
+<p id="cn-m24-90">Based on the investigation and remediation after the 
+incident, a permanent solution must be implemented to thwart a similar 
+incident's reoccurrence. Identification of Indicators of Attack (IoA) 
+can be used to identify similar incidents in the future. Also, 
+collecting the Indicators of Compromise (IoC) will tell if the attack 
+has been successful and security is compromised. A review of the 
+incident and a post mortem analysis needs to be done to develop a 
+response strategy.</p>
+
+<h3 id="cn-m24-91"><b>Incident Management Exercises</b></h3>
+
+<h4 id="cn-m24-92"><b><i>Tabletop</i></b></h4>
+
+<p id="cn-m24-93">A Cybersecurity tabletop exercise is used by companies
+ to assess how a cybersecurity incident will be handled. It includes the
+ assessment of the current strategies and procedures when an incident 
+occurs. Another purpose of this type of exercise is to assess the 
+company's current security posture and update the necessary policies and
+ procedures to facilitate a proper response in the event of a 
+cybersecurity incident.</p>
+
+<h4 id="cn-m24-94"><b><i>Walkthroughs</i></b></h4>
+
+<p id="cn-m24-95">Conduct a walkthrough of each scenario on your own or 
+with your team before performing an official Tabletop Test. This allows 
+you to work through different scenarios and identify how they mimic 
+real-world instances. For instance, if your organization needs to be 
+careful of email phishing, a part of your phishing policy should discuss
+ the possibility of the distribution of malware by the phishing email 
+spreading to other systems in the organization.</p>
+
+<p id="cn-m24-96">Taking that extra step with your Incident Response 
+scenarios can be helpful because it puts in standpoints for what your 
+organization needs to reflect in addition to just phishing email 
+awareness. It also allows you to discuss what steps to respond and 
+recover from these scenarios may need to be developed.</p>
+
+<h4 id="cn-m24-97"><b><i>Simulations</i></b></h4>
+
+<ul id="cn-m24-98">
+
+<li id="cn-m24-98">The exercise plan includes real scenarios and injects into the exercise.</li>
+
+<li id="cn-m24-99">This type of exercise calls for detailed coordination and planning.</li>
+
+<li id="cn-m24-100">Requires a large number of organizational participants, IT resources, travel budget for meetings and deconfliction contacts.</li>
+
+</ul>
+
+<p id="cn-m24-101">Lessons learned from simulations include:</p>
+
+<ul id="cn-m24-102">
+
+<li id="cn-m24-102">Aims on what went well and what required improvement.</li>
+
+<li id="cn-m24-103">Evaluate capability for detecting, responding to, and recovering from some simulated events.</li>
+
+<li id="cn-m24-104">Evaluate and update the baseline.</li>
+
+<li id="cn-m24-105">Create a mitigation plan for issues.</li>
+
+</ul>
+
+<h3 id="cn-m24-106"><b>Attack Frameworks</b></h3>
+
+<h4 id="cn-m24-107"><b><i>MITRE ATT&amp;CK</i></b></h4>
+
+<p id="cn-m24-108">MITRE developed ATT&amp;CK as a model to document and
+ track numerous techniques attackers use during the different stages of a
+ cyber attack to penetrate a network and exfiltrate data. ATT&amp;CK 
+stands for Adversarial Tactics, Techniques, and Common Knowledge.&nbsp;</p>
+
+<p id="cn-m24-109">ATT&amp;CK describes the following tactics used in a cyberattack:</p>
+
+<ul id="cn-m24-110">
+
+<li id="cn-m24-110">Initial Access - techniques that use different entry vectors to obtain an initial foothold within a network.</li>
+
+<li id="cn-m24-111">Execution- techniques that result in running malicious code on a local or remote system.</li>
+
+<li id="cn-m24-112">Persistence - techniques used to preserve persistent access to a system.</li>
+
+<li id="cn-m24-113">Privilege Escalation - techniques used to obtain higher-level privileges on a system or network.</li>
+
+<li id="cn-m24-114">Defense Evasion - techniques used to prevent detection.</li>
+
+<li id="cn-m24-115">Credential Access - methodologies for stealing credentials such as account names and passwords.</li>
+
+<li id="cn-m24-116">Discovery - techniques used to obtain knowledge about the system and internal network.</li>
+
+<li id="cn-m24-117">Lateral Movement - techniques used to control remote systems on a network from the previously compromised host.</li>
+
+<li id="cn-m24-118">Collection  -  techniques used to collate information relevant to following through on the attacker’s objectives.</li>
+
+<li id="cn-m24-119">Exfiltration - methodologies used to steal data from your network.</li>
+
+<li id="cn-m24-120">Command and Control - techniques attackers may use 
+to communicate with systems under their control, often impersonated to 
+look like normal HTTP traffic.</li>
+
+</ul>
+
+<h4 id="cn-m24-121"><b><i>Cyber Kill Chain</i></b></h4>
+
+<p id="cn-m24-122">The&nbsp;Cyber Kill Chain&nbsp;relates to the old 
+military kill chain model to a cyberattack. It’s intended for defenders 
+to improve their defenses by examining an attacker’s playbook and 
+disrupting the attack by breaking the kill chain at each phase.</p>
+
+<p id="cn-m24-123">The seven phases of the cyber kill chain are:</p>
+
+<ul id="cn-m24-125">
+
+<li id="cn-m24-125">Reconnaissance&nbsp;</li>
+
+<li id="cn-m24-126">Weaponization&nbsp;</li>
+
+<li id="cn-m24-127">Delivery&nbsp;</li>
+
+<li id="cn-m24-128">Exploitation&nbsp;</li>
+
+<li id="cn-m24-129">Installation&nbsp;</li>
+
+<li id="cn-m24-130">Command &amp; Control</li>
+
+<li id="cn-m24-131">Actions on objectives</li>
+
+</ul>
+
+<p id="cn-m24-133"><b>Reconnaissance: </b>Attackers collects information
+ about their target. This contains indirect and passive methods where 
+attackers collect information from public resources. Attackers will then
+ move to a more direct and active approach, such as port scanning.</p>
+
+<p id="cn-m24-134"><b>Weaponization:&nbsp;</b>Attackers now generate an 
+attack that exploits vulnerabilities found from the reconnaissance 
+phase. Exploitation tools such as metasploit, exploit-db, or a social 
+engineering toolkit can be used to generate the attack.</p>
+
+<p id="cn-m24-135"><b>Delivery:&nbsp;</b>Once an attacker has selected 
+which tools are well-matched to exploit the discovered vulnerabilities, 
+they will handpick the delivery method, which will be best suited for 
+the found exploit.</p>
+
+<p id="cn-m24-136"><b>Exploitation:&nbsp;</b>After the exploitation 
+method has been prepared and distributed to the vulnerable device, the 
+attack needs to be initiated, for example, a SQL injection attack or a 
+Buffer overflow.</p>
+
+<p id="cn-m24-137"><b>Installation:&nbsp;</b>When the attack on the 
+vulnerability has succeeded, the next phase of the compromise will be 
+installing malevolent tools to maintain access. Common adversarial 
+practices include executing a powershell script in a file-less attack, 
+installing remote access tools (RAT), and DLL hijacking.</p>
+
+<p id="cn-m24-138"><b>Command &amp; Control:&nbsp;</b>The sixth phase of
+ the Cyber Kill Chain is the compromised system's persistent control, 
+which will give the attacker access to the exploited resources. In 
+addition to the control, lateral movement across the network can also be
+ achieved by compromising further devices and accessing additional 
+resources and data.</p>
+
+<p id="cn-m24-139"><b>Actions on Objectives:&nbsp;</b>The final phase is
+ achieving the goal of the attack; this can include compromising data, a
+ Denial of Service (DoS) attack or corrupting business-critical data.</p>
+
+<h4 id="cn-m24-140"><b><i>Diamond Model for Intrusion Analysis</i></b></h4>
+
+<p id="cn-m24-141">The Diamond Model for Intrusion Analysis is the 
+process of analyzing any intrusion event that occurs on a network or 
+system. The event includes four core features; adversary, 
+infrastructure, capability, and victim. It further defines two important
+ meta-features; technology connecting the infrastructure and capability 
+enabling operations. The social-political meta-feature describes the 
+always-existing and sometimes enduring relationship between adversary 
+and victim.</p>
+
+<h3 id="cn-m24-142"><b>Stakeholder Management and Communication</b></h3>
+
+<p id="cn-m24-143">Organizations should form a communication role in 
+their incident response team to communicate the incident's impact to 
+external stakeholders. This person does not need to be highly technical 
+but should have enough technical knowledge to be able to understand the 
+impact of the incident and be able to explain it in a non-technical 
+manner.</p>
+
+<h4 id="cn-m24-144"><b><i>Responding to Stakeholders</i></b></h4>
+
+<p id="cn-m24-145">In the event of a cyber incident, basic crisis communications guiding principles should be followed:</p>
+
+<ul id="cn-m24-146">
+
+<li id="cn-m24-146">Admit there is a problem and regulate the message to relevant parties.</li>
+
+<li id="cn-m24-147">Prudently assemble the facts and deliver them in a straightforward, conversational manner.</li>
+
+<li id="cn-m24-148">Elect one trusted professional as the spokesperson and have that individual update the relevant parties regularly.</li>
+
+<li id="cn-m24-149">Use distinguished, jargon-free language.</li>
+
+<li id="cn-m24-150">Explain how the reoccurrence of the incident will be prevented in the future.</li>
+
+</ul>
+< <a href="https://github.com/SeanOhAileasa" id="DisasterRecoveryBusinessContinuityandContinuityofOperations">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-152"><b>Exercise 2 - Disaster Recovery, Business Continuity and Continuity of Operations</b></h2>
+
+<p id="cn-m24-153">Disaster recovery planning brings order to the chaos 
+that surrounds the disruption of an organization’s normal activities. A 
+disaster recovery plan should be set up so that it can practically run 
+on autopilot. The DRP should also be intended to decrease 
+decision-making activities during a disaster as much as possible.</p>
+
+<p id="cn-m24-154">In this exercise, you will learn about disaster recovery, business continuity and continuity of operations.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m24-156">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m24-157">
+
+<li id="cn-m24-157">Recovery Sites</li>
+
+<li id="cn-m24-158">Backup Concepts</li>
+
+<li id="cn-m24-159">Geographic Considerations</li>
+
+<li id="cn-m24-160">Continuity of Operations Planning</li>
+
+<li id="cn-m24-161">Business Continuity Planning Types</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m24-163">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m24-164"><img class="cn-img" id="cn-image-m24-c-2" src="IncidentResponsePoliciesandProcedures_files/image-m24-c-2.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m24-166"><b>Recovery Sites</b></h3>
+
+<p id="cn-m24-167">Based on business requirements, it might be necessary
+ to have a location where an organization can relocate following a 
+disaster recovery, also known as a recovery or backup site.</p>
+
+<h4 id="cn-m24-168"><b><i>Hot Site</i></b></h4>
+
+<p id="cn-m24-169">A hot backup site is a duplicate of the 
+organization’s current data center. All systems are configured with 
+near-complete backups of user data. Typically, real-time synchronization
+ is used between sites to ensure the data is current. While a hot site 
+is the most expensive option, it enables the organization to restore 
+normal operations in the shortest time with minimal losses after a 
+disaster.</p>
+
+<h4 id="cn-m24-170"><b><i>Warm Site</i></b></h4>
+
+<p id="cn-m24-171">A warm site contains all the required hardware and 
+connectivity to restore services, it is a reasonable duplicate of the 
+organization’s current data center. However, data must be restored after
+ a disaster; for example, the last backups from the off-site storage 
+facility must be delivered and bare metal restoration must be completed.</p>
+
+<h3 id="cn-m24-172"><b>Backup Concepts</b></h3>
+
+<p id="cn-m24-173">When planning for a data restore after a disaster, an
+ organization should choose the appropriate backup type that meets its 
+business requirements.</p>
+
+<h4 id="cn-m24-174"><b><i>Full</i></b></h4>
+
+<p id="cn-m24-175">A full backup is a complete copy of the data. A full 
+backup provides the simplest recovery method since the entire data can 
+be easily restored using a single recovery set.</p>
+
+<h4 id="cn-m24-176"><b><i>Incremental</i></b></h4>
+
+<p id="cn-m24-177">An incremental backup duplicates only the data that 
+has changed since the previous backup, irrespective of whether the 
+backup was full or incremental. An incremental backup provides the 
+fastest backup time and requires the smallest amount of backup storage. 
+However, an incremental backup has a slower recovery time since all 
+incremental backups must be restored.</p>
+
+<h4 id="cn-m24-178"><b><i>Differential</i></b></h4>
+
+<p id="cn-m24-179">A differential backup copies only the data that has 
+changed since the previous full backup. It is considered a cumulative 
+incremental backup. A differential backup provides a faster restore time
+ and requires less backup storage than an incremental backup. However, a
+ differential backup requires more time to create than an incremental 
+backup.</p>
+
+<h4 id="cn-m24-180"><b><i>Snapshots</i></b></h4>
+
+<p id="cn-m24-181">A snapshot is a copy of an application, disk or 
+system. Typically, an organization will use a snapshot to restore a 
+system or disk to a specific time. However, a snapshot is not commonly 
+used as a periodic backup strategy because of the amount of backup time 
+and backup storage required.</p>
+
+<h3 id="cn-m24-182"><b>Geographic Considerations</b></h3>
+
+<p id="cn-m24-183">An organization must include geographic diversity 
+when planning for business continuity and disaster recovery. This can be
+ achieved by ensuring the recovery site for the business is 
+geographically dispersed. If a natural disaster occurs where the 
+business is situated, it will ensure that the data will be safe for 
+recovery.</p>
+
+<h4 id="cn-m24-184"><b><i>Off-site Backups</i></b></h4>
+
+<p id="cn-m24-185">While implementing backups ensures redundancy of 
+data, hosting the backups in an off-site location ensures the redundant 
+data does not have a single geographic point of failure.</p>
+
+<h4 id="cn-m24-186"><b><i>Distance</i></b></h4>
+
+<p id="cn-m24-187">An organization should include enough distance 
+between a primary and secondary site to minimize the potential for a 
+disaster that affects both sites simultaneously.</p>
+
+<h4 id="cn-m24-188"><b><i>Location Selection</i></b></h4>
+
+<p id="cn-m24-189">When choosing the location of a primary or secondary 
+site, it is important to assess the environmental risks, such as whether
+ the location is susceptible to specific natural disasters.</p>
+
+<h4 id="cn-m24-190"><b><i>Legal Implications</i></b></h4>
+
+<p id="cn-m24-191">Based on an organization’s industry, there might be 
+laws that impact business continuity planning. For example, businesses 
+in the healthcare industry are required to have a disaster recovery plan
+ with established guidelines for electronic records and signatures. 
+There is a diverse range of laws that govern the healthcare, government,
+ finance and utility industries.</p>
+
+<h4 id="cn-m24-192"><b><i>Data Sovereignty&nbsp;&nbsp;</i></b></h4>
+
+<p id="cn-m24-193">When planning for geographic diversity, an 
+organization might need to consider sovereignty laws governing data. For
+ example, there might be national, state, or local laws that require 
+hosting the data in specific locations.</p>
+
+<h3 id="cn-m24-194"><b>Continuity of Operations Planning</b></h3>
+
+<p id="cn-m24-195">Continuity of operations planning helps ensure trouble-free operations through an unanticipated disruption.</p>
+
+<h4 id="cn-m24-196"><b><i>Tabletop Exercises</i></b></h4>
+
+<p id="cn-m24-197">The purpose of business continuity planning tabletop 
+exercises is to demonstrate the ability of one or more critical business
+ processes to continue functionality after a disruption — usually within
+ a specific timeframe. Some of these exercises might be related to a 
+cyberattack, data corruption or loss, natural disaster, or multiple 
+disruptions.</p>
+
+<h4 id="cn-m24-198"><b><i>After-action Report</i></b></h4>
+
+<p id="cn-m24-199">The after-action report is a detailed document 
+summarizing the results of the tabletop exercises. It can include the 
+purpose and scope, objectives, exercise type and methodology, scenario, 
+participants, and results (e.g., successes, failures, workarounds, 
+etc.).</p>
+
+<h4 id="cn-m24-200"><b><i>Failover</i></b></h4>
+
+<p id="cn-m24-201">After a disruption to business operations, an 
+organization might need to consider all information systems' failover to
+ an alternate site. Likewise, business operations planning necessities 
+to account for which services will be available during the interruption 
+and how they will accommodate employees’ access to those services.</p>
+
+<h4 id="cn-m24-202"><b><i>Alternate Processing Site</i></b></h4>
+
+<p id="cn-m24-203">The alternate processing site is a site that allows 
+all mission-critical or business-essential functions to be reestablished
+ if there is an interruption to the primary processing site. The 
+alternate processing site should withstand the continuity through the 
+restoration of services to the primary processing site.</p>
+
+<h4 id="cn-m24-204"><b><i>Alternate Business Practices</i></b></h4>
+
+<p id="cn-m24-205">It might be essential for an organization to devise 
+an alternate set of business practices after an interruption. For 
+example, non-mission-critical personnel might be required to work from 
+home, and employees might have to use other (or manual) processes for 
+conducting day-to-day business until services are returned.</p>
+
+<h3 id="cn-m24-206"><b>Business Continuity Planning Types</b></h3>
+
+<p id="cn-m24-207">There are various types of business continuity plans. Some of these are described below.</p>
+
+<h4 id="cn-m24-208"><b><i>Business Resumption Plan</i></b></h4>
+
+<p id="cn-m24-209">Focuses on recreating the essential business process 
+instead of focusing on the IT component. It is process-oriented as an 
+alternative to procedural-oriented.</p>
+
+<h4 id="cn-m24-210"><b><i>Continuity of Operations Plan (COOP)</i></b></h4>
+
+<p id="cn-m24-211">Establishes senior management and headquarters after a disaster. It outlines roles and authorities.</p>
+
+<h4 id="cn-m24-212"><b><i>IT Contingency Plan</i></b></h4>
+
+<p id="cn-m24-213">Plan for systems, networks and major application retrieval procedures after interruptions.</p>
+
+<h4 id="cn-m24-214"><b><i>Crisis Communication Plan</i></b></h4>
+
+<p id="cn-m24-215">Comprises of internal and external communication 
+structure and roles. Recognizes specific individuals who will 
+communicate with external entities.</p>
+
+<h4 id="cn-m24-216"><b><i>Cyber Incident Response Plan</i></b></h4>
+
+<p id="cn-m24-217">Aims at malware, hackers, intrusions, attacks and 
+other security issues. The response plan should include a strategy when a
+ cyber incident occurs and what steps need to be taken to respond to the
+ incident.</p>
+
+<h4 id="cn-m24-218"><b><i>Disaster Recovery plan</i></b></h4>
+
+<p id="cn-m24-219">A disaster recovery plan needs to be in place to 
+ensure when a disaster occurs, which steps need to be followed in 
+reaction to the disaster. These steps will include the data recovery 
+procedure and will be according to the business continuity plan.</p>
+< <a href="https://github.com/SeanOhAileasa" id="IncidentResponseTeamsandRetentionPolicies">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-220"><b>Exercise 3 - Incident Response Teams and Retention Policies</b></h2>
+
+<p id="cn-m24-221">There are three different incident response teams; 
+virtual, hybrid and permanent. The segregation is based on how and where
+ the teams operate and the methodologies used for incident response.</p>
+
+<p id="cn-m24-222">In this exercise, you will learn about incident response teams and retention policies.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m24-224">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m24-225">
+
+<li id="cn-m24-225">Incident Response Teams</li>
+
+<li id="cn-m24-226">Data Retention</li>
+
+<li id="cn-m24-227">Record Retention</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m24-229">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m24-230"><img class="cn-img" id="cn-image-m24-c-3" src="IncidentResponsePoliciesandProcedures_files/image-m24-c-3.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m24-232"><b>Incident Response Teams</b></h3>
+
+<p id="cn-m24-233">An Incident Response team is a group of people from 
+the organization who will respond if a cyber security incident has 
+occurred. The types of cybersecurity incidents may include security 
+breaches, denial of service attacks or malware infections. These 
+incidents can potentially have a detrimental effect on the business's 
+day-to-day operation and need to be addressed as soon as it has been 
+detected.</p>
+
+<p id="cn-m24-234">These teams are also known as the Cyber Incident 
+Response Team (CIRT). This team consists of highly skilled individuals 
+who are trained to handle these specific threats. A CIRT would normally 
+work in conjunction with other teams to eradicate the threat and restore
+ the business day to day functions as soon as possible.</p>
+
+<h3 id="cn-m24-235"><b>Data Retention</b></h3>
+
+<p id="cn-m24-236">Data retention is retaining data for a specific 
+length of time as stipulated by an organization’s security policy. 
+Typically, a minimum threshold is defined in the security policy, but a 
+maximum threshold can also be defined. For example, many organizations 
+require the retention of all audit logs for a specific amount of time. 
+This data can then be used to reconstruct events during a security 
+incident.</p>
+
+<p id="cn-m24-237">Retention requests apply to information records, 
+media holding private data, systems that process private data, and 
+personnel with access to private data. Record retention and media 
+retention is an important element of asset retention. Record retention 
+includes retaining and preserving important information as long as it is
+ needed and destroying it when it is no longer needed.</p>
+
+<p id="cn-m24-238">Some laws and regulations direct the length of time 
+that an organization should preserve data, such as three years, seven 
+years, or even undetermined.</p>
+
+<p id="cn-m24-239">Organizations are responsible for identifying laws 
+and regulations that apply and comply with the data they need to retain.
+ However, even in the absence of external requirements, an organization 
+should still identify how long to retain data.</p>
+
+<h4 id="cn-m24-240"><b><i>Data Retention Guidelines</i></b></h4>
+
+<ul id="cn-m24-241">
+
+<li id="cn-m24-241">Include all stakeholders in the process of supporting the business and legal necessities for the data retention policies.</li>
+
+<li id="cn-m24-242">Formulate common objectives for supporting archiving and data retention best practices.</li>
+
+<li id="cn-m24-243">Monitor, evaluate and apprise documented data retention policies and archiving procedures.</li>
+
+</ul>
+
+<p id="cn-m24-244">A data retention policy should:</p>
+
+<ul id="cn-m24-245">
+
+<li id="cn-m24-245">Summarize the classification of records</li>
+
+<li id="cn-m24-246">Preservation and destruction schedules</li>
+
+<li id="cn-m24-247">Parties accountable for preservation and destruction</li>
+
+<li id="cn-m24-248">Processes used for destruction</li>
+
+<li id="cn-m24-249">Training</li>
+
+</ul>
+
+<p id="cn-m24-250">For the retained data to be useful, it should be available. Consider the following issues for data accessibility:</p>
+
+<p id="cn-m24-251"><b>Taxonomy </b>- Scheme for classifying the data; could be functional, chronological, or a combination of categories.</p>
+
+<p id="cn-m24-252"><b>Classification </b>- Sensitivity determines the controls we put in place during the lifecycle of the data.</p>
+
+<p id="cn-m24-253"><b>Normalization </b>- Data comes in many forms. 
+Storing data in its original format may render it unavailable later in 
+time. It is practical to tag data sets to guarantee searchability and 
+accessibility.</p>
+
+<p id="cn-m24-254"><b>Indexing </b>- Indexing preserves data for future searches.</p>
+
+<h3 id="cn-m24-255"><b>Record Retention</b></h3>
+
+<p id="cn-m24-256">Record retention strategies guarantee that data is 
+kept in a usable state while it is required and deleted when it is not. 
+Many laws and regulations stipulate retaining data for a definite period
+ of time, but in the absence of formal regulations, establishments 
+stipulate the retention period within a policy. Audit trail information 
+needs to be kept long enough to regenerate past incidents, but the 
+establishments must recognize how far back they want to investigate. A 
+current trend with many establishments is to minimize legal liabilities 
+by applying short retention policies</p>
+
+<p id="cn-m24-257">Data is occasionally archived to comply with laws or 
+regulations, necessitating the retention of data. Moreover, valuable 
+data is backed up as a basic security control to guarantee that it is 
+available even if access to the original information is lost. Archives 
+and backups are stored off-site. When transporting and storing this 
+data, it’s significant to offer the same level of security that is 
+applied during storage on-site. The level of security is dependent on 
+the grouping and value of the data.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m24-261">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-264"><b>Review</b></h2>
+
+<p id="cn-m24-265">Well done, you have completed the <b>Incident Response Policies and Procedures </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">d27d357b-c117-4031-94d0-0e5b59bac2c5</span>
+
+<span class="atom-code hidden">dc5ca375-d74e-467e-b17a-03e640e7b544</span>
+
+<span class="atom-code hidden">4ba8a852-2d15-43f8-95d7-13f4e47ec6be</span>
+
+<span class="atom-code hidden">f4e713a7-3ce4-41c4-af59-766d88787362</span>
+
+<span class="atom-code hidden">5311de80-dcf7-4dfb-8d8c-b9592dcdd46b</span>
+
+<span class="atom-code hidden">b5e31944-29cf-456d-98fa-d3a74cff3858</span>
+
+<span class="atom-code hidden">42cdf50a-fc27-4bae-b198-f1b68f09fc26</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m24-279">You completed the following exercises:</p>
+
+<ul id="cn-m24-280">
+
+<li id="cn-m24-280">Exercise 1 - Incident Response Process, Attack Frameworks and Stakeholder Management</li>
+
+<li id="cn-m24-281">Exercise 2 - Disaster Recovery, Business Continuity and Continuity of Operations</li>
+
+<li id="cn-m24-282">Exercise 3 - Incident Response Team and Retention Policies</li>
+
+</ul>
+
+<p id="cn-m24-283">You should now have further knowledge of:</p>
+
+<ul id="cn-m24-284">
+
+<li id="cn-m24-284">Incident Response Steps</li>
+
+<li id="cn-m24-285">Incident Management Exercises</li>
+
+<li id="cn-m24-286">Attack Frameworks</li>
+
+<li id="cn-m24-287">Stakeholder Management and Communication</li>
+
+<li id="cn-m24-288">Recovery Sites</li>
+
+<li id="cn-m24-289">Backup Concepts</li>
+
+<li id="cn-m24-290">Geographic Considerations</li>
+
+<li id="cn-m24-291">Continuity of Operations Planning</li>
+
+<li id="cn-m24-292">Business Continuity Planning Types</li>
+
+<li id="cn-m24-293">Incident Response Teams</li>
+
+<li id="cn-m24-294">Data Retention</li>
+
+<li id="cn-m24-295">Record Retention</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m24-300">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

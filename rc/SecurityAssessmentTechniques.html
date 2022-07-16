@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="SecurityAssessmentTechniques_files/print-styles.css" rel="stylesheet">
+    <script src="SecurityAssessmentTechniques_files/jquery.min.js"></script>
+    <script src="SecurityAssessmentTechniques_files/jspdf.js"></script>
+    <script src="SecurityAssessmentTechniques_files/from_html.js"></script>
+    <script src="SecurityAssessmentTechniques_files/addimage.js"></script>
+    <script src="SecurityAssessmentTechniques_files/filesaver.js"></script>
+    <script src="SecurityAssessmentTechniques_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8Gx0tNf36okYvl0qh+xAaHEOMUuyGx05dP+5QQjBN/zPQqo26UR0P7xSx2ANc2a+ldzj92nZ2oJSwxxcrGrdkTYfpqqhZMW3/ElgKGM2YvA=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Security Assessment Techniques</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Threat Hunting</li><li>Exercise 2 - Studying Vulnerability Scans</li><li>Exercise 3 - Exploring Syslog/Security Information and Event Management (SIEM)</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m9-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Intelligence Fusion</div>
+
+<div>Threat Feeds</div>
+
+<div>Advisories and Bulletins</div>
+
+<div>Maneuver</div>
+
+<div>False Positive</div>
+
+<div>False Negative</div>
+
+<div>Credentialed</div>
+
+<div>Non-Credentialed</div>
+
+<div>Intrusive</div>
+
+<div>Non-intrusive</div>
+
+<div>Common Vulnerabilities and Exposures (CVE)</div>
+
+<div>Common Vulnerability Scoring System (CVSS)</div>
+
+<div>Configuration Review</div>
+
+<div>Review Reports</div>
+
+<div>Packet Capture</div>
+
+<div>Data Inputs</div>
+
+<div>User Behavior Analysis (UBA)</div>
+
+<div>Sentiment Analysis</div>
+
+<div>Security Monitoring</div>
+
+<div>Log Aggregation</div>
+
+<div>Log Collectors</div>
+
+<div>Security Orchestration, Automation, Response (SOAR)</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m9-25">Welcome to the <b>Security Assessment Techniques </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m9-29">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m9-30">
+
+<li id="cn-m9-30">Exercise 1 - Threat Hunting</li>
+
+<li id="cn-m9-31">Exercise 2 - Studying Vulnerability Scans</li>
+
+<li id="cn-m9-32">Exercise 3 - Exploring Syslog/Security Information and Event Management (SIEM)</li>
+
+</ul>
+
+<p id="cn-m9-33">After completing this module, you should be able to:</p>
+
+<ul id="cn-m9-34">
+
+<li id="cn-m9-34">Perform Log Reviews</li>
+
+<li id="cn-m9-35">Use Nikto for Web Application Vulnerability Scanning</li>
+
+<li id="cn-m9-36">Perform Vulnerability Scanning using OpenVAS</li>
+
+<li id="cn-m9-37">Use Lynis for System Vulnerability Scanning</li>
+
+<li id="cn-m9-38">Implement SIEM</li>
+
+</ul>
+
+<p id="cn-m9-39">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m9-40">
+
+<li id="cn-m9-40">Intelligence Fusion</li>
+
+<li id="cn-m9-41">Threat Feeds</li>
+
+<li id="cn-m9-42">Advisories and Bulletins</li>
+
+<li id="cn-m9-43">Maneuver</li>
+
+<li id="cn-m9-44">Configuration Review</li>
+
+<li id="cn-m9-45">Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS)</li>
+
+<li id="cn-m9-46">Application, Web Application, and Network</li>
+
+<li id="cn-m9-47">False Positive</li>
+
+<li id="cn-m9-48">False Negative</li>
+
+<li id="cn-m9-49">Credentialed vs. Non-Credentialed Scans</li>
+
+<li id="cn-m9-50">Intrusive vs. Non-intrusive</li>
+
+<li id="cn-m9-51">Review Reports</li>
+
+<li id="cn-m9-52">Packet Capture</li>
+
+<li id="cn-m9-53">Data Inputs</li>
+
+<li id="cn-m9-54">User Behavior Analysis (UBA)</li>
+
+<li id="cn-m9-55">Sentiment Analysis</li>
+
+<li id="cn-m9-56">Security Monitoring</li>
+
+<li id="cn-m9-57">Log Aggregation</li>
+
+<li id="cn-m9-58">Log Collectors</li>
+
+<li id="cn-m9-59">Security Orchestration, Automation, Response (SOAR)</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m9-61">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m9-62">1.7 Summarize the techniques used in security assessments</p>
+
+<ul id="cn-m9-63">
+
+<li id="cn-m9-63">Threat hunting</li>
+
+<li id="cn-m9-64">Vulnerability scans</li>
+
+<li id="cn-m9-65">Syslog/Security information and event management (SIEM)</li>
+
+<li id="cn-m9-66">Security orchestration, automation, response (SOAR)</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m9-67"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m9-69">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m9-73">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m9-74">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m9-76"><b>Lab Topology</b></h2>
+
+<p id="cn-m9-77">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m9-78"><img class="cn-img" id="cn-image-m9-c-0" src="SecurityAssessmentTechniques_files/image-m9-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m9-79">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m9-80">
+
+<li id="cn-m9-80"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m9-81"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m9-82"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m9-83"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m9-84">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="ThreatHunting">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m9-85"><b>Exercise 1 - Threat Hunting</b></h2>
+
+<p id="cn-m9-86">Cyber threats continue to evolve, displaying new 
+varieties and harder challenges. Together, these factors make it more 
+difficult to tackle the threats, and organizations are continuously 
+looking out for more and more sophisticated solutions. Most of the time,
+ a combination of different methods is required to tackle the onslaught 
+of the mix of existing and evolving threats.</p>
+
+<p id="cn-m9-87">In this exercise, you will learn about the threat hunting methods.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m9-89">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m9-90">
+
+<li id="cn-m9-90">Intelligence Fusion</li>
+
+<li id="cn-m9-91">Threat Feeds</li>
+
+<li id="cn-m9-92">Advisories and Bulletins</li>
+
+<li id="cn-m9-93">Maneuver</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m9-95">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m9-96"><img class="cn-img" id="cn-image-m9-c-1" src="SecurityAssessmentTechniques_files/image-m9-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m9-97"><b>Intelligence Fusion</b></h3>
+
+<p id="cn-m9-98">You need to know about a threat to tackle it. Threat 
+intelligence provides insights about the threats and can help the 
+organization proactively improve security. To provide effective security
+ measures, organizations must have valid and relevant sources for 
+intelligence. However, no single threat intelligence source can provide 
+information about all threats. Some can provide information about 
+network threats, while others may be specific to physical threats.</p>
+
+<p id="cn-m9-99">Therefore, it is advised to gather information from a 
+combination of threat intelligence sources. The merging of threat 
+intelligence information is known as threat fusion. Intelligence fusion 
+broadens the scope of intelligence gathered about known and emerging 
+threats.</p>
+
+<h3 id="cn-m9-100"><b>Threat Feeds</b></h3>
+
+<p id="cn-m9-101">A threat feed is a real-time feed of information about
+ threats. Threat feeds make you aware of the threats present on the 
+Internet. Based on the gained information, you can analyze whether your 
+organization has faced any similar threats or is likely to face any of 
+these threats going forward. Accordingly, you can prepare the 
+countermeasures for various threats and ramp-up the security controls.</p>
+
+<p id="cn-m9-102">Along with the real-time information about threats, a threat feed can also list:</p>
+
+<ul id="cn-m9-103">
+
+<li id="cn-m9-103">Indicators of compromise (IoC)</li>
+
+<li id="cn-m9-104">Suspicious domains and IP addresses</li>
+
+<li id="cn-m9-105">Malware and their hashes</li>
+
+<li id="cn-m9-106">Compromised IP addresses</li>
+
+<li id="cn-m9-107">Dictionary SSH attacks</li>
+
+<li id="cn-m9-108">Domains blacklist</li>
+
+<li id="cn-m9-109">Botnet IP addresses</li>
+
+<li id="cn-m9-110">Malware URLs</li>
+
+<li id="cn-m9-111">Bad IP addresses</li>
+
+<li id="cn-m9-112">Malware domains list</li>
+
+</ul>
+
+<p id="cn-m9-113"></p><figure><img class="cn-img" id="cn-image-m9-c-2" src="SecurityAssessmentTechniques_files/image-m9-c-2.jpg" alt="Figure 1.1 Screenshot of a Windows desktop: Various types of threat feed are listed on the relevant website."><figcaption>Figure 1.1 Screenshot of a Windows desktop: Various types of threat feed are listed on the relevant website.</figcaption></figure><p></p>
+
+<h3 id="cn-m9-115"><b>Advisories and Bulletins</b></h3>
+
+<p id="cn-m9-116">A security advisory is a document that details a 
+vulnerability found in a product. When a product development 
+organization finds a vulnerability in its product, it usually releases 
+an advisory that states the vulnerability and methods to minimize the 
+risk or prevent exposure from the vulnerability.</p>
+
+<p id="cn-m9-117">For example, consider the following security advisory 
+about a product that contains the Cross-site scripting (XSS) 
+vulnerability.</p>
+
+<p id="cn-m9-118"></p><figure><img class="cn-img" id="cn-image-m9-c-3" src="SecurityAssessmentTechniques_files/image-m9-c-3.jpg" alt="Figure 1.2 Screenshot of a Windows desktop: Vulnerability details in a Security Advisory are listed."><figcaption>Figure 1.2 Screenshot of a Windows desktop: Vulnerability details in a Security Advisory are listed.</figcaption></figure><p></p>
+
+<p id="cn-m9-120">In this advisory, the product development organization lists the vulnerability and mitigation methods.</p>
+
+<p id="cn-m9-122"></p><figure><img class="cn-img" id="cn-image-m9-c-4" src="SecurityAssessmentTechniques_files/image-m9-c-4.jpg" alt="Figure 1.3 Screenshot of a Windows desktop: Remediation details in a Security Advisory are listed."><figcaption>Figure 1.3 Screenshot of a Windows desktop: Remediation details in a Security Advisory are listed.</figcaption></figure><p></p>
+
+<p id="cn-m9-124">While advisories are released as and when 
+vulnerabilities are found, the security bulletins are released monthly. 
+The product development organization mentions the vulnerabilities in its
+ products, the remediation methods, and the relevant updates if any.</p>
+
+<p id="cn-m9-125">Here is an example of a monthly security bulletin from Microsoft.</p>
+
+<p id="cn-m9-126"></p><figure><img class="cn-img" id="cn-image-m9-c-5" src="SecurityAssessmentTechniques_files/image-m9-c-5.jpg" alt="Figure 1.4 Screenshot of a Windows desktop: Security bulletin on the Microsoft website is displayed."><figcaption>Figure 1.4 Screenshot of a Windows desktop: Security bulletin on the Microsoft website is displayed.</figcaption></figure><p></p>
+
+<h3 id="cn-m9-128"><b>Maneuver </b></h3>
+
+<p id="cn-m9-129">In the old days, maneuver referred to a warfighting 
+method in which military forces were positioned at a strategic advantage
+ to the enemy forces. This exercise was supposed to help win a war while
+ minimizing the loss of life and resources. Similarly, in terms of 
+cyberspace, maneuver refers to manipulating various technological 
+resources - applications, codes, and methods - to either attack a target
+ or defend your network against an attack. For example, if under threat,
+ your network administrator might install an additional firewall on the 
+network. This will help deter the attacker and even minimize damage to 
+the technological resources on your network.</p>
+
+<p id="cn-m9-130">Although the concept of maneuver is similar in 
+military application and cyberspace application, the similarity ends 
+there. The characteristics of the two maneuvers are totally different, 
+mainly because of the differences in the arena of operation. 
+Characteristics of cyber maneuvering include:</p>
+
+<ul id="cn-m9-131">
+
+<li id="cn-m9-131">Speed: Speed is one of the key characteristics of 
+either type of maneuvering. However, in cyberspace, the attacks occur at
+ lightning speed and rarely provide the target a chance to defend 
+itself. By the time the targets react, the damage is already done.</li>
+
+<li id="cn-m9-132">Reach: In a military maneuver, it might be difficult 
+to move a large force from one location to another. However, in 
+cyberspace's virtual realm, it is possible to reach from one end to the 
+other end of the world without much effort.</li>
+
+<li id="cn-m9-133">Access: A cyber maneuver can help you get into the 
+target network and access information and data, which can cripple the 
+target network and target business to a great extent.</li>
+
+<li id="cn-m9-134">Anonymity: A cyber maneuver can help you cause severe
+ damage to the target and yet remain anonymous. In most cases, it might 
+even be difficult to trace back the attack.</li>
+
+</ul>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="StudyingVulnerabilityScans">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m9-137"><b>Exercise 2 - Studying Vulnerability Scans</b></h2>
+
+<p id="cn-m9-138">It is common for every operating system or application
+ to have vulnerabilities. These vulnerabilities must be identified and 
+closed. Vulnerability scans list out the vulnerabilities identified. To 
+keep a watch on the health of the network, every organization runs 
+vulnerability scans regularly. Depending on various factors, the 
+interval between the scans can differ for each organization. For 
+example, an organization with thousands of servers may decide to run the
+ vulnerability scan every six months. However, a smaller organization 
+may run it every quarter.</p>
+
+<p id="cn-m9-139">In this exercise, you will learn about vulnerability scans.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m9-141">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m9-142">
+
+<li id="cn-m9-142">Perform Log Reviews</li>
+
+<li id="cn-m9-143">Use Nikto for Web Application Vulnerability Scanning</li>
+
+<li id="cn-m9-144">Perform Vulnerability Scanning using OpenVAS</li>
+
+<li id="cn-m9-145">Use Lynis for System Vulnerability Scanning</li>
+
+</ul>
+
+<p id="cn-m9-146">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m9-147">
+
+<li id="cn-m9-147">Configuration Review</li>
+
+<li id="cn-m9-148">Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS)</li>
+
+<li id="cn-m9-149">Application, Web Application, and Network</li>
+
+<li id="cn-m9-150">False Positive</li>
+
+<li id="cn-m9-151">False Negative</li>
+
+<li id="cn-m9-152">Credentialed vs. Non-Credentialed Scans</li>
+
+<li id="cn-m9-153">Intrusive vs. Non-intrusive</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m9-155">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m9-156">
+
+<li id="cn-m9-156"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m9-157"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m9-158"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m9-160"><img class="cn-img" id="cn-image-m9-c-6" src="SecurityAssessmentTechniques_files/image-m9-c-6.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m9-161"><b>Configuration Review</b></h3>
+
+<p id="cn-m9-162">All hardware devices and software have out-of-the-box 
+default configuration settings. When installing a hardware device or 
+software, these default settings are implemented, which might not be 
+secure. These settings need to be modified as per the network 
+requirements to make the system secure. For example, consider a wireless
+ access point (WAP) connected to the network with the default 
+configuration and user credentials. Anyone with basic knowledge of 
+networking would be able to break through the WAP, gain unauthorized 
+access to the network, and damage the whole system.</p>
+
+<p id="cn-m9-163">To avoid such issues, you need to perform a 
+configuration review of the software and hardware devices. Configuration
+ reviews help detect security misconfigurations and other issues, such 
+as out-of-the-box configuration.</p>
+
+<p id="cn-m9-164">Moreover, configuration reviews can be used to 
+benchmark the devices and software against any organizational 
+configuration baseline. For example, if you have a configuration 
+baseline for desktop systems running Windows 10, then all desktops with 
+Windows 10 can be verified against this baseline. This review will 
+highlight any configuration deviations that might make the system 
+unsecured, thereby posing a security threat. Hence, it is advisable to 
+run configuration reviews regularly.</p>
+
+<h3 id="cn-m9-165"><b>Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS)</b></h3>
+
+<p id="cn-m9-166">Common Vulnerabilities and Exposures (CVE) are 
+vulnerabilities in published operating systems and applications 
+software. These are publicly known cybersecurity vulnerabilities.</p>
+
+<p id="cn-m9-167">When you find several vulnerabilities within your 
+infrastructure, you would probably not know how to rank them or assign 
+scores to them. Assigning scores to vulnerabilities helps to prioritize 
+them based on their severity level. Hence, vulnerabilities with high 
+scores will be remediated first. Common Vulnerability Scoring System 
+(CVSS) helps assign a score to each vulnerability. For example, you may 
+have a vulnerability that is a risk to your data's confidentiality, 
+integrity, and availability. Using CVSS, you can determine the score. 
+With multiple vulnerabilities, you can determine the vulnerability has a
+ high score and must be handled on a priority basis.</p>
+
+<p id="cn-m9-168">The scores are calculated based on several metrics. 
+Once you define these metrics, you would be able to determine the CVSS 
+score for a vulnerability. For example, a score of 10 would make a 
+vulnerability severe. You can also use CVSS calculators that can help 
+you calculate the scores.</p>
+
+<h3 id="cn-m9-169"><b>Application, Web Application, and Network</b></h3>
+
+<p id="cn-m9-170">Vulnerabilities are bound to exist in applications, 
+Web applications, and the network. You use an appropriate vulnerability 
+scanner to identify these vulnerabilities and close them. The 
+vulnerability scanners list the vulnerabilities as well as suggestions 
+and remediations to close them. For example, Nikto for Web server 
+scanner identifies the vulnerabilities and provides suggestions to close
+ these vulnerabilities.</p>
+
+<p id="cn-m9-171">Just before you run a vulnerability scan, you need to 
+scope the run. For example, you specify whether to run the scan on a 
+single application or the entire network.</p>
+
+<h3 id="cn-m9-172"><b>False Positive</b></h3>
+
+<p id="cn-m9-173">A vulnerability scan result might list false 
+positives. False positive refers to a vulnerability that might be listed
+ as one though it does not exist. For example, a scan result may list a 
+vulnerability in MySQL, while in reality, the listed vulnerability does 
+not exist or is not considered a vulnerability.</p>
+
+<p id="cn-m9-174">A vulnerability scanner may show false positives 
+because it is unable to recognize an executable or a service. The 
+reasons for this can be:</p>
+
+<ul id="cn-m9-175">
+
+<li id="cn-m9-175">To cover up a vulnerability, you may have implemented
+ a compensating control. Therefore, listing of the vulnerability in a 
+scan result is a false positive because a compensating control is 
+already covering the vulnerability.</li>
+
+<li id="cn-m9-176">The vulnerability scanner does not have updated definitions.</li>
+
+<li id="cn-m9-177">The scanner configurations are outdated or 
+irrelevant. This might result in services or configuration settings 
+marked as false positives.</li>
+
+</ul>
+
+<p id="cn-m9-178">As a pentester, you must be able to identify false 
+positives. Each scan result must be researched and analyzed to ascertain
+ if it is a false positive. This can help avoid wasteful effort in 
+fixing these vulnerabilities.</p>
+
+<h3 id="cn-m9-179"><b>False Negative</b></h3>
+
+<p id="cn-m9-180">A false negative is the opposite of a false positive. A
+ false negative is a vulnerability that exists within the system or 
+applications but is missed by the scanner. For example, you run a 
+vulnerability scanner, and it lists only a few vulnerabilities within 
+the system. Then, you test the operating system and applications with a 
+second vulnerability scanner and find several new vulnerabilities, which
+ were missed by the first vulnerability scanner. The missed 
+vulnerabilities are referred to as false negatives.</p>
+
+<h3 id="cn-m9-181"><b>Credentialed vs. Non-Credentialed Scans</b></h3>
+
+<p id="cn-m9-182">After you have defined the vulnerability scanning 
+scope, you also need to decide whether you will be performing a 
+credentialed or a non-credentialed scan. Depending on your requirement, 
+you can choose either one.</p>
+
+<ul id="cn-m9-183">
+
+<li id="cn-m9-183"><b>Credentialed Scan</b>: To run a credentialed scan,
+ you need to have administrative access to the system and run the scan 
+from the administrative account credentials. This scan probes deeper 
+into the system and provides a more comprehensive vulnerability list. A 
+credentialed scan is more thorough and takes longer to perform.</li>
+
+<li id="cn-m9-184"><b>Non-Credentialed Scan</b>: This vulnerability scan
+ requires no specific credentials. The non-credentialed scan is a 
+limited scan as it cannot scan deep into the applications or systems 
+that require credentialed access. It is mainly focused on finding the 
+open ports and the services or software using these ports. This scan is 
+quicker with a limited vulnerability list.</li>
+
+</ul>
+
+<h3 id="cn-m9-185"><b>Intrusive vs. Non-intrusive</b></h3>
+
+<p id="cn-m9-186">A vulnerability scan can either be intrusive or 
+non-intrusive. In a non-intrusive vulnerability scan, the scanner only 
+looks for the vulnerabilities. For example, it can scan for missing 
+updates or look for open ports. It does not go beyond the scanning 
+process. The intrusive scan goes one step beyond the non-intrusive scan.
+ It not only scans for the vulnerabilities, but it also attempts to 
+exploit them. It is always advisable not to use intrusive scans on 
+production systems and live applications.</p>
+
+<h3 id="cn-m9-187"><b>Task 1 - Perform Log Reviews</b></h3>
+
+<p id="cn-m9-188">Each application and the operating system generates 
+various types of events. These events are captured in logs maintained by
+ a tool or service within an operating system. The logs can help 
+determine the cause or origin of an event, say during a forensic 
+investigation.</p>
+
+<p id="cn-m9-189"><b>Event Viewer </b>is a Windows tool that displays 
+information about various events happening on your computer. This tool 
+can help track the event flow while troubleshooting any issues either 
+with the OS or the installed applications. The <b>Event Log </b>service starts automatically with the Windows OS.</p>
+
+<p id="cn-m9-190">Different types of event logs include:</p>
+
+<ul id="cn-m9-191">
+
+<li id="cn-m9-191">Application logs</li>
+
+<li id="cn-m9-192">System logs</li>
+
+<li id="cn-m9-193">Security logs</li>
+
+</ul>
+
+<p id="cn-m9-194">Application and System logs are available to all users; however, security logs are available only to the administrators.</p>
+
+<p id="cn-m9-195">In this task, you will access application logs on the system.</p>
+
+<h4 id="cn-m9-196"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m9-197">Ensure that the required devices are powered on.</p>
+
+<p id="cn-m9-198">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m9-199">On the Windows desktop, right-click the Start charm and select <b>Event Viewer</b>.</p>
+
+<p id="cn-m9-200"></p><figure><img class="cn-img" id="cn-image-m9-c-7" src="SecurityAssessmentTechniques_files/image-m9-c-7.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Context menu (that appears on right-clicking the Start charm) &amp;gt; Event Viewer menu-options are selected."><figcaption>Figure
+ 2.1 Screenshot of PLABWIN10: Context menu (that appears on 
+right-clicking the Start charm) &gt; Event Viewer menu-options are 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-202"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m9-203">The <b>Event Viewer </b>console is displayed. On the navigation pane at the left, expand the <b>Windows Logs </b>node. Notice the different types of logs listed:</p>
+
+<ul id="cn-m9-204">
+
+<li id="cn-m9-204"><b>Application</b>: Contains the events that are generated by applications</li>
+
+<li id="cn-m9-205"><b>Security</b>: Contains security-related events generated by the operating system</li>
+
+<li id="cn-m9-206"><b>Setup</b>: Contains the application installation-related events</li>
+
+<li id="cn-m9-207"><b>System</b>: Contains the events generated by the operating system&nbsp;&nbsp;</li>
+
+</ul>
+
+<p id="cn-m9-208">Select the <b>Application </b>log.</p>
+
+<span class="cn-quote" id="cn-m9-209"><b><i>Note: </i></b><i>The logs in your device may differ.</i></span>
+
+<p id="cn-m9-210"></p><figure><img class="cn-img" id="cn-image-m9-c-8" src="SecurityAssessmentTechniques_files/image-m9-c-8.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: Available types of Windows logs are listed on the Event viewer console."><figcaption>Figure 2.2 Screenshot of PLABWIN10: Available types of Windows logs are listed on the Event viewer console.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-212"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m9-213">Notice that various events relevant to the 
+applications on the system are listed in the middle pane. The events 
+might be labeled as <b>Information</b>, <b>Warning</b>, and <b>Error</b>.</p>
+
+<p id="cn-m9-214"></p><figure><img class="cn-img" id="cn-image-m9-c-9" src="SecurityAssessmentTechniques_files/image-m9-c-9.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: Details of Application logs are listed on the middle pane of the Event Viewer console."><figcaption>Figure 2.3 Screenshot of PLABWIN10: Details of Application logs are listed on the middle pane of the Event Viewer console.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-216"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m9-217">Click <b>System </b>in the left pane. Again, notice the different types - Error, Information, and Warning - of events listed.</p>
+
+<span class="cn-quote" id="cn-m9-218"><b><i>Note: </i></b><i>In your lab environment, there may be a possibility that all of these may not be listed.</i></span>
+
+<p id="cn-m9-219"></p><figure><img class="cn-img" id="cn-image-m9-c-10" src="SecurityAssessmentTechniques_files/image-m9-c-10.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: Details of System logs are listed on the middle pane of the Event Viewer console."><figcaption>Figure 2.4 Screenshot of PLABWIN10: Details of System logs are listed on the middle pane of the Event Viewer console.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-221"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m9-222">Select an event in the middle pane. If your lab environment displays an error event, select it.</p>
+
+<p id="cn-m9-223">Notice that the bottom section of the middle pane displays the details of the Error event.</p>
+
+<p id="cn-m9-224">Following information related to an event is displayed:</p>
+
+<ul id="cn-m9-225">
+
+<li id="cn-m9-225">Date and time</li>
+
+<li id="cn-m9-226">User&nbsp;&nbsp;</li>
+
+<li id="cn-m9-227">Computer&nbsp;&nbsp;</li>
+
+<li id="cn-m9-228">Event ID&nbsp;&nbsp;</li>
+
+<li id="cn-m9-229">Source&nbsp;&nbsp;</li>
+
+<li id="cn-m9-230">Type&nbsp;&nbsp;</li>
+
+<li id="cn-m9-231">Log name</li>
+
+</ul>
+
+<p id="cn-m9-232"></p><figure><img class="cn-img" id="cn-image-m9-c-11" src="SecurityAssessmentTechniques_files/image-m9-c-11.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: Details of the selected event are listed on the lower-middle pane on the Event Viewer console."><figcaption>Figure
+ 2.5 Screenshot of PLABWIN10: Details of the selected event are listed 
+on the lower-middle pane on the Event Viewer console.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-234"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m9-235">Note that the <b>Windows Logs </b>node lists static 
+logs - logs common to on all Windows systems. However, a server for 
+specific services, such as a DNS server, can have DNS logs as well. Such
+ logs are listed under the <b>Application and Services Logs </b>node.</p>
+
+<p id="cn-m9-236">Expand <b>Applications and Services Logs</b>. Notice that these logs are specific to applications.</p>
+
+<p id="cn-m9-237"></p><figure><img class="cn-img" id="cn-image-m9-c-12" src="SecurityAssessmentTechniques_files/image-m9-c-12.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: Details of the Applications and Services Logs are listed on the middle pane of the Event Viewer console."><figcaption>Figure
+ 2.6 Screenshot of PLABWIN10: Details of the Applications and Services 
+Logs are listed on the middle pane of the Event Viewer console.</figcaption></figure><p></p>
+
+<p id="cn-m9-239">Close all open windows.</p>
+
+<h3 id="cn-m9-241"><b>Task 2 - Use Nikto for Web Application Vulnerability Scanning</b></h3>
+
+<p id="cn-m9-242">Nikto is a vulnerability scanner that is part of Kali 
+Linux. It is widely used by the pentesters and hackers to find 
+vulnerabilities in Web servers. It performs various tasks, including:</p>
+
+<ul id="cn-m9-243">
+
+<li id="cn-m9-243">Scan for the existence of more than one index files</li>
+
+<li id="cn-m9-244">Verify the installed applications and Webserver</li>
+
+<li id="cn-m9-245">Verify the Web server configuration</li>
+
+<li id="cn-m9-246">Verify the outdated files, such as plugins</li>
+
+</ul>
+
+<ol id="cn-m9-247">
+
+</ol>
+
+<p id="cn-m9-248">In this task, you will use Nikto for vulnerability scanning.</p>
+
+<h4 id="cn-m9-249"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m9-250">Ensure that all the required devices are powered on. Connect to <b>PLABKALI</b>. In the <b>Enter your username </b>text box, type the following:</p>
+
+<pre id="cn-m9-251"><code>root
+
+</code></pre>
+
+<p id="cn-m9-252">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m9-254">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m9-255"></p><figure><img class="cn-img" id="cn-image-m9-c-13" src="SecurityAssessmentTechniques_files/image-m9-c-13.jpg" alt="Figure 2.7 Screenshot of PLABKALI: Required login credentials are typed into the login screen."><figcaption>Figure 2.7 Screenshot of PLABKALI: Required login credentials are typed into the login screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-257"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m9-258">After a successful login, the desktop is displayed.</p>
+
+<p id="cn-m9-259">Notice that the terminal window is displayed by default.</p>
+
+<span class="cn-quote" id="cn-m9-261"><b><i>Note: </i></b><i>In case required, right-click the desktop and select </i><b><i>Open Terminal Here </i></b><i>to display the terminal window.</i></span>
+
+<p id="cn-m9-262">To scan a website for vulnerabilities, type the following command:</p>
+
+<span class="cn-quote" id="cn-m9-263"><b><i>Note: </i></b><i>Instead of the -host parameter, you can also use the </i><b><i>-h </i></b><i>parameter. Both parameters provide the same result.</i></span>
+
+<pre id="cn-m9-264"><code>nikto -host intranet
+
+</code></pre>
+
+<p id="cn-m9-265">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-266"></p><figure><img class="cn-img" id="cn-image-m9-c-14" src="SecurityAssessmentTechniques_files/image-m9-c-14.jpg" alt="Figure 2.8 Screenshot of PLABKALI: Command to use the nikto tool to scan the specified website is typed into the terminal window."><figcaption>Figure
+ 2.8 Screenshot of PLABKALI: Command to use the nikto tool to scan the 
+specified website is typed into the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-269"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m9-270">The vulnerability scanning process starts.</p>
+
+<p id="cn-m9-271">Notice the listed details of the scanned target - <b>Target IP</b>, <b>Target Hostname</b>, <b>Target Port</b>, and <b>Start Time</b>.</p>
+
+<p id="cn-m9-272">Depending on the number of vulnerabilities, the process may run for a few minutes.</p>
+
+<p id="cn-m9-273"></p><figure><img class="cn-img" id="cn-image-m9-c-15" src="SecurityAssessmentTechniques_files/image-m9-c-15.jpg" alt="Figure 2.9 Screenshot of PLABKALI: Running of the nikto scan is traced on the terminal window."><figcaption>Figure 2.9 Screenshot of PLABKALI: Running of the nikto scan is traced on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-275"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m9-276">The output gives a detailed list of vulnerabilities.</p>
+
+<p id="cn-m9-277"></p><figure><img class="cn-img" id="cn-image-m9-c-16" src="SecurityAssessmentTechniques_files/image-m9-c-16.jpg" alt="Figure 2.10 Screenshot of PLABKALI: Output of the nikto scan is listed on the terminal window."><figcaption>Figure 2.10 Screenshot of PLABKALI: Output of the nikto scan is listed on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-279"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m9-280">You can also specify the port number on which the 
+Website or Web application should be scanned. To do this, type the 
+following command:</p>
+
+<pre id="cn-m9-281"><code>nikto -host intranet -p 80
+
+</code></pre>
+
+<p id="cn-m9-282">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-283"></p><figure><img class="cn-img" id="cn-image-m9-c-17" src="SecurityAssessmentTechniques_files/image-m9-c-17.jpg" alt="Figure 2.11 Screenshot of PLABKALI: Command to use the nikto tool to scan a website at the specified port number is typed into the terminal window."><figcaption>Figure
+ 2.11 Screenshot of PLABKALI: Command to use the nikto tool to scan a 
+website at the specified port number is typed into the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-285"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m9-286">Notice that the process and output are similar to the previous command.</p>
+
+<p id="cn-m9-288"></p><figure><img class="cn-img" id="cn-image-m9-c-18" src="SecurityAssessmentTechniques_files/image-m9-c-18.jpg" alt="Figure 2.12 Screenshot of PLABKALI: Output of the nikto scan is listed on the terminal window."><figcaption>Figure 2.12 Screenshot of PLABKALI: Output of the nikto scan is listed on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-290"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m9-291">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m9-292"><code>clear
+
+</code></pre>
+
+<p id="cn-m9-293">To scan a Website for vulnerabilities and save the output to an HTML file, type the following command:</p>
+
+<span class="cn-quote" id="cn-m9-294"><b><i>Note: </i></b><i>Instead of the -host parameter, you can also use the -h parameter. Both parameters provide the same result.</i></span>
+
+<pre id="cn-m9-295"><code>nikto -host intranet -o plab.html
+
+</code></pre>
+
+<p id="cn-m9-296">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-297"></p><figure><img class="cn-img" id="cn-image-m9-c-19" src="SecurityAssessmentTechniques_files/image-m9-c-19.jpg" alt="Figure 2.13 Screenshot of PLABKALI: Command to use the nikto tool to scan a website and save the results in a specified file is typed into the terminal window."><figcaption>Figure
+ 2.13 Screenshot of PLABKALI: Command to use the nikto tool to scan a 
+website and save the results in a specified file is typed into the 
+terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-299"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m9-300">Let the vulnerability scanning process complete.</p>
+
+<p id="cn-m9-301">Then, type the following command:</p>
+
+<pre id="cn-m9-302"><code>firefox plab.html
+
+</code></pre>
+
+<p id="cn-m9-303">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-304"></p><figure><img class="cn-img" id="cn-image-m9-c-20" src="SecurityAssessmentTechniques_files/image-m9-c-20.jpg" alt="Figure 2.14 Screenshot of PLABKALI: Command to open the specified file in the required browser is typed into the terminal window."><figcaption>Figure
+ 2.14 Screenshot of PLABKALI: Command to open the specified file in the 
+required browser is typed into the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-306"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m9-307">A new <b>Firefox </b>window opens. Notice that the vulnerabilities are listed on the HTML Webpage.</p>
+
+<p id="cn-m9-308">Close the <b>Firefox </b>window to access the terminal window.</p>
+
+<p id="cn-m9-310"></p><figure><img class="cn-img" id="cn-image-m9-c-21" src="SecurityAssessmentTechniques_files/image-m9-c-21.jpg" alt="Figure 2.15 Screenshot of PLABKALI:  Output file of the nikto scan is displayed in the specified browser."><figcaption>Figure 2.15 Screenshot of PLABKALI:  Output file of the nikto scan is displayed in the specified browser.</figcaption></figure><p></p>
+
+<p id="cn-m9-312">Keep the terminal window open and proceed to the next task.</p>
+
+<h3 id="cn-m9-314"><b>Task 3 - Perform Vulnerability Scanning using OpenVAS</b></h3>
+
+<p id="cn-m9-315">Kali Linux provides a tool named the Open 
+Vulnerability Assessment System (OpenVAS) for vulnerability scanning of 
+the system on a network. OpenVAS is a framework that consists of 
+multiple services and tools. OpenVAS requires Python binaries to work.</p>
+
+<p id="cn-m9-316">You will find not always find vulnerabilities every 
+time you run a vulnerability scanner. If a system is secure enough, then
+ you may not find even a single vulnerability.</p>
+
+<span class="cn-quote" id="cn-m9-317"><b><i>Note: </i></b><i>In the current version of Kali, OpenVAS is installed by default.</i></span>
+
+<p id="cn-m9-318">To perform vulnerability scanning using OpenVAS, perform the following steps:</p>
+
+<h4 id="cn-m9-319"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m9-320">Ensure that the terminal window is displayed on <b>PLABKALI</b>.</p>
+
+<p id="cn-m9-321">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m9-322"><code>clear
+
+</code></pre>
+
+<p id="cn-m9-323">In the current version of Kali, OpenVAS is installed 
+by default. Therefore, now you need to setup OpenVAS. To do this, type 
+the following command:</p>
+
+<pre id="cn-m9-324"><code>openvas-setup
+
+</code></pre>
+
+<p id="cn-m9-325">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-326"></p><figure><img class="cn-img" id="cn-image-m9-c-22" src="SecurityAssessmentTechniques_files/image-m9-c-22.jpg" alt="Figure 2.16 Screenshot of PLABKALI: Command to setup openvas is typed into the terminal window."><figcaption>Figure 2.16 Screenshot of PLABKALI: Command to setup openvas is typed into the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-328"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m9-329">The setup process for OpenVAS now starts. This process downloads many signatures and vulnerability tests.</p>
+
+<span class="cn-quote" id="cn-m9-330"><b><i>Note: </i></b><i>This 
+process may take a while to complete. You may also see a few errors 
+during the installation process. You can safely ignore them for the time
+ being.</i></span>
+
+<p id="cn-m9-331"></p><figure><img class="cn-img" id="cn-image-m9-c-23" src="SecurityAssessmentTechniques_files/image-m9-c-23.jpg" alt="Figure 2.17 Screenshot of PLABKALI: Setting up of openvas is traced on the terminal window."><figcaption>Figure 2.17 Screenshot of PLABKALI: Setting up of openvas is traced on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-333"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m9-334">After the setup process is complete, a <b>Firefox </b>window is opened. Minimize it to access the terminal.</p>
+
+<p id="cn-m9-335"></p><figure><img class="cn-img" id="cn-image-m9-c-24" src="SecurityAssessmentTechniques_files/image-m9-c-24.jpg" alt="Figure 2.18 Screenshot of PLABKALI: Warning Potential Security Risk Ahead screen is displayed on the Firefox window."><figcaption>Figure 2.18 Screenshot of PLABKALI: Warning Potential Security Risk Ahead screen is displayed on the Firefox window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-337"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m9-338">You are back on the terminal. Notice that the username is created, but there is no password.</p>
+
+<p id="cn-m9-339">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m9-340"><code>clear
+
+</code></pre>
+
+<p id="cn-m9-341">You need to reset the password for the admin account. To do this, type the following command:</p>
+
+<pre id="cn-m9-342"><code>openvasmd --user=admin --new-password=<span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m9-343">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-344"></p><figure><img class="cn-img" id="cn-image-m9-c-25" src="SecurityAssessmentTechniques_files/image-m9-c-25.jpg" alt="Figure 2.19 Screenshot of PLABKALI: Command to reset the admin password for openvas is typed into the terminal window."><figcaption>Figure 2.19 Screenshot of PLABKALI: Command to reset the admin password for openvas is typed into the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-346"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m9-347">Since no error is returned, it means that the password for the admin user is now reset.</p>
+
+<p id="cn-m9-348"></p><figure><img class="cn-img" id="cn-image-m9-c-26" src="SecurityAssessmentTechniques_files/image-m9-c-26.jpg" alt="Figure 2.20 Screenshot of PLABKALI: System-response to the command to reset the admin password is displayed in the terminal window."><figcaption>Figure
+ 2.20 Screenshot of PLABKALI: System-response to the command to reset 
+the admin password is displayed in the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-350"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m9-351">Restore the <b>Firefox </b>window by clicking on the icon at the top of the screen.</p>
+
+<p id="cn-m9-352"></p><figure><img class="cn-img" id="cn-image-m9-c-27" src="SecurityAssessmentTechniques_files/image-m9-c-27.jpg" alt="Figure 2.21 Screenshot of PLABKALI: Firefox icon at the top of the screen is selected."><figcaption>Figure 2.21 Screenshot of PLABKALI: Firefox icon at the top of the screen is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-354"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m9-355">Click <b>Advanced</b>.</p>
+
+<p id="cn-m9-356"></p><figure><img class="cn-img" id="cn-image-m9-c-28" src="SecurityAssessmentTechniques_files/image-m9-c-28.jpg" alt="Figure 2.22 Screenshot of PLABKALI: Advanced button on the Warning Potential Security Risk Ahead screen in the Firefox window is selected."><figcaption>Figure
+ 2.22 Screenshot of PLABKALI: Advanced button on the Warning Potential 
+Security Risk Ahead screen in the Firefox window is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-358"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m9-359">Scroll down and click <b>Accept the Risk and Continue</b>.</p>
+
+<p id="cn-m9-360"></p><figure><img class="cn-img" id="cn-image-m9-c-29" src="SecurityAssessmentTechniques_files/image-m9-c-29.jpg" alt="Figure 2.23 Screenshot of PLABKALI: Accept the Risk and Continue button on the Warning Potential Security Risk Ahead screen in the Firefox window is selected."><figcaption>Figure
+ 2.23 Screenshot of PLABKALI: Accept the Risk and Continue button on the
+ Warning Potential Security Risk Ahead screen in the Firefox window is 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-362"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m9-363">The <b>Greenbone Security Assistant </b>login page is displayed.</p>
+
+<p id="cn-m9-364">In the <b>Username </b>text box, type the following:</p>
+
+<pre id="cn-m9-365"><code>admin
+
+</code></pre>
+
+<p id="cn-m9-366">In the <b>Password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m9-368">Click <b>Login</b>.</p>
+
+<span class="cn-quote" id="cn-m9-369"><b><i>Note: </i></b><i>This is the same password you had reset.</i></span>
+
+<p id="cn-m9-370"></p><figure><img class="cn-img" id="cn-image-m9-c-30" src="SecurityAssessmentTechniques_files/image-m9-c-30.jpg" alt="Figure 2.24 Screenshot of PLABKALI: Required login credentials are typed in and the Login button selected on the login screen of the Greenbone Security Assistant."><figcaption>Figure
+ 2.24 Screenshot of PLABKALI: Required login credentials are typed in 
+and the Login button selected on the login screen of the Greenbone 
+Security Assistant.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-372"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m9-373">The dashboard for OpenVAS is displayed.</p>
+
+<p id="cn-m9-374">You will now perform the scanning. Click <b>Configuration </b>and select <b>Targets</b>.</p>
+
+<p id="cn-m9-375"></p><figure><img class="cn-img" id="cn-image-m9-c-31" src="SecurityAssessmentTechniques_files/image-m9-c-31.jpg" alt="Figure 2.25 Screenshot of PLABKALI: Configuration &amp;gt; Targets menu-options are selected on the Greenbone Security Assistant screen."><figcaption>Figure
+ 2.25 Screenshot of PLABKALI: Configuration &gt; Targets menu-options 
+are selected on the Greenbone Security Assistant screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-377"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m9-378">The <b>Targets </b>page is displayed. First, you need to define a target.</p>
+
+<p id="cn-m9-379">Click <b>New Target (*) </b>on the upper left side - just below the menu.</p>
+
+<p id="cn-m9-380"></p><figure><img class="cn-img" id="cn-image-m9-c-32" src="SecurityAssessmentTechniques_files/image-m9-c-32.jpg" alt="Figure 2.26 Screenshot of PLABKALI: New Target icon on the Targets screen of the Greenbone Security Assistant is highlighted."><figcaption>Figure 2.26 Screenshot of PLABKALI: New Target icon on the Targets screen of the Greenbone Security Assistant is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-382"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m9-383">The <b>New Target </b>dialog box is displayed. In the <b>Name </b>text box, over-type the existing value:</p>
+
+<pre id="cn-m9-384"><code>localhost
+
+</code></pre>
+
+<p id="cn-m9-385">Click <b>Create</b>.</p>
+
+<span class="cn-alert" id="cn-m9-386"><b>Alert: </b>You might have to move the window up a bit to display the Create button.</span>
+
+<span class="cn-quote" id="cn-m9-388"><b><i>Note: </i></b><i>Instead of 
+choosing the localhost, you can also specify any other host's IP address
+ on the network. You can also select the From file option and provide a 
+list of IP addresses. Using the From file option, you can choose to scan
+ the entire network.</i></span>
+
+<p id="cn-m9-389"></p><figure><img class="cn-img" id="cn-image-m9-c-33" src="SecurityAssessmentTechniques_files/image-m9-c-33.jpg" alt="Figure 2.27 Screenshot of PLABKALI: New Target dialog box is displayed showing the required values typed-in, and the Create button highlighted."><figcaption>Figure
+ 2.27 Screenshot of PLABKALI: New Target dialog box is displayed showing
+ the required values typed-in, and the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-391"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m9-392">Notice that the target is now created.</p>
+
+<p id="cn-m9-393">Next, create a task. Click <b>Scans </b>and then select <b>Tasks</b>.</p>
+
+<p id="cn-m9-394"></p><figure><img class="cn-img" id="cn-image-m9-c-34" src="SecurityAssessmentTechniques_files/image-m9-c-34.jpg" alt="Figure 2.28 Screenshot of PLABKALI: Scans &amp;gt; Tasks menu-options are selected on the Greenbone Security Assistant screen."><figcaption>Figure 2.28 Screenshot of PLABKALI: Scans &gt; Tasks menu-options are selected on the Greenbone Security Assistant screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-396"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m9-397">The <b>Tasks </b>page is displayed.</p>
+
+<span class="cn-quote" id="cn-m9-398"><b><i>Note: </i></b><i>A dialog box appears for 10 seconds and then disappear automatically.</i></span>
+
+<p id="cn-m9-399">Click the <b>Task </b>icon just below the menu bar and select <b>Task Wizard</b>.</p>
+
+<p id="cn-m9-400"></p><figure><img class="cn-img" id="cn-image-m9-c-35" src="SecurityAssessmentTechniques_files/image-m9-c-35.jpg" alt="Figure 2.29 Screenshot of PLABKALI: Task Wizard icon on the Tasks screen of the Greenbone Security Assistant is highlighted."><figcaption>Figure 2.29 Screenshot of PLABKALI: Task Wizard icon on the Tasks screen of the Greenbone Security Assistant is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-402"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m9-403">The <b>Task Wizard </b>is displayed. Keep the IP address as <b>127.0.0.1 </b>and click <b>Start Scan</b>.</p>
+
+<p id="cn-m9-404"></p><figure><img class="cn-img" id="cn-image-m9-c-36" src="SecurityAssessmentTechniques_files/image-m9-c-36.jpg" alt="Figure 2.30 Screenshot of PLABKALI: Task Wizard dialog box is displayed showing the required IP address listed and the Start Scan button highlighted."><figcaption>Figure
+ 2.30 Screenshot of PLABKALI: Task Wizard dialog box is displayed 
+showing the required IP address listed and the Start Scan button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-406"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m9-407">Notice that a new task is created. It is named as an <b>Immediate scan of IP 127.0.0.1</b>. It has the status set as <b>Requested</b>.</p>
+
+<p id="cn-m9-408"></p><figure><img class="cn-img" id="cn-image-m9-c-37" src="SecurityAssessmentTechniques_files/image-m9-c-37.jpg" alt="Figure 2.31 Screenshot of PLABKALI: Newly created task with the status is listed on the Tasks screen of the Greenbone Security Assistant."><figcaption>Figure
+ 2.31 Screenshot of PLABKALI: Newly created task with the status is 
+listed on the Tasks screen of the Greenbone Security Assistant.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-410"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m9-411">Finally, the scan completes, and the <b>Tasks </b>page displays the status.</p>
+
+<p id="cn-m9-412">Click <b>Immediate scan of IP 127.0.0.1</b>.</p>
+
+<p id="cn-m9-413"></p><figure><img class="cn-img" id="cn-image-m9-c-38" src="SecurityAssessmentTechniques_files/image-m9-c-38.jpg" alt="Figure 2.32 Screenshot of PLABKALI: Completed task with the status is listed on the Tasks screen of the Greenbone Security Assistant."><figcaption>Figure
+ 2.32 Screenshot of PLABKALI: Completed task with the status is listed 
+on the Tasks screen of the Greenbone Security Assistant.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-415"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m9-416">The finished task details are displayed. Click <b>1 </b>next to <b>Reports</b>.</p>
+
+<p id="cn-m9-417"></p><figure><img class="cn-img" id="cn-image-m9-c-39" src="SecurityAssessmentTechniques_files/image-m9-c-39.jpg" alt="Figure 2.33 Screenshot of PLABKALI: Link to the report to display is highlighted on the Task screen of the Greenbone Security Assistant."><figcaption>Figure
+ 2.33 Screenshot of PLABKALI: Link to the report to display is 
+highlighted on the Task screen of the Greenbone Security Assistant.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-419"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m9-420">Click the link provided under the <b>Date </b>column.</p>
+
+<p id="cn-m9-421"></p><figure><img class="cn-img" id="cn-image-m9-c-40" src="SecurityAssessmentTechniques_files/image-m9-c-40.jpg" alt="Figure 2.34 Screenshot of PLABKALI: Link to the detailed report to display is highlighted on the Reports screen of the Greenbone Security Assistant."><figcaption>Figure
+ 2.34 Screenshot of PLABKALI: Link to the detailed report to display is 
+highlighted on the Reports screen of the Greenbone Security Assistant.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-423"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m9-424">Notice that there are no vulnerabilities.</p>
+
+<p id="cn-m9-425"></p><figure><img class="cn-img" id="cn-image-m9-c-41" src="SecurityAssessmentTechniques_files/image-m9-c-41.jpg" alt="Figure 2.35 Screenshot of PLABKALI: Detailed report with the severity level is displayed on the Report: Results page of the Greenbone Security Assistant."><figcaption>Figure
+ 2.35 Screenshot of PLABKALI: Detailed report with the severity level is
+ displayed on the Report: Results page of the Greenbone Security 
+Assistant.</figcaption></figure><p></p>
+
+<p id="cn-m9-427">Close the <b>Firefox </b>window.</p>
+
+<h3 id="cn-m9-429"><b>Task 4 - Using Lynis for System Vulnerability Scanning</b></h3>
+
+<p id="cn-m9-430">Lynis is a built-in multi-purpose tool in Kali Linux. It is designed to perform the following tasks:</p>
+
+<ul id="cn-m9-431">
+
+<li id="cn-m9-431">Security auditing</li>
+
+<li id="cn-m9-432">Compliance testing</li>
+
+<li id="cn-m9-433">Penetration testing</li>
+
+<li id="cn-m9-434">Vulnerability detection</li>
+
+<li id="cn-m9-435">System Hardening</li>
+
+</ul>
+
+<p id="cn-m9-436">It can perform several types of system auditing, such 
+as system binaries, boot loaders, startup services, run level, loaded 
+modules, kernel configuration, core dumps, and so on.</p>
+
+<p id="cn-m9-437">In this task, you will use Lynis for system vulnerability scanning.</p>
+
+<p id="cn-m9-438">To do this, perform the following steps:</p>
+
+<h4 id="cn-m9-439"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m9-440">Ensure that the terminal window is displayed on the <b>PLABKALI </b>desktop.</p>
+
+<p id="cn-m9-441">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m9-442"><code>clear
+
+</code></pre>
+
+<p id="cn-m9-443">By default, Lynis performs a local system scan. You have the option to run a normal audit scan or an entire system scan.</p>
+
+<p id="cn-m9-444">Let’s first run the normal audit scan. Type the following command:</p>
+
+<pre id="cn-m9-445"><code>lynis audit system
+
+</code></pre>
+
+<p id="cn-m9-446">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-447"></p><figure><img class="cn-img" id="cn-image-m9-c-42" src="SecurityAssessmentTechniques_files/image-m9-c-42.jpg" alt="Figure 2.36 Screenshot of PLABKALI: Command to use the lynis tool to perform a local system audit scan is typed into the terminal window."><figcaption>Figure
+ 2.36 Screenshot of PLABKALI: Command to use the lynis tool to perform a
+ local system audit scan is typed into the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-449"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m9-450">The auditing process starts. Notice that it has already detected the operating system version, its hostname, and so on.</p>
+
+<span class="cn-quote" id="cn-m9-451"><b><i>Note: </i></b><i>The audit process will take a few minutes to complete.</i></span>
+
+<p id="cn-m9-452"></p><figure><img class="cn-img" id="cn-image-m9-c-43" src="SecurityAssessmentTechniques_files/image-m9-c-43.jpg" alt="Figure 2.37 Screenshot of PLABKALI window: Running of the lynis audit process is traced on the terminal window."><figcaption>Figure 2.37 Screenshot of PLABKALI window: Running of the lynis audit process is traced on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-454"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m9-455">During the scan process, you will notice that the results are categorized according to the file systems, services, ports, etc.</p>
+
+<p id="cn-m9-456"></p><figure><img class="cn-img" id="cn-image-m9-c-44" src="SecurityAssessmentTechniques_files/image-m9-c-44.jpg" alt="Figure 2.38 Screenshot of PLABKALI: Results of the lynis scan are listed on the terminal window."><figcaption>Figure 2.38 Screenshot of PLABKALI: Results of the lynis scan are listed on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-458"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m9-459">The audit process completes.</p>
+
+<p id="cn-m9-460"></p><figure><img class="cn-img" id="cn-image-m9-c-45" src="SecurityAssessmentTechniques_files/image-m9-c-45.jpg" alt="Figure 2.39 Screenshot of PLABKALI: Completion of the lynis audit process is listed on the terminal window."><figcaption>Figure 2.39 Screenshot of PLABKALI: Completion of the lynis audit process is listed on the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-462"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m9-463">Scroll up to review the results. Notice the listed 
+vulnerabilities. Lynis also provides suggestions to close the 
+vulnerabilities.</p>
+
+<p id="cn-m9-464">For example, in the current listing, it suggests setting the <b>PermitRootLogin </b>to <b>No </b>to harden the SSH configuration.</p>
+
+<span class="cn-quote" id="cn-m9-465"><b><i>Note: </i></b><i>Take a few 
+minutes and go through the audit report. If time permits, then you 
+should use the following command to perform a full audit scan: </i><b><i>lynis audit system -c</i></b></span>
+
+<p id="cn-m9-466"></p><figure><img class="cn-img" id="cn-image-m9-c-46" src="SecurityAssessmentTechniques_files/image-m9-c-46.jpg" alt="Figure 2.40 Screenshot of PLABKALI: Warnings and suggestions of the lynis scan are listed on the terminal window."><figcaption>Figure 2.40 Screenshot of PLABKALI: Warnings and suggestions of the lynis scan are listed on the terminal window.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+< <a href="https://github.com/SeanOhAileasa" id="ExploringSyslogSecurityInformationandEventManagementSIEM">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m9-471"><b>Exercise 3 - Exploring Syslog/Security Information and Event Management (SIEM)</b></h2>
+
+<p id="cn-m9-472">Each application and operating system generates 
+various types of events. These events are captured in logs maintained by
+ a tool or service within the operating system. The logs can be useful 
+during a forensic investigation.</p>
+
+<p id="cn-m9-473">Implementing Syslog/Security Information and Event 
+Management (SIEM) provides a continuous view of the events, thereby 
+helping monitor system-health.</p>
+
+<p id="cn-m9-474">A SIEM is the best choice if you want to filter out 
+unnecessary event information and collate only the required 
+security-specific events.</p>
+
+<p id="cn-m9-475">In this exercise, you will learn about various features of SIEM.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m9-477">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m9-478">
+
+<li id="cn-m9-478">Implement SIEM</li>
+
+</ul>
+
+<p id="cn-m9-479">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m9-480">
+
+<li id="cn-m9-480">Review Reports</li>
+
+<li id="cn-m9-481">Packet Capture</li>
+
+<li id="cn-m9-482">Data Inputs</li>
+
+<li id="cn-m9-483">User Behavior Analysis (UBA)</li>
+
+<li id="cn-m9-484">Sentiment Analysis</li>
+
+<li id="cn-m9-485">Security Monitoring</li>
+
+<li id="cn-m9-486">Log Aggregation</li>
+
+<li id="cn-m9-487">Log Collectors</li>
+
+<li id="cn-m9-488">Security Orchestration, Automation, Response (SOAR)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m9-490">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m9-491">
+
+<li id="cn-m9-491"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m9-492"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m9-493"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m9-495"><img class="cn-img" id="cn-image-m9-c-47" src="SecurityAssessmentTechniques_files/image-m9-c-47.jpg" alt="Practice Labs screenshot."></p>
+
+<ol id="cn-m9-496">
+
+</ol>
+
+<h3 id="cn-m9-497"><b>Review Reports</b></h3>
+
+<p id="cn-m9-498">Each SIEM product generates different review reports -
+ differing in format and parameters monitored. However, in general, 
+review reports give a detailed insight into the network traffic 
+behavior. For example, you can configure the SIEM to detect the system 
+name, the time, and the number of remote connections.</p>
+
+<p id="cn-m9-499">To make SIEM implementation effective, it is critical 
+to review the SIEM reports regularly. Reports generated will not hold 
+any value if they are not reviewed. For example, a system named PLABDM01
+ has an event logging shutdown. This should be alarming. However, 
+without reviewing the report, you would have no intimation about this 
+event.</p>
+
+<p id="cn-m9-500"></p><figure><img class="cn-img" id="cn-image-m9-c-48" src="SecurityAssessmentTechniques_files/image-m9-c-48.jpg" alt="Figure 3.1 Screenshot of PLABDM01: Graphical representation of the Event Logging Service Shutdown data is displayed on the EventLog Analyzer screen."><figcaption>Figure
+ 3.1 Screenshot of PLABDM01: Graphical representation of the Event 
+Logging Service Shutdown data is displayed on the EventLog Analyzer 
+screen.</figcaption></figure><p></p>
+
+<h3 id="cn-m9-502"><b>Packet Capture</b></h3>
+
+<p id="cn-m9-503">Packet capture (pcap) is the process of intercepting 
+one or more data packets that move through a network. The packets can 
+either be analyzed when they are captured or can be stored for later 
+analysis. You may have an Intrusion Detection System / Intrusion 
+Prevention System (IDS/IPS) deployed on the network that can analyze 
+these packets and detect possible cyberattacks. You can integrate them 
+with the SIEM so that the captured packets can be analyzed for security 
+threats.</p>
+
+<p id="cn-m9-504">Some SIEM may display the capability to analyze the network traffic for security threats.</p>
+
+<h3 id="cn-m9-505"><b>Data Inputs</b></h3>
+
+<p id="cn-m9-506">Data inputs in a SIEM can come from a variety of 
+devices and systems. Some SIEM also provides the capability to import 
+existing logs for analysis.</p>
+
+<p id="cn-m9-507"></p><figure><img class="cn-img" id="cn-image-m9-c-49" src="SecurityAssessmentTechniques_files/image-m9-c-49.jpg" alt="Figure 3.2 Screenshot of PLABDM01 desktop: Status of the files imported is listed on the Import Log Files tab on the EventLog Analyzer screen."><figcaption>Figure
+ 3.2 Screenshot of PLABDM01 desktop: Status of the files imported is 
+listed on the Import Log Files tab on the EventLog Analyzer screen.</figcaption></figure><p></p>
+
+<p id="cn-m9-509">Logs can be imported from any device that you have added in SIEM.</p>
+
+<p id="cn-m9-510"></p><figure><img class="cn-img" id="cn-image-m9-c-50" src="SecurityAssessmentTechniques_files/image-m9-c-50.jpg" alt="Figure 3.3 Screenshot of PLABDM01 desktop: Import Log Data is displayed on the Import Configuration tab of EventLog Analyzer screen."><figcaption>Figure
+ 3.3 Screenshot of PLABDM01 desktop: Import Log Data is displayed on the
+ Import Configuration tab of EventLog Analyzer screen.</figcaption></figure><p></p>
+
+<h3 id="cn-m9-512"><b>User Behavior Analysis (UBA)</b></h3>
+
+<p id="cn-m9-513">Insider threats are a big pain for organizations. In 
+today’s world, organizations are equally prone to danger from outside 
+and inside the network. UBA, unlike the other security controls, is 
+focused on insider threats. It monitors the users’ behavior on the 
+network, and then based on the analysis of the monitored behavior, it 
+can detect the anomalies.</p>
+
+<p id="cn-m9-514">UBA focuses on unusual behavior that might originate 
+from users, processes, or even malware. Unlike SIEM, UBA mainly focuses 
+on the applications, firewalls, and other devices' logs. The intent is 
+to detect unusual behavior and raise a flag to help minimize the damage.
+ It is important to note that UBA can only detect but cannot prevent an 
+attacker from getting into your network.</p>
+
+<h3 id="cn-m9-516"><b>Sentiment Analysis</b></h3>
+
+<p id="cn-m9-517">In many cases, cyberattacks are driven by opinions and
+ for financial reasons. In other cases, the attacks can be reactions to 
+some social events. Anonymous hackers are one such group that fights for
+ social causes. In a way, you can say that social sentiments drive 
+cyberattacks.</p>
+
+<p id="cn-m9-518">Twitter and other social networking sites are a good 
+dump yard for the users’ sentiments. Several attacks have taken place 
+based on the sentiments that’s poured on social networking sites. A deep
+ analysis of views and sentiments shared on these sites can give 
+insights into the attacks. Performing sentiment analysis of social media
+ posts can help determine the mood of a person.</p>
+
+<h3 id="cn-m9-519"><b>Security Monitoring</b></h3>
+
+<p id="cn-m9-520">On a network, it is critical to monitor security 
+continuously. The administrators must review the event logs and draw 
+analysis out of them. SIEM can complement security monitoring in a great
+ way. Not only can it monitor the security of the systems, but it can 
+also review logs and generate alerts as and when required.</p>
+
+<p id="cn-m9-521">Hackers can delete the logs before exiting a device or
+ a system. This is a standard practice to ensure removing their traces. 
+However, SIEM uses the Write Once Read Many (WORM) functionality, in 
+which the data cannot be modified once it is written.</p>
+
+<h3 id="cn-m9-522"><b>Log Aggregation</b></h3>
+
+<p id="cn-m9-523">Log aggregation is one of the features of SIEM. It can
+ collate logs from different devices on the network, including servers, 
+appliances, and firewalls. The log aggregation implements deduplication 
+technology that does not collate duplicate data.</p>
+
+<p id="cn-m9-524">After installing SIEM, you configure aggregation - 
+collecting events from multiple sources. After that, you configure 
+correlation. The correlation engine performs deduplication - removing 
+duplicate events from various sources.</p>
+
+<p id="cn-m9-525">It is especially important to understand that in SIEM,
+ time synchronization across sources is extremely critical. It must be 
+configured before putting the SIEM appliance on the network.</p>
+
+<h3 id="cn-m9-526"><b>Log Collectors</b></h3>
+
+<p id="cn-m9-527">The main job of SIEM is to collect logs and store them
+ in a central location and further analyze them for security issues. The
+ log collection is done using several methods, such as installing an 
+agent on the target device. These agents are known as log collectors.</p>
+
+<p id="cn-m9-528">The log collectors' main job is to continue to run on 
+the target device, read through the event logs, parse them, and send 
+them to the SIEM server, where an aggregator stores them. The SIEM 
+server analyzes the logs to draw conclusions.</p>
+
+<h3 id="cn-m9-529"><b>Security Orchestration, Automation, Response (SOAR)</b></h3>
+
+<p id="cn-m9-530">SOAR is a combination of tools and technologies that 
+help an organization strengthen its security. As and when there is an 
+incident, the automated processes are designed to handle the incident. 
+It can be configured to perform various tasks, such as data collection, 
+standardization, and analytics, as well as handle security alerts and 
+alarms in an automated manner. Therefore, implementing SOAR helps save 
+the organization several hundred man-hours and remove the limitations of
+ manual intervention. For example, SIEM may generate too many alerts 
+that the security team can handle. SOAR can be integrated to handle this
+ load.</p>
+
+<p id="cn-m9-531">SOAR can help the organization build an in-depth 
+defense posture. For example, with SOAR, you can collect the alerts and 
+alarm data in a central location for further analysis. You can also 
+create custom and complex workflows to strengthen the security posture.</p>
+
+<h3 id="cn-m9-532"><b>Task 1 - Implement SIEM</b></h3>
+
+<p id="cn-m9-533">There are various SIEM products available in the 
+market. Some of them are commercial, free, or open-source. Each product 
+has its capabilities and features that mostly overlap with other 
+products. ManageEngine EventLog Analyzer is one of the SIEM products 
+with several features that can be used for event log management. Some of
+ the features are:</p>
+
+<ul id="cn-m9-534">
+
+<li id="cn-m9-534">Software Information and Event Management</li>
+
+<li id="cn-m9-535">Event log management</li>
+
+<li id="cn-m9-536">Syslog management</li>
+
+<li id="cn-m9-537">Application log monitoring</li>
+
+<li id="cn-m9-538">Server log management</li>
+
+<li id="cn-m9-539">Oracle and SQL database auditing</li>
+
+<li id="cn-m9-540">Real-time event correlation</li>
+
+<li id="cn-m9-541">Real-time event alerting</li>
+
+<li id="cn-m9-542">Network device monitoring</li>
+
+<li id="cn-m9-543">IT compliance reporting</li>
+
+<li id="cn-m9-544">Security log monitoring</li>
+
+<li id="cn-m9-545">Event log monitoring</li>
+
+<li id="cn-m9-546">GDPR compliance reports</li>
+
+</ul>
+
+<p id="cn-m9-547">In this task, you will use ManageEngine EventLog Analyzer.</p>
+
+<h4 id="cn-m9-548"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m9-549">Ensure that the required devices are powered on.</p>
+
+<p id="cn-m9-550">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m9-551">In the <b>Type here to search </b>text box, type the following:</p>
+
+<pre id="cn-m9-552"><code>Windows Defender Firewall
+
+</code></pre>
+
+<p id="cn-m9-553">Press <b>Enter</b>.</p>
+
+<p id="cn-m9-554"></p><figure><img class="cn-img" id="cn-image-m9-c-51" src="SecurityAssessmentTechniques_files/image-m9-c-51.jpg" alt="Figure 3.4 Screenshot of PLABWIN10: Windows Defender Firewall option on the search menu is selected."><figcaption>Figure 3.4 Screenshot of PLABWIN10: Windows Defender Firewall option on the search menu is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-556"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m9-557">In the <b>Windows Defender Firewall </b>window, click the <b>Turn Windows Defender Firewall on or off </b>in the left pane.</p>
+
+<p id="cn-m9-558"></p><figure><img class="cn-img" id="cn-image-m9-c-52" src="SecurityAssessmentTechniques_files/image-m9-c-52.jpg" alt="Figure 3.5 Screenshot of PLABWIN10: Turn Windows Defender Firewall on or off link on the Windows Defender Firewall window is highlighted."><figcaption>Figure
+ 3.5 Screenshot of PLABWIN10: Turn Windows Defender Firewall on or off 
+link on the Windows Defender Firewall window is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-560"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m9-561">Select <b>Turn off Windows Defender Firewall (not recommended) </b>for all the three listed networks - <b>Domain</b>, <b>Private</b>, and <b>Public</b>.</p>
+
+<p id="cn-m9-562">Click <b>OK</b>.</p>
+
+<p id="cn-m9-563"></p><figure><img class="cn-img" id="cn-image-m9-c-53" src="SecurityAssessmentTechniques_files/image-m9-c-53.jpg" alt="Figure 3.6 Screenshot of PLABWIN10: Customize Settings screen is displayed showing the required selections performed and the OK button highlighted."><figcaption>Figure
+ 3.6 Screenshot of PLABWIN10: Customize Settings screen is displayed 
+showing the required selections performed and the OK button highlighted.</figcaption></figure><p></p>
+
+<p id="cn-m9-565">Close <b>Windows Defender Firewall</b>.</p>
+
+<h4 id="cn-m9-566"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m9-567">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m9-568">Close the <b>Server Manager </b>console displayed by default.</p>
+
+<p id="cn-m9-569">Click the Start charm, select <b>Log360</b>, and then select <b>Install Log360 as Service.</b></p>
+
+<p id="cn-m9-570">You may notice a box appear for a moment and then it disappears, this can be ignored.</p>
+
+<p id="cn-m9-571"></p><figure><img class="cn-img" id="cn-image-m9-c-54" src="SecurityAssessmentTechniques_files/image-m9-c-54.jpg" alt="Figure 3.7 Screenshot of PLABWIN10: Install Log360 as Service is highlighted under the Log360 folder."><figcaption>Figure 3.7 Screenshot of PLABWIN10: Install Log360 as Service is highlighted under the Log360 folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-573"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m9-574">Click the Start charm or the magnifying glass icon in the lower left to search the system, input <b>Services </b>and click the result.</p>
+
+<p id="cn-m9-575"></p><figure><img class="cn-img" id="cn-image-m9-c-55" src="SecurityAssessmentTechniques_files/image-m9-c-55.jpg" alt="Figure 3.8 Screenshot of PLABWIN10: Services has been searched for and is highlighted after clicking the start charm or magnifying glass in the lower left."><figcaption>Figure
+ 3.8 Screenshot of PLABWIN10: Services has been searched for and is 
+highlighted after clicking the start charm or magnifying glass in the 
+lower left.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-577"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m9-578">The <b>Services </b>window appears.</p>
+
+<p id="cn-m9-579">Scroll down the services listed to locate <b>ManageEngine Log360.</b></p>
+
+<p id="cn-m9-580">Right click the service and click <b>Start.</b></p>
+
+<p id="cn-m9-581">Another box will appear informing you that the service is starting, please wait for this to complete.</p>
+
+<p id="cn-m9-582"></p><figure><img class="cn-img" id="cn-image-m9-c-56" src="SecurityAssessmentTechniques_files/image-m9-c-56.jpg" alt="Figure 3.9 Screenshot of PLABWIN10: The Services window has appeared and the required service ManageEngine Log360 is highlighted."><figcaption>Figure
+ 3.9 Screenshot of PLABWIN10: The Services window has appeared and the 
+required service ManageEngine Log360 is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-584"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m9-585">The service should now state <b>Running </b>under the Status column.</p>
+
+<p id="cn-m9-586">Minimize the <b>Services </b>window.</p>
+
+<p id="cn-m9-587">Click the Start charm, select <b>Log360</b>, and then select <b>Start Log360</b>.</p>
+
+<p id="cn-m9-588"></p><figure><img class="cn-img" id="cn-image-m9-c-57" src="SecurityAssessmentTechniques_files/image-m9-c-57.jpg" alt="Figure 3.10 Screenshot of PLABDM01: Context menu (that appears on the Start charm) &amp;gt; Log360 &amp;gt; Start Log360 menu-options are selected on the Start menu."><figcaption>Figure
+ 3.10 Screenshot of PLABDM01: Context menu (that appears on the Start 
+charm) &gt; Log360 &gt; Start Log360 menu-options are selected on the 
+Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-590"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m9-591">The <b>User Account Control </b>dialog box may appear. Click <b>Yes </b>if shown.</p>
+
+<p id="cn-m9-592"></p><figure><img class="cn-img" id="cn-image-m9-c-58" src="SecurityAssessmentTechniques_files/image-m9-c-58.jpg" alt="Figure 3.11 Screenshot of PLABDM01: Yes button on the User Account Control dialog box is highlighted."><figcaption>Figure 3.11 Screenshot of PLABDM01: Yes button on the User Account Control dialog box is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-594"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m9-595">The <b>ManageEngine EventLog Analyzer </b>splash screen is displayed, indicating that the eventlog analyzer is setting up.</p>
+
+<p id="cn-m9-596">This might take a while.</p>
+
+<p id="cn-m9-597"></p><figure><img class="cn-img" id="cn-image-m9-c-59" src="SecurityAssessmentTechniques_files/image-m9-c-59.jpg" alt="Figure 3.12 Screenshot of PLABDM01: Setup status of the EventLog Analyzer is listed on the splash screen displayed."><figcaption>Figure 3.12 Screenshot of PLABDM01: Setup status of the EventLog Analyzer is listed on the splash screen displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-599"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m9-600">The <b>Log360 </b>website is displayed. Notice that the username and password are already entered for you. Click <b>LOGIN</b>.</p>
+
+<span class="cn-quote" id="cn-m9-601"><b><i>Note: </i></b><i>If the </i><b><i>Log360 </i></b><i>website is not displayed immediately, click the Start charm and select </i><b><i>Log360 </i></b><i>&gt; </i><b><i>Start Log360 </i></b><i>again.</i></span>
+
+<p id="cn-m9-602"></p><figure><img class="cn-img" id="cn-image-m9-c-60" src="SecurityAssessmentTechniques_files/image-m9-c-60.jpg" alt="Figure 3.13 Screenshot of PLABDM01: Required login credentials are typed-in, and the Login button highlighted on the Log360 login screen."><figcaption>Figure
+ 3.13 Screenshot of PLABDM01: Required login credentials are typed-in, 
+and the Login button highlighted on the Log360 login screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-604"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m9-605">If you are prompted to save a password, click <b>Never</b>.</p>
+
+<p id="cn-m9-606"></p><figure><img class="cn-img" id="cn-image-m9-c-61" src="SecurityAssessmentTechniques_files/image-m9-c-61.jpg" alt="Figure 3.14 Screenshot of PLABDM01: Never button on the Save password dialog box is highlighted."><figcaption>Figure 3.14 Screenshot of PLABDM01: Never button on the Save password dialog box is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-608"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m9-609">The <b>Log360 </b>dashboard is displayed. In the left pane, click <b>EventLog</b>.</p>
+
+<p id="cn-m9-610"></p><figure><img class="cn-img" id="cn-image-m9-c-62" src="SecurityAssessmentTechniques_files/image-m9-c-62.jpg" alt="Figure 3.15 Screenshot of PLABDM01: EventLog Analyzer icon on the menu bar at the left on the Log360 dashboard is highlighted."><figcaption>Figure 3.15 Screenshot of PLABDM01: EventLog Analyzer icon on the menu bar at the left on the Log360 dashboard is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-612"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m9-613">The <b>EventLog Analyzer </b>page is displayed. Notice that the dashboard contains various graphs. In the top pane, click the <b>Settings </b>tab.</p>
+
+<span class="cn-alert" id="cn-m9-614">If you receive an error when 
+accessing the EventLog section, reopen the Services window and click the
+ refresh towards the top of the window as a new service will appear 
+labelled ManageEngine EventLog Analyser followed by the version number. 
+Right click this Service and select Restart.<br><br>Afterward, close the
+ Microsoft Edge browser window with the EventLog Analyser open to then 
+click the Start button, locate and click Start Log360 again, the 
+previous steps detailed can be followed to reach the EventLog Analyzer 
+section again.</span>
+
+<span class="cn-quote" id="cn-m9-616"><b><i>Note: </i></b><i>You can scroll down to view more graphs.</i></span>
+
+<p id="cn-m9-617"></p><figure><img class="cn-img" id="cn-image-m9-c-63" src="SecurityAssessmentTechniques_files/image-m9-c-63.jpg" alt="Figure 3.16 Screenshot of PLABDM01: Settings tab on the EventLog Analyzer screen is highlighted."><figcaption>Figure 3.16 Screenshot of PLABDM01: Settings tab on the EventLog Analyzer screen is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-619"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m9-620">On the <b>Configuration Settings </b>page in the right pane, click the <b>Manage Devices </b>tile.</p>
+
+<p id="cn-m9-621"></p><figure><img class="cn-img" id="cn-image-m9-c-64" src="SecurityAssessmentTechniques_files/image-m9-c-64.jpg" alt="Figure 3.17 Screenshot of PLABDM01: Manage Devices tile on the Configuration Settings page of the EventLog Analyzer screen is highlighted."><figcaption>Figure
+ 3.17 Screenshot of PLABDM01: Manage Devices tile on the Configuration 
+Settings page of the EventLog Analyzer screen is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-623"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m9-624">On the <b>Device Management </b>page, there are already two devices added. To add more devices, click <b>Add Device(s</b>).</p>
+
+<p id="cn-m9-625"></p><figure><img class="cn-img" id="cn-image-m9-c-65" src="SecurityAssessmentTechniques_files/image-m9-c-65.jpg" alt="Figure 3.18 Screenshot of PLABDM01: Add Devices(s) button on the Device Management page is highlighted."><figcaption>Figure 3.18 Screenshot of PLABDM01: Add Devices(s) button on the Device Management page is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-627"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m9-628">On the <b>Add device </b>dialog box, select <b>PLABWIN10 </b>and click <b>Add</b>.</p>
+
+<p id="cn-m9-629"></p><figure><img class="cn-img" id="cn-image-m9-c-66" src="SecurityAssessmentTechniques_files/image-m9-c-66.jpg" alt="Figure 3.19 Screenshot of PLABDM01: Add device dialog box is displayed showing the required device selected and the Add button highlighted."><figcaption>Figure
+ 3.19 Screenshot of PLABDM01: Add device dialog box is displayed showing
+ the required device selected and the Add button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-631"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m9-632">Notice that <b>PLABWIN10 </b>is now added as the device.</p>
+
+<span class="cn-quote" id="cn-m9-633"><b><i>Note: </i></b><i>There could be a slight delay before </i><b><i>PLABWIN10 </i></b><i>device appears on the list.</i></span>
+
+<p id="cn-m9-634"></p><figure><img class="cn-img" id="cn-image-m9-c-67" src="SecurityAssessmentTechniques_files/image-m9-c-67.jpg" alt="Figure 3.20 Screenshot of PLABDM01: All the added devices are listed on the Device Management page."><figcaption>Figure 3.20 Screenshot of PLABDM01: All the added devices are listed on the Device Management page.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-636"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m9-637">Click the <b>Home </b>tab.</p>
+
+<p id="cn-m9-638"></p><figure><img class="cn-img" id="cn-image-m9-c-68" src="SecurityAssessmentTechniques_files/image-m9-c-68.jpg" alt="Figure 3.21 Screenshot of PLABDM01: Home tab on the EventLog Analyzer screen is selected."><figcaption>Figure 3.21 Screenshot of PLABDM01: Home tab on the EventLog Analyzer screen is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-640"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m9-641">On the dashboard in the upper right corner, the <b>All Devices </b>section now lists three devices.</p>
+
+<span class="cn-quote" id="cn-m9-642"><b><i>Note: </i></b><i>The 
+different sections of data is regularly updated. Therefore, you may see a
+ difference in the number of events that in the screenshots.</i></span>
+
+<p id="cn-m9-643"></p><figure><img class="cn-img" id="cn-image-m9-c-69" src="SecurityAssessmentTechniques_files/image-m9-c-69.jpg" alt="Figure 3.22 Screenshot of PLABDM01: Newly added device is now listed on the Top 5 Devices section of the EventLog Analyzer screen."><figcaption>Figure
+ 3.22 Screenshot of PLABDM01: Newly added device is now listed on the 
+Top 5 Devices section of the EventLog Analyzer screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-645"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m9-646">Click on the <b>Reports </b>tab.</p>
+
+<p id="cn-m9-647"></p><figure><img class="cn-img" id="cn-image-m9-c-70" src="SecurityAssessmentTechniques_files/image-m9-c-70.jpg" alt="Figure 3.23 Screenshot of PLABDM01: Reports tab on the EventLog Analyzer screen is highlighted."><figcaption>Figure 3.23 Screenshot of PLABDM01: Reports tab on the EventLog Analyzer screen is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-649"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m9-650">By default, <b>Windows Events - All Events </b>tab is displayed. Notice the several types of event reports available for review.</p>
+
+<p id="cn-m9-651">In the left pane, click <b>Threat Detection</b>.</p>
+
+<p id="cn-m9-652"></p><figure><img class="cn-img" id="cn-image-m9-c-71" src="SecurityAssessmentTechniques_files/image-m9-c-71.jpg" alt="Figure 3.24 Screenshot of PLABDM01: Threat Detection option is listed on the navigation pane at the left on the Reports tab of the EventLog Analyzer screen."><figcaption>Figure
+ 3.24 Screenshot of PLABDM01: Threat Detection option is listed on the 
+navigation pane at the left on the Reports tab of the EventLog Analyzer 
+screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-654"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m9-655">Under <b>Threat Detection</b>, click <b>Event Logging Service Shutdown</b>.</p>
+
+<p id="cn-m9-656"></p><figure><img class="cn-img" id="cn-image-m9-c-72" src="SecurityAssessmentTechniques_files/image-m9-c-72.jpg" alt="Figure 3.25 Screenshot of PLABDM01: Event Logging Service Shutdown option is listed on the navigation pane at the left on the Reports tab of the EventLog Analyzer screen."><figcaption>Figure
+ 3.25 Screenshot of PLABDM01: Event Logging Service Shutdown option is 
+listed on the navigation pane at the left on the Reports tab of the 
+EventLog Analyzer screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-658"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m9-659">The right pane displays one event of <b>Event Logging Service </b>shutdown. There are other reports in the left panel that you can explore in your spare time.</p>
+
+<p id="cn-m9-660"></p><figure><img class="cn-img" id="cn-image-m9-c-73" src="SecurityAssessmentTechniques_files/image-m9-c-73.jpg" alt="Figure 3.26 Screenshot of PLABDM01: Graphical representation of the Event Logging Service Shutdown data is displayed on the Reports tab of the EventLog Analyzer screen."><figcaption>Figure
+ 3.26 Screenshot of PLABDM01: Graphical representation of the Event 
+Logging Service Shutdown data is displayed on the Reports tab of the 
+EventLog Analyzer screen.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m9-662"><b><i>Note: </i></b><i>There might
+ be a slight delay before a report is generated for the Event Logging 
+Service Shutdown. The page can be refreshed to see if a report is 
+available. If you are continuously shown that no data is available, 
+please continue to the following step.</i></span>
+
+<h4 id="cn-m9-663"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m9-664">Click the <b>Home </b>tab.</p>
+
+<p id="cn-m9-665"></p><figure><img class="cn-img" id="cn-image-m9-c-74" src="SecurityAssessmentTechniques_files/image-m9-c-74.jpg" alt="Figure 3.27 Screenshot of PLABDM01: Displaying selecting the Home tab in the Log360 web application."><figcaption>Figure 3.27 Screenshot of PLABDM01: Displaying selecting the Home tab in the Log360 web application.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-667"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m9-668">On the <b>Home </b>tab, select the <b>Security Overview </b>tab.</p>
+
+<p id="cn-m9-669"></p><figure><img class="cn-img" id="cn-image-m9-c-75" src="SecurityAssessmentTechniques_files/image-m9-c-75.jpg" alt="Figure 3.28 Screenshot of PLABDM01: Displaying selecting the Security Overview tab on the Home page."><figcaption>Figure 3.28 Screenshot of PLABDM01: Displaying selecting the Security Overview tab on the Home page.</figcaption></figure><p></p>
+
+<h4 id="cn-m9-671"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m9-672">In the <b>Security Overview </b>tab, the security incidents that have occurred on the network can be investigated.</p>
+
+<span class="cn-quote" id="cn-m9-673"><i>Note: There may not be data available in the different sections for you compared to the following screenshot.</i></span>
+
+<p id="cn-m9-674"></p><figure><img class="cn-img" id="cn-image-m9-c-76" src="SecurityAssessmentTechniques_files/image-m9-c-76.jpg" alt="Figure 3.29 Screenshot of PLABDM01: Displaying the Security Overview tab in the Log 360 SIEM application."><figcaption>Figure 3.29 Screenshot of PLABDM01: Displaying the Security Overview tab in the Log 360 SIEM application.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">89702e5d-d25a-44d4-b0df-b081bb2e2dbd</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m9-679">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m9-680"><b>Review</b></h2>
+
+<p id="cn-m9-681">Well done, you have completed the <b>Security Assessment Techniques </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">596e8e51-0974-4079-a9e4-a8ba2f56dccd</span>
+
+<span class="atom-code hidden">1c6ca9c1-8101-4ed4-8dd8-40d1f08d3e3d</span>
+
+<span class="atom-code hidden">46d64406-19ac-425f-baae-8f8c365eb329</span>
+
+<span class="atom-code hidden">d9814c4f-4bc1-4a36-8783-87c6c927e8a3</span>
+
+<span class="atom-code hidden">fa4b2918-2f42-49d4-b9e7-667ed02f36ba</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m9-691">You completed the following exercises:</p>
+
+<ul id="cn-m9-692">
+
+<li id="cn-m9-692">Exercise 1 - Threat Hunting</li>
+
+<li id="cn-m9-693">Exercise 2 - Studying Vulnerability Scans</li>
+
+<li id="cn-m9-694">Exercise 3 - Exploring Syslog/Security Information and Event Management (SIEM)</li>
+
+</ul>
+
+<p id="cn-m9-695">You should now be able to:</p>
+
+<ul id="cn-m9-696">
+
+<li id="cn-m9-696">Perform Log Reviews</li>
+
+<li id="cn-m9-697">Use Nikto for Web Application Vulnerability Scanning</li>
+
+<li id="cn-m9-698">Perform Vulnerability Scanning using OpenVAS</li>
+
+<li id="cn-m9-699">Use Lynis for System Vulnerability Scanning</li>
+
+<li id="cn-m9-700">Implement SIEM</li>
+
+</ul>
+
+<p id="cn-m9-701">You should now have further knowledge of:</p>
+
+<ul id="cn-m9-702">
+
+<li id="cn-m9-702">Intelligence Fusion</li>
+
+<li id="cn-m9-703">Threat Feeds</li>
+
+<li id="cn-m9-704">Advisories and Bulletins</li>
+
+<li id="cn-m9-705">Maneuver</li>
+
+<li id="cn-m9-706">Configuration Review</li>
+
+<li id="cn-m9-707">Common Vulnerabilities and Exposures (CVE)/Common Vulnerability Scoring System (CVSS)</li>
+
+<li id="cn-m9-708">Application, Web Application, and Network</li>
+
+<li id="cn-m9-709">False Positive</li>
+
+<li id="cn-m9-710">False Negative</li>
+
+<li id="cn-m9-711">Credentialed vs. Non-Credentialed Scans</li>
+
+<li id="cn-m9-712">Intrusive vs. Non-intrusive</li>
+
+<li id="cn-m9-713">Review Reports</li>
+
+<li id="cn-m9-714">Packet Capture</li>
+
+<li id="cn-m9-715">Data Inputs</li>
+
+<li id="cn-m9-716">User Behavior Analysis (UBA)</li>
+
+<li id="cn-m9-717">Sentiment Analysis</li>
+
+<li id="cn-m9-718">Security Monitoring</li>
+
+<li id="cn-m9-719">Log Aggregation</li>
+
+<li id="cn-m9-720">Log Collectors</li>
+
+<li id="cn-m9-721">Security Orchestration, Automation, Response (SOAR)</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m9-725">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

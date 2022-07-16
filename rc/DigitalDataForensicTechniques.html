@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="DigitalDataForensicTechniques_files/print-styles.css" rel="stylesheet">
+    <script src="DigitalDataForensicTechniques_files/jquery.min.js"></script>
+    <script src="DigitalDataForensicTechniques_files/jspdf.js"></script>
+    <script src="DigitalDataForensicTechniques_files/from_html.js"></script>
+    <script src="DigitalDataForensicTechniques_files/addimage.js"></script>
+    <script src="DigitalDataForensicTechniques_files/filesaver.js"></script>
+    <script src="DigitalDataForensicTechniques_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GjTyokym3xA/MLIlL59tv7eNjrY34TwGzOKZ30dPAcAbexOpuAoOltgqSIYHIMDKI3p9B4yTd+8r1kdVtRKWOwWSBY5sRvPMu194kggPOfY=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Digital Data Forensic Techniques</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Data Forensic Techniques</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m29-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Chain of Custody</div>
+
+<div>Legal Hold</div>
+
+<div>Firmware</div>
+
+<div>Hashing</div>
+
+<div>Checksum</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m29-8">Welcome to the <b>Digital Data Forensic Techniques </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m29-12">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m29-13">
+
+<li id="cn-m29-13">Exercise 1 - Data Forensic Techniques</li>
+
+</ul>
+
+<p id="cn-m29-14">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m29-15">
+
+<li id="cn-m29-15">Motive, Opportunity and Means</li>
+
+<li id="cn-m29-16">Documentation/Evidence</li>
+
+<li id="cn-m29-17">Data Acquisition</li>
+
+<li id="cn-m29-18">On-Premises vs. Cloud</li>
+
+<li id="cn-m29-19">Integrity</li>
+
+<li id="cn-m29-20">Preservation</li>
+
+<li id="cn-m29-21">E-Discovery</li>
+
+<li id="cn-m29-22">Recovery</li>
+
+<li id="cn-m29-23">Supporting Non-repudiation</li>
+
+<li id="cn-m29-24">Strategic Intelligence/Counterintelligence Gathering</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m29-26">The following exam objectives are covered in this module:</p>
+
+<p id="cn-m29-27">4.5 Explain the key aspects of digital forensics.</p>
+
+<ul id="cn-m29-28">
+
+<li id="cn-m29-28">Documentation/Evidence</li>
+
+<li id="cn-m29-29">Acquisition</li>
+
+<li id="cn-m29-30">On-premises vs. Cloud</li>
+
+<li id="cn-m29-31">Integrity</li>
+
+<li id="cn-m29-32">Preservation</li>
+
+<li id="cn-m29-33">E-discovery</li>
+
+<li id="cn-m29-34">Data Recovery</li>
+
+<li id="cn-m29-35">Non-repudiation</li>
+
+<li id="cn-m29-36">Strategic Intelligence/ Counterintelligence</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m29-37"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m29-39">It will take approximately <b>30 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">6cde82b4-969e-4ba2-9a1b-b030a82e21d0</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m29-43">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m29-44">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m29-47"><b>Lab Topology</b></h2>
+
+<p id="cn-m29-48">This module contains supporting materials for Security+.</p>
+
+<p id="cn-m29-49"><img class="cn-img" id="cn-image-m29-c-0" src="DigitalDataForensicTechniques_files/image-m29-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<span class="cn-alert" id="cn-m29-50">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="DataForensicTechniques">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m29-52"><b>Exercise 1 - Data Forensic Techniques</b></h2>
+
+<p id="cn-m29-53">The forensic investigation process is a seven-step 
+process that includes identification, preservation, collection, 
+examination, analysis, presentation and decision. Digital evidence has a
+ very short lifetime and must be collected first.</p>
+
+<ol id="cn-m29-54">
+
+</ol>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m29-56">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m29-57">
+
+<li id="cn-m29-57">Motive, Opportunity and Means</li>
+
+<li id="cn-m29-58">Documentation/Evidence</li>
+
+<li id="cn-m29-59">Data Acquisition</li>
+
+<li id="cn-m29-60">On-Premises vs. Cloud</li>
+
+<li id="cn-m29-61">Integrity</li>
+
+<li id="cn-m29-62">Preservation</li>
+
+<li id="cn-m29-63">E-Discovery</li>
+
+<li id="cn-m29-64">Recovery</li>
+
+<li id="cn-m29-65">Supporting Non-repudiation</li>
+
+<li id="cn-m29-66">Strategic Intelligence/Counterintelligence Gathering</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m29-68">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m29-69"><img class="cn-img" id="cn-image-m29-c-1" src="DigitalDataForensicTechniques_files/image-m29-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m29-70"><b>Motive, Opportunity and Means</b></h3>
+
+<h4 id="cn-m29-71"><b><i>Motive</i></b></h4>
+
+<ul id="cn-m29-72">
+
+<li id="cn-m29-72">Who was responsible for the crime? Considering the 
+motive of a crime (why the crime was committed), is a significant piece 
+in figuring out who would participate in such an activity.</li>
+
+<li id="cn-m29-73">Maybe the perpetrator was persuaded by either internal or external conditions.</li>
+
+</ul>
+
+<h4 id="cn-m29-74"><b><i>Opportunity</i></b></h4>
+
+<ul id="cn-m29-75">
+
+<li id="cn-m29-75">Where and when was the crime committed?</li>
+
+<li id="cn-m29-76">Prospects generally arise when certain vulnerabilities or weaknesses are present.</li>
+
+</ul>
+
+<h4 id="cn-m29-77"><b><i>Means</i></b></h4>
+
+<ul id="cn-m29-78">
+
+<li id="cn-m29-78">Refers to the method that was used to commit the 
+crime. In cybersecurity, it may refer to the attack method that was used
+ to compromise the resource.</li>
+
+</ul>
+
+<h3 id="cn-m29-79"><b>Documentation/Evidence</b></h3>
+
+<h4 id="cn-m29-80"><b><i>Legal Hold</i></b></h4>
+
+<p id="cn-m29-81">A legal hold is a process that an organization might 
+use to contain all relevant data when litigation is expected. The legal 
+hold process is usually initiated by a communication from legal counsel 
+to an organization to suspend the normal disposal of records, such as 
+the recycling of tape backups or the archiving or deletion of data.</p>
+
+<h4 id="cn-m29-82"><b><i>Chain of Custody</i></b></h4>
+
+<p id="cn-m29-83">In scenarios where evidence might be used in civil or 
+criminal litigation, an organization needs to establish a chain of 
+custody; otherwise known as a chain of evidence, which documents the 
+location of the evidence from the moment it is collected to the moment 
+it appears in court. This can include the police who collect it, the 
+evidence technicians who process it and the lawyers who use it in court.</p>
+
+<p id="cn-m29-84">Chain of custody has the following information:</p>
+
+<ul id="cn-m29-85">
+
+<li id="cn-m29-85">A data history displays how evidence was written, examined, transported, and stored to be presented in court.</li>
+
+<li id="cn-m29-86">Chain of custody should follow evidence till the end</li>
+
+<li id="cn-m29-87">Copies of data made as required must be tamper-proof</li>
+
+<li id="cn-m29-88">Chain of custody evidence commands that all evidence be categorized with information representing who secured and validated it.</li>
+
+<li id="cn-m29-89">Magnetic disk surfaces ought not to be marked on.</li>
+
+<li id="cn-m29-90">The most common reason for inappropriate evidence 
+collection is the absence of an established incident response team, lack
+ of an established incident response process, badly written policy or a 
+broken chain of custody.</li>
+
+<li id="cn-m29-91">Dead forensics - when the examination is done on static data in a lab</li>
+
+<li id="cn-m29-92">Live forensics - when the examination is done in-field and includes volatile data.</li>
+
+</ul>
+
+<h4 id="cn-m29-93"><b><i>Computer Criminal Behaviour</i></b></h4>
+
+<ul id="cn-m29-94">
+
+<li id="cn-m29-94">Psychological crime scene review (profiling) can also be piloted using the criminal’s MO and signature behaviors.</li>
+
+<li id="cn-m29-95">Profiling offers insight into the attacker's attack 
+pattern and can be used to identify the attacker or at the very least, 
+the tool used for the crime.</li>
+
+<li id="cn-m29-96">Locard’s Exchange principle mentions that the 
+criminal or the attacker leaves some information behind at the crime 
+scene and takes something with them.</li>
+
+</ul>
+
+<h4 id="cn-m29-97"><b><i>Forensic Process Best Practices</i></b></h4>
+
+<ul id="cn-m29-98">
+
+<li id="cn-m29-98">The original image needs to be a bit-level copy, 
+sector by sector, to capture destroyed files, slack spaces and 
+unallocated clusters.</li>
+
+<li id="cn-m29-99">The original image is called the source or the primary image, which must be kept in a library.</li>
+
+<li id="cn-m29-100">The forensic investigator should only work from a copy of the source image called the secondary image.</li>
+
+<li id="cn-m29-101">The images should be timestamped to show when the data was gathered.</li>
+
+<li id="cn-m29-102">Before moving the images to a media location, it is vital to confirm the destination has enough space and is secure.</li>
+
+</ul>
+
+<h3 id="cn-m29-103"><b>Data Acquisition</b></h3>
+
+<p id="cn-m29-104">Based on the type of media, there are various methods an organization can use to retrieve data for forensic analysis purposes.</p>
+
+<ul id="cn-m29-105">
+
+<li id="cn-m29-105"><b>Capture system image </b>- When capturing a 
+system image, an organization will create an exact sector-level 
+duplicate of the media. Typically, the duplicate is created using a hard
+ drive duplicator or software imaging tool that mirrors the block level 
+data.</li>
+
+<li id="cn-m29-106"><b>Network traffic and logs </b>-  As part of 
+network forensics, an organization might observe and analyze computer 
+traffic to detect intrusions and data collection, or as part of the 
+evidence in litigation. An organization might also use network sniffing,
+ recording, acquisition, and monitoring network traffic and event logs 
+to examine a network security incident.</li>
+
+<li id="cn-m29-107"><b>Capture video </b>- When capturing video and/or 
+audio for forensic review, an organization needs to understand how the 
+system records the data (e.g., digital or analog) and the choices 
+available to obtain the data (e.g., CD/DVD writing, USB, etc.)</li>
+
+<li id="cn-m29-108"><b>Record time offset </b>- During the playback of a
+ system image, media or data, an organization needs to understand the 
+time offset of when the information was recorded (e.g., time zone). The 
+time offset is typically logged when capturing the data to ensure that 
+investigators account for the difference when reviewing the information 
+later.</li>
+
+<li id="cn-m29-109"><b>Take hashes </b>- After an image is captured, it 
+is typically verified at critical points throughout the analysis to 
+ensure that the evidence is still in its original state. This 
+verification typically includes using the SHA-1 or MD5 hash functions. 
+The process in which an image is verified with a hash function is called
+ hashing.</li>
+
+<li id="cn-m29-110"><b>Screenshots </b>- In some scenarios, it can be 
+necessary to capture information for forensic analysis using 
+screenshots. Typically, these are still image captures of information on
+ a computer monitor. This is commonly used in less-critical forensic 
+analysis or scenarios when capturing a system image, media, or data is 
+not available.</li>
+
+<li id="cn-m29-111"><b>Witness interviews </b>- Many times during 
+forensic analysis, it is important to interview or depose individuals 
+who might have direct knowledge related to the incident. This can 
+include individuals responsible for the systems or network devices that 
+were compromised or individuals who might have information about the 
+attack.</li>
+
+</ul>
+
+<h4 id="cn-m29-112"><b><i>Order of Volatility</i></b></h4>
+
+<p id="cn-m29-113">The order of volatility is the order in which an 
+organization should collect forensic evidence. Since highly volatile 
+data can be easily lost, the most volatile data should be collected 
+first and the least volatile data should be collected last. For example,
+ an organization might choose the following order; physical memory, 
+virtual memory, disk drives, backups and printouts. This is the order of
+ volatility of the data that needs to be investigated.</p>
+
+<h4 id="cn-m29-114"><b><i>Firmware</i></b></h4>
+
+<p id="cn-m29-115">Firmware is software preserved on a ROM chip. At the 
+system level, it contains the basic commands needed to start a computer.
+ Firmware is also used to provide operating commands in peripheral 
+devices such as printers.</p>
+
+<h4 id="cn-m29-116"><b><i>Snapshots</i></b></h4>
+
+<p id="cn-m29-117">A snapshot is a copy of an application, disk or 
+system. Typically, an organization will use a snapshot to restore a 
+system or disk to a specific time. However, a snapshot is not commonly 
+used as a periodic backup strategy because of the amount of backup time 
+and backup storage required.</p>
+
+<p id="cn-m29-118">Snapshots can be made of a system where a forensic 
+investigation is performed. By creating a snapshot of the system, the 
+original system is preserved.</p>
+
+<h3 id="cn-m29-119"><b>On-Premises vs. Cloud </b></h3>
+
+<p id="cn-m29-120">Forensic data investigation for data situated in the 
+cloud differs significantly from data stored on on-premise 
+infrastructure. Several different dependencies are quired for a forensic
+ investigation. These include the Cloud Service Provider (CSP), which 
+hosts the data. After a cybersecurity incident has occurred, the legal 
+jurisdiction and the laws that govern that specific region need to be 
+considered before the investigation is conducted.</p>
+
+<p id="cn-m29-121">A company can choose where the data must be stored and be careful when selecting it as it might pertain to different data laws.</p>
+
+<p id="cn-m29-122">Maintaining a chain of custody for data stored in the
+ cloud is more challenging than the traditional on-premise storage as 
+the control of the data penultimately lies with the Cloud Service 
+Provider(CSP), which can create its unique challenges.</p>
+
+<h4 id="cn-m29-123"><b><i>Right to Audit Clauses</i></b></h4>
+
+<p id="cn-m29-124">An&nbsp;audit clause&nbsp;is basically an agreement 
+to deliver documents. Usually, it gives a principal the&nbsp;right to 
+"audit" a contractor's books and records, given the contractor's 
+compliance with its obligations within the contract.</p>
+
+<h4 id="cn-m29-125"><b><i>Data Breach Notification Laws</i></b></h4>
+
+<p id="cn-m29-126">HITECH’s (Health Information Technology for Economic 
+and Clinical Health Act of 2009) data breach notification rule is 
+distinct. It is a federal law mandating the notification of affected 
+persons.</p>
+
+<p id="cn-m29-127">Personally identifiable information includes:</p>
+
+<ul id="cn-m29-128">
+
+<li id="cn-m29-128">Social Security number</li>
+
+<li id="cn-m29-129">Driver’s license number</li>
+
+<li id="cn-m29-130">State identification card number</li>
+
+<li id="cn-m29-131">Credit or debit card number</li>
+
+<li id="cn-m29-132">Bank account number with the security code, access code, or password that would permit access to the account</li>
+
+<li id="cn-m29-133">Medical records</li>
+
+<li id="cn-m29-134">Health insurance information</li>
+
+</ul>
+
+<p id="cn-m29-135">Data breach notification laws contain policies 
+relating to the application of these laws. These laws entail entities 
+that have been subjected to a breach to communicate with the individuals
+ whose data was breached and other appropriate parties and inform them 
+about the incident.</p>
+
+<p id="cn-m29-137">These laws contain the manner in which notification 
+needs to occur, the time limit for these notifications, people, agencies
+ and authorities that must be contacted about the breach. It is required
+ that data processors are to notify data controllers within 72 hours of a
+ breach, and the information controllers are required to inform the 
+supervisory data protection authority as soon as possible.</p>
+
+<p id="cn-m29-139">Data breach notification laws also contain exceptions
+ to the notice requirement. For example, under the GDPR, notification of
+ the data breach is dependent on the severity of the breach. Few data 
+breach notification laws do not necessitate notification if it is 
+identified that the breach will not harm the affected parties. In other 
+laws, notification occurs when a threshold is reached.</p>
+
+<h3 id="cn-m29-140"><b>Integrity</b></h3>
+
+<h4 id="cn-m29-141"><b><i>Hashing</i></b></h4>
+
+<p id="cn-m29-142">A hashing algorithm is a mathematical function that 
+maps data of different sizes to a hash of a fixed size. The purpose of a
+ hash function is to be a one-way function, impossible to go back. In 
+reality, the public key used in asymmetric encryption is based on a hash
+ value — the value is calculated from a base input number using a 
+hashing algorithm.</p>
+
+<p id="cn-m29-143">Various cryptographic hashing algorithms can be used to produce a checksum value. A <b>checksum </b>value
+ is a small piece of data derived from the data being protected. The 
+primary purpose of the checksum is to validate the authenticity of the 
+data.</p>
+
+<p id="cn-m29-144"><b>MD5</b></p>
+
+<p id="cn-m29-145">The Message-Digest algorithm 5 (MD5) is one of the 
+two most widely used hashing algorithms. The function takes an input of 
+arbitrary length and produces a message digest that is 128 bits long 
+(i.e., a 128-bit hash value), typically rendered as a 32-digit 
+hexadecimal number. MD5 has been known to cause collisions (i.e., two 
+distinct messages that hash to the same value). However, it can still be
+ used as a checksum to verify data integrity, such as verifying 
+unintentional corruption or determining the partition for a particular 
+key in a partitioned database.</p>
+
+<p id="cn-m29-146"><b>SHA</b></p>
+
+<p id="cn-m29-147">The other one of the two most extensively used 
+hashing algorithms, the Secure Hash Algorithm (SHA), is the common 
+standard used for generating digital signatures. SHA was invented by the
+ NSA. SHA-1 takes an input and the output is a 160 bit hash value. The 
+outcome of SHA-2 is 224, 256, 384 or 512 bits.</p>
+
+<p id="cn-m29-148"><b>HMAC</b></p>
+
+<p id="cn-m29-149">Hash-based message authentication code (HMAC) 
+validates the data integrity and the authentication of a text. Because 
+HMAC uses two passes of hash computation, the algorithm offers better 
+protection against attacks.</p>
+
+<p id="cn-m29-150"><b>RIPEMD</b></p>
+
+<p id="cn-m29-151">European researchers established RACE Integrity 
+Primitives Evaluation Message Digest (RIPEMD); the design is based on 
+the MD5 hashing algorithm. One of the current versions, RIPEMD-160, is 
+an advanced version of RIPEMD. The performance of the algorithm is 
+comparable to SHA. RIPEMD is available in 128, 256 and 320-bit versions.</p>
+
+<h4 id="cn-m29-152"><b><i>Digital Signature</i></b></h4>
+
+<p id="cn-m29-153">The Digital Signature Algorithm (DSA) is considered a
+ standard for digital signatures. The digital signature provides message
+ authentication, integrity and non-repudiation. DSA creates the digital 
+signature by using unique mathematical functions involving two 160-bit 
+numbers. These numbers originate from the message digests (strings of 
+digits created by a one-way hashing formula) and the private key. While 
+the signer’s private key signs messages, the digital signature is 
+verified by the signer’s corresponding public key. DSA uses the public 
+key only for authentication, not for encrypting or decrypting messages.</p>
+
+<h4 id="cn-m29-154"><b><i>Data Provenance&nbsp;</i></b></h4>
+
+<p id="cn-m29-155">Data Provenance denotes records of the inputs, 
+entities, systems, and processes that influence&nbsp;interest data, 
+offering a historical record of the&nbsp;data&nbsp;and its origins.</p>
+
+<h3 id="cn-m29-156"><b>Preservation</b></h3>
+
+<p id="cn-m29-157">After data is captured, it has to be preserved as 
+evidence. While various laws cover the seizure and preservation of data,
+ law enforcement personnel will often perform this in criminal cases, as
+ mandated by a warrant. However, in civil litigation it will typically 
+be an officer within the organization. It is assumed that a company is 
+able to investigate their own equipment without a warrant.</p>
+
+<p id="cn-m29-158">Preservation of the captured data ensures that 
+potentially discoverable information is protected against alteration or 
+deletion, thus hindering the investigation.</p>
+
+<p id="cn-m29-159">When evidence is collected and labeled to preserve the chain of custody, the label should include the following information:</p>
+
+<ul id="cn-m29-160">
+
+<li id="cn-m29-160">General description of the evidence.</li>
+
+<li id="cn-m29-161">Time and date the evidence was collected.</li>
+
+<li id="cn-m29-162">Exact location the evidence was collected from.</li>
+
+<li id="cn-m29-163">Name of the person collecting the evidence.</li>
+
+<li id="cn-m29-164">Relevant circumstances surrounding the collection.</li>
+
+<li id="cn-m29-165">Each person who handles the evidence needs to sign 
+the chain of custody log indicating the time in which they took direct 
+responsibility for the evidence and when they handed it to the next 
+person.</li>
+
+<li id="cn-m29-166">The chain of custody must provide an unbroken 
+sequence of events relating to the evidence from the time it was 
+collected until the trial.</li>
+
+</ul>
+
+<h3 id="cn-m29-167"><b>E-Discovery</b></h3>
+
+<p id="cn-m29-168">Process of producing for a court or external attorney
+ all ESI (Electronically Stored Information) pertinent to a legal 
+proceeding.</p>
+
+<p id="cn-m29-169">The eDiscovery process includes information 
+governance, identification, preservation, collection, processing, 
+review, analysis, production, and presentation activities.</p>
+
+<p id="cn-m29-171"></p><figure><img class="cn-img" id="cn-image-m29-c-2" src="DigitalDataForensicTechniques_files/image-m29-c-2.jpg" alt="Figure 1.1: Shows 8 Step Electronic Discovery Reference Model (EDRM); Identification, Preservation, Collection, Process, Review, Analyze, Production and Presentation."><figcaption>Figure
+ 1.1: Shows 8 Step Electronic Discovery Reference Model (EDRM); 
+Identification, Preservation, Collection, Process, Review, Analyze, 
+Production and Presentation.</figcaption></figure><p></p>
+
+<h3 id="cn-m29-173"><b>Recovery</b></h3>
+
+<p id="cn-m29-174">Many times during a forensic analysis, it may be 
+necessary to recover information that has been intentionally or 
+mistakenly deleted. The investigator is responsible for recovering as 
+much evidence as possible using various tools or methodologies. The 
+types of data recovered can vary depending on the investigation, but 
+examples include chat logs, emails, documents, images or internet 
+history. This data might be recovered from accessible disk space, 
+deleted (or unallocated) space or the operating system’s cache files.</p>
+
+<h3 id="cn-m29-175"><b>Supporting Non-repudiation</b></h3>
+
+<p id="cn-m29-176">Provided only by public key (or asymmetric) 
+cryptosystems, non-repudiation assures the recipient that the message 
+was originated by the sender. It prevents the sender from claiming they 
+did not send the message (also known as repudiating the message).</p>
+
+<h3 id="cn-m29-177"><b>Strategic Intelligence/Counterintelligence Gathering</b></h3>
+
+<p id="cn-m29-178">Strategic intelligence is collecting, processing, 
+analyzing, and disseminating intelligence information for formulating 
+policy and military plans at the international and national policy 
+levels. In the commercial world, this information is used to build 
+qualities that enable leaders to be effective strategists. The 
+intelligence information gathered in counterintelligence is for 
+protecting an organization’s intelligence program against an attacker or
+ the opposition’s intelligence service. The information gathered can be 
+used for forensic analysis, counter-espionage or sabotage.</p>
+
+<h4 id="cn-m29-179"><b><i>Active Logging</i></b></h4>
+
+<p id="cn-m29-180">During counterintelligence gathering, it might be 
+necessary for an organization to maintain active logs of the opposition 
+or attacker's activity.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m29-184">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m29-186"><b>Review</b></h2>
+
+<p id="cn-m29-187">Well done, you have completed the <b>Digital Data Forensic Techniques </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">05184198-dbf6-4580-9a43-44b52785b965</span>
+
+<span class="atom-code hidden">b1f3ca2d-92fa-4f2d-9f66-7c33623f7f7c</span>
+
+<span class="atom-code hidden">59d4cc86-9092-45ac-82b1-fee577a608af</span>
+
+<span class="atom-code hidden">a737de3b-d62e-43f2-b181-263a7d21c249</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m29-196">You completed the following exercises:</p>
+
+<ul id="cn-m29-197">
+
+<li id="cn-m29-197">Exercise 1 - Data Forensic Techniques</li>
+
+</ul>
+
+<p id="cn-m29-198">You should now have further knowledge of:</p>
+
+<ul id="cn-m29-199">
+
+<li id="cn-m29-199">Motive, Opportunity and Means</li>
+
+<li id="cn-m29-200">Documentation/Evidence</li>
+
+<li id="cn-m29-201">Data Acquisition</li>
+
+<li id="cn-m29-202">On-Premises vs. Cloud</li>
+
+<li id="cn-m29-203">Integrity</li>
+
+<li id="cn-m29-204">Preservation</li>
+
+<li id="cn-m29-205">E-Discovery</li>
+
+<li id="cn-m29-206">Recovery</li>
+
+<li id="cn-m29-207">Supporting Non-repudiation</li>
+
+<li id="cn-m29-208">Strategic Intelligence/Counterintelligence Gathering</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m29-212">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

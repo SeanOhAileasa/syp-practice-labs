@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="IncidentResponseTools_files/print-styles.css" rel="stylesheet">
+    <script src="IncidentResponseTools_files/jquery.min.js"></script>
+    <script src="IncidentResponseTools_files/jspdf.js"></script>
+    <script src="IncidentResponseTools_files/from_html.js"></script>
+    <script src="IncidentResponseTools_files/addimage.js"></script>
+    <script src="IncidentResponseTools_files/filesaver.js"></script>
+    <script src="IncidentResponseTools_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="32zfYxkPsONVvdDEDRpbmxA0jjYNcEWWbtxAqmMQYSbBDQZ4zG+gI37oQD5YR/TYbdNuvkOhf6wjAo6bxH6IO1PnyQUyT1+USCP++203w0E=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Incident Response Tools</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Configuring System Logging</li><li>Exercise 2 - Using Tcpdump and Logging</li><li>Exercise 3 - Capturing Packets with Wireshark</li><li>Exercise 4 - Work with Logs in Windows</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m25-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Security</div>
+
+<div>Tcpdump</div>
+
+<div>Wireshark</div>
+
+<div>Logs</div>
+
+<div>Packets</div>
+
+<div>Vulnerability Scanner</div>
+
+<div>Nikto</div>
+
+<div>SIEM</div>
+
+<div>Aggregation</div>
+
+<div>Trends</div>
+
+<div>Alerts</div>
+
+<div>Correlation</div>
+
+<div>Log Retention</div>
+
+<div>Bandwidth Monitors</div>
+
+<div>Netflow</div>
+
+<div>Metadata</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m25-19">Welcome to the <b>Incident Response Tools </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m25-23">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m25-24">
+
+<li id="cn-m25-24">Exercise 1 - Configuring System Logging</li>
+
+<li id="cn-m25-25">Exercise 2 - Using Tcpdump and Logging</li>
+
+<li id="cn-m25-26">Exercise 3 - Capturing Packets with Wireshark</li>
+
+<li id="cn-m25-27">Exercise 4 - Work with Logs in Windows</li>
+
+</ul>
+
+<p id="cn-m25-28">After completing this module, you should be able to:</p>
+
+<ul id="cn-m25-29">
+
+<li id="cn-m25-29">View the Syslog Daemon Configuration</li>
+
+<li id="cn-m25-30">View the Configuration of Logrotate</li>
+
+<li id="cn-m25-31">Check Boot Events in the Log Files</li>
+
+<li id="cn-m25-32">Use Tcpdump</li>
+
+<li id="cn-m25-33">Know the Key Locations for Logging</li>
+
+<li id="cn-m25-34">Capture Traffic Information</li>
+
+<li id="cn-m25-35">Analyze Captured Information</li>
+
+<li id="cn-m25-36">Display Capture Information with Wireshark</li>
+
+<li id="cn-m25-37">View Packet Capture Logs</li>
+
+<li id="cn-m25-38">Access the Event Viewer Logs</li>
+
+<li id="cn-m25-39">Enable Windows Defender Firewall Logs</li>
+
+</ul>
+
+<p id="cn-m25-40">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m25-41">
+
+<li id="cn-m25-41">NXLog</li>
+
+<li id="cn-m25-42">Syslog-ng</li>
+
+<li id="cn-m25-43">Log Retention</li>
+
+<li id="cn-m25-44">Bandwidth Monitors</li>
+
+<li id="cn-m25-45">Netflow Protocol</li>
+
+<li id="cn-m25-46">Metadata Properties</li>
+
+<li id="cn-m25-47">Security Information and Event Management (SIEM)</li>
+
+<li id="cn-m25-48">Log Aggregation</li>
+
+<li id="cn-m25-49">Event Trends</li>
+
+<li id="cn-m25-50">Alerts</li>
+
+<li id="cn-m25-51">Event Correlation</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m25-53">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m25-54">4.3 Given an incident, utilize appropriate data sources to support an investigation.</p>
+
+<ul id="cn-m25-55">
+
+<li id="cn-m25-55">Vulnerability Scan Output</li>
+
+<li id="cn-m25-56">SIEM Dashboards</li>
+
+<li id="cn-m25-57">Log Files</li>
+
+<li id="cn-m25-58">Syslog/Rsyslog/Syslog-ng</li>
+
+<li id="cn-m25-59">Journalctl</li>
+
+<li id="cn-m25-60">Nxlog</li>
+
+<li id="cn-m25-61">Retention</li>
+
+<li id="cn-m25-62">Bandwidth Monitors</li>
+
+<li id="cn-m25-63">Metadata</li>
+
+<li id="cn-m25-64">Netflow/sflow</li>
+
+<li id="cn-m25-65">Protocol Analyzer Output</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m25-66"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m25-68">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m25-72">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m25-73">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m25-75"><b>Lab Topology</b></h2>
+
+<p id="cn-m25-76">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m25-77"><img class="cn-img" id="cn-image-m25-c-0" src="IncidentResponseTools_files/image-m25-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m25-78">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m25-79">
+
+<li id="cn-m25-79"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m25-80"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m25-81"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m25-82"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m25-83">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="ConfiguringSystemLogging">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m25-84"><b>Exercise 1 - Configuring System Logging</b></h2>
+
+<p id="cn-m25-85">Syslog is short for System Logging Protocol. Syslog is
+ a protocol responsible for sending events from one or more systems to a
+ single server, known as Syslog Server.</p>
+
+<p id="cn-m25-86">There are typically three key components:</p>
+
+<ul id="cn-m25-87">
+
+<li id="cn-m25-87"><b>Syslog Forwarder</b>: This is an agent that 
+collects the information from various devices and servers on the network
+ and forwards it to the Collector.</li>
+
+<li id="cn-m25-88"><b>Syslog Collector</b>: Receives the information 
+from the Forwarder. The information can be received on the UDP or TCP 
+ports, depending on which ones are configured. The administrator can 
+filter the required information on a need basis.</li>
+
+<li id="cn-m25-89"><b>Syslog Analysis</b>: Can be performed on the 
+collected information. There can be thousands of events generated from a
+ single device or system on the network. The administrator can filter 
+the events and figure out the ones that are worth paying attention to.</li>
+
+</ul>
+
+<p id="cn-m25-90">Syslog daemon is a program used for administering and 
+managing a system’s security and analyze debugging messages. All the 
+hardware devices run their syslog daemons. The output from all the 
+devices is logged into a central repository for further usage.</p>
+
+<p id="cn-m25-91">After completing this exercise, you should be able to review the syslog daemon configuration on a Linux system.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m25-93">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m25-94">
+
+<li id="cn-m25-94">View the Syslog Daemon Configuration</li>
+
+<li id="cn-m25-95">View the Configuration of Logrotate</li>
+
+<li id="cn-m25-96">Check Boot Events in the Log Files</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m25-98">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m25-99">
+
+<li id="cn-m25-99"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m25-100"><img class="cn-img" id="cn-image-m25-c-1" src="IncidentResponseTools_files/image-m25-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m25-101"><b>Task 1 - View the Syslog Daemon Configuration</b></h3>
+
+<p id="cn-m25-102">A system needs to maintain log files. The core intent
+ of maintaining log files is to track messages about various system 
+components, such as the kernel, services, CPU, memory, security, and 
+applications.</p>
+
+<p id="cn-m25-103">Different log files can contain a different set of 
+messages, which can be of different varieties, like error or 
+information. The system administrator can use these logs to manage the 
+system.</p>
+
+<p id="cn-m25-104">In this task, you will configure the syslog (rsyslog) daemon.</p>
+
+<h4 id="cn-m25-105"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-106">Connect to <b>PLABKALI </b>and sign in with the following credentials:</p>
+
+<pre id="cn-m25-107"><code>Username: root
+
+Password: <span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m25-109"></p><figure><img class="cn-img" id="cn-image-m25-c-2" src="IncidentResponseTools_files/image-m25-c-2.jpg" alt="Figure 1.1 Screenshot of PLABKALI"><figcaption>Figure 1.1 Screenshot of PLABKALI: Displaying logging into the Kali device.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-110"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-111">On the desktop, right-click and select <b>Open Terminal Here</b>.</p>
+
+<p id="cn-m25-112"></p><figure><img class="cn-img" id="cn-image-m25-c-3" src="IncidentResponseTools_files/image-m25-c-3.jpg" alt="Figure 1.2 Screenshot of PLABKALI"><figcaption>Figure 1.2 Screenshot of PLABKALI: Selecting the Open Terminal Here option from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-113"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-114">A daemon called&nbsp;<b>rsyslogd </b>can control the log files. The log messages maintained by rsyslogd&nbsp;are listed in the <b>/etc/rsyslog.conf&nbsp;</b>configuration file. It is important to note that this file contains the following sections:</p>
+
+<ul id="cn-m25-115">
+
+<li id="cn-m25-115"><b>Modules </b>- contains various configuration directives that are loaded when the module is loaded.</li>
+
+<li id="cn-m25-116"><b>Global directives </b>- apply to the rsyslogd daemon and start with $. One line contains one global directive.</li>
+
+<li id="cn-m25-117"><b>Rules </b>- defines the co-operation of selector 
+and action. A selector filters messages based on 
+facility&nbsp;and&nbsp;priority. An action defines what needs to be done
+ with the filtered messages.</li>
+
+<li id="cn-m25-118"><b>Templates </b>- specify the format a user may need. You can also use them for dynamic file name generation.</li>
+
+<li id="cn-m25-119"><b>Filter conditions </b>- can use one of the three 
+types of filter conditions: RainerScript-based filters, severity and 
+facility-based selectors, and property-based filters</li>
+
+<li id="cn-m25-120"><b>Output channels </b>- defines the type of output a user wants</li>
+
+</ul>
+
+<p id="cn-m25-121">Each line contains three directives:</p>
+
+<ul id="cn-m25-122">
+
+<li id="cn-m25-122"><b>Facility </b>- is the message creator, for example, security or kernel</li>
+
+<li id="cn-m25-123"><b>Level </b>- is the severity level</li>
+
+<li id="cn-m25-124"><b>Action </b>- is the destination for the logged messages</li>
+
+</ul>
+
+<p id="cn-m25-125">To view the <b>/etc/rsyslog.conf </b>file, type the following command:</p>
+
+<pre id="cn-m25-126"><code>cat /etc/rsyslog.conf
+
+</code></pre>
+
+<p id="cn-m25-127">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-128"></p><figure><img class="cn-img" id="cn-image-m25-c-4" src="IncidentResponseTools_files/image-m25-c-4.jpg" alt="Figure 1.3 Screenshot of PLABKALI"><figcaption>Figure 1.3 Screenshot of PLABKALI: Viewing the /etc/rsyslog.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-130"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-131">The <b>/etc/rsyslog.conf </b>file is now displayed.</p>
+
+<p id="cn-m25-132"></p><figure><img class="cn-img" id="cn-image-m25-c-5" src="IncidentResponseTools_files/image-m25-c-5.jpg" alt="Figure 1.4 Screenshot of PLABKALI"><figcaption>Figure 1.4 Screenshot of PLABKALI: Viewing the contents of the /etc/rsyslog.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-134"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-135">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-136"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-137">To view the loaded modules, type the following command:</p>
+
+<pre id="cn-m25-138"><code>grep ModLoad /etc/rsyslog.conf
+
+</code></pre>
+
+<p id="cn-m25-139">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-140">Notice that no lines contain the word <b>ModLoad</b>. Therefore, no response is returned.</p>
+
+<p id="cn-m25-141"></p><figure><img class="cn-img" id="cn-image-m25-c-6" src="IncidentResponseTools_files/image-m25-c-6.jpg" alt="Figure 1.5 Screenshot of PLABKALI"><figcaption>Figure 1.5 Screenshot of PLABKALI: Viewing the loaded modules.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-142"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-143">You can also check for global directives. To check for a global directive marked with $, type the following command:</p>
+
+<pre id="cn-m25-144"><code>cat /etc/rsyslog.conf
+
+</code></pre>
+
+<p id="cn-m25-145">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-146">Scroll to the <b>Global Directives </b>section. Note that there are multiple global directives.</p>
+
+<span class="cn-quote" id="cn-m25-147"><b><i>Note</i></b><i>: You can similarly look for Rules etc. in this file.</i></span>
+
+<p id="cn-m25-148"></p><figure><img class="cn-img" id="cn-image-m25-c-7" src="IncidentResponseTools_files/image-m25-c-7.jpg" alt="Figure 1.6 Screenshot of PLABKALI"><figcaption>Figure 1.6 Screenshot of PLABKALI: Viewing the /etc/rsyslog.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-150"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-151">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-152"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-153">The <b>syslog </b>service comprises of two key processes: <b>rsyslogd </b>and <b>klogd</b>. The <b>rsyslogd </b>process is responsible for logging events from user processes. The <b>klogd </b>process is used for logging events from the kernel.</p>
+
+<p id="cn-m25-154">To make sure both the processes are running, type the following command:</p>
+
+<pre id="cn-m25-155"><code>ps ax | egrep -i "(syslogd|klogd)"
+
+</code></pre>
+
+<p id="cn-m25-156">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-157">You will see the status of both the processes.</p>
+
+<p id="cn-m25-158"></p><figure><img class="cn-img" id="cn-image-m25-c-8" src="IncidentResponseTools_files/image-m25-c-8.jpg" alt="Figure 1.7 Screenshot of PLABKALI"><figcaption>Figure 1.7 Screenshot of PLABKALI: Verifying the status of the rsyslogd and klogd processes.</figcaption></figure><p></p>
+
+<h3 id="cn-m25-159"><b>Task 2 - View the Configuration of Logrotate</b></h3>
+
+<p id="cn-m25-160">The log files are by default contained in the <b>/var/log </b>directory. This directory contains various types of logs, such as <b>boot.log, cron</b>, and <b>yum.log</b>. The logs can grow to massive sizes and may become difficult to manage.</p>
+
+<p id="cn-m25-161">To resolve this problem, the logrotate daemon is 
+used. The logrotate daemon suffixes the current message file with 
+today's date, and a new log file is created the next day.</p>
+
+<p id="cn-m25-162">In this task, you will carry out the configuration of logrotate in Linux.</p>
+
+<h4 id="cn-m25-163"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-164">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-165"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-166">To view the log files in the <b>/var/log </b>directory, type the following command:</p>
+
+<pre id="cn-m25-167"><code>ls -l /var/log
+
+</code></pre>
+
+<p id="cn-m25-168">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-169"></p><figure><img class="cn-img" id="cn-image-m25-c-9" src="IncidentResponseTools_files/image-m25-c-9.jpg" alt="Figure 1.8 Screenshot of PLABKALI"><figcaption>Figure 1.8 Screenshot of PLABKALI: Viewing the log files in the /var/log directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-171"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-172">Note that some files are marked with the older dates.</p>
+
+<p id="cn-m25-173"></p><figure><img class="cn-img" id="cn-image-m25-c-10" src="IncidentResponseTools_files/image-m25-c-10.jpg" alt="Figure 1.9 Screenshot of PLABKALI"><figcaption>Figure 1.9 Screenshot of PLABKALI: Viewing the log files with the older dates.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-175"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-176">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-177"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-178">The <b>logrotate </b>utility uses the configuration defined in the <b>/etc/logrotate.conf </b>file. To view this file, type the following command:</p>
+
+<pre id="cn-m25-179"><code>cat /etc/logrotate.conf
+
+</code></pre>
+
+<p id="cn-m25-180">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-181"></p><figure><img class="cn-img" id="cn-image-m25-c-11" src="IncidentResponseTools_files/image-m25-c-11.jpg" alt="Figure 1.10 Screenshot of PLABKALI"><figcaption>Figure 1.10 Screenshot of PLABKALI: Viewing the /etc/logrotate.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-183"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-184">Note that the <b>/etc/logrotate.conf </b>file contains a few key parameters, such as:</p>
+
+<ul id="cn-m25-185">
+
+<li id="cn-m25-185">When to create</li>
+
+<li id="cn-m25-186">What to do after rotating old log files</li>
+
+<li id="cn-m25-187">The naming convention for the rotated log files</li>
+
+</ul>
+
+<p id="cn-m25-189"></p><figure><img class="cn-img" id="cn-image-m25-c-12" src="IncidentResponseTools_files/image-m25-c-12.jpg" alt="Figure 1.11 Screenshot of PLABKALI"><figcaption>Figure 1.11 Screenshot of PLABKALI: Viewing the /etc/logrotate.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-191"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-192">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-193"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-194">The <b>logrotate </b>file uses two key files:</p>
+
+<ul id="cn-m25-195">
+
+<li id="cn-m25-195"><b>/usr/sbin/logrotate&nbsp;</b>- This is the logrotate command.</li>
+
+<li id="cn-m25-196"><b>/etc/cron.daily/logrotate </b>- This is a shell script that executes the logrotate command daily.</li>
+
+</ul>
+
+<p id="cn-m25-197">To view the <b>/etc/cron.daily/logrotate </b>shell script, type the following command:</p>
+
+<pre id="cn-m25-198"><code>cat /etc/cron.daily/logrotate
+
+</code></pre>
+
+<p id="cn-m25-199">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-200"></p><figure><img class="cn-img" id="cn-image-m25-c-13" src="IncidentResponseTools_files/image-m25-c-13.jpg" alt="Figure 1.12 Screenshot of PLABKALI"><figcaption>Figure 1.12 Screenshot of PLABKALI: Viewing the /etc/cron.daily/logrotate shell script.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-202"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-203">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-204"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-205">The <b>/etc/logrotate.d </b>file contains the log rotation information for the packages. This means that when you install a package in <b>Linux</b>, the log rotation information will be collected in this directory.</p>
+
+<p id="cn-m25-206">For example, you can view the log rotation information on the <b>samba </b>package.</p>
+
+<p id="cn-m25-207">To view the log rotation information for the <b>samba </b>package, type the following command:</p>
+
+<pre id="cn-m25-208"><code>cat /etc/logrotate.d/samba
+
+</code></pre>
+
+<p id="cn-m25-209">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-210"></p><figure><img class="cn-img" id="cn-image-m25-c-14" src="IncidentResponseTools_files/image-m25-c-14.jpg" alt="Figure 1.13 Screenshot of PLABKALI"><figcaption>Figure 1.13 Screenshot of PLABKALI: Viewing the log rotation information for the sumba package.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-211"><b><i>Note: </i></b><i>Viewing 
+the Samba package's log rotation configuration file gives an 
+administrator an overview of the specific activity that will be logged 
+for the specific package. This file can be modified depending on the 
+specific logging requirements for the package.</i></span>
+
+<h4 id="cn-m25-212"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-213">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-214"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-215">When you run the logrotate command, you can write the status with the help of the <b>-s </b>parameter.</p>
+
+<p id="cn-m25-216">To run the logrotate command, type the following command:</p>
+
+<pre id="cn-m25-217"><code>logrotate -s /var/log/logstatus /etc/logrotate.conf
+
+</code></pre>
+
+<p id="cn-m25-218">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-219">Logrotate messages are written to the <b>/var/log/logstatus </b>file.
+ Whenever you need log rotation for specific files, you will need to 
+prepare the logrotate configuration and manually run the logrotate 
+command.</p>
+
+<p id="cn-m25-220"></p><figure><img class="cn-img" id="cn-image-m25-c-15" src="IncidentResponseTools_files/image-m25-c-15.jpg" alt="Figure 1.14 Screenshot of PLABKALI"><figcaption>Figure 1.14 Screenshot of PLABKALI: Executing the logrotate command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-222"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-223">You can also add customized messages into a system log using the <b>logger </b>utility. To add a custom message, type the following command:</p>
+
+<pre id="cn-m25-224"><code>logger -i -p mail.err "Error Message"
+
+</code></pre>
+
+<p id="cn-m25-225">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-226">This will log "<b>Error Message</b>" to&nbsp;the <b>/var/log/mail.err&nbsp;</b>file with the process ID, user account, and the time stamp for the error message.</p>
+
+<span class="cn-quote" id="cn-m25-227"><b><i>Note</i></b><i>: You can use the </i><b><i>man logger </i></b><i>command to get more help on this command.</i></span>
+
+<p id="cn-m25-228"></p><figure><img class="cn-img" id="cn-image-m25-c-16" src="IncidentResponseTools_files/image-m25-c-16.jpg" alt="Figure 1.15 Screenshot of PLABKALI"><figcaption>Figure 1.15 Screenshot of PLABKALI: Enabling the logging of Error Messages to the /var/log/mail.err&nbsp;file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-230"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m25-231">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-232"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-233">To log the system reboot message, type the following command:</p>
+
+<pre id="cn-m25-234"><code>logger System reboot
+
+</code></pre>
+
+<p id="cn-m25-235">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-237"></p><figure><img class="cn-img" id="cn-image-m25-c-17" src="IncidentResponseTools_files/image-m25-c-17.jpg" alt="Figure 1.16 Screenshot of PLABKALI"><figcaption>Figure 1.16 Screenshot of PLABKALI: Logging the system reboot messages.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-239"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m25-240">The syslog command is now replaced with the journal command, which stores similar information to <b>syslog</b>.</p>
+
+<p id="cn-m25-241">The <b>/etc/systemd/journald.conf </b>file contains the configuration settings for <b>journald</b>. To view the <b>journald </b>configuration file, type the following command:</p>
+
+<pre id="cn-m25-242"><code>cat /etc/systemd/journald.conf
+
+</code></pre>
+
+<p id="cn-m25-243">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-244"></p><figure><img class="cn-img" id="cn-image-m25-c-18" src="IncidentResponseTools_files/image-m25-c-18.jpg" alt="Figure 1.17 Screenshot of PLABKALI"><figcaption>Figure 1.17 Screenshot of PLABKALI: Viewing the contents of the /etc/systemd/journald.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-246"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m25-247">You can run the journalctl command to get messages from the <b>/var/log/ </b>directory. By default, the journalctl command provides unfiltered messages, but you can use various filters to filter messages.</p>
+
+<p id="cn-m25-248">To run <b>journalctl</b>, type the following command:</p>
+
+<pre id="cn-m25-249"><code>journalctl
+
+</code></pre>
+
+<p id="cn-m25-250">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-251"><b><i>Note: </i></b><i>Keep pressing </i><b><i>Enter </i></b><i>to display subsequent logs. </i></span>
+
+<p id="cn-m25-252"></p><figure><img class="cn-img" id="cn-image-m25-c-19" src="IncidentResponseTools_files/image-m25-c-19.jpg" alt="Figure 1.18 Screenshot of PLABKALI"><figcaption>Figure 1.18 Screenshot of PLABKALI: Executing the journalctl command to view the logs.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-253"><b><i>Note: </i></b><i>The 
+journalctl command is used on a Linux system to display the collected 
+system logs. These logs can be used to review the events that occurred 
+on the system.</i></span>
+
+<h4 id="cn-m25-254"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m25-255">Press the following to quit the display and reach the command prompt:</p>
+
+<pre id="cn-m25-256"><code>q
+
+</code></pre>
+
+<p id="cn-m25-257"></p><figure><img class="cn-img" id="cn-image-m25-c-20" src="IncidentResponseTools_files/image-m25-c-20.jpg" alt="Figure 1.19 Screenshot of PLABKALI"><figcaption>Figure 1.19 Screenshot of PLABKALI: Quitting the journalctl command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-259"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m25-260">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-261"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-262">To view the boot message logs, type the following command:</p>
+
+<pre id="cn-m25-263"><code>journalctl -b
+
+</code></pre>
+
+<p id="cn-m25-264">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-265"></p><figure><img class="cn-img" id="cn-image-m25-c-21" src="IncidentResponseTools_files/image-m25-c-21.jpg" alt="Figure 1.20 Screenshot of PLABKALI"><figcaption>Figure 1.20 Screenshot of PLABKALI: Displaying the boot messages in the logs using the journalctl command.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-266"><b><i>Note: </i></b><i>Keep pressing </i><b><i>Enter </i></b><i>to view subsequent logs. </i></span>
+
+<h4 id="cn-m25-267"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m25-268">Press the following to quit the display and reach the command prompt:</p>
+
+<pre id="cn-m25-269"><code>q
+
+</code></pre>
+
+<p id="cn-m25-270"></p><figure><img class="cn-img" id="cn-image-m25-c-22" src="IncidentResponseTools_files/image-m25-c-22.jpg" alt="Figure 1.21 Screenshot of PLABKALI"><figcaption>Figure 1.21 Screenshot of PLABKALI: Quitting the journalctl command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-271"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m25-272">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-273"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-274">Now, let's view the logs filtered based on priority. To do that, type the following command:</p>
+
+<pre id="cn-m25-275"><code>journalctl -p crit
+
+</code></pre>
+
+<p id="cn-m25-276">Press <b>Enter</b>. The <b>-p crit </b>parameter will filter the logs based on the critical priority.</p>
+
+<p id="cn-m25-277">The logs are filtered based on the critical priority. Note that there are no critical entries.</p>
+
+<p id="cn-m25-278">Press the following to quit the display and reach the command prompt:</p>
+
+<pre id="cn-m25-279"><code>q
+
+</code></pre>
+
+<p id="cn-m25-280"></p><figure><img class="cn-img" id="cn-image-m25-c-23" src="IncidentResponseTools_files/image-m25-c-23.jpg" alt="Figure 1.22 Screenshot of PLABKALI"><figcaption>Figure 1.22 Screenshot of PLABKALI: Showing the logs based on the critical priority.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-281"><b><i>Note:  </i></b><i>The </i><b><i>journalctl </i></b><i>command
+ with the specific parameters displays critical events that have 
+occurred on the system and can be used by an administrator to remediate 
+any issues.</i></span>
+
+<h4 id="cn-m25-282"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m25-283">To view logs by timestamp, type the following command:</p>
+
+<pre id="cn-m25-284"><code>journalctl --since=2020-05-05
+
+</code></pre>
+
+<p id="cn-m25-285">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-286">Keep pressing <b>Enter </b>to display subsequent logs since <b>May 5th, 2020</b>.</p>
+
+<p id="cn-m25-287"></p><figure><img class="cn-img" id="cn-image-m25-c-24" src="IncidentResponseTools_files/image-m25-c-24.jpg" alt="Figure 1.23 Screenshot of PLABKALI"><figcaption>Figure 1.23 Screenshot of PLABKALI: Showing the logs from a specific period.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-288"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m25-289">Press the following to quit the display and reach the command prompt:</p>
+
+<pre id="cn-m25-290"><code>q
+
+</code></pre>
+
+<p id="cn-m25-291"></p><figure><img class="cn-img" id="cn-image-m25-c-25" src="IncidentResponseTools_files/image-m25-c-25.jpg" alt="Figure 1.24 Screenshot of PLABKALI"><figcaption>Figure 1.24 Screenshot of PLABKALI: Quitting the journalctl command.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-292"><b><i>Note: </i></b><i>The log 
+files for the specific start date are displayed. An administrator can 
+display log files for a specific time period for investigation purposes </i></span>
+
+<h3 id="cn-m25-293"><b>Task 3 - Check Boot Events in the Log Files</b></h3>
+
+<p id="cn-m25-294">Just like a Windows system, a Linux system also generates log files, which are stored in the <b>/var/log/ </b>directory. You will find several subdirectories and log files when you navigate to the /var/log directory.</p>
+
+<p id="cn-m25-295">It is important to note that several of the 
+below-listed files and subdirectories may or may not be present in your 
+Linux system. This is because these log files are dependent on the 
+services and applications being used.</p>
+
+<p id="cn-m25-296">The key subdirectories and files in the <b>/var/log/ </b>directory are:</p>
+
+<ul id="cn-m25-297">
+
+<li id="cn-m25-297"><b>/var/log/messages</b>: general log messages</li>
+
+<li id="cn-m25-298"><b>/var/log/boot</b>: system boot log messages</li>
+
+<li id="cn-m25-299"><b>/var/log/debug</b>: debugging log messages</li>
+
+<li id="cn-m25-300"><b>/var/log/auth.log</b>: authentication logs messages</li>
+
+<li id="cn-m25-301"><b>/var/log/daemon.log</b>: services messages</li>
+
+<li id="cn-m25-302"><b>/var/log/dmesg</b>: Linux kernel ring buffer log messages</li>
+
+<li id="cn-m25-303"><b>/var/log/dpkg.log</b>: binary package log</li>
+
+<li id="cn-m25-304"><b>/var/log/faillog</b>: failed login messages</li>
+
+<li id="cn-m25-305"><b>/var/log/kern.log</b>: kernel messages</li>
+
+<li id="cn-m25-306"><b>/var/log/lpr.log</b>: printer messages</li>
+
+<li id="cn-m25-307"><b>/var/log/mail</b>.*: messaging server messages</li>
+
+<li id="cn-m25-308"><b>/var/log/mysql</b>.*: MySQL server messages</li>
+
+<li id="cn-m25-309"><b>/var/log/user.log</b>: userlevel logs messages</li>
+
+<li id="cn-m25-310"><b>/var/log/xorg.0.log</b>: X.org messages</li>
+
+<li id="cn-m25-311"><b>/var/log/apache2</b>/*: Apache Webserver messages</li>
+
+<li id="cn-m25-312"><b>/var/log/lighttpd</b>/*: Lighttpd Webserver messages</li>
+
+<li id="cn-m25-313"><b>/var/log/fsck</b>/*: fsck messages</li>
+
+<li id="cn-m25-314"><b>/var/log/apport.log</b>: application crash messages</li>
+
+</ul>
+
+<p id="cn-m25-315">It is important to note that all directories and 
+files may not exist in every Linux system. Several of them are 
+application-specific directories and files. It also depends on the 
+applications and services that are running on the system. For example, 
+this directory can contain the logs for the following:</p>
+
+<ul id="cn-m25-316">
+
+<li id="cn-m25-316">Network</li>
+
+<li id="cn-m25-317">System</li>
+
+<li id="cn-m25-318">Application</li>
+
+<li id="cn-m25-319">Security</li>
+
+<li id="cn-m25-320">Web</li>
+
+<li id="cn-m25-321">DNS</li>
+
+<li id="cn-m25-322">Authentication</li>
+
+</ul>
+
+<p id="cn-m25-323">Just like <b>/var/log </b>directory in Linux, Windows
+ tracks all logs using the Event Manager application. However, each 
+application may generate its own logs. For example, the IIS log files 
+are contained in the <b>%SystemDrive%\inetpub\logs\LogFiles </b>directory.  The <b>SystemDrive </b>variable is the name of the drive where the operating system is installed.</p>
+
+<p id="cn-m25-324">In this task, you will view the boot events.</p>
+
+<h4 id="cn-m25-325"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-326">Ensure you are connected to the <b>PLABKALI </b>device.</p>
+
+<p id="cn-m25-327">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-328"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-329">To view the boot events, type the following command:</p>
+
+<pre id="cn-m25-330"><code>journalctl -b
+
+</code></pre>
+
+<p id="cn-m25-331">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-332"></p><figure><img class="cn-img" id="cn-image-m25-c-26" src="IncidentResponseTools_files/image-m25-c-26.jpg" alt="Figure 1.25 Screenshot of PLABKALI"><figcaption>Figure 1.25 Screenshot of PLABKALI: Viewing the boot events.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-333"><b><i>Note: </i></b><i>The </i><b><i>journalctl -b </i></b><i>command
+ displays the log files collected for all boot events on the system. 
+This can be used by an administrator to identify possible security 
+events.</i></span>
+
+<h4 id="cn-m25-334"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-335">The output of the journalctl command is displayed.</p>
+
+<p id="cn-m25-336">Press the following to quit the display and to reach the command prompt:</p>
+
+<pre id="cn-m25-337"><code>q
+
+</code></pre>
+
+<p id="cn-m25-338"></p><figure><img class="cn-img" id="cn-image-m25-c-27" src="IncidentResponseTools_files/image-m25-c-27.jpg" alt="Figure 1.26 Screenshot of PLABKALI"><figcaption>Figure 1.26 Screenshot of PLABKALI: Showing the output of the journalctl command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-339"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-340">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-341"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-342">To view the details that were logged for all the boot events, type the following command:</p>
+
+<pre id="cn-m25-343"><code>journalctl --list-boots
+
+</code></pre>
+
+<p id="cn-m25-344">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-345"><b><i>Note: </i></b><i>The output of this command may differ in your lab environment.</i></span>
+
+<p id="cn-m25-346"></p><figure><img class="cn-img" id="cn-image-m25-c-28" src="IncidentResponseTools_files/image-m25-c-28.jpg" alt="Figure 1.27 Screenshot of PLABKALI"><figcaption>Figure 1.27 Screenshot of PLABKALI: Viewing the details that were logged during a previous boot.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-347"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-348">To view the details of a specific boot log with the 
+journalctl --list boots command, highlight the first line and 
+right-click. Select <b>Copy Selection</b></p>
+
+<p id="cn-m25-349"></p><figure><img class="cn-img" id="cn-image-m25-c-29" src="IncidentResponseTools_files/image-m25-c-29.jpg" alt="Figure 1.28 Screenshot of PLABKALI"><figcaption>Figure 1.28 Screenshot of PLABKALI: Displaying selecting the first boot event.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-350"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-351">Press the following to quit the display and return to the command prompt:</p>
+
+<pre id="cn-m25-352"><code>q
+
+</code></pre>
+
+<p id="cn-m25-353"></p><figure><img class="cn-img" id="cn-image-m25-c-30" src="IncidentResponseTools_files/image-m25-c-30.jpg" alt="Figure 1.29 Screenshot of PLABKALI"><figcaption>Figure 1.29 Screenshot of PLABKALI: Displaying returning to the command prompt.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-354"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-355">To view the log file for the selected event type the following:</p>
+
+<pre id="cn-m25-356"><code>journalctl --boot=
+
+</code></pre>
+
+<p id="cn-m25-357">Right-click in the command prompt and select <b>Paste Selection</b></p>
+
+<p id="cn-m25-358"></p><figure><img class="cn-img" id="cn-image-m25-c-31" src="IncidentResponseTools_files/image-m25-c-31.jpg" alt="Figure 1.30 Screenshot of PLABKALI"><figcaption>Figure
+ 1.30 Screenshot of PLABKALI: Showing the paste being selected to view 
+the details of a specific boot log with the journalctl --list boots 
+command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-359"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-360">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-361"></p><figure><img class="cn-img" id="cn-image-m25-c-32" src="IncidentResponseTools_files/image-m25-c-32.jpg" alt="Figure 1.31 Screenshot of PLABKALI"><figcaption>Figure 1.31 Screenshot of PLABKALI: Displaying executing the journalctl command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-362"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-363">The output of this command is displayed.</p>
+
+<p id="cn-m25-364">Press the following to quit the display and reach the command prompt:</p>
+
+<pre id="cn-m25-365"><code>q
+
+</code></pre>
+
+<p id="cn-m25-366"></p><figure><img class="cn-img" id="cn-image-m25-c-33" src="IncidentResponseTools_files/image-m25-c-33.jpg" alt="Figure 1.32 Screenshot of PLABKALI"><figcaption>Figure 1.32 Screenshot of PLABKALI: Showing the output of a specific boot event.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-367"><b><i>Note: </i></b><i>The information for the boot event is displayed. This can be used to investigate possible security events by an administrator.</i></span>
+
+<h4 id="cn-m25-368"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m25-369">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-370"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-371">To view the events in the kernel log, which stores the booting events, type the following command:</p>
+
+<pre id="cn-m25-372"><code>cat /var/log/syslog
+
+</code></pre>
+
+<p id="cn-m25-373">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-374"></p><figure><img class="cn-img" id="cn-image-m25-c-34" src="IncidentResponseTools_files/image-m25-c-34.jpg" alt="Figure 1.33 Screenshot of PLABKALI"><figcaption>Figure 1.33 Screenshot of PLABKALI: Viewing the events in the kernel log.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-375"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m25-376">The output of this command is displayed.</p>
+
+<p id="cn-m25-377"></p><figure><img class="cn-img" id="cn-image-m25-c-35" src="IncidentResponseTools_files/image-m25-c-35.jpg" alt="Figure 1.34 Screenshot of PLABKALI"><figcaption>Figure 1.34 Screenshot of PLABKALI: Listing the events in the kernel log.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-378"><b><i>Note:  </i></b><i>The 
+executed command displays the boot events specifically related to the 
+system. This is a global overview of the occurrences on the system.</i></span>
+
+<h4 id="cn-m25-379"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m25-380">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-381"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-382">You can also view the <b>dmesg </b>log to obtain information about the system hardware. The <b>dmesg </b>can be useful when you are trying to troubleshoot a system hardware issue.</p>
+
+<p id="cn-m25-383">To view the <b>dmesg </b>log, type the following command:</p>
+
+<pre id="cn-m25-384"><code>dmesg
+
+</code></pre>
+
+<p id="cn-m25-385">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-386"></p><figure><img class="cn-img" id="cn-image-m25-c-36" src="IncidentResponseTools_files/image-m25-c-36.jpg" alt="Figure 1.35 Screenshot of PLABKALI"><figcaption>Figure 1.35 Screenshot of PLABKALI: Executing the dmesg command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-387"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m25-388">The output of this command is displayed.</p>
+
+<p id="cn-m25-389"></p><figure><img class="cn-img" id="cn-image-m25-c-37" src="IncidentResponseTools_files/image-m25-c-37.jpg" alt="Figure 1.36 Screenshot of PLABKALI"><figcaption>Figure 1.36 Screenshot of PLABKALI: Showing the output of the dmesg command.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m25-390"><b><i>Note: </i></b><i>An administrator can use this command to troubleshoot specific hardware related issues.</i></span>
+
+<h4 id="cn-m25-391"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m25-392">To find out the amount of physical memory in a system, type the following command:</p>
+
+<pre id="cn-m25-393"><code>dmesg | grep -i memory
+
+</code></pre>
+
+<p id="cn-m25-394">Press <b>Enter</b>.</p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<p id="cn-m25-396"></p><figure><img class="cn-img" id="cn-image-m25-c-38" src="IncidentResponseTools_files/image-m25-c-38.jpg" alt="Figure 1.37 Screenshot of PLABKALI"><figcaption>Figure 1.37 Screenshot of PLABKALI: Finding out the amount of physical memory in a system.</figcaption></figure><p></p>
+
+<p id="cn-m25-397">Close the terminal window.</p>
+< <a href="https://github.com/SeanOhAileasa" id="UsingTcpdumpandLogging">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m25-398"><b>Exercise 2 - Using Tcpdump and Logging</b></h2>
+
+<p id="cn-m25-399">Tcpdump is a tool that can be used for packet 
+analysis. Using this tool, you can capture packets that traverse through
+ a network, and after capturing the packets, you can investigate and 
+analyze them.</p>
+
+<p id="cn-m25-400">Tcpdump can be used not only for packet analysis but also for troubleshooting various network issues.</p>
+
+<p id="cn-m25-401">In this exercise, you will learn to use tcpdump.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m25-403">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m25-404">
+
+<li id="cn-m25-404">Use Tcpdump</li>
+
+<li id="cn-m25-405">Know the Key Locations for Logging</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m25-407">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m25-408">
+
+<li id="cn-m25-408"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m25-409"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m25-411"><img class="cn-img" id="cn-image-m25-c-39" src="IncidentResponseTools_files/image-m25-c-39.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m25-412"><b>Task 1 - Use Tcpdump</b></h3>
+
+<p id="cn-m25-413">There are a variety of tasks that can be performed 
+with tcpdump. You can capture packets through one network adapter or 
+multiple network adapters if installed in the system. The packet 
+capturing can be done in real-time as the traffic flows through the 
+network. After capturing the traffic, it can be analyzed for various 
+reasons, such as troubleshooting the network traffic.</p>
+
+<p id="cn-m25-414">In this task, you will use tcpdump, which is made available in Kali Linux.</p>
+
+<h4 id="cn-m25-415"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-416">Ensure that you have powered on the required devices. Connect to <b>PLABKALI</b>.</p>
+
+<span class="cn-quote" id="cn-m25-417"><b><i>Note: </i></b><i>Log on to Kali if you are not logged in, using the same credentials shown in Exercise 1, Task 1, Step 1.</i></span>
+
+<p id="cn-m25-418"></p><figure><img class="cn-img" id="cn-image-m25-c-40" src="IncidentResponseTools_files/image-m25-c-40.jpg" alt="Figure 2.1 Screenshot of PLABKALI"><figcaption>Figure 2.1 Screenshot of PLABKALI: Showing the PLABKALI desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-420"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-421">In the left-hand pane, click the <b>Terminal Emulator </b>icon.</p>
+
+<p id="cn-m25-422"></p><figure><img class="cn-img" id="cn-image-m25-c-41" src="IncidentResponseTools_files/image-m25-c-41.jpg" alt="Figure 2.2 Screenshot of PLABKALI"><figcaption>Figure 2.2 Screenshot of PLABKALI: Clicking on the Terminal icon in the application bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-423"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-424">The <b>Terminal </b>window is displayed. Using the <b>tcpdump </b>command, you can capture packets using a specific interface. For example, if the system has <b>eth0 </b>as the interface, you can use it for capturing packets.</p>
+
+<p id="cn-m25-425">Type the following command:</p>
+
+<pre id="cn-m25-426"><code>tcpdump -i eth0
+
+</code></pre>
+
+<p id="cn-m25-427">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-428"><b><i>Note: </i></b><i>The </i><b><i>-i </i></b><i>parameter
+ is used for specifying the interface. Let the command run for a few 
+minutes. It may take a few minutes before you receive a reply. </i></span>
+
+<p id="cn-m25-432"></p><figure><img class="cn-img" id="cn-image-m25-c-42" src="IncidentResponseTools_files/image-m25-c-42.jpg" alt="Figure 2.3 Screenshot of PLABKALI"><figcaption>Figure 2.3 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-434"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-435">This command continues to run unless you break it by pressing the <b>Ctrl + C </b>keys.</p>
+
+<p id="cn-m25-436"></p><figure><img class="cn-img" id="cn-image-m25-c-43" src="IncidentResponseTools_files/image-m25-c-43.jpg" alt="Figure 2.4 Screenshot of PLABKALI"><figcaption>Figure 2.4 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-437"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-438">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-439"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-440">Instead of running the command continuously, you can 
+run the command a specific number of times. To do this, type the 
+following command:</p>
+
+<pre id="cn-m25-441"><code>tcpdump -c 10 -i eth0
+
+</code></pre>
+
+<p id="cn-m25-442">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-443"><b><i>Note: </i></b><i>The </i><b><i>-c </i></b><i>parameter is used for specifying the packet count.</i></span>
+
+<p id="cn-m25-444"></p><figure><img class="cn-img" id="cn-image-m25-c-44" src="IncidentResponseTools_files/image-m25-c-44.jpg" alt="Figure 2.5 Screenshot of PLABKALI"><figcaption>Figure 2.5 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-445"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-446">The command captures the packets for the specified number of times.</p>
+
+<p id="cn-m25-447"></p><figure><img class="cn-img" id="cn-image-m25-c-45" src="IncidentResponseTools_files/image-m25-c-45.jpg" alt="Figure 2.6 Screenshot of PLABKALI"><figcaption>Figure 2.6 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-448"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-449">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-450"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-451">You can also list the available interfaces in your system with tcpdump. To do this, type the following command:</p>
+
+<pre id="cn-m25-452"><code>tcpdump -D
+
+</code></pre>
+
+<p id="cn-m25-453">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-454"></p><figure><img class="cn-img" id="cn-image-m25-c-46" src="IncidentResponseTools_files/image-m25-c-46.jpg" alt="Figure 2.7 Screenshot of PLABKALI"><figcaption>Figure 2.7 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-456"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-457">The list of available interfaces is displayed.</p>
+
+<p id="cn-m25-458"></p><figure><img class="cn-img" id="cn-image-m25-c-47" src="IncidentResponseTools_files/image-m25-c-47.jpg" alt="Figure 2.8 Screenshot of PLABKALI"><figcaption>Figure 2.8 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-460"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m25-461">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-462"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-463">You can save the output of the tcpdump command in a file with the .pcap extension. To do this, type the following command:</p>
+
+<pre id="cn-m25-464"><code>tcpdump -w plab.pcap -i eth0
+
+</code></pre>
+
+<p id="cn-m25-465">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-466"><b><i>Note: </i></b><i>Let the command run for a few minutes.</i></span>
+
+<p id="cn-m25-467"></p><figure><img class="cn-img" id="cn-image-m25-c-48" src="IncidentResponseTools_files/image-m25-c-48.jpg" alt="Figure 2.9 Screenshot of PLABKALI"><figcaption>Figure 2.9 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-469"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m25-470">This command continues to run unless you break it by pressing the <b>Ctrl + C </b>keys.</p>
+
+<p id="cn-m25-471"></p><figure><img class="cn-img" id="cn-image-m25-c-49" src="IncidentResponseTools_files/image-m25-c-49.jpg" alt="Figure 2.10 Screenshot of PLABKALI"><figcaption>Figure 2.10 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-473"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m25-474">After you have sent the output to a file, you can read it with the <b>-r </b>parameter. To do this, type the following command:</p>
+
+<pre id="cn-m25-475"><code>tcpdump -r plab.pcap
+
+</code></pre>
+
+<p id="cn-m25-476">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-477"></p><figure><img class="cn-img" id="cn-image-m25-c-50" src="IncidentResponseTools_files/image-m25-c-50.jpg" alt="Figure 2.11 Screenshot of PLABKALI"><figcaption>Figure 2.11 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-479"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m25-480">Notice that the output from the file is displayed on the screen.</p>
+
+<p id="cn-m25-481"></p><figure><img class="cn-img" id="cn-image-m25-c-51" src="IncidentResponseTools_files/image-m25-c-51.jpg" alt="Figure 2.12 Screenshot of PLABKALI"><figcaption>Figure 2.12 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-482"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m25-483">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-484"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-485">Rather than using a specific interface, you can 
+capture packets using all available interfaces. To do this, type the 
+following command:</p>
+
+<pre id="cn-m25-486"><code>tcpdump -i any
+
+</code></pre>
+
+<p id="cn-m25-487">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-488"><b><i>Note: </i></b><i>Let the command run for a few minutes.</i></span>
+
+<p id="cn-m25-489"></p><figure><img class="cn-img" id="cn-image-m25-c-52" src="IncidentResponseTools_files/image-m25-c-52.jpg" alt="Figure 2.13 Screenshot of PLABKALI"><figcaption>Figure 2.13 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-491"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m25-492">This command continues to run unless you break it by pressing the <b>Ctrl + C </b>keys.</p>
+
+<p id="cn-m25-493"></p><figure><img class="cn-img" id="cn-image-m25-c-53" src="IncidentResponseTools_files/image-m25-c-53.jpg" alt="Figure 2.14 Screenshot of PLABKALI"><figcaption>Figure 2.14 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-494"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m25-495">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-496"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-497">By default, tcpdump captures all types of packets, 
+but you can limit it to capture only a specific type of protocol 
+packets. To do this, type the following command:</p>
+
+<pre id="cn-m25-498"><code>tcpdump -i any icmp
+
+</code></pre>
+
+<p id="cn-m25-499">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-500"><b><i>Note: </i></b><i>Let the command run for a few minutes.</i></span>
+
+<p id="cn-m25-501"></p><figure><img class="cn-img" id="cn-image-m25-c-54" src="IncidentResponseTools_files/image-m25-c-54.jpg" alt="Figure 2.15 Screenshot of PLABKALI"><figcaption>Figure 2.15 Screenshot of PLABKALI: Entering the tcpdump command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-503"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m25-504">Open a new terminal window and type the following command:</p>
+
+<pre id="cn-m25-505"><code>ping 192.168.0.1
+
+</code></pre>
+
+<p id="cn-m25-506">Press <b>Enter</b>. </p><figure><img class="cn-img" id="cn-image-m25-c-55" src="IncidentResponseTools_files/image-m25-c-55.jpg" alt="Figure 2.16 Screenshot of PLABKALI"><figcaption>Figure 2.16 Screenshot of PLABKALI: Ping another system from a different terminal.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-508"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m25-509">After a few pings, break the command by pressing the <b>Ctrl + C </b>keys. Then, close the terminal window.</p>
+
+<p id="cn-m25-510"></p><figure><img class="cn-img" id="cn-image-m25-c-56" src="IncidentResponseTools_files/image-m25-c-56.jpg" alt="Figure 2.17 Screenshot of PLABKALI"><figcaption>Figure 2.17 Screenshot of PLABKALI: Showing the output of the ping command.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-511"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m25-512">Notice that these commands are captured by tcpdump.</p>
+
+<p id="cn-m25-513"></p><figure><img class="cn-img" id="cn-image-m25-c-57" src="IncidentResponseTools_files/image-m25-c-57.jpg" alt="Figure 2.18 Screenshot of PLABKALI"><figcaption>Figure 2.18 Screenshot of PLABKALI: Showing the output of the tcpdump command.</figcaption></figure><p></p>
+
+<p id="cn-m25-514">Close the terminal window.</p>
+
+<h3 id="cn-m25-515"><b>Task 2 - Know the Key Locations for Logging</b></h3>
+
+<p id="cn-m25-516">Logs are meant for recording events in a system. In 
+the case of an event, you can refer to the respective log for more 
+details. The <b>/var/log </b>directory holds all types of log files. It 
+is important to note that the number of logs in each system will differ 
+because of the installed applications.</p>
+
+<p id="cn-m25-517">For example, if a system has <b>MySQL </b>installed, this directory will have a log about the <b>MySQL </b>application. On the other hand, a system that does not have <b>MySQL </b>will not have this log generated.</p>
+
+<p id="cn-m25-518">In this task, you will test the <b>Apache Web Server </b>traffic.</p>
+
+<h4 id="cn-m25-519"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-520">Open a new terminal window by click the <b>Terminal Emulator </b>icon on the left-hand pane.</p>
+
+<p id="cn-m25-521">Let’s first list the number of logs in the <b>/var/log </b>directory. Type the following command:</p>
+
+<pre id="cn-m25-522"><code>ls -l /var/log/
+
+</code></pre>
+
+<p id="cn-m25-523">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-524"></p><figure><img class="cn-img" id="cn-image-m25-c-58" src="IncidentResponseTools_files/image-m25-c-58.jpg" alt="Figure 2.19 Screenshot of PLABKALI"><figcaption>Figure 2.19 Screenshot of PLABKALI: Listing the number of logs in the /var/log directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-525"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-526">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m25-527"><code>clear
+
+</code></pre>
+
+<p id="cn-m25-528">To view a log file, you can use the <b>cat </b>command. Type the following command:</p>
+
+<pre id="cn-m25-529"><code>cat /var/log/user.log
+
+</code></pre>
+
+<p id="cn-m25-530">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-531"></p><figure><img class="cn-img" id="cn-image-m25-c-59" src="IncidentResponseTools_files/image-m25-c-59.jpg" alt="Figure 2.20 Screenshot of PLABKALI"><figcaption>Figure 2.20 Screenshot of PLABKALI: Viewing a log file using the cat command.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<p id="cn-m25-534">Close the terminal window.</p>
+< <a href="https://github.com/SeanOhAileasa" id="CapturingPacketswithWireshark">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m25-535"><b>Exercise 3 - Capturing Packets with Wireshark</b></h2>
+
+<p id="cn-m25-536">There are various methods that you can use to capture
+ network traffic. One of the methods is to connect with the target 
+system and get the information. The other method is to simply capture 
+the traffic from the network and analyze it for useful information.</p>
+
+<p id="cn-m25-537">Depending on your need, you can analyze the traffic 
+accordingly. You can filter the traffic based on ports, IP addresses, 
+and so on. <b>Wireshark </b>is one such tool that helps you capture the 
+network traffic. It also allows you to save the traffic in files, which 
+can be used for offline analysis.</p>
+
+<p id="cn-m25-538">In this exercise, you will learn to capture packets with <b>Wireshark</b>.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m25-540">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m25-541">
+
+<li id="cn-m25-541">Capture Traffic Information</li>
+
+<li id="cn-m25-542">View Packet Capture Logs</li>
+
+<li id="cn-m25-543">Display Capture Information with Wireshark</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m25-545">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m25-546">
+
+<li id="cn-m25-546"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m25-547"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m25-548"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+<li id="cn-m25-549"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m25-550"><img class="cn-img" id="cn-image-m25-c-60" src="IncidentResponseTools_files/image-m25-c-60.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m25-551"><b>Task 1 - Capture Traffic Information</b></h3>
+
+<p id="cn-m25-552">Initially, you will be using <b>Wireshark </b>to view traffic information from devices on the network. When you select an interface, such as <b>Ethernet </b>or <b>eth0 </b>in <b>Wireshark</b>,
+ it activates it to capture the traffic instantly. Once the traffic has 
+been captured, you can use various in-built filters to filter out the 
+traffic as per your requirement. For example, you can filter only the 
+DNS or TCP traffic.</p>
+
+<p id="cn-m25-553">In this task, you will learn to capture traffic information using Wireshark. To do this, perform the following steps:</p>
+
+<h4 id="cn-m25-554"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-555">Ensure that all devices have been powered on and are running.</p>
+
+<p id="cn-m25-556">Connect to <b>PLABKALI</b>. The desktop should be displayed.</p>
+
+<p id="cn-m25-557"></p><figure><img class="cn-img" id="cn-image-m25-c-61" src="IncidentResponseTools_files/image-m25-c-61.jpg" alt="Figure 3.1 Screenshot of PLABKALI"><figcaption>Figure 3.1 Screenshot of PLABKALI: Showing the desktop of PLABKALI.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-559"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-560">On the upper left corner, click the <b>Kali </b>icon, then click <b>09 - Sniffing &amp; Spoofing </b>and then click <b>wireshark</b>.</p>
+
+<p id="cn-m25-561"></p><figure><img class="cn-img" id="cn-image-m25-c-62" src="IncidentResponseTools_files/image-m25-c-62.jpg" alt="Figure 3.2 Screenshot of PLABKALI"><figcaption>Figure 3.2 Screenshot of PLABKALI: Selecting Wireshark to run.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-562"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-563">The <b>Wireshark Network Analyzer </b>window is displayed. Under <b>Capture</b>, double-click <b>eth0</b>.</p>
+
+<p id="cn-m25-564"></p><figure><img class="cn-img" id="cn-image-m25-c-63" src="IncidentResponseTools_files/image-m25-c-63.jpg" alt="Figure 3.3 Screenshot of PLABKALI"><figcaption>Figure 3.3 Screenshot of PLABKALI: Selecting the Ethernet adapter.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-565"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-566">The packet capturing process starts. Leave the 
+capture running for a minute to collect information flowing across the 
+networking devices.</p>
+
+<p id="cn-m25-567"></p><figure><img class="cn-img" id="cn-image-m25-c-64" src="IncidentResponseTools_files/image-m25-c-64.jpg" alt="Figure 3.4 Screenshot of PLABKALI"><figcaption>Figure 3.4 Screenshot of PLABKALI: Showing the captured packets.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-568"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-569"><b>Connect </b>to <b>PLABWIN10 </b>from the toolbar and click <b>Reboot</b>. Alternatively, you can log into that device and restart it from there.</p>
+
+<span class="cn-alert" id="cn-m25-570"><b>Alert: </b>Do not use the <b>Reset </b>option on the platform to restart Windows.</span>
+
+<h4 id="cn-m25-571"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-572"><b>Connect </b>to <b>PLABKALI </b>and observe the packet capture window while <b>PLABWIN10 </b>boots. You will see ARP data and TCP traffic, but you want to look for the ARP requests when <b>PLABWIN10 </b>starts. Bear in mind the IP for this device is listed in the diagram above, and you will need to look for that address.</p>
+
+<p id="cn-m25-573">Once the device has rebooted successfully, you can end the packet capture process in <b>Wireshark </b>by pressing the <b>Red Square </b>button at the top left-hand side.</p>
+
+<p id="cn-m25-574"></p><figure><img class="cn-img" id="cn-image-m25-c-65" src="IncidentResponseTools_files/image-m25-c-65.jpg" alt="Figure 3.5 Screenshot of PLABKALI"><figcaption>Figure 3.5 Screenshot of PLABKALI: Clicking the red square to stop packet capturing.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-576"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-577">Once the packet capture has ended, you should see the <b>Red Square </b>has turned to <b>Grey</b>.</p>
+
+<p id="cn-m25-578"></p><figure><img class="cn-img" id="cn-image-m25-c-66" src="IncidentResponseTools_files/image-m25-c-66.jpg" alt="Figure 3.6 Screenshot of PLABKALI"><figcaption>Figure 3.6 Screenshot of PLABKALI: Showing Wireshark capture in a stopped state.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-580"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-581">Either you can scroll back up and manually locate the arp packets, or you can filter them. Let’s filter them for this task.</p>
+
+<p id="cn-m25-582">In the <b>Apply a display filter </b>text box, type the following:</p>
+
+<pre id="cn-m25-583"><code>arp
+
+</code></pre>
+
+<p id="cn-m25-584">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-585">Notice that several arp packets have been captured. One from <b>PLABWIN10 </b>is highlighted.</p>
+
+<p id="cn-m25-586"></p><figure><img class="cn-img" id="cn-image-m25-c-67" src="IncidentResponseTools_files/image-m25-c-67.jpg" alt="Figure 3.7 Screenshot of PLABKALI"><figcaption>Figure 3.7 Screenshot of PLABKALI: Entering the command to filter the packets.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-587"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m25-588">Click on <b>x </b>in the red square to remove the filter.</p>
+
+<p id="cn-m25-589"></p><figure><img class="cn-img" id="cn-image-m25-c-68" src="IncidentResponseTools_files/image-m25-c-68.jpg" alt="Figure 3.8 Screenshot of PLABKALI"><figcaption>Figure 3.8 Screenshot of PLABKALI: Showing the filtered packets.</figcaption></figure><p></p>
+
+<h3 id="cn-m25-590"><b>Task 2 - Analyzing Captured Information</b></h3>
+
+<p id="cn-m25-591">You can list information according to different tabs 
+and then move it into basic filtering techniques. Knowledge of protocols
+ is essential to understanding all the information in <b>Wireshark</b>.</p>
+
+<p id="cn-m25-592">When you start capturing packets using Wireshark, it 
+may capture thousands of packets within a few minutes. It is not easy to
+ analyze thousands of packets at one go. Manual analysis may take 
+several hours to locate specific types of packets. The easier method is 
+to use filtering, which is a feature provided by Wireshark.</p>
+
+<p id="cn-m25-593">In this task, you will explore the details of traffic flows and how to understand them using the main interface.</p>
+
+<h4 id="cn-m25-594"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-595">Connect to <b>PLABKALI</b>. Now let’s explore some of the interface and options you have in <b>Wireshark</b>.</p>
+
+<p id="cn-m25-596">First, notice the display options:</p>
+
+<ul id="cn-m25-597">
+
+<li id="cn-m25-597"><b>No </b>- Packet Number which is counted for each packet recorded</li>
+
+<li id="cn-m25-598"><b>Time </b>- Time of the packet recording</li>
+
+<li id="cn-m25-599"><b>Source </b>- Source IP address</li>
+
+<li id="cn-m25-600"><b>Destination </b>- Destination IP address</li>
+
+<li id="cn-m25-601"><b>Protocol </b>- Which type of protocol has been used</li>
+
+<li id="cn-m25-602"><b>Length </b>- Length of the Packet</li>
+
+<li id="cn-m25-603"><b>Info </b>- Any extra information which could be useful</li>
+
+</ul>
+
+<p id="cn-m25-604">First, click on the <b>Protocol </b>column header to 
+list the information by type. That will list the ARP protocols first, 
+and you can then discover devices making requests for information by 
+checking the <b>Info </b>tab.</p>
+
+<p id="cn-m25-605"></p><figure><img class="cn-img" id="cn-image-m25-c-69" src="IncidentResponseTools_files/image-m25-c-69.jpg" alt="Figure 3.9 Screenshot of PLABKALI"><figcaption>Figure 3.9 Screenshot of PLABKALI: Clicking the Protocol column header.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-607"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-608">Notice that the captured packets are now sorted based on their protocol names.</p>
+
+<p id="cn-m25-609"></p><figure><img class="cn-img" id="cn-image-m25-c-70" src="IncidentResponseTools_files/image-m25-c-70.jpg" alt="Figure 3.10 Screenshot of PLABKALI"><figcaption>Figure 3.10 Screenshot of PLABKALI: Showing the sorted packets based on their protocols.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-611"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-612">You need to scroll through the details to find the 
+results of the ARP sessions. From this method, all the communicating 
+devices that are calling out to check each other’s IP addresses, you 
+learn that all the addresses listed for all switched on devices that are
+ connected to the same <b>Ethernet </b>adapter.</p>
+
+<p id="cn-m25-613">You can see calls for <b>192.168.0.3</b>, which is the <b>PLABWIN10 </b>asking for information about who has <b>192.168.0.1</b>, which is the <b>PLABDC01 </b>server.</p>
+
+<p id="cn-m25-614">You also see devices establishing their addresses. For example, <b>192.168.0.3</b>, the <b>PLABWIN10 </b>system, confirms its address location at <b>00:15:5d:ea:78:57</b>. This information is mentioned in the middle frame.</p>
+
+<p id="cn-m25-615"></p><figure><img class="cn-img" id="cn-image-m25-c-71" src="IncidentResponseTools_files/image-m25-c-71.jpg" alt="Figure 3.11 Screenshot of PLABKALI"><figcaption>Figure 3.11 Screenshot of PLABKALI: Displaying the ARP information in Wireshark.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-617"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-618">Search for <b>PLABWIN10</b>, which is the device you rebooted.</p>
+
+<p id="cn-m25-619"></p><figure><img class="cn-img" id="cn-image-m25-c-72" src="IncidentResponseTools_files/image-m25-c-72.jpg" alt="Figure 3.12 Screenshot of PLABKALI"><figcaption>Figure 3.12 Screenshot of PLABKALI: Displaying the ARP protocol and information related to the captured packet in Wireshark.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-620"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-621">Its frame can be seen making a <b>Gratuitous Request </b>via a Broadcast, effectively setting its source and destination address information against its IP.</p>
+
+<p id="cn-m25-622">If another machine did own <b>192.168.0.3</b>, <b>PLABWIN10 </b>would detect a duplicate IP address and prompt the user to change the configuration.</p>
+
+<p id="cn-m25-623"><b>Wireshark </b>decodes the <b>OUI</b>, and that you can expand the MAC fields to decode the multicast/broadcast bit and a locally administered bit.</p>
+
+<p id="cn-m25-624">The ARP headers (layer 2.5 or 3-ish) contain similar 
+information, plus the sender and target IP addresses. ARP is a very 
+simple protocol. IP and higher-level packets often contain many more 
+headers.</p>
+
+<p id="cn-m25-625">Also, note the bottom frame. This contains the raw 
+data in a hexadecimal format (the computers receive it as a series of 1s
+ and 0s. When you select information in pane 2, the relevant hex digits 
+are selected here (and vice versa).</p>
+
+<p id="cn-m25-626"></p><figure><img class="cn-img" id="cn-image-m25-c-73" src="IncidentResponseTools_files/image-m25-c-73.jpg" alt="Figure 3.13 Screenshot of PLABKALI"><figcaption>Figure 3.13 Screenshot of PLABKALI: Showing the packet information in the hexadecimal form.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-629"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-630">Type the following in the filter bar:</p>
+
+<pre id="cn-m25-631"><code>ip.src == 192.168.0.2
+
+</code></pre>
+
+<p id="cn-m25-632">Press <b>Enter</b>.</p>
+
+<p id="cn-m25-633"></p><figure><img class="cn-img" id="cn-image-m25-c-74" src="IncidentResponseTools_files/image-m25-c-74.jpg" alt="Figure 3.14 Screenshot of PLABKALI"><figcaption>Figure 3.14 Screenshot of PLABKALI: Displaying the filtering for an IP.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-634"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-635">You can view all the traffic which has flowed from <b>PLABDM01 </b>since the recording began.</p>
+
+<p id="cn-m25-636"></p><figure><img class="cn-img" id="cn-image-m25-c-75" src="IncidentResponseTools_files/image-m25-c-75.jpg" alt="Figure 3.15 Screenshot of PLABKALI"><figcaption>Figure 3.15 Screenshot of PLABKALI: Showing the filtered packets for a specific IP address.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-637"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-638">Click on <b>x </b>in the red square to remove the filter.</p>
+
+<p id="cn-m25-639"></p><figure><img class="cn-img" id="cn-image-m25-c-76" src="IncidentResponseTools_files/image-m25-c-76.jpg" alt="Figure 3.16 Screenshot of PLABKALI"><figcaption>Figure 3.16 Screenshot of PLABKALI: Clearing the Filter Wireshark DNS information.</figcaption></figure><p></p>
+
+<h3 id="cn-m25-640"><b>Task 3 - Display Capture Information with Wireshark</b></h3>
+
+<p id="cn-m25-641"><b>Wireshark </b>captures many packets from the 
+network, and therefore, all this information can be difficult to manage 
+and interpret. There are several handy features in Wireshark. For 
+example, you can select the network interface that you want to use for 
+capturing network packets.</p>
+
+<p id="cn-m25-642">Wireshark is not the only tool for capturing network 
+packets. Tools, such as Tcpdump  and WinDump, also perform the same 
+function. However, Wireshark has the capability to open the files that 
+have been saved in Tcpdump and WinDump.</p>
+
+<p id="cn-m25-643">You can also use other features like protocol hierarchy to view a protocol and its hierarchy structure.</p>
+
+<p id="cn-m25-644">You can explore the captured packets using various tools that are provided within <b>Wireshark</b>.</p>
+
+<p id="cn-m25-645">In this task, you will learn to use the tools provided by <b>Wireshark</b>.</p>
+
+<h4 id="cn-m25-646"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-647">Ensure you are connected to <b>PLABKALI</b>.</p>
+
+<p id="cn-m25-648">Ensuring the filter has been cleared of contents, you
+ are now back on the original capture information. You will now analyze 
+the data in a more summary output.</p>
+
+<p id="cn-m25-649">Click the <b>Statistics </b>menu option and then select <b>Resolved Addresses</b>.</p>
+
+<p id="cn-m25-650"></p><figure><img class="cn-img" id="cn-image-m25-c-77" src="IncidentResponseTools_files/image-m25-c-77.jpg" alt="Figure 3.17 Screenshot of PLABKALI"><figcaption>Figure
+ 3.17 Screenshot of PLABKALI: Resolving IP Addresses by selecting the 
+Statistics tab and then selecting Resolved Addresses.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-651"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-652">Hosts with their addresses resolved from an IP to their names will be listed in the initial section. You can identify <b>PLABWIN10 </b>from this list by looking at the information available for the device on the lab topology.</p>
+
+<span class="cn-quote" id="cn-m25-653"><b><i>Note: </i></b><i>There may be a slight delay in name resolution, and therefore, the Hosts section may be blank.</i></span>
+
+<p id="cn-m25-654">Click the <b>x </b>button on the upper right-hand corner.</p>
+
+<p id="cn-m25-655"></p><figure><img class="cn-img" id="cn-image-m25-c-78" src="IncidentResponseTools_files/image-m25-c-78.jpg" alt="Figure 3.18 Screenshot of PLABKALI"><figcaption>Figure 3.18 Screenshot of PLABKALI: Displaying the Resolved Addresses dialog box. OK is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-656"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-657">Click the <b>Statistics </b>menu option again and select <b>Protocol Hierarchy</b>.</p>
+
+<p id="cn-m25-658"></p><figure><img class="cn-img" id="cn-image-m25-c-79" src="IncidentResponseTools_files/image-m25-c-79.jpg" alt="Figure 3.19 Screenshot of PLABKALI"><figcaption>Figure 3.19 Screenshot of PLABKALI: Selecting the Statistics option and then selecting Protocol Hierarchy.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-659"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-660">The output shows the details of packet types and how much information flowed in each protocol type.</p>
+
+<p id="cn-m25-661"></p><figure><img class="cn-img" id="cn-image-m25-c-80" src="IncidentResponseTools_files/image-m25-c-80.jpg" alt="Figure 3.20 Screenshot of PLABKALI"><figcaption>Figure 3.20 Screenshot of PLABKALI: Displaying the Protocol Hierarchy.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-662"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-663">For example, if you were interested in TCP traffic packets only, select that from the list, noted as <b>Internet Protocol Version 4</b>.</p>
+
+<p id="cn-m25-664">Right-click the line and select <b>Apply as Filter</b>, then <b>Selected</b>.</p>
+
+<p id="cn-m25-665"></p><figure><img class="cn-img" id="cn-image-m25-c-81" src="IncidentResponseTools_files/image-m25-c-81.jpg" alt="Figure 3.21 Screenshot of PLABKALI"><figcaption>Figure
+ 3.21 Screenshot of PLABKALI: Applying the Internet Protocol Version 4 
+Filter in Protocol Hierarchy. Apply as the filter has been clicked, then
+ Selected has been chosen.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-666"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-667">Click <b>Close</b>.</p>
+
+<p id="cn-m25-668"></p><figure><img class="cn-img" id="cn-image-m25-c-82" src="IncidentResponseTools_files/image-m25-c-82.jpg" alt="Figure 3.22 Screenshot of PLABKALI"><figcaption>Figure 3.22 Screenshot of PLABKALI: Clicking the Close button.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-669"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-670">You are back on the <b>Wireshark </b>main screen. Above, you see the <b>ip </b>protocol being applied as a filter, informing <b>Wireshark </b>to display those packets in the <b>Capture </b>window.</p>
+
+<p id="cn-m25-671"></p><figure><img class="cn-img" id="cn-image-m25-c-83" src="IncidentResponseTools_files/image-m25-c-83.jpg" alt="Figure 3.23 Screenshot of PLABKALI"><figcaption>Figure 3.23 Screenshot of PLABKALI: Displaying the applied ip filter.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-672"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-673">To discover any devices communicating directly, let’s clear this filter again.</p>
+
+<p id="cn-m25-674">Click the <b>Statistics </b>menu option and then select <b>Conversations</b>.</p>
+
+<p id="cn-m25-675"></p><figure><img class="cn-img" id="cn-image-m25-c-84" src="IncidentResponseTools_files/image-m25-c-84.jpg" alt="Figure 3.24 Screenshot of PLABKALI"><figcaption>Figure 3.24 Screenshot of PLABKALI: Selecting the Statistics option and then selecting Conversations.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-676"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m25-677">In the <b>Wireshark - Conversations </b>dialog box, select the <b>UDP.22 </b>tab.</p>
+
+<span class="cn-quote" id="cn-m25-678"><b><i>Note: </i></b><i>There is a possibility that you may have different captures and results. Therefore, the tabs will be different.</i></span>
+
+<p id="cn-m25-679"></p><figure><img class="cn-img" id="cn-image-m25-c-85" src="IncidentResponseTools_files/image-m25-c-85.jpg" alt="Figure 3.25 Screenshot of PLABKALI"><figcaption>Figure 3.25 Screenshot of PLABKALI: Displaying TCP conversations.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-680"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m25-681">Whether or not being used, a network device continues to communicate with the other devices.</p>
+
+<p id="cn-m25-682">Press <b>ESC </b>to close the window.</p>
+
+<p id="cn-m25-683"></p><figure><img class="cn-img" id="cn-image-m25-c-86" src="IncidentResponseTools_files/image-m25-c-86.jpg" alt="Figure 3.26 Screenshot of PLABKALI"><figcaption>Figure 3.26 Screenshot of PLABKALI: Clicking Close on the Wireshark - Conversations dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-684"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m25-685">Finally, you will look at some graphical information regarding this capture.</p>
+
+<p id="cn-m25-686">Click the <b>Statistics </b>menu option, and then select <b>I/O Graph</b>.</p>
+
+<p id="cn-m25-687"></p><figure><img class="cn-img" id="cn-image-m25-c-87" src="IncidentResponseTools_files/image-m25-c-87.jpg" alt="Figure 3.27 Screenshot of PLABKALI"><figcaption>Figure 3.27 Screenshot of PLABKALI: Selecting the Statistics option and then selecting I/O Graph.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-688"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m25-689">The graph in this image shows a single graph with two
+ different data points. The first one is about all packets, which is 
+shown as a line graph. The second one is TCP errors, which is shown as a
+ bar graph.</p>
+
+<p id="cn-m25-690"></p><figure><img class="cn-img" id="cn-image-m25-c-88" src="IncidentResponseTools_files/image-m25-c-88.jpg" alt="Figure 3.28 Screenshot of PLABKALI"><figcaption>Figure 3.28 Screenshot of PLABKALI: Displaying Wireshark I/O Graphs.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-691"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m25-692">Let’s view only the <b>All packets </b>traffic in the graph.</p>
+
+<p id="cn-m25-693">De-select the <b>TCP error </b>filter. There is a minor change in the graph output. This is because there are either no or very few TCP errors.</p>
+
+<p id="cn-m25-694">Click <b>Close</b>.</p>
+
+<p id="cn-m25-695"></p><figure><img class="cn-img" id="cn-image-m25-c-89" src="IncidentResponseTools_files/image-m25-c-89.jpg" alt="Figure 3.29 Screenshot of PLABKALI"><figcaption>Figure
+ 3.29 Screenshot of PLABKALI: Displaying Wireshark IO graphs for All 
+Packets. The TCP errors checkbox has been de-selected and then clicking 
+Close.</figcaption></figure><p></p>
+
+<h3 id="cn-m25-696"><b>Task 4 - View Packet Capture Logs</b></h3>
+
+<p id="cn-m25-697">You can either do an online review in <b>Wireshark</b>,
+ which means that as the packets are captured, you can review them or 
+save the captured packets for an offline review. There is no point in 
+capturing packets if they are not viewed. You have to analyze the 
+packets for various reasons, such as troubleshooting a network issue or 
+verifying anomalies in the network traffic. You can also capture the 
+packets and save them in a file for analysis later.</p>
+
+<p id="cn-m25-698">In this task, you will view packet capture logs.</p>
+
+<h4 id="cn-m25-699"><b><i>Step 1 </i></b></h4>
+
+<p id="cn-m25-700">Connect to <b>PLABKALI</b>.</p>
+
+<p id="cn-m25-701">Click <b>File </b>and then select <b>Save As</b>.</p>
+
+<p id="cn-m25-702"></p><figure><img class="cn-img" id="cn-image-m25-c-90" src="IncidentResponseTools_files/image-m25-c-90.jpg" alt="Figure 3.30 Screenshot of PLABKALI"><figcaption>Figure 3.30 Screenshot of PLABKALI: Saving a file in Wireshark. File and Save As are selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-703"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-704"><b>Wireshark</b>, by default, saves the format as <b>pcapng</b>. However, you might need to change the file type for other programs like <b>tcpdump </b>to view the contents. If you click on <b>Save as type</b>, a list of types can be considered for saving the file.</p>
+
+<p id="cn-m25-705"></p><figure><img class="cn-img" id="cn-image-m25-c-91" src="IncidentResponseTools_files/image-m25-c-91.jpg" alt="Figure 3.31 Screenshot of PLABKALI"><figcaption>Figure 3.31 Screenshot of PLABKALI: Confirming the output type. The Save as type dropdown is visible.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-706"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-707">For this task, you can use the default format, which is <b>pcapng</b>.</p>
+
+<p id="cn-m25-708">You need to give the file a name and save it to the <b>Documents </b>folder. Double click the <b>Documents </b>folder.</p>
+
+<p id="cn-m25-709">Enter the following as the <b>File name</b>:</p>
+
+<pre id="cn-m25-710"><code>PLABnetworkcapture01
+
+</code></pre>
+
+<p id="cn-m25-711">Click <b>Save</b>.</p>
+
+<p id="cn-m25-712"></p><figure><img class="cn-img" id="cn-image-m25-c-92" src="IncidentResponseTools_files/image-m25-c-92.jpg" alt="Figure 3.32 Screenshot of PLABKALI"><figcaption>Figure 3.32 Screenshot of PLABKALI: Naming the capture file. Save is selected.</figcaption></figure><p></p>
+
+<p id="cn-m25-713">Notice on the top of the <b>Wireshark </b>window. The name of the window is now changed to <b>PLABnetworkcapture01.pcpng</b>.</p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<p id="cn-m25-716">Close all open windows.</p>
+< <a href="https://github.com/SeanOhAileasa" id="WorkwithLogsinWindows">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m25-717"><b>Exercise 4 - Work with Logs in Windows</b></h2>
+
+<p id="cn-m25-718">Each application and the operating system generates 
+various types of events. These events are captured in logs maintained by
+ a tool or service within an operating system. The logs are handy in a 
+situation where you need to determine the cause or origin of an event. 
+Such a requirement may come up in a forensic investigation.</p>
+
+<p id="cn-m25-719">In this exercise, you will learn about various types of logs.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m25-721">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m25-722">
+
+<li id="cn-m25-722">Access the Event Viewer Logs</li>
+
+<li id="cn-m25-723">Enable Windows Defender Firewall Logs</li>
+
+</ul>
+
+<p id="cn-m25-724">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m25-725">
+
+<li id="cn-m25-725">NXLog</li>
+
+<li id="cn-m25-726">Syslog-ng</li>
+
+<li id="cn-m25-727">Log Retention</li>
+
+<li id="cn-m25-728">Bandwidth Monitors</li>
+
+<li id="cn-m25-729">Netflow Protocol</li>
+
+<li id="cn-m25-730">Metadata Properties</li>
+
+<li id="cn-m25-731">Security Information and Event Management (SIEM)</li>
+
+<li id="cn-m25-732">Log Aggregation</li>
+
+<li id="cn-m25-733">Event Trends</li>
+
+<li id="cn-m25-734">Alerts</li>
+
+<li id="cn-m25-735">Event Correlation</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m25-737">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m25-738">
+
+<li id="cn-m25-738"><b>PLABDC01 </b>- Windows Server 2019 (Domain Controller)</li>
+
+<li id="cn-m25-739"><b>PLABWIN10 </b>- Windows 10 (Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m25-740"><img class="cn-img" id="cn-image-m25-c-93" src="IncidentResponseTools_files/image-m25-c-93.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m25-741"><b>Task 1 - Access the Event Viewer Logs</b></h3>
+
+<p id="cn-m25-742">The <b>Event Viewer </b>is a Windows system tool that
+ displays information about various events happening on your computer. 
+This tool can help to track the event flow while troubleshooting any 
+issues either with the OS or the installed applications. The <b>Event Log </b>service starts as soon as you start Windows.</p>
+
+<p id="cn-m25-743">There are different types of event logs, such as application logs, system logs, and security logs. <span class="cn-9999999"><b>Application </b></span>and <b>System </b>logs are available to all users. However, security logs are available only to the administrators.</p>
+
+<p id="cn-m25-744">In this task, you will access application logs on the system.</p>
+
+<h4 id="cn-m25-745"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-746">Ensure that the required devices are powered on. Connect to <b>PLABWIN10</b>. The Windows desktop is displayed.</p>
+
+<p id="cn-m25-747"></p><figure><img class="cn-img" id="cn-image-m25-c-94" src="IncidentResponseTools_files/image-m25-c-94.jpg" alt="Figure 4.1 Screenshot of PLABWIN10"><figcaption>Figure 4.1 Screenshot of PLABWIN10: Showing the Windows desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-748"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-749">Right-click <b>Start </b>and select <b>Event Viewer</b>.</p>
+
+<p id="cn-m25-750"></p><figure><img class="cn-img" id="cn-image-m25-c-95" src="IncidentResponseTools_files/image-m25-c-95.jpg" alt="Figure 4.2 Screenshot of PLABWIN10"><figcaption>Figure 4.2 Screenshot of PLABWIN10: Right-clicking Start and selecting Event Viewer.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-751"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-752">The <b>Event Viewer </b>console is displayed. There are different types of logs:</p>
+
+<ul id="cn-m25-753">
+
+<li id="cn-m25-753"><b>Application</b>: Contains the events that are generated by applications</li>
+
+<li id="cn-m25-754"><b>Security</b>: Contains security-related events generated by the operating system</li>
+
+<li id="cn-m25-755"><b>Setup</b>: Contains the application installation-related events</li>
+
+<li id="cn-m25-756"><b>System</b>: Contains the events generated by the operating system&nbsp;&nbsp;</li>
+
+</ul>
+
+<p id="cn-m25-757">In the left-hand pane, expand the <b>Windows Logs </b>node, and then select the <b>Application </b>log.</p>
+
+<p id="cn-m25-758"></p><figure><img class="cn-img" id="cn-image-m25-c-96" src="IncidentResponseTools_files/image-m25-c-96.jpg" alt="Figure 4.3 Screenshot of PLABWIN10"><figcaption>Figure 4.3 Screenshot of PLABWIN10: Showing the Application logs in the middle pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-759"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-760">Notice that various events relevant to the 
+applications on the system are listed in the middle pane. You can have 
+events that are labeled as <b>Information</b>, <b>Warning</b>, and <b>Error</b>.</p>
+
+<p id="cn-m25-761"></p><figure><img class="cn-img" id="cn-image-m25-c-97" src="IncidentResponseTools_files/image-m25-c-97.jpg" alt="Figure 4.4 Screenshot of PLABWIN10"><figcaption>Figure 4.4 Screenshot of PLABWIN10: Showing the Application logs in the middle pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-762"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-763">Click <b>System </b>in the left-hand pane.  Notice that there are different types of events listed.</p>
+
+<span class="cn-quote" id="cn-m25-764"><b><i>Note: </i></b><i>In your lab environment, there may be a possibility that all of these may not be listed.</i></span>
+
+<p id="cn-m25-765"></p><figure><img class="cn-img" id="cn-image-m25-c-98" src="IncidentResponseTools_files/image-m25-c-98.jpg" alt="Figure 4.5 Screenshot of PLABWIN10"><figcaption>Figure 4.5 Screenshot of PLABWIN10: Showing the System logs in the middle pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-766"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-767">Select an event in the middle pane. If your lab 
+environment displays an error event, select it. Notice that the bottom 
+section of the middle pane displays the details of the <b>Error </b>event.</p>
+
+<p id="cn-m25-768">The following information related to an event is displayed:</p>
+
+<ul id="cn-m25-769">
+
+<li id="cn-m25-769">Date and time</li>
+
+<li id="cn-m25-770">User&nbsp;&nbsp;</li>
+
+<li id="cn-m25-771">Computer&nbsp;&nbsp;</li>
+
+<li id="cn-m25-772">Event ID&nbsp;&nbsp;</li>
+
+<li id="cn-m25-773">Source&nbsp;&nbsp;</li>
+
+<li id="cn-m25-774">Type&nbsp;&nbsp;</li>
+
+<li id="cn-m25-775">Log name</li>
+
+</ul>
+
+<p id="cn-m25-776"></p><figure><img class="cn-img" id="cn-image-m25-c-99" src="IncidentResponseTools_files/image-m25-c-99.jpg" alt="Figure 4.6 Screenshot of PLABWIN10"><figcaption>Figure 4.6 Screenshot of PLABWIN10: Showing the details of a selected event.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-777"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-778">Notice that the <b>Windows Logs </b>node displays 
+different types of logs. It is important to note that these are static 
+logs on all Windows systems. However, a server with specific services, 
+such as a DNS server, can have DNS logs as well. Such logs are listed 
+under the <b>Applications </b>and <b>Services Logs </b>node.</p>
+
+<p id="cn-m25-779">Expand <b>Applications and Services Logs</b>. Notice that these logs are specific to applications.</p>
+
+<p id="cn-m25-780"></p><figure><img class="cn-img" id="cn-image-m25-c-100" src="IncidentResponseTools_files/image-m25-c-100.jpg" alt="Figure 4.7 Screenshot of PLABWIN10"><figcaption>Figure 4.7 Screenshot of PLABWIN10: Showing the Applications and Services related logs in the middle pane.</figcaption></figure><p></p>
+
+<p id="cn-m25-781">Close all open windows.</p>
+
+<h3 id="cn-m25-782"><b>Task 2 - Enable Windows Defender Firewall Logs</b></h3>
+
+<p id="cn-m25-783">Windows Firewall, by default, does not have logging 
+enabled. You need to enable logging to generate the logs, which can be 
+helpful in various activities. For example, you may have added a new 
+rule and want to test it out. Once you test it out, an event is logged 
+in the logs. By reviewing the log, you can determine the outcome of the 
+newly added rule. By enabling the logs, you can also track malicious 
+activities. The default size limit of log is 4 MB.</p>
+
+<p id="cn-m25-784">In this task, you will learn to work with the Windows Defender Firewall logs.</p>
+
+<h4 id="cn-m25-785"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m25-786">Ensure that the required devices are powered on. Connect to <b>PLABWIN10</b>. The Windows desktop is displayed.</p>
+
+<p id="cn-m25-787"></p><figure><img class="cn-img" id="cn-image-m25-c-101" src="IncidentResponseTools_files/image-m25-c-101.jpg" alt="Figure 4.8 Screenshot of PLABWIN10"><figcaption>Figure 4.8 Screenshot of PLABWIN10: Showing the Windows desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-788"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m25-789">If Windows Defender Firewall has logging enabled, its events will be stored in the <b>%windir%\system32\logfiles\firewall\ </b>directory. The default name for the log is <b>pfirewall.log</b>. If this <b>\firewall </b>directory within the logfiles directory does not exist, then it means that logging is not enabled.</p>
+
+<p id="cn-m25-790">To verify the existence of the <b>\firewall </b>directory, right-click Start and then select Run.</p>
+
+<p id="cn-m25-791"></p><figure><img class="cn-img" id="cn-image-m25-c-102" src="IncidentResponseTools_files/image-m25-c-102.jpg" alt="Figure 4.9 Screenshot of PLABWIN10"><figcaption>Figure 4.9 Screenshot of PLABWIN10: Right-clicking Start and selecting Run.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-792"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m25-793">In the <b>Open </b>textbox, type the following path:</p>
+
+<pre id="cn-m25-794"><code>%windir%/system32/logfiles
+
+</code></pre>
+
+<p id="cn-m25-795">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m25-796"><b><i>Note: </i></b><i>You can 
+either use the direct path, which means c:\windows or the drive where 
+you have installed Windows. Alternatively, you can use the variable, 
+which is %windir%, which will automatically open the Windows directory, 
+wherever it is present.</i></span>
+
+<p id="cn-m25-797"></p><figure><img class="cn-img" id="cn-image-m25-c-103" src="IncidentResponseTools_files/image-m25-c-103.jpg" alt="Figure 4.10 Screenshot of PLABWIN10"><figcaption>Figure 4.10 Screenshot of PLABWIN10: Entering the path in the Open text box on the Run dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-798"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m25-799">Notice that the <b>Firewall </b>directory does not exist. Close the <b>File Explorer </b>window.</p>
+
+<p id="cn-m25-800"></p><figure><img class="cn-img" id="cn-image-m25-c-104" src="IncidentResponseTools_files/image-m25-c-104.jpg" alt="Figure 4.11 Screenshot of PLABWIN10"><figcaption>Figure 4.11 Screenshot of PLABWIN10: Showing the directories within the LogFiles directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-801"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m25-802">In the <b>Type here to search </b>textbox, type the following:</p>
+
+<pre id="cn-m25-803"><code>Windows Firewall
+
+</code></pre>
+
+<p id="cn-m25-804">From the search results, select <b>Windows Defender Firewall</b>.</p>
+
+<p id="cn-m25-805"></p><figure><img class="cn-img" id="cn-image-m25-c-105" src="IncidentResponseTools_files/image-m25-c-105.jpg" alt="Figure 4.12 Screenshot of PLABWIN10"><figcaption>Figure 4.12 Screenshot of PLABWIN10: Selecting Windows Defender Firewall from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-806"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m25-807">In the left-hand pane of the <b>Windows Defender Firewall </b>window, click <b>Advanced settings</b>.</p>
+
+<p id="cn-m25-808"></p><figure><img class="cn-img" id="cn-image-m25-c-106" src="IncidentResponseTools_files/image-m25-c-106.jpg" alt="Figure 4.13 Screenshot of PLABWIN10"><figcaption>Figure 4.13 Screenshot of PLABWIN10: Clicking Advanced Settings in the Windows Defender Firewall window.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-809"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m25-810">The <b>Windows Defender Firewall with Advanced Security </b>window is displayed. In the right-hand pane, under <b>Actions</b>, click <b>Properties</b>.</p>
+
+<p id="cn-m25-811"></p><figure><img class="cn-img" id="cn-image-m25-c-107" src="IncidentResponseTools_files/image-m25-c-107.jpg" alt="Figure 4.14 Screenshot of PLABWIN10"><figcaption>Figure 4.14 Screenshot of PLABWIN10: Clicking Properties in the Actions pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-812"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m25-813">The <b>Windows Defender Firewall with Advanced Security on Local Computer </b>dialog box is displayed. By default, the <b>Domain Profile </b>tab is opened. In the <b>Logging </b>section, click <b>Customize</b>.</p>
+
+<p id="cn-m25-814"></p><figure><img class="cn-img" id="cn-image-m25-c-108" src="IncidentResponseTools_files/image-m25-c-108.jpg" alt="Figure 4.15 Screenshot of PLABWIN10"><figcaption>Figure
+ 4.15 Screenshot of PLABWIN10: Clicking Customize on the Windows 
+Defender Firewall with Advanced Security on Local Computer dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-815"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m25-816">The <b>Customize Logging Settings for the Domain Profile </b>dialog box is displayed. In the <b>Log dropped packets </b>drop-down, select <b>Yes</b>.</p>
+
+<p id="cn-m25-817"></p><figure><img class="cn-img" id="cn-image-m25-c-109" src="IncidentResponseTools_files/image-m25-c-109.jpg" alt="Figure 4.16 Screenshot of PLABWIN10"><figcaption>Figure 4.16 Screenshot of PLABWIN10: Selecting Yes from the Log dropped packets drop-down list.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-818"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m25-819">In the <b>Log successful connections </b>drop-down, select <b>Yes </b>and click <b>OK</b>.</p>
+
+<p id="cn-m25-820"></p><figure><img class="cn-img" id="cn-image-m25-c-110" src="IncidentResponseTools_files/image-m25-c-110.jpg" alt="Figure 4.17 Screenshot of PLABWIN10"><figcaption>Figure 4.17 Screenshot of PLABWIN10: Selecting Yes from the Log successful connections drop-down list and clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-821"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m25-822">Click <b>OK </b>to close the <b>Windows Defender Firewall with Advanced Security on Local Computer</b>.</p>
+
+<p id="cn-m25-823"></p><figure><img class="cn-img" id="cn-image-m25-c-111" src="IncidentResponseTools_files/image-m25-c-111.jpg" alt="Figure 4.18 Screenshot of PLABWIN10"><figcaption>Figure
+ 4.18 Screenshot of PLABWIN10: Clicking OK to close the Windows Defender
+ Firewall with Advanced Security on Local Computer.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-824"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m25-825">Close the <b>Windows Defender Firewall with Advanced Security </b>window.</p>
+
+<p id="cn-m25-826"></p><figure><img class="cn-img" id="cn-image-m25-c-112" src="IncidentResponseTools_files/image-m25-c-112.jpg" alt="Figure 4.19 Screenshot of PLABWIN10"><figcaption>Figure 4.19 Screenshot of PLABWIN10: Closing the Windows Defender Firewall with Advanced Security window.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-827"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m25-828">Close the <b>Windows Defender Firewall </b>window.</p>
+
+<p id="cn-m25-829"></p><figure><img class="cn-img" id="cn-image-m25-c-113" src="IncidentResponseTools_files/image-m25-c-113.jpg" alt="Figure 4.20 Screenshot of PLABWIN10"><figcaption>Figure 4.20 Screenshot of PLABWIN10: Closing the Windows Defender Firewall window.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-830"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m25-831">Right-click <b>Start, </b>point to <b>Shut down or sign out </b>and select <b>Restart</b>.</p>
+
+<p id="cn-m25-832"></p><figure><img class="cn-img" id="cn-image-m25-c-114" src="IncidentResponseTools_files/image-m25-c-114.jpg" alt="Figure 4.21 Screenshot of PLABWIN10"><figcaption>Figure 4.21 Screenshot of PLABWIN10: Right-clicking Start and selecting Restart from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-833"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m25-834">Once <b>PLABWIN10 </b>has restarted, in the <b>Type here to search </b>textbox, type the following:</p>
+
+<pre id="cn-m25-835"><code>Notepad
+
+</code></pre>
+
+<p id="cn-m25-836">From the given search results, right-click <b>Notepad </b>and select <b>Run as administrator</b>.</p>
+
+<p id="cn-m25-837"></p><figure><img class="cn-img" id="cn-image-m25-c-115" src="IncidentResponseTools_files/image-m25-c-115.jpg" alt="Figure 4.22 Screenshot of PLABWIN10"><figcaption>Figure 4.22 Screenshot of PLABWIN10: Right-clicking Notepad and selecting Run as administrator from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-838"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m25-839">In the <b>User Account Control </b>dialog box, click <b>Yes</b>.</p>
+
+<p id="cn-m25-840"></p><figure><img class="cn-img" id="cn-image-m25-c-116" src="IncidentResponseTools_files/image-m25-c-116.jpg" alt="Figure 4.23 Screenshot of PLABWIN10"><figcaption>Figure 4.23 Screenshot of PLABWIN10: Clicking Yes in the User Account Control dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-841"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m25-842">The <b>Untitled - Notepad </b>window is displayed. Click <b>File </b>and then select <b>Open</b>.</p>
+
+<p id="cn-m25-843"></p><figure><img class="cn-img" id="cn-image-m25-c-117" src="IncidentResponseTools_files/image-m25-c-117.jpg" alt="Figure 4.24 Screenshot of PLABWIN10"><figcaption>Figure 4.24 Screenshot of PLABWIN10: Clicking File and then selecting Open in the Notepad window.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-844"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m25-845">In the <b>Open </b>dialog box, navigate to the following path:</p>
+
+<pre id="cn-m25-846"><code>C:\Windows\System32\LogFiles
+
+</code></pre>
+
+<p id="cn-m25-847">Notice that there is a <b>Firewall </b>directory that is created. Select the <b>Firewall </b>directory and click <b>Open</b>.</p>
+
+<p id="cn-m25-848"></p><figure><img class="cn-img" id="cn-image-m25-c-118" src="IncidentResponseTools_files/image-m25-c-118.jpg" alt="Figure 4.25 Screenshot of PLABWIN10"><figcaption>Figure 4.25 Screenshot of PLABWIN10: Selecting the Firewall directory and clicking Open.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-849"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m25-850">Ensure that you select <b>All Files </b>from the drop-down next to the <b>File name </b>textbox. Select <b>pfirewall </b>and click <b>Open</b>.</p>
+
+<p id="cn-m25-851"></p><figure><img class="cn-img" id="cn-image-m25-c-119" src="IncidentResponseTools_files/image-m25-c-119.jpg" alt="Figure 4.26 Screenshot of PLABWIN10"><figcaption>Figure
+ 4.26 Screenshot of PLABWIN10: Ensuring All Files is selected from the 
+drop-down next to the File name textbox. Selecting pfirewall and 
+clicking Open.</figcaption></figure><p></p>
+
+<h4 id="cn-m25-852"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m25-853">Notice that the <b>pfirewall </b>log file is now opened. It shows various events handled by the <b>Windows Defender Firewall</b>.</p>
+
+<p id="cn-m25-854"></p><figure><img class="cn-img" id="cn-image-m25-c-120" src="IncidentResponseTools_files/image-m25-c-120.jpg" alt="Figure 4.27 Screenshot of PLABWIN10"><figcaption>Figure 4.27 Screenshot of PLABWIN10: Showing the events handled by the Windows Defender Firewall.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m25-857">Close all open windows.</p>
+
+<h3 id="cn-m25-858"><b>NXLog</b></h3>
+
+<p id="cn-m25-859">A large network would have hundreds of network 
+devices along with servers. Each one of them generates events that need 
+to be managed and monitored. As the administrator, you may have to 
+perform several tasks on these events that have been logged. For 
+example, you may have to classify or correlate events. You may also have
+ to store these event logs in secure storage.</p>
+
+<p id="cn-m25-860"><b>NXLog </b>is a tool that can perform various tasks, such as:</p>
+
+<ul id="cn-m25-861">
+
+<li id="cn-m25-861">Classify events</li>
+
+<li id="cn-m25-862">Correlate events</li>
+
+<li id="cn-m25-863">Store events</li>
+
+<li id="cn-m25-864">Forward events</li>
+
+<li id="cn-m25-865">Filter events</li>
+
+<li id="cn-m25-866">Pattern matching</li>
+
+<li id="cn-m25-867">Logfile rotation</li>
+
+<li id="cn-m25-868">Scheduling</li>
+
+</ul>
+
+<p id="cn-m25-869"><b>NXLog </b>can work with several protocols, such as <b>TLS</b>, <b>SSL</b>, <b>TCP</b>, and <b>UDP</b>. It can also accept event logs from various sources, such as:</p>
+
+<ul id="cn-m25-870">
+
+<li id="cn-m25-870">Syslog</li>
+
+<li id="cn-m25-871">Windows</li>
+
+<li id="cn-m25-872">JSON format</li>
+
+<li id="cn-m25-873">Files</li>
+
+<li id="cn-m25-874">Databases</li>
+
+</ul>
+
+<h3 id="cn-m25-875"><b>Syslog-ng</b></h3>
+
+<p id="cn-m25-876"><b>Syslog-ng </b>is a tool that is used for collecting logs in real-time from various sources. When collecting logs, <b>Syslog-ng </b>uses the <b>SSL</b>/<b>TLS </b>encryption
+ to secure the transmission of information. After the logs are 
+collected, they are stored in an encrypted and compressed log store.</p>
+
+<p id="cn-m25-877">It is also possible for <b>Syslog-ng </b>to send logs
+ to different tools if required. For example, if one department in your 
+organization needs logs for compliance purposes, Syslog-ng can send the 
+logs that are filtered and processed properly. It can also use the <b>REST API </b>for sharing data.</p>
+
+<h3 id="cn-m25-878"><b>Log Retention </b></h3>
+
+<p id="cn-m25-879">An organization must retain logs for a certain 
+period, although It depends on the type of operations that the 
+organization runs. If it is a simple data processing organization, then 
+logs may not be retained for a long period, such as seven years. 
+However, if the organization is involved in financial transactions, 
+several compliances, such as PCI-DSS or FISMA, and laws require the 
+organization to retain logs for at least seven years.</p>
+
+<p id="cn-m25-880">The organization must define log retention policies. 
+The policies should dictate how the logs are retained, where they are 
+retained, and how long they are retained. Other than this, the log 
+retention policies should also define how the logs need to be removed or
+ deleted. For example, a simple delete or a soft delete does delete the 
+files, which can be recovered by a data recovery application. Therefore,
+ the deletion needs to be hard to delete or data wipe.</p>
+
+<h3 id="cn-m25-881"><b>Bandwidth Monitors</b></h3>
+
+<p id="cn-m25-882">A bandwidth monitor is a tool that monitors bandwidth
+ utilization in real-time. When an organization needs to connect to the 
+Internet, it uses a certain amount of bandwidth that it takes from an 
+ISP. Bandwidth is usually taken in the form of a leased line that is 
+dedicated to the customer.</p>
+
+<p id="cn-m25-883">Consider the scenario in which your organization has 
+the leased line and has several applications that provide services to 
+customers. However, without a bandwidth monitor, you cannot monitor the 
+bandwidth usage of these applications. Therefore, one application may 
+consume 50% of bandwidth, and other applications may simply survive 
+within the remaining 50%.</p>
+
+<p id="cn-m25-884">With a bandwidth monitor, you can get utilization in 
+real-time. Depending on the requirement, the allotment of the bandwidth 
+can take place. For example, you can assign a certain amount of 
+bandwidth to one application and remaining to the other applications. 
+With the use of bandwidth monitors, a network administrator’s life is 
+simplified as they can track the actual top-talkers of the bandwidth.</p>
+
+<h3 id="cn-m25-885"><b>Netflow Protocol</b></h3>
+
+<p id="cn-m25-886"><b>Netflow </b>is a protocol that monitors the 
+network traffic as it is being transmitted from one device to another 
+device. When the network traffic is captured, <b>Netflow </b>can 
+determine various factors, such as the ports and protocols used by the 
+traffic. Such information can be used for determining the bottlenecks on
+ the network.</p>
+
+<h3 id="cn-m25-887"><b>Metadata Properties</b></h3>
+
+<p id="cn-m25-888">Metadata provides the details of the data that is 
+enclosed within a document, Email, or even a Webpage. Let’s explore the 
+metadata of different types of components.</p>
+
+<h4 id="cn-m25-889"><b><i>Email</i></b></h4>
+
+<p id="cn-m25-890">In an Email, the metadata is included as part of the header. Some of the metadata in an Email are:</p>
+
+<ul id="cn-m25-891">
+
+<li id="cn-m25-891">Sender</li>
+
+<li id="cn-m25-892">Recipient</li>
+
+<li id="cn-m25-893">Date</li>
+
+<li id="cn-m25-894">Subject&nbsp;</li>
+
+</ul>
+
+<h4 id="cn-m25-895"><b><i>Mobile</i></b></h4>
+
+<p id="cn-m25-896">A mobile device contains several types of data, such 
+as call records, images, videos, and can also contain documents. Each 
+one has metadata on its own. For example, call metadata contains 
+information, such as the mobile or phone number of recipient, caller’s 
+mobile number, total call duration, and the time when the call was 
+received.</p>
+
+<p id="cn-m25-897">On the other hand, you can also have metadata of the 
+image on a mobile phone. The metadata can include information, such as 
+when the image was created, image dimensions, resolution, and image 
+size.</p>
+
+<h4 id="cn-m25-898"><b><i>Web</i></b></h4>
+
+<p id="cn-m25-899">A Webpage has a page title and meta description, 
+which is used by the search engines to understand the intent of the 
+webpage. When you perform a search in a search engine, each webpage that
+ meets the search criteria is displayed in the search results. Each page
+ is listed with a title, which is the title of the webpage. Below the 
+title, there is usually a small description of the webpage, which is the
+ meta description.</p>
+
+<h4 id="cn-m25-900"><b><i>File</i></b></h4>
+
+<p id="cn-m25-901">File metadata is about various data points that 
+describe a file. For example, if you right-click a document and open 
+properties. On the <b>Details </b>tab, you can find various properties. 
+You can find various metadata points, such as creation date, date last 
+saved, and last printed.</p>
+
+<p id="cn-m25-902">Other than these metadata points, you also have other information, such as word count, character count, line count, and so on.</p>
+
+<p id="cn-m25-903"></p><figure><img class="cn-img" id="cn-image-m25-c-121" src="IncidentResponseTools_files/image-m25-c-121.jpg" alt="Figure 4.28 Screenshot of Microsoft Word Properties"><figcaption>Figure 4.28 Screenshot of Microsoft Word Properties: Showing the various attributes of a MS Word file.</figcaption></figure><p></p>
+
+<h3 id="cn-m25-906"><b>Security Information and Event Management&nbsp;(SIEM)</b></h3>
+
+<p id="cn-m25-907"><b>Security Information and Event Management&nbsp;</b>(<b>SIEM</b>)
+ is a tool that is primarily used for real-time analysis of the alerts 
+that are generated by the applications and network devices on the 
+network. A <b>SIEM </b>can be software or even an appliance. There are vendors in the market who are also providing <b>SIEM </b>service as a managed service.</p>
+
+<p id="cn-m25-908">A <b>SIEM </b>has several capabilities. Some of the key capabilities are:</p>
+
+<ul id="cn-m25-909">
+
+<li id="cn-m25-909"><b>Data Aggregation</b>: Can collate event-related information from various sources, such as network devices, servers, and applications</li>
+
+<li id="cn-m25-910"><b>Event Correlation</b>: Events usually have 
+similar and common attributes. With the event correlation method, events
+ with common attributes are bundled together.</li>
+
+<li id="cn-m25-911"><b>Analysis</b>: The SIEM also performs an automated analysis of the events that are correlated.</li>
+
+<li id="cn-m25-912"><b>Dashboard</b>: Complete visual depiction of the events, and their analysis is displayed on the dashboard.</li>
+
+<li id="cn-m25-913"><b>Data Retention</b>: The data can be retained for various reasons, such as compliance, analysis, or even forensic investigation.</li>
+
+</ul>
+
+<p id="cn-m25-914">In this exercise, you will learn about various terms related to SIEM.</p>
+
+<h3 id="cn-m25-915"><b>Log Aggregation</b></h3>
+
+<p id="cn-m25-916">After installing SIEM, the next step you need to 
+perform is to configure aggregation for collecting events from multiple 
+sources. After aggregation, you need to configure correlation. You may 
+have several network devices and servers on the network. You can 
+configure SIEM to pull logs from these devices and servers. In simpler 
+words, aggregation is the process of combining logs from several devices
+ and servers. You would not have to go through logs on several devices 
+because SIEM becomes a central location to review logs. This cuts down 
+on the efforts of an administrator as the logs are now collated in a 
+central location.</p>
+
+<h3 id="cn-m25-917"><b>Event Trends</b></h3>
+
+<p id="cn-m25-918">Once the data is gathered and analyzed, you can draw 
+trends from events that have taken place. For example, you can draw 
+trends from a group of network devices, such as routers or switches. 
+Several SIEMs also have the capability of creating severity trends that 
+can help you identify issues with one or more types of groups of 
+devices. With the use of trends, you can analyze and monitor the devices
+ that require more attention. For example, a Windows server on the 
+network has several security alerts, which have started to occur in the 
+last few days. Without visualizing and analyzing the trends, you would 
+have not been able to narrow down such issues.</p>
+
+<h3 id="cn-m25-919"><b>Alerts</b></h3>
+
+<p id="cn-m25-920">Alerts can be triggered and sent based on events 
+configured by the administrator that occurs. As the events are generated
+ and written to the log files, automated alerts can be sent to the 
+administrator. For example, if there are security alerts, the 
+administrator can promptly take action on a server where the logs 
+originally generated.</p>
+
+<h3 id="cn-m25-921"><b>Event Correlation</b></h3>
+
+<p id="cn-m25-922">Correlation helps compare events from different logs 
+to link them together as security-related events.  The correlation 
+engine performs deduplication, removing duplicate events from different 
+sources. For example, a log file may have thousands of events, out of 
+which nearly half of them may be duplicate events that are logged. SIEM 
+can automatically correlate the logs and give you insights on to 
+meaningful events. Manually, you may not be able to determine the number
+ of duplicate events, which SIEM can do without any manual intervention.</p>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m25-926">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m25-927"><b>Review</b></h2>
+
+<p id="cn-m25-928">Well done, you have completed the <b>Incident Response Tools </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">e2a8666c-9b7b-4db5-bb1a-f7c586d4f9b7</span>
+
+<span class="atom-code hidden">b7afcfdf-0509-4ad8-8649-e8d8749f725a</span>
+
+<span class="atom-code hidden">bd9423ef-3fb7-42f1-ac9f-cf4171e326bc</span>
+
+<span class="atom-code hidden">356c3e31-681e-44fd-924d-0abf4f6c1a3f</span>
+
+<span class="atom-code hidden">b7447260-d002-4df3-b1e8-03d1f3b8d3d8</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m25-938">You completed the following exercises:</p>
+
+<ul id="cn-m25-939">
+
+<li id="cn-m25-939">Exercise 1 - Configuring System Logging</li>
+
+<li id="cn-m25-940">Exercise 2 - Using Tcpdump and Logging</li>
+
+<li id="cn-m25-941">Exercise 3 - Capturing Packets with Wireshark</li>
+
+<li id="cn-m25-942">Exercise 4 - Work with Logs in Windows</li>
+
+</ul>
+
+<p id="cn-m25-943">You should now be able to:</p>
+
+<ul id="cn-m25-944">
+
+<li id="cn-m25-944">View the Syslog Daemon Configuration</li>
+
+<li id="cn-m25-945">View the Configuration of Logrotate</li>
+
+<li id="cn-m25-946">Check Boot Events in the Log Files</li>
+
+<li id="cn-m25-947">Use Tcpdump</li>
+
+<li id="cn-m25-948">Know the Key Locations for Logging</li>
+
+<li id="cn-m25-949">Capture Traffic Information</li>
+
+<li id="cn-m25-950">Analyze Captured Information</li>
+
+<li id="cn-m25-951">Display Capture Information with Wireshark</li>
+
+<li id="cn-m25-952">View Packet Capture Logs</li>
+
+<li id="cn-m25-953">Access the Event Viewer Logs</li>
+
+<li id="cn-m25-954">Enable Windows Defender Firewall Logs</li>
+
+</ul>
+
+<p id="cn-m25-955">You should now have further knowledge of:</p>
+
+<ul id="cn-m25-956">
+
+<li id="cn-m25-956">NXLog</li>
+
+<li id="cn-m25-957">Syslog-ng</li>
+
+<li id="cn-m25-958">Log Retention</li>
+
+<li id="cn-m25-959">Bandwidth Monitors</li>
+
+<li id="cn-m25-960">Netflow Protocol</li>
+
+<li id="cn-m25-961">Metadata Properties</li>
+
+<li id="cn-m25-962">Security Information and Event Management (SIEM)</li>
+
+<li id="cn-m25-963">Log Aggregation</li>
+
+<li id="cn-m25-964">Event Trends</li>
+
+<li id="cn-m25-965">Alerts</li>
+
+<li id="cn-m25-966">Event Correlation</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m25-970">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

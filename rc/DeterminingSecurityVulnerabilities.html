@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="DeterminingSecurityVulnerabilities_files/print-styles.css" rel="stylesheet">
+    <script src="DeterminingSecurityVulnerabilities_files/jquery.min.js"></script>
+    <script src="DeterminingSecurityVulnerabilities_files/jspdf.js"></script>
+    <script src="DeterminingSecurityVulnerabilities_files/from_html.js"></script>
+    <script src="DeterminingSecurityVulnerabilities_files/addimage.js"></script>
+    <script src="DeterminingSecurityVulnerabilities_files/filesaver.js"></script>
+    <script src="DeterminingSecurityVulnerabilities_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="b8d4uJcfzp8xaNHoFaGeJysqqu0NwYvpJNjpO5+ktqkaVxSoQa1+o77A8C0+4kXn/TUhlSIGrEh+4q6zzCPVLdAys4MySEmdK0YMVihZvPs=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Determining Security Vulnerabilities</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Security Concerns and Vulnerabilities</li><li>Exercise 2 - Third-Party Risks</li><li>Exercise 3 - Improper or Weak Patch Management</li><li>Exercise 4 - Impacts</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m8-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Zero-day</div>
+
+<div>Weak Configurations</div>
+
+<div>Legacy Platforms</div>
+
+<div>Cloud-based</div>
+
+<div>On-premises</div>
+
+<div>Vulnerabilities</div>
+
+<div>Vendor Management</div>
+
+<div>Supply Chain</div>
+
+<div>Outsourced Code Development</div>
+
+<div>Data Storage</div>
+
+<div>Firmware</div>
+
+<div>Operating System (OS)</div>
+
+<div>Applications</div>
+
+<div>Data Loss</div>
+
+<div>Data Breaches</div>
+
+<div>Data Exfiltration</div>
+
+<div>Identity Theft</div>
+
+<div>Financial</div>
+
+<div>Reputation</div>
+
+<div>Availability loss</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m8-23">Welcome to the <b>Determining Security Vulnerabilities </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-27">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m8-28">
+
+<li id="cn-m8-28">Exercise 1 - Security Concerns and Vulnerabilities</li>
+
+<li id="cn-m8-29">Exercise 2 - Third-Party Risks</li>
+
+<li id="cn-m8-30">Exercise 3 - Improper or Weak Patch Management</li>
+
+<li id="cn-m8-31">Exercise 4 - Impacts</li>
+
+</ul>
+
+<p id="cn-m8-32">After completing this module, you should be able to:</p>
+
+<ul id="cn-m8-33">
+
+<li id="cn-m8-33">Open Ports and Services</li>
+
+<li id="cn-m8-34">Analyze Hosts on a Network using Microsoft Baseline Security Analyzer</li>
+
+</ul>
+
+<p id="cn-m8-35">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m8-36">
+
+<li id="cn-m8-36">Cloud-based vs. On-premises Vulnerabilities</li>
+
+<li id="cn-m8-37">Zero-day</li>
+
+<li id="cn-m8-38">Weak Configurations</li>
+
+<li id="cn-m8-39">Legacy Platforms</li>
+
+<li id="cn-m8-40">Vendor Management</li>
+
+<li id="cn-m8-41">Supply Chain</li>
+
+<li id="cn-m8-42">Outsourced Code Development</li>
+
+<li id="cn-m8-43">Data Storage</li>
+
+<li id="cn-m8-44">Firmware</li>
+
+<li id="cn-m8-45">Operating System (OS)</li>
+
+<li id="cn-m8-46">Applications</li>
+
+<li id="cn-m8-47">Data Loss</li>
+
+<li id="cn-m8-48">Data Breaches</li>
+
+<li id="cn-m8-49">Data Exfiltration</li>
+
+<li id="cn-m8-50">Identity Theft</li>
+
+<li id="cn-m8-51">Financial</li>
+
+<li id="cn-m8-52">Reputation</li>
+
+<li id="cn-m8-53">Availability loss</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m8-55">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m8-56">1.6 Explain the security concerns associated with various types of vulnerabilities.</p>
+
+<ul id="cn-m8-57">
+
+<li id="cn-m8-57">Cloud-based Vs. On-premises Vulnerabilities</li>
+
+<li id="cn-m8-58">Zero-day</li>
+
+<li id="cn-m8-59">Weak Configurations</li>
+
+<li id="cn-m8-60">Third-party Risks</li>
+
+<li id="cn-m8-61">Improper or Weak Patch Management</li>
+
+<li id="cn-m8-62">Legacy Platforms</li>
+
+<li id="cn-m8-63">Impacts</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m8-64"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m8-66">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">6cde82b4-969e-4ba2-9a1b-b030a82e21d0</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m8-70">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m8-71">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-73"><b>Lab Topology</b></h2>
+
+<p id="cn-m8-74">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m8-75"><img class="cn-img" id="cn-image-m8-c-0" src="DeterminingSecurityVulnerabilities_files/image-m8-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m8-76">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m8-77">
+
+<li id="cn-m8-77"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m8-78"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m8-79"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m8-80"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m8-81">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="SecurityConcernsandVulnerabilities">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-82"><b>Exercise 1 - Security Concerns and Vulnerabilities</b></h2>
+
+<p id="cn-m8-83">Outside of human error, security flaws and 
+vulnerabilities are the primary reason for any security breach. For 
+example, an Internet-facing application with a critical vulnerability is
+ likely to be explored and exploited by a hacker.</p>
+
+<p id="cn-m8-84">In this exercise, you will learn about different types of security concerns and vulnerabilities.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-86">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m8-87">
+
+<li id="cn-m8-87">Open Ports and Services</li>
+
+</ul>
+
+<p id="cn-m8-88">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m8-89">
+
+<li id="cn-m8-89">Cloud-based vs. On-premises Vulnerabilities</li>
+
+<li id="cn-m8-90">Zero-day</li>
+
+<li id="cn-m8-91">Weak Configurations</li>
+
+<li id="cn-m8-92">Legacy Platforms</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-94">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m8-95">
+
+<li id="cn-m8-95"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m8-96"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m8-97"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<p id="cn-m8-98"><img class="cn-img" id="cn-image-m8-c-1" src="DeterminingSecurityVulnerabilities_files/image-m8-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m8-99"><b>Cloud-based vs. On-premises Vulnerabilities</b></h3>
+
+<p id="cn-m8-100">Fundamentally, a cloud infrastructure is identical to 
+an on-premise infrastructure except that you do not have physical access
+ to the machines. The type of security controls that you can implement 
+in an on-premise data centre, you can implement in the cloud as well.</p>
+
+<p id="cn-m8-101">Over the years, an on-premise infrastructure gets worn
+ out unless the organization chooses to add new security devices and 
+applications. There needs to be continuous upgrades made right to the 
+endpoints, servers, applications, and network devices. Without 
+continuous upgrades, organizations may have to live with legacy 
+infrastructure, mostly not supported by vendors. What this means is when
+ there are vulnerabilities, the organizations cannot patch them as there
+ is no or little support. This is not the case with cloud services. 
+There are continuous upgrades that come with the subscription you take.</p>
+
+<p id="cn-m8-102">Because of physical access in on-premise data centres,
+ there are more chances of unauthorized access to the network or data 
+centres.</p>
+
+<p id="cn-m8-103">Data privacy may be an issue in the cloud as data is 
+not in your control. How data is stored is not transparent to the cloud 
+consumer. You can logically assign access to data, but you cannot 
+physically control access.</p>
+
+<p id="cn-m8-104">In totality, the cloud service providers tend to keep 
+their infrastructure updated and focus on minimal or no vulnerabilities.
+ However, when you set up your network in a cloud environment, it is 
+your responsibility to keep it updated. Be it the operating systems or 
+the applications. You need to secure your network.</p>
+
+<h3 id="cn-m8-105"><b>Zero-day</b></h3>
+
+<p id="cn-m8-106">A zero-day attack exploits an unknown vulnerability 
+and can only be discovered when new software is deployed. Let’s assume a
+ scenario; recently, one of your newly deployed applications was 
+attacked and the attacker was able to gain administrative access. The 
+antivirus and HIDS deployed on the server hosting the application was 
+not able to detect any suspicious files or malware. A zero-day attack is
+ impossible to detect as it exploits unknown vulnerabilities.</p>
+
+<p id="cn-m8-107">A zero-day vulnerability is an example of an unknown 
+threat. It is not known to an organization, but there is a high 
+possibility that it may be present in applications that the organization
+ uses. Unknown threats usually occur because attackers continue to find 
+new methods to conduct attacks.</p>
+
+<p id="cn-m8-108">Software typically has vulnerabilities, and most 
+vulnerabilities are known and patched by the software vendor. However, 
+other vulnerabilities are discovered and then exploited (in most cases) 
+by different entities, such as security researchers or hackers. The 
+vulnerabilities are unknown to anyone, including the software vendors, 
+and can be exploited.</p>
+
+<p id="cn-m8-109">It is important to note that because of the single 
+reason that the vulnerability is not yet known, a zero-day vulnerability
+ is difficult to patch.</p>
+
+<p id="cn-m8-110">Hackers typically lookout for unknown vulnerabilities,
+ and when they find it, they exploit it for certain benefits, such as 
+unauthorized access to data and systems. Some hackers may ask for a 
+reward from the software vendor, and if not paid, they may sell it to 
+other entities or exploit it themselves.</p>
+
+<h3 id="cn-m8-111"><b>Task 1 - Security Updates E-mail Service</b></h3>
+
+<p id="cn-m8-112">In order to limit the threat of Zero-day exploits, Microsoft runs the <b>Security Updates E-mail Service </b>that
+ will automatically send e-mails out to subscribers that outline 
+security updates to Microsoft software. There are many reasons as to why
+ this is helpful knowledge for a security administrator, although it 
+also limits the attack surface with Zero-day threats.</p>
+
+<p id="cn-m8-113">In this task, you will learn how to sign up for <b>Security E-mail Update Alerts</b>.</p>
+
+<h4 id="cn-m8-114"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-115">Connect to <b>PLABWIN10</b>. You will be presented with the <b>Desktop</b>.</p>
+
+<p id="cn-m8-116"></p><figure><img class="cn-img" id="cn-image-m8-c-2" src="DeterminingSecurityVulnerabilities_files/image-m8-c-2.jpg" alt="Figure 1.1 Screenshot of PLABWIN10"><figcaption>Figure 1.1 Screenshot of PLABWIN10: Showing the Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-117"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-118">Click <b>Microsoft Edge </b>on the <b>Taskbar</b>.</p>
+
+<p id="cn-m8-119"></p><figure><img class="cn-img" id="cn-image-m8-c-3" src="DeterminingSecurityVulnerabilities_files/image-m8-c-3.jpg" alt="Figure 1.2 Screenshot of PLABWIN10"><figcaption>Figure 1.2 Screenshot of PLABWIN10: Showing the Practice Labs Intranet inside of Microsoft Edge.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-120"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-121">In the <b>Navigation </b>Bar, type the following:</p>
+
+<pre id="cn-m8-122"><code>https://www.microsoft.com/en-us/msrc/technical-security-notifications
+
+</code></pre>
+
+<p id="cn-m8-123">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-124"></p><figure><img class="cn-img" id="cn-image-m8-c-4" src="DeterminingSecurityVulnerabilities_files/image-m8-c-4.jpg" alt="Figure 1.3 Screenshot of PLABWIN10"><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: Showing Microsoft Edge, with the Microsoft
+ Technical Notifications website page typed into the Navigation bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-125"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-126">Here we can see the option to sign up for <b>Security E-mail Update Alerts</b>. Click the <b>Security Notification Service </b>hyperlink.</p>
+
+<p id="cn-m8-127"></p><figure><img class="cn-img" id="cn-image-m8-c-5" src="DeterminingSecurityVulnerabilities_files/image-m8-c-5.jpg" alt="Figure 1.4 Screenshot of PLABWIN10"><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: Showing the Microsoft Technical Security 
+Notifications webpage, with the Security Notification Service hyperlink 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-128"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-129">Here you will be directed to the <b>Microsoft Live Login </b>page.
+ If you were to login using either a personal or professional E-mail 
+address, you have the option to sign up for this mailing list.</p>
+
+<p id="cn-m8-130"></p><figure><img class="cn-img" id="cn-image-m8-c-6" src="DeterminingSecurityVulnerabilities_files/image-m8-c-6.jpg" alt="Figure 1.5 Screenshot of PLABWIN10"><figcaption>Figure 1.5 Screenshot of PLABWIN10: Showing the Microsoft Security Notification Service.</figcaption></figure><p></p>
+
+<h3 id="cn-m8-132"><b>Weak Configurations</b></h3>
+
+<p id="cn-m8-133">There can be several reasons why an operating system, 
+application, or a network appliance can suffer from a weak 
+configuration. Often, the vulnerabilities exist in an operating system, 
+an application, or even a network device due to weak configurations, 
+which can be of different types. Let’s look at some of the key types of 
+weak configurations.</p>
+
+<h4 id="cn-m8-134"><b><i>Default Settings</i></b></h4>
+
+<p id="cn-m8-135">Often an administrator would deploy the default 
+configuration of settings in a system, application, or a network device.
+ This type of configuration is known as out-of-the-box, which is known 
+to be weaker than a customized configuration. The vendors of operating 
+systems, applications, and network devices mostly use minimal security 
+for the ease of installation. However, it is the responsibility of an 
+administrator to tweak the security settings to ensure that the 
+operating system, application, or the network device does not suffer 
+from weak configurations, which can lead to its compromise.</p>
+
+<p id="cn-m8-136">For example, an administrator may install an operating
+ system or configure a wireless access point and leave it with the 
+default configuration. Even though they will be secure by default, the 
+security will be at a minimal level.</p>
+
+<h4 id="cn-m8-137"><b><i>Open Permissions</i></b></h4>
+
+<p id="cn-m8-138">Whether your data is stored in an on-premises 
+datacenter or the cloud, you would need to provide restrictive 
+permissions. However, this does not happen often. Administrators and 
+users, knowingly or unknowingly, give open permissions. For example, 
+let’s assume that you have a Linux system on which you have several 
+confidential files. You simply assign 777 permissions on the file that 
+contains confidential information. The 777 permissions provide everyone 
+read, write, and execute permissions. The owner of the file should have 
+provided only the relevant permissions, such as Read.</p>
+
+<h4 id="cn-m8-139"><b><i>Unsecured Root Accounts</i></b></h4>
+
+<p id="cn-m8-140">Several administrators allow users to have 
+administrative privileges on a system. For example, a user may simply 
+log on to a system with the Administrator account. On the other hand, 
+the root account may be used to log on. Some administrators do not 
+bother to create user accounts in a Linux system and allow users to use 
+the root account.</p>
+
+<p id="cn-m8-141">Another reason the root account can be unsecured is by
+ using a weak password, which can be easily guessed. This is a typical 
+problem that can exist with any operating system, irrespective of what 
+type of user accounts are being used. The unsecured root account in a 
+Linux system is an open invitation for a threat actor to compromise it.</p>
+
+<h4 id="cn-m8-142"><b><i>Errors</i></b></h4>
+
+<p id="cn-m8-143">Errors can be of different types, and there can be 
+configurational errors in a system, or there can be programming errors. 
+Configuration errors can occur when you’ve made a change to the hardware
+ or performed a software upgrade.  Suppose an application programmer has
+ developed an application with errors, such as not including proper 
+authentication functionality in a code, or incorrect validation of 
+user’s input. In that case, there is a high chance an attacker will 
+exploit these vulnerabilities. Any type of error that a system or 
+application may have will introduce vulnerabilities in a system.</p>
+
+<p id="cn-m8-144">A key attack specifically on web applications is <b>Cross</b>-<b>Site Scripting </b>(<b>XSS</b>),
+ which is a type of attack where an attacker injects malicious scripts 
+into vulnerable web applications, thereby causing serious damage to 
+applications. The malicious script is executed in the victim’s web 
+browser when they visit an infected page. <b>JavaScript </b>is the most common scripting language used for developing malicious code.</p>
+
+<h4 id="cn-m8-145"><b><i>Weak Encryption</i></b></h4>
+
+<p id="cn-m8-146">Whenever you are sharing or storing data, it is 
+appropriate to use a strong encryption method. In the past, there have 
+been various incidents that lead to data compromise due to weak 
+encryption.</p>
+
+<p id="cn-m8-147">For example, in a wireless network, <b>Wired Equivalent Privacy </b>(<b>WEP</b>)
+ was initially used with wireless networks, but it can be easily cracked
+ so it is no longer recommended for use. If you still go ahead and use 
+it on your wireless network, then someone even with little hacking 
+skills can break it.</p>
+
+<p id="cn-m8-148">Another example is <b>Wi</b>-<b>Fi Protected Access </b>(<b>WPA</b>), which uses the <b>Temporal Key Integrity Protocol </b>(<b>TKIP</b>) - a 128-bit per-packet key. It will encrypt the network transmissions using <b>TKIP</b>, which was considered a replacement to <b>WEP</b>, but it is vulnerable and weaker than its successor, <b>WPA2</b>.</p>
+
+<p id="cn-m8-149">A protocol providing weak encryption uses an 
+insufficient length of an encryption key, which can be broken. This was 
+the case with <b>WEP </b>and <b>WPA</b>.</p>
+
+<h4 id="cn-m8-150"><b><i>Unsecure Protocols</i></b></h4>
+
+<p id="cn-m8-151">Organizations often use unsecured protocols that lead 
+to several attacks on their infrastructure. Some of the key unsecured 
+protocols are <b>HTTP</b>, <b>FTP</b>, <b>Telnet</b>, and <b>SNMP</b>.</p>
+
+<p id="cn-m8-152">Let’s take an example of <b>Telnet</b>, which is used to remotely connect to servers and administer them. <b>Telnet </b>sends
+ clear text communication over the network and Internet, depending on 
+where you connected with a server. The authentication information is 
+also sent in cleartext. Someone with a packet capturing tool can capture
+ and gain access to authentication information.</p>
+
+<p id="cn-m8-153"><b>FTP</b>, <b>HTTP</b>, and <b>SNMP v1 </b>and <b>v2 </b>also
+ share information in clear text, which makes them equally as prone to 
+different types of attacks, such as packet capturing or even a <b>Man</b>-<b>in</b>-<b>the</b>-<b>Middle </b>attack.</p>
+
+<h3 id="cn-m8-154"><b>Legacy Platforms</b></h3>
+
+<p id="cn-m8-155">When an operating system or application completes its 
+shelf life, it is then succeeded by a newer version. A vendor always 
+recommends using the latest and newer version of an operating system and
+ platform for several reasons, such as new features, better support for 
+newer hardware, and fewer vulnerabilities in most cases.</p>
+
+<p id="cn-m8-156">When an operating system or application goes out of 
+the market, its vendor stops its support after a specified time. 
+Consider the example of <b>Windows XP </b>and <b>Windows 7 </b>end of support:</p>
+
+<ul id="cn-m8-157">
+
+<li id="cn-m8-157">Windows XP: April 8, 2014</li>
+
+<li id="cn-m8-158">Windows 7: January 14, 2020</li>
+
+</ul>
+
+<p id="cn-m8-159">When there is no support after a specified time, this 
+means that the vendor will also not be rolling out updates or patches 
+that can cover known vulnerabilities. If there are vulnerabilities found
+ that do not have patches or updates, then these systems are considered 
+vulnerable. One vulnerability in such an operating system or application
+ can impact the entire network.</p>
+
+<h3 id="cn-m8-160"><b>Task 2 - Open ports and services</b></h3>
+
+<p id="cn-m8-161">The <b>Nmap </b>and <b>Netstat </b>Linux commands enable you to discover open ports on a system . Using the <b>Nmap </b>command, you can perform port scanning of a specific system or more than one system on the network. The <b>Netstat </b>command is a network information tool that can provide information about the network connection, routing tables, and much more.</p>
+
+<p id="cn-m8-162">In this task, you will discover open ports on a system.</p>
+
+<h4 id="cn-m8-163"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-164">Ensure that all the required devices are powered on and connect to <b>PLABKALI</b>. In the <b>Enter your username </b>text box, type the following:</p>
+
+<pre id="cn-m8-165"><code>root
+
+</code></pre>
+
+<p id="cn-m8-166">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m8-168">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m8-169"></p><figure><img class="cn-img" id="cn-image-m8-c-7" src="DeterminingSecurityVulnerabilities_files/image-m8-c-7.jpg" alt="Figure 1.6 Screenshot of PLABKALI"><figcaption>Figure 1.6 Screenshot of PLABKALI: Logging on to Kali Linux.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-170"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-171">After a successful login, the desktop is displayed.</p>
+
+<p id="cn-m8-172"></p><figure><img class="cn-img" id="cn-image-m8-c-8" src="DeterminingSecurityVulnerabilities_files/image-m8-c-8.jpg" alt="Figure 1.7 Screenshot of PLABKALI"><figcaption>Figure 1.7 Screenshot of PLABKALI: Displaying the desktop after the successful login.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-173"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-174">On the desktop, right-click and select <b>Open Terminal Here</b>.</p>
+
+<p id="cn-m8-175"></p><figure><img class="cn-img" id="cn-image-m8-c-9" src="DeterminingSecurityVulnerabilities_files/image-m8-c-9.jpg" alt="Figure 1.8 Screenshot of PLABKALI"><figcaption>Figure 1.8 Screenshot of PLABKALI: Selecting the Open Terminal Here option from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-176"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-177">To show protocol statistics, which is the protocols being used on the local system, type the following information:</p>
+
+<pre id="cn-m8-178"><code>netstat -s
+
+</code></pre>
+
+<p id="cn-m8-179">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m8-180"><b><i>Note: </i></b><i>The -s parameter shows the per-protocol statistics. To view the complete details, scroll up in the terminal window.</i></span>
+
+<p id="cn-m8-181"></p><figure><img class="cn-img" id="cn-image-m8-c-10" src="DeterminingSecurityVulnerabilities_files/image-m8-c-10.jpg" alt="Figure 1.9 Screenshot of PLABKALI"><figcaption>Figure 1.9 Screenshot of PLABKALI: Showing the protocol statistics using the netstat command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-182"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-183">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m8-184"><code>clear
+
+</code></pre>
+
+<p id="cn-m8-185">To display the active <b>TCP </b>connections, type the following command:</p>
+
+<pre id="cn-m8-186"><code>netstat --tcp -n
+
+</code></pre>
+
+<p id="cn-m8-187">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-188"></p><figure><img class="cn-img" id="cn-image-m8-c-11" src="DeterminingSecurityVulnerabilities_files/image-m8-c-11.jpg" alt="Figure 1.10 Screenshot of PLABKALI"><figcaption>Figure 1.10 Screenshot of PLABKALI: Showing the netstat command with the tcp parameter.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-189"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-190">This command shows connections with the network addresses on the TCP protocol.</p>
+
+<p id="cn-m8-191"></p><figure><img class="cn-img" id="cn-image-m8-c-12" src="DeterminingSecurityVulnerabilities_files/image-m8-c-12.jpg" alt="Figure 1.11 Screenshot of PLABKALI"><figcaption>Figure 1.11 Screenshot of PLABKALI: Displaying the active TCP connections.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-192"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m8-193">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m8-194"><code>clear
+
+</code></pre>
+
+<p id="cn-m8-195">Let's now use the nmap command. Type the following command:</p>
+
+<pre id="cn-m8-196"><code>nmap 192.168.0.1
+
+</code></pre>
+
+<p id="cn-m8-197">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-198"></p><figure><img class="cn-img" id="cn-image-m8-c-13" src="DeterminingSecurityVulnerabilities_files/image-m8-c-13.jpg" alt="Figure 1.12 Screenshot of PLABKALI"><figcaption>Figure 1.12 Screenshot of PLABKALI: Using the nmap command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-199"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m8-200">The results are displayed.</p>
+
+<p id="cn-m8-201">The output shows the open ports with the protocols.</p>
+
+<p id="cn-m8-202"></p><figure><img class="cn-img" id="cn-image-m8-c-14" src="DeterminingSecurityVulnerabilities_files/image-m8-c-14.jpg" alt="Figure 1.13 Screenshot of PLABKALI"><figcaption>Figure 1.13 Screenshot of PLABKALI: Showing the result of the nmap command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-203"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m8-204">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m8-205"><code>clear
+
+</code></pre>
+
+<p id="cn-m8-206">You can also list the services and their versions 
+running on a system along with its operating system. To do this, type 
+the following command:</p>
+
+<pre id="cn-m8-207"><code>nmap -sV -O 192.168.0.1
+
+</code></pre>
+
+<p id="cn-m8-208">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-209"></p><figure><img class="cn-img" id="cn-image-m8-c-15" src="DeterminingSecurityVulnerabilities_files/image-m8-c-15.jpg" alt="Figure 1.14 Screenshot of PLABKALI"><figcaption>Figure
+ 1.14 Screenshot of PLABKALI: Using the nmap command to list the 
+services and their versions running on a system along with its operating
+ system.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-210"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m8-211">As a result of the command, several running services and the operating system have been detected.</p>
+
+<p id="cn-m8-212"></p><figure><img class="cn-img" id="cn-image-m8-c-16" src="DeterminingSecurityVulnerabilities_files/image-m8-c-16.jpg" alt="Figure 1.15 Screenshot of PLABKALI"><figcaption>Figure 1.15 Screenshot of PLABKALI: Showing the output of the nmap command.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-214"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m8-215">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m8-216"><code>clear
+
+</code></pre>
+
+<p id="cn-m8-217">You can also scan for open ports on several systems at once. To do this, type the following command:</p>
+
+<pre id="cn-m8-218"><code>nmap 192.168.0.1-5
+
+</code></pre>
+
+<p id="cn-m8-219">Press <b>Enter</b>.</p>
+
+<p id="cn-m8-220"></p><figure><img class="cn-img" id="cn-image-m8-c-17" src="DeterminingSecurityVulnerabilities_files/image-m8-c-17.jpg" alt="Figure 1.16 Screenshot of PLABKALI"><figcaption>Figure 1.16 Screenshot of PLABKALI: Using the nmap command with a range of IP addresses.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-222"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m8-223">The command takes a few seconds to run and then displays the output.</p>
+
+<p id="cn-m8-224"></p><figure><img class="cn-img" id="cn-image-m8-c-18" src="DeterminingSecurityVulnerabilities_files/image-m8-c-18.jpg" alt="Figure 1.17 Screenshot of PLABKALI"><figcaption>Figure 1.17 Screenshot of PLABKALI: Showing the output of the nmap command.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+< <a href="https://github.com/SeanOhAileasa" id="ThirdPartyRisks">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-227"><b>Exercise 2 - Third-Party Risks</b></h2>
+
+<p id="cn-m8-228">An organization may have a robust infrastructure, but 
+if they are working with third-parties, security risks can increment 
+themselves in multi-folds. For example, despite having all security 
+controls implemented, malware may trigger a third-party communication 
+channel and creep into a network.</p>
+
+<p id="cn-m8-229">In this exercise, you will learn about third-party risks.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-231">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m8-232">
+
+<li id="cn-m8-232">Vendor Management</li>
+
+<li id="cn-m8-233">Supply Chain</li>
+
+<li id="cn-m8-234">Outsourced Code Development</li>
+
+<li id="cn-m8-235">Data Storage</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-237">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m8-238"><img class="cn-img" id="cn-image-m8-c-19" src="DeterminingSecurityVulnerabilities_files/image-m8-c-19.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m8-239"><b>Vendor Management</b></h3>
+
+<p id="cn-m8-240">Almost all organizations work with one or more 
+vendors. Along with the security of its network, an organization must 
+ensure that vendors who are connecting to its network are also secured. 
+If the vendor does not implement appropriate security controls, it could
+ lead to the collapse of network security.</p>
+
+<p id="cn-m8-241">Take an example of the Target corporation, the famous 
+retail chain giant. In November 2013, one of the biggest security 
+breaches in history took place. The hackers not only got their hands on 
+110 million credit and debit card numbers, but they also managed to 
+steal about 11 Gigabytes of data. The attack on Target was not due to 
+its own mistake but its vendor, Fazio Mechanical, which was a 
+refrigeration contractor.</p>
+
+<p id="cn-m8-242">It all started with the reconnaissance of Target that 
+leads to Fazio Mechanical. One of the Fazio employees fell for a 
+phishing Email, which made an entry point for the <b>Citadel </b>malware. Fazio was not using a full-fledged anti-malware software, and a free version of his software failed to detect <b>Citadel</b>.</p>
+
+<p id="cn-m8-243">After <b>Citadel </b>was activated and its payload 
+released, it gained the credentials of Fazio Mechanical on one of the 
+Target’s portals known as Ariba, which was deployed on a server that was
+ connected with an internal network. It is believed that a vulnerability
+ was exploited, and then hackers were inside the network to get what 
+they wanted.</p>
+
+<h3 id="cn-m8-244"><b>Supply Chain</b></h3>
+
+<p id="cn-m8-245">A supply chain network for an organization may simply 
+introduce multiple entry points for a hacker. Consider the above-given 
+example of Target, where Fazio Mechanical was the entry point into 
+Target’s network. Vendors, in terms of size and financial capacity, are 
+smaller than the organization in most cases. Therefore, the vendors may 
+not have a robust and secure infrastructure, which is the focal point 
+for hackers.</p>
+
+<p id="cn-m8-246">After hackers attack the supply chain vendor, it is 
+much easier to get into the victim organization’s network than attack it
+ directly.</p>
+
+<h3 id="cn-m8-247"><b>Outsourced Code Development</b></h3>
+
+<p id="cn-m8-248">Organizations outsource several types of work. Code 
+development outsourcing is a common practice. However, just like a 
+supply chain, the vendors may not have mechanisms and processes to check
+ code security. Therefore, they may introduce several security 
+vulnerabilities, such as <b>Cross</b>-<b>site Scripting </b>(<b>XSS</b>) or <b>SQL Injection </b>into their codes.</p>
+
+<p id="cn-m8-249">After the code is written, it needs to be sanitized 
+and validated, which vendors may choose to skip, not perform it 
+correctly, or simply ignore. Since the organization will use the code, 
+the vendor may not be directly impacted, but the organization becomes 
+vulnerable to several attacks.</p>
+
+<h3 id="cn-m8-250"><b>Data Storage</b></h3>
+
+<p id="cn-m8-251">With the cloud revolution in recent times, 
+organizations have started to move their infrastructure out of 
+on-premise data centers, with applications and storage devices moved to 
+the cloud. However, the data stored in the cloud or with a third-party 
+has several security issues.</p>
+
+<p id="cn-m8-252">There is always a concern about data privacy. You can 
+have strict control and provide limited access to data, but since data 
+is not residing with you, you do not have control over it. You cannot be
+ sure if someone at the cloud service provider is looking at your data 
+or not. Another issue is that the location where your data resides can 
+also be prone to malware attacks or other issues like outages or storage
+ failure, although failures are noted to be minimal and well 
+communicated with larger providers.</p>
+
+<p id="cn-m8-253">Therefore, before you decide to put your data into 
+someone’s storage, you need to ensure that the data will remain secure. 
+You also need to be aware of security issues.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="ImproperorWeakPatchManagement">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-256"><b>Exercise 3 - Improper or Weak Patch Management</b></h2>
+
+<p id="cn-m8-257">Improper or weak patch management can lead to several 
+security risks. Your organization, if not patching systems properly, 
+cannot meet certain regulatory compliances, such as ISO 27001, PCI-DSS, 
+or HIPAA. It could be your internal policies that you have to adhere to.
+ An organization may also not be able to protect its infrastructure from
+ cyber-attacks or malware.</p>
+
+<p id="cn-m8-258">In this exercise, you will learn about various types of improper or weak patch management.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-260">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m8-261">
+
+<li id="cn-m8-261">Analyze Hosts on a Network using Microsoft Baseline Security Analyzer</li>
+
+</ul>
+
+<p id="cn-m8-262">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m8-263">
+
+<li id="cn-m8-263">Firmware</li>
+
+<li id="cn-m8-264">Operating System (OS)</li>
+
+<li id="cn-m8-265">Applications</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-267">You will be using the following device in this lab. Please power this on now.</p>
+
+<ul id="cn-m8-268">
+
+<li id="cn-m8-268"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+</ul>
+
+<p id="cn-m8-269"><img class="cn-img" id="cn-image-m8-c-20" src="DeterminingSecurityVulnerabilities_files/image-m8-c-20.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m8-270"><b>Firmware</b></h3>
+
+<p id="cn-m8-271">Each device has firmware, code that provides 
+instructions to the hardware. Without this, modern devices would be 
+impossible to run. Most often, firmware also has vulnerabilities that 
+are exploited to the extent that a device, such as a cell phone, can be 
+used and controlled by the attacker. Another possibility is that 
+existing vulnerabilities in firmware can also be used for privilege 
+escalations to gain administrative access.</p>
+
+<p id="cn-m8-272">From time to time, as and when there are 
+vulnerabilities discovered or new features  added, vendors provide 
+updated firmware through their website. Updating firmware not only 
+improves device functionality but also helps to remove existing 
+vulnerabilities.</p>
+
+<p id="cn-m8-273"></p><figure><img class="cn-img" id="cn-image-m8-c-21" src="DeterminingSecurityVulnerabilities_files/image-m8-c-21.jpg" alt="Figure 3.1 Screenshot of Dell Website"><figcaption>Figure 3.1 Screenshot of Dell Website: Showing the availability of the firmware for selected laptop models.</figcaption></figure><p></p>
+
+<h3 id="cn-m8-275"><b>Operating System (OS)</b></h3>
+
+<p id="cn-m8-276">Just like firmware, operating system updates are also 
+critical. It is a known fact that no application or operating system is 
+defect-free, and therefore, there is a need for ongoing patches.</p>
+
+<p id="cn-m8-277">Updates, specifically on Windows devices, can be 
+either be manual or automated. In a manual process, the user has to use 
+built-in features of <b>Windows 10 </b>to initiate the update. In an automated process, for a single user, <b>Windows Update </b>can be set to automatically download updates. On a network, tools such as the <b>Windows Software Update Service </b>(<b>WSUS</b>) can deploy patches.</p>
+
+<p id="cn-m8-278">A large number of home users ignore updating their operating systems. Each <b>Windows OS </b>has the <b>Windows Update </b>functionality, which automatically detects available updates.</p>
+
+<p id="cn-m8-279"></p><figure><img class="cn-img" id="cn-image-m8-c-22" src="DeterminingSecurityVulnerabilities_files/image-m8-c-22.jpg" alt="Figure 3.2 Screenshot of Windows Update"><figcaption>Figure 3.2 Screenshot of Windows Update: Showing the availability of updates to be downloaded and installed.</figcaption></figure><p></p>
+
+<p id="cn-m8-281">Ignoring updates will leave the vulnerabilities open, which can be exploited. For example, <b>Windows 10 </b>has several known vulnerabilities that need to be patched. Some of the key vulnerabilities are:</p>
+
+<ul id="cn-m8-282">
+
+<li id="cn-m8-282">Windows 10 Mount Manager Vulnerability (CVE-2015-1769, MS15-085)</li>
+
+<li id="cn-m8-283">Microsoft Edge Vulnerabilities (MS15-091)</li>
+
+<li id="cn-m8-284">Microsoft Graphics Component Vulnerabilities (MS15-080)</li>
+
+<li id="cn-m8-285">Internet Explorer Vulnerabilities (MS15-079)</li>
+
+<li id="cn-m8-286">Microsoft Windows Journal Vulnerability (MS15-098)</li>
+
+<li id="cn-m8-287">Win32k Elevation of Privilege Vulnerability (CVE-2015-0057)</li>
+
+</ul>
+
+<p id="cn-m8-288">Most of these vulnerabilities, if exploited, are prone
+ to privilege escalation. Microsoft has released patches for each of 
+these vulnerabilities. However, it is the user’s responsibility to 
+deploy them.</p>
+
+<h3 id="cn-m8-289"><b>Applications</b></h3>
+
+<p id="cn-m8-290">Operating systems may not be directly exposed on the 
+Internet, but applications are. If there are vulnerabilities that have 
+not been patched, then they can be in danger. A mistake often made by 
+administrators is to patch an operating system but not applications. If 
+an open vulnerability in an application is exploited, it could lead to 
+various types of attacks, such as privilege escalation on the operating 
+system.</p>
+
+<p id="cn-m8-291"><b>WSUS </b>does not cover third-party applications, 
+and therefore, you may have to go with another solution, which can not 
+only patch the operating system, applications, but a breadth of 
+applications that your organization is using.</p>
+
+<h3 id="cn-m8-292"><b>Task 1 - Analyze Hosts on a Network using Microsoft Baseline Security Analyzer </b></h3>
+
+<p id="cn-m8-293"><b>Microsoft Baseline Analyzer </b>(MBSA) is one of 
+the products you can use in the Windows environment to scan for missing 
+updates and patches. It is no longer supported on <b>Windows 10 </b>and the latest versions of Windows Server. In this task, <b>Microsoft Baseline Analyzer </b>will analyze hosts on the network to determine if updates need to be applied.</p>
+
+<p id="cn-m8-294">In this task, you will analyze hosts on a network using MBSA.</p>
+
+<h4 id="cn-m8-295"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-296">Connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m8-297"></p><figure><img class="cn-img" id="cn-image-m8-c-23" src="DeterminingSecurityVulnerabilities_files/image-m8-c-23.jpg" alt="Figure 3.3 Screenshot of PLABDC01"><figcaption>Figure 3.3 Screenshot of PLABDC01: Displaying the Desktop along with Server Manager.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-299"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-300">Click <b>Start </b>and select <b>Microsoft Baseline Security Analyzer 2.3</b>.</p>
+
+<p id="cn-m8-301"></p><figure><img class="cn-img" id="cn-image-m8-c-24" src="DeterminingSecurityVulnerabilities_files/image-m8-c-24.jpg" alt="Figure 3.4 Screenshot of PLABDC01"><figcaption>Figure 3.4 Screenshot of PLABDC01: Opening Microsoft Baseline Security Analyzer from the Start menu.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-302"><b><i>Note: </i></b><i>Default on 
+Microsoft operating systems do not install the Microsoft Baseline 
+Security Analyzer. It can be downloaded from the Internet and installed.</i></span>
+
+<h4 id="cn-m8-304"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-305">Select <b>Scan a computer </b>in the <b>Microsoft Baseline Security Analyzer </b>window.</p>
+
+<p id="cn-m8-306"></p><figure><img class="cn-img" id="cn-image-m8-c-25" src="DeterminingSecurityVulnerabilities_files/image-m8-c-25.jpg" alt="Figure 3.5 Screenshot of PLABDC01"><figcaption>Figure 3.5 Screenshot of PLABDC01: Displaying the Microsoft Baseline Security Analyzer application.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-308"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-309">In the <b>Computer name </b>field, ensure <b>PRACTICELABS\PLABDC01 </b>is selected and click <b>Start Scan</b>.</p>
+
+<p id="cn-m8-310"></p><figure><img class="cn-img" id="cn-image-m8-c-26" src="DeterminingSecurityVulnerabilities_files/image-m8-c-26.jpg" alt="Figure 3.6 Screenshot of PLABDC01"><figcaption>Figure 3.6 Screenshot of PLABDC01: Displaying the Microsoft Baseline Security Analyzer application.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-312"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-313">The scan process starts.</p>
+
+<span class="cn-quote" id="cn-m8-314"><b><i>Note: </i></b><i>Microsoft 
+Baseline Security Analyzer will download the latest security updates for
+ the specific server. The scan may take a couple of minutes to complete.
+ </i></span>
+
+<p id="cn-m8-316"></p><figure><img class="cn-img" id="cn-image-m8-c-27" src="DeterminingSecurityVulnerabilities_files/image-m8-c-27.jpg" alt="Figure 3.7 Screenshot of PLABDC01"><figcaption>Figure 3.7 Screenshot of PLABDC01: Showing the scan process progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-318"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-319">Once the scan has completed, it shows that the <b>Automatic Updates </b>system
+ service is not running on the host. This means that no updates are 
+being installed on the host’s operating system. Also, note a <b>CAB </b>error that states that the <b>CAB </b>file could not be downloaded.</p>
+
+<p id="cn-m8-320"></p><figure><img class="cn-img" id="cn-image-m8-c-28" src="DeterminingSecurityVulnerabilities_files/image-m8-c-28.jpg" alt="Figure 3.8 Screenshot of PLABDC01"><figcaption>Figure 3.8 Screenshot of PLABDC01: Displaying the Microsoft Baseline Security Analyzer.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">c5507563-3e73-4ff7-bcbb-c1e8c80814f3</span>
+< <a href="https://github.com/SeanOhAileasa" id="Impacts">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-323"><b>Exercise 4 - Impacts</b></h2>
+
+<p id="cn-m8-324">There can be several impacts of the attacks on an 
+individual or an organization. The impacts can be similar in nature, but
+ the magnitude of the attacks can differ for an organization when you 
+compare it with an individual.</p>
+
+<p id="cn-m8-325">For example, data loss for an individual can be 
+devastating. However, its impact on an organization is usually much 
+larger. The data belonging to an organization has a larger worth than 
+the data for an individual.</p>
+
+<p id="cn-m8-326">In this exercise, you will learn about the impacts of an attack.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-328">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m8-329">
+
+<li id="cn-m8-329">Data Loss</li>
+
+<li id="cn-m8-330">Data Breaches</li>
+
+<li id="cn-m8-331">Data Exfiltration</li>
+
+<li id="cn-m8-332">Identity Theft</li>
+
+<li id="cn-m8-333">Financial</li>
+
+<li id="cn-m8-334">Reputation</li>
+
+<li id="cn-m8-335">Availability loss</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-337">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m8-338"><img class="cn-img" id="cn-image-m8-c-29" src="DeterminingSecurityVulnerabilities_files/image-m8-c-29.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m8-339"><b>Data Loss</b></h3>
+
+<p id="cn-m8-340"><b>Data Loss </b>occurs when you lose data either by 
+losing a device, or the storage of a device becomes non-functional or 
+corrupt. For example, let’s assume you have critical data stored on a 
+USB drive. While traveling to your office, you lose the USB drive. 
+Another example can be of a system that contains several gigabytes of 
+data and its hard drive crashes. You are unable to recover data from the
+ hard drive, and there is no backup. This is also data loss.</p>
+
+<p id="cn-m8-341">You may forget your removable device such as a 
+smartphone somewhere, or it may get stolen. Alternatively, removable 
+media may crash, or a USB drive may stop working after the user 
+accidentally drops it. In such situations, data loss occurs if you do 
+not have copies of the data elsewhere.</p>
+
+<p id="cn-m8-342">It is important to note that any type of unintentional or intentional data deletion may also be considered as data loss.</p>
+
+<p id="cn-m8-343">Data theft, on the other hand, occurs when someone 
+steals your data. This can be done by planting malware on your system 
+and stealing the data in the background. Data theft can also occur 
+during data transmission. When you transfer data over an unencrypted 
+channel, you can face data theft as the hacker can intercept the data.</p>
+
+<p id="cn-m8-344">Data loss can occur due to various reasons. For 
+example, server failure, human error, or it could be intentional. 
+Usually, the loss cannot be compensated or recovered. Imagine an 
+organization that has confidential files that were deleted by a human 
+error. If there is no backup of the confidential files, the organization
+ is at significant risk of losing its business.</p>
+
+<h3 id="cn-m8-346"><b>Data Breaches</b></h3>
+
+<p id="cn-m8-347">A data breach is one of the biggest threats in cloud 
+computing. In a data breach, confidential, critical, or personal data is
+ stolen or accessed by an unauthorized entity. Data such as user 
+credentials, credit card details, social security numbers, and medical 
+data may be accessed. It can occur with the data stored in the data 
+center or the cloud servers. Even though cloud service providers 
+implement security methods to safeguard the data, these methods may not 
+be enough.</p>
+
+<p id="cn-m8-348">A data breach may occur due to stealing or cracking a 
+user’s password, exploiting a security flaw, or even exploiting a 
+misconfiguration in the cloud servers.</p>
+
+<h3 id="cn-m8-349"><b>Data Exfiltration</b></h3>
+
+<p id="cn-m8-350">Someone owns every piece of data. It could be an 
+individual or an organization. The person who owns data must permit 
+someone to copy or transfer the data from one place to another or from 
+one system to another. However, when data copying, transfer, or even 
+access to data takes place without the permission of the owner, it is 
+known as data exfiltration.</p>
+
+<p id="cn-m8-351">Let’s take the example of an organization that has 
+several confidential documents. If either an insider or an external 
+entity gains access to these documents from permissions, it is data 
+exfiltration.</p>
+
+<p id="cn-m8-352">The process of data exfiltration can either be manual 
+or automated. In a manual process, a threat actor needs to physically 
+access the system to copy or move the data. In the automated process, it
+ is typically done using malware.</p>
+
+<h3 id="cn-m8-353"><b>Identity Theft</b></h3>
+
+<p id="cn-m8-354">Identify theft is a method of using someone’s identity
+ for a malicious purpose or financial gain. It is a common practice to 
+provide your identity for various purposes, such as to get a credit card
+ or to get a passport. However, a threat actor gets access to personal 
+information, including your name, address, and phone number, although it
+ could be any information used to identify an individual. Threat actors 
+could replicate this information to carry out identity theft.</p>
+
+<p id="cn-m8-355">For example, if someone forges your signatures on a 
+cheque to withdraw cash, it is identity theft. This method of identity 
+theft has been in practice for decades. In modern times however, you are
+ most vulnerable to identity theft when you are on the internet, and 
+identity theft is considered to be one of the most common threats that 
+exist online. It is a common practice for a threat actor to make a fake 
+account in the name of your friend to gain access to your personal 
+information on a social network. Another method is that someone can 
+simply create an account on your name and order several items for which 
+you have to pay cash. <b>Zeus </b>is malware that monitors your online 
+activities, record keystrokes and captures user credentials, which can 
+then be used for identity theft.</p>
+
+<h3 id="cn-m8-356"><b>Financial</b></h3>
+
+<p id="cn-m8-357">A security attack can either be on an individual or an
+ organization. Both can be the target of financial gains for hackers. 
+For example, you have stored your credit card details on a file on your 
+system. A hacker, after attacking your system, can access this file. 
+After getting the credit card information, the hacker can use it on the 
+Internet. You will end up with financial losses in this scenario.</p>
+
+<p id="cn-m8-358">An organization, after the attack, may lose 
+confidential and proprietary information. After it is known publicly 
+that the organization was under attack, it might lose business from 
+customers, which can be translated as financial losses.</p>
+
+<p id="cn-m8-359">Consider another example of a hacker stealing a new 
+product design from your organization. The product was unique and was to
+ be the first one of its kind in the market. After the hacker sells this
+ design to a competitor, your organization will end up losing the 
+advantage of being first in the market. Instead, your competitor will 
+gain this advantage. In the end, you lose business, which can be 
+considered as financial loss.</p>
+
+<h3 id="cn-m8-360"><b>Reputation</b></h3>
+
+<p id="cn-m8-361">Often, it is not just an attack on an organization. 
+The attack has many severe consequences for an organization, such as 
+reputation loss. Not only has the organization suffered a breach, but it
+ has also lost its credibility in the market (especially when victim to 
+the above financial loss vulnerability).</p>
+
+<p id="cn-m8-362">Imagine a scenario in which an organization has its 
+intellectual property stolen in a security attack. The organization will
+ not only have a loss of reputation but can also face legal 
+implications. Therefore, an organization needs to protect its data.</p>
+
+<h3 id="cn-m8-363"><b>Availability loss</b></h3>
+
+<p id="cn-m8-364">Availability loss way to make the device or data 
+unavailable for you to use. This can be done through different methods. 
+It could be someone takes the ownership of your data and denies you 
+access. It could also be that malware (in this case, known as 
+ransomware) encrypts your mobile device and makes your data 
+inaccessible. You have to pay a ransom to get your mobile device 
+decrypted by the threat actor. Even then, there is no guarantee that 
+they will decrypt it. An example of this is the <b>WannaCry </b>virus, 
+which in 2017, infected multiple areas of the UK’s National Health 
+System, which resulted in a huge loss of confidential data and money.</p>
+
+<p id="cn-m8-365">Availability loss can also be with the applications and servers. For example, if someone launches a <b>Distributed Denial of Service </b>(<b>DDoS</b>)
+ attack against a webserver, its web applications will eventually be 
+inaccessible to legit users, which can be classified as availability 
+loss.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m8-370">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-371"><b>Review</b></h2>
+
+<p id="cn-m8-372">Well done, you have completed the <b>Determining Security Vulnerabilities </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">b1d46327-7602-469a-afde-f885877c9ed4</span>
+
+<span class="atom-code hidden">fbbec499-1b99-4886-b969-d796a2e84994</span>
+
+<span class="atom-code hidden">66729c40-814b-453d-bd01-77579c889750</span>
+
+<span class="atom-code hidden">0d443b79-717b-43fc-a9f1-58d6164b1445</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m8-381">You completed the following exercises:</p>
+
+<ul id="cn-m8-382">
+
+<li id="cn-m8-382">Exercise 1 - Security Concerns and Vulnerabilities</li>
+
+<li id="cn-m8-383">Exercise 2 - Third-Party Risks</li>
+
+<li id="cn-m8-384">Exercise 3 - Improper or Weak Patch Management</li>
+
+<li id="cn-m8-385">Exercise 4 - Impacts</li>
+
+</ul>
+
+<p id="cn-m8-386">You should now be able to:</p>
+
+<ul id="cn-m8-387">
+
+<li id="cn-m8-387">Open ports and services</li>
+
+<li id="cn-m8-388">Analyze Hosts on a Network using Microsoft Baseline Security Analyzer</li>
+
+</ul>
+
+<p id="cn-m8-389">You should now have further knowledge of:</p>
+
+<ul id="cn-m8-390">
+
+<li id="cn-m8-390">Cloud-based vs. On-premises Vulnerabilities</li>
+
+<li id="cn-m8-391">Zero-day</li>
+
+<li id="cn-m8-392">Weak Configurations</li>
+
+<li id="cn-m8-393">Legacy Platforms</li>
+
+<li id="cn-m8-394">Cloud-based vs. On-premises Vulnerabilities</li>
+
+<li id="cn-m8-395">Vendor Management</li>
+
+<li id="cn-m8-396">Supply Chain</li>
+
+<li id="cn-m8-397">Outsourced Code Development</li>
+
+<li id="cn-m8-398">Data Storage</li>
+
+<li id="cn-m8-399">Firmware</li>
+
+<li id="cn-m8-400">Operating System (OS)</li>
+
+<li id="cn-m8-401">Applications</li>
+
+<li id="cn-m8-402">Data Loss</li>
+
+<li id="cn-m8-403">Data Breaches</li>
+
+<li id="cn-m8-404">Data Exfiltration</li>
+
+<li id="cn-m8-405">Identity Theft</li>
+
+<li id="cn-m8-406">Financial</li>
+
+<li id="cn-m8-407">Reputation</li>
+
+<li id="cn-m8-408">Availability loss</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m8-412">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ImplementationofSecureProtocols_files/print-styles.css" rel="stylesheet">
+    <script src="ImplementationofSecureProtocols_files/jquery.min.js"></script>
+    <script src="ImplementationofSecureProtocols_files/jspdf.js"></script>
+    <script src="ImplementationofSecureProtocols_files/from_html.js"></script>
+    <script src="ImplementationofSecureProtocols_files/addimage.js"></script>
+    <script src="ImplementationofSecureProtocols_files/filesaver.js"></script>
+    <script src="ImplementationofSecureProtocols_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="i8dWGG0w+I+RIrh5sUWWB1db73ZwG9LX/9fEZFU5dELyL1l3wNdXoO9THCRWx3yaxeo1nsUb65X1HHr9m6a0vu2d+4CiI22gi0Z3oCLWRJI=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Implementation of Secure Protocols</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Working with Domain Name System Security Extensions (DNSSEc)</li><li>Exercise 2 - Configuring IPSec</li><li>Exercise 3 - Knowing the Security Protocols</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m14-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>DNSSec</div>
+
+<div>IPSec</div>
+
+<div>S/MIME</div>
+
+<div>SFTP</div>
+
+<div>FTPS</div>
+
+<div>HTTPS</div>
+
+<div>SRTP</div>
+
+<div>SNMPv3</div>
+
+<div>IMAP</div>
+
+<div>POP3</div>
+
+<div>SMTP</div>
+
+<div>SSH</div>
+
+<div>SSL</div>
+
+<div>TLS</div>
+
+<div>Protocols</div>
+
+</div>
+
+<span class="atom-code hidden">9beca326-b493-4b0e-b3dc-d7dfb77df3c9</span>
+
+<p id="cn-m14-18">Welcome to the <b>Implementation of Secure Protocols </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-22">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m14-23">
+
+<li id="cn-m14-23">Exercise 1 - Working with Domain Name System Security Extensions (DNSSEc)</li>
+
+<li id="cn-m14-24">Exercise 2 - Configuring IPSec</li>
+
+<li id="cn-m14-25">Exercise 3 - Knowing the Security Protocols</li>
+
+</ul>
+
+<p id="cn-m14-26">After completing this module, you should be able to:</p>
+
+<ul id="cn-m14-27">
+
+<li id="cn-m14-27">Create a Zone, Sample Resource Records and a Non-Authoritative DNS Server</li>
+
+<li id="cn-m14-28">Sign the Zone Using Default Settings</li>
+
+<li id="cn-m14-29">Distribute the TA to a Non-Authoritative DNS Server</li>
+
+<li id="cn-m14-30">Verify DNSKEY Trust Anchors</li>
+
+<li id="cn-m14-31">Query a Signed Zone without DNSSEC Validation Required</li>
+
+<li id="cn-m14-32">Configure Support for DNSSEC in GPO</li>
+
+<li id="cn-m14-33">Query a Signed Zone with DNSSEC Validation Required</li>
+
+<li id="cn-m14-34">Create Connection Security Rule on PLABWIN10 and on PLABDC01</li>
+
+<li id="cn-m14-35">Verify the Security Association</li>
+
+<li id="cn-m14-36">Run Network Monitor to Observe Traffic Pattern</li>
+
+<li id="cn-m14-37">Find Network Conversation Signed With ESP</li>
+
+<li id="cn-m14-38">Disable the Connection Security Rules on PLABWIN10 and PLABDC01</li>
+
+<li id="cn-m14-39">Run Network Monitor to Collect New Data</li>
+
+</ul>
+
+<p id="cn-m14-40">After Completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m14-41">
+
+<li id="cn-m14-41">Secure/multipurpose Internet Mail Exchanger (S/MIME)</li>
+
+<li id="cn-m14-42">Secure Real-Time Protocol (SRTP)</li>
+
+<li id="cn-m14-43">Lightweight Directory Access Protocol (LDAP) over SSL (LDAPS)</li>
+
+<li id="cn-m14-44">File Transfer Protocol, Secure (FTPS) and Secure File Transfer Protocol (SFTP)</li>
+
+<li id="cn-m14-45">Simple Network Management Protocol, Version 3 (SNMPv3)</li>
+
+<li id="cn-m14-46">Hypertext Transfer Protocol Over SSL/TLS (HTTPS)</li>
+
+<li id="cn-m14-47">Secure Post Office Protocol (POP)/ Internet Message Access Protocol (IMAP)</li>
+
+<li id="cn-m14-48">Use Cases</li>
+
+</ul>
+
+<ol id="cn-m14-49">
+
+</ol>
+
+<p id="cn-m14-50"><b>Exam Objectives</b></p>
+
+<p id="cn-m14-51">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m14-52">
+
+<li id="cn-m14-52">Protocols</li>
+
+<li id="cn-m14-53">Use Cases</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m14-54"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m14-56">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m14-60">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m14-61">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-63"><b>Lab Topology</b></h2>
+
+<p id="cn-m14-64">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m14-65"><img class="cn-img" id="cn-image-m14-c-0" src="ImplementationofSecureProtocols_files/image-m14-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m14-66">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m14-67">
+
+<li id="cn-m14-67"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m14-68"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m14-69"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m14-70"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m14-71">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<p id="cn-m14-79">&nbsp;&nbsp;</p>
+< <a href="https://github.com/SeanOhAileasa" id="WorkingwithDomainNameSystemSecurityExtensionsDNSSEc">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-80"><b>Exercise 1 - Working with Domain Name System Security Extensions (DNSSEc)</b></h2>
+
+<p id="cn-m14-81">Domain Name System (DNS) is the backbone of the 
+Internet. Every Email that is sent from one client to another client or 
+every Website that is browsed, requires DNS. In the early 1980s, DNS was
+ invented to support the Internet, which was in its initial stages. With
+ the growth of the Internet, DNS started to play a critical role. For 
+example, you visit a Website by simply entering its URL. If DNS was not 
+there, you would have to remember the IP address of the domain. Think 
+about trying to remember thousands of IP addresses. Humanly, it would 
+not be possible to remember so many IP addresses. DNS made it simple by 
+remembering the URLs, which are translated to the IP addresses by the 
+DNS.</p>
+
+<p id="cn-m14-82">However, with the great use of DNS, comes its 
+weaknesses. One of the key weakness is that the DNS responses can be 
+spoofed. An attacker can send a spoofed response against the query that 
+was sent by the DNS client. The spoofed response would appear as it has 
+come from the DNS server.</p>
+
+<p id="cn-m14-83">With the use of spoofed response, the attacker can 
+also manage to poison the DNS cache at the client end. After the DNS 
+cache is poisoned, the attacker can then use its own DNS data as the 
+responses to the queries sent by the client.</p>
+
+<p id="cn-m14-84">DNSSEC or Domain Name System Security Extensions 
+ensures that the DNS information has not been altered during 
+transmission. So, the spoofing problem is taken care by DNSSec. The 
+original DNS protocol did not have the origin authentication and 
+integrity protection, which are now being offered by DNSSec.</p>
+
+<p id="cn-m14-85">In this exercise, you will configure and test DNSSEC 
+on Windows Server 2019 by creating a new zone, adding Resource Records, 
+and installing a non-authoritative DNS server.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-87">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m14-88">
+
+<li id="cn-m14-88">Create a Zone, Sample Resource Records and a Non-Authoritative DNS Server</li>
+
+<li id="cn-m14-89">Sign the Zone Using Default Settings</li>
+
+<li id="cn-m14-90">Distribute the TA to a Non-Authoritative DNS Server</li>
+
+<li id="cn-m14-91">Verify DNSKEY Trust Anchors</li>
+
+<li id="cn-m14-92">Query a Signed Zone without DNSSEC Validation Required</li>
+
+<li id="cn-m14-93">Configure Support for DNSSEC in GPO</li>
+
+<li id="cn-m14-94">Query a Signed Zone with DNSSEC Validation Required</li>
+
+</ul>
+
+<ol id="cn-m14-95">
+
+</ol>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-97">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m14-98">
+
+<li id="cn-m14-98"><b>PLABDC01 </b>(Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m14-99"><b>PLABDM01 </b>(Windows Server 2019 - Domain Member Server)</li>
+
+<li id="cn-m14-100"><b>PLABWIN10 </b>(Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m14-101"><img class="cn-img" id="cn-image-m14-c-1" src="ImplementationofSecureProtocols_files/image-m14-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m14-102"><b>Task 1 - Create a Zone</b></h3>
+
+<p id="cn-m14-103">A DNS zone is an administrative section in the DNS 
+namespace, which is a hierarchical tree structure. The root domain is 
+always at the start of the DNS namespace and then you can have several 
+zones. Each zone gives you an administrative control for a specific 
+domain, which means that a zone always starts with a domain and can have
+ several sub-domains. You, as the owner of the zone, can manage the 
+domains and sub-domains.</p>
+
+<p id="cn-m14-104">The information about a zone is contained in a text 
+file, which contains the records for the DNS zone. A zone can be created
+ as a Forward Lookup Zone or Reverse Lookup Zone. A Forward Lookup Zone 
+contains the host name to IP address mapping. A Reverse Lookup Zone 
+contains the IP address to host name mapping in a particular zone.</p>
+
+<p id="cn-m14-105">You can create primary, secondary, and stub zones. 
+You can use a Primary zone, which is the writeable zone in DNS, to test 
+zone signing using DNSSEC. To keep the current configuration on the 
+servers safe, you will create a new zone for testing purposes.</p>
+
+<p id="cn-m14-106">In this task, you will create the <b>secure.practicelabs.com </b>zone on the <b>PLABDC01 </b>server.</p>
+
+<h4 id="cn-m14-107"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-108">Ensure you have powered on the required devices and connect to the <b>PLABDC01 </b>server.</p>
+
+<p id="cn-m14-109">The <b>Server Manager </b>window is displayed by default. Click on the <b>Tools </b>menu and select <b>DNS</b>.</p>
+
+<p id="cn-m14-110"></p><figure><img class="cn-img" id="cn-image-m14-c-2" src="ImplementationofSecureProtocols_files/image-m14-c-2.jpg" alt="Figure 1.1 Screenshot of PLABDC01: Clicking the Tools menu and then selecting DNS in the Server Manager window."><figcaption>Figure 1.1 Screenshot of PLABDC01: Clicking the Tools menu and then selecting DNS in the Server Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-113"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-114">In the <b>DNS Manager </b>window, expand <b>PLABDC01 </b>&gt; <b>Forward Lookup Zone</b>.</p>
+
+<p id="cn-m14-115">Click and right-click <b>Forward Lookup  Zone </b>and select <b>New Zone</b>.</p>
+
+<p id="cn-m14-116"></p><figure><img class="cn-img" id="cn-image-m14-c-3" src="ImplementationofSecureProtocols_files/image-m14-c-3.jpg" alt="Figure 1.2 Screenshot of PLABDC01: Right-clicking the Forward Lookup Zones and selecting New Zone in the context menu."><figcaption>Figure 1.2 Screenshot of PLABDC01: Right-clicking the Forward Lookup Zones and selecting New Zone in the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-120"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-121">In the <b>New Zone Wizard</b>, the <b>Welcome to the New Zone Wizard </b>page is displayed.</p>
+
+<p id="cn-m14-122">Read the introductory information and click <b>Next</b>.</p>
+
+<p id="cn-m14-123"></p><figure><img class="cn-img" id="cn-image-m14-c-4" src="ImplementationofSecureProtocols_files/image-m14-c-4.jpg" alt="Figure 1.3 Screenshot of PLABDC01: Clicking Next on the Welcome to the New Zone Wizard in the New Zone Wizard."><figcaption>Figure 1.3 Screenshot of PLABDC01: Clicking Next on the Welcome to the New Zone Wizard in the New Zone Wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-127"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-128">On the <b>Zone Type </b>page, verify that the <b>Primary zone </b>option and the <b>Store the zone in Active Directory </b>checkboxes are selected.</p>
+
+<p id="cn-m14-129">Click <b>Next</b>.</p>
+
+<p id="cn-m14-130"></p><figure><img class="cn-img" id="cn-image-m14-c-5" src="ImplementationofSecureProtocols_files/image-m14-c-5.jpg" alt="Figure 1.4 Screenshot of PLABDC01: Verifying that the Primary zone option and the Store the zone in Active Directory checkboxes are selected and then clicking on the Next button on the Zone Type page."><figcaption>Figure
+ 1.4 Screenshot of PLABDC01: Verifying that the Primary zone option and 
+the Store the zone in Active Directory checkboxes are selected and then 
+clicking on the Next button on the Zone Type page.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-133"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-134">On the <b>Active Directory Zone Replication Scope </b>page, the <b>To all DNS servers running on domain controllers in this domain: PRACTICELABS.COM </b>option is selected by default.</p>
+
+<p id="cn-m14-135">Leave this selected and click <b>Next</b>.</p>
+
+<p id="cn-m14-136"></p><figure><img class="cn-img" id="cn-image-m14-c-6" src="ImplementationofSecureProtocols_files/image-m14-c-6.jpg" alt="Figure 1.5 Screenshot of PLABDC01: Keeping the default selection on Active Directory Zone Replication Scope page and clicking the Next button."><figcaption>Figure
+ 1.5 Screenshot of PLABDC01: Keeping the default selection on Active 
+Directory Zone Replication Scope page and clicking the Next button.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-139"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-140">On the <b>New Zone Wizard </b>page, type the following:</p>
+
+<pre id="cn-m14-141"><code>secure.practicelabs.com
+
+</code></pre>
+
+<p id="cn-m14-142">Click <b>Next</b>.</p>
+
+<p id="cn-m14-143"></p><figure><img class="cn-img" id="cn-image-m14-c-7" src="ImplementationofSecureProtocols_files/image-m14-c-7.jpg" alt="Figure 1.6 Screenshot of PLABDC01: Entering the name for the new zone in the Zone name text box and clicking Next on the Zone Name page."><figcaption>Figure
+ 1.6 Screenshot of PLABDC01: Entering the name for the new zone in the 
+Zone name text box and clicking Next on the Zone Name page.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-146"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-147">On the <b>Dynamic Update </b>page, keep the default selection to <b>Allow only secure dynamic updates</b>.</p>
+
+<p id="cn-m14-148">Click <b>Next</b>.</p>
+
+<p id="cn-m14-149"></p><figure><img class="cn-img" id="cn-image-m14-c-8" src="ImplementationofSecureProtocols_files/image-m14-c-8.jpg" alt="Figure 1.7 Screenshot of PLABDC01: Keeping the default selection to Allow only secure dynamic updates option and clicking Next on the Dynamic Update page."><figcaption>Figure
+ 1.7 Screenshot of PLABDC01: Keeping the default selection to Allow only
+ secure dynamic updates option and clicking Next on the Dynamic Update 
+page.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-152"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-153">On the <b>Completing the New Zone Wizard </b>page, review the summary about the newly-created zone.</p>
+
+<p id="cn-m14-154">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-155"></p><figure><img class="cn-img" id="cn-image-m14-c-9" src="ImplementationofSecureProtocols_files/image-m14-c-9.jpg" alt="Figure 1.8 Screenshot of PLABDC01: Clicking Finish on the Completing the New Zone Wizard page."><figcaption>Figure 1.8 Screenshot of PLABDC01: Clicking Finish on the Completing the New Zone Wizard page.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-158"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-159">Notice that a new zone with the name <b>secure.practicelabs.com </b>is now created.</p>
+
+<p id="cn-m14-160"></p><figure><img class="cn-img" id="cn-image-m14-c-10" src="ImplementationofSecureProtocols_files/image-m14-c-10.jpg" alt="Figure 1.9 Screenshot of PLABDC01: Showing the newly created secure.practicelabs.com zone in the DNS Manager window."><figcaption>Figure 1.9 Screenshot of PLABDC01: Showing the newly created secure.practicelabs.com zone in the DNS Manager window.</figcaption></figure><p></p>
+
+<p id="cn-m14-162">Keep the <b>DNS Manager </b>window open.</p>
+
+<h3 id="cn-m14-164"><b>Task 2 - Create Sample Resource Records</b></h3>
+
+<p id="cn-m14-165">Before you create any resource records, you need to 
+first create a zone, which you did in the previous task. You had created
+ secure.practicelabs.com zone. This is the zone that you will use to 
+create the resource records.</p>
+
+<p id="cn-m14-166">In this task, you will create sample records, like Host (A), that will be used later for testing name resolution with DNSSEC.</p>
+
+<h4 id="cn-m14-167"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-168">Connect to the <b>PLABDC01 </b>server and ensure that the <b>DNS Manager </b>window is open.</p>
+
+<p id="cn-m14-169">In the left pane, select the <b>secure.practicelabs.com </b>zone, then right-click and select <b>New Host (A or AAAA</b>).</p>
+
+<p id="cn-m14-170"></p><figure><img class="cn-img" id="cn-image-m14-c-11" src="ImplementationofSecureProtocols_files/image-m14-c-11.jpg" alt="Figure 1.10 Screenshot of PLABDC01: Right-clicking the zone and selecting New Host (A or AAAA) from the context menu."><figcaption>Figure 1.10 Screenshot of PLABDC01: Right-clicking the zone and selecting New Host (A or AAAA) from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-173"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-174">In the <b>New Host </b>window, in the <b>Name (uses parent domain if blank) </b>text field, type the following:</p>
+
+<pre id="cn-m14-175"><code>www
+
+</code></pre>
+
+<p id="cn-m14-176">In the <b>IP address </b>text field, type the following:</p>
+
+<pre id="cn-m14-177"><code>192.168.0.1
+
+</code></pre>
+
+<p id="cn-m14-178">Click <b>Add Host</b>.</p>
+
+<p id="cn-m14-179"></p><figure><img class="cn-img" id="cn-image-m14-c-12" src="ImplementationofSecureProtocols_files/image-m14-c-12.jpg" alt="Figure 1.11 Screenshot of PLABDC01: Entering the details for the resource record in the New Host dialog box and clicking Add Host."><figcaption>Figure
+ 1.11 Screenshot of PLABDC01: Entering the details for the resource 
+record in the New Host dialog box and clicking Add Host.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-182"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-183">Click <b>OK </b>on the <b>DNS </b>dialog box, indicating the Host record was successfully created.</p>
+
+<p id="cn-m14-184"></p><figure><img class="cn-img" id="cn-image-m14-c-13" src="ImplementationofSecureProtocols_files/image-m14-c-13.jpg" alt="Figure 1.12 Screenshot of PLABDC01: Clicking OK on the DNS dialog box that displays the confirmation of creation of resource record."><figcaption>Figure
+ 1.12 Screenshot of PLABDC01: Clicking OK on the DNS dialog box that 
+displays the confirmation of creation of resource record.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-187"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-188">Back in the <b>New Host </b>window, in the <b>Name (uses parent domain name if blank) </b>text field, type the following:</p>
+
+<pre id="cn-m14-189"><code>www2
+
+</code></pre>
+
+<p id="cn-m14-190">In the <b>IP address </b>text box, type:</p>
+
+<pre id="cn-m14-191"><code>192.168.0.2
+
+</code></pre>
+
+<p id="cn-m14-192">Click <b>Add Host</b>.</p>
+
+<p id="cn-m14-193"></p><figure><img class="cn-img" id="cn-image-m14-c-14" src="ImplementationofSecureProtocols_files/image-m14-c-14.jpg" alt="Figure 1.13 Screenshot of PLABDC01: Entering the details for the resource record in the New Host dialog box and clicking Add Host."><figcaption>Figure
+ 1.13 Screenshot of PLABDC01: Entering the details for the resource 
+record in the New Host dialog box and clicking Add Host.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-196"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-197">As before, click <b>OK </b>in the <b>DNS </b>dialog box confirming the successful creation of the Host record.</p>
+
+<p id="cn-m14-198"></p><figure><img class="cn-img" id="cn-image-m14-c-15" src="ImplementationofSecureProtocols_files/image-m14-c-15.jpg" alt="Figure 1.14 Screenshot of PLABDC01: Clicking OK on the DNS dialog box that displays the confirmation of creation of resource record."><figcaption>Figure
+ 1.14 Screenshot of PLABDC01: Clicking OK on the DNS dialog box that 
+displays the confirmation of creation of resource record.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-201"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-202">Click <b>Done </b>to close the <b>New Host </b>window. You should now have two new records added in the DNS Manager window.</p>
+
+<p id="cn-m14-203"></p><figure><img class="cn-img" id="cn-image-m14-c-16" src="ImplementationofSecureProtocols_files/image-m14-c-16.jpg" alt="Figure 1.15 Screenshot of PLABDC01: Clicking Done on the New Host dialog box."><figcaption>Figure 1.15 Screenshot of PLABDC01: Clicking Done on the New Host dialog box.</figcaption></figure><p></p>
+
+<p id="cn-m14-205">Keep the <b>DNS Manager </b>window open.</p>
+
+<h3 id="cn-m14-207"><b>Task 3 - Create a Non-Authoritative DNS Server</b></h3>
+
+<p id="cn-m14-208">In this task, you will install and configure a new non-authoritative DNS server on the <b>PLABDM01 </b>device.
+ This server will not be used for resolving names in the lab network as 
+it will not host any writable DNS zone. It will be used instead of 
+storing DNSSEC keys from the <b>PLABDC01 </b>server that is hosting the <b>secure.practicelabs.com </b>zone.</p>
+
+<p id="cn-m14-209">This DNS server will be used with DNSSEC for the distribution of DNSSEC Trust Anchor keys.</p>
+
+<h4 id="cn-m14-210"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-211">Connect to the <b>PLABDM01 </b>server.</p>
+
+<p id="cn-m14-212">The <b>Server Manager </b>window is displayed by default.</p>
+
+<p id="cn-m14-213">On the menu bar at the top, click on <b>Tools </b>and select <b>Windows PowerShell</b>.</p>
+
+<span class="cn-quote" id="cn-m14-214"><b><i>Note: Windows PowerShell </i></b><i>commands are </i><b><i>not </i></b><i>case-sensitive. </i></span>
+
+<p id="cn-m14-215"></p><figure><img class="cn-img" id="cn-image-m14-c-17" src="ImplementationofSecureProtocols_files/image-m14-c-17.jpg" alt="Figure 1.16 Screenshot of PLABDM01: Clicking Windows PowerShell from the Tools menu in the Server Manager window."><figcaption>Figure 1.16 Screenshot of PLABDM01: Clicking Windows PowerShell from the Tools menu in the Server Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-217"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-218">To install DNS on the <b>PLABDM01 </b>server, type the following command:</p>
+
+<pre id="cn-m14-219"><code>Add-WindowsFeature DNS -IncludeManagementTools
+
+</code></pre>
+
+<p id="cn-m14-220">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-221"></p><figure><img class="cn-img" id="cn-image-m14-c-18" src="ImplementationofSecureProtocols_files/image-m14-c-18.jpg" alt="Figure 1.17 Screenshot of PLABDM01: Entering a command to install the DNS server on the PLABDM01 server."><figcaption>Figure 1.17 Screenshot of PLABDM01: Entering a command to install the DNS server on the PLABDM01 server.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-223"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-224">Please wait while the <b>DNS </b>feature is being installed. This will take a few moments.</p>
+
+<p id="cn-m14-225"></p><figure><img class="cn-img" id="cn-image-m14-c-19" src="ImplementationofSecureProtocols_files/image-m14-c-19.jpg" alt="Figure 1.18 Screenshot of PLABDM01: Showing the progress of the DNS server installation."><figcaption>Figure 1.18 Screenshot of PLABDM01: Showing the progress of the DNS server installation.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-227"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-228"><b>Windows PowerShell </b>will confirm the successful installation of <b>DNS</b>.</p>
+
+<p id="cn-m14-229">Minimize the <b>Windows PowerShell </b>window.</p>
+
+<p id="cn-m14-230"></p><figure><img class="cn-img" id="cn-image-m14-c-20" src="ImplementationofSecureProtocols_files/image-m14-c-20.jpg" alt="Figure 1.19 Screenshot of PLABDM01: Showing the completed installation of DNS server and then minimizing the Windows PowerShell window."><figcaption>Figure
+ 1.19 Screenshot of PLABDM01: Showing the completed installation of DNS 
+server and then minimizing the Windows PowerShell window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-233"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-234">In the <b>Server Manager </b>window, click <b>Tools </b>and select <b>DNS</b>.</p>
+
+<p id="cn-m14-235"></p><figure><img class="cn-img" id="cn-image-m14-c-21" src="ImplementationofSecureProtocols_files/image-m14-c-21.jpg" alt="Figure 1.20 Screenshot of PLABDM01: Clicking Tools and selecting DNS in the Server Manager window."><figcaption>Figure 1.20 Screenshot of PLABDM01: Clicking Tools and selecting DNS in the Server Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-237"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-238">In the <b>DNS Manager </b>window, click and expand the <b>PLABDM01 </b>node.</p>
+
+<p id="cn-m14-239">Now, right-click <b>PLABDM01 </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m14-240"></p><figure><img class="cn-img" id="cn-image-m14-c-22" src="ImplementationofSecureProtocols_files/image-m14-c-22.jpg" alt="Figure 1.21 Screenshot of PLABDM01: Right-clicking the server name and then selecting Properties in the DNS Manager window."><figcaption>Figure 1.21 Screenshot of PLABDM01: Right-clicking the server name and then selecting Properties in the DNS Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-243"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-244">In the <b>PLABDM01 Properties </b>window, select the <b>Forwarders </b>tab.</p>
+
+<p id="cn-m14-245"></p><figure><img class="cn-img" id="cn-image-m14-c-23" src="ImplementationofSecureProtocols_files/image-m14-c-23.jpg" alt="Figure 1.22 Screenshot of PLABDM01: Clicking the Forwarders tab on the PLABDM01 Properties dialog box."><figcaption>Figure 1.22 Screenshot of PLABDM01: Clicking the Forwarders tab on the PLABDM01 Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-248"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-249">In the <b>Forwarders </b>tab, click <b>Edit</b>.</p>
+
+<p id="cn-m14-250"></p><figure><img class="cn-img" id="cn-image-m14-c-24" src="ImplementationofSecureProtocols_files/image-m14-c-24.jpg" alt="Figure 1.23 Screenshot of PLABDM01: Clicking the Edit button on the Forwarders tab on the PLABDM01 Properties dialog box."><figcaption>Figure 1.23 Screenshot of PLABDM01: Clicking the Edit button on the Forwarders tab on the PLABDM01 Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-253"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-254">In the <b>Edit Forwarders </b>window, in the highlighted text field, type the following:</p>
+
+<pre id="cn-m14-255"><code>192.168.0.1
+
+</code></pre>
+
+<p id="cn-m14-256">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-257"></p><figure><img class="cn-img" id="cn-image-m14-c-25" src="ImplementationofSecureProtocols_files/image-m14-c-25.jpg" alt="Figure 1.24 Screenshot of PLABDM01: Entering the IP address of the DNS server and pressing Enter on the Edit Forwarders dialog box."><figcaption>Figure
+ 1.24 Screenshot of PLABDM01: Entering the IP address of the DNS server 
+and pressing Enter on the Edit Forwarders dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-260"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-261">This sets the <b>192.168.0.1 </b>IP - the <b>PLABDC01 </b>server - as a forwarder server.</p>
+
+<p id="cn-m14-262"></p><figure><img class="cn-img" id="cn-image-m14-c-26" src="ImplementationofSecureProtocols_files/image-m14-c-26.jpg" alt="Figure 1.25 Screenshot of PLABDM01: Showing the new IP address in the Edit Forwarders dialog box."><figcaption>Figure 1.25 Screenshot of PLABDM01: Showing the new IP address in the Edit Forwarders dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-265"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-266">DNS will attempt to resolve <b>192.168.0.1 </b>to its Host name <b>PLABDC01</b>; this will take a few moments.</p>
+
+<p id="cn-m14-267">You do need to wait for the name to be resolved to its IP address.</p>
+
+<p id="cn-m14-268">Click <b>OK</b>.</p>
+
+<p id="cn-m14-269"></p><figure><img class="cn-img" id="cn-image-m14-c-27" src="ImplementationofSecureProtocols_files/image-m14-c-27.jpg" alt="Figure 1.26 Screenshot of PLABDM01: Showing the IP address successfully resolved to its hostname in the Edit Forwarders dialog box and then clicking OK."><figcaption>Figure
+ 1.26 Screenshot of PLABDM01: Showing the IP address successfully 
+resolved to its hostname in the Edit Forwarders dialog box and then 
+clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-272"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m14-273">Back in the <b>PLABDM01 Properties </b>dialog box, notice that the specified server is now listed as a forwarder.</p>
+
+<p id="cn-m14-274">Click <b>OK </b>to exit the dialog box.</p>
+
+<h4 id="cn-m14-275"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m14-276">Keep the <b>DNS Manager </b>window open. </p><figure><img class="cn-img" id="cn-image-m14-c-28" src="ImplementationofSecureProtocols_files/image-m14-c-28.jpg" alt="Figure 1.27 Screenshot of PLABDM01: Clicking OK on the PLABDM01 Properties dialog box."><figcaption>Figure 1.27 Screenshot of PLABDM01: Clicking OK on the PLABDM01 Properties dialog box.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m14-279">Leave the devices in their current states and continue on to the next exercise.</span>
+
+<h3 id="cn-m14-281"><b>Task 4 - Sign the Zone Using Default Settings </b></h3>
+
+<p id="cn-m14-282">Using the <b>DNS Manager</b>, you can configure DNSSEC on a particular zone.</p>
+
+<p id="cn-m14-283">You can enable DNSSEC on a zone, distribute the keys with the use of <b>Trust Anchors </b>among servers, and verify the configuration.</p>
+
+<p id="cn-m14-284">A Trust Anchor (TA) is a public key that is 
+associated with a specific zone that’s been protected with DNSSEC. When 
+distributed among DNS servers, the TAs form a chain of trust that is 
+useful for validating DNSSEC data among servers.</p>
+
+<p id="cn-m14-285">In this task, you will use the <b>DNS Manager </b>to sign the <b>secure.practicelabs.com </b>zone with DNSSEC using default settings on the <b>PLABDC01 </b>server.</p>
+
+<h4 id="cn-m14-286"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-287">Connect to the <b>PLABDC01 </b>server. Ensure that the <b>DNS Manager </b>window is open.</p>
+
+<p id="cn-m14-288">Expand the <b>PLABDC01 </b>&gt; <b>Forward Lookup Zones </b>node if already not expanded.</p>
+
+<p id="cn-m14-289">Click on the <b>secure.practicelabs.com </b>node. Notice that the details pane on the right lists the sample Resource Records.</p>
+
+<p id="cn-m14-290">Right-click <b>secure.practicelabs.com</b>, hover over <b>DNSSEC, </b>and click on <b>Sign the Zone</b>.</p>
+
+<p id="cn-m14-291"></p><figure><img class="cn-img" id="cn-image-m14-c-29" src="ImplementationofSecureProtocols_files/image-m14-c-29.jpg" alt="Figure 1.28 Screenshot of PLABDM01: Right-clicking the zone name and selecting DNSSEC and then selecting Sing the Zone option."><figcaption>Figure 1.28 Screenshot of PLABDM01: Right-clicking the zone name and selecting DNSSEC and then selecting Sing the Zone option.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-294"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-295">In the <b>Zone Signing Wizard</b>, the <b>DNS Security Extensions (DNSSEC) </b>page is displayed.</p>
+
+<p id="cn-m14-296">Read through the relevant information and click <b>Next</b>.</p>
+
+<p id="cn-m14-297"></p><figure><img class="cn-img" id="cn-image-m14-c-30" src="ImplementationofSecureProtocols_files/image-m14-c-30.jpg" alt="Figure 1.29 Screenshot of PLABDC01: Clicking Next on the DNS Security Extensions (DNSSEC) page of the Zone Signing Wizard."><figcaption>Figure 1.29 Screenshot of PLABDC01: Clicking Next on the DNS Security Extensions (DNSSEC) page of the Zone Signing Wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-300"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-301">On the <b>Signing Options </b>page, select the <b>Use default settings to sign the zone </b>option.</p>
+
+<p id="cn-m14-302">Click <b>Next</b>.</p>
+
+<p id="cn-m14-303"></p><figure><img class="cn-img" id="cn-image-m14-c-31" src="ImplementationofSecureProtocols_files/image-m14-c-31.jpg" alt="Figure 1.30 Screenshot of PLABDM01: Select the Use default settings to sign the zone option and then clicking Next.."><figcaption>Figure 1.30 Screenshot of PLABDM01: Select the Use default settings to sign the zone option and then clicking Next..</figcaption></figure><p></p>
+
+<h4 id="cn-m14-306"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-307">On the <b>DNS Security Extensions (DNSSEC) </b>page, review the summary about the signed zone.</p>
+
+<p id="cn-m14-308">Click <b>Next</b>.</p>
+
+<p id="cn-m14-309"></p><figure><img class="cn-img" id="cn-image-m14-c-32" src="ImplementationofSecureProtocols_files/image-m14-c-32.jpg" alt="Figure 1.31 Screenshot of PLABDC01: Clicking Next on the Zone Signing Wizard."><figcaption>Figure 1.31 Screenshot of PLABDC01: Clicking Next on the Zone Signing Wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-311"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-312">The zone signing process appears momentarily.</p>
+
+<p id="cn-m14-313">The <b>Signing the Zone </b>page indicates that the zone is successfully signed.</p>
+
+<p id="cn-m14-314">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-315"></p><figure><img class="cn-img" id="cn-image-m14-c-33" src="ImplementationofSecureProtocols_files/image-m14-c-33.jpg" alt="Figure 1.32 Screenshot of PLABDC01: Clicking Finish on the Signing the Zone page of the Zone Signing Wizard."><figcaption>Figure 1.32 Screenshot of PLABDC01: Clicking Finish on the Signing the Zone page of the Zone Signing Wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-318"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-319">Back in the <b>DNS Manager </b>window, you may not see the change right away.</p>
+
+<p id="cn-m14-320">Right-click the <b>secure.practicelabs.com </b>zone and select <b>Refresh </b>or press <b>F5</b>.</p>
+
+<h4 id="cn-m14-322"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-323">Notice that the updated contents of the secure zone 
+show a padlock icon appended to the zone folder. Similarly, the Resource
+ Record types have been further expanded to show Resource Records that 
+are signed by DNSSEC.</p>
+
+<p id="cn-m14-324"></p><figure><img class="cn-img" id="cn-image-m14-c-34" src="ImplementationofSecureProtocols_files/image-m14-c-34.jpg" alt="Figure 1.33 Screenshot of PLABDC01: Showing the DNS Manager window with the zone signed by DNSSEC."><figcaption>Figure 1.33 Screenshot of PLABDC01: Showing the DNS Manager window with the zone signed by DNSSEC.</figcaption></figure><p></p>
+
+<p id="cn-m14-326">Minimize all open windows.</p>
+
+<h3 id="cn-m14-328"><b>Task 5 - Distribute the TA to a Non-Authoritative DNS Server</b></h3>
+
+<p id="cn-m14-329">In an earlier task, you installed and configured a 
+non-authoritative DNS server on PLABDM01. The purpose of setting up a 
+non-authoritative DNS server is to test the distribution of DNSSEC keys,
+ also called a Trust Anchor (TA), among DNS servers, such as a 
+non-authoritative DNS server and a domain controller that is running as a
+ DNS server.</p>
+
+<p id="cn-m14-330">A Trust Anchor (TA) is a set of keys that protect a 
+DNS server, as it signs the zone and validates DNS responses to 
+DNSSEC-aware client computers.</p>
+
+<p id="cn-m14-331">In this task, you will share a Trust Anchor among DNS servers.</p>
+
+<h4 id="cn-m14-332"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-333">Connect to the <b>PLABDC01 </b>server and click on the <b>File Explorer </b>icon on the taskbar.</p>
+
+<p id="cn-m14-334"></p><figure><img class="cn-img" id="cn-image-m14-c-35" src="ImplementationofSecureProtocols_files/image-m14-c-35.jpg" alt="Figure 1.34 Screenshot of PLABDC01: Clicking the File Explorer icon in the taskbar."><figcaption>Figure 1.34 Screenshot of PLABDC01: Clicking the File Explorer icon in the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-337"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-338">In the <b>File Explorer </b>window, expand the <b>This PC </b>&gt; <b>Local Disk (C:) </b>&gt; <b>Windows </b>&gt; <b>system 32 </b>folders.</p>
+
+<p id="cn-m14-339">Select and right-click <b>DNS </b>and select <b>Give access to </b>&gt; <b>Advanced sharing</b>.</p>
+
+<p id="cn-m14-340"></p><figure><img class="cn-img" id="cn-image-m14-c-36" src="ImplementationofSecureProtocols_files/image-m14-c-36.jpg" alt="Figure 1.35 Screenshot of PLABDC01: Right-clicking the dns folder, selecting Give access to, and then selecting Advanced sharing ."><figcaption>Figure
+ 1.35 Screenshot of PLABDC01: Right-clicking the dns folder, selecting 
+Give access to, and then selecting Advanced sharing .</figcaption></figure><p></p>
+
+<h4 id="cn-m14-343"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-344">In the <b>dns Properties </b>dialog box, click the <b>Advanced Sharing </b>button.</p>
+
+<p id="cn-m14-345"></p><figure><img class="cn-img" id="cn-image-m14-c-37" src="ImplementationofSecureProtocols_files/image-m14-c-37.jpg" alt="Figure 1.36 Screenshot of PLABDC01: Clicking the Advanced Sharing button in the dns Properties dialog box."><figcaption>Figure 1.36 Screenshot of PLABDC01: Clicking the Advanced Sharing button in the dns Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-348"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-349">In the <b>Advanced Sharing </b>dialog box, select the <b>Share this folder </b>checkbox.</p>
+
+<p id="cn-m14-350">Click <b>OK </b>to save the settings and exit the dialog box.</p>
+
+<p id="cn-m14-351"></p><figure><img class="cn-img" id="cn-image-m14-c-38" src="ImplementationofSecureProtocols_files/image-m14-c-38.jpg" alt="Figure 1.37 Screenshot of PLABDC01: Selecting the Share the folder option and then clicking the OK button."><figcaption>Figure 1.37 Screenshot of PLABDC01: Selecting the Share the folder option and then clicking the OK button.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-354"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-355">Similarly, click <b>Close </b>on the <b>dns Properties </b>dialog box.</p>
+
+<p id="cn-m14-356">Then, exit the <b>File Explorer </b>window.</p>
+
+<p id="cn-m14-357"></p><figure><img class="cn-img" id="cn-image-m14-c-39" src="ImplementationofSecureProtocols_files/image-m14-c-39.jpg" alt="Figure 1.38 Screenshot of PLABDC01: Clicking Close on the dns Properties dialog box."><figcaption>Figure 1.38 Screenshot of PLABDC01: Clicking Close on the dns Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-360"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-361">Connect to the <b>PLABDM01 </b>server. Ensure that the <b>DNS Manager </b>window is open.</p>
+
+<p id="cn-m14-362">Expand the <b>PLABDM01 </b>node if already not expanded, and then click on the <b>Trust Points </b>folder.</p>
+
+<p id="cn-m14-363">Right-click <b>Trust Points</b>, hover over <b>Import, </b>and select <b>DNSKEY</b>.</p>
+
+<p id="cn-m14-364"></p><figure><img class="cn-img" id="cn-image-m14-c-40" src="ImplementationofSecureProtocols_files/image-m14-c-40.jpg" alt="Figure 1.39 Screenshot of PLABDM01: Right-clicking Trust Points, selecting Import, and then selecting DNSKEY."><figcaption>Figure 1.39 Screenshot of PLABDM01: Right-clicking Trust Points, selecting Import, and then selecting DNSKEY.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-367"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-368">In the <b>Import DNSKEY </b>dialog box, in the <b>File to import </b>text box, type the following:</p>
+
+<pre id="cn-m14-369"><code>\\plabdc01\dns\keyset-secure.practicelabs.com
+
+</code></pre>
+
+<p id="cn-m14-370">Click <b>OK</b>.</p>
+
+<p id="cn-m14-371"></p><figure><img class="cn-img" id="cn-image-m14-c-41" src="ImplementationofSecureProtocols_files/image-m14-c-41.jpg" alt="Figure 1.40 Screenshot of PLABDM01: Typing the path in the File to Import text box and clicking OK on the Imprt DNSKEY dialog box."><figcaption>Figure
+ 1.40 Screenshot of PLABDM01: Typing the path in the File to Import text
+ box and clicking OK on the Imprt DNSKEY dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-374"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-375">In the <b>DNS Manager </b>window, expand <b>Trust Points </b>&gt; <b>com </b>&gt; <b>practicelabs</b>, then click on the <b>secure </b>folder.</p>
+
+<p id="cn-m14-376">Notice that the contents of the <b>secure </b>folder, displayed in the details pane to the right, are DNS Keys imported from the signed domain on the authoritative server - <b>PLABDC01</b>.</p>
+
+<p id="cn-m14-377">Keep the <b>DNS Manager </b>window open.</p>
+
+<p id="cn-m14-378"></p><figure><img class="cn-img" id="cn-image-m14-c-42" src="ImplementationofSecureProtocols_files/image-m14-c-42.jpg" alt="Figure 1.41 Screenshot of PLABDM01: Expanding Trust Points &amp;gt; com &amp;gt; practicelabs, then clicking on the secure folder."><figcaption>Figure 1.41 Screenshot of PLABDM01: Expanding Trust Points &gt; com &gt; practicelabs, then clicking on the secure folder.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-381"><b>Task 6 - Verify DNSKEY Trust Anchors</b></h3>
+
+<p id="cn-m14-382">After the distribution of the DNSKEY Trust Anchor to 
+the non-authoritative DNS server, you will now test if the Trust Anchor 
+can be detected by DNSSEC-aware clients such as Windows 8 and higher 
+versions.</p>
+
+<p id="cn-m14-383">In this task, you will use <b>PLABWIN10, </b>a Windows 10 device, to detect the DNSKEY TAs on the <b>Practice Labs </b>network.</p>
+
+<h4 id="cn-m14-384"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-385">Connect to the <b>PLABWIN10 </b>device. Click inside the <b>Type here to search </b>text box and type the following:</p>
+
+<pre id="cn-m14-386"><code>powershell
+
+</code></pre>
+
+<p id="cn-m14-387">In the pop-up menu, right-click <b>Windows PowerShell </b>and select <b>Run as administrator</b>.</p>
+
+<span class="cn-quote" id="cn-m14-388"><b><i>Note</i></b><i>: In Windows 10, User Account Control (UAC) policy mandates that elevated rights are required to run certain command-line tools.</i></span>
+
+<p id="cn-m14-389"></p><figure><img class="cn-img" id="cn-image-m14-c-43" src="ImplementationofSecureProtocols_files/image-m14-c-43.jpg" alt="Figure 1.42 Screenshot of PLABWIN10: Searching for powershell and then right-clicking PowerShell from the search results and selecting Run as administrator."><figcaption>Figure
+ 1.42 Screenshot of PLABWIN10: Searching for powershell and then 
+right-clicking PowerShell from the search results and selecting Run as 
+administrator.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-391"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-392">Click <b>Yes </b>in the <b>User Account Control </b>dialog box is displayed.</p>
+
+<p id="cn-m14-393"></p><figure><img class="cn-img" id="cn-image-m14-c-44" src="ImplementationofSecureProtocols_files/image-m14-c-44.jpg" alt="Figure 1.43 Screenshot of PLABWIN10: Clicking Yes in the User Account Control dialog box."><figcaption>Figure 1.43 Screenshot of PLABWIN10: Clicking Yes in the User Account Control dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-395"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-396">In the <b>PowerShell </b>window, type the following and press <b>Enter</b>:</p>
+
+<pre id="cn-m14-397"><code>Resolve-DNSName -Name secure.practicelabs.com.trustanchors -Type dnskey -Server plabdm01
+
+</code></pre>
+
+<p id="cn-m14-398">The command detects and lists the DNS KEY TA wherever it is found on the network.</p>
+
+<p id="cn-m14-399"></p><figure><img class="cn-img" id="cn-image-m14-c-45" src="ImplementationofSecureProtocols_files/image-m14-c-45.jpg" alt="Figure 1.44 Screenshot of PLABWIN10: Entering a command in the Windows PowerShell window to find DNSSEC trust anchors."><figcaption>Figure 1.44 Screenshot of PLABWIN10: Entering a command in the Windows PowerShell window to find DNSSEC trust anchors.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-401"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-402">The two Trust Anchors are listed - one each on the <b>PLABDC01 </b>and the <b>PLABDM01 </b>DNS servers.</p>
+
+<p id="cn-m14-403"></p><figure><img class="cn-img" id="cn-image-m14-c-46" src="ImplementationofSecureProtocols_files/image-m14-c-46.jpg" alt="Figure 1.45 Screenshot of PLABWIN10: Showing the results of the resolve DNS Name command."><figcaption>Figure 1.45 Screenshot of PLABWIN10: Showing the results of the resolve DNS Name command.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-405"><b>Task 7 - Query a Signed Zone without DNSSEC Validation Required</b></h3>
+
+<p id="cn-m14-406">After the distribution of the DNSKEY Trust Anchor to 
+the non-authoritative DNS server, you had tested if the Trust Anchor can
+ be detected by DNSSEC-aware clients such as Windows 8 and higher 
+versions. The result of the test was that two trust anchors were listed,
+ one on PLABDC01 and one on PLABDM01. This confirmed that the <b>secure.practicelabs.com </b>zone has been signed with DNSSEC.</p>
+
+<p id="cn-m14-407">In this task, you will test if a signed zone can be queried without the DNSSEC validation.</p>
+
+<h4 id="cn-m14-408"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-409">Connect to the <b>PLABWIN10 </b>device.</p>
+
+<p id="cn-m14-410">Ensure that the <b>Administrator: Windows PowerShell </b>window is open.</p>
+
+<p id="cn-m14-411">Type the following commands:</p>
+
+<pre id="cn-m14-412"><code>Resolve-DnsName www.secure.practicelabs.com -Server plabdm01 -DnssecOk
+
+</code></pre>
+
+<p id="cn-m14-413">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-414"></p><figure><img class="cn-img" id="cn-image-m14-c-47" src="ImplementationofSecureProtocols_files/image-m14-c-47.jpg" alt="Figure 1.46 Screenshot of PLABWIN10: Entering a command to resolve a DNS name in the PowerShell window."><figcaption>Figure 1.46 Screenshot of PLABWIN10: Entering a command to resolve a DNS name in the PowerShell window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-416"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-417">The result of the resolve DNS name query command is displayed.</p>
+
+<p id="cn-m14-418">Notice that the workstation shows a successful response as the DNSSEC Trust Anchors is successfully in place in the lab network.</p>
+
+<p id="cn-m14-419"></p><figure><img class="cn-img" id="cn-image-m14-c-48" src="ImplementationofSecureProtocols_files/image-m14-c-48.jpg" alt="Figure 1.47 Screenshot of PLABWIN10: Showing the results of the resolve DNS name command."><figcaption>Figure 1.47 Screenshot of PLABWIN10: Showing the results of the resolve DNS name command.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-421"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-422">To verify that DNSSEC validation is not required, type the following command:</p>
+
+<pre id="cn-m14-423"><code>Get-DnsClientNrptPolicy
+
+</code></pre>
+
+<p id="cn-m14-424">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-425"></p><figure><img class="cn-img" id="cn-image-m14-c-49" src="ImplementationofSecureProtocols_files/image-m14-c-49.jpg" alt="Figure 1.48 Screenshot of PLABWIN10: Entering a command to verify that DNSSEC validation is not required."><figcaption>Figure 1.48 Screenshot of PLABWIN10: Entering a command to verify that DNSSEC validation is not required.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-427"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-428">Since no result is given, it means that there is not a policy for DNSSEC validation.</p>
+
+<p id="cn-m14-429">Keep the <b>Windows PowerShell </b>window open.</p>
+
+<p id="cn-m14-430"></p><figure><img class="cn-img" id="cn-image-m14-c-50" src="ImplementationofSecureProtocols_files/image-m14-c-50.jpg" alt="Figure 1.49 Screenshot of PLABWIN10: Showing the output for the command to determine DNS client policy, and no policy is returned."><figcaption>Figure
+ 1.49 Screenshot of PLABWIN10: Showing the output for the command to 
+determine DNS client policy, and no policy is returned.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-433"><b>Task 8 - Configure Support for DNSSEC in GPO</b></h3>
+
+<p id="cn-m14-434">The Name Resolution Policy Table (NRPT) is used for 
+DNSSEC validation when a DNSSEC-aware client queries a DNS server. NRPT 
+is configurable via Local GPO for local testing or Domain GPO for domain
+ environments.</p>
+
+<p id="cn-m14-435">In this task, you will configure a domain-based GPO to require DNSSEC validation to query the signed <b>secure.practicelabs.com </b>zone.</p>
+
+<h4 id="cn-m14-436"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-437">Connect to the <b>PLABDC01 </b>server.</p>
+
+<p id="cn-m14-438">Restore the <b>Server Manager </b>window if already not restored.</p>
+
+<p id="cn-m14-439">In the <b>Server Manager </b>window, click <b>Tools </b>and select <b>Group Policy Management</b>.</p>
+
+<p id="cn-m14-440"></p><figure><img class="cn-img" id="cn-image-m14-c-51" src="ImplementationofSecureProtocols_files/image-m14-c-51.jpg" alt="Figure 1.50 Screenshot of PLABDC01: Clicking Tools and selecting Group Policy Management in the Server Manager window."><figcaption>Figure 1.50 Screenshot of PLABDC01: Clicking Tools and selecting Group Policy Management in the Server Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-443"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-444">In the <b>Group Policy Management </b>window, expand the <b>Forest: PRACTICELABS.COM </b>&gt; <b>Domains </b>&gt; <b>PRACTICELABS.COM </b>node-path.</p>
+
+<p id="cn-m14-445">Right-click <b>PRACTICELABS.COM </b>and select <b>Create a GPO in this domain and link it here...</b></p>
+
+<p id="cn-m14-446"></p><figure><img class="cn-img" id="cn-image-m14-c-52" src="ImplementationofSecureProtocols_files/image-m14-c-52.jpg" alt="Figure 1.51 Screenshot of PLABDC01: Right-clicking the domain name and selecting Create a GPO in this domain and Link it here in the Group Policy Management window."><figcaption>Figure
+ 1.51 Screenshot of PLABDC01: Right-clicking the domain name and 
+selecting Create a GPO in this domain and Link it here in the Group 
+Policy Management window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-449"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-450">In the <b>New GPO </b>dialog box, type the following:</p>
+
+<pre id="cn-m14-451"><code>DNSSEC
+
+</code></pre>
+
+<p id="cn-m14-452">Click <b>OK</b>.</p>
+
+<p id="cn-m14-453"></p><figure><img class="cn-img" id="cn-image-m14-c-53" src="ImplementationofSecureProtocols_files/image-m14-c-53.jpg" alt="Figure 1.52 Screenshot of PLABDC01: Entering a name for the GPO in the Name textbox and clicking OK on the New GPO dialog box."><figcaption>Figure 1.52 Screenshot of PLABDC01: Entering a name for the GPO in the Name textbox and clicking OK on the New GPO dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-456"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-457">Notice that the <b>DNSSEC </b>GPO is now listed under the <b>PRACTICELABS.COM </b>node.</p>
+
+<p id="cn-m14-458">Right-click the <b>DNSSEC </b>group policy and select <b>Edit</b>.</p>
+
+<p id="cn-m14-459"></p><figure><img class="cn-img" id="cn-image-m14-c-54" src="ImplementationofSecureProtocols_files/image-m14-c-54.jpg" alt="Figure 1.53 Screenshot of PLABDC01: Right-clicking the DNSSEC group policy and selecting Edit."><figcaption>Figure 1.53 Screenshot of PLABDC01: Right-clicking the DNSSEC group policy and selecting Edit.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-462"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-463">In the <b>Group Policy Management Editor </b>window, expand the <b>Computer Configuration </b>&gt; <b>Policies </b>&gt; <b>Windows Settings </b>and click on the <b>Name Resolution Policy </b>folder.</p>
+
+<p id="cn-m14-464">The <b>Name Resolution Policy </b>details pane is displayed on the right.</p>
+
+<p id="cn-m14-465"></p><figure><img class="cn-img" id="cn-image-m14-c-55" src="ImplementationofSecureProtocols_files/image-m14-c-55.jpg" alt="Figure 1.54 Screenshot of PLABDC01: Expanding the Computer Configuration &amp;gt; Policies &amp;gt; Windows Settings and clicking on the Name Resolution Policy folder."><figcaption>Figure
+ 1.54 Screenshot of PLABDC01: Expanding the Computer Configuration &gt; 
+Policies &gt; Windows Settings and clicking on the Name Resolution 
+Policy folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-468"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-469">In the <b>Create Rules </b>pane, in the <b>To which part of the namespace does this rule apply? </b>section, ensure that the drop-down list is set to <b>Suffix</b>.</p>
+
+<p id="cn-m14-470">In the provided text box, type the following:</p>
+
+<pre id="cn-m14-471"><code>secure.practicelabs.com
+
+</code></pre>
+
+<p id="cn-m14-472">In the <b>DNSSEC </b>folder tab, select the following checkbox: <b>Enable DNSSEC in this rule.</b></p>
+
+<p id="cn-m14-473">Under the <b>Validation </b>section, select the <b>Require DNS clients to check that name and address data has been validated by the DNS server </b>checkbox.</p>
+
+<p id="cn-m14-474">At the bottom right corner, click <b>Create</b>.</p>
+
+<p id="cn-m14-475"></p><figure><img class="cn-img" id="cn-image-m14-c-56" src="ImplementationofSecureProtocols_files/image-m14-c-56.jpg" alt="Figure 1.55 Screenshot of PLABDC01: Entering the name, enabling the appropriate options and then clicking Create."><figcaption>Figure 1.55 Screenshot of PLABDC01: Entering the name, enabling the appropriate options and then clicking Create.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-478"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-479">Scroll down to see the <b>Name Resolution Policy Table</b>.</p>
+
+<p id="cn-m14-480">Select <b>secure.practicelabs.com </b>and click <b>Apply</b>.</p>
+
+<p id="cn-m14-481"></p><figure><img class="cn-img" id="cn-image-m14-c-57" src="ImplementationofSecureProtocols_files/image-m14-c-57.jpg" alt="Figure 1.56 Screenshot of PLABDC01: Selecting the on the secure.practicelabs.com zone and then clicking Apply."><figcaption>Figure 1.56 Screenshot of PLABDC01: Selecting the on the secure.practicelabs.com zone and then clicking Apply.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-484"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-485">Close the <b>Group Policy Management Editor </b>window.</p>
+
+<p id="cn-m14-486">Exit the <b>Group Policy Management </b>console.</p>
+
+<p id="cn-m14-487"></p><figure><img class="cn-img" id="cn-image-m14-c-58" src="ImplementationofSecureProtocols_files/image-m14-c-58.jpg" alt="Figure 1.57 Screenshot of PLABDC01: Closing the Group Policy Management Editor and also the Group Policy Management console."><figcaption>Figure 1.57 Screenshot of PLABDC01: Closing the Group Policy Management Editor and also the Group Policy Management console.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-490"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-491">In the <b>Server Manager &gt; Dashboard </b>window, click on the <b>Tools </b>menu and select <b>Windows PowerShell</b>.</p>
+
+<p id="cn-m14-492"></p><figure><img class="cn-img" id="cn-image-m14-c-59" src="ImplementationofSecureProtocols_files/image-m14-c-59.jpg" alt="Figure 1.58 Screenshot of PLABDC01: Clicking the Tools menu and then selecting Windows PowerShell in the Server Manager window."><figcaption>Figure 1.58 Screenshot of PLABDC01: Clicking the Tools menu and then selecting Windows PowerShell in the Server Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-495"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-496">To force a system propagation of the computer GPO settings, type the following:</p>
+
+<pre id="cn-m14-497"><code>gpupdate /force
+
+</code></pre>
+
+<p id="cn-m14-498">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-499"></p><figure><img class="cn-img" id="cn-image-m14-c-60" src="ImplementationofSecureProtocols_files/image-m14-c-60.jpg" alt="Figure 1.59 Screenshot of PLABDC01: Entering the gpupdate /force command in the Windows PowerShell window."><figcaption>Figure 1.59 Screenshot of PLABDC01: Entering the gpupdate /force command in the Windows PowerShell window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-502"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-503">In the next prompt, to get the DNS client NRPT policy, type the following:</p>
+
+<pre id="cn-m14-504"><code>Get-DnsClientNrptPolicy
+
+</code></pre>
+
+<p id="cn-m14-505">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-506"></p><figure><img class="cn-img" id="cn-image-m14-c-61" src="ImplementationofSecureProtocols_files/image-m14-c-61.jpg" alt="Figure 1.60 Screenshot of PLABDC01: Entering the command to get the DNS client NRPT policy ."><figcaption>Figure 1.60 Screenshot of PLABDC01: Entering the command to get the DNS client NRPT policy .</figcaption></figure><p></p>
+
+<span class="cn-password"><b><i>Step 12</i></b></span>
+
+<p id="cn-m14-510">Locate the <b>DnsSecValidationRequired </b>field, and notice that the value is set to “<b>True</b>.”</p>
+
+<span class="cn-alert" id="cn-m14-511"><b>Alert</b>: GPOs linked to <b>Computer Configuration </b>may encounter delays in propagating the newly-created policy. If you did not get an output after running the <b>Get</b>-<b>DnsClientNrptPolicy </b>cmdlet, restart (DO NOT TURN OFF or SHUTDOWN) the <b>PLABDC01 </b>server. Then retry lab <b>Step 9 </b>above.</span>
+
+<p id="cn-m14-512"></p><figure><img class="cn-img" id="cn-image-m14-c-62" src="ImplementationofSecureProtocols_files/image-m14-c-62.jpg" alt="Figure 1.61 Screenshot of PLABDC01: Showing the output of the DNS client NRPT policy."><figcaption>Figure 1.61 Screenshot of PLABDC01: Showing the output of the DNS client NRPT policy.</figcaption></figure><p></p>
+
+<p id="cn-m14-514">Minimize the <b>Windows PowerShell </b>window.</p>
+
+<h3 id="cn-m14-516"><b>Task 9 - Query a Signed Zone with DNSSEC Validation Required</b></h3>
+
+<p id="cn-m14-517">After setting up a domain-based GPO for DNSSEC validation, you will run a query to resolve a Resource Record (RR) on the signed <b>secure.practicelabs.com </b>zone.</p>
+
+<p id="cn-m14-518">In this task, you will query a signed zone with DNSSEC validation.</p>
+
+<h4 id="cn-m14-519"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-520">Connect to the <b>PLABWIN10 </b>device.</p>
+
+<p id="cn-m14-521">Ensure that the <b>Windows PowerShell </b>window is open.</p>
+
+<p id="cn-m14-522">To manually apply the newly-created policy to the Windows 10 client, type the following:</p>
+
+<pre id="cn-m14-523"><code>gpupdate /force
+
+</code></pre>
+
+<p id="cn-m14-524">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-525"></p><figure><img class="cn-img" id="cn-image-m14-c-63" src="ImplementationofSecureProtocols_files/image-m14-c-63.jpg" alt="Figure 1.62 Screenshot of PLABWIN10: Entering the gpupdate /force command."><figcaption>Figure 1.62 Screenshot of PLABWIN10: Entering the gpupdate /force command.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-527"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-528">Clear the screen with the following command:</p>
+
+<pre id="cn-m14-529"><code>clear
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m14-530"><b><i>Note: </i></b><i>It is not necessary to use the </i><b><i>clear </i></b><i>command.
+ If you want to work on clean windows, then you can use this command. 
+Skipping this command does not impact the lab steps.</i></span>
+
+<p id="cn-m14-531">Now, type the following:</p>
+
+<pre id="cn-m14-532"><code>Get-DnsClientNrptPolicy
+
+</code></pre>
+
+<p id="cn-m14-533">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-534"></p><figure><img class="cn-img" id="cn-image-m14-c-64" src="ImplementationofSecureProtocols_files/image-m14-c-64.jpg" alt="Figure 1.63 Screenshot of PLABWIN10: Entering the command to get the DNS client NRPT policy."><figcaption>Figure 1.63 Screenshot of PLABWIN10: Entering the command to get the DNS client NRPT policy.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-536"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-537">Notice that the DNS client policy is detected by <b>PLABWIN10 </b>(the Windows 10 device).</p>
+
+<p id="cn-m14-538">Observe that the <b>DNSSecValidationRequiredField </b>is set to “<b>True</b>.”</p>
+
+<p id="cn-m14-539"></p><figure><img class="cn-img" id="cn-image-m14-c-65" src="ImplementationofSecureProtocols_files/image-m14-c-65.jpg" alt="Figure 1.64 Screenshot of PLABWIN10: Showing the output of the command to verify DNS client policy."><figcaption>Figure 1.64 Screenshot of PLABWIN10: Showing the output of the command to verify DNS client policy.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-541"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-542">In the next prompt, to resolve a DNS name with DNSSEC validation configured, type the following:</p>
+
+<pre id="cn-m14-543"><code>Resolve-DnsName www.secure.practicelabs.com -Server plabdm01 -DnsSecOk
+
+</code></pre>
+
+<p id="cn-m14-544">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-545"></p><figure><img class="cn-img" id="cn-image-m14-c-66" src="ImplementationofSecureProtocols_files/image-m14-c-66.jpg" alt="Figure 1.65 Screenshot of PLABWIN10: Entering a command to resolve a DNS name with DNSSEC validation configured."><figcaption>Figure 1.65 Screenshot of PLABWIN10: Entering a command to resolve a DNS name with DNSSEC validation configured.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-548"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-549">Notice that there is no difference between your earlier results and the resolved DNS name.</p>
+
+<p id="cn-m14-550">This is because a valid <b>Trust Anchor </b>is present on the <b>PLABDM01 </b>server. The query is successful even if DNSSEC validation is required, as it has been completed earlier via the domain GPO.</p>
+
+<p id="cn-m14-551">Keep the <b>Windows PowerShell </b>window open.</p>
+
+<p id="cn-m14-552"></p><figure><img class="cn-img" id="cn-image-m14-c-67" src="ImplementationofSecureProtocols_files/image-m14-c-67.jpg" alt="Figure 1.66 Screenshot of PLABWIN10: Showing the output of the command to resolve a DNS name with DNSSEC validation."><figcaption>Figure 1.66 Screenshot of PLABWIN10: Showing the output of the command to resolve a DNS name with DNSSEC validation.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-555"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-556">Clear the screen with the following command:</p>
+
+<pre id="cn-m14-557"><code>clear
+
+</code></pre>
+
+<p id="cn-m14-558">In the next prompt, you will attempt to resolve some <b>Resource Records (RRs) </b>within the <b>secure.practicelabs.com </b>zone.</p>
+
+<p id="cn-m14-559">Type the following command:</p>
+
+<pre id="cn-m14-560"><code>Resolve-DNSName -name www.secure.practicelabs.com -Type soa -Server plabdm01 -DnsSecOk
+
+</code></pre>
+
+<p id="cn-m14-561">Press <b>Enter</b>.</p>
+
+<p id="cn-m14-562"></p><figure><img class="cn-img" id="cn-image-m14-c-68" src="ImplementationofSecureProtocols_files/image-m14-c-68.jpg" alt="Figure 1.67 Screenshot of PLABWIN10: Entering a command to resolve some Resource Records (RRs) within the secure.practicelabs.com zone."><figcaption>Figure
+ 1.67 Screenshot of PLABWIN10: Entering a command to resolve some 
+Resource Records (RRs) within the secure.practicelabs.com zone.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-564"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-565">The Host (A) record “<b>www</b>” was successfully resolved. Scroll down through the results of the command to view other details about the Host record.</p>
+
+<span class="cn-quote" id="cn-m14-566"><b><i>Note</i></b><i>: There is another Resource Record Host (A) record called “</i><b><i>www2</i></b><i>” that you can likewise query if desired.</i></span>
+
+<p id="cn-m14-567"></p><figure><img class="cn-img" id="cn-image-m14-c-69" src="ImplementationofSecureProtocols_files/image-m14-c-69.jpg" alt="Figure 1.68 Screenshot of PLABWIN10: Showing the output that displays a DNS name’s SOA, and the results."><figcaption>Figure 1.68 Screenshot of PLABWIN10: Showing the output that displays a DNS name’s SOA, and the results.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<span class="cn-alert" id="cn-m14-571">Leave the devices in their current states and continue on to the next exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="ConfiguringIPSec">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-573"><b>Exercise 2 - Configuring IPSec</b></h2>
+
+<p id="cn-m14-574">Internet Protocol Security or IPsec is a stack of 
+protocols that help to protect data traversing through a network by 
+ensuring authentication, integrity, and encryption.</p>
+
+<p id="cn-m14-575">Before data is sent between two devices, IPsec 
+authentication ensures that the identity of the devices is verified 
+through the use of certificates, authentication, or passwords. IPsec 
+signs data sent between devices to ensure that they were not modified, 
+meaning its integrity was intact while in transit. With encryption 
+provided by IPsec, this means that authorized devices in the network can
+ only read the data. Therefore, when an intruder listens to an 
+IPsec-protected network, all traffic between the hosts is protected.</p>
+
+<p id="cn-m14-576">IPSec can be used in some of the following scenarios:</p>
+
+<ul id="cn-m14-577">
+
+<li id="cn-m14-577">When you want to encrypt the application layer data</li>
+
+<li id="cn-m14-578">When you want to encrypt the routing data over the Internet</li>
+
+<li id="cn-m14-579">To share encrypted data between two endpoints over a tunnel</li>
+
+</ul>
+
+<p id="cn-m14-580">Two components make up IPSec:</p>
+
+<p id="cn-m14-581"><b>Encapsulating Security Payload: </b>Mainly provides data integrity, anti-replay, and authentication.</p>
+
+<p id="cn-m14-582"><b>Authentication Header</b>: Mainly provides 
+anti-replay and authentication. However, it lacks the capability of 
+protecting data integrity and, therefore, cannot protect data 
+confidentiality.</p>
+
+<p id="cn-m14-583">In this exercise, you will learn to configure IPSec in the Windows environment.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-585">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m14-586">
+
+<li id="cn-m14-586">Create Connection Security Rule on PLABWIN10 and on PLABDC01</li>
+
+<li id="cn-m14-587">Verify the Security Association</li>
+
+<li id="cn-m14-588">Run Network Monitor to Observe Traffic Pattern</li>
+
+<li id="cn-m14-589">Find Network Conversation Signed With ESP</li>
+
+<li id="cn-m14-590">Disable the Connection Security Rules on PLABWIN10 and PLABDC01</li>
+
+<li id="cn-m14-591">Run Network Monitor to Collect New Data</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-593">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m14-594">
+
+<li id="cn-m14-594"><b>PLABDC01 - </b>(Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m14-595"><b>PLABWIN10 - </b>(Windows 10 - Domain Member)</li>
+
+</ul>
+
+<p id="cn-m14-597"><img class="cn-img" id="cn-image-m14-c-70" src="ImplementationofSecureProtocols_files/image-m14-c-70.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m14-598"><b>Task 1 - Create Connection Security Rule on PLABWIN10</b></h3>
+
+<p id="cn-m14-599">Windows use connection security rules that combine 
+IPsec and Windows Defender Firewall with Advanced Security to simplify 
+the rules and minimize conflicting policies and streamline the process 
+of securing devices against unauthorized access. When a connection 
+security rule is created, it will enforce authentication between two 
+computers before they can establish a connection and transmit data. 
+IPsec is used by Windows to apply these rules.</p>
+
+<p id="cn-m14-600">One type of connection security rule is isolation. An
+ isolation rule simply isolates computers by restricting connections on 
+credentials such as domain membership. Isolation rules can be used to 
+isolate servers and client workstations.</p>
+
+<p id="cn-m14-601">In this task, you will configure local connection security rules to protect ICMP packets from being read by network sniffers.</p>
+
+<h4 id="cn-m14-602"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-603">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m14-604">Click on the <b>Type here to search </b>box and enter:</p>
+
+<pre id="cn-m14-605"><code>windows defender
+
+</code></pre>
+
+<p id="cn-m14-606">Click <b>Windows Defender Firewall with Advanced Security </b>from the search results.</p>
+
+<p id="cn-m14-607"></p><figure><img class="cn-img" id="cn-image-m14-c-71" src="ImplementationofSecureProtocols_files/image-m14-c-71.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Selecting Windows Defender Firewall with Advanced Security from the search results."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Selecting Windows Defender Firewall with Advanced Security from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-610"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-611">On the <b>Windows Defender Firewall with Advanced Security </b>window, click the <b>Connection Security Rules </b>node.</p>
+
+<p id="cn-m14-612">Right-click <b>Connection Security Rules </b>and select <b>New Rule.</b></p>
+
+<p id="cn-m14-613"></p><figure><img class="cn-img" id="cn-image-m14-c-72" src="ImplementationofSecureProtocols_files/image-m14-c-72.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: Right-clicking Connection Security Rules and selecting New Rule."><figcaption>Figure 2.2 Screenshot of PLABWIN10: Right-clicking Connection Security Rules and selecting New Rule.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-616"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-617">The <b>New Connection Security Rule Wizard </b>window is displayed.</p>
+
+<p id="cn-m14-618">On the <b>Rule Type </b>page, the <b>Isolation </b>option is selected by default.</p>
+
+<p id="cn-m14-619">Click <b>Next.</b></p>
+
+<p id="cn-m14-620"></p><figure><img class="cn-img" id="cn-image-m14-c-73" src="ImplementationofSecureProtocols_files/image-m14-c-73.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: Selecting Isolation on the Rule Type page and clicking Next."><figcaption>Figure 2.3 Screenshot of PLABWIN10: Selecting Isolation on the Rule Type page and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-623"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-624">On the <b>Requirements </b>page, keep the default selection of <b>Request authentication for inbound and outbound connections </b>and click <b>Next</b>.</p>
+
+<p id="cn-m14-625"></p><figure><img class="cn-img" id="cn-image-m14-c-74" src="ImplementationofSecureProtocols_files/image-m14-c-74.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: Keeping the default selection of Request authentication for inbound and outbound connections and click Next."><figcaption>Figure
+ 2.4 Screenshot of PLABWIN10: Keeping the default selection of Request 
+authentication for inbound and outbound connections and click Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-628"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-629">On the <b>Authentication Method </b>page, select <b>Computer and user (Kerberos V5) </b>option and click <b>Next</b>.</p>
+
+<p id="cn-m14-630"></p><figure><img class="cn-img" id="cn-image-m14-c-75" src="ImplementationofSecureProtocols_files/image-m14-c-75.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: Selecting Computer and user (Kerberos V5) option and clicking Next."><figcaption>Figure 2.5 Screenshot of PLABWIN10: Selecting Computer and user (Kerberos V5) option and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-633"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-634">On the <b>Profile </b>page, keep the <b>Domain, Private, </b>and <b>Public </b>checkboxes selected and then click <b>Next</b>.</p>
+
+<p id="cn-m14-635"></p><figure><img class="cn-img" id="cn-image-m14-c-76" src="ImplementationofSecureProtocols_files/image-m14-c-76.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: Keeping the Domain, Private, and Public checkboxes selected and then clicking Next."><figcaption>Figure 2.6 Screenshot of PLABWIN10: Keeping the Domain, Private, and Public checkboxes selected and then clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-638"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-639">On the <b>Name </b>page, type the following name:</p>
+
+<pre id="cn-m14-640"><code>Isolation policy
+
+</code></pre>
+
+<p id="cn-m14-641">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-642"></p><figure><img class="cn-img" id="cn-image-m14-c-77" src="ImplementationofSecureProtocols_files/image-m14-c-77.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: Entering the policy name on the Name page and clicking Finish."><figcaption>Figure 2.7 Screenshot of PLABWIN10: Entering the policy name on the Name page and clicking Finish.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-645"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-646">In the middle pane of the <b>Windows Defender Firewall with Advanced Security </b>window, notice that the <b>Isolation policy </b>is now created. Right-click <b>Isolation policy </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m14-647"></p><figure><img class="cn-img" id="cn-image-m14-c-78" src="ImplementationofSecureProtocols_files/image-m14-c-78.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: Right-clicking Isolation policy and selecting Properties."><figcaption>Figure 2.8 Screenshot of PLABWIN10: Right-clicking Isolation policy and selecting Properties.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-650"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-651">On the <b>Isolation policy Properties</b>, click the <b>Remote Computers </b>tab.</p>
+
+<p id="cn-m14-652"></p><figure><img class="cn-img" id="cn-image-m14-c-79" src="ImplementationofSecureProtocols_files/image-m14-c-79.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: Clicking the Remote Computers tab in the Isolation policy Properties dialog box."><figcaption>Figure 2.9 Screenshot of PLABWIN10: Clicking the Remote Computers tab in the Isolation policy Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-654"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-655">On the <b>Remote Computers </b>tab, under the <b>Endpoint 1</b>, select <b>These IP addresses </b>option and click <b>Add</b>.</p>
+
+<p id="cn-m14-656"></p><figure><img class="cn-img" id="cn-image-m14-c-80" src="ImplementationofSecureProtocols_files/image-m14-c-80.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: Selecting These IP addresses and clicking Add on the Remote Computers tab."><figcaption>Figure 2.10 Screenshot of PLABWIN10: Selecting These IP addresses and clicking Add on the Remote Computers tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-659"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-660">On the <b>IP Address</b>, in the <b>This IP address or subnet </b>box, type:</p>
+
+<pre id="cn-m14-661"><code>192.168.0.3
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m14-662"><b><i>Note</i></b><i>: This is 
+the IP address of PLABWIN10, referred to as the localhost. When 
+configuring Connection Security Policy (IPsec), the static IP address of
+ the host must be manually entered, as illustrated in this isolation 
+policy.</i></span>
+
+<p id="cn-m14-663">Click <b>OK</b>.</p>
+
+<p id="cn-m14-664"></p><figure><img class="cn-img" id="cn-image-m14-c-81" src="ImplementationofSecureProtocols_files/image-m14-c-81.jpg" alt="Figure 2.11 Screenshot of PLABWIN10: Adding the IP address in the IP Address dialog box and clicking OK."><figcaption>Figure 2.11 Screenshot of PLABWIN10: Adding the IP address in the IP Address dialog box and clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-667"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m14-668">On the <b>Isolation policy Properties</b>, under <b>Endpoint 2</b>, click <b>These IP addresses </b>then click <b>Add</b>.</p>
+
+<p id="cn-m14-669"></p><figure><img class="cn-img" id="cn-image-m14-c-82" src="ImplementationofSecureProtocols_files/image-m14-c-82.jpg" alt="Figure 2.12 Screenshot of PLABWIN10: Selecting These IP addresses for Endpoint 2 and clicking Add."><figcaption>Figure 2.12 Screenshot of PLABWIN10: Selecting These IP addresses for Endpoint 2 and clicking Add.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-671"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m14-672">On the <b>IP Address </b>dialog box, in the <b>This IP address or subnet </b>box, type:</p>
+
+<pre id="cn-m14-673"><code>192.168.0.1
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m14-674"><b><i>Note</i></b><i>: This is 
+the IP address of PLABDC01 referred to as the remote host. When 
+configuring Connection Security Policy (IPsec), the static IP address of
+ the host must be manually entered, as illustrated in this isolation 
+policy.</i></span>
+
+<p id="cn-m14-675">Click <b>OK</b>.</p>
+
+<p id="cn-m14-676"></p><figure><img class="cn-img" id="cn-image-m14-c-83" src="ImplementationofSecureProtocols_files/image-m14-c-83.jpg" alt="Figure 2.13 Screenshot of PLABWIN10: Entering the IP address and click OK on the IP Address dialog box."><figcaption>Figure 2.13 Screenshot of PLABWIN10: Entering the IP address and click OK on the IP Address dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-679"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m14-680">Back on the <b>Isolation policy Properties </b>dialog box, <b>Endpoint 1 </b>box contains <b>192.168.0.3, </b>while <b>Endpoint 2 </b>contains <b>192.168.0.1</b>.</p>
+
+<p id="cn-m14-681">Click <b>OK</b>.</p>
+
+<p id="cn-m14-682"></p><figure><img class="cn-img" id="cn-image-m14-c-84" src="ImplementationofSecureProtocols_files/image-m14-c-84.jpg" alt="Figure 2.14 Screenshot of PLABWIN10: Showing the IP addresses for the endpoints on the Remote Computers tab of the Isolation policy Properties dialog box and clicking OK."><figcaption>Figure
+ 2.14 Screenshot of PLABWIN10: Showing the IP addresses for the 
+endpoints on the Remote Computers tab of the Isolation policy Properties
+ dialog box and clicking OK.</figcaption></figure><p></p>
+
+<p id="cn-m14-684">Minimize <b>Windows Defender Firewall with Advanced Security </b>window.</p>
+
+<h3 id="cn-m14-686"><b>Task 2 - Create Connection Security Rule on PLABDC01</b></h3>
+
+<p id="cn-m14-687">Along with PLABWIN10, you will also need to create 
+local connection security rules on the PLABDC01 device. This will help 
+you establish communication between PLABWIN10 and PLABDC01.</p>
+
+<p id="cn-m14-688">This rule will be compatible with the one created earlier on the PLABWIN10 computer.</p>
+
+<p id="cn-m14-689">In this task you will create a connection security rule on PLABDC01.</p>
+
+<h4 id="cn-m14-690"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-691">Connect to <b>PLABDC01</b>. Click <b>Start</b>, select <b>Windows Administrative Tools, </b>and then select <b>Windows Defender Firewall with Advanced Security</b>.</p>
+
+<p id="cn-m14-692"></p><figure><img class="cn-img" id="cn-image-m14-c-85" src="ImplementationofSecureProtocols_files/image-m14-c-85.jpg" alt="Figure 2.15 Screenshot of PLABDC01: Clicking Start, selecting Windows Administrative Tools, and then selecting the Windows Defender Firewall with Advanced Security."><figcaption>Figure
+ 2.15 Screenshot of PLABDC01: Clicking Start, selecting Windows 
+Administrative Tools, and then selecting the Windows Defender Firewall 
+with Advanced Security.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-694"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-695">On the <b>Windows Defender Firewall with Advanced Security </b>window, click the <b>Connection Security Rules </b>node.</p>
+
+<p id="cn-m14-696">Right-click <b>Connection Security Rules </b>and select <b>New Rule.</b></p>
+
+<p id="cn-m14-697"></p><figure><img class="cn-img" id="cn-image-m14-c-86" src="ImplementationofSecureProtocols_files/image-m14-c-86.jpg" alt="Figure 2.16 Screenshot of PLABDC01: Right-clicking Connection Security Rules and selecting New Rule."><figcaption>Figure 2.16 Screenshot of PLABDC01: Right-clicking Connection Security Rules and selecting New Rule.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-700"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-701">The <b>New Connection Security Rule Wizard </b>window is displayed.</p>
+
+<p id="cn-m14-702">On the <b>Rule Type </b>page, the <b>Isolation </b>option is selected.</p>
+
+<p id="cn-m14-703">Click <b>Next.</b></p>
+
+<p id="cn-m14-704"></p><figure><img class="cn-img" id="cn-image-m14-c-87" src="ImplementationofSecureProtocols_files/image-m14-c-87.jpg" alt="Figure 2.17 Screenshot of PLABDC01: Keeping the Isolation option selected and clicking Next."><figcaption>Figure 2.17 Screenshot of PLABDC01: Keeping the Isolation option selected and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-707"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-708">On the <b>Requirements </b>page, the <b>Request authentication for inbound and outbound connections </b>option is selected.</p>
+
+<p id="cn-m14-709">Click <b>Next</b>.</p>
+
+<p id="cn-m14-710"></p><figure><img class="cn-img" id="cn-image-m14-c-88" src="ImplementationofSecureProtocols_files/image-m14-c-88.jpg" alt="Figure 2.18 Screenshot of PLABDC01: Keeping the Request authentication for inbound and outbound connections and clicking Next."><figcaption>Figure 2.18 Screenshot of PLABDC01: Keeping the Request authentication for inbound and outbound connections and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-713"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-714">On the <b>Authentication Method </b>page, select <b>Computer and user (Kerberos V5) </b>option and click <b>Next</b>.</p>
+
+<p id="cn-m14-715"></p><figure><img class="cn-img" id="cn-image-m14-c-89" src="ImplementationofSecureProtocols_files/image-m14-c-89.jpg" alt="Figure 2.19 Screenshot of PLABDC01: Selecting Computer and user (Kerberos V5) option and clicking Next."><figcaption>Figure 2.19 Screenshot of PLABDC01: Selecting Computer and user (Kerberos V5) option and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-718"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-719">On the <b>Profile </b>page, keep the <b>Domain, Private, </b>and <b>Public </b>checkboxes selected.</p>
+
+<p id="cn-m14-720">Click <b>Next</b>.</p>
+
+<p id="cn-m14-721"></p><figure><img class="cn-img" id="cn-image-m14-c-90" src="ImplementationofSecureProtocols_files/image-m14-c-90.jpg" alt="Figure 2.20 Screenshot of PLABDC01: Keeping the default selection of Domain, Private, and Public options and clicking Next."><figcaption>Figure 2.20 Screenshot of PLABDC01: Keeping the default selection of Domain, Private, and Public options and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-724"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-725">On the <b>Name </b>page, type:</p>
+
+<pre id="cn-m14-726"><code>Isolation policy
+
+</code></pre>
+
+<p id="cn-m14-727">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-728"></p><figure><img class="cn-img" id="cn-image-m14-c-91" src="ImplementationofSecureProtocols_files/image-m14-c-91.jpg" alt="Figure 2.21 Screenshot of PLABDC01: Entering the policy name on the Name page and clicking Finish."><figcaption>Figure 2.21 Screenshot of PLABDC01: Entering the policy name on the Name page and clicking Finish.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-731"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-732">In the middle pane of the <b>Windows Defender Firewall with Advanced Security </b>window, notice that the <b>Isolation policy </b>is created. Right-click on it and select <b>Properties</b>.</p>
+
+<p id="cn-m14-733"></p><figure><img class="cn-img" id="cn-image-m14-c-92" src="ImplementationofSecureProtocols_files/image-m14-c-92.jpg" alt="Figure 2.22 Screenshot of PLABDC01: Right-clicking the Isolation policy and selecting Properties."><figcaption>Figure 2.22 Screenshot of PLABDC01: Right-clicking the Isolation policy and selecting Properties.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-736"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-737">On the <b>Isolation policy Properties</b>, click the <b>Remote Computers </b>tab.</p>
+
+<p id="cn-m14-738"></p><figure><img class="cn-img" id="cn-image-m14-c-93" src="ImplementationofSecureProtocols_files/image-m14-c-93.jpg" alt="Figure 2.23 Screenshot of PLABDC01: Clicking the Remote tab on the Isolation policy Properties dialog box."><figcaption>Figure 2.23 Screenshot of PLABDC01: Clicking the Remote tab on the Isolation policy Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-740"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-741">On the <b>Remote Computers </b>tab, under the <b>Endpoint 1 </b>section, select <b>These IP addresses </b>option and click <b>Add</b>.</p>
+
+<p id="cn-m14-742"></p><figure><img class="cn-img" id="cn-image-m14-c-94" src="ImplementationofSecureProtocols_files/image-m14-c-94.jpg" alt="Figure 2.24 Screenshot of PLABDC01: Selecting These IP addresses under the Endpoint 1 section and clicking Add."><figcaption>Figure 2.24 Screenshot of PLABDC01: Selecting These IP addresses under the Endpoint 1 section and clicking Add.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-745"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-746">On the <b>IP Address </b>dialog box, click in the <b>This IP address or subnet</b>, type:</p>
+
+<pre id="cn-m14-747"><code>192.168.0.1
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m14-748"><b><i>Note</i></b><i>: This is 
+the IP address of PLABDC01 referred to as the localhost. When 
+configuring Connection Security Policy (IPsec), the static IP address of
+ the host must be manually entered, as illustrated in this isolation 
+policy.</i></span>
+
+<p id="cn-m14-749">Click <b>OK</b>.</p>
+
+<p id="cn-m14-750"></p><figure><img class="cn-img" id="cn-image-m14-c-95" src="ImplementationofSecureProtocols_files/image-m14-c-95.jpg" alt="Figure 2.25 Screenshot of PLABDC01: Entering the IP address in the IP Address dialog box and clicking OK."><figcaption>Figure 2.25 Screenshot of PLABDC01: Entering the IP address in the IP Address dialog box and clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-753"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m14-754">On the <b>Isolation policy Properties</b>, under <b>Endpoint 2</b>, click <b>These IP addresses </b>then click <b>Add</b>.</p>
+
+<p id="cn-m14-755"></p><figure><img class="cn-img" id="cn-image-m14-c-96" src="ImplementationofSecureProtocols_files/image-m14-c-96.jpg" alt="Figure 2.26 Screenshot of PLABDC01: Selecting These IP addresses under the Endpoint 2 section and clicking Add."><figcaption>Figure 2.26 Screenshot of PLABDC01: Selecting These IP addresses under the Endpoint 2 section and clicking Add.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-758"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m14-759">On the <b>IP Address </b>dialog box, in the <b>This IP address or subnet </b>box, type:</p>
+
+<pre id="cn-m14-760"><code>192.168.0.3
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m14-761"><b><i>Note</i></b><i>: This is 
+the IP address of PLABWIN10, referred to as the remote host. When 
+configuring Connection Security Policy (IPsec), the static IP address of
+ the host must be manually entered, as illustrated in this isolation 
+policy.</i></span>
+
+<p id="cn-m14-762">Click <b>OK</b>.</p>
+
+<p id="cn-m14-763"></p><figure><img class="cn-img" id="cn-image-m14-c-97" src="ImplementationofSecureProtocols_files/image-m14-c-97.jpg" alt="Figure 2.27 Screenshot of PLABDC01: Entering the IP address in the IP Address dialog box and clicking OK."><figcaption>Figure 2.27 Screenshot of PLABDC01: Entering the IP address in the IP Address dialog box and clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-766"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m14-767">Back on the <b>Isolation policy Properties </b>dialog box, <b>Endpoint 1 </b>box contains <b>192.168.0.1, </b>while <b>Endpoint 2 </b>contains <b>192.168.0.3</b>.</p>
+
+<p id="cn-m14-768">Click <b>OK</b>.</p>
+
+<p id="cn-m14-769"></p><figure><img class="cn-img" id="cn-image-m14-c-98" src="ImplementationofSecureProtocols_files/image-m14-c-98.jpg" alt="Figure 2.28 Screenshot of PLABDC01: Showing the IP addresses for Endpoint 1 and Endpoint 2 and clicking OK on the Isolation policy Properties dialog box."><figcaption>Figure
+ 2.28 Screenshot of PLABDC01: Showing the IP addresses for Endpoint 1 
+and Endpoint 2 and clicking OK on the Isolation policy Properties dialog
+ box.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m14-772">Keep the <b>Windows Defender Firewall with Advanced Security </b>window open for the next task.</span>
+
+<h3 id="cn-m14-774"><b>Task 3 - Verify the Security Association</b></h3>
+
+<p id="cn-m14-775">Connection security rules can be monitored using the 
+Security Associations node in Windows Defender Firewall with Advanced 
+Security.</p>
+
+<p id="cn-m14-776">The Main Mode displays the establishment of a secure 
+channel between two endpoints and indicates the authentication method 
+being used and encryption applied</p>
+
+<p id="cn-m14-777">The Quick Mode indicates the establishment of a secure channel between two endpoints to protect data during transmission.</p>
+
+<p id="cn-m14-778">In this task, you will monitor the security association on PLABDC01.</p>
+
+<h4 id="cn-m14-779"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-780">On <b>PLABDC01</b>, ensure that <b>Windows Defender Firewall with Advanced Security </b>is open.</p>
+
+<p id="cn-m14-781">Expand <b>Monitoring </b>&gt; <b>Security Associations</b>, and then select <b>Main Mode</b>.</p>
+
+<p id="cn-m14-782">At the right details pane, the authentication methods are displayed.</p>
+
+<p id="cn-m14-783"></p><figure><img class="cn-img" id="cn-image-m14-c-99" src="ImplementationofSecureProtocols_files/image-m14-c-99.jpg" alt="Figure 2.29 Screenshot of PLABDC01: Expanding Monitoring &amp;gt; Security Associations, and then selecting the Main Mode in the Windows Defender Firewall with Advanced Security window."><figcaption>Figure
+ 2.29 Screenshot of PLABDC01: Expanding Monitoring &gt; Security 
+Associations, and then selecting the Main Mode in the Windows Defender 
+Firewall with Advanced Security window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-786"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-787">Click <b>Quick Mode</b>.</p>
+
+<p id="cn-m14-788">At the right details pane, notice that <b>ESP </b>is used to ensure data integrity using <b>Secure Hash Algorithm 1 </b>(<b>SHA-1</b>).</p>
+
+<p id="cn-m14-789">However, data encryption is not enforced due to a connection security rule that was configured earlier that indicated “<b>Request authentication for inbound and outbound connections.”</b></p>
+
+<p id="cn-m14-790"></p><figure><img class="cn-img" id="cn-image-m14-c-100" src="ImplementationofSecureProtocols_files/image-m14-c-100.jpg" alt="Figure 2.30 Screenshot of PLABDC01: Clicking the Quick Mode node in the left pane and showing the policy in the middle pane."><figcaption>Figure 2.30 Screenshot of PLABDC01: Clicking the Quick Mode node in the left pane and showing the policy in the middle pane.</figcaption></figure><p></p>
+
+<p id="cn-m14-792">Minimize <b>Windows Defender Firewall with Advanced Security.</b></p>
+
+<h3 id="cn-m14-794"><b>Task 4 - Run Network Monitor to Observe Traffic Pattern</b></h3>
+
+<p id="cn-m14-795">The connection security rules to use isolation have 
+been successfully created on the Windows 10 and Windows Server 2019 
+devices. For this task, you will use a protocol analyzer called <b>Microsoft Network Monitor </b>to monitor network traffic between the two devices.</p>
+
+<p id="cn-m14-796">Microsoft Network Monitor is a network sniffer 
+program that can be used for monitoring network traffic with a 
+connection security rule enabled for isolation.</p>
+
+<h4 id="cn-m14-798"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-799">Connect to <b>PLABWIN10</b>. Type <b>Microsoft Network Monitor </b>in the <b>Taskbar </b>search menu, select <b>Run as administrator</b>.</p>
+
+<p id="cn-m14-800"></p><figure><img class="cn-img" id="cn-image-m14-c-101" src="ImplementationofSecureProtocols_files/image-m14-c-101.jpg" alt="Figure 2.31 Screenshot of PLABWIN10: Opening the Microsoft Network Monitor as an Administrator."><figcaption>Figure 2.31 Screenshot of PLABWIN10: Opening the Microsoft Network Monitor as an Administrator.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-802"><b><i>Step 2</i></b></h4>
+
+<span class="cn-quote" id="cn-m14-803"><b><i>Note: </i></b><i>You may be prompted with the </i><b><i>User Access Control </i></b><i>dialog box. Click </i><b><i>Yes </i></b><i>to continue.</i></span>
+
+<p id="cn-m14-804">In the <b>Select Networks </b>pane, ensure that the <b>Ethernet </b>checkbox is selected.</p>
+
+<p id="cn-m14-805"></p><figure><img class="cn-img" id="cn-image-m14-c-102" src="ImplementationofSecureProtocols_files/image-m14-c-102.jpg" alt="Figure 2.32 Screenshot of PLABWIN10: Entering the Ethernet checkbox is selected."><figcaption>Figure 2.32 Screenshot of PLABWIN10: Entering the Ethernet checkbox is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-807"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-808">On the <b>Recent Captures </b>pane, click the <b>New Capture </b>tab.</p>
+
+<p id="cn-m14-809"></p><figure><img class="cn-img" id="cn-image-m14-c-103" src="ImplementationofSecureProtocols_files/image-m14-c-103.jpg" alt="Figure 2.33 Screenshot of PLABWIN10: Clicking the New Capture tab on the Recent Captures pane of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.33 Screenshot of PLABWIN10: Clicking the New Capture tab on the 
+Recent Captures pane of the Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-811"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-812">The <b>Microsoft Network Monitor 3.4 </b>window is displayed.</p>
+
+<p id="cn-m14-813">Click the <b>Start </b>button from the toolbar on the top.</p>
+
+<p id="cn-m14-814">Let <b>Network Monitor </b>run to capture network traffic on the selected interface.</p>
+
+<p id="cn-m14-815"></p><figure><img class="cn-img" id="cn-image-m14-c-104" src="ImplementationofSecureProtocols_files/image-m14-c-104.jpg" alt="Figure 2.34 Screenshot of PLABWIN10: Clicking the Start button on the toolbar at the top of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.34 Screenshot of PLABWIN10: Clicking the Start button on the toolbar 
+at the top of the Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-817"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-818">Click <b>File Explorer </b>on the taskbar.</p>
+
+<p id="cn-m14-819"></p><figure><img class="cn-img" id="cn-image-m14-c-105" src="ImplementationofSecureProtocols_files/image-m14-c-105.jpg" alt="Figure 2.35 Screenshot of PLABWIN10: Clicking the File Explorer icon on the taskbar."><figcaption>Figure 2.35 Screenshot of PLABWIN10: Clicking the File Explorer icon on the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-821"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-822">On the <b>File Explorer </b>window, right-click <b>This PC </b>and select <b>Map network drive</b>.</p>
+
+<span class="cn-quote" id="cn-m14-823"><b><i>Note</i></b><i>: The 
+purpose of this step is to generate network traffic and to test the 
+connection security rule that enforces network isolation between </i><b><i>PLABDC01 </i></b><i>and </i><b><i>PLABWIN10</i></b><i>.</i></span>
+
+<p id="cn-m14-824"></p><figure><img class="cn-img" id="cn-image-m14-c-106" src="ImplementationofSecureProtocols_files/image-m14-c-106.jpg" alt="Figure 2.36 Screenshot of PLABWIN10: Right-clicking the This PC node and selecting the Map network drive option."><figcaption>Figure 2.36 Screenshot of PLABWIN10: Right-clicking the This PC node and selecting the Map network drive option.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-827"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-828">On the <b>Map Network Drive </b>dialog box, in the <b>Folder: </b>box, type the following path:</p>
+
+<pre id="cn-m14-829"><code>\\plabdc01\c$
+
+</code></pre>
+
+<p id="cn-m14-830">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-831"></p><figure><img class="cn-img" id="cn-image-m14-c-107" src="ImplementationofSecureProtocols_files/image-m14-c-107.jpg" alt="Figure 2.37 Screenshot of PLABWIN10: Entering the path in the Folder text box and clicking the Finish button."><figcaption>Figure 2.37 Screenshot of PLABWIN10: Entering the path in the Folder text box and clicking the Finish button.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-834"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-835">A new <b>File Explorer </b>window opens, displaying the mapped network drive connection.</p>
+
+<p id="cn-m14-836">Close this window as you will not be copying files for this exercise.</p>
+
+<p id="cn-m14-837">Similarly, close the other <b>File Explorer </b>window.</p>
+
+<p id="cn-m14-838"></p><figure><img class="cn-img" id="cn-image-m14-c-108" src="ImplementationofSecureProtocols_files/image-m14-c-108.jpg" alt="Figure 2.38 Screenshot of PLABWIN10: Showing the contents of the mapped network drive is in the File Explorer window."><figcaption>Figure 2.38 Screenshot of PLABWIN10: Showing the contents of the mapped network drive is in the File Explorer window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-841"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-842">On the <b>Network Monitor </b>application window, click the <b>Stop </b>button on the toolbar.</p>
+
+<p id="cn-m14-843"></p><figure><img class="cn-img" id="cn-image-m14-c-109" src="ImplementationofSecureProtocols_files/image-m14-c-109.jpg" alt="Figure 2.39 Screenshot of PLABWIN10: Clicking the Stop button on the toolbar at the top of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.39 Screenshot of PLABWIN10: Clicking the Stop button on the toolbar 
+at the top of the Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-846"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-847">Go to the <b>Network Conversations </b>pane and click <b>All Traffic</b>.</p>
+
+<p id="cn-m14-848">The <b>Frame Summary </b>pane displays all data frames that were captured between <b>PLABWIN10 </b>and <b>PLABDC01 </b>computers</p>
+
+<p id="cn-m14-849"></p><figure><img class="cn-img" id="cn-image-m14-c-110" src="ImplementationofSecureProtocols_files/image-m14-c-110.jpg" alt="Figure 2.40 Screenshot of PLABWIN10: Showing the captured data packets are in the Frame Summary pane of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.40 Screenshot of PLABWIN10: Showing the captured data packets are in 
+the Frame Summary pane of the Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-852"><b>Task 5 - Find Network Conversation Signed With ESP</b></h3>
+
+<p id="cn-m14-853">When you capture network traffic, by default, all 
+packets being transmitted over the network are captured. For the review 
+purpose, you can filter the traffic in Network Monitor. With the 
+filtering, only the intended traffic is displayed. For example, you can 
+filter the captured traffic to view only the TCP packets.</p>
+
+<p id="cn-m14-854">In this task, you will use Network Monitor’s find 
+feature to locate data frames that were signed by Encapsulating Security
+ Payload or ESP using Secure Hashing Algorithm 1 or SHA-1.</p>
+
+<p id="cn-m14-855">Please note that network transmission was not encrypted as defined by the policy - “<b>Request authentication for inbound and outbound connections</b>.”</p>
+
+<h4 id="cn-m14-856"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-857">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m14-858">Ensure that the <b>Network Monitor </b>application is open.</p>
+
+<p id="cn-m14-859">In the <b>Display Filter </b>pane, click inside the text box and type:</p>
+
+<pre id="cn-m14-860"><code>ESP
+
+</code></pre>
+
+<p id="cn-m14-861">Click <b>Apply</b>.</p>
+
+<p id="cn-m14-862"></p><figure><img class="cn-img" id="cn-image-m14-c-111" src="ImplementationofSecureProtocols_files/image-m14-c-111.jpg" alt="Figure 2.41 Screenshot of PLABWIN10: Entering the name of the required filter in the Display Filter pane and clicking the Apply button on the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.41 Screenshot of PLABWIN10: Entering the name of the required filter 
+in the Display Filter pane and clicking the Apply button on the 
+Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-865"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-866">Notice that the <b>Frame Summary </b>pane will refresh momentarily.</p>
+
+<p id="cn-m14-867">Data frames that meet the <b>Filter </b>criteria where “<b>ESP</b>” was used to isolate communication are displayed.</p>
+
+<p id="cn-m14-868">Within the <b>Frame Summary - ESP </b>pane, search for the <b>TCP </b>frame under the <b>Protocol Name </b>column.</p>
+
+<p id="cn-m14-869">Observe the <b>Frame Details </b>and notice that “<b>Esp</b>” is displayed.</p>
+
+<p id="cn-m14-870"></p><figure><img class="cn-img" id="cn-image-m14-c-112" src="ImplementationofSecureProtocols_files/image-m14-c-112.jpg" alt="Figure 2.42 Screenshot of PLABWIN10: Showing the details of the frame selected on the Frame Summary pane in the Frame Details pane of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.42 Screenshot of PLABWIN10: Showing the details of the frame selected
+ on the Frame Summary pane in the Frame Details pane of the Microsoft 
+Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-873"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-874">Inside the <b>Frame Details </b>pane, click “<b>Esp</b>: <b>Next Protocol = TCP</b>.</p>
+
+<p id="cn-m14-875">The <b>Hex </b>details pane display information about this encryption protocol.</p>
+
+<p id="cn-m14-876"></p><figure><img class="cn-img" id="cn-image-m14-c-113" src="ImplementationofSecureProtocols_files/image-m14-c-113.jpg" alt="Figure 2.43 Screenshot of PLABWIN10: Showing the Hex details of the selected frame in the Hex Details section."><figcaption>Figure 2.43 Screenshot of PLABWIN10: Showing the Hex details of the selected frame in the Hex Details section.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-879"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-880">Right-click the frame that you selected in the previous step.</p>
+
+<p id="cn-m14-881">On the context menu, then select <b>Find Conversations </b>and click <b>ESP</b>.</p>
+
+<p id="cn-m14-882"></p><figure><img class="cn-img" id="cn-image-m14-c-114" src="ImplementationofSecureProtocols_files/image-m14-c-114.jpg" alt="Figure 2.44 Screenshot of PLABWIN10: Right-clicking a listed frame and then selecting Find Conversations &amp;gt; ESP."><figcaption>Figure 2.44 Screenshot of PLABWIN10: Right-clicking a listed frame and then selecting Find Conversations &gt; ESP.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-885"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-886">On the left <b>Network Conversations </b>pane, the <b>ESP ConvID=&lt;number&gt; </b>will be selected as a result of finding network conversation that uses <b>ESP</b>.</p>
+
+<p id="cn-m14-887"></p><figure><img class="cn-img" id="cn-image-m14-c-115" src="ImplementationofSecureProtocols_files/image-m14-c-115.jpg" alt="Figure 2.45 Screenshot of PLABWIN10: Showing the ESP ConvID=&amp;lt;number&amp;gt; on the Network Conversations pane at the left on the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.45 Screenshot of PLABWIN10: Showing the ESP ConvID=&lt;number&gt; on 
+the Network Conversations pane at the left on the Microsoft Network 
+Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-890"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-891">On the <b>Network Conversations </b>pane, click the <b>TCP </b>nodes to see the details of the network conversation.</p>
+
+<p id="cn-m14-892">Then, in the <b>Frame Summary </b>pane, select the first data frame at the top.</p>
+
+<p id="cn-m14-893">Subsequently, the <b>Frame Details </b>indicate information about the selected frame.</p>
+
+<p id="cn-m14-894"></p><figure><img class="cn-img" id="cn-image-m14-c-116" src="ImplementationofSecureProtocols_files/image-m14-c-116.jpg" alt="Figure 2.46 Screenshot of PLABWIN10: Showing the details of the frame selected on the Frame Summary pane on the Frame Details pane of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.46 Screenshot of PLABWIN10: Showing the details of the frame selected
+ on the Frame Summary pane on the Frame Details pane of the Microsoft 
+Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-897"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-898">At the <b>Display Filter </b>pane, click <b>Clear Text</b>.</p>
+
+<p id="cn-m14-899"></p><figure><img class="cn-img" id="cn-image-m14-c-117" src="ImplementationofSecureProtocols_files/image-m14-c-117.jpg" alt="Figure 2.47 Screenshot of PLABWIN10: Clicking Clear Text option on the toolbar at the top of the Display Filter pane on the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.47 Screenshot of PLABWIN10: Clicking Clear Text option on the toolbar
+ at the top of the Display Filter pane on the Microsoft Network Monitor 
+3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-902"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-903">Under the <b>Display Filter</b>, click <b>Apply </b>to clear the filter settings.</p>
+
+<p id="cn-m14-904"></p><figure><img class="cn-img" id="cn-image-m14-c-118" src="ImplementationofSecureProtocols_files/image-m14-c-118.jpg" alt="Figure 2.48 Screenshot of PLABWIN10: Clicking the Apply option on the toolbar at the top of the Display Filter pane on the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.48 Screenshot of PLABWIN10: Clicking the Apply option on the toolbar 
+at the top of the Display Filter pane on the Microsoft Network Monitor 
+3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-907"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-908">Under <b>Network Conversations</b>, click <b>All Traffic </b>node to see all the captured data frames.</p>
+
+<p id="cn-m14-909"></p><figure><img class="cn-img" id="cn-image-m14-c-119" src="ImplementationofSecureProtocols_files/image-m14-c-119.jpg" alt="Figure 2.49 Screenshot of PLABWIN10: Clicking All Traffic in the left pane of the Microsoft Network Monitor 3.4 window."><figcaption>Figure 2.49 Screenshot of PLABWIN10: Clicking All Traffic in the left pane of the Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<p id="cn-m14-912">Minimize the <b>Microsoft Network Monitor 3.4 </b>application.</p>
+
+<h3 id="cn-m14-914"><b>Task 6 - Disable the Connection Security Rules on PLABWIN10 and PLABDC01</b></h3>
+
+<p id="cn-m14-915">In the previous task, you had enabled Connection 
+Security Rules, which turned on data signing by ESP, which is part of 
+IPSec. When Connection Security Rules are enabled, both the 
+participating systems, known as the endpoints, the traffic is encrypted 
+between them. Just like enabling, you can also disable the security 
+rules between two endpoints.  However, if you disable Connection 
+Security Rules, IPSec is not used for encrypting the traffic between two
+ endpoints.</p>
+
+<p id="cn-m14-916">For this task, you will disable the connection security rules, which will effectively turn off data signing by ESP.</p>
+
+<h4 id="cn-m14-917"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-918">On <b>PLABWIN10</b>, click <b>Windows Defender Firewall with Advanced Security </b>on the taskbar.</p>
+
+<p id="cn-m14-919">Click <b>Connection Security Rules </b>node and at the right details pane, right-click <b>Domain isolation policy </b>and select <b>Disable Rule</b>.</p>
+
+<p id="cn-m14-920"></p><figure><img class="cn-img" id="cn-image-m14-c-120" src="ImplementationofSecureProtocols_files/image-m14-c-120.jpg" alt="Figure 2.50 Screenshot of PLABWIN10: Clicking Connection Security Rules node and at the right details pane, right-clicking Isolation Policy, and selecting Disable Rule. Minimize Windows Defender Firewall with Advanced Security."><figcaption>Figure
+ 2.50 Screenshot of PLABWIN10: Clicking Connection Security Rules node 
+and at the right details pane, right-clicking Isolation Policy, and 
+selecting Disable Rule. Minimize Windows Defender Firewall with Advanced
+ Security.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-922"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-923">Connect to <b>PLABDC01. </b>Restore <b>Windows Defender Firewall with Advanced Security </b>from the taskbar.</p>
+
+<p id="cn-m14-924">Click the <b>Connection Security Rules </b>node and at the right details pane, right-click <b>Isolation Policy </b>and select <b>Disable Rule</b>.</p>
+
+<p id="cn-m14-925"></p><figure><img class="cn-img" id="cn-image-m14-c-121" src="ImplementationofSecureProtocols_files/image-m14-c-121.jpg" alt="Figure 2.51 Screenshot of PLABDC01: Clicking the Connection Security Rules node and at the right details pane, right-clicking Isolation Policy, and selecting Disable Rule."><figcaption>Figure
+ 2.51 Screenshot of PLABDC01: Clicking the Connection Security Rules 
+node and at the right details pane, right-clicking Isolation Policy, and
+ selecting Disable Rule.</figcaption></figure><p></p>
+
+<h3 id="cn-m14-928"><b>Task 7 - Run Network Monitor to Collect New Data</b></h3>
+
+<p id="cn-m14-929">In the previous task, you have disabled Connection 
+Security Rules. Previously, you had monitored and captured the traffic 
+that was signed with ESP.</p>
+
+<p id="cn-m14-930">In this task, you will run Network Monitor to collect
+ network traffic between two endpoints after the connection security 
+rules have been turned off.</p>
+
+<h4 id="cn-m14-931"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-932">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m14-933">Restore <b>Microsoft Network Monitor </b>from the taskbar.</p>
+
+<p id="cn-m14-934">Click <b>Start </b>to commence the capture of network packets.</p>
+
+<p id="cn-m14-935"></p><figure><img class="cn-img" id="cn-image-m14-c-122" src="ImplementationofSecureProtocols_files/image-m14-c-122.jpg" alt="Figure 2.52 Screenshot of PLABWIN10: Clicking Start to commence the capture of network packets."><figcaption>Figure 2.52 Screenshot of PLABWIN10: Clicking Start to commence the capture of network packets.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-937"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-938">Keep the <b>Network Monitor </b>application running.</p>
+
+<p id="cn-m14-939"></p><figure><img class="cn-img" id="cn-image-m14-c-123" src="ImplementationofSecureProtocols_files/image-m14-c-123.jpg" alt="Figure 2.53 Screenshot of PLABWIN10: Keeping the Network Monitor application running."><figcaption>Figure 2.53 Screenshot of PLABWIN10: Keeping the Network Monitor application running.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-942"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-943">Click <b>File Explorer </b>on the taskbar.</p>
+
+<p id="cn-m14-944"></p><figure><img class="cn-img" id="cn-image-m14-c-124" src="ImplementationofSecureProtocols_files/image-m14-c-124.jpg" alt="Figure 2.54 Screenshot of PLABWIN10: Clicking the File Explorer icon in the taskbar."><figcaption>Figure 2.54 Screenshot of PLABWIN10: Clicking the File Explorer icon in the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-946"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-947">On the <b>File Explorer </b>window, right-click <b>This PC </b>and select <b>Map network drive</b>.</p>
+
+<p id="cn-m14-948"></p><figure><img class="cn-img" id="cn-image-m14-c-125" src="ImplementationofSecureProtocols_files/image-m14-c-125.jpg" alt="Figure 2.55 Screenshot of PLABWIN10: Right-clicking This PC and selecting Map network drive."><figcaption>Figure 2.55 Screenshot of PLABWIN10: Right-clicking This PC and selecting Map network drive.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-951"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-952">On the <b>Map Network Drive </b>dialog box, type:</p>
+
+<pre id="cn-m14-953"><code>\\plabdc01\admin$
+
+</code></pre>
+
+<p id="cn-m14-954">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-955"></p><figure><img class="cn-img" id="cn-image-m14-c-126" src="ImplementationofSecureProtocols_files/image-m14-c-126.jpg" alt="Figure 2.56 Screenshot of PLABWIN10: Entering the path in the Folder text box and then clicking the Finish button."><figcaption>Figure 2.56 Screenshot of PLABWIN10: Entering the path in the Folder text box and then clicking the Finish button.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-958"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-959">A new <b>File Explorer </b>window opens.</p>
+
+<p id="cn-m14-960">Close all instances of <b>File Explorer </b>windows.</p>
+
+<p id="cn-m14-961">As before, you will not be copying files in this task.</p>
+
+<p id="cn-m14-962"></p><figure><img class="cn-img" id="cn-image-m14-c-127" src="ImplementationofSecureProtocols_files/image-m14-c-127.jpg" alt="Figure 2.57 Screenshot of PLABWIN10: Closing the File Explorer windows."><figcaption>Figure 2.57 Screenshot of PLABWIN10: Closing the File Explorer windows.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-964"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-965">Click <b>Microsoft Network Monitor </b>from the taskbar.</p>
+
+<p id="cn-m14-966">Then click the <b>Stop </b>button on the toolbar.</p>
+
+<p id="cn-m14-967"></p><figure><img class="cn-img" id="cn-image-m14-c-128" src="ImplementationofSecureProtocols_files/image-m14-c-128.jpg" alt="Figure 2.58 Screenshot of PLABWIN10: Clicking the Stop button at the toolbar of the Microsoft Network Monitor window."><figcaption>Figure 2.58 Screenshot of PLABWIN10: Clicking the Stop button at the toolbar of the Microsoft Network Monitor window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-969"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-970">On the <b>Network </b>Conversations pane, click <b>All Traffic </b>node.</p>
+
+<p id="cn-m14-971">The <b>Frame Summary </b>will display the collected data frames.</p>
+
+<p id="cn-m14-972"></p><figure><img class="cn-img" id="cn-image-m14-c-129" src="ImplementationofSecureProtocols_files/image-m14-c-129.jpg" alt="Figure 2.59 Screenshot of PLABWIN10: Showing the captured data packets on the Frame Summary pane of the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.59 Screenshot of PLABWIN10: Showing the captured data packets on the 
+Frame Summary pane of the Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-975"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-976">Click in the <b>Display Filter </b>pane and type:</p>
+
+<pre id="cn-m14-977"><code>ESP
+
+</code></pre>
+
+<p id="cn-m14-978">Click <b>Apply</b>.</p>
+
+<p id="cn-m14-979"></p><figure><img class="cn-img" id="cn-image-m14-c-130" src="ImplementationofSecureProtocols_files/image-m14-c-130.jpg" alt="Figure 2.60 Screenshot of PLABWIN10: Entering the name of the required filter in the Display Filter pane and clicking the Apply option in the Microsoft Network Monitor 3.4 window."><figcaption>Figure
+ 2.60 Screenshot of PLABWIN10: Entering the name of the required filter 
+in the Display Filter pane and clicking the Apply option in the 
+Microsoft Network Monitor 3.4 window.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-982"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-983">After you have disabled the connection security rules on <b>PLABWIN10 </b>and <b>PLABDC01</b>, notice that the <b>Frame Summary - [Conversation Filter], ESP </b>did not display any frames that were protected with <b>ESP</b>.</p>
+
+<p id="cn-m14-984">Close <b>Network Monitor </b>without saving the capture.</p>
+
+<p id="cn-m14-985"></p><figure><img class="cn-img" id="cn-image-m14-c-131" src="ImplementationofSecureProtocols_files/image-m14-c-131.jpg" alt="Figure 2.61 Screenshot of PLABWIN10: Closing the Network Monitor window without saving the packets."><figcaption>Figure 2.61 Screenshot of PLABWIN10: Closing the Network Monitor window without saving the packets.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m14-989">Close the Windows Firewall window.</p>
+< <a href="https://github.com/SeanOhAileasa" id="KnowingtheSecurityProtocols">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-993"><b>Exercise 3 - Knowing the Security Protocols</b></h2>
+
+<p id="cn-m14-994">There are several protocols, such as HTTP and FTP, that are unsecure and can be prone to different attacks.</p>
+
+<p id="cn-m14-995">Either by adding a security certificate or SSH, a 
+range of protocols are in use today to make the communication over the 
+Internet more secure. Each protocol, such as S/MIME, is designed for a 
+specific purpose.</p>
+
+<p id="cn-m14-996">In this exercise, you will learn about various security protocols.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-998">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m14-999">
+
+<li id="cn-m14-999">Secure/multipurpose Internet Mail Exchanger (S/MIME)</li>
+
+<li id="cn-m14-1000">Secure Real-Time Protocol (SRTP)</li>
+
+<li id="cn-m14-1001">Lightweight Directory Access Protocol (LDAP) over SSL (LDAPS)</li>
+
+<li id="cn-m14-1002">File Transfer Protocol, Secure (FTPS) and Secure File Transfer Protocol (SFTP)</li>
+
+<li id="cn-m14-1003">Simple Network Management Protocol, Version 3 (SNMPv3)</li>
+
+<li id="cn-m14-1004">Hypertext Transfer Protocol Over SSL/TLS (HTTPS)</li>
+
+<li id="cn-m14-1005">Secure Post Office Protocol (POP)/ Internet Message Access Protocol (IMAP)</li>
+
+<li id="cn-m14-1006">Use Cases</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-1008">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m14-1009"><img class="cn-img" id="cn-image-m14-c-132" src="ImplementationofSecureProtocols_files/image-m14-c-132.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m14-1011"><b>Secure/Multipurpose Internet Mail Exchanger (S/MIME)</b></h3>
+
+<p id="cn-m14-1012">The Internet uses the Secure/Multipurpose Internet 
+Mail Extensions (S/MIME) protocol for sending digitally signed and 
+encrypted Email messages.</p>
+
+<p id="cn-m14-1013">With the use of certificates (keys), either 
+self-signed or issued by a Certification Authority (CA), a user can sign
+ with a digital signature to prove that they are the author of the Email
+ message, then use encryption to protect the message from being read by 
+unintended recipients.</p>
+
+<p id="cn-m14-1014">S/MIME provides cryptographic security services, 
+namely authentication, message integrity, and non-repudiation of message
+ origin.</p>
+
+<h3 id="cn-m14-1015"><b>Secure Real-Time Protocol (SRTP)</b></h3>
+
+<p id="cn-m14-1016">SRTP is pretty much similar to S/MIME, which is 
+designed to secure Email communication. SRTP is designed to protect the 
+Voice over IP (VoIP) communications. The Real-time Transport Protocol 
+(RTP) delivers audio and video over IP networks and Secure RTP (SRTP) 
+has the following features:</p>
+
+<ul id="cn-m14-1017">
+
+<li id="cn-m14-1017">Encryption</li>
+
+<li id="cn-m14-1018">Message authentication</li>
+
+<li id="cn-m14-1019">Integrity for RTP</li>
+
+</ul>
+
+<p id="cn-m14-1020">SRTP is built on top of RTP, which is a Real-Time 
+Protocol. One of the key features of SRTP is that you can enable or 
+disable certain features, such as encryption and authentication. It uses
+ the Advanced Encryption Standard (AES). It works over UDP port 5004.</p>
+
+<h3 id="cn-m14-1021"><b>Lightweight Directory Access Protocol (LDAP) over SSL (LDAPS)</b></h3>
+
+<p id="cn-m14-1022">When you are using LDAP, you are transmitting the 
+traffic in cleartext. This means that the network traffic can be prone 
+to an injection attack, which is about an attacker inserting its own 
+content or script in the actual data.</p>
+
+<p id="cn-m14-1023">However, to prevent any type of injection attack, 
+you can use either Secure Sockets Layer (SSL) or Transport Layer 
+Security (TLS). When you integrate the security of SSL or TLS, LDAPS 
+comes into existence.</p>
+
+<p id="cn-m14-1024">When using LDAPS, the client and the server 
+establish an SSL or TLS connection before transferring any information. 
+LDAPS uses port 636.</p>
+
+<h3 id="cn-m14-1025"><b>File Transfer Protocol, Secure (FTPS) and Secure File Transfer Protocol (SFTP)</b></h3>
+
+<p id="cn-m14-1026"><b>FTP or File Transfer Protocol </b>is an unsecure 
+protocol. It only uses the username and password using which a client 
+can connect to an FTP server. However, the information is transferred in
+ cleartext, which makes it prone to a man-in-the-middle attack. It uses 
+two channels, a command channel, and a data channel. FTP uses port 20 
+and 21.</p>
+
+<p id="cn-m14-1027">FTPS uses a username and password, and it can also 
+use a certificate when you are connecting to an FTPS server, the FTPS 
+client checks for the server certificate. If the certificate is found to
+ be trusted, your client can then connect to the server.</p>
+
+<p id="cn-m14-1028"><b>SFTP or Secure Shell File Transfer Protocol </b>uses
+ the SSH protocol. Before a client sends the data to the server, the 
+data is encrypted. A connection between the client and the server is 
+established using the SSH protocol. In addition to the passwords, SFTP 
+can also use the SSH keys to authenticate the SFTP connections.</p>
+
+<p id="cn-m14-1029">You need to first generate the SSH public and 
+private keys. The public key is shared with the client, which is 
+validated by the SFTP server when the client connects to it. The server 
+validates the public key along with the username and password to 
+complete the authentication mechanism.</p>
+
+<p id="cn-m14-1030">When comparing both SFTP and FTPS, you need to 
+understand that SFTP uses a single port, which is 22. FTPS, on the other
+ hand, requires you to open several ports on a firewall. It requires a 
+command port, which is used for authentication and passing commands. The
+ second port is required for the data channel. FTPS uses port 989 and 
+990.</p>
+
+<h3 id="cn-m14-1032"><b>Simple Network Management Protocol, version 3 (SNMPv3)</b></h3>
+
+<p id="cn-m14-1033">There is always a need to monitor and manage the 
+network devices on a network. Most network devices have the capability 
+that allows them to be remotely managed. The <b>SNMP protocol </b>provides remote management and monitoring capability.</p>
+
+<p id="cn-m14-1034">Each network device that needs to be managed or 
+monitored needs to have an agent or a service that connects it to the 
+SNMP server or an application that needs to control these devices. The 
+initial versions of SNMP, which were version 1 and 2, were vulnerable. 
+In SNMP v1 and 2, the access control was based on the SNMP Community and
+ MIB View.</p>
+
+<p id="cn-m14-1035">The authentication was based on Community Name. 
+However, in SNMP v3, access control was based on SNMP Users, Groups, and
+ MIB View. The authentication in SNMPv3 is based on MD5/SHA. Privacy is 
+based on DES. One of the major enhancements in SNMPv3 over v1 and 2 was 
+that it supports authentication and encryption.</p>
+
+<h3 id="cn-m14-1036"><b>Hypertext Transfer Protocol over SSL/TLS (HTTPS)</b></h3>
+
+<p id="cn-m14-1037">In the initial days of the Internet, HTTP was the 
+protocol that was used to serve Webpages to the users. It used the 
+default port 80. However, HTTP sent information in cleartext that could 
+be intercepted. For example, if you had a Website that allowed users to 
+log in with user credentials, it was possible to intercept the 
+communication and retrieve user credentials.</p>
+
+<p id="cn-m14-1038">With the invention of SSL by the Netscape 
+Corporation, organizations and individuals started to use SSL. However, 
+TLS was then invented and was made available for the general public. 
+With the integration of the TLS certificate, the HTTP protocol is then 
+called HTTPS. Unlike port 80 of HTTP, HTTPS works on port 443.</p>
+
+<h3 id="cn-m14-1039"><b>Secure Post Office Protocol (POP)/Internet Message Access Protocol (IMAP)</b></h3>
+
+<p id="cn-m14-1040">Email communication has two parts to it: sending and
+ receiving. When you want to send an Email, SMTP is used. Protocols, 
+such as IMAP and POP3, on the other hand, are used for retrieving Email.
+ When an Email is sent to a recipient, it is first delivered to a 
+messaging server, which depending on the protocol configured by the 
+client and the server itself, the Email is then delivered to the client.</p>
+
+<p id="cn-m14-1041">Ports used:</p>
+
+<ul id="cn-m14-1042">
+
+<li id="cn-m14-1042">SMTP: 25</li>
+
+<li id="cn-m14-1043">IMAP: 143</li>
+
+<li id="cn-m14-1044">POP3: 110</li>
+
+</ul>
+
+<p id="cn-m14-1045">SMTP over SSL/TLS uses port 465. Secure IMAP over SSL/TLS uses port 993. Secure POP3 over SSL/TLS uses port 995.</p>
+
+<h3 id="cn-m14-1047"><b>Use Cases</b></h3>
+
+<p id="cn-m14-1048">Different protocols have different use cases. Today,
+ it has become a necessity to secure any communication that is 
+transmitted over the Internet. Therefore, several use cases can be 
+handled by the use of different security protocols.</p>
+
+<h4 id="cn-m14-1049"><b><i>Voice and Video</i></b></h4>
+
+<p id="cn-m14-1050">When streaming the audio and video in real-time, it 
+is recommended to use Secure Real-time Transport Protocol (SRTP), which 
+provides encryption, message authentication, integrity, and replay 
+attack protection.</p>
+
+<p id="cn-m14-1051">With the use of SRTP, you can minimize various attacks, such as denial-of-service (DoS).</p>
+
+<h4 id="cn-m14-1052"><b><i>Time Synchronization</i></b></h4>
+
+<p id="cn-m14-1053">The Network Time Protocol (NTP) provides time 
+synchronization services, so enabling NTP on servers would meet this use
+ case. However, NTP uses Symmetric Key and Autokey methods, which can be
+ exploited. The new version of NTP is known as Network Time Security 
+(NTS).</p>
+
+<p id="cn-m14-1054">It still uses NTP functionality. NTS works by using a
+ TLS connection and secure NTS extension fields. The TLS is used for 
+initial parameters and key exchange. After this, NTS extension fields 
+take over to secure the subsequent NTP connection.</p>
+
+<h4 id="cn-m14-1055"><b><i>Email </i></b></h4>
+
+<p id="cn-m14-1056">Secure/Multipurpose Internet Mail Extensions 
+(S/MIME) is used to encrypt Emails. S/MIME uses asymmetric encryption. 
+Using S/MIME, you can encrypt and digitally signed your Emails.</p>
+
+<h4 id="cn-m14-1057"><b><i>Web</i></b></h4>
+
+<p id="cn-m14-1058">As stated earlier, HTTPS helps you secure the 
+communication that takes place between a Webserver and clients. When 
+HTTPS is used, the communication taking place between a Webserver and a 
+Web browser, which is running on the client, the communication is 
+encrypted.</p>
+
+<p id="cn-m14-1059">Any Web application or a Website that requires users to log on should use HTTPS to ensure secure communication.</p>
+
+<h4 id="cn-m14-1060"><b><i>File Transfer Protocol</i></b></h4>
+
+<p id="cn-m14-1061">FTP, by design, is insecure. Whenever users need to 
+download and upload files from an FTP server, it is always good to use 
+Secure FTP (SFTP), which is a secure protocol.</p>
+
+<p id="cn-m14-1062">It is bundled with SSH. SFTP uses SSH functionalities, such as authentication.</p>
+
+<h4 id="cn-m14-1063"><b><i>Directory Services</i></b></h4>
+
+<p id="cn-m14-1064">For secure directory service communication, the 
+LDAPS protocol should be used. LDAPS uses LDAP and SSL/TLS and ensures 
+secure communication between the directory service server and the 
+client.</p>
+
+<h4 id="cn-m14-1065"><b><i>Remote Access</i></b></h4>
+
+<p id="cn-m14-1066">There are times when remote users need to connect to
+ a server within your organization remotely. Users need to use a public 
+network, such as the Internet, to connect to a private network. The data
+ transmission must be secured when it is being transmitted over the 
+Internet. And it can be done with the use of a Virtual Private Network 
+(VPN).</p>
+
+<p id="cn-m14-1067">When you setup a VPN, there is a client and a 
+server. When the client connects with the server over the Internet, an 
+encrypted tunnel is created between the client and the server. The 
+communication transmitted over the VPN tunnel is encrypted, and 
+therefore, it can be difficult to intercept.</p>
+
+<h4 id="cn-m14-1068"><b><i>Domain Name Resolution</i></b></h4>
+
+<p id="cn-m14-1069">DNS itself is not secure. DNS is mainly responsible 
+for resolving domain names to IP Addresses. It can be prone to the 
+cache-poisoning attack. To resolve such security issues, you can use DNS
+ Security Extensions (DNSSEC), which uses digital signatures to increase
+ DNS security. When digital signatures are used, the DNS data, queries, 
+and responses are digitally signed.</p>
+
+<h4 id="cn-m14-1070"><b><i>Routing and Switching</i></b></h4>
+
+<p id="cn-m14-1071">To secure routing and switching, IPsec should be used.</p>
+
+<p id="cn-m14-1072">Network Address Allocation</p>
+
+<p id="cn-m14-1073">IPsec over NAT is also known as the NAT Traversal method, which encapsulates the ESP header into the UDP header.</p>
+
+<h4 id="cn-m14-1074"><b><i>Subscription Services</i></b></h4>
+
+<p id="cn-m14-1075">Several security devices use subscription services 
+for enabling features. For example, a VPN hardware device may have 
+subscription services for connecting the number of clients and 
+downloading updates. The communication with the subscription services 
+server needs to be protected with IPsec.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m14-1079">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-1080"><b>Review</b></h2>
+
+<p id="cn-m14-1081">Well done, you have completed the <b>Implementation of Secure Protocols </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">8dd93c6d-c79d-49cd-a7b3-c03b3096d78c</span>
+
+<span class="atom-code hidden">80a9bbbd-17f7-42ec-b6cc-22f1692832bf</span>
+
+<span class="atom-code hidden">c3117d2c-1bb5-4b20-9d46-893fb0ecb25d</span>
+
+<span class="atom-code hidden">159bcc8a-6ed8-4b42-886f-281ced889487</span>
+
+<span class="atom-code hidden">dc2c4b81-5fbc-4fb9-abb3-442b6c5152b0</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m14-1091">You completed the following exercises:</p>
+
+<ul id="cn-m14-1092">
+
+<li id="cn-m14-1092">Exercise 1 - Working with Domain Name System Security Extensions (DNSSEc)</li>
+
+<li id="cn-m14-1093">Exercise 2 - Configuring IPSec</li>
+
+<li id="cn-m14-1094">Exercise 3 - Knowing the Security Protocols</li>
+
+</ul>
+
+<p id="cn-m14-1095">You should now be able to:</p>
+
+<ul id="cn-m14-1096">
+
+<li id="cn-m14-1096">Create a Zone, Sample Resource Records and a Non-Authoritative DNS Server</li>
+
+<li id="cn-m14-1097">Sign the Zone Using Default Settings</li>
+
+<li id="cn-m14-1098">Distribute the TA to a Non-Authoritative DNS Server</li>
+
+<li id="cn-m14-1099">Verify DNSKEY Trust Anchors</li>
+
+<li id="cn-m14-1100">Query a Signed Zone without DNSSEC Validation Required</li>
+
+<li id="cn-m14-1101">Configure Support for DNSSEC in GPO</li>
+
+<li id="cn-m14-1102">Query a Signed Zone with DNSSEC Validation Required</li>
+
+<li id="cn-m14-1103">Create Connection Security Rule on PLABWIN10 and on PLABDC01</li>
+
+<li id="cn-m14-1104">Verify the Security Association</li>
+
+<li id="cn-m14-1105">Run Network Monitor to Observe Traffic Pattern</li>
+
+<li id="cn-m14-1106">Find Network Conversation Signed With ESP</li>
+
+<li id="cn-m14-1107">Disable the Connection Security Rules on PLABWIN10 and PLABDC01</li>
+
+<li id="cn-m14-1108">Run Network Monitor to Collect New Data</li>
+
+</ul>
+
+<p id="cn-m14-1109">You should now have further knowledge of:</p>
+
+<ul id="cn-m14-1110">
+
+<li id="cn-m14-1110">Secure/Multipurpose Internet Mail Exchanger (S/MIME)</li>
+
+<li id="cn-m14-1111">Secure Real-Time Protocol (SRTP)</li>
+
+<li id="cn-m14-1112">LDAPS</li>
+
+<li id="cn-m14-1113">File Transfer Protocol, Secure (FTPS)</li>
+
+<li id="cn-m14-1114">Secured File Transfer Protocol (SFTP)</li>
+
+<li id="cn-m14-1115">Simple Network Management Protocol, Version 3 (SNMPv3)</li>
+
+<li id="cn-m14-1116">Hypertext Transfer Protocol Over SSL/TLS (HTTPS)</li>
+
+<li id="cn-m14-1117">Secure Post Office Protocol (POP)/ Internet Message Access Protocol (IMAP)</li>
+
+<li id="cn-m14-1118">Use Cases</li>
+
+</ul>
+
+<h3 id="cn-m14-1120"><b>Feedback</b></h3>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m14-1123">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

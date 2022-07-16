@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CryptographicBasicConcepts_files/print-styles.css" rel="stylesheet">
+    <script src="CryptographicBasicConcepts_files/jquery.min.js"></script>
+    <script src="CryptographicBasicConcepts_files/jspdf.js"></script>
+    <script src="CryptographicBasicConcepts_files/from_html.js"></script>
+    <script src="CryptographicBasicConcepts_files/addimage.js"></script>
+    <script src="CryptographicBasicConcepts_files/filesaver.js"></script>
+    <script src="CryptographicBasicConcepts_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6zJID5vZicHNjOJ9ZW+7EttkoMTii7s8K96EVs4Zh+u7CxMStQAxFsTGArRn3BDkDcBDnwDISsow2ByZwnydVVNXJ791+F+SlKkFl3kAK/A=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Cryptographic Basic Concepts</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Knowing the Cryptographic Concepts</li><li>Exercise 2 - Implementing Cryptography</li><li>Exercise 3 - Using Steganography</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m28-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Symmetric</div>
+
+<div>Asymmetric</div>
+
+<div>Digital Signatures</div>
+
+<div>Key Length</div>
+
+<div>Hashing</div>
+
+<div>Key stretching</div>
+
+<div>Salting</div>
+
+<div>Key Exchange</div>
+
+<div>Elliptical Curve Cryptography</div>
+
+<div>Perfect Forward Secrecy</div>
+
+<div>Quantum</div>
+
+<div>Communications</div>
+
+<div>Blockchain</div>
+
+<div>Cipher Suites</div>
+
+<div>Lightweight Cryptography</div>
+
+<div>Homomorphic Encryption</div>
+
+<div>Computing</div>
+
+<div>Modes of operation</div>
+
+<div>Common use cases</div>
+
+<div>Limitations</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m28-23">Welcome to the <b>Cryptographic Basic Concepts </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m28-27">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m28-28">
+
+<li id="cn-m28-28">Exercise 1 - Knowing the Cryptographic Concepts</li>
+
+<li id="cn-m28-29">Exercise 2 - Implementing Cryptography</li>
+
+<li id="cn-m28-30">Exercise 3 - Using Steganography</li>
+
+</ul>
+
+<p id="cn-m28-31">After completing this module, you should be able to:</p>
+
+<ul id="cn-m28-32">
+
+<li id="cn-m28-32">Encrypt Data using CryptoDemo</li>
+
+<li id="cn-m28-33">Decrypt data using CryptoDemo</li>
+
+<li id="cn-m28-34">Key Values</li>
+
+<li id="cn-m28-35">Perform Hashing</li>
+
+<li id="cn-m28-36">Use HashCalc</li>
+
+<li id="cn-m28-37">Hide Documents in a Graphic</li>
+
+<li id="cn-m28-38">Use Steghide to Hide Data in an Image</li>
+
+</ul>
+
+<p id="cn-m28-39">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m28-40">
+
+<li id="cn-m28-40">Symmetric vs. Asymmetric</li>
+
+<li id="cn-m28-41">Digital Signatures</li>
+
+<li id="cn-m28-42">Key Length</li>
+
+<li id="cn-m28-43">Hashing</li>
+
+<li id="cn-m28-44">Key stretching</li>
+
+<li id="cn-m28-45">Salting</li>
+
+<li id="cn-m28-46">Key Exchange</li>
+
+<li id="cn-m28-47">Elliptical Curve Cryptography</li>
+
+<li id="cn-m28-48">Perfect Forward Secrecy</li>
+
+<li id="cn-m28-49">Quantum</li>
+
+<li id="cn-m28-50">Communications</li>
+
+<li id="cn-m28-51">Blockchain</li>
+
+<li id="cn-m28-52">Cipher Suites</li>
+
+<li id="cn-m28-53">Lightweight Cryptography</li>
+
+<li id="cn-m28-54">Homomorphic Encryption</li>
+
+<li id="cn-m28-55">Limitations</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m28-57">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m28-58">2.8 Summarize the basics of cryptographic concepts.</p>
+
+<ul id="cn-m28-59">
+
+<li id="cn-m28-59">Digital Signatures</li>
+
+<li id="cn-m28-60">Key Length</li>
+
+<li id="cn-m28-61">Key stretching</li>
+
+<li id="cn-m28-62">Salting</li>
+
+<li id="cn-m28-63">Hashing</li>
+
+<li id="cn-m28-64">Key Exchange</li>
+
+<li id="cn-m28-65">Elliptical Curve Cryptography</li>
+
+<li id="cn-m28-66">Perfect Forward Secrecy</li>
+
+<li id="cn-m28-67">Quantum</li>
+
+<li id="cn-m28-68">Post-quantum</li>
+
+<li id="cn-m28-69">Ephemeral</li>
+
+<li id="cn-m28-70">Modes of Operation</li>
+
+<li id="cn-m28-71">Blockchain</li>
+
+<li id="cn-m28-72">Cipher Suites</li>
+
+<li id="cn-m28-73">Symmetric Vs. Asymmetric</li>
+
+<li id="cn-m28-74">Lightweight Cryptography</li>
+
+<li id="cn-m28-75">Steganography</li>
+
+<li id="cn-m28-76">Homomorphic Encryption</li>
+
+<li id="cn-m28-77">Common Use Cases</li>
+
+<li id="cn-m28-78">Limitations</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m28-79"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m28-81">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m28-85">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m28-86">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-88"><b>Lab Topology</b></h2>
+
+<p id="cn-m28-89">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m28-90"><img class="cn-img" id="cn-image-m28-c-0" src="CryptographicBasicConcepts_files/image-m28-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m28-91">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m28-92">
+
+<li id="cn-m28-92"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m28-93"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m28-94"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m28-95"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m28-96">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="KnowingtheCryptographicConcepts">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-97"><b>Exercise 1 - Knowing the Cryptographic Concepts</b></h2>
+
+<p id="cn-m28-98">Cryptography is a method of converting readable text 
+into something that no one can understand, except the person who knows 
+how it has been converted. Different cryptography algorithms help you 
+turn readable text or information into a scrambled piece with the help 
+of keys. Depending on the algorithm that you use, you will either use 
+one or two keys. The person who needs to know what is inside the 
+scrambled text needs to have the key.</p>
+
+<p id="cn-m28-99">Cryptographic tools are used to generate and confirm 
+the integrity of information or data and be used confidentially to 
+protect from the unauthorized viewing of materials.</p>
+
+<p id="cn-m28-100">This greatly assists with the security of information
+ you are receiving from the source location. Further, with hashing, you 
+can confirm, for example, a program you have downloaded has not been 
+modified in some manner by checking its hash value produced by the 
+author with your value.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m28-102">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m28-103">
+
+<li id="cn-m28-103">Symmetric vs. Asymmetric</li>
+
+<li id="cn-m28-104">Digital Signatures</li>
+
+<li id="cn-m28-105">Key Length</li>
+
+<li id="cn-m28-106">Hashing</li>
+
+<li id="cn-m28-107">Key stretching</li>
+
+<li id="cn-m28-108">Salting</li>
+
+<li id="cn-m28-109">Key Exchange</li>
+
+<li id="cn-m28-110">Elliptical Curve Cryptography</li>
+
+<li id="cn-m28-111">Task 9 - Perfect Forward Secrecy</li>
+
+<li id="cn-m28-112">Quantum</li>
+
+<li id="cn-m28-113">Communications</li>
+
+<li id="cn-m28-114">Blockchain</li>
+
+<li id="cn-m28-115">Cipher Suites</li>
+
+<li id="cn-m28-116">Lightweight Cryptography</li>
+
+<li id="cn-m28-117">Homomorphic Encryption</li>
+
+<li id="cn-m28-118">Computing</li>
+
+<li id="cn-m28-119">Modes of operation</li>
+
+<li id="cn-m28-120">Common use cases</li>
+
+<li id="cn-m28-121">Limitations</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m28-123">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m28-124"><img class="cn-img" id="cn-image-m28-c-1" src="CryptographicBasicConcepts_files/image-m28-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m28-125"><b>Symmetric vs. Asymmetric</b></h3>
+
+<p id="cn-m28-126">Encryption uses keys or passwords to protect data 
+from unauthorized users and can either be symmetric or asymmetric. In 
+symmetric encryption, a single key is used for encryption and decryption
+ of data. One example of symmetric encryption is a password.</p>
+
+<p id="cn-m28-127">Asymmetric encryption uses a pair of keys called a 
+public/private key pair. This type of key is typically issued by a 
+Certification Authority (CA) server that can be either internal or 
+external to an organization. A public key is used to encrypt a message 
+and the private key to decrypt it. For example, the HTTPS protocol uses 
+asymmetric encryption. However, it is interesting to know that it uses 
+asymmetric encryption, encrypts the symmetric key, which is used to 
+encrypt the session data.</p>
+
+<p id="cn-m28-128">In this task, you will learn to encrypt data using symmetric encryption.</p>
+
+<h3 id="cn-m28-129"><b>Digital Signatures</b></h3>
+
+<p id="cn-m28-130">Digital signatures are used for signing emails to 
+effectively place a unique signature on an Email to verify the sender. 
+The act of signing is effectively a digital signature. The idea is to 
+have the message readable to everyone. Still, the clever part is 
+checking whether the message has been changed by someone other than the 
+author of the Email, thereby helping to thwart man-in-the-middle attacks
+ and maintain message integrity.</p>
+
+<p id="cn-m28-131">To be able to create a digital signature, you need to
+ use your private key. For example, after receiving the message with the
+ digital signature, John should use the sender's public key to decrypt 
+the message. You cannot create a digital signature with your own or the 
+recipient’s public key. Only John can use his private key to create a 
+digital signature. You cannot use someone else’s private key.</p>
+
+<h3 id="cn-m28-132"><b>Key Length</b></h3>
+
+<p id="cn-m28-133">When using an encryption algorithm, it is designed to
+ use a specific key size, the number of used bits. In the simplest 
+terms, a key length is the number of combinations that it would require 
+before you can break the encryption. For example, let’s assume that the 
+key length is 1 bit. This can either be 0 or 1. It is pretty easy to 
+assume. Now, if the key size is 64, more bits are being used. It would 
+not be easy for anyone to assume the information in 64 bits.</p>
+
+<p id="cn-m28-134">Let’s take a look at some of the key-encryption algorithms and their key lengths.</p>
+
+<ul id="cn-m28-135">
+
+<li id="cn-m28-135">Data Encryption Standard (DES) - 56-bit</li>
+
+<li id="cn-m28-136">Triple-DES  (3DES) - 168-bit</li>
+
+<li id="cn-m28-137">Advanced Encryption Standard (AES) - 256-bit</li>
+
+<li id="cn-m28-138">Twofish - 128, 192, 256-bit</li>
+
+</ul>
+
+<h3 id="cn-m28-139"><b>Hashing</b></h3>
+
+<p id="cn-m28-140">Passwords are generally stored in plaintext, which 
+means that they are readable by anyone who gets hold of them. To protect
+ passwords, they must be encrypted or hashed. You can encrypt passwords 
+or hash them. Passwords are encrypted using symmetric encryption, which 
+uses a key. When the password is encrypted, a key is generated. Anyone 
+with the key can decrypt the password to obtain the actual value. 
+Encryption is a reversible method.</p>
+
+<p id="cn-m28-141">Hashing is not a reversible process, and once a hash 
+is generated, it cannot be reversed. When a user creates a password, the
+ username is appended to the password, and a hash value is generated.</p>
+
+<p id="cn-m28-142">Hashing a value is used to map data of any size and 
+provide a method for verifying the integrity and authenticity of data 
+and their authors.</p>
+
+<h3 id="cn-m28-143"><b>Key Stretching</b></h3>
+
+<p id="cn-m28-144">It is known that hashes cannot be reversed. Once you 
+create a hash, you cannot reverse it to get the original value out of 
+it. However, even though hashes cannot be reversed, they can be cracked 
+using various methods. It could be either be a dictionary or brute-force
+ attack to crack these hashes. It could also be a rainbow table that 
+contains the pre-calculated hashes. Another problem can be a weak hash. 
+For example, if you generate a hash out of the word <span class="cn-password">Passw0rd</span>, it could be easily cracked.</p>
+
+<p id="cn-m28-145">When you have a weak password, you can use utilities 
+like bcrypt and perform key stretching. Key stretching uses 
+CPU-intensive hash functions, which takes a weak key and turns it into a
+ secure key. The number of resources required to break this key would be
+ much higher and takes a longer time. Using key stretching, the length 
+of the password key can be stretched to 128-bits.</p>
+
+<h3 id="cn-m28-146"><b>Salting</b></h3>
+
+<p id="cn-m28-147">Implementing salting can help protect the passwords 
+in a database. In salting, the length of the passwords is increased by 
+adding more bits to it. The real password is then difficult to guess. A 
+hash is generated completely different from the hash that would have 
+been generated only with the password.</p>
+
+<p id="cn-m28-148">When you have weak passwords being used in an 
+application, you can use the salting method. For example, you can add 
+random salt to each password and generate a completely different hash 
+for each password. A hash is generated in the following manner after 
+salt is added:</p>
+
+<pre id="cn-m28-149"><code>Passw0rd + cd6PehSMfV22Cd = d1d3ec2e6f20fd420d50e2642992841d8338a314b8ea157c9e18477aaef226ab
+
+</code></pre>
+
+<p id="cn-m28-150">In this given example, the first word is the actual 
+password. The second after appearing after the plus sign is the salt, 
+and then the third word appearing after the equal sign is the hash.</p>
+
+<p id="cn-m28-151">Consider a scenario in which several users use the same password, <span class="cn-password">Passw0rd</span>.
+ If you add the same salt, the same hash would be generated. This does 
+not solve any problem because if one hash is cracked, the attacker has 
+then cracked all other hashes without putting in any effort.</p>
+
+<p id="cn-m28-152">To prevent this problem, the salt must be randomized 
+with the password. In this manner, even if users use the same password 
+because salt is different, a new and unique hash will be generated.</p>
+
+<h3 id="cn-m28-153"><b>Key Exchange</b></h3>
+
+<p id="cn-m28-154">Key exchange is any cryptographic method used to 
+share keys between two entities. For example, asymmetric encryption uses
+ the key exchange to share a symmetric key. The cryptographic protocol 
+then uses symmetric encryption to encrypt and decrypt data because 
+symmetric encryption is much more efficient.</p>
+
+<p id="cn-m28-155">Let’s look at how asymmetric encryption works and how asymmetric key is exchanged between two entities.</p>
+
+<ol id="cn-m28-156">
+
+<li id="cn-m28-156">A client initiates a session with a web server that 
+is configured with a certificate. For example, the client enters a URL, 
+https://www.practicelabs.com, in the web browser.</li>
+
+<li id="cn-m28-157">The request is received by the web server, which 
+then sends its certificate to the client. It is important to note that 
+the certificate includes the public key of the webserver. Remember, it 
+is a pair of public and private keys. The private key is still with the 
+webserver and should never be shared.</li>
+
+<li id="cn-m28-158">After receiving the certificate, the client first 
+creates a symmetric key. It then takes the public key from the 
+certificate and encrypts the symmetric key, which is then used to 
+encrypt the session.</li>
+
+<li id="cn-m28-159">The client shares the encrypted symmetric key, which can also be called the session key.</li>
+
+<li id="cn-m28-160">After receiving, the webserver decrypts the asymmetric key or the session key with its private key.</li>
+
+<li id="cn-m28-161">Now, both the client and the webserver have the asymmetric or the session key, and they can establish a secure connection.</li>
+
+</ol>
+
+<h3 id="cn-m28-162"><b>Elliptical Curve Cryptography</b></h3>
+
+<p id="cn-m28-163">Elliptic Curve Cryptography&nbsp;or ECC is used 
+key-based methods to encrypt and decrypt data. It uses public and 
+private keys, which are used for encrypting and decrypting data. ECC is 
+mainly used in the context of traffic on the Internet.</p>
+
+<p id="cn-m28-164">ECC uses the mathematics of elliptic curves to 
+encrypt key pairs for public key encryption. In the elliptic curve, 
+certain points are plotted. Based on these points, the keys are 
+generated mathematically. Two key cryptography algorithms that use ECC 
+are Digital Signature Algorithm (DSA) and Elliptic Curve Diffie-Hellman 
+(ECDH).</p>
+
+<p id="cn-m28-165">ECC is based on a similar concept as RSA, which uses 
+prime numbers instead of elliptic curves. It is difficult to keep the 
+large key size in the mobile device. To tackle this problem, ECC uses 
+small but highly secure keys that are difficult to crack.</p>
+
+<p id="cn-m28-166">When compared with RSA, the key size is much smaller. For example, RSA has the following key sizes in bits:</p>
+
+<ul id="cn-m28-167">
+
+<li id="cn-m28-167">1024</li>
+
+<li id="cn-m28-168">2048</li>
+
+<li id="cn-m28-169">3072</li>
+
+<li id="cn-m28-170">7680</li>
+
+<li id="cn-m28-171">15360</li>
+
+</ul>
+
+<p id="cn-m28-172">On the other hand, the key size in ECC is:</p>
+
+<ul id="cn-m28-173">
+
+<li id="cn-m28-173">160</li>
+
+<li id="cn-m28-174">224</li>
+
+<li id="cn-m28-175">256</li>
+
+<li id="cn-m28-176">384</li>
+
+<li id="cn-m28-177">521</li>
+
+</ul>
+
+<h3 id="cn-m28-178"><b>Perfect Forward Secrecy</b></h3>
+
+<p id="cn-m28-179">Perfect Forward Secrecy is a cryptography method that
+ randomly generates the encryption keys for encrypting and decrypting 
+information. It uses asymmetric encryption. The key feature of Perfect 
+Forward Secrecy is that a random key is used with each transaction of 
+any kind. The benefit is that if one encryption key is stolen or lost, 
+the rest of the transactions are not tampered with.</p>
+
+<p id="cn-m28-180">Perfect Forward Secrecy works with messaging, web 
+pages, or even phone calls. For example, if one message is sent, it is 
+encrypted with random keys. The same concept works with phone calls and 
+webpages. Each time a call is initiated, it is encrypted with random 
+keys.</p>
+
+<p id="cn-m28-181">There is no fixed algorithm that is used in Perfect 
+Forward Secrecy. It can use a cryptographic algorithm to generate the 
+random keys and also ensures that once the keys are used, they are not 
+re-used.</p>
+
+<h3 id="cn-m28-182"><b>Quantum</b></h3>
+
+<p id="cn-m28-183">In simpler terms, cryptography is a method of 
+converting a piece of data into scrambled text that no one but the 
+person with the encryption key can read. For everyone else, the data has
+ no relevance or meaning. Quantum cryptography works on the same 
+principles but applies the principles of quantum mechanics, which 
+encrypts the data and sends it, so that alteration of it is not 
+possible.</p>
+
+<p id="cn-m28-184">Before understanding quantum cryptography, let’s look at some of the quantum principles:</p>
+
+<ul id="cn-m28-185">
+
+<li id="cn-m28-185">Particles, which form the universe, can exist in more than one place at a time.</li>
+
+<li id="cn-m28-186">These particles can also exist in more than one state.</li>
+
+<li id="cn-m28-187">Photons exist in a random quantum state.</li>
+
+<li id="cn-m28-188">To measure a quantum property, you must either change it or disturb it.</li>
+
+<li id="cn-m28-189">It is possible to copy some of a particle's quantum properties, but you cannot copy the entire particle.</li>
+
+</ul>
+
+<p id="cn-m28-190">Quantum cryptography works on these principles. Let’s understand this in detail with an example.</p>
+
+<p id="cn-m28-191">Using quantum cryptography, UserA sends information 
+in the form of polarized photons over a fiber cable. The information 
+being sent is for UserB. Another malicious user attempts to read the 
+photon over the fiber cable. When a photon is read, its state is 
+altered. This alters the encryption key state, which is now known to 
+both the users, UserA and UserB. UserA needs to send a new encryption 
+key to UserB to read the information.</p>
+
+<p id="cn-m28-192"></p><figure><img class="cn-img" id="cn-image-m28-c-2" src="CryptographicBasicConcepts_files/image-m28-c-2.jpg" alt="Figure 1.1 Image showing the Quantum cryptographic process."><figcaption>Figure 1.1 Image showing the Quantum cryptographic process.</figcaption></figure><p></p>
+
+<h3 id="cn-m28-194"><b>Communications</b></h3>
+
+<p id="cn-m28-195">Several types of encryption can be secured alongside 
+the protection of data traversing from one location to another. Take the
+ example of a web server with a certificate, which helps encrypt and 
+guarantee a safe connection to a requesting client. Another example can 
+be E-mail communication, which can be encrypted with the S/MIME or PGP.</p>
+
+<p id="cn-m28-196">Secure/Multipurpose Internet Mail Extensions (S/MIME)
+ is a public encryption standard used to encrypt email messages. It uses
+ private and public keys for secure email communication.</p>
+
+<p id="cn-m28-197">PGP (Pretty Good Privacy) is an open-source 
+encryption method to secure messages sent over the internet. In addition
+ to securing messages, PGP can also be used to encrypt files and instant
+ messages. Encryption through PGP uses digital certificates, which 
+ensures that the encryption cannot be compromised.</p>
+
+<p id="cn-m28-198">When encryption is used with data that needs to 
+traverse from one location to another, the data's confidentiality and 
+integrity are maintained.</p>
+
+<h3 id="cn-m28-199"><b>Blockchain</b></h3>
+
+<p id="cn-m28-200">In a blockchain there are several blocks, each block 
+contains data. They are linked to each other to form a list, which is 
+referred to as a blockchain. Blockchain is a shared, distributed, 
+decentralized, and public ledger. This means that it is a ledger system 
+that is not controlled by a single entity. Take the example of a bank. 
+If you were to send money to your friend who has his account in the same
+ bank, you need to send it through the bank. Even if you transfer 
+through the website or a mobile app, the money is still be transferred 
+through the bank. Your and your friend’s account is updated at the 
+backend of the banking system. The bank, in this case, acts as a 
+mediator.</p>
+
+<p id="cn-m28-201">In the blockchain, there is no mediator. It is a 
+direct transaction between two entities. The information on this network
+ is stored in blocks, which contain the following types of information:</p>
+
+<ul id="cn-m28-202">
+
+<li id="cn-m28-202">Transaction details, such as timestamp and amount</li>
+
+<li id="cn-m28-203">Individual information - the username</li>
+
+<li id="cn-m28-204">Hash information - each block contains a unique hash</li>
+
+</ul>
+
+<h4 id="cn-m28-205"><b><i>Public Ledgers</i></b></h4>
+
+<p id="cn-m28-206">Continuing with the example of sending money to your 
+friend on the blockchain network; if your transaction is successful, it 
+will be recorded on public ledgers. It is important to note that even 
+though several transactions are taking place on the blockchain network, 
+only confirmed transactions are recorded. For example, if you initiate a
+ second transfer to your friend’s account but interrupt it in the 
+middle, this transaction is now incomplete. The public ledger does not 
+record this transaction.</p>
+
+<p id="cn-m28-207">This ledger is also called public because any system 
+participating in it has one copy of the ledger. However, each copy of 
+the public ledger is compared with the other copies. If one copy is 
+tampered with, then it is rejected and not included in the transaction.</p>
+
+<p id="cn-m28-208">Hashing plays a critical role in blockchains.  Each 
+block has a hash that is also added to the next block as a reference. 
+For example, let’s assume that block1 has a hash of 
+aldfjadslfkjasdlfasdo. Block 2 would have this hash as a reference 
+point. It would have its own hash and then it would also have the 
+reference of the next block as a reference. Like this, all blocks keep 
+their own and adjacent blocks’ references. If any of the block is 
+tampered with, its hash changes and is not considered valid. Hashing 
+serves as a security method for securing the blocks in a blockchain.</p>
+
+<h3 id="cn-m28-209"><b>Cipher Suites</b></h3>
+
+<p id="cn-m28-210">Cipher suites are instruction sets that define how 
+information is secured while traversing through a network. Information 
+is secured using Transport Layer Security (TLS), which helps you 
+integrate HTTP security. Cipher suites can either be stream cipher or 
+block cipher.</p>
+
+<p id="cn-m28-211">Stream and block ciphers are symmetric, making them 
+use a single key to encrypt and decrypt information. To encrypt and 
+decrypt information, they both work in different ways:</p>
+
+<ul id="cn-m28-212">
+
+<li id="cn-m28-212">A block cipher encrypts information by dividing it 
+into blocks, which can be 64-bit or 128-bit. After the information is 
+divided into blocks, then each block is encrypted individually.</li>
+
+<li id="cn-m28-213">On the other hand, the stream cipher does not use 
+the block concept. The stream cipher encrypts the bit or bytes streams. 
+If there is a continuous stream of data, then it should be secured using
+ the stream cipher. For example, when you have audio or video streaming 
+over a network or the Internet, it is in a continuous stream. A stream 
+cipher works well with such streams of data.</li>
+
+</ul>
+
+<h3 id="cn-m28-214"><b>Lightweight Cryptography</b></h3>
+
+<p id="cn-m28-215">When you use a typical cryptographic method, it 
+requires a certain computation power to process information in 
+encryption and decryption. However, traditional cryptographic methods 
+become a problem when using smaller devices, such as contactless smart 
+cards, sensors, IoT, and healthcare devices. These devices do not have 
+computation power equivalent or close to a normal system, such as a 
+desktop or a laptop, which uses 32-bit or 64-bit microcontrollers. These
+ devices rather use 8-bit, 16-bit and sometimes, a 32-bit 
+microcontroller.</p>
+
+<p id="cn-m28-216">Lightweight cryptography solves the problem with such
+ devices because it has a smaller footprint and does not require a high 
+computational power amount. For smaller devices, you have to balance out
+ between security and performance along with device power. Lightweight 
+cryptography strikes an equal balance for the use of computational power
+ and security. It helps to secure these devices against various attacks,
+ such as single-key, key-recovery, or weak-keys.</p>
+
+<p id="cn-m28-217">Two examples of lightweight cryptography are:</p>
+
+<ul id="cn-m28-218">
+
+<li id="cn-m28-218">TWINE - block cipher</li>
+
+<li id="cn-m28-219">OTR - Authenticated Encryption method</li>
+
+</ul>
+
+<p id="cn-m28-220">As of the release of this title, both are in trial phases.</p>
+
+<h3 id="cn-m28-221"><b>Homomorphic Encryption</b></h3>
+
+<p id="cn-m28-222">Without decrypting encrypted data, you simply cannot view its contents. When you decrypt data, it is vulnerable to attack.</p>
+
+<p id="cn-m28-223">Homomorphic encryption is a method that helps you 
+analyze data without decrypting it. This means that you can analyze it, 
+but other users or even an attacker cannot access the data. Homomorphic 
+encryption, just like any other encryption method, encrypts data in the 
+same manner - using a public key. When the data is encrypted, you need 
+to use an algebraic system that performs certain encrypted data 
+functions. The functions are then run on the encrypted data. After the 
+functions are complete, you use the required private key to access the 
+data that has been decrypted. However, for the other users, the data is 
+still encrypted.</p>
+
+<h3 id="cn-m28-225"><b>Limitations</b></h3>
+
+<p id="cn-m28-226">The advantages of cryptography are clear - it helps 
+maintain the confidentiality and integrity of information. However, 
+along with the advantages, there are also disadvantages:</p>
+
+<h4 id="cn-m28-227"><b><i>Entropy</i></b></h4>
+
+<p id="cn-m28-228">Entropy is the base of all cryptographic functions. 
+In the simplest terms, entropy is the method of providing random input 
+in a system that needs to run the cryptographic algorithms. By default, a
+ system on its own cannot perform entropy. The operating system, such as
+ Linux, can perform entropy functions. When a user is clicking or typing
+ on a system, random inputs are collected and added to the entropy pool.
+ Such events, user typing or clicking or other system events, are 
+random, and it is difficult to predict them in advance and hence, the 
+server as random data in the entropy pool.</p>
+
+<p id="cn-m28-229">With the lack of entropy or sufficient entropy, data is vulnerable as it can be predicted even if there is encryption applied.</p>
+
+<h4 id="cn-m28-230"><b><i>Predictability</i></b></h4>
+
+<p id="cn-m28-231">When you apply the encryption of a piece of data, its
+ output is in the form of encrypted data. However, even the encrypted 
+data is only secure if it cannot be predicted. The data can be truly 
+secure if it has been encrypted with a high level of randomness.</p>
+
+<p id="cn-m28-232">If you use a cryptographic algorithm that does not 
+use the source randomness, its output is likely to be something that can
+ be predicted.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="ImplementingCryptography">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-236"><b>Exercise 2 - Implementing Cryptography</b></h2>
+
+<p id="cn-m28-237">Cryptographic tools are used to generate and confirm 
+the integrity of information or data and be used confidentially to 
+protect from the unauthorized viewing of materials.</p>
+
+<p id="cn-m28-238">This greatly assists with the security of information
+ you are receiving from the source location. Further, with hashing, you 
+can confirm, for example, a program you have downloaded has not been 
+modified in some manner by checking its hash value produced by the 
+author with your value.</p>
+
+<p id="cn-m28-239">In this exercise, you will learn to encrypt data. You will also learn about hashing.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m28-241">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m28-242">
+
+<li id="cn-m28-242">Encrypt Data using CryptoDemo</li>
+
+<li id="cn-m28-243">Decrypt Data using CryptoDemo</li>
+
+<li id="cn-m28-244">Key Values</li>
+
+<li id="cn-m28-245">Perform Hashing</li>
+
+<li id="cn-m28-246">Use HashCalc</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m28-248">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m28-249">
+
+<li id="cn-m28-249"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m28-250"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m28-251"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<p id="cn-m28-252"><img class="cn-img" id="cn-image-m28-c-3" src="CryptographicBasicConcepts_files/image-m28-c-3.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m28-253"><b>Task 1 - Encrypt Data using CryptoDemo</b></h3>
+
+<p id="cn-m28-254">Even though there are various tools available to 
+encrypt information, CryptoDemo is a small tool that can help you 
+encrypt and hash information. It contains two tabs - one for hashing and
+ one for encryption. On the encryption tab, you can choose different 
+algorithms and encrypt the information. On the hashing tab, you can 
+generate hashes for files, hex values, and text strings.</p>
+
+<p id="cn-m28-255">In this task, you will learn to encrypt data using CryptoDemo.</p>
+
+<h4 id="cn-m28-256"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-257">Ensure you have powered the required devices and connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m28-258">The desktop is displayed.</p>
+
+<p id="cn-m28-259"></p><figure><img class="cn-img" id="cn-image-m28-c-4" src="CryptographicBasicConcepts_files/image-m28-c-4.jpg" alt="Figure 2.1. Screenshot of PLABWIN10: Showing the desktop of PLABWIN10."><figcaption>Figure 2.1. Screenshot of PLABWIN10: Showing the desktop of PLABWIN10.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-261"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-262">Click <b>Start</b>, navigate to the <b>Cryptography Demonstration </b>and click on the <b>CryptoDemo1.0 </b>program to start.</p>
+
+<p id="cn-m28-263"></p><figure><img class="cn-img" id="cn-image-m28-c-5" src="CryptographicBasicConcepts_files/image-m28-c-5.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: Clicking the Start menu, expanding Cryptography Demonstration, and then clicking the CryptoDemo option."><figcaption>Figure
+ 2.2 Screenshot of PLABWIN10: Clicking the Start menu, expanding 
+Cryptography Demonstration, and then clicking the CryptoDemo option.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-266"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-267">The <b>CryptoDemo 1.0 </b>dialog box is displayed.</p>
+
+<p id="cn-m28-268"></p><figure><img class="cn-img" id="cn-image-m28-c-6" src="CryptographicBasicConcepts_files/image-m28-c-6.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: Showing the CryptoDemo dialog box."><figcaption>Figure 2.3 Screenshot of PLABWIN10: Showing the CryptoDemo dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-270"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-271">You will now apply the encryption algorithm <b>3DES </b>to see the output and recognize what such an output generates in terms of values.</p>
+
+<p id="cn-m28-272">In the <b>Encryption Algorithm </b>drop-down, ensure that <b>Triple DES Encryption (3DES) </b>is selected.</p>
+
+<p id="cn-m28-273"></p><figure><img class="cn-img" id="cn-image-m28-c-7" src="CryptographicBasicConcepts_files/image-m28-c-7.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: Showing the 3DES algorithm selected on the Encryption tab in the CryptoDemo dialog box."><figcaption>Figure 2.4 Screenshot of PLABWIN10: Showing the 3DES algorithm selected on the Encryption tab in the CryptoDemo dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-275"><b><i>Step 5 </i></b></h4>
+
+<p id="cn-m28-276">Type the following into the <b>Key </b>field:</p>
+
+<pre id="cn-m28-277"><code>Practice-Labs.com
+
+</code></pre>
+
+<p id="cn-m28-278">Type the following text in the <b>Data </b>field to be encrypted:</p>
+
+<pre id="cn-m28-279"><code>Welcome to Practice Labs!
+
+</code></pre>
+
+<p id="cn-m28-280"></p><figure><img class="cn-img" id="cn-image-m28-c-8" src="CryptographicBasicConcepts_files/image-m28-c-8.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: Entering the text in the Key and Data text boxes."><figcaption>Figure 2.5 Screenshot of PLABWIN10: Entering the text in the Key and Data text boxes.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-283"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-284">Now, click the <b>Encrypt </b>button to see the result of the encryption, and a result will be displayed in the <b>Encrypted Data </b>field.</p>
+
+<p id="cn-m28-285"></p><figure><img class="cn-img" id="cn-image-m28-c-9" src="CryptographicBasicConcepts_files/image-m28-c-9.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: Showing the Encrypt button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.6 Screenshot of PLABWIN10: Showing the Encrypt button highlighted in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-288"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-289">The ciphertext is displayed in the Encrypted Data 
+text box. The text should be different from the string that you entered,
+ and it should be unreadable.</p>
+
+<span class="cn-quote" id="cn-m28-290"><b><i>Note: </i></b><i>You can press the </i><b><i>Encrypt </i></b><i>button
+ as many time as you like, and you will see different results of output 
+data; this is one of the most important conceptions behind encrypting 
+text.</i></span>
+
+<p id="cn-m28-291"></p><figure><img class="cn-img" id="cn-image-m28-c-10" src="CryptographicBasicConcepts_files/image-m28-c-10.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: Showing the output in the Encrypted Data text box."><figcaption>Figure 2.7 Screenshot of PLABWIN10: Showing the output in the Encrypted Data text box.</figcaption></figure><p></p>
+
+<p id="cn-m28-294">Keep the <b>CryptoDemo 1.0 </b>dialog box open.</p>
+
+<h3 id="cn-m28-295"><b>Task 2 - Decrypt Data using CryptoDemo</b></h3>
+
+<p id="cn-m28-296">After you have encrypted a piece of data, which was 
+in the form of a text string, you can now decrypt it from the encrypted 
+data. By decrypting the encrypted content, you will verify that it is 
+the same as the source data, which was encrypted.</p>
+
+<p id="cn-m28-297">In this task, you will learn to decrypt the encrypted data in CryptoDemo.</p>
+
+<h4 id="cn-m28-298"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-299">Connect to <b>PLABWIN10</b>. Ensure that <b>CryptoDemo 1.0 </b>dialog box is opened. Select and delete the text in the <b>Data </b>text box.</p>
+
+<p id="cn-m28-300"></p><figure><img class="cn-img" id="cn-image-m28-c-11" src="CryptographicBasicConcepts_files/image-m28-c-11.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: Showing the selected text for deletion in the Data text box."><figcaption>Figure 2.8 Screenshot of PLABWIN10: Showing the selected text for deletion in the Data text box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-303"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-304">Press the <b>Decrypt </b>button to see the result back in the <b>Data </b>field.</p>
+
+<p id="cn-m28-305"></p><figure><img class="cn-img" id="cn-image-m28-c-12" src="CryptographicBasicConcepts_files/image-m28-c-12.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: Showing the Decrypt button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.9 Screenshot of PLABWIN10: Showing the Decrypt button highlighted in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-308"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-309">You will have the same original text decrypted from the data.</p>
+
+<span class="cn-quote" id="cn-m28-310"><b><i>Note: </i></b><i>You can now try the other algorithm types of DES, RC2, and RC4 to see the output. </i></span>
+
+<p id="cn-m28-311"></p><figure><img class="cn-img" id="cn-image-m28-c-13" src="CryptographicBasicConcepts_files/image-m28-c-13.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: Showing the output in the Data text box in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.10 Screenshot of PLABWIN10: Showing the output in the Data text box in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-314"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-315">Delete the last character from the <b>Encrypted Data</b>.</p>
+
+<p id="cn-m28-316"></p><figure><img class="cn-img" id="cn-image-m28-c-14" src="CryptographicBasicConcepts_files/image-m28-c-14.jpg" alt="Figure 2.11 Screenshot of PLABWIN10: Deleting the last character in the Encrypted Data text box."><figcaption>Figure 2.11 Screenshot of PLABWIN10: Deleting the last character in the Encrypted Data text box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-319"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-320">Click <b>Decrypt</b>.</p>
+
+<p id="cn-m28-321"></p><figure><img class="cn-img" id="cn-image-m28-c-15" src="CryptographicBasicConcepts_files/image-m28-c-15.jpg" alt="Figure 2.12 Screenshot of PLABWIN10: Showing the Decrypt button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.12 Screenshot of PLABWIN10: Showing the Decrypt button highlighted in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-324"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-325">Notice that the original value is no longer generated. Rather an error message is displayed.</p>
+
+<p id="cn-m28-326"></p><figure><img class="cn-img" id="cn-image-m28-c-16" src="CryptographicBasicConcepts_files/image-m28-c-16.jpg" alt=" Figure 2.13 Screenshot of PLABWIN10: Showing an error message in the Data textbox on the CryptoDemo 1.0 dialog box."><figcaption> Figure 2.13 Screenshot of PLABWIN10: Showing an error message in the Data textbox on the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h3 id="cn-m28-330"><b>Task 3 - Key Values</b></h3>
+
+<p id="cn-m28-331">In general, mixing up as many variables as possible 
+with long string lengths produces a strong key to encrypt or hash 
+against. However, you will use options presented by Random Key and Time 
+Key. With the Random Key option, it generates a Base64 random key. As 
+the name suggests, when you generate a Time Key, it uses time as the 
+key.</p>
+
+<p id="cn-m28-332">In the previous task, you had input your string to 
+generate an encryption key. However, this is a poorly secured key. A 
+better option would be to generate a random or time value key, which is a
+ lot more secure.</p>
+
+<p id="cn-m28-333">In this task, you will generate the key values.</p>
+
+<h4 id="cn-m28-334"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-335">Connect to <b>PLABWIN10</b>. Ensure that the <b>CryptoDemo 1.0 </b>dialog box is open.</p>
+
+<p id="cn-m28-336"></p><figure><img class="cn-img" id="cn-image-m28-c-17" src="CryptographicBasicConcepts_files/image-m28-c-17.jpg" alt="Figure 2.14 Screenshot of PLABWIN10: Showing an error message in the Data textbox on the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.14 Screenshot of PLABWIN10: Showing an error message in the Data textbox on the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-340"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-341">Select and delete the contents in the <b>Encrypted Data </b>text box. Ensure that you have Practice-Labs.com entered in the <b>Key </b>text box.</p>
+
+<p id="cn-m28-342"></p><figure><img class="cn-img" id="cn-image-m28-c-18" src="CryptographicBasicConcepts_files/image-m28-c-18.jpg" alt="Figure 2.15 Screenshot of PLABWIN10: Showing the selected text for deletion in the Encrypted Data text box."><figcaption>Figure 2.15 Screenshot of PLABWIN10: Showing the selected text for deletion in the Encrypted Data text box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-345"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-346">Click the <b>Random Key </b>button to see what key you are presented with.</p>
+
+<span class="cn-quote" id="cn-m28-347"><b><i>Note: </i></b><i>It’s 
+random, so your key should not match the images; neither will your time 
+values. You will get different results in your lab environment.</i></span>
+
+<p id="cn-m28-348"></p><figure><img class="cn-img" id="cn-image-m28-c-19" src="CryptographicBasicConcepts_files/image-m28-c-19.jpg" alt="Figure 2.16 Screenshot of PLABWIN10: Showing the Random Key button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.16 Screenshot of PLABWIN10: Showing the Random Key button highlighted in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-351"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-352">Notice that a random key appears in place of the text in the <b>Key </b>text box.</p>
+
+<p id="cn-m28-353">Again, hit the <b>Encrypt </b>button to see the ciphertext generated using this type of key.</p>
+
+<p id="cn-m28-354"></p><figure><img class="cn-img" id="cn-image-m28-c-20" src="CryptographicBasicConcepts_files/image-m28-c-20.jpg" alt="Figure 2.17 Screenshot of PLABWIN10: Showing a random key in the Key text box and showing the Encrypt button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure
+ 2.17 Screenshot of PLABWIN10: Showing a random key in the Key text box 
+and showing the Encrypt button highlighted in the CryptoDemo 1.0 dialog 
+box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-357"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-358">Notice that a random key is now encrypted. The encrypted key appears in the <b>Encrypted Data </b>text box.</p>
+
+<p id="cn-m28-359"></p><figure><img class="cn-img" id="cn-image-m28-c-21" src="CryptographicBasicConcepts_files/image-m28-c-21.jpg" alt="Figure 2.18 Screenshot of PLABWIN10: Showing the encrypted text in the Encrypted Data text box in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.18 Screenshot of PLABWIN10: Showing the encrypted text in the Encrypted Data text box in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-362"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-363">Now, select and delete the encrypted data again in the <b>Encrypted Data </b>text box.</p>
+
+<p id="cn-m28-364"></p><figure><img class="cn-img" id="cn-image-m28-c-22" src="CryptographicBasicConcepts_files/image-m28-c-22.jpg" alt="Figure 2.19 Screenshot of PLABWIN10: Showing the encrypted data highlighted in the Encrypted Data text box in the CryptoDemo 1.0 dialog box."><figcaption>Figure
+ 2.19 Screenshot of PLABWIN10: Showing the encrypted data highlighted in
+ the Encrypted Data text box in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-367"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-368">Click the <b>Time Key </b>button.</p>
+
+<p id="cn-m28-369"></p><figure><img class="cn-img" id="cn-image-m28-c-23" src="CryptographicBasicConcepts_files/image-m28-c-23.jpg" alt="Figure 2.20 Screenshot of PLABWIN10: Showing the Time Key button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.20 Screenshot of PLABWIN10: Showing the Time Key button highlighted in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-372"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m28-373">Notice that in the <b>Key </b>text box, date and time appear.</p>
+
+<p id="cn-m28-374">Again, click the <b>Encrypt </b>button and see the values generated.</p>
+
+<p id="cn-m28-375"></p><figure><img class="cn-img" id="cn-image-m28-c-24" src="CryptographicBasicConcepts_files/image-m28-c-24.jpg" alt="Figure 2.21 Screenshot of PLABWIN10: Showing the date and time in the Key text box and the Encrypt button highlighted in the CryptoDemo 1.0 dialog box."><figcaption>Figure
+ 2.21 Screenshot of PLABWIN10: Showing the date and time in the Key text
+ box and the Encrypt button highlighted in the CryptoDemo 1.0 dialog 
+box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-378"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m28-379">Once more, you see another output that differs from the first result.</p>
+
+<p id="cn-m28-380"></p><figure><img class="cn-img" id="cn-image-m28-c-25" src="CryptographicBasicConcepts_files/image-m28-c-25.jpg" alt="Figure 2.22 Screenshot of PLABWIN10: Showing the encrypted text in the Encrypted Data text box in the CryptoDemo 1.0 dialog box."><figcaption>Figure 2.22 Screenshot of PLABWIN10: Showing the encrypted text in the Encrypted Data text box in the CryptoDemo 1.0 dialog box.</figcaption></figure><p></p>
+
+<h3 id="cn-m28-383"><b>Task 4 - Perform Hashing </b></h3>
+
+<p id="cn-m28-384">Hashing a value is used to map data of any size and 
+provide a method for verifying the integrity and authenticity of data 
+and their authors. The CryptoDemo tool can create hashes. You will now 
+use the same tool to see hash results.</p>
+
+<p id="cn-m28-385">In this task, you will learn to creates hashes using CryptoDemo.</p>
+
+<h4 id="cn-m28-386"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-387">Connect to <b>PLABWIN10</b>. Ensure that the <b>CryptoDemo 1.0 </b>dialog box is open.</p>
+
+<p id="cn-m28-388"></p><figure><img class="cn-img" id="cn-image-m28-c-26" src="CryptographicBasicConcepts_files/image-m28-c-26.jpg" alt="Figure 2.23 Screenshot of PLABWIN10: Showing the CryptoDemo 1.0 dialog box with encrypted text in the Encrypted Data text box."><figcaption>Figure 2.23 Screenshot of PLABWIN10: Showing the CryptoDemo 1.0 dialog box with encrypted text in the Encrypted Data text box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-391"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-392">Click on the <b>Hashing </b>tab. Notice that the <b>Hash Algorithm </b>is set to <b>MD5</b>.</p>
+
+<p id="cn-m28-393"></p><figure><img class="cn-img" id="cn-image-m28-c-27" src="CryptographicBasicConcepts_files/image-m28-c-27.jpg" alt="Figure 2.24 Screenshot of PLABWIN10: Showing the Hashing tab with the Hashing Algorithm set as the MD5 hashing algorithm."><figcaption>Figure 2.24 Screenshot of PLABWIN10: Showing the Hashing tab with the Hashing Algorithm set as the MD5 hashing algorithm.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-396"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-397">Within the top text box, type the following:</p>
+
+<pre id="cn-m28-398"><code>Congratulations!
+
+</code></pre>
+
+<p id="cn-m28-399">Click <b>Get Hash</b>.</p>
+
+<p id="cn-m28-400"></p><figure><img class="cn-img" id="cn-image-m28-c-28" src="CryptographicBasicConcepts_files/image-m28-c-28.jpg" alt="Figure 2.25 Screenshot of PLABWIN10: Showing the text in the text box and Get Hash button highlighted."><figcaption>Figure 2.25 Screenshot of PLABWIN10: Showing the text in the text box and Get Hash button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-403"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-404">A hash is generated.</p>
+
+<p id="cn-m28-405"></p><figure><img class="cn-img" id="cn-image-m28-c-29" src="CryptographicBasicConcepts_files/image-m28-c-29.jpg" alt="Figure 2.26 Screenshot of PLABWIN10: Showing the generated hash in the bottom text box."><figcaption>Figure 2.26 Screenshot of PLABWIN10: Showing the generated hash in the bottom text box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-408"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-409">Once again, click on the <b>Get Hash </b>button. Notice that you still get the same value. Unlike encryption, a hash always remains static and does not change.</p>
+
+<p id="cn-m28-410"></p><figure><img class="cn-img" id="cn-image-m28-c-30" src="CryptographicBasicConcepts_files/image-m28-c-30.jpg" alt="Figure 2.27 Screenshot of PLABWIN10: Showing the Get Hash button highlighted and the hash in the bottom text box."><figcaption>Figure 2.27 Screenshot of PLABWIN10: Showing the Get Hash button highlighted and the hash in the bottom text box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-413"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-414">From the <b>Hash Algorithm </b>drop-down, click on one of the other types such as <b>SHA1 </b>and then press the <b>Get Hash </b>button.</p>
+
+<p id="cn-m28-415"></p><figure><img class="cn-img" id="cn-image-m28-c-31" src="CryptographicBasicConcepts_files/image-m28-c-31.jpg" alt="Figure 2.28 Screenshot of PLABWIN10: Showing the Hash Algorithm as SHA1 hashing algorithm and the Get Hash button highlighted."><figcaption>Figure 2.28 Screenshot of PLABWIN10: Showing the Hash Algorithm as SHA1 hashing algorithm and the Get Hash button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-418"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-419">You will now see a different result for the SHA1 algorithm.</p>
+
+<span class="cn-quote" id="cn-m28-420"><b><i>Note: </i></b><i>You can generate hashes from different algorithms provided in the </i><b><i>Hash Algorithm </i></b><i>drop-down.</i></span>
+
+<p id="cn-m28-421"></p><figure><img class="cn-img" id="cn-image-m28-c-32" src="CryptographicBasicConcepts_files/image-m28-c-32.jpg" alt="Figure 2.29 Screenshot of PLABWIN10: Showing the generated hash in the bottom text box."><figcaption>Figure 2.29 Screenshot of PLABWIN10: Showing the generated hash in the bottom text box.</figcaption></figure><p></p>
+
+<p id="cn-m28-423">Exit the program when finished.</p>
+
+<h3 id="cn-m28-426"><b>Task 5 - Use HashCalc</b></h3>
+
+<p id="cn-m28-427">Different algorithms generate different hashes. 
+HashCalc helps you generate hashes using 13 different algorithms with a 
+click of a button. You can look at different hashes generated from 
+algorithms and perform a direct comparison. HashCalc can compute message
+ digests, checksums, and HMACs for different input types, such as files,
+ text, and hex strings.</p>
+
+<p id="cn-m28-428">In this task, you will learn to use HashCalc.</p>
+
+<h4 id="cn-m28-429"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-430">Connect to <b>PLABWIN10</b>. Ensure that you are on the desktop.</p>
+
+<p id="cn-m28-431"></p><figure><img class="cn-img" id="cn-image-m28-c-33" src="CryptographicBasicConcepts_files/image-m28-c-33.jpg" alt="Figure 2.30 Screenshot of PLABWIN10: Showing the desktop of PLABWIN10."><figcaption>Figure 2.30 Screenshot of PLABWIN10: Showing the desktop of PLABWIN10.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-434"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-435">Click <b>Start</b>, click <b>HashCalc </b>and then click <b>HashCalc</b>.</p>
+
+<p id="cn-m28-436"></p><figure><img class="cn-img" id="cn-image-m28-c-34" src="CryptographicBasicConcepts_files/image-m28-c-34.jpg" alt="Figure 2.31 Screenshot of PLABWIN10: Showing the HashCalc option selected in the Start menu."><figcaption>Figure 2.31 Screenshot of PLABWIN10: Showing the HashCalc option selected in the Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-439"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-440">The <b>HashCalc </b>dialog box is displayed.</p>
+
+<p id="cn-m28-441">Click the <b>Data Format </b>drop-down and select the <b>Text String</b>.</p>
+
+<p id="cn-m28-442"></p><figure><img class="cn-img" id="cn-image-m28-c-35" src="CryptographicBasicConcepts_files/image-m28-c-35.jpg" alt="Figure 2.32 Screenshot of PLABWIN10: Showing the Text string option selected from the Data Format drop-down in the HashCalc dialog box."><figcaption>Figure
+ 2.32 Screenshot of PLABWIN10: Showing the Text string option selected 
+from the Data Format drop-down in the HashCalc dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-445"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-446">Enter the following text in the <b>Data </b>text box:</p>
+
+<pre id="cn-m28-447"><code>Welcome to PLABWIN10!
+
+</code></pre>
+
+<p id="cn-m28-448">After this, make sure all the tick boxes are confirmed for all the hashing algorithms except for <b>HMAC, </b>which should be left empty.</p>
+
+<p id="cn-m28-449"></p><figure><img class="cn-img" id="cn-image-m28-c-36" src="CryptographicBasicConcepts_files/image-m28-c-36.jpg" alt="Figure 2.33 Screenshot of PLABWIN10: Showing the entered text string in the Data text box and all options selected except HMAC."><figcaption>Figure 2.33 Screenshot of PLABWIN10: Showing the entered text string in the Data text box and all options selected except HMAC.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-452"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-453">Click <b>Calculate </b>to see the calculated hashes.</p>
+
+<p id="cn-m28-454"></p><figure><img class="cn-img" id="cn-image-m28-c-37" src="CryptographicBasicConcepts_files/image-m28-c-37.jpg" alt="Figure 2.34 Screenshot of PLABWIN10: Showing the Calculate button highlighted in the HashCalc dialog box."><figcaption>Figure 2.34 Screenshot of PLABWIN10: Showing the Calculate button highlighted in the HashCalc dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-457"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-458">Notice that the hashes are now calculated for the text string.</p>
+
+<p id="cn-m28-459"></p><figure><img class="cn-img" id="cn-image-m28-c-38" src="CryptographicBasicConcepts_files/image-m28-c-38.jpg" alt="Figure 2.35 Screenshot of PLABWIN10: Showing the calculated hashes for selected algorithms in the HashCalc dialog box."><figcaption>Figure 2.35 Screenshot of PLABWIN10: Showing the calculated hashes for selected algorithms in the HashCalc dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-462"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-463">Now, select the <b>HMAC </b>checkbox. Notice that the hashes for the remaining algorithms disappear automatically.</p>
+
+<p id="cn-m28-464"></p><figure><img class="cn-img" id="cn-image-m28-c-39" src="CryptographicBasicConcepts_files/image-m28-c-39.jpg" alt="Figure 2.36 Screenshot of PLABWIN10: Showing the HMAC option and other algorithms selected in the HashCalc dialog box."><figcaption>Figure 2.36 Screenshot of PLABWIN10: Showing the HMAC option and other algorithms selected in the HashCalc dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-467"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m28-468">With <b>HMAC</b>, you can edit the Key format to allow <b>Text String </b>or <b>Hex String</b>. For this task, you are going to uses the default select, which is Text String.</p>
+
+<p id="cn-m28-469">For the <b>Key-Value</b>, type the following <b>Key</b>:</p>
+
+<pre id="cn-m28-470"><code>TidyMind
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m28-471"><b><i>Note: </i></b><i>Make sure there is still text in the Data Field.</i></span>
+
+<pre id="cn-m28-472"><code>Welcome to PLABWIN10!
+
+</code></pre>
+
+<p id="cn-m28-473">Click <b>Calculate</b>.</p>
+
+<p id="cn-m28-474"></p><figure><img class="cn-img" id="cn-image-m28-c-40" src="CryptographicBasicConcepts_files/image-m28-c-40.jpg" alt="Figure 2.37 Screenshot of PLABWIN10: Showing the text string entered in the Data and Key text boxes and Calculate button selected."><figcaption>Figure
+ 2.37 Screenshot of PLABWIN10: Showing the text string entered in the 
+Data and Key text boxes and Calculate button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-477"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m28-478">Remember, these hashes were made with the specific key entered, and usually, this would be a secret key.</p>
+
+<p id="cn-m28-479"></p><figure><img class="cn-img" id="cn-image-m28-c-41" src="CryptographicBasicConcepts_files/image-m28-c-41.jpg" alt="Figure 2.38 Screenshot of PLABWIN10: Showing the generated hashes for the selected algorithms in the HashCalc dialog box."><figcaption>Figure 2.38 Screenshot of PLABWIN10: Showing the generated hashes for the selected algorithms in the HashCalc dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-482"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m28-483">You can now change the <b>Data Format </b>to <b>Hex String </b>and try that out.</p>
+
+<p id="cn-m28-484">Deselect the <b>HMAC </b>checkbox.</p>
+
+<p id="cn-m28-485">Type the following value into the <b>Data </b>field.</p>
+
+<pre id="cn-m28-486"><code>0000ff
+
+</code></pre>
+
+<p id="cn-m28-487">Click <b>Calculate</b>.</p>
+
+<span class="cn-quote" id="cn-m28-488"><b><i>Note: </i></b><i>0000ff is the Hex Value for the color blue. </i></span>
+
+<p id="cn-m28-489"></p><figure><img class="cn-img" id="cn-image-m28-c-42" src="CryptographicBasicConcepts_files/image-m28-c-42.jpg" alt="Figure 2.39 Screenshot of PLABWIN10: Showing Hex String in the Data Format drop-down and the Calculate button selected."><figcaption>Figure 2.39 Screenshot of PLABWIN10: Showing Hex String in the Data Format drop-down and the Calculate button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-493"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m28-494">Finally, you will load a file to <b>HashCalc </b>to be evaluated. From the <b>Data Format </b>drop-down, select <b>File</b>.</p>
+
+<p id="cn-m28-495">Then, next to the <b>Data </b>text box, click the <b>Find File (…) </b>button.</p>
+
+<p id="cn-m28-496"></p><figure><img class="cn-img" id="cn-image-m28-c-43" src="CryptographicBasicConcepts_files/image-m28-c-43.jpg" alt="Figure 2.40 Screenshot of PLABWIN10: Showing the File option selected in the Data Format drop-down and Find File button selected."><figcaption>Figure
+ 2.40 Screenshot of PLABWIN10: Showing the File option selected in the 
+Data Format drop-down and Find File button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-499"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m28-500">The <b>Find </b>dialog box is displayed. Navigate to the <b>Downloads </b>folder and select <b>nmap-7.80-setup, </b>and click <b>Open</b>.</p>
+
+<p id="cn-m28-501"></p><figure><img class="cn-img" id="cn-image-m28-c-44" src="CryptographicBasicConcepts_files/image-m28-c-44.jpg" alt="Figure 2.41 Screenshot of PLABWIN10: Showing a file selected in the Find dialog box and Open button selected."><figcaption>Figure 2.41 Screenshot of PLABWIN10: Showing a file selected in the Find dialog box and Open button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-504"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m28-505">Notice that the path of the file is now populated in the <b>Data </b>text box. Click <b>Calculate</b>.</p>
+
+<span class="cn-alert" id="cn-m28-506"><b>Alert: </b>Again, make sure the tick boxes have been ticked <b>EXCEPT </b>for the <b>HMAC</b></span>
+
+<p id="cn-m28-507"></p><figure><img class="cn-img" id="cn-image-m28-c-45" src="CryptographicBasicConcepts_files/image-m28-c-45.jpg" alt="Figure 2.42 Screenshot of PLABWIN10: Showing the file&amp;#39;s path in the Data text box and the Calculate button highlighted."><figcaption>Figure 2.42 Screenshot of PLABWIN10: Showing the file's path in the Data text box and the Calculate button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-510"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m28-511">After a few seconds, the hashes for the selected file are displayed.</p>
+
+<p id="cn-m28-512"></p><figure><img class="cn-img" id="cn-image-m28-c-46" src="CryptographicBasicConcepts_files/image-m28-c-46.jpg" alt="Figure 2.43 Screenshot of PLABWIN10: Showing the calculated hashes for the selected algorithms."><figcaption>Figure 2.43 Screenshot of PLABWIN10: Showing the calculated hashes for the selected algorithms.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m28-516">Close the <b>HashCalc </b>dialog box.</p>
+< <a href="https://github.com/SeanOhAileasa" id="UsingSteganography">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-517"><b>Exercise 3 - Using Steganography</b></h2>
+
+<p id="cn-m28-518">Steganography is the process of hiding or covering a 
+file inside of another file. It is mainly intended to hide a secret 
+message in a plain message or a graphics file. Steganography is not a 
+new technology, and has been around for thousands of years and was used 
+by Greeks and Romans. In recent times, the methods of steganography have
+ changed, but its intent remains the same.</p>
+
+<p id="cn-m28-519">A basic steganography tool encodes information within
+ another file, typically a media file such as a picture or audio/video 
+file. A typical technique is to encode information in the least 
+significant bit of the image, video, or audio data. This does not 
+materially affect the picture, video, or sound and does not alter the 
+file header (though it can change the file size).</p>
+
+<p id="cn-m28-520">In this exercise, you will hide documents in a graphics file.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m28-522">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m28-523">
+
+<li id="cn-m28-523">Hide Documents in a Graphic</li>
+
+<li id="cn-m28-524">Use Steghide to Hide Data in an Image</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m28-526">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m28-527">
+
+<li id="cn-m28-527"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m28-528"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m28-529"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<p id="cn-m28-530"><img class="cn-img" id="cn-image-m28-c-47" src="CryptographicBasicConcepts_files/image-m28-c-47.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m28-532"><b>Task 1 - Hide Documents in a Graphic</b></h3>
+
+<p id="cn-m28-533">Without prior context, it is extremely difficult to 
+detect steganography. In this example, you will hide the contents of a 
+folder in a graphics file.</p>
+
+<p id="cn-m28-534">There are various tools that you can use. One such 
+tool is Gargoyle Investigator Forensic Pro. However, you can perform the
+ same task with a simple compression program like WinZip, Winrar, or 
+7-zip. This task will use 7-zip for folder steganography.</p>
+
+<p id="cn-m28-535">To use folder steganography, perform the following steps:</p>
+
+<h4 id="cn-m28-536"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-537">Ensure you have powered on all the devices listed in the introduction and connect to <b>PLABWIN10</b>. Click the <b>File Explorer </b>icon from the taskbar.</p>
+
+<p id="cn-m28-538"></p><figure><img class="cn-img" id="cn-image-m28-c-48" src="CryptographicBasicConcepts_files/image-m28-c-48.jpg" alt="Figure 3.1 Screenshot of PLABWIN10: Clicking the File Explorer icon on the taskbar."><figcaption>Figure 3.1 Screenshot of PLABWIN10: Clicking the File Explorer icon on the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-541"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-542">In the left-hand pane, expand <b>This PC </b>and select <b>Local Disk (C</b>:).</p>
+
+<p id="cn-m28-543"></p><figure><img class="cn-img" id="cn-image-m28-c-49" src="CryptographicBasicConcepts_files/image-m28-c-49.jpg" alt="Figure 3.2 Screenshot of PLABWIN10: Showing the Local Disk (C:) selected in the left-hand pane of File Explorer."><figcaption>Figure 3.2 Screenshot of PLABWIN10: Showing the Local Disk (C:) selected in the left-hand pane of File Explorer.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-546"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-547">Click the <b>Home </b>tab and then click <b>New folder</b>.</p>
+
+<p id="cn-m28-548"></p><figure><img class="cn-img" id="cn-image-m28-c-50" src="CryptographicBasicConcepts_files/image-m28-c-50.jpg" alt="Figure 3.3 Screenshot of PLABWIN10: Showing the New Folder button highlighted in the Home tab."><figcaption>Figure 3.3 Screenshot of PLABWIN10: Showing the New Folder button highlighted in the Home tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-551"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-552">Type the following name for the new folder:</p>
+
+<pre id="cn-m28-553"><code>PLAB
+
+</code></pre>
+
+<p id="cn-m28-554">Press <b>Enter</b>. Alternatively, click anywhere outside the text box where you are typing the name.</p>
+
+<p id="cn-m28-555"></p><figure><img class="cn-img" id="cn-image-m28-c-51" src="CryptographicBasicConcepts_files/image-m28-c-51.jpg" alt="Figure 3.4 Screenshot of PLABWIN10: Entering the name as PLAB for the new folder."><figcaption>Figure 3.4 Screenshot of PLABWIN10: Entering the name as PLAB for the new folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-558"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-559">Double-click the <b>PLAB </b>folder. You are now inside the <b>PLAB </b>folder. Note that the folder is currently empty.</p>
+
+<p id="cn-m28-560"></p><figure><img class="cn-img" id="cn-image-m28-c-52" src="CryptographicBasicConcepts_files/image-m28-c-52.jpg" alt="Figure 3.5 Screenshot of PLABWIN10: Navigating inside the PLAB folder and showing it as empty."><figcaption>Figure 3.5 Screenshot of PLABWIN10: Navigating inside the PLAB folder and showing it as empty.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-563"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-564">You need to create two new text files.</p>
+
+<p id="cn-m28-565">To create a text file, right-click on the white area and select <b>New </b>and then select <b>Text Document</b>.</p>
+
+<p id="cn-m28-566"></p><figure><img class="cn-img" id="cn-image-m28-c-53" src="CryptographicBasicConcepts_files/image-m28-c-53.jpg" alt="Figure 3.6 Screenshot of PLABWIN10: Showing the context menu inside the PLAB folder with New ( Text Document options highlighted to create a text document."><figcaption>Figure
+ 3.6 Screenshot of PLABWIN10: Showing the context menu inside the PLAB 
+folder with New ( Text Document options highlighted to create a text 
+document.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-569"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-570">In the text box, type the name as:</p>
+
+<pre id="cn-m28-571"><code>PLAB1
+
+</code></pre>
+
+<p id="cn-m28-572">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-573">Similarly, create another text file with the name:</p>
+
+<pre id="cn-m28-574"><code>PLAB2
+
+</code></pre>
+
+<p id="cn-m28-575">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-576">For this task, two text files, <b>PLAB1, </b>and <b>PLAB2 </b>are created.</p>
+
+<p id="cn-m28-577"></p><figure><img class="cn-img" id="cn-image-m28-c-54" src="CryptographicBasicConcepts_files/image-m28-c-54.jpg" alt="Figure 3.7 Screenshot of PLABWIN10: Showing newly created two text files in the PLAB folder."><figcaption>Figure 3.7 Screenshot of PLABWIN10: Showing newly created two text files in the PLAB folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-580"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m28-581">Select both the files. Right-click on the selection, select <b>7-zip </b>and then select <b>Add to “PLAB.zip</b>”.</p>
+
+<p id="cn-m28-582"></p><figure><img class="cn-img" id="cn-image-m28-c-55" src="CryptographicBasicConcepts_files/image-m28-c-55.jpg" alt="Figure 3.8 Screenshot of PLABWIN10: Showing both the text files selected with a context menu with 7-Zip and Add to “PLAB.zip” options selected."><figcaption>Figure
+ 3.8 Screenshot of PLABWIN10: Showing both the text files selected with a
+ context menu with 7-Zip and Add to “PLAB.zip” options selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-585"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m28-586">The <b>PLAB.zip </b>file is now created.</p>
+
+<p id="cn-m28-587"></p><figure><img class="cn-img" id="cn-image-m28-c-56" src="CryptographicBasicConcepts_files/image-m28-c-56.jpg" alt="Figure 3.9 Screenshot of PLABWIN10: Showing the newly created PLAB.zip file."><figcaption>Figure 3.9 Screenshot of PLABWIN10: Showing the newly created PLAB.zip file.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-590"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m28-591">Now, you will need a graphics file that you need to copy to the <b>PLAB </b>folder. For the sake of this lab, a graphics file has been downloaded from <b>Google</b>. You can download any graphics file of your choice into the <b>PLAB </b>folder. For this demonstration, you have a graphics file named <b>PLAB.png </b>located in the Local Disk (C:) drive.</p>
+
+<p id="cn-m28-592"></p><figure><img class="cn-img" id="cn-image-m28-c-57" src="CryptographicBasicConcepts_files/image-m28-c-57.jpg" alt="Figure 3.10 Screenshot of PLABWIN10: Showing a newly added graphics file in the PLAB folder."><figcaption>Figure 3.10 Screenshot of PLABWIN10: Showing a newly added graphics file in the PLAB folder.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-595"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m28-596">In the address bar of <b>File Explorer</b>, type the following command:</p>
+
+<pre id="cn-m28-597"><code>cmd
+
+</code></pre>
+
+<p id="cn-m28-598">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-599"></p><figure><img class="cn-img" id="cn-image-m28-c-58" src="CryptographicBasicConcepts_files/image-m28-c-58.jpg" alt="Figure 3.11 Screenshot of PLABWIN10: Showing the cmd command written in the File Explorer’s address bar."><figcaption>Figure 3.11 Screenshot of PLABWIN10: Showing the cmd command written in the File Explorer’s address bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-602"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m28-603">The command prompt window is displayed. You are already in the <b>C:\PLAB </b>directory.</p>
+
+<p id="cn-m28-604"></p><figure><img class="cn-img" id="cn-image-m28-c-59" src="CryptographicBasicConcepts_files/image-m28-c-59.jpg" alt="Figure 3.12 Screenshot of PLABWIN10: Showing the opened command prompt window."><figcaption>Figure 3.12 Screenshot of PLABWIN10: Showing the opened command prompt window.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-607"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m28-608">Type the following command:</p>
+
+<pre id="cn-m28-609"><code>copy /b “PLAB.png”+PLAB.zip PLAB-new.png
+
+</code></pre>
+
+<p id="cn-m28-610">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-611"></p><figure><img class="cn-img" id="cn-image-m28-c-60" src="CryptographicBasicConcepts_files/image-m28-c-60.jpg" alt="Figure 3.13 Screenshot of PLABWIN10: Showing the typed command to hide the text files in the graphic file."><figcaption>Figure 3.13 Screenshot of PLABWIN10: Showing the typed command to hide the text files in the graphic file.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-615"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m28-616">The command is successfully executed.</p>
+
+<p id="cn-m28-617">Close the command prompt window.</p>
+
+<p id="cn-m28-618"></p><figure><img class="cn-img" id="cn-image-m28-c-61" src="CryptographicBasicConcepts_files/image-m28-c-61.jpg" alt="Figure 3.14 Screenshot of PLABWIN10: Showing the command&amp;#39;s successful outcome and closing the command prompt window."><figcaption>Figure 3.14 Screenshot of PLABWIN10: Showing the command's successful outcome and closing the command prompt window.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-621"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m28-622">In <b>File Explorer</b>, ensure that you are in the <b>C:\PLAB </b>folder.</p>
+
+<p id="cn-m28-623">A new graphics file named <b>PLAB-new.png </b>is now created. The file size is the same as <b>PLAB.png</b>.</p>
+
+<p id="cn-m28-624"></p><figure><img class="cn-img" id="cn-image-m28-c-62" src="CryptographicBasicConcepts_files/image-m28-c-62.jpg" alt="Figure 3.15 Screenshot of PLABWIN10: Showing the sizes of the PLAB and PLAB graphics files."><figcaption>Figure 3.15 Screenshot of PLABWIN10: Showing the sizes of the PLAB and PLAB graphics files.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-627"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m28-628">Double-click <b>PLAB.png </b>and then <b>PLAB-new.png</b>. Note that both the graphics files display the same content. No one will ever come to know that the <b>PLAB-new.png </b>file has hidden content behind it.</p>
+
+<p id="cn-m28-629">Close both the files and minimize the <b>File Explorer </b>window.</p>
+
+<p id="cn-m28-630"></p><figure><img class="cn-img" id="cn-image-m28-c-63" src="CryptographicBasicConcepts_files/image-m28-c-63.jpg" alt="Figure 3.16 Screenshot of PLABWIN10: Showing the PLAB-new.png and PLAB.png files."><figcaption>Figure 3.16 Screenshot of PLABWIN10: Showing the PLAB-new.png and PLAB.png files.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-633"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m28-634">In the <b>Type here to search </b>text box, type the following:</p>
+
+<pre id="cn-m28-635"><code>7-zip File Manager
+
+</code></pre>
+
+<p id="cn-m28-636">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-637">From the search result, select <b>7-Zip File Manager</b>.</p>
+
+<p id="cn-m28-638"></p><figure><img class="cn-img" id="cn-image-m28-c-64" src="CryptographicBasicConcepts_files/image-m28-c-64.jpg" alt="Figure 3.17 Screenshot of PLABWIN10: Showing the search bar with the results and selection of 7-Zip File Manager."><figcaption>Figure 3.17 Screenshot of PLABWIN10: Showing the search bar with the results and selection of 7-Zip File Manager.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-641"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m28-642">The <b>7-Zip File Manager </b>window is displayed.</p>
+
+<p id="cn-m28-643"></p><figure><img class="cn-img" id="cn-image-m28-c-65" src="CryptographicBasicConcepts_files/image-m28-c-65.jpg" alt="Figure 3.18 Screenshot of PLABWIN10: Showing the 7-Zip File Manager window."><figcaption>Figure 3.18 Screenshot of PLABWIN10: Showing the 7-Zip File Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-646"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m28-647">Navigate to the <b>C:\PLAB </b>folder and double-click the <b>PLAB-new.png </b>file.</p>
+
+<p id="cn-m28-648"></p><figure><img class="cn-img" id="cn-image-m28-c-66" src="CryptographicBasicConcepts_files/image-m28-c-66.jpg" alt="Figure 3.19 Screenshot of PLABWIN10: Opening the C:\PLAB folder inside the File Manager and showing the PLAB-new.png file selected."><figcaption>Figure
+ 3.19 Screenshot of PLABWIN10: Opening the C:\PLAB folder inside the 
+File Manager and showing the PLAB-new.png file selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-651"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m28-652">Note that both the text files are displayed.</p>
+
+<p id="cn-m28-653"></p><figure><img class="cn-img" id="cn-image-m28-c-67" src="CryptographicBasicConcepts_files/image-m28-c-67.jpg" alt="Figure 3.20 Screenshot of PLABWIN10: Showing two text files hidden within the PLAB-new.jpg."><figcaption>Figure 3.20 Screenshot of PLABWIN10: Showing two text files hidden within the PLAB-new.jpg.</figcaption></figure><p></p>
+
+<p id="cn-m28-655">Close all open windows.</p>
+
+<h3 id="cn-m28-657"><b>Task 2 - Use Steghide to Hide Data in an Image</b></h3>
+
+<p id="cn-m28-658">Steghide is a tool that needs to be installed on a 
+Linux system, such as Kali Linux. It can hide data in an image or audio 
+file. It can also encrypt the embedded data in an image or audio file. 
+It can generate the output to JPEG, BMP, WAV, and AU files.</p>
+
+<p id="cn-m28-659">In this task, you will use Steghide. To do this, perform the following steps:</p>
+
+<h4 id="cn-m28-660"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-661">Connect to <b>PLABKALI</b>. In the Enter your username text box, type the following:</p>
+
+<pre id="cn-m28-662"><code>root
+
+</code></pre>
+
+<p id="cn-m28-663">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m28-665">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m28-666"></p><figure><img class="cn-img" id="cn-image-m28-c-68" src="CryptographicBasicConcepts_files/image-m28-c-68.jpg" alt="Figure 3.21 Screenshot of PLABKALI: Entering the user credentials and then pressing Enter."><figcaption>Figure 3.21 Screenshot of PLABKALI: Entering the user credentials and then pressing Enter.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-668"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-669">After login, you are on the desktop of PLABKALI. In the menu bar, click <b>Terminal Emulator</b>.</p>
+
+<p id="cn-m28-670"></p><figure><img class="cn-img" id="cn-image-m28-c-69" src="CryptographicBasicConcepts_files/image-m28-c-69.jpg" alt="Figure 3.22 Screenshot of PLABKALI: Showing the Terminal Emulator button highlighted."><figcaption>Figure 3.22 Screenshot of PLABKALI: Showing the Terminal Emulator button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-673"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-674">The terminal window is displayed. You need first to install the <b>Steghide </b>tool. Type the following command:</p>
+
+<pre id="cn-m28-675"><code>apt-get install steghide -y
+
+</code></pre>
+
+<p id="cn-m28-676">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-677"></p><figure><img class="cn-img" id="cn-image-m28-c-70" src="CryptographicBasicConcepts_files/image-m28-c-70.jpg" alt="Figure 3.23 Screenshot of PLABKALI: Entering the command to install steghide in the terminal window."><figcaption>Figure 3.23 Screenshot of PLABKALI: Entering the command to install steghide in the terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-680"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-681">The <b>Steghide </b>installation process starts. The installation process will take a few minutes to complete.</p>
+
+<p id="cn-m28-682"></p><figure><img class="cn-img" id="cn-image-m28-c-71" src="CryptographicBasicConcepts_files/image-m28-c-71.jpg" alt="Figure 3.24 Screenshot of PLABKALI: Showing the installation progress of the steghide tool."><figcaption>Figure 3.24 Screenshot of PLABKALI: Showing the installation progress of the steghide tool.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-685"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-686">The installation completes with an error, which you can ignore.</p>
+
+<p id="cn-m28-687"></p><figure><img class="cn-img" id="cn-image-m28-c-72" src="CryptographicBasicConcepts_files/image-m28-c-72.jpg" alt="Figure 3.25 Screenshot of PLABKALI: Showing the installation completion of steghide."><figcaption>Figure 3.25 Screenshot of PLABKALI: Showing the installation completion of steghide.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-690"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-691">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m28-692"><code>clear
+
+</code></pre>
+
+<p id="cn-m28-693">To view the <b>Steghide </b>help, type the following command:</p>
+
+<pre id="cn-m28-694"><code>steghide --help
+
+</code></pre>
+
+<p id="cn-m28-695">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-696"></p><figure><img class="cn-img" id="cn-image-m28-c-73" src="CryptographicBasicConcepts_files/image-m28-c-73.jpg" alt="Figure 3.26 Screenshot of PLABKALI: Entering the command to view the steghide help."><figcaption>Figure 3.26 Screenshot of PLABKALI: Entering the command to view the steghide help.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-699"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-700">The <b>help </b>parameter displays the list of parameters that can be used with the <b>steghide </b>command.</p>
+
+<p id="cn-m28-701"></p><figure><img class="cn-img" id="cn-image-m28-c-74" src="CryptographicBasicConcepts_files/image-m28-c-74.jpg" alt="Figure 3.27 Screenshot of PLABKALI: Showing the output of the help parameter with the steghide command."><figcaption>Figure 3.27 Screenshot of PLABKALI: Showing the output of the help parameter with the steghide command.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-704"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m28-705">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m28-706"><code>clear
+
+</code></pre>
+
+<p id="cn-m28-707">First, create a new directory named <b>plab</b>. To do this, type the following command:</p>
+
+<pre id="cn-m28-708"><code>mkdir plab
+
+</code></pre>
+
+<p id="cn-m28-709">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-710"></p><figure><img class="cn-img" id="cn-image-m28-c-75" src="CryptographicBasicConcepts_files/image-m28-c-75.jpg" alt="Figure 3.28 Screenshot of PLABKALI: Creating a new directory with the mkdir command."><figcaption>Figure 3.28 Screenshot of PLABKALI: Creating a new directory with the mkdir command.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-713"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m28-714">Let’s navigate inside the <b>plab </b>directory. To do this, type the following command:</p>
+
+<pre id="cn-m28-715"><code>cd plab
+
+</code></pre>
+
+<p id="cn-m28-716">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-717"></p><figure><img class="cn-img" id="cn-image-m28-c-76" src="CryptographicBasicConcepts_files/image-m28-c-76.jpg" alt="Figure 3.29 Screenshot of PLABKALI: Navigating to the plab directory with the cd command."><figcaption>Figure 3.29 Screenshot of PLABKALI: Navigating to the plab directory with the cd command.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-720"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m28-721">You are now inside the <b>plab </b>directory. You need to create a new text file named <b>secret.txt</b>. To do this, type the following command:</p>
+
+<pre id="cn-m28-722"><code>touch secret.txt
+
+</code></pre>
+
+<p id="cn-m28-723">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-724"></p><figure><img class="cn-img" id="cn-image-m28-c-77" src="CryptographicBasicConcepts_files/image-m28-c-77.jpg" alt="Figure 3.30 Screenshot of PLABKALI: Creating a new text file with the touch command."><figcaption>Figure 3.30 Screenshot of PLABKALI: Creating a new text file with the touch command.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-727"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m28-728">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m28-729"><code>clear
+
+</code></pre>
+
+<p id="cn-m28-730">Let’s list the files in the <b>plab </b>directory. To do this, type the following command:</p>
+
+<pre id="cn-m28-731"><code>ls -l
+
+</code></pre>
+
+<p id="cn-m28-732">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-733"></p><figure><img class="cn-img" id="cn-image-m28-c-78" src="CryptographicBasicConcepts_files/image-m28-c-78.jpg" alt="Figure 3.31 Screenshot of PLABKALI: Listing the files in the plab directory."><figcaption>Figure 3.31 Screenshot of PLABKALI: Listing the files in the plab directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-736"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m28-737">Notice that the <b>secret.txt </b>file is now present in the <b>plab </b>directory.</p>
+
+<p id="cn-m28-738"></p><figure><img class="cn-img" id="cn-image-m28-c-79" src="CryptographicBasicConcepts_files/image-m28-c-79.jpg" alt="Figure 3.32 Screenshot of PLABKALI: Showing the secret.txt file in the plab directory."><figcaption>Figure 3.32 Screenshot of PLABKALI: Showing the secret.txt file in the plab directory.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-741"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m28-742">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m28-743"><code>clear
+
+</code></pre>
+
+<p id="cn-m28-744">Now, you will need a graphics file that you need to copy to the <b>plab </b>directory. For the sake of this lab, a graphics file has been downloaded from <b>Google </b>or any other search engine. You can download any graphics file of your choice into the <b>plab </b>directory. For this demonstration, you have a graphics file named <b>practice-labs.jpg</b>.</p>
+
+<p id="cn-m28-745">After copying the file, verify that the file exists in the <b>plab </b>directory. To do this, type the following command:</p>
+
+<pre id="cn-m28-746"><code>ls -l
+
+</code></pre>
+
+<p id="cn-m28-747">Press <b>Enter</b>. Notice that the <b>index.jpeg </b>file exists in the <b>plab </b>directory.</p>
+
+<p id="cn-m28-748"></p><figure><img class="cn-img" id="cn-image-m28-c-80" src="CryptographicBasicConcepts_files/image-m28-c-80.jpg" alt="Figure 3.33 Screenshot of PLABKALI: Showing the text file and a graphic file in the plab directory"><figcaption>Figure 3.33 Screenshot of PLABKALI: Showing the text file and a graphic file in the plab directory</figcaption></figure><p></p>
+
+<h4 id="cn-m28-751"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m28-752">You will now hide the <b>secret.txt </b>file in the <b>index.jpeg </b>file. To do this, type the following command:</p>
+
+<span class="cn-quote" id="cn-m28-753"><b><i>Note: </i></b><i>Two parameters are being used:</i><br><i>ef = is for the file that is being embedded. </i><br><i>cf = is for the file that will contain the embedded file</i></span>
+
+<pre id="cn-m28-754"><code>steghide embed -cf index.jpeg -ef secret.txt
+
+</code></pre>
+
+<p id="cn-m28-755">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-756"></p><figure><img class="cn-img" id="cn-image-m28-c-81" src="CryptographicBasicConcepts_files/image-m28-c-81.jpg" alt="Figure 3.34 Screenshot of PLABKALI: Entering a command to hide the secret.txt file in the practice-labs.jpg file."><figcaption>Figure 3.34 Screenshot of PLABKALI: Entering a command to hide the secret.txt file in the practice-labs.jpg file.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-759"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m28-760">You will be prompted to set a password. Type the following password:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m28-762">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-763">When prompted to re-enter the password, type the following password:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m28-765">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-766"></p><figure><img class="cn-img" id="cn-image-m28-c-82" src="CryptographicBasicConcepts_files/image-m28-c-82.jpg" alt="Figure 3.35 Screenshot of PLABKALI: Entering and re-entering the password."><figcaption>Figure 3.35 Screenshot of PLABKALI: Entering and re-entering the password.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-769"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m28-770">Notice that the message states that the <b>secret.txt </b>file is now embedded in the <b>index.jpeg </b>file.</p>
+
+<p id="cn-m28-771"></p><figure><img class="cn-img" id="cn-image-m28-c-83" src="CryptographicBasicConcepts_files/image-m28-c-83.jpg" alt="Figure 3.36 Screenshot of PLABKALI: Showing the message stating that the secret.txt file is embedded in the index.jpeg file."><figcaption>Figure 3.36 Screenshot of PLABKALI: Showing the message stating that the secret.txt file is embedded in the index.jpeg file.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-774"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m28-775">Clear the screen by entering the following command:</p>
+
+<pre id="cn-m28-776"><code>clear
+
+</code></pre>
+
+<p id="cn-m28-777">For users, the <b>index.jpeg </b>file is a normal 
+graphic file. However, you know that it has a hidden file inside. To 
+extract the hidden file, type the following command:</p>
+
+<pre id="cn-m28-778"><code>steghide extract -sf index.jpeg
+
+</code></pre>
+
+<p id="cn-m28-779">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-780"></p><figure><img class="cn-img" id="cn-image-m28-c-84" src="CryptographicBasicConcepts_files/image-m28-c-84.jpg" alt="Figure 3.37 Screenshot of PLABKALI: Entering the command to extract the file from the graphic file."><figcaption>Figure 3.37 Screenshot of PLABKALI: Entering the command to extract the file from the graphic file.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-783"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m28-784">Since there is password protection, you will be asked to enter the password. Type the following password:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m28-786">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-787"></p><figure><img class="cn-img" id="cn-image-m28-c-85" src="CryptographicBasicConcepts_files/image-m28-c-85.jpg" alt="Figure 3.38 Screenshot of PLABKALI: Entering the password to extract the file."><figcaption>Figure 3.38 Screenshot of PLABKALI: Entering the password to extract the file.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-790"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m28-791">After the password is verified, the file will extract. However, since the <b>secret.txt </b>file already exists in the <b>plab </b>directory,
+ you will be prompted to overwrite this file. In a real-world scenario, 
+this is unlikely to happen that you will be extracting the embedded file
+ in the same directory.</p>
+
+<p id="cn-m28-792">Press the <b>y </b>key.</p>
+
+<p id="cn-m28-793">Notice that the <b>secret.txt </b>is now extracted successfully.</p>
+
+<p id="cn-m28-794"></p><figure><img class="cn-img" id="cn-image-m28-c-86" src="CryptographicBasicConcepts_files/image-m28-c-86.jpg" alt="Figure 3.39 Screenshot of PLABKALI: Showing the extracted file."><figcaption>Figure 3.39 Screenshot of PLABKALI: Showing the extracted file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">80e3ace3-3818-477e-9d50-9fdfea66eb75</span>
+
+<p id="cn-m28-798">Close the terminal window.</p>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m28-801">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-802"><b>Review</b></h2>
+
+<p id="cn-m28-803">Well done, you have completed the <b>Cryptographic Basic Concepts </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">53201292-6b53-48ab-b033-7f7510bf2294</span>
+
+<span class="atom-code hidden">f53b2586-52a4-4876-93e9-ff461577e30e</span>
+
+<span class="atom-code hidden">fcd0fd9a-6acd-44ec-bed7-95743d4abaa3</span>
+
+<span class="atom-code hidden">7c4adecd-1888-4602-84c6-d7307d5c732a</span>
+
+<span class="atom-code hidden">bc9d7fb8-d18d-4614-a051-6848ce71f534</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m28-813">You completed the following exercises:</p>
+
+<ul id="cn-m28-814">
+
+<li id="cn-m28-814">Exercise 1 - Knowing the Cryptographic Concepts</li>
+
+<li id="cn-m28-815">Exercise 2 - Implementing Cryptography</li>
+
+<li id="cn-m28-816">Exercise 3 - Using Steganography</li>
+
+</ul>
+
+<p id="cn-m28-817">You should now be able to:</p>
+
+<ul id="cn-m28-818">
+
+<li id="cn-m28-818">Encrypt Data using CryptoDemo</li>
+
+<li id="cn-m28-819">Decrypt data using CryptoDemo</li>
+
+<li id="cn-m28-820">Key Values</li>
+
+<li id="cn-m28-821">Perform Hashing</li>
+
+<li id="cn-m28-822">Use HashCalc</li>
+
+<li id="cn-m28-823">Hide Documents in a Graphic</li>
+
+<li id="cn-m28-824">Use Steghide to Hide Data in an Image</li>
+
+</ul>
+
+<p id="cn-m28-825">You should now have further knowledge of:</p>
+
+<ul id="cn-m28-826">
+
+<li id="cn-m28-826">Symmetric vs. Asymmetric</li>
+
+<li id="cn-m28-827">Digital Signatures</li>
+
+<li id="cn-m28-828">Key Length</li>
+
+<li id="cn-m28-829">Hashing</li>
+
+<li id="cn-m28-830">Key stretching</li>
+
+<li id="cn-m28-831">Salting</li>
+
+<li id="cn-m28-832">Key Exchange</li>
+
+<li id="cn-m28-833">Elliptical Curve Cryptography</li>
+
+<li id="cn-m28-834">Task 9 - Perfect Forward Secrecy</li>
+
+<li id="cn-m28-835">Quantum</li>
+
+<li id="cn-m28-836">Communications</li>
+
+<li id="cn-m28-837">Blockchain</li>
+
+<li id="cn-m28-838">Cipher Suites</li>
+
+<li id="cn-m28-839">Lightweight Cryptography</li>
+
+<li id="cn-m28-840">Homomorphic Encryption</li>
+
+<li id="cn-m28-841">Computing</li>
+
+<li id="cn-m28-842">Modes of operation</li>
+
+<li id="cn-m28-843">Common use cases</li>
+
+<li id="cn-m28-844">Limitations</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m28-848">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

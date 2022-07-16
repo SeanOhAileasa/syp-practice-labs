@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CybersecurityBackupandRestoreStrategies_files/print-styles.css" rel="stylesheet">
+    <script src="CybersecurityBackupandRestoreStrategies_files/jquery.min.js"></script>
+    <script src="CybersecurityBackupandRestoreStrategies_files/jspdf.js"></script>
+    <script src="CybersecurityBackupandRestoreStrategies_files/from_html.js"></script>
+    <script src="CybersecurityBackupandRestoreStrategies_files/addimage.js"></script>
+    <script src="CybersecurityBackupandRestoreStrategies_files/filesaver.js"></script>
+    <script src="CybersecurityBackupandRestoreStrategies_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="B808g4/G2A9VIR4Jzaa+ZrCojARFJx+lscs9a1KQLaQAP3EJpBMkLlvFhLSmgnTEQBYwTf8KGhTB6WTsJdMTvx5osLgDSkp0v4tKAA6teF4=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Cybersecurity Backup and Restore Strategies</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Redundancy</li><li>Exercise 2 - Replication </li><li>Exercise 3 - Backup Types</li><li>Exercise 4 - Create a System Image Backup</li><li>Exercise 5 - Non-Persistence and Resilience </li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m16-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Backup</div>
+
+<div>Full Backup</div>
+
+<div>Incremental Backup</div>
+
+<div>Differential Backup</div>
+
+<div>Non-persistence</div>
+
+<div>Cloud Storage</div>
+
+<div>On-premise</div>
+
+<div>Simple Volume</div>
+
+<div>System Image</div>
+
+<div>Storage Area Network (SAN)</div>
+
+<div>Virtual Machines (VMs)</div>
+
+<div>Cloud</div>
+
+<div>System Protection Settings</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m16-16">Welcome to the <b>Cybersecurity Backup &amp; Restore Strategies </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-20">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m16-21">
+
+<li id="cn-m16-21">Exercise 1 - Redundancy</li>
+
+<li id="cn-m16-22">Exercise 2 - Replication</li>
+
+<li id="cn-m16-23">Exercise 3 - Backup Types</li>
+
+<li id="cn-m16-24">Exercise 4 - Create a System Image Backup</li>
+
+<li id="cn-m16-25">Exercise 5 - Non-Persistence and Resilience</li>
+
+</ul>
+
+<p id="cn-m16-26">After completing this module, you should be able to:</p>
+
+<ul id="cn-m16-27">
+
+<li id="cn-m16-27">Use Cloud Storage for Backup</li>
+
+<li id="cn-m16-28">Establish an Automated Backup</li>
+
+<li id="cn-m16-29">Initialize and Create a New Simple Volume</li>
+
+<li id="cn-m16-30">Perform a Full Backup in Windows</li>
+
+<li id="cn-m16-31">Perform an Incremental Backup in Windows</li>
+
+<li id="cn-m16-32">Restore Backed Up Data</li>
+
+<li id="cn-m16-33">Configure System Protection Settings</li>
+
+</ul>
+
+<p id="cn-m16-34">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m16-35">
+
+<li id="cn-m16-35">Redundancy</li>
+
+<li id="cn-m16-36">Storage Area Network (SAN)</li>
+
+<li id="cn-m16-37">Virtual Machines (VMs)</li>
+
+<li id="cn-m16-38">On-premises vs. Cloud</li>
+
+<li id="cn-m16-39">Types of Data Backup</li>
+
+<li id="cn-m16-40">Backup Methods</li>
+
+<li id="cn-m16-41">Restoration Order</li>
+
+<li id="cn-m16-42">Last Known Good Configuration</li>
+
+<li id="cn-m16-43">Live Boot Media</li>
+
+<li id="cn-m16-44">High Availability</li>
+
+<li id="cn-m16-45">Scalability</li>
+
+<li id="cn-m16-46">Diversity</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m16-48">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m16-49">2.5 Given a scenario, implement cybersecurity resilience.</p>
+
+<ul id="cn-m16-50">
+
+<li id="cn-m16-50">Redundancy</li>
+
+<li id="cn-m16-51">Replication</li>
+
+<li id="cn-m16-52">On-premise vs. Cloud</li>
+
+<li id="cn-m16-53">Backup Types</li>
+
+<li id="cn-m16-54">Non-persistence</li>
+
+<li id="cn-m16-55">High Availability</li>
+
+<li id="cn-m16-56">Restoration Order</li>
+
+<li id="cn-m16-57">Diversity</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m16-58"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m16-60">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m16-64">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m16-65">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-67"><b>Lab Topology</b></h2>
+
+<p id="cn-m16-68">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m16-69"><img class="cn-img" id="cn-image-m16-c-0" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m16-70">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m16-71">
+
+<li id="cn-m16-71"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m16-72"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m16-73"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m16-74"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m16-75">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="Redundancy">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-76"><b>Exercise 1 - Redundancy</b></h2>
+
+<p id="cn-m16-77">In simple terms, redundancy is a method of duplicating
+ a piece of data or server or any component to ensure that the 
+duplicated one is available to serve the purpose if the primary one 
+fails. For example, you make a redundant copy of the data folder in 
+online storage, which synchronizes from the source folder in real-time. 
+If the source folder is deleted or the system crashes, you can recover 
+the entire folder on another system from the online storage. You always 
+implement redundancy to avoid a single point of failure.</p>
+
+<p id="cn-m16-78">In this exercise, you will learn about redundancy and its related terms.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-80">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m16-81">
+
+<li id="cn-m16-81">Redundancy</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m16-83">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m16-84"><img class="cn-img" id="cn-image-m16-c-1" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m16-85"><b>Redundancy </b></h3>
+
+<p id="cn-m16-86">Redundancy can be added at multiple levels, not just 
+the data. For example, within a server, you can have two hard drives 
+where the files and folders of one hard drive are mirrored to the other.
+ The contents of the second hard drive are overwritten. You can add 
+redundant network interface cards (NICs) or power supplies. You can 
+configure redundant servers in a failover cluster and you can even put 
+up a redundant site, which can be a hot, cold or warm site.</p>
+
+<h4 id="cn-m16-87"><b><i>Geographic Dispersal</i></b></h4>
+
+<p id="cn-m16-88">With the invention of cloud computing, it is easy to 
+geographically disperse your data. You can keep one copy on your system,
+ and another copy can be replicated to the cloud, which in turn, will 
+have replicated that copy of the data for redundancy. When you save a 
+piece of data to the cloud, it is automatically replicated to different 
+geographical locations to ensure that if there is an incident with one 
+geographical location, let’s say floods; the data is still intact in 
+another geographical location.</p>
+
+<p id="cn-m16-89">An alternate method to cloud is to put up your servers
+ in different geographical locations and replicate data. However, it is a
+ costly affair, but the choice of which method to use remains with the 
+organization. For example, a financial institution will spend the money 
+to put up their servers to ensure data privacy and confidentiality. It 
+would not replicate their data to the cloud.</p>
+
+<h4 id="cn-m16-90"><b><i>Disk</i></b></h4>
+
+<p id="cn-m16-91">Each server within an organization would hold some 
+kind of data or another. To be able to safeguard the data, you need to 
+ensure that there is some level of redundancy build. You can implement a
+ Redundant Array of Independent Drives (RAID) to enable redundancy with 
+the hard disks. You must use an operating system that can carry out a 
+RAID and choose either software or hardware RAID to implement. In order 
+to implement a hardware RAID, you need a RAID controller. An example of 
+an operating system that provides the capabilities to carry out a RAID 
+is Windows Server 2019.</p>
+
+<p id="cn-m16-92">There are different levels of RAID that can be 
+enforced. Before executing a specific RAID level, you need to ensure 
+that it meets the business’s objective. For example, if you need fault 
+tolerance, then RAID 0 should not be implemented. Let’s look at the RAID
+ levels for better comprehension.</p>
+
+<p id="cn-m16-93"><b>RAID 0</b>: Known as disk striping. It requires two
+ disks. The data is written in stripes on each of the disks. RAID 0 is 
+mostly used when you need high performance when dealing with heavy read 
+operations. However, it is important to note that if one of the two 
+disks fails, the data is lost.</p>
+
+<p id="cn-m16-94"><b>RAID 1</b>: Known as disk mirroring. It also 
+requires two disks. One disk is mirrored to another disk, and you only 
+get one disk's capacity as the other disk is redundant. It provides high
+ read performance. However, RAID 1 should not be used when you need high
+ write performance.</p>
+
+<p id="cn-m16-95"><b>RAID 5</b>: Known as disk striping with parity. To 
+build RAID 5, you need to have at least three disks. It provides high 
+read performance. However, RAID 5 should not be used when you need high 
+write performance. You also lose 1/3 of the disk storage in total as it 
+is used for parity, which is the extra information stored for recovering
+ a failed disk in RAID. For example, if each hard disk is 100 GB. Then, 
+instead of getting 300 GB, you only get 200 GB. The 100 GB is used for 
+parity.</p>
+
+<p id="cn-m16-96"><b>RAID 6</b>: Known as disk striping with double 
+parity. It works similarly to RAID 5. However, instead of three hard 
+disks, it requires a minimum of four hard disks. It can continue to work
+ even if two hard disks fail. Even though it is good for excellent read 
+operations, it should not be used when there are heavy write operations.
+ It works slower than RAID 5 because RIAD 6 has to write another block 
+of parity information.</p>
+
+<p id="cn-m16-97"><b>RAID 10</b>: Known as disk striping, mirroring, and
+ RAID 1+0. It requires a minimum of four hard disks. When you are 
+looking for excellent write performance and fault tolerance, RAID 10 is 
+the one you should implement. For example, RAID 10 is a perfect fit for 
+database servers that have high write operations. One of the drawbacks 
+is that you lose half of the total disk space. For example, if there are
+ four disks, and each disk is 100 GB, you would lose 200 GB because this
+ is mirrored to the remaining 200 GB.</p>
+
+<h4 id="cn-m16-98"><b><i>Multipathing</i></b></h4>
+
+<p id="cn-m16-99">Other than RAID, you can also use multipathing. With 
+the implementation of multipathing, you need to create several paths 
+from a system to the storage where you need to replicate the data. In 
+the server, you would need several NICs so that the data can go out of 
+the server through them. You would also need to ensure that several 
+paths are available for the data to reach its storage on the network. 
+You need redundant switches, cables, routers, and ports to implement 
+multipathing.</p>
+
+<h4 id="cn-m16-100"><b><i>Network</i></b></h4>
+
+<p id="cn-m16-101">There are different methods to build network 
+redundancy. To start with, you can have redundant NICs or network 
+interface adapters in a server. If one NIC fails, then the redundant one
+ can continue to function. You can also have redundant routers, 
+switches, and even firewalls on the network.</p>
+
+<p id="cn-m16-102">You can also have load balancers that help you to 
+distribute loads to the servers. This helps the servers to provide 
+optimum performance as one server is not overloaded. The load balancers,
+ which are configured on the network, become the front-end for the 
+servers and pass on the requests to the servers depending on the 
+configuration.</p>
+
+<h4 id="cn-m16-103"><b><i>Power</i></b></h4>
+
+<p id="cn-m16-104">Power is the most critical requirement when you need 
+to ensure your data center works. Without power, you cannot run any 
+network device or even servers. Therefore, other than the main power, 
+you also need to have redundant power, which can be achieved by having 
+redundant power supplies within the servers and other network devices.</p>
+
+<p id="cn-m16-105">The redundant power supplies should be connected with
+ an uninterruptible power supply (UPS), which continues to provide power
+ to the server or device in the event that the main power fails. A UPS 
+can either be online or offline. The offline UPS activates when there is
+ no main power supply. The online UPS continues to run along with the 
+main power supply.</p>
+
+<p id="cn-m16-106">In some cases, the generators can also be used. 
+Several large organizations run silent generators that power on as and 
+when the main power supply is interrupted.</p>
+
+<p id="cn-m16-107">Other than the generators, the managed power 
+distribution units (PDUs) are commonly used in data centers. They are 
+meant to take three or more phase inputs and then distribute the power 
+through the one-phase output. They are designed to distribute power to 
+the rack-mounted servers and network devices.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="Replication">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-110"><b>Exercise 2 - Replication </b></h2>
+
+<p id="cn-m16-111">Replication is a method of creating a replica or copy
+ of original data. This can be done on the same server, another server 
+in the same premises, or even another server in a different location. 
+Replication is not only done between servers, it can also be done 
+between a server and storage solutions, such as Network Attached Storage
+ (NAS) or Storage Area Network (SAN). Several other methods can be used 
+for replication.</p>
+
+<p id="cn-m16-112">Replication can be synchronous or asynchronous. When 
+referring to synchronous replication, it creates a copy or replica of 
+data in real-time. When referring to asynchronous replication, it is 
+triggered only at a defined schedule.</p>
+
+<p id="cn-m16-113">In replication, you are essentially creating a copy 
+of the data to ensure that you can retrieve the replicated copy if the 
+source data is lost or corrupt. In this exercise, you will learn about 
+replication on SAN and virtual machines (VMs).</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-115">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m16-116">
+
+<li id="cn-m16-116">Storage Area Network (SAN)</li>
+
+<li id="cn-m16-117">Virtual Machines (VMs)</li>
+
+<li id="cn-m16-118">On-premises vs. Cloud</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m16-120">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m16-121"><img class="cn-img" id="cn-image-m16-c-2" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-2.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m16-122"><b>Storage Area Network (SAN) </b></h3>
+
+<p id="cn-m16-123">SAN is one of the primary methods of data backup. 
+However, with SANs, it is easier to perform replication from one 
+location to another location, which can be offsite. The replication is 
+extremely fast as compared to other backup and replication methods.</p>
+
+<p id="cn-m16-124">You can either perform the SAN-to-SAN replication. 
+This method quickly pushes a large amount of data as a replica on the 
+secondary SAN, which can be deployed on an offsite location. On the 
+other hand, you can use SAN snapshots, which replicates only the 
+point-in-time data to another SAN, otherwise known as asynchronous 
+replication.</p>
+
+<h3 id="cn-m16-125"><b>Virtual Machines (VMs)</b></h3>
+
+<p id="cn-m16-126">Virtual machines or VMs work just like any normal 
+system or server, with the exception that they do not have any hardware.
+ They run on a server and use its virtual hardware to run. Virtual 
+machines running business-critical applications or hosting critical data
+ also need to be safeguarded from failures. Replication is the method 
+that can be used to ensure if the running VM fails, the replicated VM 
+can be restored and back online in a matter of minutes.</p>
+
+<p id="cn-m16-127">VM replication can be of two types. The first type is
+ real-time replication. When the data is being written to the VM, the 
+entire VM is being replicated to another location or server. This type 
+of replication provides the exact copy of the VM. The second type is the
+ point-in-time replication, which is scheduled at a specific time. This 
+type of replication only provides the replica, if required to restore, 
+from the time when it was replicated.</p>
+
+<h3 id="cn-m16-128"><b>On-premises vs. Cloud</b></h3>
+
+<p id="cn-m16-129">Data replication can either be done on-premise or in 
+the cloud. For example, you can replicate all your data to SAN, which is
+ located on-premise. The SAN can then replicate the information to 
+another SAN, which is located in another premise or location.</p>
+
+<p id="cn-m16-130">The data can also be replicated to the cloud. 
+Microsoft OneDrive or DropBox are two examples that can use their 
+desktop utilities to replicate the data to the cloud. The benefit is 
+that the data is always available. It can be accessed from anywhere and 
+at any given point in time. This is not an advantage with the on-premise
+ replication, as you may have to be physically available to retrieve the
+ replicated data.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="BackupTypes">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-133"><b>Exercise 3 - Backup Types</b></h2>
+
+<p id="cn-m16-134">There are different types of backups that you can 
+perform. You can back up data on the same local system, an external 
+drive, another networked server, or even the cloud. Each backup type has
+ its pros and cons. For example, for cloud backup, you need an Internet 
+connection. However, the biggest advantage is that you can connect from 
+anywhere globally and retrieve data or synchronize new files with the 
+existing backup as long as you have an Internet connection.</p>
+
+<p id="cn-m16-135">In this exercise, you will learn to use Microsoft 
+OneDrive for backing up files in the cloud. You will also learn to 
+establish an automated backup.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-137">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m16-138">
+
+<li id="cn-m16-138">Types of Data Backup</li>
+
+</ul>
+
+<p id="cn-m16-139">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m16-140">
+
+<li id="cn-m16-140">Use Cloud Storage for Backup</li>
+
+<li id="cn-m16-141">Establish an Automated Backup</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m16-143">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m16-144">
+
+<li id="cn-m16-144"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m16-145"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m16-146"><img class="cn-img" id="cn-image-m16-c-3" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-3.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m16-147"><b>Types of Data Backup </b></h3>
+
+<p id="cn-m16-148">To prevent data loss, you can back up your data. 
+Backing up data means that you are making a redundant copy of the data. 
+It could be on a DVD, USB drive, or a cloud drive.</p>
+
+<p id="cn-m16-149">For example, you may suffer data loss by accidentally
+ deleting files. However, if you have the latest copy backed up on a 
+cloud drive, you could restore the files.</p>
+
+<p id="cn-m16-150">When you backup your important data on a USB drive, 
+DVD, network location, or in a cloud drive, you need to ensure that you 
+do not end up backing up each file on your system. This is because you 
+would exhaust the space on the backup drive. You should backup only the 
+files that are important and of use to you. For example, you would 
+probably not want to backup an application installer that is readily 
+available on the Internet.</p>
+
+<p id="cn-m16-151">There are a few types of data backup:</p>
+
+<h4 id="cn-m16-152"><b><i>Full backup </i></b></h4>
+
+<p id="cn-m16-153">As the name indicates, a full backup backs up all the
+ files or folders you selected. You can also create a full backup of an 
+entire drive. A full backup takes a longer time to complete as each file
+ and folder is backed up. It is also important to note that a full 
+backup is faster to restore as you are restoring from a single copy of 
+the backup.</p>
+
+<p id="cn-m16-154">Summary of features of a full backup:</p>
+
+<ul id="cn-m16-155">
+
+<li id="cn-m16-155"><b>Data backup: </b>Complete or all data</li>
+
+<li id="cn-m16-156"><b>Backup speed: </b>Slowest</li>
+
+<li id="cn-m16-157"><b>Restore speed: </b>Fast</li>
+
+<li id="cn-m16-158"><b>Storage space: </b>High</li>
+
+</ul>
+
+<h4 id="cn-m16-159"><b><i>Incremental backup </i></b></h4>
+
+<p id="cn-m16-160">An incremental backup is done after a full backup has
+ been taken. It backs up the files and folders that are either new or 
+modified since the last backup, which could be any type of backup. For 
+example, let’s assume that you have taken a full backup on Monday. On 
+Tuesday, you run the incremental backup. It will only backup files that 
+have changed since Monday. If you run another incremental backup on 
+Wednesday, it will backup only the files that have changed since 
+Tuesday.</p>
+
+<p id="cn-m16-161">Summary of features of an incremental backup:</p>
+
+<ul id="cn-m16-162">
+
+<li id="cn-m16-162"><b>Data backup: </b>Only new or modified files and folders</li>
+
+<li id="cn-m16-163"><b>Backup speed: </b>Fast</li>
+
+<li id="cn-m16-164"><b>Restore speed: </b>Moderate</li>
+
+<li id="cn-m16-165"><b>Storage space: </b>Lowest</li>
+
+</ul>
+
+<h4 id="cn-m16-166"><b><i>Differential backup </i></b></h4>
+
+<p id="cn-m16-167">A differential backup is done after a full backup has
+ been taken. It backs up the files and folders that are either new or 
+modified since the last full backup. For example, let’s assume that you 
+have taken a full backup on Monday. On Tuesday, you run the differential
+ backup. It will only backup files that have been changed or created 
+since Monday. If you run another differential backup on Wednesday, it 
+will backup all files that have changed or created since Monday.</p>
+
+<p id="cn-m16-168">Summary of features of a differential backup:</p>
+
+<ul id="cn-m16-169">
+
+<li id="cn-m16-169"><b>Data backup: </b>All data since last full backup</li>
+
+<li id="cn-m16-170"><b>Backup speed: </b>Moderate</li>
+
+<li id="cn-m16-171"><b>Restore speed: </b>Fast</li>
+
+<li id="cn-m16-172"><b>Storage space: </b>Moderate</li>
+
+</ul>
+
+<h3 id="cn-m16-173"><b>Task 2 - Use Cloud Storage for Backup</b></h3>
+
+<p id="cn-m16-174">Microsoft OneDrive is a built-in utility in Windows 
+10. If you have a Hotmail or Outlook account, you can use this utility 
+to back up your data in the OneDrive storage. When you use this utility,
+ you can configure it to keep a copy of the data on your local system 
+and also one copy on OneDrive. As you make changes to the local data, 
+the changes are replicated to OneDrive instantly if your Internet 
+connection is on.</p>
+
+<span class="cn-quote" id="cn-m16-175"><b><i>Note: </i></b><i>It is 
+important to note that Microsoft continues to make changes to the 
+OneDrive wizard. Therefore, you may see a slight variation in the steps 
+that are being performed in this lab.</i></span>
+
+<p id="cn-m16-176">In this task, you will learn to use OneDrive as cloud storage for backup.</p>
+
+<span class="cn-alert" id="cn-m16-177"><b>Alert: </b>In this task, you 
+will need to use your own Hotmail.com or Outlook.com E-mail. If you do 
+not have one, you can set up one and complete this task with your 
+account. Alternatively, you can use this task as a demonstration only.</span>
+
+<h4 id="cn-m16-178"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-179">Ensure you have turned on all the required devices. Connect to <b>PLABWIN10</b>. In the <b>Type here to search </b>text box, type the following:</p>
+
+<pre id="cn-m16-180"><code>Onedrive
+
+</code></pre>
+
+<p id="cn-m16-181">Select <b>OneDrive </b>from the search result.</p>
+
+<p id="cn-m16-182"></p><figure><img class="cn-img" id="cn-image-m16-c-4" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-4.jpg" alt="Figure 3.1 Screenshot of PLABWIN10: Onedrive is typed into the search bar, and OneDrive is selected from the search results."><figcaption>Figure 3.1 Screenshot of PLABWIN10: Onedrive is typed into the search bar, and OneDrive is selected from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-185"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-186">The <b>Microsoft OneDrive </b>wizard is displayed. On the <b>Set up OneDrive </b>page, type the E-mail account in the text box, and click <b>Sign in</b>.</p>
+
+<p id="cn-m16-187"></p><figure><img class="cn-img" id="cn-image-m16-c-5" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-5.jpg" alt="Figure 3.2 Screenshot of PLABWIN10: Showing the E-mail address entered in the Microsoft OneDrive wizard Set up Onedrive page."><figcaption>Figure 3.2 Screenshot of PLABWIN10: Showing the E-mail address entered in the Microsoft OneDrive wizard Set up Onedrive page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-190"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-191">In the <b>Enter password </b>text box, type the password and click <b>Sign in</b>.</p>
+
+<p id="cn-m16-192"></p><figure><img class="cn-img" id="cn-image-m16-c-6" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-6.jpg" alt="Figure 3.3 Screenshot of PLABWIN10: Showing the password entered in the Microsoft OneDrive wizard."><figcaption>Figure 3.3 Screenshot of PLABWIN10: Showing the password entered in the Microsoft OneDrive wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-195"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-196">On the <b>Your OneDrive folder </b>page, keep the default path and click <b>Next</b>.</p>
+
+<p id="cn-m16-197"></p><figure><img class="cn-img" id="cn-image-m16-c-7" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-7.jpg" alt="Figure 3.4 Screenshot of PLABWIN10: Showing Your OneDrive folder page with the default file path for the Onedrive folder. The Next button is selected."><figcaption>Figure
+ 3.4 Screenshot of PLABWIN10: Showing Your OneDrive folder page with the
+ default file path for the Onedrive folder. The Next button is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-200"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-201">You may be shown an ad page during the <b>OneDrive </b>setup. Click <b>Not now</b>.</p>
+
+<p id="cn-m16-202"></p><figure><img class="cn-img" id="cn-image-m16-c-8" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-8.jpg" alt="Figure 3.5 Screenshot of PLABWIN10: Showing an advert for Microsoft 365 Personal in the Onedrive wizard. The Not now button is selected."><figcaption>Figure
+ 3.5 Screenshot of PLABWIN10: Showing an advert for Microsoft 365 
+Personal in the Onedrive wizard. The Not now button is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-205"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-206">On the <b>Get to know your OneDrive </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m16-207"></p><figure><img class="cn-img" id="cn-image-m16-c-9" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-9.jpg" alt="Figure 3.6 Screenshot of PLABWIN10: Showing the Get to know your OneDrive page with the Next button selected."><figcaption>Figure 3.6 Screenshot of PLABWIN10: Showing the Get to know your OneDrive page with the Next button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-210"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-211">On the <b>Share files and folders </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m16-212"></p><figure><img class="cn-img" id="cn-image-m16-c-10" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-10.jpg" alt="Figure 3.7 Screenshot of PLABWIN10: Clicking Next on the Share files and folder page."><figcaption>Figure 3.7 Screenshot of PLABWIN10: Clicking Next on the Share files and folder page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-215"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-216">On the <b>All your files, ready and on-demand </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m16-217"></p><figure><img class="cn-img" id="cn-image-m16-c-11" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-11.jpg" alt="Figure 3.8 Screenshot of PLABWIN10: Clicking Next on the All your files, ready and on-demand page."><figcaption>Figure 3.8 Screenshot of PLABWIN10: Clicking Next on the All your files, ready and on-demand page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-221"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-222">On the <b>Get the mobile app </b>page, click <b>Later</b>.</p>
+
+<p id="cn-m16-223"></p><figure><img class="cn-img" id="cn-image-m16-c-12" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-12.jpg" alt="Figure 3.9 Screenshot of PLABWIN10: Clicking Later on the Get the mobile app page."><figcaption>Figure 3.9 Screenshot of PLABWIN10: Clicking Later on the Get the mobile app page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-226"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-227">On the <b>Your OneDrive is ready for you </b>page, click <b>Open my OneDrive folder</b>.</p>
+
+<p id="cn-m16-228"></p><figure><img class="cn-img" id="cn-image-m16-c-13" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-13.jpg" alt="Figure 3.10 Screenshot of PLABWIN10: Clicking Open my OneDrive folder on the Your OneDrive is ready for you page."><figcaption>Figure 3.10 Screenshot of PLABWIN10: Clicking Open my OneDrive folder on the Your OneDrive is ready for you page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-231"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m16-232">The <b>File Explorer </b>opens automatically, displaying the <b>OneDrive </b>folder. Click <b>X </b>to close the <b>File Explorer </b>window.</p>
+
+<p id="cn-m16-233"></p><figure><img class="cn-img" id="cn-image-m16-c-14" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-14.jpg" alt="Figure 3.11 Screenshot of PLABWIN10: Showing the OneDrive folder in File Explorer with the [X] close button selected."><figcaption>Figure 3.11 Screenshot of PLABWIN10: Showing the OneDrive folder in File Explorer with the [X] close button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-236"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m16-237">In the system tray, click the up arrow and notice 
+that a cloud icon appears. Keep your mouse cursor over this icon for a 
+few seconds. A notification appears that it is up to date.</p>
+
+<p id="cn-m16-238"></p><figure><img class="cn-img" id="cn-image-m16-c-15" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-15.jpg" alt="Figure 3.12 Screenshot of PLABWIN10: Showing the Microsoft OneDrive icon in the system tray with a notification stating ‘OneDrive Up to date’."><figcaption>Figure
+ 3.12 Screenshot of PLABWIN10: Showing the Microsoft OneDrive icon in 
+the system tray with a notification stating ‘OneDrive Up to date’.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-241"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m16-242">Right-click on this icon and select <b>Settings</b>.</p>
+
+<p id="cn-m16-243"></p><figure><img class="cn-img" id="cn-image-m16-c-16" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-16.jpg" alt="Figure 3.13 Screenshot of PLABWIN10: Showing the OneDrive icon in the system tray has been right-clicked and Settings has been selected in the context menu."><figcaption>Figure
+ 3.13 Screenshot of PLABWIN10: Showing the OneDrive icon in the system 
+tray has been right-clicked and Settings has been selected in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-246"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m16-247">The <b>Microsoft OneDrive </b>dialog box is displayed. Ensure that you are on the <b>Account </b>tab.</p>
+
+<p id="cn-m16-248">Click <b>Choose folders</b>.</p>
+
+<p id="cn-m16-249"></p><figure><img class="cn-img" id="cn-image-m16-c-17" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-17.jpg" alt="Figure 3.14 Screenshot of PLABWIN10: Showing the Microsoft OneDrive dialog box with the Account tab active and the Choose folders button highlighted."><figcaption>Figure
+ 3.14 Screenshot of PLABWIN10: Showing the Microsoft OneDrive dialog box
+ with the Account tab active and the Choose folders button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-252"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m16-253">Notice that folders that were listed in <b>File Explorer </b>are displayed.</p>
+
+<p id="cn-m16-254"></p><figure><img class="cn-img" id="cn-image-m16-c-18" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-18.jpg" alt="Figure 3.15 Screenshot of PLABWIN10: Showing the Sync your OneDrive files to this PC page with the Sync all files and folders in OneDrive checkbox ticked, and the list of files and folders; Files not in a folder, Documents and Pictures. Ok is selected."><figcaption>Figure
+ 3.15 Screenshot of PLABWIN10: Showing the Sync your OneDrive files to 
+this PC page with the Sync all files and folders in OneDrive checkbox 
+ticked, and the list of files and folders; Files not in a folder, 
+Documents and Pictures. Ok is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-257"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m16-258">Open <b>File Explorer</b>. In the left pane, notice that the <b>OneDrive </b>node
+ has appeared. Select this node. The right pane displays the files and 
+folders that have been synchronized. When you select a folder to 
+synchronize, it will appear here.</p>
+
+<p id="cn-m16-259"></p><figure><img class="cn-img" id="cn-image-m16-c-19" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-19.jpg" alt="Figure 3.16 Screenshot of PLABWIN10: Showing the synchronized folders under the OneDrive node in File Explorer."><figcaption>Figure 3.16 Screenshot of PLABWIN10: Showing the synchronized folders under the OneDrive node in File Explorer.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-262"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m16-263">In the right pane, right-click to select <b>New </b>and then select <b>Folder</b>.</p>
+
+<p id="cn-m16-264"></p><figure><img class="cn-img" id="cn-image-m16-c-20" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-20.jpg" alt="Figure 3.17 Screenshot of PLABWIN10: Showing the OneDrive folder in File Explorer. The Right-click context menu is shown with New&amp;gt;Folder selected."><figcaption>Figure
+ 3.17 Screenshot of PLABWIN10: Showing the OneDrive folder in File 
+Explorer. The Right-click context menu is shown with New&gt;Folder 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-267"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m16-268">Name the folder as <b>PLAB</b>.</p>
+
+<p id="cn-m16-269">Close <b>File Explorer </b>and the <b>Microsoft OneDrive </b>dialog boxes.</p>
+
+<p id="cn-m16-270"></p><figure><img class="cn-img" id="cn-image-m16-c-21" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-21.jpg" alt="Figure 3.18 Screenshot of PLABWIN10: The newly created folder is shown as PLAB in the OneDrive. The [X] Close button of File Explorer is selected."><figcaption>Figure
+ 3.18 Screenshot of PLABWIN10: The newly created folder is shown as PLAB
+ in the OneDrive. The [X] Close button of File Explorer is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-273"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m16-274">In the system tray, click the up arrow, right-click the <b>Microsoft OneDrive </b>icon and then select <b>View online</b>.</p>
+
+<p id="cn-m16-275"></p><figure><img class="cn-img" id="cn-image-m16-c-22" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-22.jpg" alt="Figure 3.19 Screenshot of PLABWIN10: Showing the right-click context menu for OneDrive with the option View online selected."><figcaption>Figure 3.19 Screenshot of PLABWIN10: Showing the right-click context menu for OneDrive with the option View online selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-279"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m16-280">When prompted to choose the language, click <b>Stay in: United States - English</b>.</p>
+
+<p id="cn-m16-281"></p><figure><img class="cn-img" id="cn-image-m16-c-23" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-23.jpg" alt="Figure 3.20 Screenshot of PLABWIN10: Showing a dialog box prompting to change the language. Stay In: United States - English is selected."><figcaption>Figure
+ 3.20 Screenshot of PLABWIN10: Showing a dialog box prompting to change 
+the language. Stay In: United States - English is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-284"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m16-285">The <b>Microsoft Edge </b>window will be displayed with the <b>Microsoft OneDrive </b>page loaded. Click <b>Sign in to your account</b>.</p>
+
+<p id="cn-m16-286">Use the credentials that you had used with the <b>Microsoft OneDrive </b>utility.</p>
+
+<p id="cn-m16-287">After signing in, if prompted with a notification to save the password, click <b>No</b>.</p>
+
+<p id="cn-m16-288"></p><figure><img class="cn-img" id="cn-image-m16-c-24" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-24.jpg" alt="Figure 3.21 Screenshot of PLABWIN10: Showing the Microsoft OneDrive Sign in Webpage."><figcaption>Figure 3.21 Screenshot of PLABWIN10: Showing the Microsoft OneDrive Sign in Webpage.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-291"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m16-292">When prompted to stay signed in, click <b>No</b>.</p>
+
+<span class="cn-quote" id="cn-m16-293"><b><i>Note: </i></b><i>If prompted, choose not to save the password.</i></span>
+
+<p id="cn-m16-294"></p><figure><img class="cn-img" id="cn-image-m16-c-25" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-25.jpg" alt="Figure 3.22 Screenshot of PLABWIN10: Showing the Stay signed in? Microsoft dialog box. The No button is highlighted."><figcaption>Figure 3.22 Screenshot of PLABWIN10: Showing the Stay signed in? Microsoft dialog box. The No button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-297"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m16-298">On the <b>OneDrive </b>window, notice that your files are already synchronized.</p>
+
+<p id="cn-m16-299"></p><figure><img class="cn-img" id="cn-image-m16-c-26" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-26.jpg" alt="Figure 3.23 Screenshot of PLABWIN10: Displaying the synchronized files on the OneDrive account."><figcaption>Figure 3.23 Screenshot of PLABWIN10: Displaying the synchronized files on the OneDrive account.</figcaption></figure><p></p>
+
+<h3 id="cn-m16-301"><b>Task 3 - Establish an Automated Backup  </b></h3>
+
+<p id="cn-m16-302">Asking a user to manually launch a backup when they 
+have the time and remembers to do so would be error-prone and 
+unreliable. To make sure that regular backups are taken, Windows 
+provides an automated backup tool.</p>
+
+<p id="cn-m16-303">In this task, you will learn to establish an automated backup.</p>
+
+<h4 id="cn-m16-304"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-305">Ensure that you have powered on the required devices. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m16-306">Type <b>Settings </b>in the <b>Type here to search </b>textbox and click on the <b>Settings </b>app.</p>
+
+<p id="cn-m16-307"></p><figure><img class="cn-img" id="cn-image-m16-c-27" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-27.jpg" alt="Figure 3.24 Screenshot of PLABWIN10: Showing settings typed in the Type here to search text box. Settings is selected from the search results."><figcaption>Figure
+ 3.24 Screenshot of PLABWIN10: Showing settings typed in the Type here 
+to search text box. Settings is selected from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-309"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-310">On the <b>Windows Settings </b>page, click the <b>Update &amp; Security </b>option.</p>
+
+<p id="cn-m16-311"></p><figure><img class="cn-img" id="cn-image-m16-c-28" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-28.jpg" alt="Figure 3.25 Screenshot of PLABWIN10: Clicking the Update &amp;amp; Security link on the Windows Settings page."><figcaption>Figure 3.25 Screenshot of PLABWIN10: Clicking the Update &amp; Security link on the Windows Settings page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-313"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-314">In the left pane, click <b>Backup</b>.</p>
+
+<p id="cn-m16-315"></p><figure><img class="cn-img" id="cn-image-m16-c-29" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-29.jpg" alt="Figure 3.26 Screenshot of PLABWIN10: Showing the Windows Settings page. The Backup menu option in the left pane is selected."><figcaption>Figure 3.26 Screenshot of PLABWIN10: Showing the Windows Settings page. The Backup menu option in the left pane is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-317"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-318">In the middle of the screen, under <b>Looking for an older backup, </b>find and click on the&nbsp;<b>Go to Backup and Restore&nbsp;</b>link.</p>
+
+<span class="cn-quote" id="cn-m16-319"><b><i>Note: </i></b><i>You are 
+not actually looking for an older backup from Windows 7. This just 
+happens to be how the menu options are spelled out in Windows for this 
+backup service. The backup service was available with Windows 7.</i></span>
+
+<p id="cn-m16-320"></p><figure><img class="cn-img" id="cn-image-m16-c-30" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-30.jpg" alt="Figure 3.27 Screenshot of PLABWIN10: Showing the Windows Settings page. The Go To Backup and Restore (Windows 7) link is selected."><figcaption>Figure
+ 3.27 Screenshot of PLABWIN10: Showing the Windows Settings page. The Go
+ To Backup and Restore (Windows 7) link is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-322"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-323">Under the <b>Backup </b>heading, click the&nbsp;<b>Set up backup&nbsp;</b>option on the right.</p>
+
+<p id="cn-m16-324"></p><figure><img class="cn-img" id="cn-image-m16-c-31" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-31.jpg" alt="Figure 3.28 Screenshot of PLABWIN10: Showing the Back up or restore your files page on the Backup and Restore (Windows 7) window."><figcaption>Figure
+ 3.28 Screenshot of PLABWIN10: Showing the Back up or restore your files
+ page on the Backup and Restore (Windows 7) window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-326"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-327">After a short delay, the <b>Set up backup </b>window appears. Click the <b>Save on a network </b>button.</p>
+
+<p id="cn-m16-328"></p><figure><img class="cn-img" id="cn-image-m16-c-32" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-32.jpg" alt="Figure 3.29 Screenshot of PLABWIN10: Showing the Set up backup dialog box. The Save on a network… button is selected."><figcaption>Figure 3.29 Screenshot of PLABWIN10: Showing the Set up backup dialog box. The Save on a network… button is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-330"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-331">In the <b>Select a network location </b>field, type in:</p>
+
+<pre id="cn-m16-332"><code>\\PLABDC01\IT\
+
+</code></pre>
+
+<p id="cn-m16-333">In the <b>Username </b>field, type the following:</p>
+
+<pre id="cn-m16-334"><code>practicelabs\administrator
+
+</code></pre>
+
+<p id="cn-m16-335">In the <b>Password </b>field type:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m16-337">Click <b>OK</b>.</p>
+
+<span class="cn-alert" id="cn-m16-338"><b>Alert: </b>Here, you will be 
+saving the backups to the domain controller server for convenience. 
+However, in a large network, you would likely have a dedicated storage 
+device set aside for backups. The device would be used for backups 
+across the network. Another option would be an external drive dedicated 
+to this single machine.  But you would not typically use a domain 
+controller server for backups.</span>
+
+<p id="cn-m16-339"><img class="cn-img" id="cn-image-m16-c-33" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-33.jpg" alt="Practice Labs screenshot.">Figure
+ 3.30 Screenshot of PLABWIN10: Showing the network location and user 
+credentials entered on the Select a network location page on the Set up 
+backup window. OK is selected.</p>
+
+<h4 id="cn-m16-340"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-341">The <b>Set Up Backup </b>window calculates the available free space and lists the new destination you just specified.</p>
+
+<p id="cn-m16-342">Click <b>Next</b>.</p>
+
+<h4 id="cn-m16-345"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-346">Below the <b>What do you want to back up? </b>page, select the&nbsp;<b>Let me choose&nbsp;</b>option.</p>
+
+<span class="cn-quote" id="cn-m16-347"><b><i>Note:&nbsp;</i></b><i>For convenience, Windows provides the </i><b><i>Let Windows choose&nbsp;</i></b><i>option
+ here. These kinds of options are great for installing software and 
+storing files, but we would be losing control and visibility in this 
+case. You want to be able to specify exactly what you want to be backed 
+up. So, the </i><b><i>Let me choose&nbsp;</i></b><i>option is generally your best choice.</i></span>
+
+<p id="cn-m16-348">Click <b>Next</b>.</p>
+
+<p id="cn-m16-349"><img class="cn-img" id="cn-image-m16-c-35" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-35.jpg" alt="Practice Labs screenshot.">Figure
+ 3.32 Screenshot of PLABWIN10: Showing Let me choose selected on the 
+What do you want to back up page. The Next button is highlighted.</p>
+
+<h4 id="cn-m16-350"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-351">You need to now specify what needs to be backed up.</p>
+
+<p id="cn-m16-352">Under the <b>Data Files </b>section, uncheck all items but except make sure <b>Jane Brown Drive </b>is <b>checked</b>.</p>
+
+<p id="cn-m16-353">Under the <b>Computer </b>section, clear the&nbsp;<b>Local Disk (C:) checkbox</b>.</p>
+
+<p id="cn-m16-354">Clear the&nbsp;<b>Include a system of drives: System Reserved, (C:)&nbsp;</b>option.</p>
+
+<p id="cn-m16-355">Click <b>Next</b>.</p>
+
+<h4 id="cn-m16-359"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m16-360">On the <b>Review your backup settings </b>page, review the settings and then click on the&nbsp;<b>Change schedule&nbsp;</b>link in the lower part of the window.</p>
+
+<h4 id="cn-m16-363"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m16-364">In the <b>How often do you want to back up? </b>page, select the&nbsp;<b>Run backup on a schedule&nbsp;</b>option.</p>
+
+<p id="cn-m16-365">Specify <b>Weekly </b>and choose a day and time, and click on <b>OK</b>.</p>
+
+<span class="cn-quote" id="cn-m16-366"><b><i>Note:&nbsp;</i></b><i>If 
+your data files and documents change significantly every day, you should
+ consider a daily backup.  Consider how long it would take you to 
+recover a week’s work when you make this selection.</i></span>
+
+<h4 id="cn-m16-369"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m16-370">On the <b>Review your backup settings </b>page, click <b>Save settings and exit</b>.</p>
+
+<h4 id="cn-m16-374"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m16-375">Keeping an eye on the storage consumed as backups are
+ taken is a good way to make sure you don’t consume all available space 
+on the backup media. This backup is done to a domain controller rather 
+than a dedicated backup storage device for simplicity in this exercise.</p>
+
+<h4 id="cn-m16-378"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m16-379">When the backup is complete, the screen shows you the
+ size of the backup. It also provides a link at the bottom of the screen
+ for you to change settings that define what is backed up and when.</p>
+
+<p id="cn-m16-380">There is also a <b>Back up now </b>button in the upper right of the screen, allowing you to re-run the full backup after changing settings.</p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m16-386">Exit out of the <b>Backup and Restore </b>window and close the <b>Settings </b>app.</p>
+< <a href="https://github.com/SeanOhAileasa" id="CreateaSystemImageBackup">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-391"><b>Exercise 4 - Create a System Image Backup</b></h2>
+
+<p id="cn-m16-392">Backing up your computer is an essential task to 
+protect the operating system, applications, and personal data files from
+ issues such as disk failure. Different operating systems have different
+ tools and utilities to perform backups. For example, Windows has the 
+Backup tool. Linux has several command-based tools.</p>
+
+<p id="cn-m16-393">In this exercise, you will use Windows System Image 
+backup to create an image of a Windows 10 computer. This image will 
+capture all of the system settings.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-395">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m16-396">
+
+<li id="cn-m16-396">Initialize and Create a New Simple Volume</li>
+
+<li id="cn-m16-397">Perform a Full Backup in Windows</li>
+
+<li id="cn-m16-398">Perform an Incremental Backup in Windows</li>
+
+<li id="cn-m16-399">Restore Backed Up Data</li>
+
+</ul>
+
+<p id="cn-m16-400">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m16-401">
+
+<li id="cn-m16-401">Backup Methods</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m16-403">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m16-404">
+
+<li id="cn-m16-404"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m16-405"><b>PLABDM01 </b>- Domain Member (Windows Server 2019)</li>
+
+</ul>
+
+<p id="cn-m16-407"><img class="cn-img" id="cn-image-m16-c-42" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-42.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m16-408"><b>Task 1 - Initialize and Create a New Simple Volume</b></h3>
+
+<p id="cn-m16-409">After successfully adding the secondary virtual hard 
+disk, you will use Disk Management to initialize, then create a simple 
+volume. A simple volume can be created on formatted or unformatted 
+disks. You can create a simple volume on the same disk or another disk 
+if available in the system.</p>
+
+<p id="cn-m16-410">This volume will be used as storage for the system image backup.</p>
+
+<h4 id="cn-m16-411"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-412">Ensure that all the required devices are powered on. Connect to <b>PLABDM01</b></p>
+
+<p id="cn-m16-413">Close the <b>Server Manager </b>window.</p>
+
+<p id="cn-m16-414"></p><figure><img class="cn-img" id="cn-image-m16-c-43" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-43.jpg" alt="Figure 4.1 Screenshot of PLABDM01: Closing the Server Manager window."><figcaption>Figure 4.1 Screenshot of PLABDM01: Closing the Server Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-416"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-417">Right-click <b>Start </b>and select <b>Disk Management</b>.</p>
+
+<p id="cn-m16-418"></p><figure><img class="cn-img" id="cn-image-m16-c-44" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-44.jpg" alt="Figure 4.2 Screenshot of PLABDM01: Right-clicking the Start charm and then selecting the Disk Management option."><figcaption>Figure 4.2 Screenshot of PLABDM01: Right-clicking the Start charm and then selecting the Disk Management option.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-420"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-421">On the left pane of <b>Disk 1</b>, right-click and select <b>Online</b>.</p>
+
+<p id="cn-m16-422"></p><figure><img class="cn-img" id="cn-image-m16-c-45" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-45.jpg" alt="Figure 4.3 Screenshot of PLABDM01: Right-clicking Disk 1 and selecting Online from the context menu."><figcaption>Figure 4.3 Screenshot of PLABDM01: Right-clicking Disk 1 and selecting Online from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-424"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-425">Notice that the <b>Disk 1 </b>status has changed from <b>Offline </b>to <b>Not Initialized</b>.</p>
+
+<p id="cn-m16-426">Right-click and select <b>Initialize Disk</b>.</p>
+
+<p id="cn-m16-427"></p><figure><img class="cn-img" id="cn-image-m16-c-46" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-46.jpg" alt="Figure 4.4 Screenshot of PLABDM01: Right-clicking Disk 1 and selecting Initialize Disk from the context menu."><figcaption>Figure 4.4 Screenshot of PLABDM01: Right-clicking Disk 1 and selecting Initialize Disk from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-429"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-430">In the <b>Initialize Disk </b>dialog box, keep the default settings, and click <b>OK</b>.</p>
+
+<p id="cn-m16-431"></p><figure><img class="cn-img" id="cn-image-m16-c-47" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-47.jpg" alt="Figure 4.5 Screenshot of PLABDM01: Clicking OK on the Initialize Disk dialog box."><figcaption>Figure 4.5 Screenshot of PLABDM01: Clicking OK on the Initialize Disk dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-433"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-434">Right-click the <b>(C:) </b>drive and select <b>Add Mirror</b>.</p>
+
+<p id="cn-m16-435"></p><figure><img class="cn-img" id="cn-image-m16-c-48" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-48.jpg" alt="Figure 4.6 Screenshot of PLABDM01: Right-clicking the (C:) drive and selecting Add Mirror."><figcaption>Figure 4.6 Screenshot of PLABDM01: Right-clicking the (C:) drive and selecting Add Mirror.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-437"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-438">In the <b>Add Mirror </b>dialog box, select <b>Disk 1 </b>and click <b>Add Mirror</b>.</p>
+
+<p id="cn-m16-439"></p><figure><img class="cn-img" id="cn-image-m16-c-49" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-49.jpg" alt="Figure 4.7 Screenshot of PLABDM01: Selecting Disk 1 and clicking Add Mirror on the Add Mirror dialog box."><figcaption>Figure 4.7 Screenshot of PLABDM01: Selecting Disk 1 and clicking Add Mirror on the Add Mirror dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-441"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-442">On the <b>Disk Management </b>dialog box, it prompts you to confirm if you want to convert the basic disks to dynamic disks.</p>
+
+<p id="cn-m16-443">A basic disk uses partitions, and can have up to four
+ of them. A dynamic disk uses dynamic volumes, which can be converted to
+ simple volumes and other types, such as spanned and striped. Therefore,
+ before you create a simple volume, you need to first convert a basic 
+disk to dynamic disk.</p>
+
+<p id="cn-m16-444">Click <b>Yes</b>.</p>
+
+<p id="cn-m16-445"></p><figure><img class="cn-img" id="cn-image-m16-c-50" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-50.jpg" alt="Figure 4.8 Screenshot of PLABDM01: Clicking Yes on the Disk Management dialog box."><figcaption>Figure 4.8 Screenshot of PLABDM01: Clicking Yes on the Disk Management dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-447"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-448">After a few seconds of conversion from basic disks to
+ dynamic disks, the mirrored volume is now created. Notice that below 
+the hard disk size, <b>Resynching </b>is displayed.</p>
+
+<p id="cn-m16-449">Also, notice that you have two hard disks labeled as <b>(C</b>:), which confirms that they are mirrored volumes. You have just created a RAID 1, which is disk mirroring.</p>
+
+<p id="cn-m16-450"></p><figure><img class="cn-img" id="cn-image-m16-c-51" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-51.jpg" alt="Figure 4.9 Screenshot of PLABDM01: Showing Resynching on both the disks."><figcaption>Figure 4.9 Screenshot of PLABDM01: Showing Resynching on both the disks.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-452"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-453">Wait for a few minutes. Notice that <b>Resynching </b>is now progressing, and it will take a few minutes to complete the resynching process.</p>
+
+<p id="cn-m16-454"></p><figure><img class="cn-img" id="cn-image-m16-c-52" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-52.jpg" alt="Figure 4.10 Screenshot of PLABDM01: Showing the Resynching progress in the Disk Management window."><figcaption>Figure 4.10 Screenshot of PLABDM01: Showing the Resynching progress in the Disk Management window.</figcaption></figure><p></p>
+
+<p id="cn-m16-456">Close the <b>Disk Management </b>window.</p>
+
+<h3 id="cn-m16-458"><b>Task 2 - Perform a Full Backup in Windows </b></h3>
+
+<p id="cn-m16-459">Windows 10 allows you to perform full backups. You 
+can also use various other third-party programs to perform full backups,
+ and some also support incremental and differential backups. Some of the
+ commonly used third-party backup programs are:</p>
+
+<ul id="cn-m16-460">
+
+<li id="cn-m16-460">AOMEI Backupper Standard and Professional</li>
+
+<li id="cn-m16-461">Paragon Backup &amp; Recovery CE 17</li>
+
+<li id="cn-m16-462">EaseUS ToDo Backup Home 10.5</li>
+
+</ul>
+
+<p id="cn-m16-463">In this task, you will use the Paragon Backup &amp; Recovery CE 17 software to perform a full backup.</p>
+
+<h4 id="cn-m16-464"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-465">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m16-466">In the <b>Type here to search </b>text box, type the following:</p>
+
+<pre id="cn-m16-467"><code>paragon
+
+</code></pre>
+
+<p id="cn-m16-468">From the search results, select <b>Paragon Backup &amp; Recovery 17 CE</b>.</p>
+
+<p id="cn-m16-469"></p><figure><img class="cn-img" id="cn-image-m16-c-53" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-53.jpg" alt="Figure 4.11 Screenshot of PLABWIN10: Selecting Paragon Backup &amp;amp; Recovery 17 CE from the search results."><figcaption>Figure 4.11 Screenshot of PLABWIN10: Selecting Paragon Backup &amp; Recovery 17 CE from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-471"><b><i>Step 2</i></b></h4>
+
+<span class="cn-quote" id="cn-m16-472"><b><i>Note: </i></b><i>You may be prompted with the </i><b><i>User Access Control </i></b><i>dialog box. Click </i><b><i>Yes </i></b><i>to continue.</i></span>
+
+<p id="cn-m16-473">The <b>Paragon Backup &amp; Recovery </b>interface begins to load.</p>
+
+<p id="cn-m16-474"></p><figure><img class="cn-img" id="cn-image-m16-c-54" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-54.jpg" alt="Figure 4.12 Screenshot of PLABWIN10: Showing the Paragon Backup &amp;amp; Recovery interface loading."><figcaption>Figure 4.12 Screenshot of PLABWIN10: Showing the Paragon Backup &amp; Recovery interface loading.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-476"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-477">After the interface loads, you are on the <b>My Backups </b>page. In the right pane, you need to specify the backup source. Click <b>Backup source</b>.</p>
+
+<p id="cn-m16-478"></p><figure><img class="cn-img" id="cn-image-m16-c-55" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-55.jpg" alt="Figure 4.13 Screenshot of PLABWIN10: Clicking Backup source in the right pane of the My Backups page."><figcaption>Figure 4.13 Screenshot of PLABWIN10: Clicking Backup source in the right pane of the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-480"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-481">In the <b>Backup &amp; Recovery </b>dialog box, click <b>Files/Folders</b>.</p>
+
+<p id="cn-m16-482"></p><figure><img class="cn-img" id="cn-image-m16-c-56" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-56.jpg" alt="Figure 4.14 Screenshot of PLABWIN10: Clicking the Files/Folders option in the Backup &amp;amp; Recovery dialog box."><figcaption>Figure 4.14 Screenshot of PLABWIN10: Clicking the Files/Folders option in the Backup &amp; Recovery dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-484"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-485">On the <b>Select files and folders you need to back up </b>page, keep the default selection of <b>Select files and folders manually </b>in the drop-down.</p>
+
+<p id="cn-m16-486">In the folder tree, expand <b>Local Disk (C</b>:), expand <b>Users</b>, expand <b>Administrator</b>, and then select <b>Downloads</b>.</p>
+
+<p id="cn-m16-487">Click <b>OK</b>.</p>
+
+<p id="cn-m16-488"></p><figure><img class="cn-img" id="cn-image-m16-c-57" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-57.jpg" alt="Figure 4.15 Screenshot of PLABWIN10: Selecting the Downloads folder and clicking OK on the Backup &amp;amp; Recovery dialog box."><figcaption>Figure 4.15 Screenshot of PLABWIN10: Selecting the Downloads folder and clicking OK on the Backup &amp; Recovery dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-490"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-491">Back on the <b>My Backups </b>page, click <b>Destination </b>in the right pane.</p>
+
+<p id="cn-m16-492"></p><figure><img class="cn-img" id="cn-image-m16-c-58" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-58.jpg" alt="Figure 4.16 Screenshot of PLABWIN10: Clicking Destination on the My Backups page."><figcaption>Figure 4.16 Screenshot of PLABWIN10: Clicking Destination on the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-494"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-495">On the <b>Select backup destination </b>page, notice that <b>Local folders </b>is selected by default in the left pane.</p>
+
+<p id="cn-m16-496">In the right pane, expand <b>Local Disk (C</b>:), expand <b>Users</b>, expand <b>Administrator</b>, and then select <b>Desktop</b>.</p>
+
+<p id="cn-m16-497">Then, click the <b>Create folder </b>icon.</p>
+
+<p id="cn-m16-498"></p><figure><img class="cn-img" id="cn-image-m16-c-59" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-59.jpg" alt="Figure 4.17 Screenshot of PLABWIN10: Clicking Create folder after selecting Desktop on the Backup &amp;amp; Recovery dialog box."><figcaption>Figure 4.17 Screenshot of PLABWIN10: Clicking Create folder after selecting Desktop on the Backup &amp; Recovery dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-500"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-501">Overwrite the new folder’s name with the new name <b>Backup</b>.</p>
+
+<p id="cn-m16-502">Click <b>OK</b>.</p>
+
+<p id="cn-m16-503"></p><figure><img class="cn-img" id="cn-image-m16-c-60" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-60.jpg" alt="Figure 4.18 Screenshot of PLABWIN10: Entering the folder name and clicking OK on the Backup &amp;amp; Recovery dialog box."><figcaption>Figure 4.18 Screenshot of PLABWIN10: Entering the folder name and clicking OK on the Backup &amp; Recovery dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-505"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-506">Back on the <b>My Backups </b>page, notice that a <b>Local folder </b>is added as the backup destination.</p>
+
+<span class="cn-quote" id="cn-m16-507"><b><i>Note: </i></b><i>In the 
+real-world scenario, you should never save the backup on the same 
+system. This is because if the system crashes, you could lose the 
+original data along with the backup.</i></span>
+
+<p id="cn-m16-508">On the <b>Backup strategy </b>tab in the right pane, notice that the backup is set to <b>Full backups only</b>.</p>
+
+<p id="cn-m16-509">Keep the default settings and click <b>Back up now</b>.</p>
+
+<span class="cn-quote" id="cn-m16-510"><b><i>Note: </i></b><i>In the right pane, notice that the </i><b><i>Backup timeline </i></b><i>has dotted lines. Currently, there is no marking or dots on these lines, which means that no backup has been performed.</i></span>
+
+<p id="cn-m16-511"></p><figure><img class="cn-img" id="cn-image-m16-c-61" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-61.jpg" alt="Figure 4.19 Screenshot of PLABWIN10: Showing the backup options and clicking Back up now."><figcaption>Figure 4.19 Screenshot of PLABWIN10: Showing the backup options and clicking Back up now.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-513"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-514">The backup process now starts. It will take a few minutes to complete the backup.</p>
+
+<span class="cn-quote" id="cn-m16-515"><b><i>Note: </i></b><i>The backup
+ and restore time depends on the amount of data. If you are performing a
+ backup over the network, then the network speed also plays a key role 
+in the speed of the backup.</i></span>
+
+<p id="cn-m16-516"></p><figure><img class="cn-img" id="cn-image-m16-c-62" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-62.jpg" alt="Figure 4.20 Screenshot of PLABWIN10: Showing the backup progress on the My Backups page."><figcaption>Figure 4.20 Screenshot of PLABWIN10: Showing the backup progress on the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-518"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m16-519">After the backup is complete, you are prompted with the <b>Backup completed! </b>message.</p>
+
+<p id="cn-m16-520">Click <b>OK</b>.</p>
+
+<p id="cn-m16-521"></p><figure><img class="cn-img" id="cn-image-m16-c-63" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-63.jpg" alt="Figure 4.21 Screenshot of PLABWIN10: Showing the Backup completed! message and clicking OK."><figcaption>Figure 4.21 Screenshot of PLABWIN10: Showing the Backup completed! message and clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-523"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m16-524">Back on the <b>My Backups </b>page, notice that a green dot appears on the <b>Backup timeline </b>in the right pane.</p>
+
+<p id="cn-m16-525">The Backup timeline shows when the backup was taken. 
+When you hover the mouse over a dot, it shows the type of backup that 
+was created.</p>
+
+<p id="cn-m16-526"></p><figure><img class="cn-img" id="cn-image-m16-c-64" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-64.jpg" alt="Figure 4.22 Screenshot of PLABWIN10: Showing the green dot on the Backup timeline on the My Backups page."><figcaption>Figure 4.22 Screenshot of PLABWIN10: Showing the green dot on the Backup timeline on the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-528"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m16-529">Let’s verify if the full backup has been performed.</p>
+
+<p id="cn-m16-530">Minimize the <b>Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery </b>window.</p>
+
+<p id="cn-m16-531"></p><figure><img class="cn-img" id="cn-image-m16-c-65" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-65.jpg" alt="Figure 4.23 Screenshot of PLABWIN10: Minimizing the Paragon Backup &amp;amp; Recovery 17 CE - Backup &amp;amp; Recovery window."><figcaption>Figure 4.23 Screenshot of PLABWIN10: Minimizing the Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-533"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m16-534">On the desktop, notice that the <b>Backup </b>folder is now created. Double-click to open this folder.</p>
+
+<p id="cn-m16-535"></p><figure><img class="cn-img" id="cn-image-m16-c-66" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-66.jpg" alt="Figure 4.24 Screenshot of PLABWIN10: Double-clicking the Backup folder on the desktop."><figcaption>Figure 4.24 Screenshot of PLABWIN10: Double-clicking the Backup folder on the desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-537"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m16-538">There is a backup folder named <b>Job-&lt;date_time_stamp&gt; </b>that is created. When you hover your mouse over the folder, notice that it contains files and folders that are 149 MB in size.</p>
+
+<span class="cn-quote" id="cn-m16-539"><b><i>Note: </i></b><i>In your 
+lab environment, the date and time in the file name will be different, 
+as it is according to the current date and time. Also, the backup size 
+may differ.</i></span>
+
+<p id="cn-m16-540"></p><figure><img class="cn-img" id="cn-image-m16-c-67" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-67.jpg" alt="Figure 4.25 Screenshot of PLABWIN10: Showing the amount of backup in a folder."><figcaption>Figure 4.25 Screenshot of PLABWIN10: Showing the amount of backup in a folder.</figcaption></figure><p></p>
+
+<h3 id="cn-m16-543"><b>Task 3 - Perform an Incremental Backup in Windows </b></h3>
+
+<p id="cn-m16-544">An incremental or a differential backup can only be 
+performed after you have performed a full backup. In the previous task, 
+you performed a full backup. In this task, you will learn to perform an 
+incremental backup.</p>
+
+<h4 id="cn-m16-545"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-546">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m16-547">The <b>File Explorer </b>window should still be open from the previous task.</p>
+
+<p id="cn-m16-548">Click the <b>Downloads </b>folder in the left pane.</p>
+
+<p id="cn-m16-549"></p><figure><img class="cn-img" id="cn-image-m16-c-68" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-68.jpg" alt="Figure 4.26 Screenshot of PLABWIN10: Clicking the Downloads folder in the left pane of file explorer."><figcaption>Figure 4.26 Screenshot of PLABWIN10: Clicking the Downloads folder in the left pane of file explorer.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-551"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-552">In the <b>Downloads </b>folder in the right pane, right-click and select <b>New</b>. Then select <b>Text Document</b>.</p>
+
+<p id="cn-m16-553"></p><figure><img class="cn-img" id="cn-image-m16-c-69" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-69.jpg" alt="Figure 4.27 Screenshot of PLABWIN10: Right-clicking in the right pane, selecting New, and then selecting Text Document."><figcaption>Figure 4.27 Screenshot of PLABWIN10: Right-clicking in the right pane, selecting New, and then selecting Text Document.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-555"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-556">Overwrite the name of the newly created text file and enter the name as <b>Backup1</b>. Press <b>Enter</b>.</p>
+
+<p id="cn-m16-557"></p><figure><img class="cn-img" id="cn-image-m16-c-70" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-70.jpg" alt="Figure 4.28 Screenshot of PLABWIN10: Entering the file name as Backup1 and pressing Enter."><figcaption>Figure 4.28 Screenshot of PLABWIN10: Entering the file name as Backup1 and pressing Enter.</figcaption></figure><p></p>
+
+<p id="cn-m16-559">Minimize the <b>File Explorer </b>window.</p>
+
+<h4 id="cn-m16-560"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-561">Restore <b>Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery </b>window from the taskbar. You should be on the <b>My Backups </b>page.</p>
+
+<p id="cn-m16-562"></p><figure><img class="cn-img" id="cn-image-m16-c-71" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-71.jpg" alt="Figure 4.29 Screenshot of PLABWIN10: Restoring the Paragon Backup &amp;amp; Recovery 17 CE - Backup &amp;amp; Recovery window from the taskbar and then showing the My Backups page."><figcaption>Figure
+ 4.29 Screenshot of PLABWIN10: Restoring the Paragon Backup &amp; 
+Recovery 17 CE - Backup &amp; Recovery window from the taskbar and then 
+showing the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-564"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-565">On the <b>Backup strategy </b>tab in the right pane, click <b>Full backups only</b>.</p>
+
+<span class="cn-quote" id="cn-m16-566"><b><i>Note: </i></b><i>By default, this tool performs only full backups. </i></span>
+
+<p id="cn-m16-567"></p><figure><img class="cn-img" id="cn-image-m16-c-72" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-72.jpg" alt="Figure 4.30 Screenshot of PLABWIN10: Clicking the Full backups only link in the right pane."><figcaption>Figure 4.30 Screenshot of PLABWIN10: Clicking the Full backups only link in the right pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-569"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-570">On the <b>Backup &amp; Recovery </b>dialog box, from the <b>Backup strategy </b>drop-down, select <b>Chain of full and incremental backups</b>.</p>
+
+<p id="cn-m16-571"></p><figure><img class="cn-img" id="cn-image-m16-c-73" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-73.jpg" alt="Figure 4.31 Screenshot of PLABWIN10: Selecting Chain of full and incremental backups from the Backup strategy drop-down on the Backup &amp;amp; Recovery dialog box."><figcaption>Figure
+ 4.31 Screenshot of PLABWIN10: Selecting Chain of full and incremental 
+backups from the Backup strategy drop-down on the Backup &amp; Recovery 
+dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-573"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-574">To the right of the drop-down, a scroll list appears. Set the number to <b>5 </b>by clicking the up arrow and click <b>OK</b>.</p>
+
+<span class="cn-quote" id="cn-m16-575"><b><i>Note: </i></b><i>The number
+ chosen dictates the number of incremental backups that will be 
+performed after a full backup. Once the total number of incremental 
+backups are done, a new full backup will be performed.</i></span>
+
+<p id="cn-m16-576"></p><figure><img class="cn-img" id="cn-image-m16-c-74" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-74.jpg" alt="Figure 4.32 Screenshot of PLABWIN10: Setting the number of incremental backups to 5 and clicking OK on the Backup &amp;amp; Recovery dialog box."><figcaption>Figure
+ 4.32 Screenshot of PLABWIN10: Setting the number of incremental backups
+ to 5 and clicking OK on the Backup &amp; Recovery dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-578"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-579">Back on the <b>My Backups </b>page, click <b>Back up now</b>.</p>
+
+<p id="cn-m16-580"></p><figure><img class="cn-img" id="cn-image-m16-c-75" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-75.jpg" alt="Figure 4.33 Screenshot of PLABWIN10: Clicking Back up now on the My Backups page."><figcaption>Figure 4.33 Screenshot of PLABWIN10: Clicking Back up now on the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-582"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-583">The right pane displays the backup progress.</p>
+
+<p id="cn-m16-584"></p><figure><img class="cn-img" id="cn-image-m16-c-76" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-76.jpg" alt="Figure 4.34 Screenshot of PLABWIN10: Showing the backup progress on the My Backups page."><figcaption>Figure 4.34 Screenshot of PLABWIN10: Showing the backup progress on the My Backups page.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-586"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-587">After the backup is complete, click <b>OK</b>.</p>
+
+<span class="cn-quote" id="cn-m16-588"><b><i>Note: </i></b><i>A full 
+backup has just been performed again because you changed the backup 
+properties. The next backup that you perform will be an incremental 
+backup.</i></span>
+
+<p id="cn-m16-589"></p><figure><img class="cn-img" id="cn-image-m16-c-77" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-77.jpg" alt="Figure 4.35 Screenshot of PLABWIN10: Showing the completed backup and clicking OK."><figcaption>Figure 4.35 Screenshot of PLABWIN10: Showing the completed backup and clicking OK.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-591"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m16-592">Back on the <b>My Backups </b>page, repeat the backup once again.</p>
+
+<span class="cn-quote" id="cn-m16-593"><b><i>Note: </i></b><i>As you 
+have already performed a full backup, this will be an incremental backup
+ as per the specification set of 5 incremental backups between each full
+ backup. </i></span>
+
+<p id="cn-m16-594">Notice that you have three green bars. Move the mouse over to the first green bar, and it should show the <b>green </b>checkmark. Notice that it shows that the most recent backup was <b>Incremental</b>.</p>
+
+<p id="cn-m16-595"></p><figure><img class="cn-img" id="cn-image-m16-c-78" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-78.jpg" alt="Figure 4.36 Screenshot of PLABWIN10: Moving the mouse over to the first green bar and showing the green checkmark."><figcaption>Figure 4.36 Screenshot of PLABWIN10: Moving the mouse over to the first green bar and showing the green checkmark.</figcaption></figure><p></p>
+
+<p id="cn-m16-597">Minimize the <b>Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery </b>window.</p>
+
+<h3 id="cn-m16-598"><b>Task 4 - Restore Backed Up Data</b></h3>
+
+<p id="cn-m16-599">You can restore the backup in case of an emergency. 
+When you restore the backup using Paragon Backup &amp; Recovery 
+software, it restores the files in the same folder from where it had 
+taken the backup.</p>
+
+<p id="cn-m16-600">In this task, you will restore the files from an incremental backup.</p>
+
+<h4 id="cn-m16-601"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-602">Connect to <b>PLABWIN10</b>. Restore the <b>File Explorer </b>window from the taskbar.</p>
+
+<p id="cn-m16-603">Notice that you have a few files in this folder. Right-click the <b>Backup1 </b>file and select <b>Delete</b>.</p>
+
+<p id="cn-m16-604"></p><figure><img class="cn-img" id="cn-image-m16-c-79" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-79.jpg" alt="Figure 4.37 Screenshot of PLABWIN10: Right-clicking the Backup1 file and selecting Delete."><figcaption>Figure 4.37 Screenshot of PLABWIN10: Right-clicking the Backup1 file and selecting Delete.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-606"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-607">Notice that the <b>Backup1 </b>file is now deleted. Minimize the <b>File Explorer </b>window.</p>
+
+<span class="cn-quote" id="cn-m16-608"><b><i>Note: </i></b><i>The Backup1 file will be restored from the backup. </i></span>
+
+<p id="cn-m16-609"></p><figure><img class="cn-img" id="cn-image-m16-c-80" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-80.jpg" alt="Figure 4.38 Screenshot of PLABWIN10: Showing that the Backup1 file no longer exists and then minimizing the File Explorer window."><figcaption>Figure
+ 4.38 Screenshot of PLABWIN10: Showing that the Backup1 file no longer 
+exists and then minimizing the File Explorer window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-611"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-612">Restore the <b>Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery </b>window.</p>
+
+<p id="cn-m16-613">Hover over to the incremental backup, which is the first bar on the <b>Backup timeline</b>, and select <b>Restore</b>. It is the first immediate bar on the left from the center point, which shows a clock.</p>
+
+<p id="cn-m16-614"></p><figure><img class="cn-img" id="cn-image-m16-c-81" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-81.jpg" alt="Figure 4.39 Screenshot of PLABWIN10: Hovering over the incremental backup, which is the first bar, and selecting Restore."><figcaption>Figure 4.39 Screenshot of PLABWIN10: Hovering over the incremental backup, which is the first bar, and selecting Restore.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-616"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-617">On the <b>Restore from “My new backup” </b>page in the right pane, keep the default selections and click <b>Restore now</b>.</p>
+
+<p id="cn-m16-618"></p><figure><img class="cn-img" id="cn-image-m16-c-82" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-82.jpg" alt="Figure 4.40 Screenshot of PLABWIN10: Clicking Restore now on the Restore from “My new backup” page in the right pane."><figcaption>Figure 4.40 Screenshot of PLABWIN10: Clicking Restore now on the Restore from “My new backup” page in the right pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-620"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-621">On the <b>Backup &amp; Recovery </b>dialog box, click <b>Yes </b>to continue.</p>
+
+<p id="cn-m16-622"></p><figure><img class="cn-img" id="cn-image-m16-c-83" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-83.jpg" alt="Figure 4.41 Screenshot of PLABWIN10: Clicking Yes on the Backup &amp;amp; Recovery dialog box."><figcaption>Figure 4.41 Screenshot of PLABWIN10: Clicking Yes on the Backup &amp; Recovery dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-624"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-625">The <b>Applying queued operations </b>dialog box displays the restoration progress.</p>
+
+<p id="cn-m16-626"></p><figure><img class="cn-img" id="cn-image-m16-c-84" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-84.jpg" alt="Figure 4.42 Screenshot of PLABWIN10: Showing the restoration progress on the Applying queued operations dialog box."><figcaption>Figure 4.42 Screenshot of PLABWIN10: Showing the restoration progress on the Applying queued operations dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-628"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-629">After the restoration process is complete, click <b>Close</b>.</p>
+
+<p id="cn-m16-630"></p><figure><img class="cn-img" id="cn-image-m16-c-85" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-85.jpg" alt="Figure 4.43 Screenshot of PLABWIN10: Clicking Close on the All tasks are completed dialog box."><figcaption>Figure 4.43 Screenshot of PLABWIN10: Clicking Close on the All tasks are completed dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-632"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-633">Close the <b>Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery </b>window.</p>
+
+<p id="cn-m16-634"></p><figure><img class="cn-img" id="cn-image-m16-c-86" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-86.jpg" alt="Figure 4.44 Screenshot of PLABWIN10: Closing the Paragon Backup &amp;amp; Recovery 17 CE - Backup &amp;amp; Recovery window."><figcaption>Figure 4.44 Screenshot of PLABWIN10: Closing the Paragon Backup &amp; Recovery 17 CE - Backup &amp; Recovery window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-636"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-637">Restore the <b>File Manager </b>from the taskbar. You should be in the <b>Downloads </b>folder. Notice that the <b>Backup1 </b>file is now restored.</p>
+
+<p id="cn-m16-638"></p><figure><img class="cn-img" id="cn-image-m16-c-87" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-87.jpg" alt="Figure 4.45 Screenshot of PLABWIN10: Restoring the File Manager from the taskbar and showing the restored Backup1 file."><figcaption>Figure 4.45 Screenshot of PLABWIN10: Restoring the File Manager from the taskbar and showing the restored Backup1 file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m16-642">Close all open windows.</p>
+
+<h3 id="cn-m16-643"><b>Backup Methods</b></h3>
+
+<p id="cn-m16-644">Depending on your requirements, you can use different
+ backup methods. For example, a full backup is not really useful in the 
+case of a virtual machine. You would need to backup the entire virtual 
+machine and it would take a large amount of disk space. With the files 
+and folders, a backup method, such as full backup, works well as these 
+files can change or are created on daily basis.</p>
+
+<p id="cn-m16-645">In this task, you will learn about different types of backup methods.</p>
+
+<h4 id="cn-m16-646"><b><i>Snapshot</i></b></h4>
+
+<p id="cn-m16-647">A snapshot is the saved state of a current virtual machine state, including any applied settings or configurations.</p>
+
+<p id="cn-m16-648">Assume that you are working with a virtual machine 
+and need to make some configuration changes. However, you do not know 
+the impact of the configuration changes. Therefore, you want to ensure 
+that you can revert to the previous state if any issue occurs. To do 
+this, you can take a snapshot of the current virtual machine state.</p>
+
+<p id="cn-m16-649">It is important to note that all virtual machine 
+applications, such as VirtualBox, VMware Workstation, and VMware 
+vSphere, allow you to take snapshots. These applications also allow you 
+to create several snapshots, and each snapshot can have a different 
+saved state of the virtual machine.</p>
+
+<h4 id="cn-m16-650"><b><i>Tape</i></b></h4>
+
+<p id="cn-m16-651">Tapes are an older backup method. Even though disk 
+and cloud backups are now more popular, tape backups are still used in 
+many organizations. One of the key benefits of using a tape backup is 
+that it can be stored for several years. You also have tape drives that 
+can mount several tapes at once, and therefore, the backups can be 
+automated across multiple tapes at once.</p>
+
+<p id="cn-m16-652">The tapes use sequential access, which means that you
+ have to get to the point in the tape where the data is stored. With the
+ long shelf life, the tapes are mainly used with data that needs to be 
+archived and rarely accessed. For example, an insurance firm needs to 
+store data for seven years. They can archive the data in tape backups 
+and keep them in a safe location. As and when required, the data can be 
+retrieved.</p>
+
+<h4 id="cn-m16-653"><b><i>Disk</i></b></h4>
+
+<p id="cn-m16-654">Disk backups have taken over the tapes backups. 
+Organizations have started using disks for taking backups because it is 
+fast and allows direct access. Unlike tapes, which offer sequential 
+access, the disks have direct access. This means that you can connect 
+the disk and directly get to the folders or directories you want to 
+retrieve. Unlike tapes, the data backup in disks may take longer, but 
+retrieval is much faster.</p>
+
+<h4 id="cn-m16-655"><b><i>Copy</i></b></h4>
+
+<p id="cn-m16-656">A copy backup is simply a copy of the original data. 
+You select a set of folders or directories, copy them, and paste them at
+ another location or server. This way, you have made a copy of the 
+source folders or directories. However, the copy version cannot update 
+itself from the original folders and directories. Once you have made a 
+copy, then you need to update it manually.</p>
+
+<h4 id="cn-m16-657"><b><i>Network Attached Storage (NAS)</i></b></h4>
+
+<p id="cn-m16-658">A NAS server is mainly used for file storage 
+purposes. When you have several servers in an organization, they can 
+store data on their hard drives or store data on a NAS server. For 
+example, if a server stores the data in itself, then the data is only 
+available when the server is online. With NAS, the data is still 
+available even if the server is not online.</p>
+
+<p id="cn-m16-659">NAS uses the storage-centric design, in which the 
+data is centrally located. This takes off the burden from the servers to
+ process data as and when required. NAS takes the load of handling the 
+data processing activities.</p>
+
+<h4 id="cn-m16-660"><b><i>Online vs. Offline</i></b></h4>
+
+<p id="cn-m16-661">Backups can be online or offline. Depending on your 
+organization's infrastructure, you may be able to use either of the 
+backup types or possibly both at the same time.</p>
+
+<p id="cn-m16-662">An online backup makes a copy of the source data to 
+another server in a remote location. An organization could set up its 
+remote servers to make online backups.</p>
+
+<p id="cn-m16-663">Another method of online backups is cloud backups. 
+There are several Cloud Service Providers (CSP) who allow you to make 
+backups. Some of them also offer free space, but a larger amount of 
+space may need to be purchased with a subscription. For example, 
+Microsoft OneDrive.</p>
+
+<p id="cn-m16-664">There are several advantages of online backups. Your 
+data in the cloud is usually encrypted and replicated across different 
+locations. Therefore, there is no fear of losing data even in case of an
+ incident, such as a hurricane or flood. Another advantage of online 
+data is that you can have access to your data at any time.</p>
+
+<p id="cn-m16-665">However, there are also some disadvantages to online 
+backups. To perform and access backups, you need to have an Internet 
+connection. Depending upon the speed of the Internet connection, you may
+ face challenges of slow access to data. Also, with cloud backups, you 
+do not have direct control of where your data is residing.</p>
+
+<p id="cn-m16-666">Offline backups are performed on tapes, Blu-ray, DVDs, and hard drives, either internal or external.</p>
+
+<p id="cn-m16-667">A main advantage of an offline backup is that it is 
+fast and is in your direct control. Also, since the backup media is 
+portable, they can be moved from one location to another location. When 
+dealing with large volumes of backups, it is best to do it on an 
+external hard drive or tape media as they would not fit on the USB drive
+ or DVDs. External hard drives or tape media have a larger capacity.</p>
+
+<p id="cn-m16-668">The disadvantages of offline backups are that they 
+can be stolen, destroyed, or can simply fail. For example, a hard drive 
+containing a backup could fail. If the offline backup is kept in a 
+remote location, it may take a long time to get the backup media before 
+performing the restoration.</p>
+
+<h4 id="cn-m16-669"><b><i>Offsite Storage</i></b></h4>
+
+<p id="cn-m16-670">Most organizations perform backups. However, it is 
+critical to follow the 3-2-1 rule when it comes to backups. With the 
+3-2-1 rule implemented, three backup copies are created. Out of the 
+three copies, two copies can remain in the same office or premise. 
+However, the third copy should be stored offsite, in a different 
+location from where the backup was created.</p>
+
+<p id="cn-m16-671">By keeping a copy offsite, it is kept safe from any 
+incidents involving the two copies at the main premise. Until a few 
+years ago, offsite copies were generally stored in tapes and hard 
+drives. However, some organizations have started to make an offsite 
+backup on the cloud as well. In the offsite locations, tapes and hard 
+drives are usually stored in a vault to ensure that in case of an 
+incident, such as a flood, the backup copies are kept safe.</p>
+
+<p id="cn-m16-672">It is important to consider distance when storing 
+backup media on an offsite location. When you need to recover data, it 
+may be critical to get your backup media as soon as possible, so a 
+closer location may be a better choice.</p>
+< <a href="https://github.com/SeanOhAileasa" id="NonPersistenceandResilience">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-673"><b>Exercise 5 - Non-Persistence and Resilience </b></h2>
+
+<p id="cn-m16-674">Any network devices or servers installed on a network
+ should be up and running without any downtime and working resiliently. 
+In case a server or system runs into a problem and is no longer working,
+ you need to know the methods required to recover them as soon as 
+possible.</p>
+
+<p id="cn-m16-675">In this exercise, you will learn about non-persistence and resilience.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-677">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m16-678">
+
+<li id="cn-m16-678">Configure System Protection Settings</li>
+
+</ul>
+
+<p id="cn-m16-679">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m16-680">
+
+<li id="cn-m16-680">Restoration Order</li>
+
+<li id="cn-m16-681">Last Known Good Configuration</li>
+
+<li id="cn-m16-682">Live Boot Media</li>
+
+<li id="cn-m16-683">High Availability</li>
+
+<li id="cn-m16-684">Scalability</li>
+
+<li id="cn-m16-685">Diversity</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m16-687">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m16-688">
+
+<li id="cn-m16-688"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m16-689"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m16-690"><img class="cn-img" id="cn-image-m16-c-88" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-88.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m16-692"><b>Task 1 - Configure System Protection Settings</b></h3>
+
+<p id="cn-m16-693">The System Protection feature in Windows 10 allows 
+flexibility to roll back on the unwanted changes in the system. For 
+example, if you loaded a new device driver for the network adapter but 
+the device driver made Windows unstable, you can use the System 
+Protection feature to undo these changes and bring the system back to 
+the condition it was in before the device driver installation.</p>
+
+<p id="cn-m16-694">System restore points are used for rollback purposes,
+ which allow you to revert to a known working state. When created, a 
+system restore point generates a snapshot of the system and then 
+preserves it. When the system restore point is used, the system is 
+brought to the state depicted by that snapshot.</p>
+
+<p id="cn-m16-695">In this task, you will configure the System Protection settings.</p>
+
+<h4 id="cn-m16-696"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-697">Ensure that the required devices are powered on. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m16-698">Click the <b>File Explorer </b>icon in the taskbar.</p>
+
+<p id="cn-m16-699"></p><figure><img class="cn-img" id="cn-image-m16-c-89" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-89.jpg" alt="Figure 5.1 Screenshot of PLABWIN10: Clicking the File Explorer icon in the taskbar."><figcaption>Figure 5.1 Screenshot of PLABWIN10: Clicking the File Explorer icon in the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-701"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-702">In the left pane, right-click <b>This PC </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m16-703"></p><figure><img class="cn-img" id="cn-image-m16-c-90" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-90.jpg" alt="Figure 5.2 Screenshot of PLABWIN10: Right-clicking This PC and selecting Properties."><figcaption>Figure 5.2 Screenshot of PLABWIN10: Right-clicking This PC and selecting Properties.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-705"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-706">In the left pane of the <b>System </b>window, click the <b>System protection </b>tab.</p>
+
+<p id="cn-m16-707"></p><figure><img class="cn-img" id="cn-image-m16-c-91" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-91.jpg" alt="Figure 5.3 Screenshot of PLABWIN10: Clicking System protection in the left pane of the System window."><figcaption>Figure 5.3 Screenshot of PLABWIN10: Clicking System protection in the left pane of the System window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-709"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-710">On the <b>System Properties </b>dialog box, ensure that you are on the <b>System Protection </b>tab.</p>
+
+<p id="cn-m16-711">Click <b>Configure</b>.</p>
+
+<p id="cn-m16-712"></p><figure><img class="cn-img" id="cn-image-m16-c-92" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-92.jpg" alt="Figure 5.4 Screenshot of PLABWIN10: Showing the System Protection tab of the System Properties dialog box and then clicking Configure."><figcaption>Figure
+ 5.4 Screenshot of PLABWIN10: Showing the System Protection tab of the 
+System Properties dialog box and then clicking Configure.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-714"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-715">The <b>System Protection for Local Disk (C:) </b>dialog box is displayed. Select <b>Turn on system protection</b>.</p>
+
+<p id="cn-m16-716">Drag the level indicator to around <b>20% </b>and click <b>Apply</b>.</p>
+
+<p id="cn-m16-717"></p><figure><img class="cn-img" id="cn-image-m16-c-93" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-93.jpg" alt="Figure 5.5 Screenshot of PLABWIN10: Selecting Turn on system protection and setting the indicator to 20% and clicking Apply."><figcaption>Figure 5.5 Screenshot of PLABWIN10: Selecting Turn on system protection and setting the indicator to 20% and clicking Apply.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-719"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-720">There may be situation where you do not need to retain a certain restore point, or you may be running out of disk space.</p>
+
+<p id="cn-m16-721">Click <b>Delete </b>to delete the created restore point.</p>
+
+<p id="cn-m16-722"></p><figure><img class="cn-img" id="cn-image-m16-c-94" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-94.jpg" alt="Figure 5.6 Screenshot of PLABWIN10: Clicking the Delete button to delete the restore point."><figcaption>Figure 5.6 Screenshot of PLABWIN10: Clicking the Delete button to delete the restore point.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-724"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-725">The <b>System Protection </b>dialog box is displayed. Click <b>Continue</b>.</p>
+
+<p id="cn-m16-726">This ensures that all the restore points are deleted.</p>
+
+<p id="cn-m16-727"></p><figure><img class="cn-img" id="cn-image-m16-c-95" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-95.jpg" alt="Figure 5.7 Screenshot of PLABWIN10: Clicking Continue on the System Protection dialog box."><figcaption>Figure 5.7 Screenshot of PLABWIN10: Clicking Continue on the System Protection dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-730"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-731">The <b>System Protection </b>dialog box is displayed, notifying that the restore points were deleted successfully.</p>
+
+<p id="cn-m16-732">Click <b>Close</b>.</p>
+
+<p id="cn-m16-733"></p><figure><img class="cn-img" id="cn-image-m16-c-96" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-96.jpg" alt="Figure 5.8 Screenshot of PLABWIN10: Clicking Close on the System Protection dialog box."><figcaption>Figure 5.8 Screenshot of PLABWIN10: Clicking Close on the System Protection dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-735"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-736">Click <b>OK </b>on the <b>System Protection for Local Disk (C:) </b>dialog box.</p>
+
+<p id="cn-m16-737"></p><figure><img class="cn-img" id="cn-image-m16-c-97" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-97.jpg" alt="Figure 5.9 Screenshot of PLABWIN10: Clicking OK on the System Protection for Local Disk (C:) dialog box."><figcaption>Figure 5.9 Screenshot of PLABWIN10: Clicking OK on the System Protection for Local Disk (C:) dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-740"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-741">On the <b>System Properties </b>dialog box, on the <b>System Protection </b>tab, click <b>Create</b>.</p>
+
+<p id="cn-m16-742"></p><figure><img class="cn-img" id="cn-image-m16-c-98" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-98.jpg" alt="Figure 5.10 Screenshot of PLABWIN10: Clicking Create on the System Protection tab of the System Properties dialog box."><figcaption>Figure 5.10 Screenshot of PLABWIN10: Clicking Create on the System Protection tab of the System Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-745"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m16-746">In the <b>System Protection </b>dialog box, type the following name in the text box:</p>
+
+<pre id="cn-m16-747"><code>PLAB-WIN10
+
+</code></pre>
+
+<p id="cn-m16-748">Click <b>Create</b>.</p>
+
+<p id="cn-m16-749"></p><figure><img class="cn-img" id="cn-image-m16-c-99" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-99.jpg" alt="Figure 5.11 Screenshot of PLABWIN10: Entering the name for the restore point and clicking Create."><figcaption>Figure 5.11 Screenshot of PLABWIN10: Entering the name for the restore point and clicking Create.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-751"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m16-752">The <b>System Protection </b>dialog box shows the progress of the creation of a restore point.</p>
+
+<p id="cn-m16-753"></p><figure><img class="cn-img" id="cn-image-m16-c-100" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-100.jpg" alt="Figure 5.12 Screenshot of PLABWIN10: Showing the progress of restore point creation in the System Protection dialog box."><figcaption>Figure 5.12 Screenshot of PLABWIN10: Showing the progress of restore point creation in the System Protection dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-755"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m16-756">When you are notified that the restore point has been created, click <b>Close </b>on the <b>System Protection </b>dialog box.</p>
+
+<p id="cn-m16-757"></p><figure><img class="cn-img" id="cn-image-m16-c-101" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-101.jpg" alt="Figure 5.13 Screenshot of PLABWIN10: Clicking on the Close button on the System Protection dialog box."><figcaption>Figure 5.13 Screenshot of PLABWIN10: Clicking on the Close button on the System Protection dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-759"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m16-760">Back on the <b>System Protection </b>tab of the <b>System Properties </b>dialog box, click <b>System Restore</b>.</p>
+
+<p id="cn-m16-761"></p><figure><img class="cn-img" id="cn-image-m16-c-102" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-102.jpg" alt="Figure 5.14 Screenshot of PLABWIN10: Clicking the System Restore button on the System Protection tab of the System Properties dialog box."><figcaption>Figure
+ 5.14 Screenshot of PLABWIN10: Clicking the System Restore button on the
+ System Protection tab of the System Properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-763"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m16-764">On the <b>Restore system files and settings </b>page of the <b>System Restore </b>wizard, click <b>Next</b>.</p>
+
+<p id="cn-m16-765"></p><figure><img class="cn-img" id="cn-image-m16-c-103" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-103.jpg" alt="Figure 5.15 Screenshot of PLABWIN10: Clicking Next on the Restore system files and settings page of the System Restore wizard."><figcaption>Figure 5.15 Screenshot of PLABWIN10: Clicking Next on the Restore system files and settings page of the System Restore wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-767"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m16-768">Notice that the manually created restore point is listed. Select it and click <b>Next</b>.</p>
+
+<p id="cn-m16-769"></p><figure><img class="cn-img" id="cn-image-m16-c-104" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-104.jpg" alt="Figure 5.16 Screenshot of PLABWIN10: Selecting the restore point and clicking Next."><figcaption>Figure 5.16 Screenshot of PLABWIN10: Selecting the restore point and clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-771"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m16-772">On the <b>Confirm your restore point </b>page, click <b>Finish</b>.</p>
+
+<p id="cn-m16-773"></p><figure><img class="cn-img" id="cn-image-m16-c-105" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-105.jpg" alt="Figure 5.17 Screenshot of PLABWIN10: Clicking Finish on the Confirm your restore point page of the System Restore wizard."><figcaption>Figure 5.17 Screenshot of PLABWIN10: Clicking Finish on the Confirm your restore point page of the System Restore wizard.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-775"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m16-776">Notice that a warning dialog box is displayed. It states that once the system restore process starts, you cannot interrupt it.</p>
+
+<p id="cn-m16-777">Click <b>Yes </b>to continue.</p>
+
+<p id="cn-m16-778"></p><figure><img class="cn-img" id="cn-image-m16-c-106" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-106.jpg" alt="Figure 5.18 Screenshot of PLABWIN10: Clicking Yes on the restore point dialog box."><figcaption>Figure 5.18 Screenshot of PLABWIN10: Clicking Yes on the restore point dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-780"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m16-781">The <b>System Restore </b>dialog box is displayed, showing the progress of the restoration.</p>
+
+<p id="cn-m16-782"></p><figure><img class="cn-img" id="cn-image-m16-c-107" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-107.jpg" alt="Figure 5.19 Screenshot of PLABWIN10: Showing the system restore progress on the System Restore dialog box."><figcaption>Figure 5.19 Screenshot of PLABWIN10: Showing the system restore progress on the System Restore dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-784"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m16-785"><b>PLABWIN10 </b>will abruptly close. It is now in the process of performing a system restore.</p>
+
+<p id="cn-m16-786">After 3-4 minutes, connect to <b>PLABWIN10 </b>again. Notice that there is the <b>System Restore </b>dialog box.</p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<p id="cn-m16-789">Click <b>Close</b>.</p>
+
+<p id="cn-m16-790">This completes the system restore process.</p>
+
+<p id="cn-m16-791"></p><figure><img class="cn-img" id="cn-image-m16-c-108" src="CybersecurityBackupandRestoreStrategies_files/image-m16-c-108.jpg" alt="Figure 5.20 Screenshot of PLABWIN10: Clicking Close on the System Restore dialog box."><figcaption>Figure 5.20 Screenshot of PLABWIN10: Clicking Close on the System Restore dialog box.</figcaption></figure><p></p>
+
+<h3 id="cn-m16-794"><b>Restoration Order </b></h3>
+
+<p id="cn-m16-795">After you perform a backup, you may need to restore 
+it. If you have been taking only a full backup every time, then it would
+ likely be only one tape that contains the full backup (multiple if it 
+was a large backup). However, the situation changes when you have the 
+full backup and then incremental or differential backups afterwards. The
+ restoration order is different for both of them. The restoration order 
+defines the types of backups and their media that you need to restore 
+the data.</p>
+
+<p id="cn-m16-796">Here are some examples to demonstrate restoration order:</p>
+
+<p id="cn-m16-797"><b>Example 1: </b></p>
+
+<p id="cn-m16-798">You use a backup tool to perform a weekly full backup
+ on Friday evening. You also take an incremental backup daily until 
+Thursday. Again on Friday, you perform a full backup.</p>
+
+<p id="cn-m16-799">In this scenario, if you need to restore the backup from Wednesday, you would need the following:</p>
+
+<ul id="cn-m16-800">
+
+<li id="cn-m16-800">Full backup</li>
+
+<li id="cn-m16-801">Incremental backups for Saturday, Sunday, Monday, Tuesday, and Wednesday</li>
+
+</ul>
+
+<p id="cn-m16-802"><b>Example 2: </b></p>
+
+<p id="cn-m16-803">You perform a full backup weekly on a Friday, and a 
+differential backup every day. If you need to restore the backup for 
+Wednesday, you need the following:</p>
+
+<ul id="cn-m16-804">
+
+<li id="cn-m16-804">Full backup</li>
+
+<li id="cn-m16-805">Differential backups for Wednesday</li>
+
+</ul>
+
+<p id="cn-m16-806">Differential backups take longer than incremental 
+backups, but less than a full backup. When you need to restore, you will
+ need the last differential backup along with the last full backup. 
+Incremental backups take less time to backup but a longer time to 
+restore. The reason for the long restoration time is that you to have to
+ use all incremental backups since the last full backup.</p>
+
+<p id="cn-m16-807">No matter if you are using incremental or 
+differential backups, you still need to have the full backup, which 
+contains the large chunk of files.</p>
+
+<h3 id="cn-m16-808"><b>Last Known Good Configuration</b></h3>
+
+<p id="cn-m16-809">The last known good configuration is a tool that was 
+provided in all versions of Windows up till Windows 7. After Windows 7, 
+Microsoft removed this tool. The last known good configuration is a 
+method to load the last version of Windows that worked well and booted.</p>
+
+<p id="cn-m16-810">Often, when you load a device driver, or there is a 
+malware attack, Windows can become unstable. For example, let’s say that
+ you have updated the video card drivers in Windows 7. However, after 
+you load the new device drivers, there are frequent hangs and crashes. 
+You can determine that before loading the new device drivers, everything
+ worked fine. To handle this situation, you could boot the Windows 7 
+system with last known good configuration. Windows will then boot into 
+the last working Windows configuration, and you will no longer have the 
+last device drivers.</p>
+
+<h3 id="cn-m16-811"><b>Live Boot Media</b></h3>
+
+<p id="cn-m16-812">A live boot media can be created on a DVD or a USB 
+drive. When you do not want to tamper with the existing operating system
+ but want to work with another one, you can simply create a live boot 
+media, which boots like normal media but does not save the 
+configuration.</p>
+
+<p id="cn-m16-813">For example, let’s assume that your system is 
+infected with a virus. There are several live boot media available that 
+have antivirus applications. You can simply boot from the live boot 
+media and clean your system.</p>
+
+<p id="cn-m16-814">A live boot media is a working operating system. 
+Rather than storing the configuration files in the hard drive, this 
+operating system loads the configuration files in the memory and then 
+runs itself. Any changes that you make on the live boot media does not 
+impact the actual operating system on the system. For example, if you 
+have Windows 10 on a system and you use a Linux live boot media DVD, any
+ files you modify in the live boot media will not impact Windows 10. 
+When you shut down the Linux live boot media, it will restore itself to 
+the same as it originally was on the DVD.</p>
+
+<h3 id="cn-m16-815"><b>High Availability</b></h3>
+
+<p id="cn-m16-816">If your organization is running a critical business 
+application, the application must run without any downtime. However, it 
+is virtually impossible to run any application or system without 
+downtime, but still, most organizations tend to achieve 99.999% uptime, 
+which is equivalent to <b>five minutes </b>of downtime throughout the year.</p>
+
+<p id="cn-m16-817">You can achieve high availability of an application 
+using redundancy and fault-tolerance methods. You can use failover 
+clusters to add two or more servers, which are commonly known as nodes. 
+One node continues to serve the clients. If there is any failure with 
+the node, then the secondary node takes over and serves the clients 
+instead. This would not affect their experience or notify them.</p>
+
+<p id="cn-m16-818">Another method to achieve high availability is by 
+using load balancers. You can distribute the load of the Web application
+ amongst two or more servers that are running behind a load balancer. It
+ is the job of the load balancer to distribute the load to the servers. 
+If one server is running with high load, the next set of client requests
+ are the passed on to the next server.</p>
+
+<h3 id="cn-m16-819"><b>Scalability</b></h3>
+
+<p id="cn-m16-820">Scalability is often a challenge when it comes to 
+networks, systems, and applications. When you need to scale up, you have
+ to add the physical hardware. However, to a great extent, this problem 
+is solved by virtualization and containerization. Both can help you 
+increase agility in the IT operations and can help you scale up and 
+scale down the infrastructure as required.</p>
+
+<p id="cn-m16-821">Each system you use has a certain level of resources,
+ which are consumed by the operating system and applications. There are 
+times when applications require more resources to provide optimal 
+performance. However, if the system has run out of resources, then you 
+have to look at scalability. You could add more resources to the system 
+and gain optimal application performance. This method is known as 
+scaling up.</p>
+
+<p id="cn-m16-822">Alternatively, if there is no possibility of adding 
+more resources to the system, then you can add another system to handle 
+the load of the application. When you add another system, the 
+application load can be split between both systems. This method is 
+called scaling out.</p>
+
+<p id="cn-m16-823">In summary, scalability means increasing the resources to meet the demands generated by the application(s).</p>
+
+<p id="cn-m16-824">Cloud computing allows you to scale your IT 
+infrastructure up or down on an on-demand basis. You can provision new 
+servers, add or remove memory, or any other component when required, 
+generally within minutes. For example, if you know that your Web server 
+is going to be overloaded over a certain time period, you can scale up 
+your infrastructure during that time, then scale back down afterwards.</p>
+
+<h3 id="cn-m16-825"><b>Diversity</b></h3>
+
+<p id="cn-m16-826">An organization has systems, servers, applications, 
+and network devices, and it is essential to protect all of them. To be 
+able to provide a sufficient level of security, the organization must 
+use multiple layers of security, which is known as defense-in-depth. You
+ build multiple layers of security controls to ensure that if the 
+attacker breaks one layer of security controls, the remaining layers can
+ still prevent them from proceeding further into the network.</p>
+
+<p id="cn-m16-827">It is not only essential to build multiple layers of 
+security controls but also to ensure that each layer is diverse. This 
+prevents the attacker from using a single technique or method to break 
+the security of all layers.</p>
+
+<h4 id="cn-m16-828"><b><i>Technologies</i></b></h4>
+
+<p id="cn-m16-829">It is always good to use various technologies rather 
+than depending on a single type of technology. For example, a good 
+mixture of technologies, such as databases, file servers, and 
+Webservers. Each product should also be hardened before use.</p>
+
+<h4 id="cn-m16-830"><b><i>Vendors</i></b></h4>
+
+<p id="cn-m16-831">It is always better to use several vendors. When you 
+are implementing various security controls, it is good to use different 
+vendors, such as for firewall, IPS/IDS, and WAF. Even if the attacker 
+knows the weaknesses of products from one vendor, the products from 
+other vendors may still be more difficult for them to attack.</p>
+
+<h4 id="cn-m16-832"><b><i>Crypto</i></b></h4>
+
+<p id="cn-m16-833">Rather than making use of a single cryptographic 
+method, it is good to make use of different methods. For example, during
+ the transmission, IPSec is a good choice, but when data at rest, 
+another cryptographic method should be used. This is because different 
+cryptographic or encryption methods are used for different purposes. For
+ example, IPSec is mainly used for securing data during transmission. 
+You should use symmetric encryption for encrypting data on your hard 
+drive. With symmetric encryption, you use the same encryption key to 
+encrypt and decrypt the data.</p>
+
+<h4 id="cn-m16-834"><b><i>Controls</i></b></h4>
+
+<p id="cn-m16-835">An organization must install and configure diverse 
+security controls, including administrative, technical, and physical 
+controls.</p>
+
+<p id="cn-m16-836">For example, to secure the premise, you need to 
+implement physical controls, such as installing fences and having 
+security guards.</p>
+
+<p id="cn-m16-837">You can also implement administrative controls, such 
+as policies, standards, procedures, and guidelines. For example, you can
+ implement Email Security Policy that defines how Email should be used 
+and the security parameters that should be followed.</p>
+
+<p id="cn-m16-838">Finally, you have technical controls that can prevent
+ various types of attacks against confidentiality and integrity. They 
+also help with implementing access controls. Some examples are firewall,
+ intrusion prevention and detection systems, CCTV, and fire detection 
+systems.</p>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m16-842">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-843"><b>Review</b></h2>
+
+<p id="cn-m16-844">Well done, you have completed the <b>Application Hardening Deployment Techniques </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">b75a39d1-3485-4a18-ace9-9553d675757f</span>
+
+<span class="atom-code hidden">60790495-fda7-4f14-ad22-cbf3c96e57bc</span>
+
+<span class="atom-code hidden">13577e97-6f47-4d5c-88f8-35a8429f3e3f</span>
+
+<span class="atom-code hidden">1000146b-2b3c-4dcd-a4c7-c8d8dc1abf4c</span>
+
+<span class="atom-code hidden">20061783-e837-4c30-8213-a961c66bc0ec</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m16-854">You completed the following exercises:</p>
+
+<ul id="cn-m16-855">
+
+<li id="cn-m16-855">Exercise 1 - Redundancy</li>
+
+<li id="cn-m16-856">Exercise 2 - Replication</li>
+
+<li id="cn-m16-857">Exercise 3 - Backup Types</li>
+
+<li id="cn-m16-858">Exercise 4 - Create System Image Backup</li>
+
+<li id="cn-m16-859">Exercise 5 - Non-Persistence and Resilience</li>
+
+</ul>
+
+<p id="cn-m16-860">You should now be able to:</p>
+
+<ul id="cn-m16-861">
+
+<li id="cn-m16-861">Use Cloud Storage for Backup</li>
+
+<li id="cn-m16-862">Establish an Automated Backup</li>
+
+<li id="cn-m16-863">Initialize and Create a New Simple Volume</li>
+
+<li id="cn-m16-864">Perform a Full Backup in Windows</li>
+
+<li id="cn-m16-865">Perform an Incremental Backup in Windows</li>
+
+<li id="cn-m16-866">Restore Backed Up Data</li>
+
+<li id="cn-m16-867">Configure System Protection Settings</li>
+
+</ul>
+
+<p id="cn-m16-868">You should now have further knowledge of:</p>
+
+<ul id="cn-m16-869">
+
+<li id="cn-m16-869">Redundancy</li>
+
+<li id="cn-m16-870">Storage Area Network (SAN)</li>
+
+<li id="cn-m16-871">Virtual Machines (VMs)</li>
+
+<li id="cn-m16-872">On-premises vs. Cloud</li>
+
+<li id="cn-m16-873">Types of Data Backup</li>
+
+<li id="cn-m16-874">Backup Methods</li>
+
+<li id="cn-m16-875">Restoration Order</li>
+
+<li id="cn-m16-876">Last Known Good Configuration</li>
+
+<li id="cn-m16-877">Live Boot Media</li>
+
+<li id="cn-m16-878">High Availability</li>
+
+<li id="cn-m16-879">Scalability</li>
+
+<li id="cn-m16-880">Diversity</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m16-884">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

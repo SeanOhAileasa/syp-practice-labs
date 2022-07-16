@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="AuthenticationandAuthorizationImplementationTechniques_files/print-styles.css" rel="stylesheet">
+    <script src="AuthenticationandAuthorizationImplementationTechniques_files/jquery.min.js"></script>
+    <script src="AuthenticationandAuthorizationImplementationTechniques_files/jspdf.js"></script>
+    <script src="AuthenticationandAuthorizationImplementationTechniques_files/from_html.js"></script>
+    <script src="AuthenticationandAuthorizationImplementationTechniques_files/addimage.js"></script>
+    <script src="AuthenticationandAuthorizationImplementationTechniques_files/filesaver.js"></script>
+    <script src="AuthenticationandAuthorizationImplementationTechniques_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="uaITrv9fh7mJ/znqj8E1+WpqnjH5IL2IMSEUyIUkn6AuzsFrvlT5NT+E/bUaIbxyB0Z76WEfHnutKU9xoMRxLMY6fdygxScmpC/QOoVoD0M=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Authentication and Authorization Implementation Techniques</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Using Directory Services to Administer User and Group Accounts</li><li>Exercise 2 - Authentication Methods </li><li>Exercise 3 - Biometric</li><li>Exercise 4 - Enable Multifactor Authentication</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m11-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Federation</div>
+
+<div>Attestation</div>
+
+<div>Authentication</div>
+
+<div>Authorization</div>
+
+<div>Accounting</div>
+
+<div>Cloud</div>
+
+<div>On-premises</div>
+
+<div>Fingerprint</div>
+
+<div>Retina</div>
+
+<div>Iris</div>
+
+<div>Facial</div>
+
+<div>Voice</div>
+
+<div>Vein</div>
+
+<div>Gait analysis</div>
+
+<div>False acceptance</div>
+
+<div>False rejection</div>
+
+<div>Crossover error rate</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m11-20">Welcome to the <b>Authentication &amp; Authorization Implementation Techniques </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-24">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m11-25">
+
+<li id="cn-m11-25">Exercise 1 - Using Directory Services to Administer User and Group Accounts</li>
+
+<li id="cn-m11-26">Exercise 2 - Authentication Methods</li>
+
+<li id="cn-m11-27">Exercise 3 - Biometric</li>
+
+<li id="cn-m11-28">Exercise 4 - Enable Multifactor Authentication</li>
+
+</ul>
+
+<p id="cn-m11-29">After completing this module, you should be able to:</p>
+
+<ul id="cn-m11-30">
+
+<li id="cn-m11-30">Create a Local User</li>
+
+<li id="cn-m11-31">Manage the User Account Permissions</li>
+
+<li id="cn-m11-32">Create a Domain User</li>
+
+<li id="cn-m11-33">Add User to a Group</li>
+
+<li id="cn-m11-34">Enable Smart Card Logon</li>
+
+<li id="cn-m11-35">Verify Smart Card Logon Capability</li>
+
+</ul>
+
+<p id="cn-m11-36">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m11-37">
+
+<li id="cn-m11-37">Federation</li>
+
+<li id="cn-m11-38">Attestation</li>
+
+<li id="cn-m11-39">Authentication, Authorization, and Accounting (AAA)</li>
+
+<li id="cn-m11-40">Cloud vs. On-premises Authentication Requirements</li>
+
+<li id="cn-m11-41">Technologies</li>
+
+<li id="cn-m11-42">Fingerprint</li>
+
+<li id="cn-m11-43">Retina</li>
+
+<li id="cn-m11-44">Iris</li>
+
+<li id="cn-m11-45">Facial</li>
+
+<li id="cn-m11-46">Voice</li>
+
+<li id="cn-m11-47">Vein</li>
+
+<li id="cn-m11-48">Gait Analysis</li>
+
+<li id="cn-m11-49">False Acceptance and False Rejection Rates</li>
+
+<li id="cn-m11-50">Crossover Error Rate</li>
+
+<li id="cn-m11-51">Factors</li>
+
+<li id="cn-m11-52">Attributes</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m11-54">The following exam objectives are covered in this lab:</p>
+
+<ul id="cn-m11-55">
+
+<li id="cn-m11-55">Authentication Methods</li>
+
+<li id="cn-m11-56">Biometrics</li>
+
+<li id="cn-m11-57">Multifactor Authentication (MFA) Factors and Attributes</li>
+
+<li id="cn-m11-58">Authentication, Authorization and Accounting (AAA)</li>
+
+<li id="cn-m11-59">Cloud vs. On-premises Requirements</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m11-60"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m11-62">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m11-66">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m11-67">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-69"><b>Lab Topology</b></h2>
+
+<p id="cn-m11-70">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m11-71"><img class="cn-img" id="cn-image-m11-c-0" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m11-72">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m11-73">
+
+<li id="cn-m11-73"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m11-74"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m11-75"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m11-76"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m11-77">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="UsingDirectoryServicestoAdministerUserandGroupAccounts">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-79"><b>Exercise 1 - Using Directory Services to Administer User and Group Accounts</b></h2>
+
+<p id="cn-m11-80">Active Directory is a central repository that contains
+ various objects, such as users, groups, and computers. Active Directory
+ maintains the central control of the users, groups, computers, and 
+services running within a domain. You can configure sites, domains, 
+forests, and organizational units (OU) to manage the Active Directory. 
+For example, the root is always the forest, which can have one or more 
+domains. A domain has distinct security boundaries. You can have sites, 
+which can contain one or more domains, or a domain can contain multiple 
+sites. If your organization has multiple departments, then you can 
+create separate OUs for each department.</p>
+
+<p id="cn-m11-81">In Active Directory, one of the key tasks is managing 
+users and groups. There are two types of users in Windows. The first 
+type is the domain user, who can log on to any domain system in the 
+domain with restrictive permissions. The domain users are centrally 
+managed in a system known as the domain controller. The domain users can
+ be managed using a graphical interface known as Active Directory Users 
+and Computers. You can also manage the domain users using Windows 
+PowerShell.</p>
+
+<p id="cn-m11-82">The other type of user is a local user, who is 
+restricted to the system in which it was created. The local user cannot 
+perform a task outside the system in which it was created. It is also 
+important to note that a local user cannot be part of any domain group, 
+such as Domain Users. Its scope is strictly limited to the local 
+computer on which it is created.</p>
+
+<p id="cn-m11-83">In this exercise, you will learn to create local and domain users.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-85">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m11-86">
+
+<li id="cn-m11-86">Create a Local User</li>
+
+<li id="cn-m11-87">Manage the User Account Permissions</li>
+
+<li id="cn-m11-88">Create a Domain User</li>
+
+<li id="cn-m11-89">Add User to a Group</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m11-91">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m11-92">
+
+<li id="cn-m11-92"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m11-93"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m11-94"><img class="cn-img" id="cn-image-m11-c-1" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m11-95"><b>Task 1 - Create a Local User</b></h3>
+
+<p id="cn-m11-96">You can create a local user in any Windows system, 
+whether it is part of a domain or not. Assume that you are running a 
+system at home with Windows 10. During the installation, you create a 
+user, which is local to the system. You can also create several local 
+user accounts and use them for various purposes, such as running 
+services or allowing other users to log on to the same system.</p>
+
+<p id="cn-m11-97">In this task, you will learn to create a local user. To do this, perform the following steps:</p>
+
+<h4 id="cn-m11-98"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-99">Ensure that you have powered on the required devices. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m11-100">Right-click <b>Start </b>and select <b>Computer Management</b>.</p>
+
+<p id="cn-m11-101"></p><figure><img class="cn-img" id="cn-image-m11-c-2" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-2.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Clicking Start and then selecting Computer Management."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Clicking Start and then selecting Computer Management.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-104"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-105">The <b>Computer Management </b>window is displayed. In the left pane, click the <b>&gt; </b>arrow to expand <b>Local Users and Groups</b>. Select the <b>Users </b>node.</p>
+
+<p id="cn-m11-106">Notice that the middle pane displays the existing local users on the system.</p>
+
+<p id="cn-m11-107"></p><figure><img class="cn-img" id="cn-image-m11-c-3" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-3.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: Selecting the Users node under the Local Users and Groups node."><figcaption>Figure 1.2 Screenshot of PLABWIN10: Selecting the Users node under the Local Users and Groups node.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-109"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-110">In the middle pane, right-click and select <b>New User </b>from the context menu.</p>
+
+<p id="cn-m11-111"></p><figure><img class="cn-img" id="cn-image-m11-c-4" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-4.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Right-clicking and selecting New User from the context menu."><figcaption>Figure 1.3 Screenshot of PLABWIN10: Right-clicking and selecting New User from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-113"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m11-114">The <b>New User </b>dialog box is displayed. In the <b>User name </b>text box, type the following name:</p>
+
+<pre id="cn-m11-115"><code>JaneM
+
+</code></pre>
+
+<p id="cn-m11-116">In the <b>Full name </b>text box, type the following name:</p>
+
+<pre id="cn-m11-117"><code>Mary Jane
+
+</code></pre>
+
+<p id="cn-m11-118">In the <b>Password </b>and <b>Confirm password </b>text boxes, type the following password:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m11-120">De-select the <b>User must change password at next logon </b>option.</p>
+
+<p id="cn-m11-121">Click <b>Create</b>.</p>
+
+<p id="cn-m11-122"></p><figure><img class="cn-img" id="cn-image-m11-c-5" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-5.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Entering the user information and then clicking the Create button."><figcaption>Figure 1.4 Screenshot of PLABWIN10: Entering the user information and then clicking the Create button.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-124"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m11-125">Click <b>Close </b>on the <b>New User </b>dialog box.</p>
+
+<p id="cn-m11-126"></p><figure><img class="cn-img" id="cn-image-m11-c-6" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-6.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: Clicking Close on the New User dialog box."><figcaption>Figure 1.5 Screenshot of PLABWIN10: Clicking Close on the New User dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-128"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m11-129">Notice that <b>Mary </b>Jane’s account is now created.</p>
+
+<p id="cn-m11-130"></p><figure><img class="cn-img" id="cn-image-m11-c-7" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-7.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: Showing the newly created account with the name Mary Jane."><figcaption>Figure 1.6 Screenshot of PLABWIN10: Showing the newly created account with the name Mary Jane.</figcaption></figure><p></p>
+
+<p id="cn-m11-132">Keep the <b>Computer Management </b>window open.</p>
+
+<h3 id="cn-m11-134"><b>Task 2 - Manage the User Account Permissions</b></h3>
+
+<p id="cn-m11-135">The permissions of a user account, whether local or 
+domain user, depends on the groups it is part of. Both on the local 
+system and in a domain, various groups are created by default. If you 
+add a user to a specific group on a local system, the user account 
+inherits the default permissions of the group.</p>
+
+<p id="cn-m11-136">To manage the user account permissions, perform the following steps:</p>
+
+<h4 id="cn-m11-137"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-138">Ensure that you have powered on the required devices. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m11-139">Ensure that the <b>Computer Management </b>window is open, and you are on the <b>Users </b>node. Right-click <b>Mary </b>Jane’s account and select <b>Properties</b>.</p>
+
+<span class="cn-quote" id="cn-m11-140"><b><i>Note: </i></b><i>You can also set the password for the user account by right-clicking the user account and selecting Set Password.</i></span>
+
+<p id="cn-m11-141"></p><figure><img class="cn-img" id="cn-image-m11-c-8" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-8.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Right-clicking the account and selecting Properties."><figcaption>Figure 1.7 Screenshot of PLABWIN10: Right-clicking the account and selecting Properties.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-143"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-144">The <b>JaneM Properties </b>dialog box is displayed. Click the <b>Member Of </b>tab.</p>
+
+<p id="cn-m11-145"></p><figure><img class="cn-img" id="cn-image-m11-c-9" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-9.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: Clicking the Member Of tab on the user’s properties dialog box."><figcaption>Figure 1.8 Screenshot of PLABWIN10: Clicking the Member Of tab on the user’s properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-147"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-148">Notice that <b>Mary </b>Jane’s account is a member of the <b>Users </b>group on the local system by default. Click <b>Add</b>.</p>
+
+<p id="cn-m11-149"></p><figure><img class="cn-img" id="cn-image-m11-c-10" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-10.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: Showing the group membership for the user account and clicking the Add button."><figcaption>Figure 1.9 Screenshot of PLABWIN10: Showing the group membership for the user account and clicking the Add button.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-151"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m11-152">The <b>Select Groups </b>dialog box is displayed. In the <b>Enter the object names to select </b>text box, type the following group name:</p>
+
+<pre id="cn-m11-153"><code>Backup Operators
+
+</code></pre>
+
+<p id="cn-m11-154">Click <b>Check Names</b>.</p>
+
+<p id="cn-m11-155"></p><figure><img class="cn-img" id="cn-image-m11-c-11" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-11.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: Adding the Backup Operators group and clicking Check Names."><figcaption>Figure 1.10 Screenshot of PLABWIN10: Adding the Backup Operators group and clicking Check Names.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-157"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m11-158">Notice that the name is now checked. Click <b>OK </b>to close the <b>Select Groups </b>dialog box.</p>
+
+<p id="cn-m11-159"></p><figure><img class="cn-img" id="cn-image-m11-c-12" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-12.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: Clicking OK to close the Select Groups dialog box."><figcaption>Figure 1.11 Screenshot of PLABWIN10: Clicking OK to close the Select Groups dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-161"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m11-162">The <b>Member Of </b>tab on the <b>JaneM Properties </b>dialog box now contains the <b>Backup Operators </b>group. Click <b>OK </b>to close this dialog box.</p>
+
+<p id="cn-m11-163"></p><figure><img class="cn-img" id="cn-image-m11-c-13" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-13.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: Clicking OK to close the user’s properties dialog box."><figcaption>Figure 1.12 Screenshot of PLABWIN10: Clicking OK to close the user’s properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-166"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m11-167">You are back on the <b>Computer Management </b>window. Close this window by clicking <b>X </b>on the upper right corner.</p>
+
+<p id="cn-m11-168">You have created a local user, which means that the user’s existence is only limited to this system, which is <b>PLABWIN10</b>. Outside the scope of <b>PLABWIN10</b>,
+ this user’s account does not exist. For example, if you attempt to log 
+on to this system with JaneM user, you will be able to. However, if you 
+attempt to log on to any other system with the same username, you will 
+not be able to. To be able to log on to the domain systems, you need to 
+create a domain account. Using a local user account, you can log on to a
+ system, you can perform all tasks like a normal user but within the 
+same system on which the user account is created.</p>
+
+<p id="cn-m11-169"></p><figure><img class="cn-img" id="cn-image-m11-c-14" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-14.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: Closing the Computer Management window."><figcaption>Figure 1.13 Screenshot of PLABWIN10: Closing the Computer Management window.</figcaption></figure><p></p>
+
+<h3 id="cn-m11-172"><b>Task 3 - Create a Domain User</b></h3>
+
+<p id="cn-m11-173">Active Directory serves as a single repository of 
+objects, such as user and computer accounts. You can create a user 
+account with different levels of permissions. For example, you can 
+create a normal user account that has a basic level of permissions, or 
+you can create a user account with administrative permissions. There are
+ more permissions with which a user account can be created.</p>
+
+<p id="cn-m11-174">A domain user with basic permissions can only perform
+ normal functions, like logging on to a domain system and performing 
+routine tasks. However, the user cannot perform administrative tasks, 
+such as installing an application. To be able to have administrative 
+privileges on a domain system, the user must be added to the local 
+administrators group. The domain user can also be added to the domain 
+groups, which give domain-wide permissions to the user.</p>
+
+<p id="cn-m11-175">In this task, you will create a user domain user account. To do this, perform the following steps:</p>
+
+<h4 id="cn-m11-176"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-177">Ensure that you have powered on the required devices. Connect to <b>PLABDC01</b>. The <b>Server Manager </b>window is displayed.</p>
+
+<p id="cn-m11-178">Click <b>Tools</b>, and then select <b>Active Directory Users and Computers</b>.</p>
+
+<p id="cn-m11-179"></p><figure><img class="cn-img" id="cn-image-m11-c-15" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-15.jpg" alt="Figure 1.14 Screenshot of PLABDC01: Selecting Active Directory Users and Computers from Windows Administrative Tools in the Server Manager window."><figcaption>Figure
+ 1.14 Screenshot of PLABDC01: Selecting Active Directory Users and 
+Computers from Windows Administrative Tools in the Server Manager 
+window.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-181"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-182">Expand <b>practicelabs.com </b>if already not expanded and then select <b>Marketing </b>in the left pane.</p>
+
+<p id="cn-m11-183">Right-click <b>Marketing</b>, select <b>New </b>and then select <b>User</b>.</p>
+
+<p id="cn-m11-184"></p><figure><img class="cn-img" id="cn-image-m11-c-16" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-16.jpg" alt="Figure 1.15 Screenshot of PLABDC01: Right-clicking Marketing, selecting New, and then selecting User."><figcaption>Figure 1.15 Screenshot of PLABDC01: Right-clicking Marketing, selecting New, and then selecting User.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-186"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-187">The <b>New Object - User </b>wizard is displayed. Fill in the following information:</p>
+
+<p id="cn-m11-188"><b>First name:</b></p>
+
+<pre id="cn-m11-189"><code>Josh
+
+</code></pre>
+
+<p id="cn-m11-190"><b>Last name:</b></p>
+
+<pre id="cn-m11-191"><code>Fairbanks
+
+</code></pre>
+
+<p id="cn-m11-192"><b>User logon name:</b></p>
+
+<pre id="cn-m11-193"><code>FairbanksJ
+
+</code></pre>
+
+<p id="cn-m11-194">Click <b>Next</b>.</p>
+
+<p id="cn-m11-195"></p><figure><img class="cn-img" id="cn-image-m11-c-17" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-17.jpg" alt="Figure 1.16 Screenshot of PLABDC01: Entering the user account details on the New Object - User wizard and click Next."><figcaption>Figure 1.16 Screenshot of PLABDC01: Entering the user account details on the New Object - User wizard and click Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-197"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m11-198">In the <b>Password </b>and <b>Confirm password </b>text boxes, type the following password:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m11-200">De-select <b>User must change password at next logon </b>and click <b>Next</b>.</p>
+
+<p id="cn-m11-201"></p><figure><img class="cn-img" id="cn-image-m11-c-18" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-18.jpg" alt="Figure 1.17 Screenshot of PLABDC01: Entering and confirming the password and then clicking Next."><figcaption>Figure 1.17 Screenshot of PLABDC01: Entering and confirming the password and then clicking Next.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-203"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m11-204">Review the details and click <b>Finish</b>.</p>
+
+<p id="cn-m11-205"></p><figure><img class="cn-img" id="cn-image-m11-c-19" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-19.jpg" alt="Figure 1.18 Screenshot of PLABDC01: Confirming the details and then clicking Finish."><figcaption>Figure 1.18 Screenshot of PLABDC01: Confirming the details and then clicking Finish.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-207"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m11-208">Notice that <b>Josh Fairbanks’ </b>account has been created.</p>
+
+<p id="cn-m11-209"></p><figure><img class="cn-img" id="cn-image-m11-c-20" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-20.jpg" alt="Figure 1.19 Screenshot of PLABDC01: Showing the newly created user account named Josh Fairbanks."><figcaption>Figure 1.19 Screenshot of PLABDC01: Showing the newly created user account named Josh Fairbanks.</figcaption></figure><p></p>
+
+<p id="cn-m11-212">Keep the <b>Active Directory Users and Computers </b>window open.</p>
+
+<h3 id="cn-m11-214"><b>Task 4 - Add User to a Group</b></h3>
+
+<p id="cn-m11-215">By default, when you create a user in the Active 
+Directory, it is created in the Users group. The permissions of the 
+Users group are applied to the newly created user. This means that users
+ can perform the following tasks:</p>
+
+<ul id="cn-m11-216">
+
+<li id="cn-m11-216">Running applications</li>
+
+<li id="cn-m11-217">Using local and network printers</li>
+
+<li id="cn-m11-218">Logging on to a computer</li>
+
+<li id="cn-m11-219">Shutting down the computer</li>
+
+<li id="cn-m11-220">Locking the computer</li>
+
+</ul>
+
+<p id="cn-m11-221">When you create a user, it is by default added to the
+ Domain Users group. When a computer joins a domain, the Domain Users 
+group is added to the local Users group of the computer. This means that
+ any domain user can log on to the system but can perform limited tasks,
+ as mentioned above.</p>
+
+<p id="cn-m11-222">To add a user to a group, perform the following tasks:</p>
+
+<h4 id="cn-m11-223"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-224">Ensure that you have powered on the required devices. Connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m11-225">Ensure that the <b>Active Directory Users and Computers </b>window is open.</p>
+
+<p id="cn-m11-226"></p><figure><img class="cn-img" id="cn-image-m11-c-21" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-21.jpg" alt="Figure 1.20 Screenshot of PLABDC01: Showing the Active Directory Users and Computers window."><figcaption>Figure 1.20 Screenshot of PLABDC01: Showing the Active Directory Users and Computers window.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-228"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-229">Right-click <b>Josh </b>Fairbanks’ account and select <b>Properties</b>.</p>
+
+<span class="cn-quote" id="cn-m11-230"><b><i>Note: </i></b><i>To reset the password, you can select the </i><b><i>Reset Password </i></b><i>from the context menu.</i></span>
+
+<p id="cn-m11-231"></p><figure><img class="cn-img" id="cn-image-m11-c-22" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-22.jpg" alt="Figure 1.21 Screenshot of PLABDC01: Right-clicking the user and selecting Properties from the context menu."><figcaption>Figure 1.21 Screenshot of PLABDC01: Right-clicking the user and selecting Properties from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-233"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-234">The <b>Josh Fairbanks Properties </b>dialog box is displayed. By default, the <b>General </b>tab is displayed. Click the <b>Member Of </b>tab.</p>
+
+<p id="cn-m11-235"></p><figure><img class="cn-img" id="cn-image-m11-c-23" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-23.jpg" alt="Figure 1.22 Screenshot of PLABDC01: Showing the user properties dialog box with the General tab and clicking the Member Of tab."><figcaption>Figure 1.22 Screenshot of PLABDC01: Showing the user properties dialog box with the General tab and clicking the Member Of tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-237"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m11-238">On the <b>Member Of </b>tab, notice that <b>Josh </b>Fairbanks’ account is added to the <b>Domain Users </b>group by default. Click <b>Add</b>.</p>
+
+<p id="cn-m11-239"></p><figure><img class="cn-img" id="cn-image-m11-c-24" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-24.jpg" alt="Figure 1.23 Screenshot of PLABDC01: Clicking Add on the Member Of tab of the user’s properties dialog box."><figcaption>Figure 1.23 Screenshot of PLABDC01: Clicking Add on the Member Of tab of the user’s properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-241"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m11-242">The <b>Select Groups </b>dialog box is displayed. In the <b>Enter the object names to select </b>text box, type the following group name:</p>
+
+<pre id="cn-m11-243"><code>Print Operators
+
+</code></pre>
+
+<p id="cn-m11-244">Click <b>Check Names</b>.</p>
+
+<p id="cn-m11-245"></p><figure><img class="cn-img" id="cn-image-m11-c-25" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-25.jpg" alt="Figure 1.24 Screenshot of PLABDC01: Adding the Print Operators group and then clicking the Check Names button."><figcaption>Figure 1.24 Screenshot of PLABDC01: Adding the Print Operators group and then clicking the Check Names button.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-247"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m11-248">Notice that the name is checked. Click <b>OK </b>to close the <b>Select Groups </b>dialog box.</p>
+
+<p id="cn-m11-249"></p><figure><img class="cn-img" id="cn-image-m11-c-26" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-26.jpg" alt="Figure 1.25 Screenshot of PLABDC01: Clicking OK to close the Select Groups dialog box."><figcaption>Figure 1.25 Screenshot of PLABDC01: Clicking OK to close the Select Groups dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-251"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m11-252">On the <b>Josh Fairbanks Properties </b>dialog box, notice that the account is also added to the <b>Print Operators </b>group.</p>
+
+<p id="cn-m11-253"></p><figure><img class="cn-img" id="cn-image-m11-c-27" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-27.jpg" alt="Figure 1.26 Screenshot of PLABDC01: Clicking OK to close the user’s properties dialog box."><figcaption>Figure 1.26 Screenshot of PLABDC01: Clicking OK to close the user’s properties dialog box.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">c5507563-3e73-4ff7-bcbb-c1e8c80814f3</span>
+
+<p id="cn-m11-257">Click <b>OK</b>.</p>
+
+<h4 id="cn-m11-258"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m11-259">You are back on the <b>Active Directory Users and Computers </b>window. Close this window by clicking <b>X </b>on the upper right corner.</p>
+
+<p id="cn-m11-260"></p><figure><img class="cn-img" id="cn-image-m11-c-28" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-28.jpg" alt="Figure 1.27 Screenshot of PLABDC01: Closing the Active Directory Users and Computers window."><figcaption>Figure 1.27 Screenshot of PLABDC01: Closing the Active Directory Users and Computers window.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m11-262">Leave all devices in their current state and proceed to the next exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="AuthenticationMethods">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-266"><b>Exercise 2 - Authentication Methods </b></h2>
+
+<p id="cn-m11-267">Authentication is the process of validating a user’s 
+identity. When a user attempts to log on to a system, user credentials 
+are validated to verify the user’s identity. Before the user is granted 
+access to any object on the network or even on the system, the user’s 
+identity must be validated using the authentication process. For 
+example, a user must know not only the username but also the password. 
+The combination of both are validated in the authentication process. 
+However, the authentication process can also include other factors, such
+ as a second factor on which the user is authenticated. The user must 
+also provide a one-time password (OTP) that is sent to the user. Once 
+the user enters the username, password, and OTP, the user is 
+authenticated.</p>
+
+<p id="cn-m11-268">There are different types of authentication methods. Some of the key methods are:</p>
+
+<ul id="cn-m11-269">
+
+<li id="cn-m11-269">Password-based</li>
+
+<li id="cn-m11-270">Multi-factor</li>
+
+<li id="cn-m11-271">Certificate-based</li>
+
+<li id="cn-m11-272">Biometric</li>
+
+</ul>
+
+<p id="cn-m11-273">The password-based method is the most widely used method. In this exercise, you will learn about various authentication methods.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-275">After completing this exercise, you will have further knowledge of:</p>
+
+<ul id="cn-m11-276">
+
+<li id="cn-m11-276">Federation</li>
+
+<li id="cn-m11-277">Attestation</li>
+
+<li id="cn-m11-278">Authentication, Authorization, and Accounting (AAA)</li>
+
+<li id="cn-m11-279">Cloud vs. On-premises Authentication Requirements</li>
+
+<li id="cn-m11-280">Technologies</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m11-282">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m11-283"><img class="cn-img" id="cn-image-m11-c-29" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-29.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m11-284"><b>Federation</b></h3>
+
+<p id="cn-m11-285">Often there is a need for an organization to conduct 
+business with another organization or even a vendor. The organization 
+may need to establish network connectivity with another organization and
+ share resources on the network. To be able to do this, you need to 
+establish a relationship with the other organization’s network and 
+create security domains to be able to share network resources. The 
+security domains that help you share resources with another organization
+ is called the federation process.</p>
+
+<p id="cn-m11-286">In federation, two domains are required. The first 
+domain is the Resource Partner, and the second domain is the Accounts 
+Partner. When an organization is sharing network resources with the 
+other organization, it is called the Resource Partner. For example, a 
+Web application or certain network shared folders may be granted access 
+to the other organization, which is the Account Partner. The users who 
+will be accessing the resources are located in the Account Partner 
+domain.</p>
+
+<h3 id="cn-m11-287"><b>Attestation</b></h3>
+
+<p id="cn-m11-288">A hardware root of trust serves as the foundation to secure operations of a system. It serves two key functions:</p>
+
+<ul id="cn-m11-289">
+
+<li id="cn-m11-289">store encryption keys that are used in the cryptographic functions</li>
+
+<li id="cn-m11-290">enable a secure boot process</li>
+
+</ul>
+
+<p id="cn-m11-291">Root of trust is implemented in the hardware and, 
+therefore, cannot be tampered with. In a normal scenario, a system is 
+prone to malware and other types of attacks, and if the encryption keys 
+are stored in the system, they can be easily stolen. However, the root 
+of trust is immune to a malware attack.</p>
+
+<p id="cn-m11-292">Root of trust can be implemented in two different ways. It can be either:</p>
+
+<ul id="cn-m11-293">
+
+<li id="cn-m11-293">a stand-alone security module</li>
+
+<li id="cn-m11-294">security module that can be embedded within a processor or system on chip (SoC)</li>
+
+</ul>
+
+<p id="cn-m11-295">There are two types of hardware root of trust:</p>
+
+<ul id="cn-m11-296">
+
+<li id="cn-m11-296"><b>Fixed function</b>: designed to perform a 
+specific function, such as data encryption. Other functions it can 
+perform is key management and certificate validation. However, other 
+than the defined functions, it cannot perform any other functions.</li>
+
+<li id="cn-m11-297"><b>Programmable</b>: is designed to perform complex tasks and functions. It is possible to upgrade a programmable root of trust.</li>
+
+</ul>
+
+<p id="cn-m11-298">A root of trust can be applied using:</p>
+
+<ul id="cn-m11-299">
+
+<li id="cn-m11-299">A private cryptographic key</li>
+
+<li id="cn-m11-300">Physically Unclonable Function (PUF)</li>
+
+</ul>
+
+<p id="cn-m11-301">With the root of trust enforced, the booting process 
+of a system is considered to be genuine, with any applications running 
+on it.</p>
+
+<p id="cn-m11-302">Motherboards of the modern systems include a chip 
+that is known as a Trusted Platform Module (TPM), which provides a 
+hardware root of trust for secure computing. When a system has TPM, you 
+can configure it by accessing BIOS within the system. A TPM can perform 
+various functions, such as:</p>
+
+<ul id="cn-m11-303">
+
+<li id="cn-m11-303">Storage of encryption keys</li>
+
+<li id="cn-m11-304">Management of encryption keys</li>
+
+<li id="cn-m11-305">Perform encryption and decryption process</li>
+
+<li id="cn-m11-306">Storage of certificates</li>
+
+<li id="cn-m11-307">Storage of passwords</li>
+
+</ul>
+
+<p id="cn-m11-308">Using the TPM, SecureBoot ensures only the trusted 
+operating system bootloaders can load in the system. For the Secureboot 
+to work, you need to have two components in the system:</p>
+
+<ul id="cn-m11-309">
+
+<li id="cn-m11-309">UEFI firmware</li>
+
+<li id="cn-m11-310">TPM</li>
+
+</ul>
+
+<p id="cn-m11-311">Just like the secure boot, Measured Boot Chain also 
+works with the Root of Trust. In the Measured Boot process, each object 
+in the hierarchy is validated. It starts with the Root of Trust, and 
+then the next object in the chain is computing its hash. In this 
+process, the current object calculates the hash of the next object and 
+stores safely. Using this method, a chain of objects is calculated, and 
+their hashes are computed. The hashes can be reported to a management 
+station, known as Attestation. When referring to the Measured Boot, the 
+hashes are stored in the TPM, the Trusted Platform Module.</p>
+
+<p id="cn-m11-312">When a system boots, each object’s hash is compared with the hashes stored in TPM. If every hash meets, the system boots up.</p>
+
+<h3 id="cn-m11-313"><b>Authentication, Authorization, and Accounting (AAA)</b></h3>
+
+<p id="cn-m11-314">When a user needs to access certain resources on a 
+network, the user needs to be authenticated and then authorized. After 
+the authorization, the user’s activities are logged and tracked using 
+the accounting method.</p>
+
+<p id="cn-m11-315">When a user attempts to connect to a network, the 
+user needs to be identified, which is the identification process. The 
+user is identified with a username. Once the identification is complete,
+ the user needs to be authenticated, which is done with the password. 
+The user’s identity is proven after the user provides the correct 
+password.</p>
+
+<p id="cn-m11-316">After the user is authenticated, the user can access 
+resources on the network on which they are authorized. If the user is 
+not permitted on certain resources, such as files and folders, the user 
+is considered to be unauthorized when he or she attempts to access them.
+ For example, let’s consider an example of two folders, Projects, and 
+Finance, that are shared on the network. The user is part of the 
+Operations team and has access to the Projects folder. After the user 
+logs on to the network, after authorization, the user can access the 
+Projects folder. On the other hand, the user does not have permissions 
+to the Finance folder. When the user attempts to access the Finance 
+folder, the user gets the access denied message.</p>
+
+<p id="cn-m11-317">After the authorization is completed, the user 
+performs certain access on the network resources. If appropriate logging
+ is enabled, the user’s actions are tracked and logged into the logs on 
+the server where the user is connected or performing actions. 
+Alternatively, the logs may be collated in a central environment. The 
+logs are used for auditing purposes.</p>
+
+<h3 id="cn-m11-319"><b>Cloud vs. On-premises Authentication Requirements</b></h3>
+
+<p id="cn-m11-320">Fundamentally, the process of AAA remains the same in
+ the cloud or on-premise environment. As stated earlier, the user must 
+be identified and authenticated before being authorized to access 
+network resources. Similarly, the cloud also requires user 
+identification and authentication.</p>
+
+<p id="cn-m11-321">In the local environment, you have directory 
+services, such as Active Directory, that handle the identification and 
+authentication part. In the cloud environment, you have 
+Directory-As-A-Service (DaaS) that handles user identification and 
+authentication. However, in most of the cloud environment, you also have
+ Identity and Access Management (IAM) that can handle not only the user 
+and group creation but also the access management for them. For example,
+ Amazon AWS offers AWS IAM, which allows you to create and manage users 
+and groups. Using AWS IAM, you can also enable multi-factor 
+authentication and integrate it with your organization’s directory 
+services.</p>
+
+<p id="cn-m11-322">Similarly, IAM can also be installed and configured 
+in an on-premise environment. However, one has to remember that there 
+are additional overheads when dealing with on-premise infrastructure. 
+You would need to procure servers as well as a license for IAM.</p>
+
+<h3 id="cn-m11-323"><b>Technologies</b></h3>
+
+<p id="cn-m11-324">In most cases, users are forced to provide a password
+ to authenticate themselves. However, various other methods can be used 
+to add another authentication method along with the password. Let’s look
+ at some of these methods that can be used for authentication.</p>
+
+<h4 id="cn-m11-325"><b><i>Time-based One-Time Password (TOTP) </i></b></h4>
+
+<p id="cn-m11-326">TOTP is a password that has a timestamp and is valid 
+only for a specific duration. For example, a TOTP is valid only for 30 
+seconds, and after 30 seconds are over, the TOTP expires and cannot be 
+used anymore.</p>
+
+<h4 id="cn-m11-327"><b><i>HMAC-based one-time password (HOTP)</i></b></h4>
+
+<p id="cn-m11-328">HOTP uses hash-based message authentication codes 
+(HMAC) functions to create a one-time password. HOTP uses a secret key 
+and also an incrementing counter. Then, the HMAC creates the hash value,
+ which is then converted into a 6-digit or sometimes 8-digit HOTP value.</p>
+
+<h4 id="cn-m11-329"><b><i>Short Message Service (SMS)</i></b></h4>
+
+<p id="cn-m11-330">SMS is used for sending short messages up to 160 
+characters. A mobile device can send and receive messages. SMS is the 
+key delivery methods for OTPs or TOTP’s. OTPs and TOTPs are time-bound 
+messages that are delivered via SMS and expire after a certain time 
+period. For example, assume that you are attempting to log on to your 
+bank’s website. You need to authenticate yourself with your username and
+ password. The website will then send an SMS with an OTP to your 
+registered mobile device’s number which provides a second level of 
+authentication which is also referred to as Multi-factor authentication 
+(MFA). The OTP needs to be entered to complete the authentication 
+process. A time limit is associated to the OTP and can vary depending on
+ the application being accessed.</p>
+
+<h4 id="cn-m11-331"><b><i>Token key</i></b></h4>
+
+<p id="cn-m11-332">A token key is also known as a key fob, which is the 
+size of a USB drive. It contains a Liquid Crystal Display (LCD) that 
+displays a number, which is generated by a server. The token key is 
+synchronized with the server, which updates the number every 60-seconds.
+ When you need to authenticate using a token key, you need to provide 
+the user credentials and the number generated. This combination of 
+username, password, and the number is then used to authenticate the 
+user. However, if the number changes while you are entering it for 
+authentication, the authentication will fail. There is no sequence to 
+these numbers that are displayed on the token key. These numbers are 
+dynamically generated by the server and synchronized with the token 
+keys.</p>
+
+<h4 id="cn-m11-333"><b><i>Static Codes</i></b></h4>
+
+<p id="cn-m11-334">An authenticator app generally generates static 
+codes. When you configure an authenticator app, it generates static 
+codes that you have to store somewhere safe. Static codes are required 
+when you lose access to the app, such as a messaging service, you can 
+use the static code to recover your access.</p>
+
+<h4 id="cn-m11-335"><b><i>Authentication Applications</i></b></h4>
+
+<p id="cn-m11-336">Authentication applications are designed to provide 
+application-level authentication. Authentication applications also 
+support digital signatures. Kerberos is one such example. It is the 
+authentication protocol used by Windows servers running Active Directory
+ Domain Services. Kerberos uses a centralized server that authenticates 
+users to servers and vice versa. It uses an Authentication Server (AS) 
+and a Ticket Granting Server (TGS).</p>
+
+<h4 id="cn-m11-337"><b><i>Push Notifications</i></b></h4>
+
+<p id="cn-m11-338">A push notification is an alert sent to an app 
+installed on a mobile device, which can either be a mobile phone or a 
+tab. Notifications were initially used for alerting the user about an 
+Email that has been received on the mobile phone. However, later, push 
+notifications were adopted as a marketing strategy and are now used with
+ almost all apps installed on a mobile device.</p>
+
+<p id="cn-m11-339">For example, let’s consider that you have WhatsApp 
+installed on your mobile. When a message is received, a notification is 
+generated by default. When you install an app on a mobile device, the 
+notifications are automatically enabled for the app. However, in the 
+Settings section, you can navigate to the notifications section and 
+disable notifications for a particular app.</p>
+
+<p id="cn-m11-340">It is important to note that push notifications are 
+app-driven, not the mobile make or the mobile platform. For example, 
+push notifications will work on an app, whether it is installed on an 
+Android phone or an iPhone.</p>
+
+<h4 id="cn-m11-341"><b><i>Phone Call</i></b></h4>
+
+<p id="cn-m11-342">A phone call can also be used for authentication. 
+Some mobile apps, when you are setting them up on the mobile device, may
+ trigger a call on your registered mobile number. After you verify 
+yourself, the app will then start working.</p>
+
+<p id="cn-m11-343">An example can be an app that uses a phone call as an
+ authentication method. For example, let’s consider that you stay in an 
+apartment building. When a visitor comes, the security guard feeds the 
+information in an app, which triggers an automated call to your 
+registered mobile number. You have to press a key to either authorize 
+the visitor to enter or press another key to reject the incoming visitor
+ request.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="Biometric">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-345"><b>Exercise 3 - Biometric</b></h2>
+
+<p id="cn-m11-346">Biometric authentication utilizes a physical 
+characteristic of an individual to authenticate him or her. For example,
+ authentication of an individual can be done using a fingerprint or a 
+retina scan. Once the user is authenticated, the user is authorized to 
+access the system or the data within a system. Biometric authentication 
+is widely used at the entry point of a room or even with laptops. 
+Several latest laptop models are equipped with fingerprint 
+authentication. Many mobile manufacturers have integrated the 
+fingerprint and face scanning methods to authenticate a user.</p>
+
+<p id="cn-m11-347">The biometric process has two parts to it. The first 
+part is the enrolment in which a physical characteristic of an 
+individual is registered. The system does not store the physical 
+characteristics but converts it to a numerical value and stores it in 
+the database. The second part is the authentication. When a user uses 
+the physical characteristic for the authentication purpose, it is again 
+converted to the numeric value and compared with the stored value in the
+ database. If both the values match, then the user is authenticated.</p>
+
+<p id="cn-m11-348">In this exercise, you will learn about various biometric authentication methods.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-350">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m11-351">
+
+<li id="cn-m11-351">Fingerprint</li>
+
+<li id="cn-m11-352">Retina</li>
+
+<li id="cn-m11-353">Iris</li>
+
+<li id="cn-m11-354">Facial</li>
+
+<li id="cn-m11-355">Voice</li>
+
+<li id="cn-m11-356">Vein</li>
+
+<li id="cn-m11-357">Gait Analysis</li>
+
+<li id="cn-m11-358">False Acceptance and False Rejection Rates</li>
+
+<li id="cn-m11-359">Crossover Error Rate</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m11-361">This exercise contains supporting materials for Security+.</p>
+
+<p id="cn-m11-362"><img class="cn-img" id="cn-image-m11-c-30" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-30.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m11-364"><b>Fingerprint</b></h3>
+
+<p id="cn-m11-365">Fingerprints can be used for identification or even 
+authentication. When you are entering a data center, you would typically
+ see a biometric system installed. In most cases, it is the fingerprint 
+scanner that authenticates a user, and once the user is authenticated, 
+the door to the data center opens. Mobile devices are also equipped with
+ fingerprint scanners. Some mobile devices have a fingerprint scanner on
+ the back, but several new models have a place for the fingerprint 
+scanning on the screen itself. The sensor inside the screen scans the 
+fingerprint and authenticates the user.</p>
+
+<h3 id="cn-m11-366"><b>Retina</b></h3>
+
+<p id="cn-m11-367">The retina scanner scans the pattern of the blood 
+vessels of the retina. Each individual has a unique blood vessel 
+pattern. After a user’s retina is registered with the retina scanner, 
+the same pattern is detected during the authentication. If there is a 
+variation in the pattern, the user is not authenticated.</p>
+
+<h3 id="cn-m11-368"><b>Iris</b></h3>
+
+<p id="cn-m11-369">The iris scanner scans the iris pattern of an individual. If the pattern is matched, then the user is granted access.</p>
+
+<h3 id="cn-m11-370"><b>Facial</b></h3>
+
+<p id="cn-m11-371">A human face has certain features, such as the shape,
+ size, and position of the ear, nose, and eyes. In the facial 
+recognition process, the face is scanned for the facial features and 
+their size and positioning. Most of the recent mobile models (mid-range 
+and high-end) have facial recognition features.</p>
+
+<h3 id="cn-m11-372"><b>Voice</b></h3>
+
+<p id="cn-m11-373">Each human voice has a certain pattern, pitch, and 
+modulation. In the voice recognition feature, these are compared against
+ the values stored for that individual.</p>
+
+<h3 id="cn-m11-374"><b>Vein</b></h3>
+
+<p id="cn-m11-375">Vein recognition is also known as vascular 
+biometrics, which is used to scan the veins in fingers, hand, or even in
+ the eyeball. The layout of the vein is stored and then later compared 
+when the user attempts to authenticate himself or herself.</p>
+
+<h3 id="cn-m11-376"><b>Gait Analysis</b></h3>
+
+<p id="cn-m11-377">Gait analysis is a method of discovering who you are.
+ Each individual has specific body measurement and anatomical factors. 
+Gait Analysis is largely used as a method to detect a specific 
+individual. When an individual walks, there is a specific style each 
+individual has. Using the Gait analysis, a person can be recognized and 
+detected.</p>
+
+<h3 id="cn-m11-378"><b>False Acceptance and False Rejection Rates</b></h3>
+
+<p id="cn-m11-379">False Acceptance Rate (FAR) is a method that 
+determines the probability of the number of incorrect requests that will
+ be accepted by a biometric system. The formula for calculating FAR is:</p>
+
+<pre id="cn-m11-380"><code>FAR = number of incorrect accepted requests/number of authentication attempts
+
+</code></pre>
+
+<p id="cn-m11-381">The False Rejection Rate (FRR) is a method that 
+determines the probability of the number of incorrectly rejected 
+authentication attempts by a biometric system. The formula for 
+calculating FRR is:</p>
+
+<pre id="cn-m11-382"><code>FRR = number of false rejections / numbers of authentication attempts
+
+</code></pre>
+
+<h3 id="cn-m11-384"><b>Crossover Error Rate(CER)</b></h3>
+
+<p id="cn-m11-385">The CER or Crossover Error Rate occurs when the 
+accept (FAR) and reject rates (FRR) are equal or close to each other. In
+ this scenario, the biometric system is performing optimally. It is 
+always good to have both FRR and FAR close to each other. If they are 
+close to each other, this means that the biometric system is working as 
+it should be.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="EnableMultifactorAuthentication">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-388"><b>Exercise 4 - Enable Multifactor Authentication</b></h2>
+
+<p id="cn-m11-389">When a user attempts to log on to a local system or a
+ networked system, the user needs to be first identified and then 
+authenticated. In the authentication process, the user has to provide a 
+password along with the username, which is part of the identification 
+process. Once the user is authenticated, the user can access the system 
+or the resources on which the user has been assigned permissions. With 
+the username and password combination, single-factor authentication 
+occurs.</p>
+
+<p id="cn-m11-390">When a user is asked to enter the user credentials 
+and also use another method to complete the authentication process, then
+ it is called multifactor authentication. For example, on a system, a 
+user provides a username and password and is then prompted to use the 
+smart card. This is an example of multifactor authentication.</p>
+
+<p id="cn-m11-391">In multifactor authentication, you can use different 
+factors, such as something you have or something you know. You can also 
+use attributes, for example, something you exhibit.</p>
+
+<p id="cn-m11-392">To learn more about how to configure multifactor 
+authentication in Windows, please refer to your course material or use 
+your preferred search engine to research this topic in more detail.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-394">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m11-395">
+
+<li id="cn-m11-395">Enable Smart Card Logon</li>
+
+<li id="cn-m11-396">Verify Smart Card Logon Capability</li>
+
+</ul>
+
+<p id="cn-m11-397">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m11-398">
+
+<li id="cn-m11-398">Factors</li>
+
+<li id="cn-m11-399">Attributes</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m11-401">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m11-402">
+
+<li id="cn-m11-402"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m11-403"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m11-404"><img class="cn-img" id="cn-image-m11-c-31" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-31.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m11-405"><b>Factors</b></h3>
+
+<p id="cn-m11-406">Multifactor authentication mechanism comprises multiple authentication factors, which can include two or more of the following:</p>
+
+<ul id="cn-m11-407">
+
+<li id="cn-m11-407"><b>Something you know (the knowledge factor</b>): 
+This includes the password and also the answers to the secret questions.
+ A user must provide this to be able to authenticate himself or herself.</li>
+
+<li id="cn-m11-408"><b>Something you have (the possession factor</b>): This includes something that you have. It could be a one-time password (OTP), a security token, or even an identity card.</li>
+
+<li id="cn-m11-409"><b>Something you are (the inherence factor</b>): 
+This includes the biological traits, which are used for authentication. 
+It could include a retina scan, fingerprint scan, iris scan, voice 
+recognition, and face recognition.</li>
+
+</ul>
+
+<p id="cn-m11-410">You can use a combination of something you know and 
+something you are. This makes authentication stronger than simply using 
+something you know, which is a password typically.</p>
+
+<p id="cn-m11-411">In recent times, location factors are also being used
+ for multifactor authentication. Most smartphones have a GPS feature, 
+which makes this authentication possible. It relates to somewhere you 
+are - your location is used as authentication. For example, a user is 
+allowed to work from home, and his or her home location is considered 
+the authentication factor.</p>
+
+<p id="cn-m11-412">It is also possible to use the time factor as another
+ authentication factor. For example, a user cannot access his or her 
+account outside office hours. This prevents any misuse of the user’s 
+account outside the office hours.</p>
+
+<h4 id="cn-m11-413"><b><i>Multifactor Authentication Technologies</i></b></h4>
+
+<p id="cn-m11-414">Some of the key multifactor authentication technologies are:</p>
+
+<ul id="cn-m11-415">
+
+<li id="cn-m11-415">Security tokens</li>
+
+<li id="cn-m11-416">Soft tokens</li>
+
+<li id="cn-m11-417">Mobile authentication</li>
+
+<li id="cn-m11-418">Biometric authentication methods - retina scans, 
+iris scans, fingerprint scans, finger vein scans, facial recognition, 
+voice recognition, and so on.</li>
+
+</ul>
+
+<h3 id="cn-m11-419"><b>Attributes</b></h3>
+
+<p id="cn-m11-420">Other than the factors, certain attributes can be validated. These attributes are:</p>
+
+<ul id="cn-m11-421">
+
+<li id="cn-m11-421"><b>Somewhere you are - </b>It is an address where you can be located. It uses Geolocation technology to identify your location.</li>
+
+<li id="cn-m11-422"><b>Something you can do - </b>Something you do is 
+based on your habits, such as your signature that can be validated. It 
+could also be how you type on the keyboard. Windows 10 supports 
+picture-based passwords. You have to add gestures to the picture and 
+identify them when you want to unlock the system.</li>
+
+<li id="cn-m11-423"><b>Something you exhibit - </b>It could be a trait that can be scanned and validated, such as a neurological trait, which can be scanned using the MRI methods.</li>
+
+<li id="cn-m11-424"><b>Someone you know - </b>It could be someone who can be validated by a chain of trust.</li>
+
+</ul>
+
+<h3 id="cn-m11-425"><b>Task 1 - Enable Smart Card Logon </b></h3>
+
+<p id="cn-m11-426">Logging in to a system using a smart card typically 
+calls for third-party software installed on the client and servers. 
+Also, management tools are required to administer the creation and 
+revocation of the smart card to corporate users.</p>
+
+<p id="cn-m11-427">In this task, you will select a domain user account to use a smart card for signing-in to the domain network.</p>
+
+<span class="cn-quote" id="cn-m11-428"><b><i>Note: </i></b><i>There is 
+no physical smart card installed on the lab device. The following steps 
+will merely show how to enable a smart card logon.</i></span>
+
+<h4 id="cn-m11-429"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-430">Ensure you have powered on the required devices defined in the introduction and connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m11-431">Open the <b>Server Manager </b>window if already not opened.</p>
+
+<p id="cn-m11-432">Click <b>Tools </b>and select <b>Active Directory Users and Computers</b>.</p>
+
+<p id="cn-m11-433"></p><figure><img class="cn-img" id="cn-image-m11-c-32" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-32.jpg" alt="Figure 4.1 Screenshot of PLABDC01: Clicking on the Tools menu in Server Manager to select Active Directory Users and Computers."><figcaption>Figure 4.1 Screenshot of PLABDC01: Clicking on the Tools menu in Server Manager to select Active Directory Users and Computers.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-436"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-437">On the <b>Active Directory Users and Computers </b>console, select the <b>Marketing </b>organizational unit in the left pane.</p>
+
+<p id="cn-m11-438">At the right details pane, right-click <b>Jane Brown </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m11-439"></p><figure><img class="cn-img" id="cn-image-m11-c-33" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-33.jpg" alt="Figure 4.2 Screenshot of PLABDC01: Right-clicking on a user and selecting Properties from the context menu."><figcaption>Figure 4.2 Screenshot of PLABDC01: Right-clicking on a user and selecting Properties from the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-443"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-444">On the <b>Jane Brown Properties </b>dialog box, click the <b>Account </b>tab.</p>
+
+<p id="cn-m11-445"></p><figure><img class="cn-img" id="cn-image-m11-c-34" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-34.jpg" alt="Figure 4.3 Screenshot of PLABDC01: Clicking the Account tab on the user properties dialog box."><figcaption>Figure 4.3 Screenshot of PLABDC01: Clicking the Account tab on the user properties dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-448"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m11-449">On the <b>Account </b>tab under the <b>Account options </b>section, scroll down a bit.</p>
+
+<p id="cn-m11-450">Select the <b>Smart card is required for interactive logon </b>checkbox.</p>
+
+<span class="atom-code hidden">c5507563-3e73-4ff7-bcbb-c1e8c80814f3</span>
+
+<p id="cn-m11-453">Click <b>OK </b>to save changes.</p>
+
+<p id="cn-m11-454"></p><figure><img class="cn-img" id="cn-image-m11-c-35" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-35.jpg" alt="Figure 4.4 Screenshot of PLABDC01: Selecting the smart card option on the user properties dialog box."><figcaption>Figure 4.4 Screenshot of PLABDC01: Selecting the smart card option on the user properties dialog box.</figcaption></figure><p></p>
+
+<p id="cn-m11-456">Close <b>Active Directory Users and Computers </b>window.</p>
+
+<h3 id="cn-m11-458"><b>Task 2 - Verify Smart Card Logon Capability</b></h3>
+
+<p id="cn-m11-459">In the previous task, you have configured the user to
+ log on with the smart card. This means that if the user does not have 
+the smart card, the user will not be able to log in. When you enable a 
+smart card, a password is still required. After you provide the 
+username, you are prompted to first provide the username and password, 
+and then you need to use the smart card. In this task, you will sign-in 
+as a domain user to test the smart card logon capability. To do this, 
+perform the following steps:</p>
+
+<h4 id="cn-m11-460"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-461">For this step, you will need to disable the <b>Auto login </b>feature. Please see our help and support page for more information on how to do this.</p>
+
+<h4 id="cn-m11-462"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-463">Connect to the <b>PLABWIN10 </b>device. On the sign-in screen, click <b>Other user</b>.</p>
+
+<p id="cn-m11-464">In the <b>User name </b>text box, type:</p>
+
+<pre id="cn-m11-465"><code>janeb
+
+</code></pre>
+
+<p id="cn-m11-466">In the <b>Password </b>text box, type:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m11-468">Press <b>Enter</b>.</p>
+
+<p id="cn-m11-469"></p><figure><img class="cn-img" id="cn-image-m11-c-36" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-36.jpg" alt="Figure 4.5 Screenshot of PLABWIN10: Clicking the Other user option and then entering the user credentials."><figcaption>Figure 4.5 Screenshot of PLABWIN10: Clicking the Other user option and then entering the user credentials.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-473"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-474">Since the user was configured to use a smart card for logon, the system message appears.</p>
+
+<p id="cn-m11-475">Note that due to the system limitations of this lab, you will not be able to proceed beyond this step.</p>
+
+<p id="cn-m11-476"></p><figure><img class="cn-img" id="cn-image-m11-c-37" src="AuthenticationandAuthorizationImplementationTechniques_files/image-m11-c-37.jpg" alt="Figure 4.6 Screenshot of PLABWIN10: Showing the error of smart card and then clicking OK."><figcaption>Figure 4.6 Screenshot of PLABWIN10: Showing the error of smart card and then clicking OK.</figcaption></figure><p></p>
+
+<p id="cn-m11-478">Close the <b>PLABWIN10 </b>window.</p>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m11-481">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-482"><b>Review</b></h2>
+
+<p id="cn-m11-483">Well done, you have completed the <b>Authentication &amp; Authorization Implementation Techniques </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">64762633-3c7d-459b-b080-b1d0d295c4b1</span>
+
+<span class="atom-code hidden">9aeecefd-ab8e-450c-b791-916da19ea0a8</span>
+
+<span class="atom-code hidden">d8a12f33-9008-4b39-93ac-3bdbf5ba7eef</span>
+
+<span class="atom-code hidden">1061abe8-bd38-4998-ba52-c4a0cd0b2c0a</span>
+
+<span class="atom-code hidden">cc4c7921-29fc-4a7b-aabe-ce4d12efcf6f</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m11-493">You completed the following exercises:</p>
+
+<ul id="cn-m11-494">
+
+<li id="cn-m11-494">Exercise 1 - Using Directory Services to Administer User and Group Accounts</li>
+
+<li id="cn-m11-495">Exercise 2 - Authentication Methods</li>
+
+<li id="cn-m11-496">Exercise 3 - Biometric</li>
+
+<li id="cn-m11-497">Exercise 4 - Enable Multifactor Authentication</li>
+
+</ul>
+
+<p id="cn-m11-498">You should now be able to:</p>
+
+<ul id="cn-m11-499">
+
+<li id="cn-m11-499">Create a Local User</li>
+
+<li id="cn-m11-500">Manage the User Account Permissions</li>
+
+<li id="cn-m11-501">Create a Domain User</li>
+
+<li id="cn-m11-502">Add User to a Group</li>
+
+<li id="cn-m11-503">Enable Smart Card Logon</li>
+
+<li id="cn-m11-504">Verify Smart Card Logon Capability</li>
+
+</ul>
+
+<p id="cn-m11-505">You should now have further knowledge of:</p>
+
+<ul id="cn-m11-506">
+
+<li id="cn-m11-506">Federation</li>
+
+<li id="cn-m11-507">Attestation</li>
+
+<li id="cn-m11-508">Authentication, Authorization, and Accounting (AAA)</li>
+
+<li id="cn-m11-509">Cloud vs. On-premises Authentication Requirements</li>
+
+<li id="cn-m11-510">Technologies</li>
+
+<li id="cn-m11-511">Fingerprint</li>
+
+<li id="cn-m11-512">Retina</li>
+
+<li id="cn-m11-513">Iris</li>
+
+<li id="cn-m11-514">Facial</li>
+
+<li id="cn-m11-515">Voice</li>
+
+<li id="cn-m11-516">Vein</li>
+
+<li id="cn-m11-517">Gait Analysis</li>
+
+<li id="cn-m11-518">False Acceptance and False Rejection Rates</li>
+
+<li id="cn-m11-519">Crossover Error Rate</li>
+
+<li id="cn-m11-520">Factors</li>
+
+<li id="cn-m11-521">Attributes</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m11-525">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>

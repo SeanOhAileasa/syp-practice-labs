@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ApplicationandHostHardeningTechniques_files/print-styles.css" rel="stylesheet">
+    <script src="ApplicationandHostHardeningTechniques_files/jquery.min.js"></script>
+    <script src="ApplicationandHostHardeningTechniques_files/jspdf.js"></script>
+    <script src="ApplicationandHostHardeningTechniques_files/from_html.js"></script>
+    <script src="ApplicationandHostHardeningTechniques_files/addimage.js"></script>
+    <script src="ApplicationandHostHardeningTechniques_files/filesaver.js"></script>
+    <script src="ApplicationandHostHardeningTechniques_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6ad507bFa4c4FXKTs3RrMFYQNnPQAme94zn0jKuJBm/S/lVFfRZNV8SvHxCzUJwTyX5zByEPlJTVuMf/wPw6KsuRuLxKDZhUJaiNtj4zZvE=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                <h1>CompTIA Security+</h1>
+                <h2>Application and Host Hardening Techniques</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Endpoint Protection</li><li>Exercise 2 - Boot Integrity</li><li>Exercise 3 - Database</li><li>Exercise 4 - Application Security</li><li>Exercise 5 - Hardening</li><li>Exercise 6 - Sandboxing</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m20-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Antivirus</div>
+
+<div>Antimalware</div>
+
+<div>Endpoint Detection and Response (EDR)</div>
+
+<div>Host Intrusion Prevention System (HIPS)</div>
+
+<div>Host Intrusion Detection System (HIDS)</div>
+
+<div>Data Loss Prevention (DLP)</div>
+
+<div>Next Generation Firewall (NGFW)</div>
+
+<div>Unified Extensible Firmware Interface (UEFI)</div>
+
+<div>Self-encrypting Drive (SED)</div>
+
+<div>Measured Boot</div>
+
+<div>Attestation</div>
+
+<div>Tokenization</div>
+
+<div>Salting</div>
+
+<div>Secure Coding Practices</div>
+
+<div>Secure Cookies</div>
+
+<div>HTTP Headers&nbsp;&nbsp;</div>
+
+<div>Static Code Analysis</div>
+
+</div>
+
+<span class="atom-code hidden">bb1840e4-5425-49a3-9d75-477b8f016ff8</span>
+
+<p id="cn-m20-20">Welcome to the <b>Application and Host Hardening Techniques </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-24">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m20-25">
+
+<li id="cn-m20-25">Exercise 1 - Endpoint Protection</li>
+
+<li id="cn-m20-26">Exercise 2 - Boot Integrity</li>
+
+<li id="cn-m20-27">Exercise 3 - Database</li>
+
+<li id="cn-m20-28">Exercise 4 - Application Security</li>
+
+<li id="cn-m20-29">Exercise 5 - Hardening</li>
+
+<li id="cn-m20-30">Exercise 6 - Sandboxing</li>
+
+</ul>
+
+<p id="cn-m20-31">After completing this module, you should be able to:</p>
+
+<ul id="cn-m20-32">
+
+<li id="cn-m20-32">Use Windows Defender</li>
+
+<li id="cn-m20-33">Use an Online Anti-Malware Scanner</li>
+
+<li id="cn-m20-34">Verify and Adjust Windows Defender Firewall</li>
+
+<li id="cn-m20-35">Using Hashing</li>
+
+<li id="cn-m20-36">Create an IIS Blacklist</li>
+
+<li id="cn-m20-37">Using Nmap</li>
+
+<li id="cn-m20-38">Hardening Hosts With Update Services</li>
+
+<li id="cn-m20-39">Install and Configure WSUS</li>
+
+<li id="cn-m20-40">Work with Windows Sandbox</li>
+
+</ul>
+
+<p id="cn-m20-41">After completing this module, you should have further knowledge of:</p>
+
+<ul id="cn-m20-42">
+
+<li id="cn-m20-42">Antivirus and Antimalware</li>
+
+<li id="cn-m20-43">Endpoint Detection and Response (EDR)</li>
+
+<li id="cn-m20-44">Host Intrusion Prevention System (HIPS) and Host Intrusion Detection System (HIDS)</li>
+
+<li id="cn-m20-45">Data Loss Prevention (DLP)</li>
+
+<li id="cn-m20-46">Next Generation Firewall (NGFW)</li>
+
+<li id="cn-m20-47">Unified Extensible Firmware Interface (UEFI)</li>
+
+<li id="cn-m20-48">Self-encrypting Drive (SED)</li>
+
+<li id="cn-m20-49">Measured Boot and Attestation</li>
+
+<li id="cn-m20-50">Tokenization</li>
+
+<li id="cn-m20-51">Salting</li>
+
+<li id="cn-m20-52">Secure Coding Practices</li>
+
+<li id="cn-m20-53">Secure Cookies</li>
+
+<li id="cn-m20-54">Hypertext Transfer Protocol (HTTP) Headers&nbsp;&nbsp;</li>
+
+<li id="cn-m20-55">Static Code Analysis</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m20-57">The following exam objectives are covered in this lab:</p>
+
+<p id="cn-m20-58">3.2 Given a scenario, implement host or application security solutions.</p>
+
+<ul id="cn-m20-59">
+
+<li id="cn-m20-59">Endpoint Protection</li>
+
+<li id="cn-m20-60">Boot Integrity</li>
+
+<li id="cn-m20-61">Database</li>
+
+<li id="cn-m20-62">Application Security</li>
+
+<li id="cn-m20-63">Hardening</li>
+
+<li id="cn-m20-64">Self-Encrypting Drive (SED)/Full Disk Encryption (FDE)</li>
+
+<li id="cn-m20-65">Hardware Root of Trust</li>
+
+<li id="cn-m20-66">Trusted Platform Module (TPM)</li>
+
+<li id="cn-m20-67">Sandboxing</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m20-68"><b><i>Note: </i></b><i>Our main 
+focus is to cover the practical, hands-on aspects of the exam 
+objectives. We recommend referring to course material or a search engine
+ to research theoretical topics in more detail.</i></span>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m20-70">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">c6fa62a3-1a00-4052-8104-258e8cbaa187</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m20-74">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m20-75">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-77"><b>Lab Topology</b></h2>
+
+<p id="cn-m20-78">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m20-79"><img class="cn-img" id="cn-image-m20-c-0" src="ApplicationandHostHardeningTechniques_files/image-m20-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m20-80">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m20-81">
+
+<li id="cn-m20-81"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m20-82"><b>PLABDM01 </b>- (Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m20-83"><b>PLABWIN10 </b>- (Windows 10 - Domain Member Workstation)</li>
+
+<li id="cn-m20-84"><b>PLABKALI </b>- (Kali Linux 2019.4 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m20-85">Click <b>Next </b>to proceed to the first exercise.</span>
+< <a href="https://github.com/SeanOhAileasa" id="EndpointProtection">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-86"><b>Exercise 1 - Endpoint Protection</b></h2>
+
+<p id="cn-m20-87">Most operating systems have built-in antimalware 
+programs to safeguard against viruses, unwanted email messages, and 
+spyware. Some of these can be a waste of time for the user, while some 
+might lead to system malfunction, resulting in data or business loss. As
+ new malware is released frequently, it is recommended to keep the 
+antimalware application updated.</p>
+
+<p id="cn-m20-88">In this exercise, you will implement some of the 
+recommended practices, such as updating the antimalware application, 
+using online scanners, and implementing built-in security features.</p>
+
+<p id="cn-m20-89">To get a better understanding of this technology, 
+please refer to your course material or use your preferred search engine
+ to research this topic in more detail.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-91">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m20-92">
+
+<li id="cn-m20-92">Use Windows Defender</li>
+
+<li id="cn-m20-93">Use an Online Anti-Malware Scanner</li>
+
+<li id="cn-m20-94">Verify and Adjust Windows Defender Firewall</li>
+
+</ul>
+
+<p id="cn-m20-95">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m20-96">
+
+<li id="cn-m20-96">Antivirus and Antimalware</li>
+
+<li id="cn-m20-97">Endpoint Detection and Response (EDR)</li>
+
+<li id="cn-m20-98">Host Intrusion Prevention System (HIPS) and Host Intrusion Detection System (HIDS)</li>
+
+<li id="cn-m20-99">Data Loss Prevention (DLP)</li>
+
+<li id="cn-m20-100">Next Generation Firewall (NGFW)</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m20-102">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m20-103">
+
+<li id="cn-m20-103"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m20-104"><b>PLABWIN10 - </b>Windows 10 (Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m20-105"><img class="cn-img" id="cn-image-m20-c-1" src="ApplicationandHostHardeningTechniques_files/image-m20-c-1.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m20-106"><b>Antivirus and Antimalware</b></h3>
+
+<p id="cn-m20-107">Malware is software designed with a specific 
+objective or target in mind. They can be designed to conduct an attack 
+on a larger organization or a specific set of individuals.</p>
+
+<p id="cn-m20-108">Malware can also affect mobile devices, especially if
+ their critical system security mechanisms have been disabled. Such 
+systems can be jailbroken or rooted.</p>
+
+<p id="cn-m20-109">Methods attackers use to transmit malware include:</p>
+
+<ul id="cn-m20-110">
+
+<li id="cn-m20-110"><b>E-mail Attachments</b>: Malware is transmitted as
+ a malicious e-mail attachment. When the user clicks the attachment, 
+malware within the attachment installs itself on the system</li>
+
+<li id="cn-m20-111"><b>USB drive</b>: When a malware is loaded onto a 
+USB drive, it normally creates an autorun.inf file. When the user 
+connects the USB drive to the system, the autorun.inf file is executed, 
+and the virus is downloaded to the user’s system.</li>
+
+<li id="cn-m20-112"><b>Websites</b>: A compromised website may deliver a
+ malicious application to the user’s system. When the user visits the 
+website, the malicious application is downloaded and installed.</li>
+
+</ul>
+
+<p id="cn-m20-113">Malware comes in many types, each with its own symptoms and potential damages. Malware is a broad term that can refer to:</p>
+
+<ul id="cn-m20-114">
+
+<li id="cn-m20-114">Malicious code</li>
+
+<li id="cn-m20-115">Trojan horse</li>
+
+<li id="cn-m20-116">Virus</li>
+
+<li id="cn-m20-117">Adware</li>
+
+<li id="cn-m20-118">Spyware</li>
+
+<li id="cn-m20-119">Worm</li>
+
+<li id="cn-m20-120">Rootkit</li>
+
+</ul>
+
+<h4 id="cn-m20-122"><b><i>Trojan</i></b></h4>
+
+<p id="cn-m20-123">Trojan horse is malware that masquerades as a 
+legitimate application and quietly steals information from a computer 
+system. The user can unwittingly trigger the trojan application, which 
+then damages the data and the system.</p>
+
+<h4 id="cn-m20-124"><b><i>Worm</i></b></h4>
+
+<p id="cn-m20-125">A worm is a type of malware that self-replicates and 
+spreads itself to unpatched systems. They are mostly shared using 
+E-mail, and once triggered, it continues to replicate and spread itself 
+from one system to another.</p>
+
+<h4 id="cn-m20-126"><b><i>Spyware</i></b></h4>
+
+<p id="cn-m20-127">When invoked in a user’s system, spyware sits quietly
+ without alerting the user and gathers information without their 
+consent. The attacker controlling the spyware captures the information 
+by logging the keystrokes generated by the user. The attacker can gain 
+information such as usernames, passwords, and credit card numbers.</p>
+
+<h4 id="cn-m20-128"><b><i>Ransomware</i></b></h4>
+
+<p id="cn-m20-129">Ransomware takes over a computer and denies the user 
+access. The intruder demands a ransom to restore access. The intent is 
+to block the user’s access and extract payment.</p>
+
+<h4 id="cn-m20-130"><b><i>Rootkit</i></b></h4>
+
+<p id="cn-m20-131">A rootkit is malware intended to provide intruders 
+undetected administrative access to a computer. It can also allow the 
+attacker to control the system remotely. This malware can be installed 
+by software and third-party application extensions that appear safe. 
+Most antivirus programs use a rootkit scanner to detect and remove this 
+type of malware.</p>
+
+<h4 id="cn-m20-132"><b><i>Virus</i></b></h4>
+
+<p id="cn-m20-133">A virus is a subset of malware, which is designed to 
+cause harm to a system. It can corrupt or even destroy/delete the data 
+residing on the system. The virus is now considered legacy and is rarely
+ used these days.</p>
+
+<h4 id="cn-m20-134"><b><i>Antivirus vs. Antimalware</i></b></h4>
+
+<p id="cn-m20-135">An antivirus, as the name suggests, is designed to 
+remove viruses from a system. It can also eliminate threats, such as 
+worms and trojans. However, antimalware is an advanced version of 
+antivirus that can handle the legacy as well as newer threats. It 
+includes advanced features, such as secure browsing, anti-phishing, 
+advanced threat protection, and anti-fraud. Vendors of antivirus and 
+antimalware may add, remove, or even rename some of the features. 
+Therefore, not every antimalware product has the same set of features. A
+ vendor may also create different products with differentiating 
+features. For example, Kaspersky has several products with 
+differentiating features:</p>
+
+<ul id="cn-m20-136">
+
+<li id="cn-m20-136">Essential PC Anti-virus - Anti-virus</li>
+
+<li id="cn-m20-137">Advanced Security Suite - Internet Security</li>
+
+<li id="cn-m20-138">Premium Security Suite -Total Security</li>
+
+</ul>
+
+<p id="cn-m20-139">Though essential to maintain the security of a system, antivirus or antimalware programs have their limitations:</p>
+
+<ul id="cn-m20-140">
+
+<li id="cn-m20-140">Antivirus or antimalware programs need to be 
+constantly updated to keep up with the frequently released new malware. 
+However, no antivirus or antimalware application can fully keep up with 
+the speed of malware releases. This is mainly because it could be days 
+before an antidote patch is created and updated.</li>
+
+<li id="cn-m20-141">Antivirus or antimalware applications cannot catch 
+zero-day exploits, which attack an unknown vulnerability in an 
+application. Antivirus or antimalware has no control over zero-day 
+exploits.</li>
+
+<li id="cn-m20-142">Antivirus or antimalware applications can slow down 
+the system. The more features you turn on within the application, the 
+more system resources are used.</li>
+
+</ul>
+
+<h3 id="cn-m20-144"><b>Endpoint Detection and Response (EDR)</b></h3>
+
+<p id="cn-m20-145">Endpoint detection and response capabilities help 
+detect, investigate, and respond to advanced threats to the system.  It 
+provides complete visibility of the endpoints. It can detect the threats
+ as they occur and respond to protect these points. Further, the 
+captured information is logged on to a central database for further 
+analysis, detection, investigation, and reporting.</p>
+
+<h3 id="cn-m20-147"><b>Host Intrusion Prevention System (HIPS) and Host Intrusion Detection System (HIDS)</b></h3>
+
+<p id="cn-m20-148">HIDS and HIPS are installed on systems to detect and prevent malicious activities on the localhost.</p>
+
+<p id="cn-m20-149">HIPS detects and prevents malicious activity or 
+unauthorized attempts to access the system where it is installed. HIPS 
+is specific to the local system and is designed to prevent attacks at 
+the host level. For example, the security administrator at PLAB Inc. 
+needs to ensure that compromised devices on the network cannot be used 
+to attack other network devices. The administrator should use HIPS in 
+this scenario.</p>
+
+<p id="cn-m20-150">HIDS can only detect but not prevent any unauthorized
+ access attempts to the system where it is installed; for example, it 
+will log the number of unsuccessful login attempts of a user and raise 
+an alert.</p>
+
+<h3 id="cn-m20-151"><b>Data Loss Prevention (DLP)</b></h3>
+
+<p id="cn-m20-152">DLP detects the data movement via e-mail. It also 
+detects the users who send unencrypted data via e-mail and notifies the 
+administrator about it. Moreover, it prevents end-users from copying 
+data from the system onto unapproved mobile devices.</p>
+
+<h3 id="cn-m20-153"><b>Next Generation Firewall (NGFW)</b></h3>
+
+<p id="cn-m20-154">A firewall is used to allow or deny access to ports 
+and protocols. A Next-Generation Firewall (NGFW) is an advanced version 
+of a firewall that can perform the following functions:</p>
+
+<ul id="cn-m20-155">
+
+<li id="cn-m20-155">Firewall</li>
+
+<li id="cn-m20-156">Anti-spam</li>
+
+<li id="cn-m20-157">Content filtering</li>
+
+<li id="cn-m20-158">DLP</li>
+
+<li id="cn-m20-159">Malware scanner</li>
+
+</ul>
+
+<h3 id="cn-m20-161"><b>Task 1 - Use Windows Defender</b></h3>
+
+<p id="cn-m20-162"><b>Windows Defender </b>is the built-in antimalware 
+software in Windows 10. To keep the system safe, you must keep this 
+software updated with the latest signatures.</p>
+
+<p id="cn-m20-163">In this task, you will update the Windows Defender application. To do this, perform the following steps:</p>
+
+<h4 id="cn-m20-164"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-165">Ensure you have powered on the devices mentioned in the introduction to the exercise.</p>
+
+<p id="cn-m20-166">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m20-167">In the Type here to search text box, type the following:</p>
+
+<pre id="cn-m20-168"><code>Windows Security
+
+</code></pre>
+
+<p id="cn-m20-169">From the search results, select the <b>Windows Security App</b>.</p>
+
+<p id="cn-m20-170"></p><figure><img class="cn-img" id="cn-image-m20-c-2" src="ApplicationandHostHardeningTechniques_files/image-m20-c-2.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Showing Windows Security in the search bar and the Windows Security App option on the Best match pop-up menu selected."><figcaption>Figure
+ 1.1 Screenshot of PLABWIN10: Showing Windows Security in the search bar
+ and the Windows Security App option on the Best match pop-up menu 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-173"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-174">In the right pane, click <b>Virus &amp; threat protection</b>.</p>
+
+<p id="cn-m20-175"></p><figure><img class="cn-img" id="cn-image-m20-c-3" src="ApplicationandHostHardeningTechniques_files/image-m20-c-3.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: Displaying the Windows Security window with Virus &amp;amp; threat protection selected."><figcaption>Figure 1.2 Screenshot of PLABWIN10: Displaying the Windows Security window with Virus &amp; threat protection selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-178"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-179">On the <b>Virus &amp; threat protection </b>page, scroll down, if required, to the <b>Virus &amp; threat protection updates </b>section. Notice the number of days since the definitions were last updated.</p>
+
+<p id="cn-m20-180">The older the signature/definition, the more outdated it is, increasing the risk to your computer.</p>
+
+<span class="cn-quote" id="cn-m20-181"><b><i>Note: </i></b><i>The number of days since the last update may vary in your lab environment. </i></span>
+
+<p id="cn-m20-182">Before updating the definitions, let’s run a quick scan of the system. To scan your system, scroll up to the <b>Current threats </b>section and click <b>Quick scan</b>.</p>
+
+<p id="cn-m20-183"></p><figure><img class="cn-img" id="cn-image-m20-c-4" src="ApplicationandHostHardeningTechniques_files/image-m20-c-4.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Displaying the Virus &amp;amp; threat protection window with the Quick scan button selected."><figcaption>Figure 1.3 Screenshot of PLABWIN10: Displaying the Virus &amp; threat protection window with the Quick scan button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-186"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-187">The scanning process starts. This may take a little while to complete.</p>
+
+<span class="cn-quote" id="cn-m20-188"><b><i>Note: </i></b><i>When you 
+click Scan now, a Quick scan is initiated by default. You can specify 
+the scans to be a Full scan or Custom scan. After the scan is complete, 
+you might see a small result window in the right bottom corner. Click 
+the right arrow to close it.</i></span>
+
+<p id="cn-m20-189"></p><figure><img class="cn-img" id="cn-image-m20-c-5" src="ApplicationandHostHardeningTechniques_files/image-m20-c-5.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Displaying conducting a quick threat detection scan using the Windows Defender application."><figcaption>Figure 1.4 Screenshot of PLABWIN10: Displaying conducting a quick threat detection scan using the Windows Defender application.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-192"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-193">After the scan is completed, Notice that the <b>Current threats </b>section now lists details of the latest scan.</p>
+
+<p id="cn-m20-194">Scroll down to the <b>Virus &amp; threat protection updates </b>section and click the <b>Check for updates </b>link.</p>
+
+<p id="cn-m20-195"></p><figure><img class="cn-img" id="cn-image-m20-c-6" src="ApplicationandHostHardeningTechniques_files/image-m20-c-6.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: Displaying selecting Check for updates in the Windows Security window."><figcaption>Figure 1.5 Screenshot of PLABWIN10: Displaying selecting Check for updates in the Windows Security window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-198"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-199">On the <b>Protection updates </b>page, click the <b>Check for updates </b>button.</p>
+
+<p id="cn-m20-200">This process will take a few minutes to complete if there are new updates to be downloaded and installed.</p>
+
+<p id="cn-m20-201"></p><figure><img class="cn-img" id="cn-image-m20-c-7" src="ApplicationandHostHardeningTechniques_files/image-m20-c-7.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: Displaying selecting the Check for updates button in the Windows Security window."><figcaption>Figure 1.6 Screenshot of PLABWIN10: Displaying selecting the Check for updates button in the Windows Security window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-205"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-206">Note the timestamp. It is still the same as the 
+previous update timestamp. This means that no new updates were available
+ currently.</p>
+
+<p id="cn-m20-207">Click the back arrow to return to the previous page.</p>
+
+<p id="cn-m20-208">Back on the <b>Virus &amp; threat protection </b>page, in the <b>Virus &amp; threat protection settings </b>section, click <b>Manage settings</b>.</p>
+
+<p id="cn-m20-209"></p><figure><img class="cn-img" id="cn-image-m20-c-8" src="ApplicationandHostHardeningTechniques_files/image-m20-c-8.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Displaying selecting Manage settings link in the Windows Security window."><figcaption>Figure 1.7 Screenshot of PLABWIN10: Displaying selecting Manage settings link in the Windows Security window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-212"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-213">On the <b>Virus &amp; threat protection Settings </b>window, scroll down to access the <b>Exclusions </b>section.</p>
+
+<p id="cn-m20-214">Click the <b>Add or remove exclusions </b>link.</p>
+
+<p id="cn-m20-215"></p><figure><img class="cn-img" id="cn-image-m20-c-9" src="ApplicationandHostHardeningTechniques_files/image-m20-c-9.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: Displaying Add or remove exclusions link is selected in the Windows Security window."><figcaption>Figure 1.8 Screenshot of PLABWIN10: Displaying Add or remove exclusions link is selected in the Windows Security window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-218"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-219">Click <b>Add an exclusion </b>and then select <b>Folder </b>to exclude a folder from the scan.</p>
+
+<p id="cn-m20-220"></p><figure><img class="cn-img" id="cn-image-m20-c-10" src="ApplicationandHostHardeningTechniques_files/image-m20-c-10.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: Displaying selecting a folder to be excluded from a scan in the Exclusions window in the Windows Security application."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: Displaying selecting a folder to be 
+excluded from a scan in the Exclusions window in the Windows Security 
+application.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-223"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m20-224">In the <b>Select Folder </b>dialog box, expand <b>This PC </b>and then expand <b>Local Disk (C</b>:). Select <b>Managers </b>and click <b>Select Folder</b>.</p>
+
+<p id="cn-m20-225"></p><figure><img class="cn-img" id="cn-image-m20-c-11" src="ApplicationandHostHardeningTechniques_files/image-m20-c-11.jpg" alt="Figure 1.10 Screenshot of the PLABWIN10: Displaying selecting the folder to be excluded from a virus scan."><figcaption>Figure 1.10 Screenshot of the PLABWIN10: Displaying selecting the folder to be excluded from a virus scan.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-228"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m20-229">The <b>User Account Control </b>dialog box is displayed. Click <b>Yes</b>.</p>
+
+<p id="cn-m20-230"></p><figure><img class="cn-img" id="cn-image-m20-c-12" src="ApplicationandHostHardeningTechniques_files/image-m20-c-12.jpg" alt="Figure 1.11 Screenshot of the PLABWIN10: Displaying selecting Yes in the User Account Control dialog box."><figcaption>Figure 1.11 Screenshot of the PLABWIN10: Displaying selecting Yes in the User Account Control dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-233"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m20-234">The <b>C:\Managers </b>folder is now excluded from the scan.</p>
+
+<p id="cn-m20-235">Click the back arrow in the top left.</p>
+
+<p id="cn-m20-236">Back on the <b>Virus &amp; threat protection settings </b>page, click the back arrow again.</p>
+
+<p id="cn-m20-237"></p><figure><img class="cn-img" id="cn-image-m20-c-13" src="ApplicationandHostHardeningTechniques_files/image-m20-c-13.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: Displaying the excluded folder is listed in the Windows Security - Exclusions screen."><figcaption>Figure 1.12 Screenshot of PLABWIN10: Displaying the excluded folder is listed in the Windows Security - Exclusions screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-241"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m20-242">On the <b>Virus &amp; threat protection </b>page, in the <b>Current threats </b>section, click <b>Scan options</b>.</p>
+
+<p id="cn-m20-243"></p><figure><img class="cn-img" id="cn-image-m20-c-14" src="ApplicationandHostHardeningTechniques_files/image-m20-c-14.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: Displaying Scan options link on the Windows Security - Virus &amp;amp; threat protection screen is selected."><figcaption>Figure
+ 1.13 Screenshot of PLABWIN10: Displaying Scan options link on the 
+Windows Security - Virus &amp; threat protection screen is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-246"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m20-247">On the <b>Scan Options </b>page, select the <b>Custom scan </b>and click <b>Scan now</b>.</p>
+
+<span class="cn-quote" id="cn-m20-248"><b><i>Note: </i></b><i>If you need to choose specific files or folders to scan, you can choose the Custom scan option.</i></span>
+
+<p id="cn-m20-249"></p><figure><img class="cn-img" id="cn-image-m20-c-15" src="ApplicationandHostHardeningTechniques_files/image-m20-c-15.jpg" alt="Figure 1.14 Screenshot of the PLABWIN10: The Windows Security - Scan options screen is displayed showing the required selection performed, and the Scan now button highlighted."><figcaption>Figure
+ 1.14 Screenshot of the PLABWIN10: The Windows Security - Scan options 
+screen is displayed showing the required selection performed, and the 
+Scan now button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-252"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m20-253">The <b>Select Folder </b>dialog box is displayed.</p>
+
+<p id="cn-m20-254">In the left pane, expand <b>Local Disk (C:) </b>and select <b>Managers.</b></p>
+
+<p id="cn-m20-255">Click <b>Select Folder</b>.</p>
+
+<p id="cn-m20-256"></p><figure><img class="cn-img" id="cn-image-m20-c-16" src="ApplicationandHostHardeningTechniques_files/image-m20-c-16.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The Select Folder dialog box is displayed, showing the required folder selected and the Select Folder button highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABWIN10: The Select Folder dialog box is 
+displayed, showing the required folder selected and the Select Folder 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-259"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m20-260">Notice that the scan status states <b>0 files scanned</b>. This is because the <b>Managers </b>folder selected for scanning is marked as an exclusion. Therefore, it is skipped from scanning here.</p>
+
+<p id="cn-m20-261">A notification regarding exclusion appears at the bottom of the screen.</p>
+
+<p id="cn-m20-262">Click the Close icon at the top-right corner to close the <b>Scan options </b>window.</p>
+
+<p id="cn-m20-263"></p><figure><img class="cn-img" id="cn-image-m20-c-17" src="ApplicationandHostHardeningTechniques_files/image-m20-c-17.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: Items skipped during scan notification is displayed on the Windows Security - Scan options screen."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: Items skipped during scan notification is
+ displayed on the Windows Security - Scan options screen.</figcaption></figure><p></p>
+
+<h3 id="cn-m20-266"><b>Task 2 - Use an Online Anti-Malware Scanner</b></h3>
+
+<p id="cn-m20-267">In addition to antimalware programs installed locally
+ on a computer, you can use free online anti-virus scanners to check 
+your system for suspicious activity.</p>
+
+<p id="cn-m20-268">In this task, you will download the Microsoft Safety Scanner and use it to scan the system.</p>
+
+<span class="cn-quote" id="cn-m20-269"><b><i>Note</i></b><i>: The 
+webpage appearance may change, and URL links may become outdated. You 
+can use your search engine to find out other online antimalware scanners
+ if necessary.</i></span>
+
+<h4 id="cn-m20-270"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-271">Ensure you are connected to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m20-272">Click the <b>Microsoft Edge </b>icon on the taskbar.</p>
+
+<p id="cn-m20-273"></p><figure><img class="cn-img" id="cn-image-m20-c-18" src="ApplicationandHostHardeningTechniques_files/image-m20-c-18.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: Displaying opening Microsoft Edge from the taskbar."><figcaption>Figure 1.17 Screenshot of PLABWIN10: Displaying opening Microsoft Edge from the taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-276"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-277">The <b>Microsoft Edge </b>window is displayed.</p>
+
+<p id="cn-m20-278">In the address bar, type the following URL:</p>
+
+<pre id="cn-m20-279"><code>https://www.microsoft.com/security/scanner/
+
+</code></pre>
+
+<p id="cn-m20-280">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m20-281"><b><i>Note</i></b><i>: If the URL indicated above does not work, use your search engine to search for Microsoft online safety and security center.</i></span>
+
+<p id="cn-m20-282"></p><figure><img class="cn-img" id="cn-image-m20-c-19" src="ApplicationandHostHardeningTechniques_files/image-m20-c-19.jpg" alt="Figure 1.18 Screenshot of the PLABWIN10: Displaying browsing to the URL in the Microsoft Edge web browser."><figcaption>Figure 1.18 Screenshot of the PLABWIN10: Displaying browsing to the URL in the Microsoft Edge web browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-285"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-286">The <b>Microsoft Safety Scanner </b>Webpage is displayed.</p>
+
+<p id="cn-m20-287">Click <b>Download Microsoft Safety Scanner (64-bit</b>).</p>
+
+<span class="cn-quote" id="cn-m20-288"><b><i>Note: </i></b><i>Most 
+websites are updated regularly. There is a possibility that the website 
+look and feel does not exactly match the screenshot below.</i></span>
+
+<p id="cn-m20-289"></p><figure><img class="cn-img" id="cn-image-m20-c-20" src="ApplicationandHostHardeningTechniques_files/image-m20-c-20.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: Required download option on the Microsoft Safety Scanner webpage is selected."><figcaption>Figure 1.19 Screenshot of PLABWIN10: Required download option on the Microsoft Safety Scanner webpage is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-292"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-293">After the file is downloaded, click <b>Open file</b>.</p>
+
+<p id="cn-m20-294"></p><figure><img class="cn-img" id="cn-image-m20-c-21" src="ApplicationandHostHardeningTechniques_files/image-m20-c-21.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: Displaying opening the downloaded file in the Microsoft Edge browser."><figcaption>Figure 1.20 Screenshot of PLABWIN10: Displaying opening the downloaded file in the Microsoft Edge browser.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-297"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-298">The <b>User Account Control </b>dialog box is displayed. Click <b>Yes </b>to continue.</p>
+
+<p id="cn-m20-299"></p><figure><img class="cn-img" id="cn-image-m20-c-22" src="ApplicationandHostHardeningTechniques_files/image-m20-c-22.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: Displaying selecting Yes in the User Account Control dialog box."><figcaption>Figure 1.21 Screenshot of PLABWIN10: Displaying selecting Yes in the User Account Control dialog box.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-302"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-303">The <b>End User License Agreement </b>page appears.</p>
+
+<p id="cn-m20-304">Select the <b>Accept all terms of the preceding license agreement </b>and click <b>Next</b>.</p>
+
+<p id="cn-m20-305"></p><figure><img class="cn-img" id="cn-image-m20-c-23" src="ApplicationandHostHardeningTechniques_files/image-m20-c-23.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: Displaying accepting the End user license agreement and selecting Next in the Microsoft Security Scanner installation wizard window."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: Displaying accepting the End user license
+ agreement and selecting Next in the Microsoft Security Scanner 
+installation wizard window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-308"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-309">The <b>Microsoft Safety Scanner </b>wizard is displayed.</p>
+
+<p id="cn-m20-310">On the <b>Welcome to the Microsoft Safety Scanner </b>page, click <b>Next.</b></p>
+
+<p id="cn-m20-311"></p><figure><img class="cn-img" id="cn-image-m20-c-24" src="ApplicationandHostHardeningTechniques_files/image-m20-c-24.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: Displaying the Microsoft Safety Scanner wizard selecting the Next button."><figcaption>Figure 1.23 Screenshot of PLABWIN10: Displaying the Microsoft Safety Scanner wizard selecting the Next button.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-314"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-315">On the <b>Scan Type </b>page, keep the default selection - <b>Quick scan </b>- and click <b>Next</b>.</p>
+
+<p id="cn-m20-316"></p><figure><img class="cn-img" id="cn-image-m20-c-25" src="ApplicationandHostHardeningTechniques_files/image-m20-c-25.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: Displaying the Scan type page in the Microsoft Safety Scanner wizard with the Quick Scan option selected."><figcaption>Figure
+ 1.24 Screenshot of PLABWIN10: Displaying the Scan type page in the 
+Microsoft Safety Scanner wizard with the Quick Scan option selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-319"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-320">On the <b>Scanning your computer </b>page, the scanning progress is displayed.</p>
+
+<p id="cn-m20-321">This will take around 2-3 minutes to complete.</p>
+
+<p id="cn-m20-322"></p><figure><img class="cn-img" id="cn-image-m20-c-26" src="ApplicationandHostHardeningTechniques_files/image-m20-c-26.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: Displaying conducting a quick scan using the Microsoft Safety scanner application."><figcaption>Figure 1.25 Screenshot of PLABWIN10: Displaying conducting a quick scan using the Microsoft Safety scanner application.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-325"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m20-326">After the scan is completed, on the <b>Scan results </b>page, view the results.</p>
+
+<p id="cn-m20-327">Click <b>Finish </b>when done.</p>
+
+<p id="cn-m20-328">Close the <b>Microsoft Edge </b>window.</p>
+
+<p id="cn-m20-329"></p><figure><img class="cn-img" id="cn-image-m20-c-27" src="ApplicationandHostHardeningTechniques_files/image-m20-c-27.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: Displaying the scan has been completed and closing the Microsoft Safety Scanner application"><figcaption>Figure 1.26 Screenshot of PLABWIN10: Displaying the scan has been completed and closing the Microsoft Safety Scanner application</figcaption></figure><p></p>
+
+<h3 id="cn-m20-332"><b>Task 3 - Verify and Adjust Windows Defender Firewall  </b></h3>
+
+<p id="cn-m20-333">In this task, you will first verify that the Windows 
+Defender firewall is activated. Then you will make a change to the rules
+ within the firewall that govern the kind of traffic that can pass 
+through.</p>
+
+<p id="cn-m20-334">Since we consider endpoint protection here, you will perform this task on the desktop machine rather than one of the servers.</p>
+
+<h4 id="cn-m20-335"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-336">Ensure that the required devices are powered on. Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m20-337">In the Type here to search field within the taskbar, type:</p>
+
+<pre id="cn-m20-338"><code>Firewall
+
+</code></pre>
+
+<p id="cn-m20-339">Select the <b>Windows Defender Firewall </b>option on the search results.</p>
+
+<p id="cn-m20-340"></p><figure><img class="cn-img" id="cn-image-m20-c-28" src="ApplicationandHostHardeningTechniques_files/image-m20-c-28.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: Showing Firewall in the search bar and the Windows Defender Firewall option on the Best match pop-up menu is selected."><figcaption>Figure
+ 1.27 Screenshot of PLABWIN10: Showing Firewall in the search bar and 
+the Windows Defender Firewall option on the Best match pop-up menu is 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-342"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-343">When the <b>Window Defender Firewall </b>screen appears, click the <b>Advanced settings </b>link.</p>
+
+<p id="cn-m20-344"></p><figure><img class="cn-img" id="cn-image-m20-c-29" src="ApplicationandHostHardeningTechniques_files/image-m20-c-29.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: Displaying the Advanced Settings link in the Windows Defender Firewall window is selected."><figcaption>Figure 1.28 Screenshot of PLABWIN10: Displaying the Advanced Settings link in the Windows Defender Firewall window is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-349"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-350">Click on the <b>Inbound Rules </b>option on the left side menu.</p>
+
+<p id="cn-m20-351">This loads a list of pre-installed <b>Inbound rules </b>in the middle pane.</p>
+
+<p id="cn-m20-352">Scroll through the list of rules.</p>
+
+<p id="cn-m20-353"></p><figure><img class="cn-img" id="cn-image-m20-c-30" src="ApplicationandHostHardeningTechniques_files/image-m20-c-30.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: Displaying Inbound Rules are listed on the middle pane of Windows Defender Firewall with Advanced Security window."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: Displaying Inbound Rules are listed on 
+the middle pane of Windows Defender Firewall with Advanced Security 
+window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-358"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-359">The <b>Windows Defender Firewall </b>rules can be 
+configured to apply only to specific computers, user accounts, programs,
+ services, port numbers, protocols, or even network adapters.</p>
+
+<p id="cn-m20-360">Find the column labeled <b>Local Port</b>.  Click on it to sort the rules by <b>Local Port Number</b>. This makes it much easier to locate rules that apply to a certain port.</p>
+
+<p id="cn-m20-361">Here you want to look at any rules that apply to <b>Port 80</b>. This port is typically used for allowing access to a web server.</p>
+
+<p id="cn-m20-362"></p><figure><img class="cn-img" id="cn-image-m20-c-31" src="ApplicationandHostHardeningTechniques_files/image-m20-c-31.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: Displaying Inbound Rules sorted by the port number in the Windows Defender Firewall with Advanced Security window."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: Displaying Inbound Rules sorted by the 
+port number in the Windows Defender Firewall with Advanced Security 
+window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-367"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-368">Highlight the first rule that applies to port 80 - <b>BranchCache Content Retrieval (HTTP-In) </b>- and scroll to the left.  Look at the columns labeled <b>Enabled </b>and <b>Action</b>.</p>
+
+<p id="cn-m20-369">This first rule allows traffic in through port 80, 
+but there is no effect since it is disabled. The firewall does not 
+consider this rule.</p>
+
+<p id="cn-m20-370">This has a similar effect to enabling the rule and setting the <b>Action </b>to <b>Block</b>. This is because firewalls are set to block any traffic source that does not have a rule specifically allowing it.</p>
+
+<p id="cn-m20-371"></p><figure><img class="cn-img" id="cn-image-m20-c-32" src="ApplicationandHostHardeningTechniques_files/image-m20-c-32.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: Displaying the required inbound rule in the middle pane of Windows Defender Firewall with Advanced Security window is selected."><figcaption>Figure
+ 1.31 Screenshot of PLABWIN10: Displaying the required inbound rule in 
+the middle pane of Windows Defender Firewall with Advanced Security 
+window is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-376"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-377">Double-click on the <b>BranchCache Content Retrieval (HTTP-In) </b>rule. The relevant dialog box is displayed.</p>
+
+<p id="cn-m20-378">On the <b>General </b>tab, select the <b>Enabled </b>checkbox and leave the radio button set to <b>Allow the connection</b>.</p>
+
+<p id="cn-m20-379">Click <b>OK</b>.</p>
+
+<p id="cn-m20-380"></p><figure><img class="cn-img" id="cn-image-m20-c-33" src="ApplicationandHostHardeningTechniques_files/image-m20-c-33.jpg" alt="Figure 1.32 Screenshot of PLABWIN10: Displaying the General tab on the BranchCache Content Retrieval (HTTP-In) Properties dialog box showing the required settings performed and the OK button is selected."><figcaption>Figure
+ 1.32 Screenshot of PLABWIN10: Displaying the General tab on the 
+BranchCache Content Retrieval (HTTP-In) Properties dialog box showing 
+the required settings performed and the OK button is selected.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<h4 id="cn-m20-385"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-386">You have saved your rule change, and inbound traffic would now be allowed on port <b>80</b>. Notice that this rule is now activated.</p>
+
+<p id="cn-m20-387">Opening port <b>80 </b>would be something you would 
+do if you activated the IIS web server established a binding to port 80,
+ which is the default.  If you were utilizing <b>TLS </b>or <b>SSL </b>to encrypt web traffic, you would use port <b>443 </b>instead.</p>
+
+<p id="cn-m20-388">There are versions of IIS designed to run on a 
+desktop machine rather than a server, and they can be useful in the 
+development and testing of web applications.  Setting the host-based 
+firewall to allow <b>inbound </b>traffic on port <b>80 </b>is not unusual.</p>
+
+<p id="cn-m20-389"></p><figure><img class="cn-img" id="cn-image-m20-c-34" src="ApplicationandHostHardeningTechniques_files/image-m20-c-34.jpg" alt="Figure 1.33 Screenshot of PLABWIN10: Displaying Updated inbound rule in the middle pane of Windows Defender Firewall with Advanced Security window is selected."><figcaption>Figure
+ 1.33 Screenshot of PLABWIN10: Displaying Updated inbound rule in the 
+middle pane of Windows Defender Firewall with Advanced Security window 
+is selected.</figcaption></figure><p></p>
+
+<p id="cn-m20-391">Close the <b>Windows Defender Firewall with Advanced Security </b>window.</p>
+
+<p id="cn-m20-392">Close the <b>Windows Defender Firewall </b>window.</p>
+< <a href="https://github.com/SeanOhAileasa" id="BootIntegrity">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-393"><b>Exercise 2 - Boot Integrity</b></h2>
+
+<p id="cn-m20-394">A hardware root of trust ensures secure operations on
+ a system. The root of trust is implemented on the hardware and, 
+therefore, cannot be tampered with. In a normal scenario, a system is 
+prone to malware and other types of attacks, and if the encryption keys 
+are stored on the system, they can be easily stolen. However, the root 
+of trust is immune to a malware attack. Moreover, with the root of trust
+ enforced, the booting process of a system is considered to be genuine, 
+with any applications running on it.</p>
+
+<p id="cn-m20-395">Therefore, root of trust ensures secure operations by:</p>
+
+<ul id="cn-m20-396">
+
+<li id="cn-m20-396">storing encryption keys securely</li>
+
+<li id="cn-m20-397">enabling a secure boot process</li>
+
+</ul>
+
+<p id="cn-m20-398">The root of trust can be implemented in two different ways on a system:</p>
+
+<ul id="cn-m20-399">
+
+<li id="cn-m20-399">a stand-alone security module</li>
+
+<li id="cn-m20-400">a security module embedded within a processor or a system on chip (SoC)</li>
+
+</ul>
+
+<p id="cn-m20-401">There are two types of hardware root of trust:</p>
+
+<ul id="cn-m20-402">
+
+<li id="cn-m20-402"><b>Fixed function</b>: designed to perform a 
+specific function, such as data encryption. Other functions it can 
+perform is key management and certificate validation. However, other 
+than the defined functions, it cannot perform any other functions.</li>
+
+<li id="cn-m20-403"><b>Programmable</b>: is designed to perform complex tasks and functions. It is possible to upgrade a programmable root of trust.</li>
+
+</ul>
+
+<p id="cn-m20-404">A root of trust can be applied using:</p>
+
+<ul id="cn-m20-405">
+
+<li id="cn-m20-405">A private cryptographic key</li>
+
+<li id="cn-m20-406">Physically Unclonable Function (PUF)</li>
+
+</ul>
+
+<p id="cn-m20-407">A&nbsp;hardware security module&nbsp;(HSM) is a 
+security device that is used for safeguarding and managing digital keys,
+ which are used for strong authentication. HSM can be in the form of a 
+plug-in card or an external device.</p>
+
+<p id="cn-m20-408">The following are the functions of an HSM:</p>
+
+<ul id="cn-m20-409">
+
+<li id="cn-m20-409">Performing encryption and decryption</li>
+
+<li id="cn-m20-410">Manage secure key generation</li>
+
+<li id="cn-m20-411">Perform secure key storage</li>
+
+<li id="cn-m20-412">Manage Transparent Data Encryption (TDE) keys for databases</li>
+
+</ul>
+
+<p id="cn-m20-413">The Following cryptographic algorithms are supported with microSD HSM:</p>
+
+<ul id="cn-m20-414">
+
+<li id="cn-m20-414">AES</li>
+
+<li id="cn-m20-415">RSA</li>
+
+<li id="cn-m20-416">SHA-1</li>
+
+<li id="cn-m20-417">Triple DES</li>
+
+<li id="cn-m20-418">Diffie-Hellman Key Exchange</li>
+
+</ul>
+
+<p id="cn-m20-419">Other than these cryptographic algorithms, SHA-256 is also supported by HSM.</p>
+
+<p id="cn-m20-420">Let’s take the example of a Webserver that you have. 
+The Web server is configured to run a Website with a certificate. You 
+notice that after the certificate configuration, the Web server has 
+slowed down. You want the Web server to give good performance while 
+using the certificate, and at the same time, you also want to protect 
+its private key.</p>
+
+<p id="cn-m20-421">HSM can meet both the requirements mentioned in the 
+scenario. HSM increases the performance of the Web server by offloading 
+the cryptographic functions. Moreover, HSM stores the private key. There
+ are different varieties available, such as USB and PCIe cards.</p>
+
+<p id="cn-m20-422">Motherboards of the modern systems include a chip 
+that is known as a Trusted Platform Module (TPM), which provides a 
+hardware root of trust for secure computing. When a system has TPM, you 
+can configure it by accessing BIOS within the system. A TPM can perform 
+various functions, such as:</p>
+
+<ul id="cn-m20-423">
+
+<li id="cn-m20-423">Storage of encryption keys</li>
+
+<li id="cn-m20-424">Management of encryption keys</li>
+
+<li id="cn-m20-425">Perform encryption and decryption process</li>
+
+<li id="cn-m20-426">Storage of certificates</li>
+
+<li id="cn-m20-427">Storage of passwords</li>
+
+</ul>
+
+<p id="cn-m20-428">You can configure TPM to perform full disk encryption
+ (FDE). However, for TPM to perform FDE, you need to ensure TPM, after 
+which it becomes the root of trust. Once it becomes the root of trust, 
+the hard drive is locked with the encryption keys, which means that it 
+cannot be simply taken out and plugged into another system for data 
+retrieval. When you enable TPM in a system, it performs a complete 
+system check and verifies the systems’ integrity. Further, it ensures 
+the integrity of the entire boot process within a system.</p>
+
+<p id="cn-m20-429">The concept of the root of trust is formed by the use
+ of TPM, which ensures that the hardware cannot be either tampered with 
+or replicated. For example, someone cannot just replicate a particular 
+motherboard to break the encryption applied through TPM.</p>
+
+<p id="cn-m20-431">In this exercise, you will learn about Unified 
+Extensible Firmware Interface (UEFI), Self-encrypting Drives (SED), 
+Measured Boot and Attestation.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-433">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m20-434">
+
+<li id="cn-m20-434">Unified Extensible Firmware Interface (UEFI)</li>
+
+<li id="cn-m20-435">Self-encrypting Drive (SED)</li>
+
+<li id="cn-m20-436">Measured Boot and Attestation</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m20-438">This exercise contains materials for Security+.</p>
+
+<p id="cn-m20-439"><img class="cn-img" id="cn-image-m20-c-35" src="ApplicationandHostHardeningTechniques_files/image-m20-c-35.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m20-440"><b>Unified Extensible Firmware Interface (UEFI) </b></h3>
+
+<p id="cn-m20-441">Legacy systems supported a BIOS interface. In modern 
+systems BIOS has been replaced by Unified Extensible Firmware Interface 
+(UEFI). UEFI is a new boot environment to boot the operating system. 
+UEFI that can exist within the firmware of a system, or it can also be 
+put on top of BIOS, if required. To enable UEFI on a system, you need at
+ least Windows 8. UEFI environment settings are secured by an admin 
+password.</p>
+
+<p id="cn-m20-442">The process of booting the system for the user 
+remains the same. However, the internal working of the booting differs 
+in the case of the UEFI. When a system boots, it goes through UEFI, 
+which lets the operating system boot.</p>
+
+<p id="cn-m20-443">There are two methods of checking if the system is running UEFI:</p>
+
+<ul id="cn-m20-444">
+
+<li id="cn-m20-444">In the first method, you need to check if there is 
+/sys/firmware/efi directory on your system. If it is present, then UEFI 
+is present on the system.</li>
+
+<li id="cn-m20-445">In the second method, you can install and then run 
+efibootmgr. After running, if it returns variables, then this means that
+ UEFI is running on the system.</li>
+
+</ul>
+
+<p id="cn-m20-446">The UEFI uses firmware drivers, which are also known as Option ROMs.</p>
+
+<p id="cn-m20-447">As stated earlier, the /sys/firmware/efi directory 
+stores the UEFI. This directory can be present in non-volatile memory, a
+ hard drive, or even a network location.</p>
+
+<p id="cn-m20-448">When you are using UEFI boot and have Secure Boot 
+enabled, the boot image must be signed by Microsoft or a third-party 
+certificate authority whose images can be accepted by UEFI. If you 
+attempt to use an unsigned image with the Secure Boot, it will not list 
+the image in the boot menu. Therefore, you will not be able to install 
+the operating system from a DVD or by any other means, such as copying 
+the installation files from a USB. Moreover, you need to configure UEFI 
+to trust your custom bootloader.</p>
+
+<h3 id="cn-m20-449"><b>Self-Encrypting Drive (SED)</b></h3>
+
+<p id="cn-m20-450">A SED is a type of hard drive that can encrypt and 
+decrypt the data on its own without user intervention. As a process, the
+ data is encrypted automatically when it is written to the disk. When 
+the user attempts to retrieve the data, the data is first decrypted and 
+shown to the user.</p>
+
+<p id="cn-m20-451">While configuring a SED, you create a password, which
+ is later used to decrypt the hard drive during the boot up process. 
+Without the password, the hard drive does not boot. Only after 
+successful verification of the password, the drive is decrypted, and the
+ user can access it.</p>
+
+<p id="cn-m20-452">SED is encrypted using a Data Encryption Key (DEK) where a single key is used to encrypt and decrypt the hard drive.</p>
+
+<p id="cn-m20-453">Hardware manufacturers have started to develop 
+hardware devices according to the Opal Storage standard specification, 
+which was developed by Trusted Computing Group (TCG). This standard is 
+an upgrade to the previously used SED standard.</p>
+
+<h3 id="cn-m20-454"><b>Full Disk Encryption (FDE)</b></h3>
+
+<p id="cn-m20-455">Full disk Encryption is the process of encrypting all
+ the data on the drive. If the drive falls in to the wrong hands it will
+ not be possible to retrieve any data from the drive as the decryption 
+keys will not be available to decrypt the drive and access the data.</p>
+
+<h3 id="cn-m20-456"><b>Measured Boot and Attestation</b></h3>
+
+<p id="cn-m20-457">Just like the secure boot, Measured Boot Chain also 
+works with the Root of Trust. The entire process of the startup of a 
+system is validated with the Root of Trust. A chain is defined for the 
+bootup process such that the current object calculates the hash of the 
+next object and stores it safely. It starts with the Root of Trust, and 
+then the next object in the chain is computing its own hash. In case of 
+Measured Boot, the hashes are stored in the TPM, the Trusted Platform 
+Module.</p>
+
+<p id="cn-m20-458">When a system boots, each object’s hash is compared with the hashes stored in TPM. If every hash meets, the system boots up.</p>
+
+<p id="cn-m20-459">The hashes can be reported to a management station, known as Attestation.</p>
+
+<span class="atom-code hidden">7429868b-128c-4069-95a9-7246a6a9e5a3</span>
+< <a href="https://github.com/SeanOhAileasa" id="Database">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-463"><b>Exercise 3 - Database</b></h2>
+
+<p id="cn-m20-464">With the rising trend of data-harvesting, databases 
+are now a mainstay of any current system. However, if the information is
+ not stored in a proper format and is not safeguarded, databases can be 
+prone to several types of attacks.</p>
+
+<p id="cn-m20-465">In this exercise, you will learn about various methods to secure information in a database.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-467">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m20-468">
+
+<li id="cn-m20-468">Using Hashing</li>
+
+</ul>
+
+<p id="cn-m20-469">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m20-470">
+
+<li id="cn-m20-470">Tokenization</li>
+
+<li id="cn-m20-471">Salting</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m20-473">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m20-474">
+
+<li id="cn-m20-474"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m20-475"><b>PLABWIN10 - </b>Windows 10 (Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m20-476"><img class="cn-img" id="cn-image-m20-c-36" src="ApplicationandHostHardeningTechniques_files/image-m20-c-36.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m20-478"><b>Tokenization</b></h3>
+
+<p id="cn-m20-479">Tokenization is a method of replacing the actual 
+string of data with unique identification symbols or numbers. This way, 
+if anyone gets hold of the string of text, they cannot decipher it. 
+Tokenization is used to secure highly sensitive data, such as credit 
+card numbers.</p>
+
+<p id="cn-m20-480">Tokenization is implemented in the following cases:</p>
+
+<ul id="cn-m20-481">
+
+<li id="cn-m20-481">Bank transactions</li>
+
+<li id="cn-m20-482">Medical records</li>
+
+<li id="cn-m20-483">Criminal records</li>
+
+<li id="cn-m20-484">Vehicle driver information</li>
+
+<li id="cn-m20-485">Loan applications</li>
+
+<li id="cn-m20-486">Stock trading</li>
+
+</ul>
+
+<ol id="cn-m20-487">
+
+</ol>
+
+<h3 id="cn-m20-488"><b>Salting</b></h3>
+
+<p id="cn-m20-489">Salting increases the length of the passwords by 
+adding more bits to it, making it difficult to guess the real password. 
+In fact, this is a way of cryptography.</p>
+
+<p id="cn-m20-490">Salting protects the passwords stored in a database from attacks, such as:</p>
+
+<ul id="cn-m20-491">
+
+<li id="cn-m20-491">Dictionary</li>
+
+<li id="cn-m20-492">Brute-force</li>
+
+<li id="cn-m20-493">Rainbow table</li>
+
+</ul>
+
+<ol id="cn-m20-494">
+
+</ol>
+
+<h3 id="cn-m20-495"><b>Task 1 - Use Hashing </b></h3>
+
+<p id="cn-m20-496">If you want to verify a source file is not corrupted,
+ you can compare the file’s new hash value to the previously generated 
+hash value. If the new hash value and the previously generated values 
+are different, it means that the source file has been tampered with and 
+has lost its integrity.</p>
+
+<p id="cn-m20-497">Here we will apply the same tool to see hash results.</p>
+
+<h4 id="cn-m20-498"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-499">Ensure you have powered on the devices mentioned in the introduction to the exercise.</p>
+
+<p id="cn-m20-500">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m20-501">Click the Start charm, navigate to the <b>Cryptography Demonstration </b>and click on the <b>CrytoDemo1.0 </b>program to start.</p>
+
+<p id="cn-m20-502"></p><figure><img class="cn-img" id="cn-image-m20-c-37" src="ApplicationandHostHardeningTechniques_files/image-m20-c-37.jpg" alt="Figure 3.1 Screenshot of PLABWIN10: CryptoDemo option on the Start menu is selected."><figcaption>Figure 3.1 Screenshot of PLABWIN10: CryptoDemo option on the Start menu is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-505"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-506">The <b>CryptoDemo </b>window is displayed.</p>
+
+<p id="cn-m20-507">Notice that the <b>Encryption </b>tab is displayed by default.</p>
+
+<p id="cn-m20-508">Click the <b>Hashing </b>tab.</p>
+
+<p id="cn-m20-510"></p><figure><img class="cn-img" id="cn-image-m20-c-38" src="ApplicationandHostHardeningTechniques_files/image-m20-c-38.jpg" alt="Figure 3.2 Screenshot of PLABWIN10: Encryption tab on the CryptoDemo dialog box is displayed listing default settings."><figcaption>Figure 3.2 Screenshot of PLABWIN10: Encryption tab on the CryptoDemo dialog box is displayed listing default settings.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-513"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-514">Notice the <b>Hash Algorithm </b>is set to <b>MD5, </b>which is a very common hash type.</p>
+
+<p id="cn-m20-515"></p><figure><img class="cn-img" id="cn-image-m20-c-39" src="ApplicationandHostHardeningTechniques_files/image-m20-c-39.jpg" alt="Figure 3.3 Screenshot of PLABWIN10: Hashing tab on the CryptoDemo dialog box is displayed listing default settings."><figcaption>Figure 3.3 Screenshot of PLABWIN10: Hashing tab on the CryptoDemo dialog box is displayed listing default settings.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-518"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-519">On the top pane, type the following:</p>
+
+<pre id="cn-m20-520"><code>Congratulations, you are learning how hashing works.
+
+</code></pre>
+
+<p id="cn-m20-522">Click <b>Get Hash</b>.</p>
+
+<p id="cn-m20-523">Notice the hash value is displayed in the lower pane.</p>
+
+<p id="cn-m20-524"></p><figure><img class="cn-img" id="cn-image-m20-c-40" src="ApplicationandHostHardeningTechniques_files/image-m20-c-40.jpg" alt="Figure 3.4 Screenshot of PLABWIN10: Hashing tab on the CryptoDemo dialog box is displayed showing the required text typed-in and listing the calculated hash value."><figcaption>Figure
+ 3.4 Screenshot of PLABWIN10: Hashing tab on the CryptoDemo dialog box 
+is displayed showing the required text typed-in and listing the 
+calculated hash value.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-528"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-529">From the drop-down menu of the <b>Hash Algorithm</b>, click on one of the other types, such as <b>SHA1 </b>and then click <b>Get Hash</b>.</p>
+
+<p id="cn-m20-530">You will now see a different result for each algorithm.</p>
+
+<p id="cn-m20-531"></p><figure><img class="cn-img" id="cn-image-m20-c-41" src="ApplicationandHostHardeningTechniques_files/image-m20-c-41.jpg" alt="Figure 3.5 Screenshot of PLABWIN10: Hashing tab on the CryptoDemo dialog box is displayed showing the required settings performed and listing the calculated hash value."><figcaption>Figure
+ 3.5 Screenshot of PLABWIN10: Hashing tab on the CryptoDemo dialog box 
+is displayed showing the required settings performed and listing the 
+calculated hash value.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+< <a href="https://github.com/SeanOhAileasa" id="ApplicationSecurity">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-535"><b>Exercise 4 - Application Security</b></h2>
+
+<p id="cn-m20-536">Application developers need to ensure that they avoid
+ introducing bugs and vulnerabilities that attract hackers. Methods 
+recommended to achieve this security include:</p>
+
+<ul id="cn-m20-537">
+
+<li id="cn-m20-537">Secure coding practices</li>
+
+<li id="cn-m20-538">Secure cookies</li>
+
+<li id="cn-m20-539">HTTP headers</li>
+
+<li id="cn-m20-540">Code signing</li>
+
+<li id="cn-m20-541">Whitelisting</li>
+
+<li id="cn-m20-542">Blacklisting</li>
+
+<li id="cn-m20-543">Static code analysis</li>
+
+</ul>
+
+<p id="cn-m20-544">In this exercise, you will learn about application security.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-546">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m20-547">
+
+<li id="cn-m20-547">Create an IIS Blacklist</li>
+
+</ul>
+
+<p id="cn-m20-548">After completing this exercise, you should have further knowledge of:</p>
+
+<ul id="cn-m20-549">
+
+<li id="cn-m20-549">Secure Coding Practices</li>
+
+<li id="cn-m20-550">Secure Cookies</li>
+
+<li id="cn-m20-551">Hypertext Transfer Protocol (HTTP) Headers&nbsp;&nbsp;</li>
+
+<li id="cn-m20-552">Static Code Analysis</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m20-554">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m20-555">
+
+<li id="cn-m20-555"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m20-556"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+</ul>
+
+<p id="cn-m20-557"><img class="cn-img" id="cn-image-m20-c-42" src="ApplicationandHostHardeningTechniques_files/image-m20-c-42.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m20-558"><b>Secure Coding Practices</b></h3>
+
+<p id="cn-m20-559">Secure coding practices help ensure application 
+security. These practices are based on safeguarding against following 
+identified points of vulnerability:</p>
+
+<ul id="cn-m20-560">
+
+<li id="cn-m20-560">Invalid data Input</li>
+
+<li id="cn-m20-561">Hard-code credentials</li>
+
+<li id="cn-m20-562">Data in Cleartext format</li>
+
+<li id="cn-m20-563">Source code comments</li>
+
+<li id="cn-m20-564">Verbose errors</li>
+
+<li id="cn-m20-565">Lack of error handling</li>
+
+<li id="cn-m20-566">Lack of code signing</li>
+
+<li id="cn-m20-567">Managing race conditions</li>
+
+</ul>
+
+<ol id="cn-m20-568">
+
+</ol>
+
+<h4 id="cn-m20-570"><b><i>Input Validation</i></b></h4>
+
+<p id="cn-m20-571">Input validation is the first line of defense in any 
+application. Input validation should validate the input data before it 
+is submitted to the application. For example, input validation must 
+check that the mobile number input by a user is numeric and has the 
+requisite number of digits. Similarly, introducing the Range column in a
+ form is another type of input validation. This will not allow an 
+attacker to enter malicious jargon into an application.</p>
+
+<p id="cn-m20-572">Input validation is a basic requirement while 
+developing any type of application. However, ignoring input validation 
+is the most common mistake committed by developers. The input validation
+ is usually performed at the client-end.</p>
+
+<p id="cn-m20-573">Lack of input validation makes the application vulnerable to:</p>
+
+<ul id="cn-m20-574">
+
+<li id="cn-m20-574">Interpreter Injection</li>
+
+<li id="cn-m20-575">SQL Injection</li>
+
+<li id="cn-m20-576">Null Byte Injection</li>
+
+<li id="cn-m20-577">Scripting attacks</li>
+
+<li id="cn-m20-578">Locale/Unicode attacks</li>
+
+<li id="cn-m20-579">File system attacks</li>
+
+<li id="cn-m20-580">Buffer overflows</li>
+
+<li id="cn-m20-581">Uncontrolled format string</li>
+
+<li id="cn-m20-582">Directory traversal</li>
+
+</ul>
+
+<h4 id="cn-m20-584"><b><i>Hard-code Credentials</i></b></h4>
+
+<p id="cn-m20-585">Hard-coded credentials are often stored within the 
+application. Developers can use these hard-coded credentials to gain 
+access to the application that might lock out due to some reason. The 
+hard-code credentials are referred to as a backdoor, which, if found by 
+an attacker, can compromise the entire application and its data.</p>
+
+<p id="cn-m20-586">The hard-coded credentials can be:</p>
+
+<ul id="cn-m20-587">
+
+<li id="cn-m20-587"><b>Inbound</b>: Used for accessing a Web 
+application. The credentials can be recovered by accessing the source 
+code or through a brute-force attack.</li>
+
+<li id="cn-m20-588"><b>Outbound</b>: Used for accessing the back-end 
+database. These credentials are stored in the database in plain-text 
+format. In case an attacker gains control of the application, the 
+credentials can be retrieved from the database.</li>
+
+</ul>
+
+<h4 id="cn-m20-589"><b><i>Data in Cleartext Format</i></b></h4>
+
+<p id="cn-m20-590">Many Web applications allow data transmission in 
+cleartext format, which is vulnerable to sniffing or Man-In-The-Middle 
+attack. Data in the cleartext format can be stolen from the following 
+points:</p>
+
+<ul id="cn-m20-591">
+
+<li id="cn-m20-591">Client Web browser</li>
+
+<li id="cn-m20-592">In transit</li>
+
+<li id="cn-m20-593">Server</li>
+
+</ul>
+
+<p id="cn-m20-594">The developers typically use the HTTP, SMTP, and FTP 
+protocols, which do not offer any kind of encryption. These must be 
+safeguarded by applying a strong encryption algorithm.</p>
+
+<p id="cn-m20-595">As a rule, no confidential data must be stored or 
+transmitted without encryption. Moreover, it is important to ensure that
+ the encryption is up-to-date and uses strong standard algorithms.</p>
+
+<h4 id="cn-m20-597"><b><i>Source Code Comments</i></b></h4>
+
+<p id="cn-m20-598">Developers are always told to comment their code. 
+However, this practice often leads to an application compromise. The 
+developers tend to leave sensitive information, such as security details
+ or design workflows in the comments. This helps an attacker gain 
+direction in exploiting the weaknesses of the application, especially 
+when the comments are available in a live Web application.</p>
+
+<p id="cn-m20-599">In a live Web application, you should remove all 
+comments so that there is no hint for the attacker. You should retain 
+the comments in the archived version, which can be used for reference 
+while updating or troubleshooting the application.</p>
+
+<h4 id="cn-m20-601"><b><i>Verbose Errors</i></b></h4>
+
+<p id="cn-m20-602">There can be various application errors, such as</p>
+
+<ul id="cn-m20-603">
+
+<li id="cn-m20-603">Out of memory</li>
+
+<li id="cn-m20-604">Null pointer exceptions</li>
+
+<li id="cn-m20-605">System call failure</li>
+
+<li id="cn-m20-606">Database unavailable</li>
+
+<li id="cn-m20-607">Network timeout</li>
+
+<li id="cn-m20-608">Application timeout</li>
+
+</ul>
+
+<p id="cn-m20-609">Verbose error messages can reveal sensitive details 
+about the application. When error messages provide more than 
+need-to-know information, the attacker can get hints about the potential
+ vulnerabilities within the application. For example, the error message 
+can reveal the database table names, application code structure, or even
+ query logic.</p>
+
+<p id="cn-m20-610">Moreover, a verbose error message does not help the 
+user in any way. The developers should display concise meaningful error 
+messages that could be understood by the users.</p>
+
+<h4 id="cn-m20-612"><b><i>Lack of Error Handling</i></b></h4>
+
+<p id="cn-m20-613">Lack of error handling in an application can lead to 
+issues, such as invalid input committed to the application, data 
+corruption, or crashing the application. For example, the Age field in 
+an application should accept input from 1 to 99. There should be an 
+input validation on the field. If anyone enters 100, then an error 
+should be displayed.</p>
+
+<p id="cn-m20-614">However, beyond the input handling, there should be 
+an error-handling code to handle any unexpected error that may arise. 
+After the input validation, error handling should be used as a second 
+line of defense that prevents a malicious input from exploiting the 
+application by triggering an error condition.</p>
+
+<h4 id="cn-m20-616"><b><i>Code Signing</i></b></h4>
+
+<p id="cn-m20-617">Developers use cryptography to digitally sign their 
+code with a private key. When the user runs the code, the Web browser 
+uses the developer’s public key to verify the signature. A verified 
+signature ensures that the code is authentic and has not been tempered. 
+An unsigned code can be corrupted or tempered with, and then delivered 
+to the users undetected.</p>
+
+<p id="cn-m20-619">Therefore, signing a code ensures:</p>
+
+<ul id="cn-m20-620">
+
+<li id="cn-m20-620"><b>Authenticity of the code</b>: Digital signature 
+provides a measurable proof of authenticity of the code. Moreover, it is
+ a method of comparing the malicious version with the authentic code. 
+When running an unsigned code, the Web browsers warn the users by 
+displaying the “unknown publisher” error.</li>
+
+<li id="cn-m20-621"><b>Integrity of the code</b>: Code signing helps 
+confirm integrity of the code. Any modification, whether intentional or 
+unintentional, to a signed code makes the signature invalid.</li>
+
+</ul>
+
+<ol id="cn-m20-622">
+
+</ol>
+
+<h4 id="cn-m20-623"><b><i>Race Condition </i></b></h4>
+
+<p id="cn-m20-624">Each system or application is designed such that 
+certain events must occur in a sequence. In some cases, the system might
+ attempt to perform two or more operations at the same time. This is 
+called the race condition.</p>
+
+<p id="cn-m20-625">The simplest example of a race condition can be two 
+threads in an application that attempt to change the same data 
+simultaneously. Both the threads race to access the data. In such a 
+situation, an attacker can take advantage of the time gap between when 
+the service is triggered and when a security control uses thread control
+ to block the situation.&nbsp;Thread block can impact performance of the
+ system or the application.</p>
+
+<p id="cn-m20-626">One method to prevent race condition is serializing 
+the access to memory or storage. Assume that there are two commands, 
+read and write, that are executed together. You can serialize them by 
+making the read command go first by default and write command later.</p>
+
+<h4 id="cn-m20-628"><b><i>Hidden Elements - Sensitive Information in the DOM</i></b></h4>
+
+<p id="cn-m20-629">Developers often use hidden elements on a form. These
+ elements contain information that is usually not relevant to the users 
+but is required by the systems for the desired operation. For example, 
+developers might use the hidden field to pass authentication information
+ to the Web server.</p>
+
+<p id="cn-m20-630">Another reason for using the hidden element is to 
+maintain state information. You may not want to display the state 
+information on a webpage and therefore, you can hide it using a hidden 
+element. For example, you may want to hide the session state in a 
+variable so that it can be referred to later on.</p>
+
+<p id="cn-m20-631">Even though these fields are hidden from the users, they can be viewed by viewing the source of the webpage.</p>
+
+<p id="cn-m20-632">Just like the users, an attacker can submit forms to 
+the server. The attacker might submit unexpected values to the server 
+using the hidden fields. This way, the attacker might end up gaining 
+unauthorized entry into the server. If the fields to maintain state are 
+accessed by an attacker, it can lead to a hijack session attack.</p>
+
+<h3 id="cn-m20-634"><b>Secure Cookies</b></h3>
+
+<p id="cn-m20-635">A cookie is a piece of information sent by a 
+webserver to a user’s browser when the user connects to the website. The
+ cookie helps the webserver maintain session information with the 
+browser. Some of the examples of  cookie usage include logins to a 
+Website, shopping cart information, and the game scores of an online 
+game.</p>
+
+<p id="cn-m20-636">A cookie sent over an unsecured channel can be 
+tampered by an attacker. To resolve this problem, a secure cookie can be
+ used. A secure cookie is an HTTP cookie with a secure attribute set. A 
+secure cookie can be sent over a secure channel only, such as HTTPS.</p>
+
+<h3 id="cn-m20-638"><b>Hypertext Transfer Protocol (HTTP) Headers</b></h3>
+
+<p id="cn-m20-639">HTTP headers are used for sharing additional 
+information along with the requests and responses that are passed 
+between a webserver and a client.</p>
+
+<p id="cn-m20-640">Some of the commonly used groups of HTTP headers are:</p>
+
+<ul id="cn-m20-641">
+
+<li id="cn-m20-641">Connection</li>
+
+<li id="cn-m20-642">Keep-Alive</li>
+
+<li id="cn-m20-643">Proxy-Authenticate</li>
+
+<li id="cn-m20-644">Proxy-Authorization</li>
+
+<li id="cn-m20-645">TE</li>
+
+<li id="cn-m20-646">Trailer</li>
+
+<li id="cn-m20-647">Transfer-Encoding</li>
+
+</ul>
+
+<h3 id="cn-m20-650"><b>Task 1 - Install an IIS Blacklist</b></h3>
+
+<p id="cn-m20-651">In this task, you will install an IIS feature called 
+Domain and IP Restrictions that lets you prohibit access from certain IP
+ numbers and IP ranges.</p>
+
+<h4 id="cn-m20-652"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-653">Ensure you have powered on the devices mentioned in the introduction to the exercise.</p>
+
+<p id="cn-m20-654">Connect to&nbsp;<b>PLABDM01</b>.</p>
+
+<p id="cn-m20-655">The <b>Server Manager Dashboard </b>starts automatically.</p>
+
+<p id="cn-m20-656">Click <b>Add roles and features</b>.</p>
+
+<p id="cn-m20-657"></p><figure><img class="cn-img" id="cn-image-m20-c-43" src="ApplicationandHostHardeningTechniques_files/image-m20-c-43.jpg" alt="Figure 4.1 Screenshot of PLABDM01: Add roles and features option on the Server Manager Dashboard is selected."><figcaption>Figure 4.1 Screenshot of PLABDM01: Add roles and features option on the Server Manager Dashboard is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-661"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-662">The <b>Add roles and features </b>wizard appears.</p>
+
+<p id="cn-m20-663">Read through the <b>Before you begin </b>screen and click <b>Next</b>.</p>
+
+<p id="cn-m20-664"></p><figure><img class="cn-img" id="cn-image-m20-c-44" src="ApplicationandHostHardeningTechniques_files/image-m20-c-44.jpg" alt="Figure 4.2 Screenshot of PLABDM01: Before you begin page on the Add Roles and Features Wizard is displayed showing the Next button highlighted."><figcaption>Figure
+ 4.2 Screenshot of PLABDM01: Before you begin page on the Add Roles and 
+Features Wizard is displayed showing the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-668"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-669">The <b>Select installation type </b>screen displays.</p>
+
+<p id="cn-m20-670">Verify that the <b>Role-based or feature-based installation </b>radio button is selected.</p>
+
+<p id="cn-m20-671">Click <b>Next</b>.</p>
+
+<p id="cn-m20-672"></p><figure><img class="cn-img" id="cn-image-m20-c-45" src="ApplicationandHostHardeningTechniques_files/image-m20-c-45.jpg" alt="Figure 4.3 Screenshot of PLABDM01: Select installation type page on the Add Roles and Features Wizard is displayed showing the required selection performed and the Next button highlighted."><figcaption>Figure
+ 4.3 Screenshot of PLABDM01: Select installation type page on the Add 
+Roles and Features Wizard is displayed showing the required selection 
+performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-676"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-677">The <b>Select Destination Server </b>screen displays. Verify that the <b>PLABDM01 </b>server is highlighted.</p>
+
+<p id="cn-m20-678">Click <b>Next</b>.</p>
+
+<p id="cn-m20-679"></p><figure><img class="cn-img" id="cn-image-m20-c-46" src="ApplicationandHostHardeningTechniques_files/image-m20-c-46.jpg" alt="Figure 4.4 Screenshot of PLABDM01: Select destination server page on the Add Roles and Features Wizard is displayed showing the required selection performed and the Next button highlighted."><figcaption>Figure
+ 4.4 Screenshot of PLABDM01: Select destination server page on the Add 
+Roles and Features Wizard is displayed showing the required selection 
+performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-683"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-684">The <b>Select server roles </b>screen displays. In the center of the screen, a scrollable list of features displays, with expandable feature groups listed.</p>
+
+<p id="cn-m20-685">Scroll down to <b>Web Server (IIS) </b>and expand the list. Click on <b>Web Server (IIS), </b>then <b>Web Server, </b>then <b>Security</b>, and then <b>IP and Domain Restrictions</b>.&nbsp;</p>
+
+<p id="cn-m20-686">Select <b>IP and Domain Restrictions </b>and click <b>Next</b>.</p>
+
+<p id="cn-m20-687"></p><figure><img class="cn-img" id="cn-image-m20-c-47" src="ApplicationandHostHardeningTechniques_files/image-m20-c-47.jpg" alt="Figure 4.5 Screenshot of PLABDM01: Select server roles page on the Add Roles and Features Wizard is displayed showing the required selections performed and the Next button highlighted."><figcaption>Figure
+ 4.5 Screenshot of PLABDM01: Select server roles page on the Add Roles 
+and Features Wizard is displayed showing the required selections 
+performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-692"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-693">When the <b>Select features </b>screen displays to show the features list box, keep the default selection and click <b>Next</b>.</p>
+
+<p id="cn-m20-694"></p><figure><img class="cn-img" id="cn-image-m20-c-48" src="ApplicationandHostHardeningTechniques_files/image-m20-c-48.jpg" alt="Figure 4.6 Screenshot of PLABDM01: Select features page on the Add Roles and Features Wizard is displayed listing default selection and showing the Next button highlighted."><figcaption>Figure
+ 4.6 Screenshot of PLABDM01: Select features page on the Add Roles and 
+Features Wizard is displayed listing default selection and showing the 
+Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-697"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-698">The <b>Confirm installation selections </b>screen displays.</p>
+
+<p id="cn-m20-699">This screen lists the specifications for installation.</p>
+
+<p id="cn-m20-700">Click <b>Install</b>.</p>
+
+<p id="cn-m20-701"></p><figure><img class="cn-img" id="cn-image-m20-c-49" src="ApplicationandHostHardeningTechniques_files/image-m20-c-49.jpg" alt="Figure 4.7 Screenshot of PLABDM01: Confirm installation selections page on the Add Roles and Features Wizard is displayed listing the installation specifications and showing the Install button highlighted."><figcaption>Figure
+ 4.7 Screenshot of PLABDM01: Confirm installation selections page on the
+ Add Roles and Features Wizard is displayed listing the installation 
+specifications and showing the Install button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-706"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-707">A <b>progress bar </b>traces the installation.</p>
+
+<p id="cn-m20-708"></p><figure><img class="cn-img" id="cn-image-m20-c-50" src="ApplicationandHostHardeningTechniques_files/image-m20-c-50.jpg" alt="Figure 4.8 Screenshot of PLABDM01: Installation progress page on the Add Roles and Features Wizard is displayed showing a progress bar on the installation."><figcaption>Figure
+ 4.8 Screenshot of PLABDM01: Installation progress page on the Add Roles
+ and Features Wizard is displayed showing a progress bar on the 
+installation.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-711"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-712">When you see the <b>Installation Succeeded </b>message, click the <b>Close </b>button.</p>
+
+<p id="cn-m20-713">You will be navigated back to the <b>Server Manager Dashboard</b>.</p>
+
+<p id="cn-m20-714"></p><figure><img class="cn-img" id="cn-image-m20-c-51" src="ApplicationandHostHardeningTechniques_files/image-m20-c-51.jpg" alt="Figure 4.9 Screenshot of PLABDM01: Installation progress page on the Add Roles and Features Wizard is displayed showing the installation complete and the Close button highlighted."><figcaption>Figure
+ 4.9 Screenshot of PLABDM01: Installation progress page on the Add Roles
+ and Features Wizard is displayed showing the installation complete and 
+the Close button highlighted.</figcaption></figure><p></p>
+
+<h3 id="cn-m20-719"><b>Task 2 - Configure an IIS Blacklist</b></h3>
+
+<p id="cn-m20-720">After installing the IIS on your server, add a <b>Deny </b>entry
+ to the installed IIS. This entry creates a blacklist, denying access to
+ a range of IP numbers. In this task, you will use the <b>IP and Domain Restrictions </b>feature you just installed to prevent a certain domain or IP numbers from accessing the web site.</p>
+
+<h4 id="cn-m20-721"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-722">Connect to <b>PLABDM01 </b>and ensure that the <b>Server Manager </b>window is displayed.</p>
+
+<p id="cn-m20-723">Click on the <b>IIS </b>menu option on the navigation pane at the left.</p>
+
+<p id="cn-m20-724"></p><figure><img class="cn-img" id="cn-image-m20-c-52" src="ApplicationandHostHardeningTechniques_files/image-m20-c-52.jpg" alt="Figure 4.10 Screenshot of PLABDM01: IIS option on the Server Manager Dashboard is highlighted."><figcaption>Figure 4.10 Screenshot of PLABDM01: IIS option on the Server Manager Dashboard is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-728"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-729">On the <b>Servers </b>pane of the <b>Server Manager &gt; IIS </b>screen, notice that the <b>PLABDM01 </b>is highlighted by default.</p>
+
+<p id="cn-m20-730">Right-click <b>PLABDM01 </b>and select <b>Internet Information Services (IIS) Manager</b>.</p>
+
+<p id="cn-m20-731"></p><figure><img class="cn-img" id="cn-image-m20-c-53" src="ApplicationandHostHardeningTechniques_files/image-m20-c-53.jpg" alt="Figure 4.11 Screenshot of PLABDM01: Context menu (that appears on right-clicking a listed server) &amp;gt; Internet Information Services (IIS) Manager menu-options on the Server Manager IIS screen are highlighted."><figcaption>Figure
+ 4.11 Screenshot of PLABDM01: Context menu (that appears on 
+right-clicking a listed server) &gt; Internet Information Services (IIS)
+ Manager menu-options on the Server Manager IIS screen are highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-736"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-737">The <b>IIS Manager </b>screen loads.</p>
+
+<p id="cn-m20-738">Expand the <b>PLABDM01 (PRACTICELABS\Administrator) Sites </b>node and select <b>Default Web Site</b>.</p>
+
+<p id="cn-m20-739">Middle pane now lists icons representing the settings and options on this site.</p>
+
+<p id="cn-m20-740">Double-click the <b>IP Address and Domain restrictions </b>icon</p>
+
+<p id="cn-m20-741"></p><figure><img class="cn-img" id="cn-image-m20-c-54" src="ApplicationandHostHardeningTechniques_files/image-m20-c-54.jpg" alt="Figure 4.12 Screenshot of PLABDM01: Required icon on the Default Web Site Home pane on the Internet Information Services (IIS) Manager is highlighted."><figcaption>Figure
+ 4.12 Screenshot of PLABDM01: Required icon on the Default Web Site Home
+ pane on the Internet Information Services (IIS) Manager is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-746"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-747">You can see that there are currently no IP Address and Domain restrictions specified for the <b>Default Web Site</b>.</p>
+
+<p id="cn-m20-748">In the menu under the <b>Actions </b>pane on the right side, click <b>Add Deny Entry.</b></p>
+
+<p id="cn-m20-749"></p><figure><img class="cn-img" id="cn-image-m20-c-55" src="ApplicationandHostHardeningTechniques_files/image-m20-c-55.jpg" alt="Figure 4.13 Screenshot of PLABDM01: Add Deny Entry option on the Actions pane of the Internet Information (IIS) Manager is highlighted."><figcaption>Figure
+ 4.13 Screenshot of PLABDM01: Add Deny Entry option on the Actions pane 
+of the Internet Information (IIS) Manager is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-754"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-755">The <b>Add Deny Restriction Rule </b>dialog box appears.</p>
+
+<p id="cn-m20-756">In the <b>IP address range </b>text box, type the following:</p>
+
+<pre id="cn-m20-757"><code>24.73.166.0
+
+</code></pre>
+
+<p id="cn-m20-758">In the <b>Mask or Profile </b>text box, type the following:</p>
+
+<pre id="cn-m20-759"><code>255.255.255.0
+
+</code></pre>
+
+<p id="cn-m20-760">The <b>Mask </b>field is a <b>Subnet Mask </b>that defines the range of IP numbers starting with the number just entered.</p>
+
+<p id="cn-m20-761">Therefore, this rule tells <b>IIS </b>to block requests from IP numbers in the range <b>24.73.166.0 </b>to <b>24.73.166.255</b>.</p>
+
+<p id="cn-m20-762">Click <b>OK.</b></p>
+
+<p id="cn-m20-763"></p><figure><img class="cn-img" id="cn-image-m20-c-56" src="ApplicationandHostHardeningTechniques_files/image-m20-c-56.jpg" alt="Figure 4.14 Screenshot of PLABDM01: Add Deny Restriction Rule dialog box is displayed showing the required settings performed and the OK button highlighted."><figcaption>Figure
+ 4.14 Screenshot of PLABDM01: Add Deny Restriction Rule dialog box is 
+displayed showing the required settings performed and the OK button 
+highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">89702e5d-d25a-44d4-b0df-b081bb2e2dbd</span>
+
+<h4 id="cn-m20-766"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-767"><b>IP Address and Domain Restrictions </b>screen is displayed.</p>
+
+<p id="cn-m20-768">Notice the <b>Deny </b>entry just created. This is called <b>Blacklisting</b>.</p>
+
+<p id="cn-m20-769">You can create more <b>Deny </b>entries over time, as you identify IP ranges to exclude from the <b>Default Web Site</b>.</p>
+
+<p id="cn-m20-770">Similarly, you can create <b>Allow </b>entries, specifying the <b>IP numbers </b>allowed to access the site. This blocks access to all the other IP addresses. This is called <b>Whitelisting</b>.</p>
+
+<p id="cn-m20-771"><b>Whitelisting </b>is useful when only a few, well-known computers with fixed IP numbers, or within a fixed range, are to access the site.</p>
+
+<p id="cn-m20-772">Close the <b>IIS Manager </b>window and the <b>Server Manager </b>window.</p>
+
+<p id="cn-m20-773"></p><figure><img class="cn-img" id="cn-image-m20-c-57" src="ApplicationandHostHardeningTechniques_files/image-m20-c-57.jpg" alt="Figure 4.15 Screenshot of PLABDM01: Newly created restriction rule is listed on the Internet Information Services (IIS) Manager."><figcaption>Figure 4.15 Screenshot of PLABDM01: Newly created restriction rule is listed on the Internet Information Services (IIS) Manager.</figcaption></figure><p></p>
+
+<h3 id="cn-m20-775"><b>Software Assurance</b></h3>
+
+<p id="cn-m20-776">Several tests are performed on the software being 
+developed to ensure a secure software product. This is the software 
+assurance process. Software tools used in the process include:</p>
+
+<ul id="cn-m20-777">
+
+<li id="cn-m20-777"><b>FindBugs</b>: Used for static analysis of Java code</li>
+
+<li id="cn-m20-778"><b>Peach</b>: Is a fuzzing tool that can generate 
+artificial input to test a software. Fuzzing is a type of black box 
+testing that is performed using Fuzzer. It tests the application for 
+crashes, failing built-in code assertions, and memory leaks.</li>
+
+<li id="cn-m20-779"><b>SonarQube</b>: Is an open-source tool for performing a static code analysis with several pre-defined rules.</li>
+
+<li id="cn-m20-780"><b>Yet Another Source Code Analyzer (YASCA</b>): Is 
+an open-source tool that can test software for vulnerabilities and code 
+quality. It can also test for performance and adherence to best 
+practices.</li>
+
+</ul>
+
+<p id="cn-m20-781">You can either perform static code analysis or dynamic code analysis to detect bugs and vulnerabilities in a code.</p>
+
+<p id="cn-m20-782">Static code analysis is a method of finding the 
+vulnerabilities and flaws in the source code before it is compiled into 
+an application. Reviews can be manual or automated tool-based. On the 
+other hand, the dynamic code analysis is performed after the code is 
+compiled and the application is executed.</p>
+< <a href="https://github.com/SeanOhAileasa" id="Hardening">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-785"><b>Exercise 5 - Hardening</b></h2>
+
+<p id="cn-m20-786">Application hardening is based on a strong design and
+ adhering to secure coding practices, such as input validation, 
+encryption, and data handling. Another practice to harden the 
+applications is keeping test systems and live systems separate via 
+sandboxing.</p>
+
+<p id="cn-m20-787">On the other hand, hardening the operating system and
+ other system components depends on patches, security updates, and bug 
+fixes. These patches are the latest updates released by the vendor to 
+minimize or eliminate the evolving vulnerabilities.</p>
+
+<p id="cn-m20-788">There is no single method of hardening a host. You 
+must harden various components in a host. For example, you must harden 
+the operating system and close any open ports.</p>
+
+<p id="cn-m20-789">In this exercise, you will learn to harden a host.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-791">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m20-792">
+
+<li id="cn-m20-792">Identify open ports and OS details</li>
+
+<li id="cn-m20-793">Hardening Hosts With Update Services</li>
+
+<li id="cn-m20-794">Install and Configure WSUS</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m20-796">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m20-797">
+
+<li id="cn-m20-797"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m20-798"><b>PLABDM01 </b>- Windows Server 2019 (Domain Member Server)</li>
+
+<li id="cn-m20-799"><b>PLABKALI </b>- Kali 2019.4 (Stand-alone device)</li>
+
+</ul>
+
+<p id="cn-m20-800"><img class="cn-img" id="cn-image-m20-c-58" src="ApplicationandHostHardeningTechniques_files/image-m20-c-58.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m20-801"><b>Task 1 - Identify Open Ports and OS Details</b></h3>
+
+<p id="cn-m20-802">Nmap is a tool to find live hosts, scan for open 
+ports across one or more systems, or perform various tasks, such as 
+operating system (OS) detection. In this task, you will find the open 
+ports and details of the OS on the <b>192.168.0.0/24 </b>IP range, where the lab devices are connected.</p>
+
+<p id="cn-m20-803">To start using nmap scanner, perform the following steps:</p>
+
+<h4 id="cn-m20-804"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-805">Ensure you have powered on the devices mentioned in the introduction to the exercise.</p>
+
+<p id="cn-m20-806">Connect to <b>PLABKALI</b>.</p>
+
+<p id="cn-m20-807">In the <b>Enter your username </b>text box, type the following:</p>
+
+<pre id="cn-m20-808"><code>root
+
+</code></pre>
+
+<p id="cn-m20-809">In the <b>Enter your password </b>text box, type the following:</p>
+
+<span class="cn-password"><span class="cn-password">Passw0rd</span></span>
+
+<p id="cn-m20-811">Click <b>Log In </b>or press <b>Enter</b>.</p>
+
+<p id="cn-m20-812"></p><figure><img class="cn-img" id="cn-image-m20-c-59" src="ApplicationandHostHardeningTechniques_files/image-m20-c-59.jpg" alt="Figure 5.1 Screenshot of PLABKALI: Required login credentials are typed into the login screen."><figcaption>Figure 5.1 Screenshot of PLABKALI: Required login credentials are typed into the login screen.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-815"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-816">On the desktop, right-click and select <b>Open Terminal Here</b>.</p>
+
+<p id="cn-m20-817"></p><figure><img class="cn-img" id="cn-image-m20-c-60" src="ApplicationandHostHardeningTechniques_files/image-m20-c-60.jpg" alt="Figure 5.2 Screenshot of PLABKALI: Context menu (that appears on right-clicking on the desktop) &amp;gt; Open Terminal Here menu-options are selected."><figcaption>Figure
+ 5.2 Screenshot of PLABKALI: Context menu (that appears on 
+right-clicking on the desktop) &gt; Open Terminal Here menu-options are 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-820"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-821">To find hosts and their open ports, type the following command on the terminal window:</p>
+
+<pre id="cn-m20-822"><code>nmap 192.168.0.0/24 &gt; hosts.txt
+
+</code></pre>
+
+<p id="cn-m20-823">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m20-824"><b><i>Note: </i></b><i>This command will save the results in a file called </i><b><i>hosts.txt</i></b><i>.</i></span>
+
+<p id="cn-m20-825"></p><figure><img class="cn-img" id="cn-image-m20-c-61" src="ApplicationandHostHardeningTechniques_files/image-m20-c-61.jpg" alt="Figure 5.3 Screenshot of PLABKALI: Terminal window is displayed showing the nmap command to identify the hosts and their open ports and to save the results in the specified file typed-in."><figcaption>Figure
+ 5.3 Screenshot of PLABKALI: Terminal window is displayed showing the 
+nmap command to identify the hosts and their open ports and to save the 
+results in the specified file typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-828"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-829">When <b>nmap </b>is finished scanning the network <b>192.168.27.0/24</b>, close the <b>root@kali </b>terminal window.</p>
+
+<p id="cn-m20-830"></p><figure><img class="cn-img" id="cn-image-m20-c-62" src="ApplicationandHostHardeningTechniques_files/image-m20-c-62.jpg" alt="Figure 5.4 Screenshot of PLABKALI: Terminal window is displayed showing system-response to the nmap command typed-in in the previous step."><figcaption>Figure
+ 5.4 Screenshot of PLABKALI: Terminal window is displayed showing 
+system-response to the nmap command typed-in in the previous step.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-833"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-834">Notice that the <b>hosts.txt </b>file is present on the desktop. Double-click this file to open it.</p>
+
+<p id="cn-m20-835"></p><figure><img class="cn-img" id="cn-image-m20-c-63" src="ApplicationandHostHardeningTechniques_files/image-m20-c-63.jpg" alt="Figure 5.5 Screenshot of PLABKALI: hosts.txt file is selected."><figcaption>Figure 5.5 Screenshot of PLABKALI: hosts.txt file is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-838"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-839">Results of the scan of hosts in the network <b>192.168.0.0/24 </b>are listed.</p>
+
+<p id="cn-m20-840">Look for a host with IP address <b>192.168.0.1</b>, the first IP address listed in the text file. Notice the listing of open ports on the server.</p>
+
+<p id="cn-m20-841"></p><figure><img class="cn-img" id="cn-image-m20-c-64" src="ApplicationandHostHardeningTechniques_files/image-m20-c-64.jpg" alt="Figure 5.6 Screenshot of PLABKALI: File containing results of the nmap scan is displayed on the Mousepad window."><figcaption>Figure 5.6 Screenshot of PLABKALI: File containing results of the nmap scan is displayed on the Mousepad window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-844"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-845">Click <b>File </b>and then select <b>Quit </b>to close the text editor.</p>
+
+<p id="cn-m20-846"></p><figure><img class="cn-img" id="cn-image-m20-c-65" src="ApplicationandHostHardeningTechniques_files/image-m20-c-65.jpg" alt="Figure 5.7 Screenshot of PLABKALI: File &amp;gt; Close Window menu-options are selected on the Mousepad window."><figcaption>Figure 5.7 Screenshot of PLABKALI: File &gt; Close Window menu-options are selected on the Mousepad window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-849"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-850">You should now be back on the <b>PLABKALI </b>desktop.</p>
+
+<p id="cn-m20-851">In the upper menu bar, click the <b>Terminal Emulator </b>icon.</p>
+
+<p id="cn-m20-852"></p><figure><img class="cn-img" id="cn-image-m20-c-66" src="ApplicationandHostHardeningTechniques_files/image-m20-c-66.jpg" alt="Figure 5.8 Screenshot of PLABKALI: Terminal Emulator icon on the icon bar at the top is highlighted."><figcaption>Figure 5.8 Screenshot of PLABKALI: Terminal Emulator icon on the icon bar at the top is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-855"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-856">The <b>root@PLABKALI </b>terminal window opens.</p>
+
+<p id="cn-m20-857">To identify the operating system versions and to send scan TCP ports using the SYN packet, type the following command and press <b>Enter</b>:</p>
+
+<pre id="cn-m20-858"><code>nmap -O -sS 192.168.0.1
+
+</code></pre>
+
+<p id="cn-m20-859">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m20-860"><b><i>Note: </i></b><i>This scan will take about 1 minute to complete.</i></span>
+
+<p id="cn-m20-861"></p><figure><img class="cn-img" id="cn-image-m20-c-67" src="ApplicationandHostHardeningTechniques_files/image-m20-c-67.jpg" alt="Figure 5.9 Screenshot of PLABKALI: nmap command to identify the operating system version as well as to identify the open ports is typed-in on the terminal window."><figcaption>Figure
+ 5.9 Screenshot of PLABKALI: nmap command to identify the operating 
+system version as well as to identify the open ports is typed-in on the 
+terminal window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-864"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m20-865">Notice that the output of the scan is displayed on the screen.</p>
+
+<p id="cn-m20-866">Regarding the OS details, Nmap could not detect the operating system because the firewall on the <b>PLABDC01 </b>device is preventing OS footprinting.</p>
+
+<p id="cn-m20-867"></p><figure><img class="cn-img" id="cn-image-m20-c-68" src="ApplicationandHostHardeningTechniques_files/image-m20-c-68.jpg" alt="Figure 5.10 Screenshot of PLABKALI: Results of the nmap scan - the open ports and the operating system version - are listed in the terminal window."><figcaption>Figure
+ 5.10 Screenshot of PLABKALI: Results of the nmap scan - the open ports 
+and the operating system version - are listed in the terminal window.</figcaption></figure><p></p>
+
+<p id="cn-m20-869">Close the terminal window.</p>
+
+<h3 id="cn-m20-871"><b>Task 2 - Hardening Hosts With Update Services</b></h3>
+
+<p id="cn-m20-872">Windows Server Update Services (WSUS) provides a 
+patch management solution to deploy updates onto Windows servers and 
+workstations in a domain. WSUS is fully integrated into Windows Server 
+operating systems and can also be enabled on Windows clients by 
+configuring settings in Group Policy Objects (GPO), which are shared 
+between machines within a domain.</p>
+
+<p id="cn-m20-873">A patch management solution can be designed around 
+WSUS or any third-party tool. To get third-party updates as well, it is 
+better to use a third-party product to push updates on the client 
+systems. On the other hand, to get updates only for Microsoft products, 
+such as MS Office or Windows, use WSUS. It can automatically push 
+updates to the client systems and generate reports on whether or not 
+systems have the necessary updates.</p>
+
+<p id="cn-m20-874">WSUS is good to use, where you have multiple Windows 
+systems, including clients and servers. If you have only a handful of 
+systems, say 10 in number, then it is better to configure them to 
+directly fetch updates from Windows Update websites.</p>
+
+<p id="cn-m20-875">To setup a patch management solution, allocate a 
+storage device to store software updates and fixes. Then install the 
+WSUS service to download and apply the periodic patches to the servers 
+and client.</p>
+
+<p id="cn-m20-876">In this task, you will allocate a storage device to store software updates and fixes.</p>
+
+<h4 id="cn-m20-878"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-879">Ensure you have powered on the devices mentioned in the introduction to the exercise.</p>
+
+<p id="cn-m20-880">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m20-881">On the&nbsp;<b>Server Manager </b>console, click on&nbsp;<b>Tools</b>, then <b>Computer Management</b>.</p>
+
+<p id="cn-m20-882"></p><figure><img class="cn-img" id="cn-image-m20-c-69" src="ApplicationandHostHardeningTechniques_files/image-m20-c-69.jpg" alt="Figure 5.11 Screenshot of PLABDM01: Tools &amp;gt; Computer Management menu option are selected on the Server Manager Dashboard."><figcaption>Figure 5.11 Screenshot of PLABDM01: Tools &gt; Computer Management menu option are selected on the Server Manager Dashboard.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-885"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-886">On the&nbsp;<b>Computer Management&nbsp;</b>console, on the left pane, click&nbsp;the <b>Storage&nbsp;</b>node and click&nbsp;<b>Disk Management</b>.</p>
+
+<p id="cn-m20-887">On the details pane at the right, scroll down to see the available disk volumes.</p>
+
+<p id="cn-m20-888"><b>Disk 1 </b>shows as an offline, unallocated disk drive. Right-click&nbsp;the <b>Disk 1&nbsp;</b>label area and select&nbsp;<b>Online </b>from the pull-down list.</p>
+
+<p id="cn-m20-889"></p><figure><img class="cn-img" id="cn-image-m20-c-70" src="ApplicationandHostHardeningTechniques_files/image-m20-c-70.jpg" alt="Figure 5.12 Screenshot of PLABDM01: Context menu (that appears on right-clicking the label area of a disk) &amp;gt; Online menu-options are selected on the Computer Management console."><figcaption>Figure
+ 5.12 Screenshot of PLABDM01: Context menu (that appears on 
+right-clicking the label area of a disk) &gt; Online menu-options are 
+selected on the Computer Management console.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-894"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-895">Now that <b>Disk 1 </b>is online, you can initialize it to make it usable.</p>
+
+<p id="cn-m20-896">Again, right click the <b>Disk 1 </b>label area and choose <b>Initialize Disk </b>from the drop-down menu</p>
+
+<p id="cn-m20-897"></p><figure><img class="cn-img" id="cn-image-m20-c-71" src="ApplicationandHostHardeningTechniques_files/image-m20-c-71.jpg" alt="Figure 5.13 Screenshot of PLABDM01: Context menu (that appears on right-clicking the label area of a disk) &amp;gt; Initialize Disk menu-options are selected on the Computer Management console."><figcaption>Figure
+ 5.13 Screenshot of PLABDM01: Context menu (that appears on 
+right-clicking the label area of a disk) &gt; Initialize Disk 
+menu-options are selected on the Computer Management console.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-902"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-903">The <b>Initialize Disk </b>dialog box displays.</p>
+
+<p id="cn-m20-904">Choose <b>MBR (Master Book Record) </b>and click <b>OK</b>.</p>
+
+<p id="cn-m20-905"></p><figure><img class="cn-img" id="cn-image-m20-c-72" src="ApplicationandHostHardeningTechniques_files/image-m20-c-72.jpg" alt="Figure 5.14 Screenshot of PLABDM01: Initialize Disk dialog box is displayed showing the required settings performed and the OK button highlighted."><figcaption>Figure
+ 5.14 Screenshot of PLABDM01: Initialize Disk dialog box is displayed 
+showing the required settings performed and the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-910"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-911">Right-click on&nbsp;the <b>unallocated&nbsp;partition </b>space beside <b>Disk 1 </b>and choose&nbsp;<b>New Simple Volume</b>.</p>
+
+<p id="cn-m20-912">The&nbsp;<b>New Simple Volume Wizard&nbsp;</b>will launch.</p>
+
+<p id="cn-m20-913"></p><figure><img class="cn-img" id="cn-image-m20-c-73" src="ApplicationandHostHardeningTechniques_files/image-m20-c-73.jpg" alt="Figure 5.15 Screenshot of PLABDM01: Context menu (that appears on right-clicking the unallocated disk area) &amp;gt; New Simple Volume menu-options are selected on the Computer Management console."><figcaption>Figure
+ 5.15 Screenshot of PLABDM01: Context menu (that appears on 
+right-clicking the unallocated disk area) &gt; New Simple Volume 
+menu-options are selected on the Computer Management console.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-919"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-920">The <b>New Simple Volume Wizard </b>appears.</p>
+
+<p id="cn-m20-921">On the <b>Welcome </b>screen, click <b>Next</b>.</p>
+
+<p id="cn-m20-922"></p><figure><img class="cn-img" id="cn-image-m20-c-74" src="ApplicationandHostHardeningTechniques_files/image-m20-c-74.jpg" alt="Figure 5.16 Screenshot of PLABDM01: Welcome page on the New Simple Volume Wizard is displayed showing the Next button highlighted."><figcaption>Figure
+ 5.16 Screenshot of PLABDM01: Welcome page on the New Simple Volume 
+Wizard is displayed showing the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-929"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-930">You will be creating a new storage volume, and the wizard will offer you several options.</p>
+
+<p id="cn-m20-931">Accept the default <b>volume size </b>of <b>40 GB </b>and click <b>Next</b>.</p>
+
+<p id="cn-m20-932"></p><figure><img class="cn-img" id="cn-image-m20-c-75" src="ApplicationandHostHardeningTechniques_files/image-m20-c-75.jpg" alt="Figure 5.17 Screenshot of PLABDM01: Specify Volume Size page on the New Simple Volume Wizard is displayed listing default settings and showing the Next button highlighted."><figcaption>Figure
+ 5.17 Screenshot of PLABDM01: Specify Volume Size page on the New Simple
+ Volume Wizard is displayed listing default settings and showing the 
+Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-937"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-938">On the <b>Assign Drive Letter or Path </b>screen, notice that the drive letter <b>D </b>is selected by default.</p>
+
+<p id="cn-m20-939">Click <b>Next</b>.</p>
+
+<p id="cn-m20-940"></p><figure><img class="cn-img" id="cn-image-m20-c-76" src="ApplicationandHostHardeningTechniques_files/image-m20-c-76.jpg" alt="Figure 5.18 Screenshot of PLABDM01: Assign Drive Letter or Path page on the New Simple Volume Wizard is displayed listing default settings and showing the Next button highlighted."><figcaption>Figure
+ 5.18 Screenshot of PLABDM01: Assign Drive Letter or Path page on the 
+New Simple Volume Wizard is displayed listing default settings and 
+showing the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-945"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-946">Keep the default options in the <b>Format Partition </b>window:</p>
+
+<p id="cn-m20-947">Format the Volume: <b>Selected</b></p>
+
+<p id="cn-m20-948">File System: <b>NTFS</b></p>
+
+<p id="cn-m20-949">Allocation unit size: <b>Default</b></p>
+
+<p id="cn-m20-950">Volume Label: <b>New Volume</b></p>
+
+<p id="cn-m20-951">Perform a quick format checkbox: <b>Checked</b></p>
+
+<p id="cn-m20-952">Enable File and folder compression checkbox: <b>Not Checked</b></p>
+
+<p id="cn-m20-953">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-954"></p><figure><img class="cn-img" id="cn-image-m20-c-77" src="ApplicationandHostHardeningTechniques_files/image-m20-c-77.jpg" alt="Figure 5.19 Screenshot of PLABDM01: Format Partition page on the New Simple Volume Wizard is displayed showing the required settings performed and the Next button highlighted."><figcaption>Figure
+ 5.19 Screenshot of PLABDM01: Format Partition page on the New Simple 
+Volume Wizard is displayed showing the required settings performed and 
+the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-959"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m20-960">The <b>Completing the New Simple Volume Wizard </b>screen is displayed.  This summarizes the choices you have made.</p>
+
+<p id="cn-m20-961">Click&nbsp;<b>Finish&nbsp;</b>to close the&nbsp;<b>New Simple Volume Wizard</b>.</p>
+
+<p id="cn-m20-962"></p><figure><img class="cn-img" id="cn-image-m20-c-78" src="ApplicationandHostHardeningTechniques_files/image-m20-c-78.jpg" alt="Figure 5.20 Screenshot of PLABDM01: Completion page on the New Simple Volume Wizard is displayed listing specifications to the create the volume and showing the Finish button highlighted."><figcaption>Figure
+ 5.20 Screenshot of PLABDM01: Completion page on the New Simple Volume 
+Wizard is displayed listing specifications to the create the volume and 
+showing the Finish button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-967"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m20-968">Wait for the formatting process to be completed. This may take a moment.</p>
+
+<p id="cn-m20-969">When the drive is formatted, you are back on the <b>Computer Management </b>screen console. Notice that the drive is now listed as <b>D: </b>drive with <b>40GB </b>space <b>Primary Partition </b>- as specified.</p>
+
+<p id="cn-m20-970"></p><figure><img class="cn-img" id="cn-image-m20-c-79" src="ApplicationandHostHardeningTechniques_files/image-m20-c-79.jpg" alt="Figure 5.21 Screenshot of PLABDM01: New volume is listed on the Disk Management console."><figcaption>Figure 5.21 Screenshot of PLABDM01: New volume is listed on the Disk Management console.</figcaption></figure><p></p>
+
+<p id="cn-m20-973">Close&nbsp;the <b>Computer Management </b>and the <b>Server Manager </b>window.</p>
+
+<p id="cn-m20-974">Keep all devices powered on in their current state and proceed to the next task.</p>
+
+<h3 id="cn-m20-982"><b>Task 3 - Install and Configure WSUS</b></h3>
+
+<p id="cn-m20-983">In the previous task, you have created space to 
+download the updates for the WSUS server. In this task, you will install
+ the&nbsp;Windows Server Update Services&nbsp;server to utilize the 
+storage volume you just created.</p>
+
+<h4 id="cn-m20-984"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-985">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m20-986">Click <b>Start&nbsp;</b>and locate <b>Windows PowerShell&nbsp;</b>from the menu.</p>
+
+<p id="cn-m20-987">Right-click <b>Windows PowerShell</b>, select <b>More </b>and then select <b>Run as administrator </b>from the dropdown menu.</p>
+
+<span class="cn-quote" id="cn-m20-988"><b><i>Note: </i></b><i>You will use a command line interface to install the </i><b><i>Windows Server Update Service (WSUS</i></b><i>). It is also possible to install the </i><b><i>WSUS </i></b><i>through a graphical interface and the </i><b><i>Add Roles and Features </i></b><i>Wizard.  Many Windows features can be installed using either method.</i></span>
+
+<p id="cn-m20-989"></p><figure><img class="cn-img" id="cn-image-m20-c-80" src="ApplicationandHostHardeningTechniques_files/image-m20-c-80.jpg" alt="Figure 5.22 Screenshot of PLABDM01: Context menu (that appears on right-clicking a tile) &amp;gt; More &amp;gt; Run as administrator menu-options are selected on the Start menu."><figcaption>Figure
+ 5.22 Screenshot of PLABDM01: Context menu (that appears on 
+right-clicking a tile) &gt; More &gt; Run as administrator menu-options 
+are selected on the Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-991"><b><i>Step 2</i></b></h4>
+
+<span class="cn-quote" id="cn-m20-992"><b><i>Note: </i></b><i>If you get a </i><b><i>User Account Control </i></b><i>dialog box, click </i><b><i>Yes</i></b><i>.</i></span>
+
+<p id="cn-m20-993">At the Windows PowerShell prompt, type the following:</p>
+
+<pre id="cn-m20-994"><code>cd\
+
+</code></pre>
+
+<p id="cn-m20-995">Press <b>Enter</b>.</p>
+
+<pre id="cn-m20-996"><code>Add-WindowsFeature UpdateServices,UpdateServices-WidDB, UpdateServices-Services -IncludeManagementTools
+
+</code></pre>
+
+<p id="cn-m20-997">Press&nbsp;<b>Enter</b>.</p>
+
+<p id="cn-m20-998"></p><figure><img class="cn-img" id="cn-image-m20-c-81" src="ApplicationandHostHardeningTechniques_files/image-m20-c-81.jpg" alt="Figure 5.23 Screenshot of PLABDM01: Administrator Windows PowerShell window is displayed showing the command to install the update services on the server typed-in."><figcaption>Figure
+ 5.23 Screenshot of PLABDM01: Administrator Windows PowerShell window is
+ displayed showing the command to install the update services on the 
+server typed-in.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1000"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-1001">The installation takes a few minutes to complete. </p><figure><img class="cn-img" id="cn-image-m20-c-82" src="ApplicationandHostHardeningTechniques_files/image-m20-c-82.jpg" alt="Figure 5.24 Screenshot of PLABDM01: Administrator Windows PowerShell window is displayed tracing installation of the update services on the server."><figcaption>Figure
+ 5.24 Screenshot of PLABDM01: Administrator Windows PowerShell window is
+ displayed tracing installation of the update services on the server.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1004"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-1005">Windows indicates that the services and their dependencies were successfully installed.</p>
+
+<p id="cn-m20-1006">The value of <b>Success </b>set to <b>True </b>refers to the installation.</p>
+
+<p id="cn-m20-1007">A warning indicates that additional configuration is needed.</p>
+
+<p id="cn-m20-1008">Close the&nbsp;Windows PowerShell&nbsp;window.</p>
+
+<p id="cn-m20-1009"></p><figure><img class="cn-img" id="cn-image-m20-c-83" src="ApplicationandHostHardeningTechniques_files/image-m20-c-83.jpg" alt="Figure 5.25 Screenshot of PLABDM01: Status of the installation is listed on the Windows PowerShell window."><figcaption>Figure 5.25 Screenshot of PLABDM01: Status of the installation is listed on the Windows PowerShell window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1014"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-1015">Reopen&nbsp;Server Manager. Click the&nbsp;<b>Tools&nbsp;</b>menu and select&nbsp;<b>Windows Server Update Services</b>.</p>
+
+<p id="cn-m20-1016"></p><figure><img class="cn-img" id="cn-image-m20-c-84" src="ApplicationandHostHardeningTechniques_files/image-m20-c-84.jpg" alt="Figure 5.26 Screenshot of PLABDM01: Tools &amp;gt; Windows Server Update Services menu-options are selected on the Server Manager Dashboard."><figcaption>Figure
+ 5.26 Screenshot of PLABDM01: Tools &gt; Windows Server Update Services 
+menu-options are selected on the Server Manager Dashboard.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1020"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-1021">On&nbsp;the <b>Complete WSUS Installation&nbsp;</b>dialog box, select&nbsp;the <b>Store updates locally&nbsp;</b>check box.</p>
+
+<p id="cn-m20-1022">In&nbsp;Content directory path&nbsp;text box, type:</p>
+
+<pre id="cn-m20-1023"><code>d:\Updates
+
+</code></pre>
+
+<p id="cn-m20-1024">Click <b>Run</b>.</p>
+
+<p id="cn-m20-1025"></p><figure><img class="cn-img" id="cn-image-m20-c-85" src="ApplicationandHostHardeningTechniques_files/image-m20-c-85.jpg" alt="Figure 5.27 Screenshot of PLABDM01: Complete WSUS Installation dialog box is displayed showing the required settings performed and the Run button highlighted."><figcaption>Figure
+ 5.27 Screenshot of PLABDM01: Complete WSUS Installation dialog box is 
+displayed showing the required settings performed and the Run button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1030"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-1031">Wait for the configuration of WSUS to be completed. This process will take a few minutes to finish.</p>
+
+<p id="cn-m20-1032"></p><figure><img class="cn-img" id="cn-image-m20-c-86" src="ApplicationandHostHardeningTechniques_files/image-m20-c-86.jpg" alt="Figure 5.28 Screenshot of PLABDM01: Complete WSUS Installation dialog box is displayed showing progress bar on the installation."><figcaption>Figure 5.28 Screenshot of PLABDM01: Complete WSUS Installation dialog box is displayed showing progress bar on the installation.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1035"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-1036">On&nbsp;<b>Complete WSUS Installation</b>, click&nbsp;<b>Close&nbsp;</b>when the progress bar has reached the end.</p>
+
+<p id="cn-m20-1037"></p><figure><img class="cn-img" id="cn-image-m20-c-87" src="ApplicationandHostHardeningTechniques_files/image-m20-c-87.jpg" alt="Figure 5.29 Screenshot of PLABDM01: Complete WSUS Installation dialog box is displayed showing completion of the installation and the Close button highlighted."><figcaption>Figure
+ 5.29 Screenshot of PLABDM01: Complete WSUS Installation dialog box is 
+displayed showing completion of the installation and the Close button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1043"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-1044">On the&nbsp;<b>Server Manager </b>window, you will 
+notice a yellow exclamation point icon appended to the flag icon on the 
+menu bar at the top. This indicates that the additional required 
+configuration is needed.</p>
+
+<p id="cn-m20-1045">WSUS will automatically launch a wizard to address this requirement. If it does not launch by itself, you can click on the <b>Yellow </b>icon to start the configuration wizard.</p>
+
+<p id="cn-m20-1046">The&nbsp;<b>WSUS Configuration Wizard&nbsp;</b>opens.</p>
+
+<p id="cn-m20-1047">On the&nbsp;<b>Before you begin&nbsp;</b>page, click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1048"></p><figure><img class="cn-img" id="cn-image-m20-c-88" src="ApplicationandHostHardeningTechniques_files/image-m20-c-88.jpg" alt="Figure 5.30 Screenshot of PLABDM01: Before You Begin page on the Windows Server Update Services Configuration Wizard is displayed showing the Next button highlighted."><figcaption>Figure
+ 5.30 Screenshot of PLABDM01: Before You Begin page on the Windows 
+Server Update Services Configuration Wizard is displayed showing the 
+Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1052"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m20-1053">On&nbsp;the <b>Microsoft Update Improvement Program&nbsp;</b>page, clear&nbsp;the <b>Yes, I would like to join the Microsoft Update Improvement Program&nbsp;</b>checkbox.</p>
+
+<p id="cn-m20-1054">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1055"></p><figure><img class="cn-img" id="cn-image-m20-c-89" src="ApplicationandHostHardeningTechniques_files/image-m20-c-89.jpg" alt="Figure 5.31 Screenshot of PLABDM01: Join the Microsoft Update Improvement Program page on the Windows Server Update Services Configuration Wizard is displayed showing the required deselection performed and the Next button highlighted."><figcaption>Figure
+ 5.31 Screenshot of PLABDM01: Join the Microsoft Update Improvement 
+Program page on the Windows Server Update Services Configuration Wizard 
+is displayed showing the required deselection performed and the Next 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1060"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m20-1061">Since this is the first WSUS server to be rolled out for this lab, accept the default setting to&nbsp;the <b>Synchronise from Microsoft Update&nbsp;</b>option.</p>
+
+<p id="cn-m20-1062">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1063"></p><figure><img class="cn-img" id="cn-image-m20-c-90" src="ApplicationandHostHardeningTechniques_files/image-m20-c-90.jpg" alt="Figure 5.32 Screenshot of PLABDM01: Choose Upstream Server page on the Windows Server Update Services Configuration Wizard is displayed listing default selection and showing the Next button highlighted."><figcaption>Figure
+ 5.32 Screenshot of PLABDM01: Choose Upstream Server page on the Windows
+ Server Update Services Configuration Wizard is displayed listing 
+default selection and showing the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1068"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m20-1069">On&nbsp;the <b>Specify Proxy Server&nbsp;</b>page, select&nbsp;the <b>Use a proxy when synchronizing </b>check box. Enter the following information:</p>
+
+<pre id="cn-m20-1070"><code>Proxy server name: 192.168.255.13
+
+Port number: 8080
+
+</code></pre>
+
+<p id="cn-m20-1072">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1073"></p><figure><img class="cn-img" id="cn-image-m20-c-91" src="ApplicationandHostHardeningTechniques_files/image-m20-c-91.jpg" alt="Figure 5.33 Screenshot of PLABDM01: Specify Proxy Server page on the Windows Server Update Services Configuration Wizard is displayed showing the required settings performed and the Next button highlighted."><figcaption>Figure
+ 5.33 Screenshot of PLABDM01: Specify Proxy Server page on the Windows 
+Server Update Services Configuration Wizard is displayed showing the 
+required settings performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1078"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m20-1079">On&nbsp;the <b>Connect to Upstream Server </b>page, click <b>Start Connecting</b>.</p>
+
+<p id="cn-m20-1080">The connecting process starts.</p>
+
+<p id="cn-m20-1081"></p><figure><img class="cn-img" id="cn-image-m20-c-92" src="ApplicationandHostHardeningTechniques_files/image-m20-c-92.jpg" alt="Figure 5.34 Screenshot of PLABDM01: Connect to Upstream Server page on the Windows Server Update Services Configuration Wizard is displayed showing the Start Connecting button highlighted."><figcaption>Figure
+ 5.34 Screenshot of PLABDM01: Connect to Upstream Server page on the 
+Windows Server Update Services Configuration Wizard is displayed showing
+ the Start Connecting button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1084"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m20-1085">On&nbsp;<b>Connect to Upstream Server&nbsp;</b>screen, please wait while it downloads updated information from <b>Microsoft</b>.</p>
+
+<span class="cn-quote" id="cn-m20-1086"><i>Note: Unfortunately, it takes some time to download the updated information from Microsoft. </i><br><br><i>This may take up to 30 minutes to complete.</i></span>
+
+<p id="cn-m20-1087"></p><figure><img class="cn-img" id="cn-image-m20-c-93" src="ApplicationandHostHardeningTechniques_files/image-m20-c-93.jpg" alt="Figure 5.35 Screenshot of PLABDM01: Connect to Upstream Server page on the Windows Server Update Services Configuration Wizard is displayed showing progress bar on the downloads from the Microsoft website."><figcaption>Figure
+ 5.35 Screenshot of PLABDM01: Connect to Upstream Server page on the 
+Windows Server Update Services Configuration Wizard is displayed showing
+ progress bar on the downloads from the Microsoft website.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1091"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m20-1092">After the connecting process is complete, click <b>Next</b>.</p>
+
+<p id="cn-m20-1093"></p><figure><img class="cn-img" id="cn-image-m20-c-94" src="ApplicationandHostHardeningTechniques_files/image-m20-c-94.jpg" alt="Figure 5.36 Screenshot of PLABDM01  Connect to Upstream Server page on the Windows Server Update Services Configuration Wizard is displayed showing the connecting process complete and the Next button highlighted."><figcaption>Figure
+ 5.36 Screenshot of PLABDM01  Connect to Upstream Server page on the 
+Windows Server Update Services Configuration Wizard is displayed showing
+ the connecting process complete and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1096"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m20-1097">On&nbsp;the <b>Choose Languages&nbsp;</b>page, verify that only&nbsp;the <b>English&nbsp;</b>checkbox is selected.</p>
+
+<p id="cn-m20-1098">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1099"></p><figure><img class="cn-img" id="cn-image-m20-c-95" src="ApplicationandHostHardeningTechniques_files/image-m20-c-95.jpg" alt="Figure 5.37 Screenshot of PLABDM01: Choose Languages page on the Windows Server Update Services Configuration Wizard is displayed showing the required selection performed and the Next button highlighted."><figcaption>Figure
+ 5.37 Screenshot of PLABDM01: Choose Languages page on the Windows 
+Server Update Services Configuration Wizard is displayed showing the 
+required selection performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1103"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m20-1104">Scroll down the list of products and ensure that <b>Windows 10 </b>is selected.</p>
+
+<p id="cn-m20-1105">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1106"></p><figure><img class="cn-img" id="cn-image-m20-c-96" src="ApplicationandHostHardeningTechniques_files/image-m20-c-96.jpg" alt="Figure 5.38 Screenshot of PLABDM01: Select the Microsoft products to be updated page on the Windows Server Update Services Configuration Wizard is displayed showing the required selection performed and the Next button highlighted."><figcaption>Figure
+ 5.38 Screenshot of PLABDM01: Select the Microsoft products to be 
+updated page on the Windows Server Update Services Configuration Wizard 
+is displayed showing the required selection performed and the Next 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1110"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m20-1111">On the&nbsp;<b>Choose Classifications&nbsp;</b>page, ensure that only&nbsp;the <b>Critical Updates&nbsp;</b>checkbox is selected.</p>
+
+<p id="cn-m20-1112">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1113"></p><figure><img class="cn-img" id="cn-image-m20-c-97" src="ApplicationandHostHardeningTechniques_files/image-m20-c-97.jpg" alt="Figure 5.39 Screenshot of PLABDM01: Choose Classifications page on the Windows Server Update Services Configuration Wizard is displayed showing the required selection performed and the Next button highlighted."><figcaption>Figure
+ 5.39 Screenshot of PLABDM01: Choose Classifications page on the Windows
+ Server Update Services Configuration Wizard is displayed showing the 
+required selection performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1117"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m20-1118">On the&nbsp;<b>Set Sync Schedule&nbsp;</b>page, accept the default to&nbsp;<b>Synchronize manually</b>.</p>
+
+<p id="cn-m20-1119">Click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1120"></p><figure><img class="cn-img" id="cn-image-m20-c-98" src="ApplicationandHostHardeningTechniques_files/image-m20-c-98.jpg" alt="Figure 5.40 Screenshot of PLABDM01: Set Sync Schedule page on the Windows Server Update Services Configuration Wizard is displayed listing default settings and showing the Next button highlighted."><figcaption>Figure
+ 5.40 Screenshot of PLABDM01: Set Sync Schedule page on the Windows 
+Server Update Services Configuration Wizard is displayed listing default
+ settings and showing the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1124"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m20-1125">On the&nbsp;<b>Finished&nbsp;</b>page, select&nbsp;the <b>Begin initial synchronization&nbsp;</b>checkbox and click&nbsp;<b>Next</b>.</p>
+
+<p id="cn-m20-1126"></p><figure><img class="cn-img" id="cn-image-m20-c-99" src="ApplicationandHostHardeningTechniques_files/image-m20-c-99.jpg" alt="Figure 5.41 Screenshot of PLABDM01: Finished page on the Windows Server Update Services Configuration Wizard is displayed showing the required selection performed and the Next button highlighted."><figcaption>Figure
+ 5.41 Screenshot of PLABDM01: Finished page on the Windows Server Update
+ Services Configuration Wizard is displayed showing the required 
+selection performed and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1129"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m20-1130">On the&nbsp;<b>What's Next&nbsp;</b>page, click&nbsp;<b>Finish</b>.</p>
+
+<p id="cn-m20-1131"></p><figure><img class="cn-img" id="cn-image-m20-c-100" src="ApplicationandHostHardeningTechniques_files/image-m20-c-100.jpg" alt="Figure 5.42 Screenshot of PLABDM01: What’s Next page on the Windows Server Update Services Configuration Wizard is displayed showing the Finish button highlighted."><figcaption>Figure
+ 5.42 Screenshot of PLABDM01: What’s Next page on the Windows Server 
+Update Services Configuration Wizard is displayed showing the Finish 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1135"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m20-1136">The&nbsp;<b>Update Services&nbsp;</b>console will automatically open.</p>
+
+<span class="cn-quote" id="cn-m20-1137"><b><i>Note: </i></b><i>If the console does not appear, click on the minimized icon on the taskbar to display the console.</i></span>
+
+<p id="cn-m20-1139"></p><figure><img class="cn-img" id="cn-image-m20-c-101" src="ApplicationandHostHardeningTechniques_files/image-m20-c-101.jpg" alt="Figure 5.43 Screenshot of PLABDM01: Update Services console is displayed."><figcaption>Figure 5.43 Screenshot of PLABDM01: Update Services console is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1143"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m20-1144">Expand&nbsp;<b>PLABDM01&nbsp;</b>node.</p>
+
+<p id="cn-m20-1145">Click on&nbsp;the <b>Synchronizations&nbsp;</b>node, and you can see the progress of downloading the updates from&nbsp;<b>Microsoft&nbsp;</b>on the bottom center panel.</p>
+
+<p id="cn-m20-1146">Wait for the synchronization to complete. This will take a few minutes to finish.</p>
+
+<p id="cn-m20-1147"></p><figure><img class="cn-img" id="cn-image-m20-c-102" src="ApplicationandHostHardeningTechniques_files/image-m20-c-102.jpg" alt="Figure 5.44 Screenshot of PLABDM01: Update Services console is displayed listing Synchronization Status on the lower-middle pane."><figcaption>Figure
+ 5.44 Screenshot of PLABDM01: Update Services console is displayed 
+listing Synchronization Status on the lower-middle pane.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">89702e5d-d25a-44d4-b0df-b081bb2e2dbd</span>
+
+<h4 id="cn-m20-1151"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m20-1152">When synchronization is complete, you can observe 
+the details of the download. Beyond this point, you must configure WSUS 
+as an update distribution point, which needs to be done through Group 
+Policy. After you configure Group Policy, all domain systems, will get 
+the updates from WSUS.</p>
+
+<p id="cn-m20-1153">Minimize the&nbsp;<b>Update Services&nbsp;</b>console.</p>
+
+<p id="cn-m20-1154"></p><figure><img class="cn-img" id="cn-image-m20-c-103" src="ApplicationandHostHardeningTechniques_files/image-m20-c-103.jpg" alt="Figure 5.45 Screenshot of PLABDM01: Update Services console is displayed listing status of synchronization on the lower-middle pane and status of each download on the upper-middle pane."><figcaption>Figure
+ 5.45 Screenshot of PLABDM01: Update Services console is displayed 
+listing status of synchronization on the lower-middle pane and status of
+ each download on the upper-middle pane.</figcaption></figure><p></p>
+< <a href="https://github.com/SeanOhAileasa" id="Sandboxing">Home</a> | <a href="https://github.com/SeanOhAileasa/syp-practice-labs/blob/main/README.md">README</a> > 
+<h2>CompTIA Security+ Practice Labs</h2>
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-1158"><b>Exercise 6 - Sandboxing</b></h2>
+
+<p id="cn-m20-1159">By default, in the Windows environment, software is 
+installed on a hard drive directly. Windows 10 Pro and Enterprise 
+provide a Windows Sandbox solution that allows you to run the software 
+in a controlled environment. With a sandbox solution, the software is 
+installed and run from a sandbox environment and not written to the hard
+ drive. Windows Sandbox is a virtual machine with a small footprint. You
+ can test software within the Windows Sandbox. After you close the 
+sandbox machine, the contents are deleted automatically. A sandbox 
+solution can be used to test the effect an application will have in the 
+environment; it can be used to verify if an application is malicious or 
+not.</p>
+
+<p id="cn-m20-1160">In this exercise, you will learn to work with Windows Sandbox.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m20-1162">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m20-1163">
+
+<li id="cn-m20-1163">Work with Windows Sandbox</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m20-1165">You will be using the following devices in this lab. Please power these on now.</p>
+
+<ul id="cn-m20-1166">
+
+<li id="cn-m20-1166"><b>PLABDC01 </b>- (Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m20-1167"><b>PLABWIN10 - </b>Windows 10 (Domain Member Workstation)</li>
+
+</ul>
+
+<p id="cn-m20-1168"><img class="cn-img" id="cn-image-m20-c-104" src="ApplicationandHostHardeningTechniques_files/image-m20-c-104.jpg" alt="Practice Labs screenshot."></p>
+
+<h3 id="cn-m20-1169"><b>Task 1 - Work with Windows Sandbox </b></h3>
+
+<p id="cn-m20-1170">Windows Sandbox has certain pre-requisites:</p>
+
+<ul id="cn-m20-1171">
+
+<li id="cn-m20-1171"><b>Operating System</b>: Windows 10 Pro or Enterprise</li>
+
+<li id="cn-m20-1172"><b>Virtualization</b>: Hardware</li>
+
+<li id="cn-m20-1173"><b>Architecture</b>: AMD64</li>
+
+<li id="cn-m20-1174"><b>Processor</b>: Processor with 2 cores; for hyperthreading, 4 cores are recommended</li>
+
+<li id="cn-m20-1175"><b>Memory</b>: 4 GB minimum; 8 GB is recommended</li>
+
+<li id="cn-m20-1176"><b>Free Hard Drive Space</b>: 1 GB minimum</li>
+
+</ul>
+
+<p id="cn-m20-1177">In this task, you will work with Windows Sandbox.</p>
+
+<h4 id="cn-m20-1178"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m20-1179">Ensure you have powered on the required devices defined in the introduction to the module.</p>
+
+<p id="cn-m20-1180">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m20-1181">In the Type here to search textbox, type the following:</p>
+
+<pre id="cn-m20-1182"><code>Windows sandbox
+
+</code></pre>
+
+<p id="cn-m20-1183">From the given search results, select <b>Windows Sandbox App</b>.</p>
+
+<p id="cn-m20-1184"></p><figure><img class="cn-img" id="cn-image-m20-c-105" src="ApplicationandHostHardeningTechniques_files/image-m20-c-105.jpg" alt="Figure 6.1 Screenshot of PLABWIN10: Windows Sandbox App option on the Best match pop-up menu is selected."><figcaption>Figure 6.1 Screenshot of PLABWIN10: Windows Sandbox App option on the Best match pop-up menu is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1187"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m20-1188">In the <b>User Account Control </b>dialog box, select <b>Yes</b>.</p>
+
+<p id="cn-m20-1189"></p><figure><img class="cn-img" id="cn-image-m20-c-106" src="ApplicationandHostHardeningTechniques_files/image-m20-c-106.jpg" alt="Figure 6.2 Screenshot of PLABWIN10: Yes button on the User Account Control dialog box is highlighted."><figcaption>Figure 6.2 Screenshot of PLABWIN10: Yes button on the User Account Control dialog box is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1192"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m20-1193"><b>Windows Sandbox </b>environment starts up. Notice that it is another Windows environment that is running in the Windows Sandbox.</p>
+
+<p id="cn-m20-1194"></p><figure><img class="cn-img" id="cn-image-m20-c-107" src="ApplicationandHostHardeningTechniques_files/image-m20-c-107.jpg" alt="Figure 6.3 Screenshot of PLABWIN10: Windows Sandbox window is displayed."><figcaption>Figure 6.3 Screenshot of PLABWIN10: Windows Sandbox window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1197"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m20-1198">In <b>PLABWIN10</b>, click the <b>File Explorer </b>icon in the taskbar.</p>
+
+<p id="cn-m20-1199"></p><figure><img class="cn-img" id="cn-image-m20-c-108" src="ApplicationandHostHardeningTechniques_files/image-m20-c-108.jpg" alt="Figure 6.4 Screenshot of PLABWIN10: File Explorer icon on the taskbar of PLABWIN10 is highlighted."><figcaption>Figure 6.4 Screenshot of PLABWIN10: File Explorer icon on the taskbar of PLABWIN10 is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1202"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m20-1203">In the <b>File Explorer </b>window, navigate to the <b>Downloads </b>folder in the left pane, and then select <b>nmap-7.80-setup</b>.</p>
+
+<p id="cn-m20-1204">Right-click the file and click <b>Copy</b>.</p>
+
+<p id="cn-m20-1205"></p><figure><img class="cn-img" id="cn-image-m20-c-109" src="ApplicationandHostHardeningTechniques_files/image-m20-c-109.jpg" alt="Figure 6.5 Screenshot of PLABWIN10: Context menu (that appears on right-clicking a listed installer file) &amp;gt; Copy menu-options are selected on the file explorer window."><figcaption>Figure
+ 6.5 Screenshot of PLABWIN10: Context menu (that appears on 
+right-clicking a listed installer file) &gt; Copy menu-options are 
+selected on the file explorer window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1208"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m20-1209">Restore Windows Sandbox from the taskbar and right-click inside it and then select <b>Paste</b>.</p>
+
+<p id="cn-m20-1210"></p><figure><img class="cn-img" id="cn-image-m20-c-110" src="ApplicationandHostHardeningTechniques_files/image-m20-c-110.jpg" alt="Figure 6.6 Screenshot of PLABWIN10: Context menu (that appears on right-clicking on a desktop) &amp;gt; Paste menu-options are selected on the Windows Sandbox window."><figcaption>Figure
+ 6.6 Screenshot of PLABWIN10: Context menu (that appears on 
+right-clicking on a desktop) &gt; Paste menu-options are selected on the
+ Windows Sandbox window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1213"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m20-1214">The copying of the file within Windows Sandbox is now started.</p>
+
+<p id="cn-m20-1215"></p><figure><img class="cn-img" id="cn-image-m20-c-111" src="ApplicationandHostHardeningTechniques_files/image-m20-c-111.jpg" alt="Figure 6.7 Screenshot of PLABWIN10: Copying track box is displayed tracking the copying of specified file in the Windows Sandbox window."><figcaption>Figure
+ 6.7 Screenshot of PLABWIN10: Copying track box is displayed tracking 
+the copying of specified file in the Windows Sandbox window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1218"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m20-1219">Notice that the <b>nmap </b>file is now copied inside the sandbox. Double-click this file to start the installation.</p>
+
+<p id="cn-m20-1220">The installation process starts.</p>
+
+<p id="cn-m20-1221"></p><figure><img class="cn-img" id="cn-image-m20-c-112" src="ApplicationandHostHardeningTechniques_files/image-m20-c-112.jpg" alt="Figure 6.8 Screenshot of PLABWIN10: Nmap Setup dialog box is displayed tracking the specified installation."><figcaption>Figure 6.8 Screenshot of PLABWIN10: Nmap Setup dialog box is displayed tracking the specified installation.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1224"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m20-1225">You can go ahead and install it on your own. The 
+idea of this task is not to show the installation but how you can work 
+within the sandbox environment. The installation process may take a 
+while to complete. You can also test Windows Sandbox with a smaller 
+application, which is quick to install.</p>
+
+<p id="cn-m20-1226"></p><figure><img class="cn-img" id="cn-image-m20-c-113" src="ApplicationandHostHardeningTechniques_files/image-m20-c-113.jpg" alt="Figure 6.9 Screenshot of PLABWIN10: The Nmap application icon is displayed on the Windows Sandbox Desktop."><figcaption>Figure 6.9 Screenshot of PLABWIN10: The Nmap application icon is displayed on the Windows Sandbox Desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1229"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m20-1230"><b>Windows Sandbox </b>will retain any installation as long as it is active. When you close <b>Windows Sandbox</b>, any installation done within it or file copied will be wiped out.</p>
+
+<p id="cn-m20-1231">To test this, close <b>Windows Sandbox </b>by clicking <b>X</b>.</p>
+
+<p id="cn-m20-1232"></p><figure><img class="cn-img" id="cn-image-m20-c-114" src="ApplicationandHostHardeningTechniques_files/image-m20-c-114.jpg" alt="Figure 6.10 Screenshot of PLABWIN10: Close icon is listed at the top-right corner of the Windows Sandbox window."><figcaption>Figure 6.10 Screenshot of PLABWIN10: Close icon is listed at the top-right corner of the Windows Sandbox window.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1235"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m20-1236">You are prompted with a message stating that all the contents within the sandbox will be erased. Click <b>OK </b>to proceed with the closure of Windows Sandbox.</p>
+
+<p id="cn-m20-1237"></p><figure><img class="cn-img" id="cn-image-m20-c-115" src="ApplicationandHostHardeningTechniques_files/image-m20-c-115.jpg" alt="Figure 6.11 Screenshot of PLABWIN10: Windows Sandbox dialog box is displayed prompting for confirmation to close the window and showing the OK button highlighted."><figcaption>Figure
+ 6.11 Screenshot of PLABWIN10: Windows Sandbox dialog box is displayed 
+prompting for confirmation to close the window and showing the OK button
+ highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1240"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m20-1241">Once again, in the Type here to search text box, search for the following:</p>
+
+<pre id="cn-m20-1242"><code>Windows Sandbox
+
+</code></pre>
+
+<p id="cn-m20-1243">From the search results, select <b>Windows Sandbox App</b>.</p>
+
+<p id="cn-m20-1244"></p><figure><img class="cn-img" id="cn-image-m20-c-116" src="ApplicationandHostHardeningTechniques_files/image-m20-c-116.jpg" alt="Figure 6.12 Screenshot of PLABWIN10: Windows Sandbox App option on the Best match pop-up menu is selected."><figcaption>Figure 6.12 Screenshot of PLABWIN10: Windows Sandbox App option on the Best match pop-up menu is selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1248"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m20-1249">In the <b>User Account Control </b>dialog box, click <b>Yes</b>.</p>
+
+<p id="cn-m20-1250"></p><figure><img class="cn-img" id="cn-image-m20-c-117" src="ApplicationandHostHardeningTechniques_files/image-m20-c-117.jpg" alt="Figure 6.13 Screenshot of PLABWIN10: Yes button on the User Account Control dialog box is highlighted."><figcaption>Figure 6.13 Screenshot of PLABWIN10: Yes button on the User Account Control dialog box is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m20-1253"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m20-1254">After the Windows Sandbox environment is active, notice that the <b>Nmap </b>file is no longer present on the desktop. The <b>Nmap </b>installation and its installer both have been erased after Windows Sandbox closed.</p>
+
+<p id="cn-m20-1255"></p><figure><img class="cn-img" id="cn-image-m20-c-118" src="ApplicationandHostHardeningTechniques_files/image-m20-c-118.jpg" alt="Figure 6.14 Screenshot of PLABWIN10: Windows Sandbox window is displayed."><figcaption>Figure 6.14 Screenshot of PLABWIN10: Windows Sandbox window is displayed.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">a5adbee1-b3d4-422f-907b-2999d763f275</span>
+
+<span class="atom-code hidden">d31298f5-3011-4089-bf06-fbf08c44a7f9</span>
+
+<span class="cn-alert" id="cn-m20-1262">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m20-1263"><b>Review</b></h2>
+
+<p id="cn-m20-1264">Well done, you have completed the <b>Application and Host Hardening Techniques </b>Practice Lab.</p>
+
+<span class="atom-code hidden">c6e74811-6d1f-4779-94c2-34fcca239022</span>
+
+<span class="atom-code hidden">283cdf2b-84bb-4d20-8d75-deb3da9f07e3</span>
+
+<span class="atom-code hidden">1c09b4fc-2726-4ee4-96bc-8f70fc657781</span>
+
+<span class="atom-code hidden">4e3606b5-ebed-4e46-ab08-1bd81642a1dd</span>
+
+<span class="atom-code hidden">f9a62a6c-03e5-449d-bac0-2e1771e319c9</span>
+
+<span class="atom-code hidden">57da8fff-8523-4186-ac8d-740d85b458f9</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m20-1274">You completed the following exercises:</p>
+
+<ul id="cn-m20-1275">
+
+<li id="cn-m20-1275">Exercise 1 - Endpoint Protection</li>
+
+<li id="cn-m20-1276">Exercise 2 - Boot Integrity</li>
+
+<li id="cn-m20-1277">Exercise 3 - Database</li>
+
+<li id="cn-m20-1278">Exercise 4 - Application Security</li>
+
+<li id="cn-m20-1279">Exercise 5 - Hardening</li>
+
+<li id="cn-m20-1280">Exercise 6 - Sandboxing</li>
+
+</ul>
+
+<p id="cn-m20-1281">You should now be able to:</p>
+
+<ul id="cn-m20-1282">
+
+<li id="cn-m20-1282">Use Windows Defender</li>
+
+<li id="cn-m20-1283">Use an Online Anti-Malware Scanner</li>
+
+<li id="cn-m20-1284">Verify and Adjust Windows Defender Firewall</li>
+
+<li id="cn-m20-1285">Using Hashing</li>
+
+<li id="cn-m20-1286">Create an IIS Blacklist</li>
+
+<li id="cn-m20-1287">Using Nmap</li>
+
+<li id="cn-m20-1288">Hardening Hosts With Update Services</li>
+
+<li id="cn-m20-1289">Install and Configure WSUS</li>
+
+<li id="cn-m20-1290">Work with Windows Sandbox</li>
+
+</ul>
+
+<p id="cn-m20-1291">You should now have further knowledge of:</p>
+
+<ul id="cn-m20-1292">
+
+<li id="cn-m20-1292">Antivirus and Antimalware</li>
+
+<li id="cn-m20-1293">Endpoint Detection and Response (EDR)</li>
+
+<li id="cn-m20-1294">Host Intrusion Prevention System (HIPS) and Host Intrusion Detection System (HIDS)</li>
+
+<li id="cn-m20-1295">Data Loss Prevention (DLP)</li>
+
+<li id="cn-m20-1296">Next Generation Firewall (NGFW)</li>
+
+<li id="cn-m20-1297">Unified Extensible Firmware Interface (UEFI)</li>
+
+<li id="cn-m20-1298">Self-encrypting Drive (SED)</li>
+
+<li id="cn-m20-1299">Measured Boot and Attestation</li>
+
+<li id="cn-m20-1300">Tokenization</li>
+
+<li id="cn-m20-1301">Salting</li>
+
+<li id="cn-m20-1302">Secure Coding Practices</li>
+
+<li id="cn-m20-1303">Secure Cookies</li>
+
+<li id="cn-m20-1304">Hypertext Transfer Protocol (HTTP) Headers&nbsp;&nbsp;</li>
+
+<li id="cn-m20-1305">Static Code Analysis</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m20-1309">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
